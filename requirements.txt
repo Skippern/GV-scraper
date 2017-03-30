@@ -1,0 +1,5 @@
+pdfminer
+requests
+logging
+json
+datetime

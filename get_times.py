@@ -33,7 +33,6 @@ myRoutes = {}
 
 def download_pdf(i):
     downloadURL = baseurl + i + ".pdf"
-#    print downloadURL
     r = False
     while r == False:
         try:
@@ -60,8 +59,6 @@ def create_json(fromV, toV, weekdays, saturdays, sundays):
     retValue[u"Su"] = sundays
     return retValue
 
-#dateNow = datetime.date.today() #+ "-" + datetime.date.month + "-" + datetime.date.day
-#print dateNow
 myRoutes[u"updated"] = str(datetime.date.today())
 myRoutes[u"operator"] = u"Expresso Lorenzutti"
 myRoutes[u"network"] = u"PMG"
@@ -71,10 +68,7 @@ myRoutes[u"routes"] = {}
 for i in routes:
     pdf = download_pdf(i)
     if pdf == None:
-#        print "Damn, nothing"
         continue
-#    else:
-#        print i, "is a PDF"
 
     # Start pdfminer
     parser = PDFParser(io.BytesIO(pdf))
@@ -91,35 +85,25 @@ for i in routes:
         name = ""
         origin = ""
         destination = ""
-        times = [] # Just gather all times for now, later try to figure out how to get from different parts of the page into different tables
-        cords = []
         wd_ida = []
         wd_volta = []
         sa_ida = []
         sa_volta = []
         su_ida = []
         su_volta = []
-#        print layout
         for object in layout:
             if not issubclass(type(object), LTRect):
                 # Here we have all data objects on the page, we now need to get their values and match them with the right variables
-#                print object
-#                print fieldNr, object.get_text()
                 tmp = object.get_text().strip()
                 if tmp == u"EXPRESSO LORENZUTTI" or tmp == u"ITINERARIO" or tmp == u"AOS DOMINGOS" or tmp == u"AOS SABADOS" or tmp == u"DIAS UTEIS":
-#                    print "bailing", tmp
                     continue
                 if tmp == u"PARTIDAS:":
                     fieldNr += 1
-#                    print "bailing", tmp
                     continue
                 tmpList = tmp.split(u" ")
                 if tmpList[0] == u"Início" or tmpList[0] == u"Inicio":
-#                    print "bailing", tmp
                     continue
-#                print tmp.replace(u"/n", u" "),
                 if fieldNr == 0:
-#                    print "fliedNr", fieldNr, "Setting ref and name from ", tmp
                     tmp = object.get_text()
                     tmpList = tmp.split(u" ")
                     tmpList.pop(0)
@@ -128,17 +112,12 @@ for i in routes:
                     tmpList.pop(0)
                     name = u" ".join(tmpList).strip()
                     fieldNr += 1
-#                    print tmpList
                 elif fieldNr == 2:
-#                    print "fliedNr", fieldNr, "Setting origin from ", tmp
                     origin = object.get_text().strip()
                     fieldNr += 1
                 elif fieldNr == 4:
-#                    print "fliedNr", fieldNr, "Setting destination from ", tmp
                     destination = object.get_text().strip()
                     fieldNr += 1
-#                elif fieldNr == 0 or fieldNr == 2 or fieldNr == 3 or fieldNr == 4 or fieldNr == 6:
-#                    tmp = object.get_text()
                 else:
                     tmp = object.get_text()
                     # Try to split tmp at linebreaks for fields with multiple times
@@ -146,13 +125,9 @@ for i in routes:
                     for t in tmpList:
                         t = t.strip()
                         for x in t.split():
-#                            print x
                             if x[0] == u"0" or x[0] == u"1" or x[0] == u"2":
-#                                print x,
                                 if len(t) > 10:
                                     continue
-#                                times.append(t)
-#                                cords.append(object.bbox)
                                 dir = "ida"
                                 if object.bbox[0] > 225.0:
                                     dir = "volta"
@@ -176,29 +151,14 @@ for i in routes:
 #                                print t, object.bbox
                             else:
                                 continue
-#                        print len(x)
-#                    try:
-#                        times.append(tmpList)
-#                    except:
-#                        times.extend(tmpList)
-#                fieldNr = fieldNr + 1
         name = name.split(u"\n")[0]
         print ref, name
         print "    From", origin
         print "    To", destination
-#        print len(wd_ida), "on Weekdays ida:", sorted(wd_ida)
-#        print len(wd_volta), "on Weekdays volta:", sorted(wd_volta)
-#        print len(sa_ida), "on Saturdays ida:", sorted(sa_ida)
-#        print len(sa_volta), "on Saturdays volta:", sorted(sa_volta)
-#        print len(su_ida), "on Sundays ida:", sorted(su_ida)
-#        print len(su_volta), "on Sundays volta:", sorted(su_volta)
         myRoutes["routes"][ref] = [ create_json(origin, destination, wd_ida, sa_ida, su_ida),
                                    create_json(destination, origin, wd_volta, sa_volta, su_volta) ]
-
-#print myRoutes
-
 with open('timetable.json', 'w') as outfile:
-    json.dump(myRoutes, outfile)
+    json.dump(myRoutes, outfile, sort_keys=True, indent=4)
 
 
 
