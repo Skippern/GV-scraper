@@ -29,10 +29,19 @@ baseurl = "http://www.expressolorenzutti.com.br/horarios/"
 ignoreVariants = True
 blacklistVariants = True
 
+debugMe = True
+
 # List of route numbers
 routes = [ "001", "002", "003", "004", "005", "006", "007", "008", "009", "010", "011", "012", "013", "014", "015", "016", "017", "018", "019", "020", "021", "022", "023", "024", "025", "026", "027", "028", "029", "030", "031", "032", "033", "034", "035", "036", "037", "038", "039", "040", "041", "042", "043", "044", "045", "046", "047", "048", "049", "050", "051", "052", "053", "054", "055", "056", "057", "058" ]
-#routes = [ "001", "009" ]
+#routes = [ "057", "058" ]
 myRoutes = {}
+
+def debug_to_screen(text, newLine=True):
+    if debugMe:
+        if newLine:
+            print text
+        else:
+            print text,
 
 def uniq(values):
     output = []
@@ -189,7 +198,6 @@ for i in routes:
                                     su_ida.append(t)
                                 elif dir == "volta" and dayOfWeek == "su":
                                     su_volta.append(t)
-#                                print t, object.bbox
                             else:
                                 continue
         name = name.split(u"\n")[0]
@@ -203,14 +211,21 @@ for i in routes:
         sa_volta = uniq(sa_volta)
         su_ida = uniq(su_ida)
         su_volta = uniq(su_volta)
+        wd_ida.sort()
+        wd_volta.sort()
+        sa_ida.sort()
+        sa_volta.sort()
+        su_ida.sort()
+        su_volta.sort()
         myVariations = []
         myVariationList = {}
         variationSet = set()
         for t in wd_ida:
+            debug_to_screen("(wi) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                #print "(wi) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation)
+                debug_to_screen("(wi) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 wd_ida.remove(t)
                 if ignoreVariants:
                     wd_ida.append(newT)
@@ -228,13 +243,14 @@ for i in routes:
                     myVariationList[tmp]["ida"]["Su"] = []
                     myVariationList[tmp]["volta"]["Su"] = []
                 myVariationList[tmp]["ida"]["Mo-Fr"].append(newT)
-            #else:
-                #print len(t), t
+            else:
+                debug_to_screen(len(t))
         for t in wd_volta:
+            debug_to_screen("(wv) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                #print "(wv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation)
+                debug_to_screen("(wv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 wd_volta.remove(t)
                 if ignoreVariants:
                     wd_volta.append(newT)
@@ -252,13 +268,14 @@ for i in routes:
                     myVariationList[tmp]["ida"]["Su"] = []
                     myVariationList[tmp]["volta"]["Su"] = []
                 myVariationList[tmp]["volta"]["Mo-Fr"].append(newT)
-            #else:
-                #print len(t), t
+            else:
+                debug_to_screen(len(t))
         for t in sa_ida:
+            debug_to_screen("(si) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                #print "(si) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation)
+                debug_to_screen("(si) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 sa_ida.remove(t)
                 if ignoreVariants:
                     sa_ida.append(newT)
@@ -276,13 +293,14 @@ for i in routes:
                     myVariationList[tmp]["ida"]["Su"] = []
                     myVariationList[tmp]["volta"]["Su"] = []
                 myVariationList[tmp]["ida"]["Sa"].append(newT)
-            #else:
-                #print len(t), t
+            else:
+                debug_to_screen(len(t))
         for t in sa_volta:
+            debug_to_screen("(sv) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                #print "(sv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation)
+                debug_to_screen("(sv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 sa_volta.remove(t)
                 if ignoreVariants:
                     sa_volta.append(newT)
@@ -300,13 +318,14 @@ for i in routes:
                     myVariationList[tmp]["ida"]["Su"] = []
                     myVariationList[tmp]["volta"]["Su"] = []
                 myVariationList[tmp]["volta"]["Sa"].append(newT)
-            #else:
-                #print len(t), t
+            else:
+                debug_to_screen(len(t))
         for t in su_ida:
+            debug_to_screen("(di) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                #print "(di) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation)
+                debug_to_screen("(di) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 su_ida.remove(t)
                 if ignoreVariants:
                     su_ida.append(newT)
@@ -324,13 +343,14 @@ for i in routes:
                     myVariationList[tmp]["ida"]["Su"] = []
                     myVariationList[tmp]["volta"]["Su"] = []
                 myVariationList[tmp]["ida"]["Su"].append(newT)
-            #else:
-                #print len(t), t
+            else:
+                debug_to_screen(len(t))
         for t in su_volta:
+            debug_to_screen("(dv) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                #print "(dv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation)
+                debug_to_screen("(dv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 su_volta.remove(t)
                 if ignoreVariants:
                     su_volta.append(newT)
@@ -348,8 +368,8 @@ for i in routes:
                     myVariationList[tmp]["ida"]["Su"] = []
                     myVariationList[tmp]["volta"]["Su"] = []
                 myVariationList[tmp]["volta"]["Su"].append(newT)
-            #else:
-                #print len(t), t
+            else:
+                debug_to_screen(len(t))
         if len(myVariations) > 0:
             myVariations = uniq(myVariations)
             print "Known variations: ",
@@ -360,7 +380,6 @@ for i in routes:
                     myRoutes["blacklist"].append(tmp)
                 myRoutes["routes"][tmp] = [ create_json(origin, destination, myVariationList[tmp]["ida"]["Mo-Fr"], myVariationList[tmp]["ida"]["Sa"], myVariationList[tmp]["ida"]["Su"]), create_json(destination, origin, myVariationList[tmp]["volta"]["Mo-Fr"], myVariationList[tmp]["volta"]["Sa"], myVariationList[tmp]["volta"]["Su"]) ]
             print ""
-            #            print myVariationList
 
         myRoutes["routes"][ref] = [ create_json(origin, destination, wd_ida, sa_ida, su_ida),
                                    create_json(destination, origin, wd_volta, sa_volta, su_volta) ]
