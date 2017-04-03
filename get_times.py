@@ -96,16 +96,37 @@ def lower_capitalized(input):
     output = output.replace(u"Patura", u"Paturá")
     return output
 
-def create_json(fromV, toV, weekdays, saturdays, sundays):
+def calculate_end_time(start_time, duration):
+    end_time = start_time
+    hr = int(start_time[:2])
+    min = int(start_time[3:])
+    min += duration
+    while min > 59:
+        hr += 1
+        min -= 60
+    end_time = "{0}:{1}".format(str(hr).zfill(2), str(min).zfill(2))
+    return end_time
+
+def create_json(fromV, toV, weekdays, saturdays, sundays, duration=60):
     weekdays.sort()
     saturdays.sort()
     sundays.sort()
     retValue = {}
     retValue[u"from"] = fromV
     retValue[u"to"] = toV
-    retValue[u"Mo-Fr"] = weekdays
-    retValue[u"Sa"] = saturdays
-    retValue[u"Su"] = sundays
+    retValue[u"stations"] = [ fromV, toV ]
+    retValue[u"Mo-Fr"] = []
+    for t in weekdays:
+        tmp = calculate_end_time(t, duration)
+        retValue[u"Mo-Fr"].append( [ t, tmp ] )
+    retValue[u"Sa"] = []
+    for t in saturdays:
+        tmp = calculate_end_time(t, duration)
+        retValue[u"Sa"].append( [ t, tmp ] )
+    retValue[u"Su"] = []
+    for t in sundays:
+        tmp = calculate_end_time(t, duration)
+        retValue[u"Su"].append( [ t, tmp ] )
     return retValue
 
 myRoutes[u"updated"] = str(datetime.date.today())
