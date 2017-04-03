@@ -36,6 +36,68 @@ routes = [ "001", "002", "003", "004", "005", "006", "007", "008", "009", "010",
 #routes = [ "057", "058" ]
 myRoutes = {}
 
+# Duration listed as tuple ( ida, volta ) in minutes
+durationsList = {}
+durationsList["001"] = ( 45, 45 )
+durationsList["002"] = ( 40, 40 )
+durationsList["003"] = ( 45, 45 )
+durationsList["004"] = ( 35, 35 )
+durationsList["005"] = ( 35, 35 )
+durationsList["006"] = ( 60, 60 )
+durationsList["007"] = ( 55, 55 )
+durationsList["008"] = ( 55, 55 )
+durationsList["009"] = ( 30, 30 )
+durationsList["010"] = ( 35, 35 )
+durationsList["011"] = ( 30, 50 )
+durationsList["012"] = ( 45, 45 )
+durationsList["013"] = ( 30, 30 )
+durationsList["014"] = ( 45, 45 )
+durationsList["015"] = ( 35, 35 )
+durationsList["016"] = ( 60, 60 )
+durationsList["017"] = ( 60, 60 )
+durationsList["018"] = ( 35, 35 )
+durationsList["019"] = ( 55, 55 )
+durationsList["020"] = ( 75, 60 )
+durationsList["021"] = ( 60, 60 )
+durationsList["022"] = ( 65, 65 )
+durationsList["022 IF"] = ( 70, 70 )
+durationsList["023"] = ( 20, 20 )
+durationsList["024"] = ( 30, 30 )
+durationsList["025"] = ( 50, 50 )
+durationsList["026"] = ( 80, 80 )
+durationsList["027"] = ( 25, 30 )
+durationsList["028"] = ( 55, 55 )
+durationsList["029"] = ( 55, 55 )
+durationsList["030"] = ( 32, 56 )
+durationsList["031"] = ( 25, 35 )
+durationsList["032"] = ( 60, 60 )
+durationsList["033"] = ( 50, 50 )
+durationsList["034"] = ( 60, 60 )
+durationsList["035"] = ( 55, 55 )
+durationsList["036"] = ( 60, 60 )
+durationsList["037"] = ( 88, 88 )
+durationsList["038"] = ( 35, 35 )
+durationsList["039"] = ( 40, 40 )
+durationsList["040"] = ( 50, 50 )
+durationsList["041"] = ( 47, 47 )
+durationsList["042"] = ( 55, 55 )
+durationsList["043"] = ( 40, 40 )
+durationsList["044"] = ( 60, 60 )
+durationsList["045"] = ( 60, 60 )
+durationsList["046"] = ( 30, 30 )
+durationsList["047"] = ( 50, 50 )
+durationsList["048"] = ( 45, 45 )
+durationsList["049"] = ( 60, 60 )
+durationsList["050"] = ( 60, 60 )
+durationsList["051"] = ( 60, 60 )
+durationsList["052"] = ( 60, 60 )
+durationsList["053"] = ( 60, 60 )
+durationsList["054"] = ( 60, 60 )
+durationsList["055"] = ( 40, 40 )
+durationsList["056"] = ( 60, 60 )
+durationsList["057"] = ( 35, 35 )
+durationsList["058"] = ( 50, 50 )
+
 def debug_to_screen(text, newLine=True):
     if debugMe:
         if newLine:
@@ -412,6 +474,8 @@ for i in routes:
             else:
                 debug_to_screen(len(t))
                 myVariationList[ref]["volta"]["Su"].append(t)
+        durationIda = 60
+        durationVolta = 60
         if len(myVariations) > 0:
             myVariations = uniq(myVariations)
             print "Known variations: ",
@@ -420,10 +484,23 @@ for i in routes:
                 tmp = u"{0} {1}".format(ref, i)
                 if blacklistVariants:
                     myRoutes["blacklist"].append(tmp)
-                myRoutes["routes"][tmp] = [ create_json(origin, destination, myVariationList[tmp]["ida"]["Mo-Fr"], myVariationList[tmp]["ida"]["Sa"], myVariationList[tmp]["ida"]["Su"]), create_json(destination, origin, myVariationList[tmp]["volta"]["Mo-Fr"], myVariationList[tmp]["volta"]["Sa"], myVariationList[tmp]["volta"]["Su"]) ]
+                try:
+                    if durationsList[ref][0] > 0:
+                        durationIda = durationsList[ref][0]
+                        durationVolta = durationsList[ref][1]
+                except:
+                    durationIda = 60
+                    durationVolta = 60
+                myRoutes["routes"][tmp] = [ create_json(origin, destination, myVariationList[tmp]["ida"]["Mo-Fr"], myVariationList[tmp]["ida"]["Sa"], myVariationList[tmp]["ida"]["Su"], durationIda), create_json(destination, origin, myVariationList[tmp]["volta"]["Mo-Fr"], myVariationList[tmp]["volta"]["Sa"], myVariationList[tmp]["volta"]["Su"], durationVolta) ]
             print ""
-
-        myRoutes["routes"][ref] = [ create_json(origin, destination, myVariationList[ref]["ida"]["Mo-Fr"], myVariationList[ref]["ida"]["Sa"], myVariationList[ref]["ida"]["Su"]), create_json(destination, origin, myVariationList[ref]["volta"]["Mo-Fr"], myVariationList[ref]["volta"]["Sa"], myVariationList[ref]["volta"]["Su"]) ]
+        try:
+            if durationsList[ref][0] > 0:
+                durationIda = durationsList[ref][0]
+                durationVolta = durationsList[ref][1]
+        except:
+            durationIda = 60
+            durationVolta = 60
+        myRoutes["routes"][ref] = [ create_json(origin, destination, myVariationList[ref]["ida"]["Mo-Fr"], myVariationList[ref]["ida"]["Sa"], myVariationList[ref]["ida"]["Su"], durationIda), create_json(destination, origin, myVariationList[ref]["volta"]["Mo-Fr"], myVariationList[ref]["volta"]["Sa"], myVariationList[ref]["volta"]["Su"], durationVolta) ]
 
 with open('timetable.json', 'w') as outfile:
     json.dump(myRoutes, outfile, sort_keys=True, indent=4)
