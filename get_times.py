@@ -20,11 +20,20 @@ from pdfminer.pdfdevice import PDFDevice
 from pdfminer.layout import LAParams, LTTextBox, LTTextLine, LTFigure, LTImage, LTRect
 from pdfminer.converter import PDFPageAggregator
 
-logger = logging.getLogger("GFTS_get_times")
-logging.basicConfig(filename="./GFTS_get_times.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
+logger = logging.getLogger("GTFS_get_times")
+logging.basicConfig(filename="./GTFS_get_times.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
 
 # PDFs are stored here
 baseurl = "http://www.expressolorenzutti.com.br/horarios/"
+
+blacklisted = [ "013", # via Tartaruga
+               "016", # Not defined (was Recanto da Sereia)
+               "017", # Not defined
+               "036", # Unclear itenerario
+               "051", # Not defined
+               "056" ]
+whitelisted = [ u"022 IF" ]
+
 
 ignoreVariants = True
 blacklistVariants = True
@@ -33,70 +42,11 @@ debugMe = False
 
 # List of route numbers
 routes = [ "001", "002", "003", "004", "005", "006", "007", "008", "009", "010", "011", "012", "013", "014", "015", "016", "017", "018", "019", "020", "021", "022", "023", "024", "025", "026", "027", "028", "029", "030", "031", "032", "033", "034", "035", "036", "037", "038", "039", "040", "041", "042", "043", "044", "045", "046", "047", "048", "049", "050", "051", "052", "053", "054", "055", "056", "057", "058" ]
-#routes = [ "057", "058" ]
 myRoutes = {}
 
-# Duration listed as tuple ( ida, volta ) in minutes
 durationsList = {}
-durationsList["001"] = ( 45, 45 )
-durationsList["002"] = ( 40, 40 )
-durationsList["003"] = ( 45, 45 )
-durationsList["004"] = ( 35, 35 )
-durationsList["005"] = ( 35, 35 )
-durationsList["006"] = ( 60, 60 )
-durationsList["007"] = ( 55, 55 )
-durationsList["008"] = ( 55, 55 )
-durationsList["009"] = ( 30, 30 )
-durationsList["010"] = ( 35, 35 )
-durationsList["011"] = ( 30, 50 )
-durationsList["012"] = ( 45, 45 )
-durationsList["013"] = ( 30, 30 )
-durationsList["014"] = ( 45, 45 )
-durationsList["015"] = ( 35, 35 )
-durationsList["016"] = ( 60, 60 )
-durationsList["017"] = ( 60, 60 )
-durationsList["018"] = ( 35, 35 )
-durationsList["019"] = ( 55, 55 )
-durationsList["020"] = ( 75, 60 )
-durationsList["021"] = ( 60, 60 )
-durationsList["022"] = ( 65, 65 )
-durationsList["022 IF"] = ( 70, 70 )
-durationsList["023"] = ( 20, 20 )
-durationsList["024"] = ( 30, 30 )
-durationsList["025"] = ( 50, 50 )
-durationsList["026"] = ( 80, 80 )
-durationsList["027"] = ( 25, 30 )
-durationsList["028"] = ( 55, 55 )
-durationsList["029"] = ( 55, 55 )
-durationsList["030"] = ( 32, 56 )
-durationsList["031"] = ( 25, 35 )
-durationsList["032"] = ( 60, 60 )
-durationsList["033"] = ( 50, 50 )
-durationsList["034"] = ( 60, 60 )
-durationsList["035"] = ( 55, 55 )
-durationsList["036"] = ( 60, 60 )
-durationsList["037"] = ( 88, 88 )
-durationsList["038"] = ( 35, 35 )
-durationsList["039"] = ( 40, 40 )
-durationsList["040"] = ( 50, 50 )
-durationsList["041"] = ( 47, 47 )
-durationsList["042"] = ( 55, 55 )
-durationsList["043"] = ( 40, 40 )
-durationsList["044"] = ( 60, 60 )
-durationsList["045"] = ( 60, 60 )
-durationsList["046"] = ( 30, 30 )
-durationsList["047"] = ( 50, 50 )
-durationsList["048"] = ( 45, 45 )
-durationsList["049"] = ( 60, 60 )
-durationsList["050"] = ( 60, 60 )
-durationsList["051"] = ( 60, 60 )
-durationsList["052"] = ( 60, 60 )
-durationsList["053"] = ( 60, 60 )
-durationsList["054"] = ( 60, 60 )
-durationsList["055"] = ( 40, 40 )
-durationsList["056"] = ( 60, 60 )
-durationsList["057"] = ( 35, 35 )
-durationsList["058"] = ( 50, 50 )
+with open('durations.json', 'r') as infile:
+    durationsList = json.load(infile)
 
 def debug_to_screen(text, newLine=True):
     if debugMe:
@@ -129,8 +79,12 @@ def download_pdf(i):
             logger.debug("Successfully downloaded %s.pdf", i)
             return r.content
         else:
+            myRoutes[u"blacklist"].append(i)
+            logger.debug("%s added to blacklist (file does not exist or contain no data)", i)
             return None
     else:
+        myRoutes[u"blacklist"].append(i)
+        logger.debug("%s added to blacklist (file does not exist or contain no data)", i)
         return None
 
 def lower_capitalized(input):
@@ -140,7 +94,7 @@ def lower_capitalized(input):
         tmp = s.capitalize()
         toOutput.append(tmp)
     newString = u" ".join(toOutput)
-    output = newString.replace(u" Da ", u" da ").replace(u" Das ", u" das ").replace(u" De ", u" de ").replace(u" Do ", u" do ").replace(u" Dos ", u" dos ").replace(u" E ", u" e ").replace(u"Sesc", u"SESC").replace(u"sesc", u"SESC").replace(u" X ", u" x ").replace(u"Ciac", u"CIAC").replace(u"Via", u"via").replace(u"Br ", u"BR-").replace(u"Br-", u"BR-").replace(u"Br1", u"BR-1").replace(u"BR 101", u"BR-101").replace(u"BR101", u"BR-101").replace(u"Caic", u"CAIC").replace(u"  ", u" ")
+    output = newString.replace(u" Da ", u" da ").replace(u" Das ", u" das ").replace(u" De ", u" de ").replace(u" Do ", u" do ").replace(u" Dos ", u" dos ").replace(u" E ", u" e ").replace(u"Sesc", u"SESC").replace(u"sesc", u"SESC").replace(u" X ", u" x ").replace(u"Ciac", u"CIAC").replace(u"Via", u"via").replace(u"Br ", u"BR-").replace(u"Br-", u"BR-").replace(u"Br1", u"BR-1").replace(u"Caic", u"CAIC").replace(u"  ", u" ")
 # Specific place names
     output = output.replace(u"Trevo Setiba", u"Trevo de Setiba")
     output = output.replace(u"Trevo BR-101", u"Trevo da BR-101")
@@ -156,6 +110,7 @@ def lower_capitalized(input):
     output = output.replace(u"muquiçaba", u"Muquiçaba")
     output = output.replace(u"Independencia", u"Independência")
     output = output.replace(u"Patura", u"Paturá")
+    output = output.replace(u"Iguape", u"Iguapé")
     return output
 
 def calculate_end_time(start_time, duration):
@@ -197,6 +152,14 @@ myRoutes[u"network"] = u"PMG"
 myRoutes[u"source"] = baseurl
 myRoutes[u"blacklist"] = []
 myRoutes[u"routes"] = {}
+
+whitelistSet = set()
+
+for wl in whitelisted:
+    whitelistSet.add(wl)
+
+for bl in blacklisted:
+    myRoutes["blacklist"].append(bl)
 
 for i in routes:
     pdf = download_pdf(i)
@@ -321,7 +284,10 @@ for i in routes:
                 variation = t[5:].strip()
                 debug_to_screen("(wi) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
-                    myVariationList[ref]["ida"]["Mo-Fr"].append(newT)
+                    if ref not in whitelistSet:
+                        myVariationList[ref]["ida"]["Mo-Fr"].append(newT)
+                    else:
+                        print "Forced variation (wi)"
                 myVariations.append(variation)
                 tmp = u"{0} {1}".format(ref, variation)
                 if variation not in variationSet:
@@ -348,7 +314,10 @@ for i in routes:
                 variation = t[5:].strip()
                 debug_to_screen("(wv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
-                    myVariationList[ref]["volta"]["Mo-Fr"].append(newT)
+                    if ref not in whitelistSet:
+                        myVariationList[ref]["volta"]["Mo-Fr"].append(newT)
+                    else:
+                        print "Forced variation (wv)"
                 myVariations.append(variation)
                 tmp = u"{0} {1}".format(ref, variation)
                 if variation not in variationSet:
@@ -375,7 +344,8 @@ for i in routes:
                 variation = t[5:].strip()
                 debug_to_screen("(si) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
-                    myVariationList[ref]["ida"]["Sa"].append(newT)
+                    if ref not in whitelistSet:
+                        myVariationList[ref]["ida"]["Sa"].append(newT)
                 tmp = u"{0} {1}".format(ref, variation)
                 myVariations.append(variation)
                 if variation not in variationSet:
@@ -402,7 +372,8 @@ for i in routes:
                 variation = t[5:].strip()
                 debug_to_screen("(sv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
-                    myVariationList[ref]["volta"]["Sa"].append(newT)
+                    if ref not in whitelistSet:
+                        myVariationList[ref]["volta"]["Sa"].append(newT)
                 tmp = u"{0} {1}".format(ref, variation)
                 myVariations.append(variation)
                 if variation not in variationSet:
@@ -429,7 +400,8 @@ for i in routes:
                 variation = t[5:].strip()
                 debug_to_screen("(di) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
-                    myVariationList[ref]["ida"]["Su"].append(newT)
+                    if ref not in whitelistSet:
+                        myVariationList[ref]["ida"]["Su"].append(newT)
                 myVariations.append(variation)
                 tmp = u"{0} {1}".format(ref, variation)
                 if variation not in variationSet:
@@ -456,7 +428,8 @@ for i in routes:
                 variation = t[5:].strip()
                 debug_to_screen("(dv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
-                    myVariationList[ref]["volta"]["Su"].append(newT)
+                    if ref not in whitelistSet:
+                        myVariationList[ref]["volta"]["Su"].append(newT)
                 tmp = u"{0} {1}".format(ref, variation)
                 myVariations.append(variation)
                 if variation not in variationSet:
@@ -478,6 +451,7 @@ for i in routes:
         durationVolta = 60
         if len(myVariations) > 0:
             myVariations = uniq(myVariations)
+            logger.debug("Variations detected in %s: %s", ref, ", ".join(myVariations))
             print "Known variations: ",
             for i in myVariations:
                 print "{0}, ".format(i),
@@ -485,22 +459,42 @@ for i in routes:
                 if blacklistVariants:
                     myRoutes["blacklist"].append(tmp)
                 try:
-                    if durationsList[ref][0] > 0:
+                    if abs(durationsList[tmp][0]) > 0:
                         durationIda = durationsList[ref][0]
-                        durationVolta = durationsList[ref][1]
                 except:
                     durationIda = 60
+                try:
+                    if abs(durationsList[tmp][1]) > 0:
+                        durationVolta = durationsList[ref][1]
+                except:
                     durationVolta = 60
                 myRoutes["routes"][tmp] = [ create_json(origin, destination, myVariationList[tmp]["ida"]["Mo-Fr"], myVariationList[tmp]["ida"]["Sa"], myVariationList[tmp]["ida"]["Su"], durationIda), create_json(destination, origin, myVariationList[tmp]["volta"]["Mo-Fr"], myVariationList[tmp]["volta"]["Sa"], myVariationList[tmp]["volta"]["Su"], durationVolta) ]
             print ""
         try:
-            if durationsList[ref][0] > 0:
+            if abs(durationsList[ref][0]) > 0:
                 durationIda = durationsList[ref][0]
-                durationVolta = durationsList[ref][1]
         except:
             durationIda = 60
+        try:
+            if abs(durationsList[ref][1]) > 0:
+                durationVolta = durationsList[ref][1]
+        except:
             durationVolta = 60
         myRoutes["routes"][ref] = [ create_json(origin, destination, myVariationList[ref]["ida"]["Mo-Fr"], myVariationList[ref]["ida"]["Sa"], myVariationList[ref]["ida"]["Su"], durationIda), create_json(destination, origin, myVariationList[ref]["volta"]["Mo-Fr"], myVariationList[ref]["volta"]["Sa"], myVariationList[ref]["volta"]["Su"], durationVolta) ]
+
+newBlacklist = uniq(myRoutes["blacklist"])
+newBlacklist.sort()
+
+for wl in whitelisted:
+    try:
+        newBlacklist.remove(wl)
+        logger.debug("%s removed from blacklist", wl)
+    except:
+        logger.debug("Something went wrong: %s is not blacklisted", wl)
+        pass
+
+myRoutes["blacklist"] = newBlacklist
+logger.info("Complete blacklist: %s", ", ".join(newBlacklist))
 
 with open('timetable.json', 'w') as outfile:
     json.dump(myRoutes, outfile, sort_keys=True, indent=4)
