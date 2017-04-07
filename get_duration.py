@@ -22,19 +22,13 @@ from pdfminer.layout import LAParams, LTTextBox, LTTextLine, LTFigure, LTImage, 
 from pdfminer.converter import PDFPageAggregator
 routingE = None
 google_api_key = None
+routingE = "YOURS"
 try:
     import osrm
     routingE = "OSRM"
 except:
-    try:
-        import geolocation
-        routingE = "Geolocation"
-    except:
-        pass
+    pass
 import overpass
-
-
-routingE = "YOURS"
 
 
 logger = logging.getLogger("GTFS_get_durations")
@@ -47,6 +41,10 @@ debugMe = False
 
 # List of route numbers
 routes = [ "001", "002", "003", "004", "005", "006", "007", "008", "009", "010", "011", "012", "013", "014", "015", "016", "017", "018", "019", "020", "021", "022", "023", "024", "025", "026", "027", "028", "029", "030", "031", "032", "033", "034", "035", "036", "037", "038", "039", "040", "041", "042", "043", "044", "045", "046", "047", "048", "049", "050", "051", "052", "053", "054", "055", "056", "057", "058" ]
+
+if len(sys.argv) > 1:
+    sys.argv.pop(0)
+    routes = sys.argv
 
 config = {}
 with open('lorenzutti.json', 'r') as infile:
@@ -126,15 +124,12 @@ def lower_capitalized(input):
 def get_duration(ref, origin, destination):
     duration = 0
     points = []
-#    print u"Getting durations for {0}, from {1} to {2}".format(ref, origin, destination)
     # Overpass get relation
     searchString = u"relation[\"type\"=\"route\"][\"route\"=\"bus\"][\"ref\"=\"{0}\"][\"from\"~\"{1}\"][\"to\"~\"{2}\"]({3},{4},{5},{6});out body;>;".format(unicode(ref), unicode(origin), unicode(destination), unicode(config["query"]["bbox"]["s"]), unicode(config["query"]["bbox"]["w"]), unicode(config["query"]["bbox"]["n"]), unicode(config["query"]["bbox"]["e"])).encode('ascii', 'replace').replace(u"?", u".")
     api = overpass.API()
     result = False
     while result == False:
         try:
-#            result = api.Get(unidecode(unicode(searchString)), responseformat="json")
-#            result = api.Get(unicode(searchString), responseformat="json")
             result = api.Get(searchString, responseformat="json")
         except overpass.errors.OverpassSyntaxError as e:
             time.sleep(120)
@@ -186,15 +181,11 @@ def get_duration(ref, origin, destination):
             if elm["type"] == u"node" and elm["id"] == testNode:
                 points.append( ( elm["lat"], elm["lon"] ) )
     if len(points) == 0:
-        points.append( (-20.6810898, -40.5076486) ) # Praça da Vitória
-        points.append( (-20.6254054, -40.4379496) ) # Setiba
         logger.debug("No relation found, or relation have no defined stops: \"%s\" from %s to %s", ref, origin, destination)
         print "    Investigate route \"{0}\" from {1} to {2}. Relation not found, or have no stops mapped".format(ref, unidecode(origin), unidecode(destination))
         duration = -1
         return duration
     elif len(points) == 1:
-        points.append( (-20.6810898, -40.5076486) ) # Praça da Vitória
-        points.append( (-20.6254054, -40.4379496) ) # Setiba
         loger.debug("Relation have only one defined stop: \"%s\" from %s to %s", ref, origin, destination)
         duration = -2
         return duration
@@ -203,8 +194,6 @@ def get_duration(ref, origin, destination):
         result = osrm.match(points, steps=False, overview="full")
         tmp = result["total_time"]
         duration = int(float(tmp)/60.0) + 1
-    elif routingE == "Geolocation" and google_api_key != None:
-        print "I am not going to test this without an API key"
     elif routingE == "YOURS":
         routingBase = "http://www.yournavigation.org/api/1.0/gosmore.php?format=json&v=psv&fast=1&"
         fromP = None
@@ -242,17 +231,17 @@ def get_duration(ref, origin, destination):
                 time.sleep(10)
         for x in myRoute["routes"]:
             duration += x["duration"]
-#        print "Duration calculated to: {0}".format(duration)
+        duration = int(float(duration)/60.0)+1
     # Return
     if abs(duration) < 1:
         duration = int( ( float(durationsList[ref][0]) + float(durationsList[ref][1]) ) / 2.0 )
+        print "    !!! Values overrided"
     return duration
 
 for i in routes:
     pdf = download_pdf(i)
     if pdf == None:
         continue
-
     # Start pdfminer
     parser = PDFParser(io.BytesIO(pdf))
     document = PDFDocument(parser)
@@ -288,6 +277,8 @@ for i in routes:
                     tmpList = tmp.split(u" ")
                     tmpList.pop(0)
                     ref = tmpList[0]
+                    refList.append(ref)
+                    refSet.add(ref)
                     tmpList.pop(0)
                     tmpList.pop(0)
                     name = lower_capitalized(u" ".join(tmpList).strip())
@@ -300,15 +291,12 @@ for i in routes:
                     fieldNr += 1
                 else:
                     variationGrepper.append(object.get_text().strip())
-            refList = []
-            refSet = set()
             for vars in variationGrepper:
                 vars = vars.strip()
                 if vars[0] != u"0" and vars[0] != u"1" and vars[0] != u"2":
                     continue
                 if len(vars) > 10:
                     continue
-#                t = vars[:5].strip()
                 if ref not in refSet:
                     refList.append(ref)
                     refSet.add(ref)
@@ -318,15 +306,15 @@ for i in routes:
                     if tmp not in refSet:
                         refList.append(tmp)
                         refSet.add(tmp)
-        refList.sort()
-        for myRef in refList:
-            durationsList[myRef] = [ get_duration(myRef, origin, destination), get_duration(myRef, destination, origin) ]
-
         name = name.split(u"\n")[0]
         print ref, name
         print "    From", origin
         print "    To", destination
-        print "Durations calculated: ", durationsList[myRef]
+        refList = uniq(refList)
+        refList.sort()
+        for myRef in refList:
+            durationsList[myRef] = [ get_duration(myRef, origin, destination), get_duration(myRef, destination, origin) ]
+        print "Durations calculated: ", durationsList[ref]
 
 with open('durations.json', 'w') as outfile:
     json.dump(durationsList, outfile, sort_keys=True, indent=4)
