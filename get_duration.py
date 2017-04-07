@@ -291,6 +291,12 @@ for i in routes:
                     variationGrepper.append(object.get_text().strip())
             for vars in variationGrepper:
                 vars = vars.strip()
+                if len(vars) < 4:
+                    print vars
+                    tmp = u"{0} {1}".format(ref, vars).strip()
+                    if tmp not in refSet:
+                        refList.append(tmp)
+                        refSet.add(tmp)
                 if vars[0] != u"0" and vars[0] != u"1" and vars[0] != u"2":
                     continue
                 if len(vars) > 10:
@@ -298,7 +304,8 @@ for i in routes:
                 if ref not in refSet:
                     refList.append(ref)
                     refSet.add(ref)
-                if vars > 4:
+                if len(vars) > 4:
+                    print vars
                     variation = vars[5:].strip()
                     tmp = u"{0} {1}".format(ref, variation).strip()
                     if tmp not in refSet:

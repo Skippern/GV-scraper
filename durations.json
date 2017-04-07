@@ -264,11 +264,11 @@
         -1
     ], 
     "058 O": [
-        0, 
-        0
+        -1, 
+        -1
     ], 
     "network": "PMG", 
     "operator": "Expresso Lorenzutti", 
     "source": "http://www.expressolorenzutti.com.br/horarios/", 
-    "updated": "2017-04-06"
+    "updated": "2017-04-07"
 }
