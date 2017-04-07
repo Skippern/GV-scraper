@@ -20,8 +20,6 @@ from pdfminer.pdfinterp import PDFPageInterpreter
 from pdfminer.pdfdevice import PDFDevice
 from pdfminer.layout import LAParams, LTTextBox, LTTextLine, LTFigure, LTImage, LTRect
 from pdfminer.converter import PDFPageAggregator
-routingE = None
-google_api_key = None
 routingE = "YOURS"
 try:
     import osrm
