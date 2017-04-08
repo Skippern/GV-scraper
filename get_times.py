@@ -114,6 +114,8 @@ def lower_capitalized(input):
     return output
 
 def calculate_end_time(start_time, duration):
+    if duration < 1:
+        duration = 60
     end_time = start_time
     hr = int(start_time[:2])
     min = int(start_time[3:])
@@ -121,6 +123,8 @@ def calculate_end_time(start_time, duration):
     while min > 59:
         hr += 1
         min -= 60
+    while hr > 23:
+        hr -= 24 # Should we put a day+1 variable as well?
     end_time = "{0}:{1}".format(str(hr).zfill(2), str(min).zfill(2))
     return end_time
 
@@ -132,18 +136,21 @@ def create_json(fromV, toV, weekdays, saturdays, sundays, duration=60):
     retValue[u"from"] = fromV
     retValue[u"to"] = toV
     retValue[u"stations"] = [ fromV, toV ]
-    retValue[u"Mo-Fr"] = []
-    for t in weekdays:
-        tmp = calculate_end_time(t, duration)
-        retValue[u"Mo-Fr"].append( [ t, tmp ] )
-    retValue[u"Sa"] = []
-    for t in saturdays:
-        tmp = calculate_end_time(t, duration)
-        retValue[u"Sa"].append( [ t, tmp ] )
-    retValue[u"Su"] = []
-    for t in sundays:
-        tmp = calculate_end_time(t, duration)
-        retValue[u"Su"].append( [ t, tmp ] )
+    if len(weekdays) > 0:
+        retValue[u"Mo-Fr"] = []
+        for t in weekdays:
+            tmp = calculate_end_time(t, duration)
+            retValue[u"Mo-Fr"].append( [ t, tmp ] )
+    if len(saturdays) > 0:
+        retValue[u"Sa"] = []
+        for t in saturdays:
+            tmp = calculate_end_time(t, duration)
+            retValue[u"Sa"].append( [ t, tmp ] )
+    if len(sundays) > 0:
+        retValue[u"Su"] = []
+        for t in sundays:
+            tmp = calculate_end_time(t, duration)
+            retValue[u"Su"].append( [ t, tmp ] )
     return retValue
 
 myRoutes[u"updated"] = str(datetime.date.today())
@@ -458,25 +465,29 @@ for i in routes:
                 tmp = u"{0} {1}".format(ref, i)
                 if blacklistVariants:
                     myRoutes["blacklist"].append(tmp)
+                durationIda = 60
+                durationVolta = 60
                 try:
-                    if abs(durationsList[tmp][0]) > 0:
+                    if durationsList[tmp][0] > 0:
                         durationIda = durationsList[ref][0]
                 except:
                     durationIda = 60
                 try:
-                    if abs(durationsList[tmp][1]) > 0:
+                    if durationsList[tmp][1] > 0:
                         durationVolta = durationsList[ref][1]
                 except:
                     durationVolta = 60
                 myRoutes["routes"][tmp] = [ create_json(origin, destination, myVariationList[tmp]["ida"]["Mo-Fr"], myVariationList[tmp]["ida"]["Sa"], myVariationList[tmp]["ida"]["Su"], durationIda), create_json(destination, origin, myVariationList[tmp]["volta"]["Mo-Fr"], myVariationList[tmp]["volta"]["Sa"], myVariationList[tmp]["volta"]["Su"], durationVolta) ]
             print ""
+        durationIda = 60
+        durationVolta = 60
         try:
-            if abs(durationsList[ref][0]) > 0:
+            if durationsList[ref][0] > 0:
                 durationIda = durationsList[ref][0]
         except:
             durationIda = 60
         try:
-            if abs(durationsList[ref][1]) > 0:
+            if durationsList[ref][1] > 0:
                 durationVolta = durationsList[ref][1]
         except:
             durationVolta = 60

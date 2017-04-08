@@ -171,6 +171,12 @@ def get_duration(ref, origin, destination):
     # Make points list
     for elm in result["elements"]:
         if elm["type"] == u"relation":
+            if elm["members"][0]["role"] != u"stop":
+                print "Route doesn't start with a stop"
+                return -3
+            if elm["members"][-1]["role"] != u"stop":
+                print "Route doesn't end with a stop"
+                return -4
             for m in elm["members"]:
                 if m["role"] == u"stop" and m["type"] == u"node":
                     nodeList.append(m["ref"])
@@ -231,9 +237,9 @@ def get_duration(ref, origin, destination):
             duration += x["duration"]
         duration = int(float(duration)/60.0)+1
     # Return
-    if abs(duration) < 1:
-        duration = int( ( float(durationsList[ref][0]) + float(durationsList[ref][1]) ) / 2.0 )
-        print "    !!! Values overrided"
+#    if abs(duration) < 1:
+#        duration = int( ( float(durationsList[ref][0]) + float(durationsList[ref][1]) ) / 2.0 )
+#        print "    !!! Values overrided"
     return duration
 
 for i in routes:
@@ -292,7 +298,6 @@ for i in routes:
             for vars in variationGrepper:
                 vars = vars.strip()
                 if len(vars) < 4:
-                    print vars
                     tmp = u"{0} {1}".format(ref, vars).strip()
                     if tmp not in refSet:
                         refList.append(tmp)
@@ -305,7 +310,6 @@ for i in routes:
                     refList.append(ref)
                     refSet.add(ref)
                 if len(vars) > 4:
-                    print vars
                     variation = vars[5:].strip()
                     tmp = u"{0} {1}".format(ref, variation).strip()
                     if tmp not in refSet:
