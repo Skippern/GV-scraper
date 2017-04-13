@@ -49,8 +49,11 @@ with open('lorenzutti.json', 'r') as infile:
     config = json.load(infile)
 
 durationsList = {}
-with open('durations.json', 'r') as infile:
-    durationsList = json.load(infile)
+try:
+    with open('durations.json', 'r') as infile:
+        durationsList = json.load(infile)
+except:
+    pass
 durationsList[u"updated"] = str(datetime.date.today())
 durationsList[u"operator"] = u"Expresso Lorenzutti"
 durationsList[u"network"] = u"PMG"

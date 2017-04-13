@@ -117,6 +117,7 @@ def calculate_end_time(start_time, duration):
     if duration < 1:
         duration = 60
     end_time = start_time
+    day = 0
     hr = int(start_time[:2])
     min = int(start_time[3:])
     min += duration
@@ -125,33 +126,52 @@ def calculate_end_time(start_time, duration):
         min -= 60
     while hr > 23:
         hr -= 24 # Should we put a day+1 variable as well?
+        day += 1
     end_time = "{0}:{1}".format(str(hr).zfill(2), str(min).zfill(2))
+    if day > 0:
+        end_time = "{0}+{1}".format(end_time, str(day))
     return end_time
 
-def create_json(fromV, toV, weekdays, saturdays, sundays, duration=60):
+def create_json(ref, fromV, toV, weekdays, saturdays, sundays, duration=60):
     weekdays.sort()
     saturdays.sort()
     sundays.sort()
-    retValue = {}
-    retValue[u"from"] = fromV
-    retValue[u"to"] = toV
-    retValue[u"stations"] = [ fromV, toV ]
     if len(weekdays) > 0:
-        retValue[u"Mo-Fr"] = []
+        retValue = {}
+        retValue[u"from"] = fromV
+        retValue[u"to"] = toV
+        retValue[u"service"] = [ u"Mo-Fr" ]
+        retValue[u"excemptions"] = []
+        retValue[u"stations"] = [ fromV, toV ]
+        retValue[u"times"] = []
         for t in weekdays:
             tmp = calculate_end_time(t, duration)
-            retValue[u"Mo-Fr"].append( [ t, tmp ] )
+            retValue[u"times"].append( [ t, tmp ] )
+        myRoutes["routes"][ref].append(retValue)
     if len(saturdays) > 0:
-        retValue[u"Sa"] = []
+        retValue = {}
+        retValue[u"from"] = fromV
+        retValue[u"to"] = toV
+        retValue[u"service"] = [ u"Sa" ]
+        retValue[u"excemptions"] = []
+        retValue[u"stations"] = [ fromV, toV ]
+        retValue[u"times"] = []
         for t in saturdays:
             tmp = calculate_end_time(t, duration)
-            retValue[u"Sa"].append( [ t, tmp ] )
+            retValue[u"times"].append( [ t, tmp ] )
+        myRoutes["routes"][ref].append(retValue)
     if len(sundays) > 0:
-        retValue[u"Su"] = []
+        retValue = {}
+        retValue[u"from"] = fromV
+        retValue[u"to"] = toV
+        retValue[u"service"] = [ u"Su" ]
+        retValue[u"excemptions"] = []
+        retValue[u"stations"] = [ fromV, toV ]
+        retValue[u"times"] = []
         for t in sundays:
             tmp = calculate_end_time(t, duration)
-            retValue[u"Su"].append( [ t, tmp ] )
-    return retValue
+            retValue[u"times"].append( [ t, tmp ] )
+        myRoutes["routes"][ref].append(retValue)
 
 myRoutes[u"updated"] = str(datetime.date.today())
 myRoutes[u"operator"] = u"Expresso Lorenzutti"
@@ -477,7 +497,9 @@ for i in routes:
                         durationVolta = durationsList[ref][1]
                 except:
                     durationVolta = 60
-                myRoutes["routes"][tmp] = [ create_json(origin, destination, myVariationList[tmp]["ida"]["Mo-Fr"], myVariationList[tmp]["ida"]["Sa"], myVariationList[tmp]["ida"]["Su"], durationIda), create_json(destination, origin, myVariationList[tmp]["volta"]["Mo-Fr"], myVariationList[tmp]["volta"]["Sa"], myVariationList[tmp]["volta"]["Su"], durationVolta) ]
+                myRoutes["routes"][tmp] = []
+                create_json(tmp, origin, destination, myVariationList[tmp]["ida"]["Mo-Fr"], myVariationList[tmp]["ida"]["Sa"], myVariationList[tmp]["ida"]["Su"], durationIda)
+                create_json(tmp, destination, origin, myVariationList[tmp]["volta"]["Mo-Fr"], myVariationList[tmp]["volta"]["Sa"], myVariationList[tmp]["volta"]["Su"], durationVolta)
             print ""
         durationIda = 60
         durationVolta = 60
@@ -491,7 +513,9 @@ for i in routes:
                 durationVolta = durationsList[ref][1]
         except:
             durationVolta = 60
-        myRoutes["routes"][ref] = [ create_json(origin, destination, myVariationList[ref]["ida"]["Mo-Fr"], myVariationList[ref]["ida"]["Sa"], myVariationList[ref]["ida"]["Su"], durationIda), create_json(destination, origin, myVariationList[ref]["volta"]["Mo-Fr"], myVariationList[ref]["volta"]["Sa"], myVariationList[ref]["volta"]["Su"], durationVolta) ]
+        myRoutes["routes"][ref] = []
+        create_json(ref, origin, destination, myVariationList[ref]["ida"]["Mo-Fr"], myVariationList[ref]["ida"]["Sa"], myVariationList[ref]["ida"]["Su"], durationIda)
+        create_json(ref, destination, origin, myVariationList[ref]["volta"]["Mo-Fr"], myVariationList[ref]["volta"]["Sa"], myVariationList[ref]["volta"]["Su"], durationVolta)
 
 newBlacklist = uniq(myRoutes["blacklist"])
 newBlacklist.sort()
