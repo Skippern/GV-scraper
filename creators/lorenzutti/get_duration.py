@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Script to download time tables as PDF and calculate route durations based on relations for the routes in OpenStreetMap
+from common import *
 
 import os
 import sys
@@ -59,28 +60,12 @@ durationsList[u"operator"] = u"Expresso Lorenzutti"
 durationsList[u"network"] = u"PMG"
 durationsList[u"source"] = baseurl
 
-def debug_to_screen(text, newLine=True):
-    if debugMe:
-        if newLine:
-            print text
-        else:
-            print text,
-
-def uniq(values):
-    output = []
-    seen = set()
-    for value in values:
-        if value not in seen:
-            output.append(value)
-            seen.add(value)
-    return output
-
 def download_pdf(i):
     downloadURL = baseurl + i + ".pdf"
     r = False
     while r == False:
         try:
-            r = requests.get(downloadURL)
+            r = requests.get(downloadURL, timeout=30)
         except requests.exceptions.ReadTimeout as e:
             r = False
         except requests.exceptions.ConnectionError as e:
@@ -96,31 +81,6 @@ def download_pdf(i):
         logger.debug("No file downloaded for %s, skipping", i)
         return None
 
-def lower_capitalized(input):
-    newString = input.lower().replace(u"n. s .", u"nossa senhora da ").replace(u".", u". ")
-    toOutput = []
-    for s in newString.split(u" "):
-        tmp = s.capitalize()
-        toOutput.append(tmp)
-    newString = u" ".join(toOutput)
-    output = newString.replace(u" Da ", u" da ").replace(u" Das ", u" das ").replace(u" De ", u" de ").replace(u" Do ", u" do ").replace(u" Dos ", u" dos ").replace(u" E ", u" e ").replace(u"Sesc", u"SESC").replace(u"sesc", u"SESC").replace(u" X ", u" x ").replace(u"Ciac", u"CIAC").replace(u"Via", u"via").replace(u"Br ", u"BR-").replace(u"Br-", u"BR-").replace(u"Br1", u"BR-1").replace(u"Caic", u"CAIC").replace(u"  ", u" ")
-# Specific place names
-    output = output.replace(u"Trevo Setiba", u"Trevo de Setiba")
-    output = output.replace(u"Trevo BR-101", u"Trevo da BR-101")
-    output = output.replace(u"Santa Monica", u"Santa Mônica")
-    output = output.replace(u"Pontal Santa Mônica", u"Pontal de Santa Mônica")
-    output = output.replace(u"Vitoria", u"Vitória")
-    output = output.replace(u"Praça Vitória", u"Praça da Vitória")
-    output = output.replace(u"Ewerson de A. Sodré", u"Ewerson de Abreu Sodré")
-    output = output.replace(u"Meaipe", u"Meaípe")
-    output = output.replace(u"J. Boa Vista", u"Jardim Boa Vista")
-    output = output.replace(u"Jabarai", u"Jabaraí")
-    output = output.replace(u"olaria", u"Olaria")
-    output = output.replace(u"muquiçaba", u"Muquiçaba")
-    output = output.replace(u"Independencia", u"Independência")
-    output = output.replace(u"Patura", u"Paturá")
-    output = output.replace(u"Iguape", u"Iguapé")
-    return output
 
 def get_duration(ref, origin, destination):
     duration = 0
@@ -212,9 +172,12 @@ def get_duration(ref, origin, destination):
                 r = False
                 while r == False:
                     fullRoutingString = "{0}&flat={1}&flon={2}&tlat={3}&tlon={4}".format(routingBase,fromP[0],fromP[1],toP[0],toP[1])
-                    r = requests.get(fullRoutingString)
+                    r = requests.get(fullRoutingString, timeout=30)
                 getDuration = r.content
-                duration += int(getDuration[(getDuration.find("<traveltime>")+12):getDuration.find("</traveltime>")])
+                try:
+                    duration += int(getDuration[(getDuration.find("<traveltime>")+12):getDuration.find("</traveltime>")])
+                except:
+                    r = False
             fromP = toP
         duration = int( float(duration) / 60.0 ) + int( float(len(points) * 10) / 60.0 ) + 1
     else:
@@ -226,7 +189,7 @@ def get_duration(ref, origin, destination):
         myRoute = {}
         while r == False:
             try:
-                r = requests.get(searchString)
+                r = requests.get(searchString, timeout=30)
             except requests.exceptions.ReadTimeout as e:
                 r = False
             except requests.exceptions.ConnectionError as e:
