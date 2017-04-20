@@ -141,7 +141,7 @@ def create_json(ref, fromV, toV, weekdays, saturdays, sundays, duration=60):
         retValue[u"from"] = fromV
         retValue[u"to"] = toV
         retValue[u"service"] = [ u"Mo-Fr" ]
-        retValue[u"excemptions"] = []
+        retValue[u"exceptions"] = []
         retValue[u"stations"] = [ fromV, toV ]
         retValue[u"times"] = []
         for t in weekdays:
@@ -153,7 +153,7 @@ def create_json(ref, fromV, toV, weekdays, saturdays, sundays, duration=60):
         retValue[u"from"] = fromV
         retValue[u"to"] = toV
         retValue[u"service"] = [ u"Sa" ]
-        retValue[u"excemptions"] = []
+        retValue[u"exceptions"] = []
         retValue[u"stations"] = [ fromV, toV ]
         retValue[u"times"] = []
         for t in saturdays:
@@ -165,7 +165,7 @@ def create_json(ref, fromV, toV, weekdays, saturdays, sundays, duration=60):
         retValue[u"from"] = fromV
         retValue[u"to"] = toV
         retValue[u"service"] = [ u"Su" ]
-        retValue[u"excemptions"] = []
+        retValue[u"exceptions"] = []
         retValue[u"stations"] = [ fromV, toV ]
         retValue[u"times"] = []
         for t in sundays:
