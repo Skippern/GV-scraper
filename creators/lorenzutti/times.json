@@ -5,6 +5,7 @@
         "015 K", 
         "016", 
         "017", 
+        "024 AE", 
         "029 B", 
         "029 E", 
         "029 O", 
@@ -26,7 +27,7 @@
     "routes": {
         "001": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Mo-Fr"
@@ -44,7 +45,7 @@
                 "to": "Kubitschek"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Sa"
@@ -64,7 +65,7 @@
         ], 
         "002": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Mo-Fr"
@@ -82,7 +83,7 @@
                 "to": "Jardim Boa Vista"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Sa"
@@ -102,7 +103,7 @@
         ], 
         "003": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Centro", 
                 "service": [
                     "Mo-Fr"
@@ -152,7 +153,7 @@
                 "to": "Adalberto"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Centro", 
                 "service": [
                     "Sa"
@@ -202,7 +203,7 @@
                 "to": "Adalberto"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Adalberto", 
                 "service": [
                     "Mo-Fr"
@@ -272,7 +273,7 @@
                 "to": "Centro"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Adalberto", 
                 "service": [
                     "Sa"
@@ -344,7 +345,7 @@
         ], 
         "004": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Mo-Fr"
@@ -398,7 +399,7 @@
                 "to": "Olaria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Sa"
@@ -452,7 +453,7 @@
                 "to": "Olaria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Su"
@@ -510,7 +511,7 @@
                 "to": "Olaria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Olaria", 
                 "service": [
                     "Mo-Fr"
@@ -608,7 +609,7 @@
                 "to": "Jardim Boa Vista"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Olaria", 
                 "service": [
                     "Sa"
@@ -706,7 +707,7 @@
                 "to": "Jardim Boa Vista"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Olaria", 
                 "service": [
                     "Su"
@@ -802,7 +803,7 @@
         ], 
         "005": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Mo-Fr"
@@ -828,7 +829,7 @@
                 "to": "Olaria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Sa"
@@ -856,7 +857,7 @@
         ], 
         "006": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Mo-Fr"
@@ -874,7 +875,7 @@
                 "to": "Condados"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Sa"
@@ -892,7 +893,7 @@
                 "to": "Condados"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Condados", 
                 "service": [
                     "Mo-Fr"
@@ -910,7 +911,7 @@
                 "to": "Jardim Boa Vista"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Condados", 
                 "service": [
                     "Sa"
@@ -930,7 +931,7 @@
         ], 
         "007": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Portal Club", 
                 "service": [
                     "Mo-Fr"
@@ -976,7 +977,7 @@
                 "to": "Porto Grande"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Portal Club", 
                 "service": [
                     "Sa"
@@ -1022,7 +1023,7 @@
                 "to": "Porto Grande"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Portal Club", 
                 "service": [
                     "Su"
@@ -1056,7 +1057,7 @@
                 "to": "Porto Grande"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Porto Grande", 
                 "service": [
                     "Mo-Fr"
@@ -1122,7 +1123,7 @@
                 "to": "Portal Club"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Porto Grande", 
                 "service": [
                     "Sa"
@@ -1188,7 +1189,7 @@
                 "to": "Portal Club"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Porto Grande", 
                 "service": [
                     "Su"
@@ -1232,7 +1233,7 @@
         ], 
         "008": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Portal Club", 
                 "service": [
                     "Mo-Fr"
@@ -1254,7 +1255,7 @@
                 "to": "Porto Grande"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Portal Club", 
                 "service": [
                     "Sa"
@@ -1276,7 +1277,7 @@
                 "to": "Porto Grande"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Portal Club", 
                 "service": [
                     "Su"
@@ -1294,7 +1295,7 @@
                 "to": "Porto Grande"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Porto Grande", 
                 "service": [
                     "Mo-Fr"
@@ -1312,7 +1313,7 @@
                 "to": "Portal Club"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Porto Grande", 
                 "service": [
                     "Sa"
@@ -1330,7 +1331,7 @@
                 "to": "Portal Club"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Porto Grande", 
                 "service": [
                     "Su"
@@ -1350,7 +1351,7 @@
         ], 
         "009": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Mo-Fr"
@@ -1420,7 +1421,7 @@
                 "to": "Santa Margarida"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Sa"
@@ -1490,7 +1491,7 @@
                 "to": "Santa Margarida"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Su"
@@ -1548,7 +1549,7 @@
                 "to": "Santa Margarida"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Santa Margarida", 
                 "service": [
                     "Mo-Fr"
@@ -1654,7 +1655,7 @@
                 "to": "Jardim Boa Vista"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Santa Margarida", 
                 "service": [
                     "Sa"
@@ -1760,7 +1761,7 @@
                 "to": "Jardim Boa Vista"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Santa Margarida", 
                 "service": [
                     "Su"
@@ -1856,7 +1857,7 @@
         ], 
         "010": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jabara\u00ed", 
                 "service": [
                     "Mo-Fr"
@@ -1918,7 +1919,7 @@
                 "to": "Ipiranga"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jabara\u00ed", 
                 "service": [
                     "Sa"
@@ -1980,7 +1981,7 @@
                 "to": "Ipiranga"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jabara\u00ed", 
                 "service": [
                     "Su"
@@ -1998,7 +1999,7 @@
                 "to": "Ipiranga"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Mo-Fr"
@@ -2092,7 +2093,7 @@
                 "to": "Jabara\u00ed"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Sa"
@@ -2186,7 +2187,7 @@
                 "to": "Jabara\u00ed"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Su"
@@ -2206,7 +2207,7 @@
         ], 
         "010 M": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jabara\u00ed", 
                 "service": [
                     "Su"
@@ -2224,7 +2225,7 @@
                 "to": "Ipiranga"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Su"
@@ -2244,7 +2245,7 @@
         ], 
         "011": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jabara\u00ed", 
                 "service": [
                     "Mo-Fr"
@@ -2278,7 +2279,7 @@
                 "to": "Ipiranga"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jabara\u00ed", 
                 "service": [
                     "Sa"
@@ -2312,7 +2313,7 @@
                 "to": "Ipiranga"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jabara\u00ed", 
                 "service": [
                     "Su"
@@ -2362,7 +2363,7 @@
                 "to": "Ipiranga"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Mo-Fr"
@@ -2388,7 +2389,7 @@
                 "to": "Jabara\u00ed"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Sa"
@@ -2414,7 +2415,7 @@
                 "to": "Jabara\u00ed"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Su"
@@ -2478,7 +2479,7 @@
         ], 
         "012": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jabara\u00ed", 
                 "service": [
                     "Mo-Fr"
@@ -2548,7 +2549,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jabara\u00ed", 
                 "service": [
                     "Sa"
@@ -2622,7 +2623,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jabara\u00ed", 
                 "service": [
                     "Su"
@@ -2680,7 +2681,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -2790,7 +2791,7 @@
                 "to": "Jabara\u00ed"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Sa"
@@ -2900,7 +2901,7 @@
                 "to": "Jabara\u00ed"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Su"
@@ -2992,7 +2993,7 @@
         ], 
         "013": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jabara\u00ed", 
                 "service": [
                     "Mo-Fr"
@@ -3014,7 +3015,7 @@
                 "to": "Santa Margarida"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Santa Margarida", 
                 "service": [
                     "Mo-Fr"
@@ -3038,7 +3039,7 @@
         ], 
         "014": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Mo-Fr"
@@ -3060,7 +3061,7 @@
                 "to": "Varzea Nova"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Sa"
@@ -3082,7 +3083,7 @@
                 "to": "Varzea Nova"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Varzea Nova", 
                 "service": [
                     "Mo-Fr"
@@ -3104,7 +3105,7 @@
                 "to": "Kubitschek"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Varzea Nova", 
                 "service": [
                     "Sa"
@@ -3128,7 +3129,7 @@
         ], 
         "015": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Mo-Fr"
@@ -3182,7 +3183,7 @@
                 "to": "Nossa Senhora da Concei\u00e7\u00e3o"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Sa"
@@ -3236,7 +3237,7 @@
                 "to": "Nossa Senhora da Concei\u00e7\u00e3o"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Nossa Senhora da Concei\u00e7\u00e3o", 
                 "service": [
                     "Mo-Fr"
@@ -3310,7 +3311,7 @@
                 "to": "Kubitschek"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Nossa Senhora da Concei\u00e7\u00e3o", 
                 "service": [
                     "Sa"
@@ -3390,7 +3391,7 @@
         ], 
         "015 K": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Nossa Senhora da Concei\u00e7\u00e3o", 
                 "service": [
                     "Mo-Fr"
@@ -3410,7 +3411,7 @@
         ], 
         "018": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Mo-Fr"
@@ -3436,7 +3437,7 @@
                 "to": "Olaria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Sa"
@@ -3464,7 +3465,7 @@
         ], 
         "019": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "S\u00e3o Gabriel", 
                 "service": [
                     "Mo-Fr"
@@ -3526,7 +3527,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "S\u00e3o Gabriel", 
                 "service": [
                     "Sa"
@@ -3616,7 +3617,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "S\u00e3o Gabriel", 
                 "service": [
                     "Su"
@@ -3638,7 +3639,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -3736,7 +3737,7 @@
                 "to": "S\u00e3o Gabriel"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Sa"
@@ -3858,7 +3859,7 @@
                 "to": "S\u00e3o Gabriel"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Su"
@@ -3890,7 +3891,7 @@
         ], 
         "020": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jabuticaba", 
                 "service": [
                     "Mo-Fr"
@@ -3916,7 +3917,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -3944,7 +3945,7 @@
         ], 
         "021": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Andana", 
                 "service": [
                     "Mo-Fr"
@@ -3970,7 +3971,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -3998,7 +3999,7 @@
         ], 
         "022": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Praia do Sol", 
                 "service": [
                     "Mo-Fr"
@@ -4032,7 +4033,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Praia do Sol", 
                 "service": [
                     "Sa"
@@ -4066,7 +4067,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -4096,7 +4097,7 @@
                 "to": "Praia do Sol"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Sa"
@@ -4128,7 +4129,7 @@
         ], 
         "022 IF": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Praia do Sol", 
                 "service": [
                     "Mo-Fr"
@@ -4148,7 +4149,7 @@
         ], 
         "023": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Sol Nascente", 
                 "service": [
                     "Mo-Fr"
@@ -4166,7 +4167,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -4186,7 +4187,7 @@
         ], 
         "024": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Mo-Fr"
@@ -4201,32 +4202,32 @@
                         "07:00"
                     ], 
                     [
-                        "07:45", 
-                        "08:15"
+                        "07:50", 
+                        "08:20"
                     ], 
                     [
-                        "09:00", 
-                        "09:30"
+                        "09:05", 
+                        "09:35"
                     ], 
                     [
                         "11:20", 
                         "11:50"
                     ], 
                     [
-                        "12:35", 
-                        "13:05"
+                        "12:40", 
+                        "13:10"
                     ], 
                     [
-                        "16:25", 
-                        "16:55"
+                        "16:40", 
+                        "17:10"
                     ], 
                     [
-                        "17:40", 
-                        "18:10"
+                        "18:05", 
+                        "18:35"
                     ], 
                     [
-                        "19:00", 
-                        "19:30"
+                        "19:30", 
+                        "20:00"
                     ], 
                     [
                         "21:30", 
@@ -4240,7 +4241,7 @@
                 "to": "Camurugi"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Sa"
@@ -4255,32 +4256,32 @@
                         "07:00"
                     ], 
                     [
-                        "07:45", 
-                        "08:15"
+                        "07:50", 
+                        "08:20"
                     ], 
                     [
-                        "09:00", 
-                        "09:30"
+                        "09:05", 
+                        "09:35"
                     ], 
                     [
                         "11:20", 
                         "11:50"
                     ], 
                     [
-                        "12:35", 
-                        "13:05"
+                        "12:40", 
+                        "13:10"
                     ], 
                     [
-                        "16:25", 
-                        "16:55"
+                        "16:40", 
+                        "17:10"
                     ], 
                     [
-                        "17:40", 
-                        "18:10"
+                        "18:05", 
+                        "18:35"
                     ], 
                     [
-                        "19:00", 
-                        "19:30"
+                        "19:30", 
+                        "20:00"
                     ], 
                     [
                         "21:30", 
@@ -4294,7 +4295,7 @@
                 "to": "Camurugi"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Su"
@@ -4305,193 +4306,25 @@
                 ], 
                 "times": [
                     [
-                        "06:30", 
-                        "07:00"
+                        "08:55", 
+                        "09:25"
                     ], 
                     [
-                        "07:45", 
-                        "08:15"
+                        "21:40", 
+                        "22:10"
                     ], 
                     [
-                        "09:00", 
-                        "09:30"
-                    ], 
-                    [
-                        "11:15", 
-                        "11:45"
-                    ], 
-                    [
-                        "12:30", 
-                        "13:00"
-                    ], 
-                    [
-                        "16:30", 
-                        "17:00"
-                    ], 
-                    [
-                        "17:40", 
-                        "18:10"
-                    ], 
-                    [
-                        "18:50", 
-                        "19:20"
-                    ], 
-                    [
-                        "21:30", 
-                        "22:00"
-                    ], 
-                    [
-                        "22:20", 
-                        "22:50"
+                        "22:35", 
+                        "23:05"
                     ]
                 ], 
                 "to": "Camurugi"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Camurugi", 
                 "service": [
                     "Mo-Fr"
-                ], 
-                "stations": [
-                    "Camurugi", 
-                    "Ipiranga"
-                ], 
-                "times": [
-                    [
-                        "06:00", 
-                        "06:22"
-                    ], 
-                    [
-                        "07:15", 
-                        "07:37"
-                    ], 
-                    [
-                        "08:30", 
-                        "08:52"
-                    ], 
-                    [
-                        "09:45", 
-                        "10:07"
-                    ], 
-                    [
-                        "11:50", 
-                        "12:12"
-                    ], 
-                    [
-                        "13:15", 
-                        "13:37"
-                    ], 
-                    [
-                        "13:50", 
-                        "14:12"
-                    ], 
-                    [
-                        "14:35", 
-                        "14:57"
-                    ], 
-                    [
-                        "15:05", 
-                        "15:27"
-                    ], 
-                    [
-                        "15:45", 
-                        "16:07"
-                    ], 
-                    [
-                        "17:05", 
-                        "17:27"
-                    ], 
-                    [
-                        "18:15", 
-                        "18:37"
-                    ], 
-                    [
-                        "19:40", 
-                        "20:02"
-                    ], 
-                    [
-                        "22:00", 
-                        "22:22"
-                    ]
-                ], 
-                "to": "Ipiranga"
-            }, 
-            {
-                "excemptions": [], 
-                "from": "Camurugi", 
-                "service": [
-                    "Sa"
-                ], 
-                "stations": [
-                    "Camurugi", 
-                    "Ipiranga"
-                ], 
-                "times": [
-                    [
-                        "06:00", 
-                        "06:22"
-                    ], 
-                    [
-                        "07:15", 
-                        "07:37"
-                    ], 
-                    [
-                        "08:30", 
-                        "08:52"
-                    ], 
-                    [
-                        "09:45", 
-                        "10:07"
-                    ], 
-                    [
-                        "11:50", 
-                        "12:12"
-                    ], 
-                    [
-                        "13:15", 
-                        "13:37"
-                    ], 
-                    [
-                        "13:50", 
-                        "14:12"
-                    ], 
-                    [
-                        "14:35", 
-                        "14:57"
-                    ], 
-                    [
-                        "15:05", 
-                        "15:27"
-                    ], 
-                    [
-                        "15:45", 
-                        "16:07"
-                    ], 
-                    [
-                        "17:05", 
-                        "17:27"
-                    ], 
-                    [
-                        "18:15", 
-                        "18:37"
-                    ], 
-                    [
-                        "19:40", 
-                        "20:02"
-                    ], 
-                    [
-                        "22:00", 
-                        "22:22"
-                    ]
-                ], 
-                "to": "Ipiranga"
-            }, 
-            {
-                "excemptions": [], 
-                "from": "Camurugi", 
-                "service": [
-                    "Su"
                 ], 
                 "stations": [
                     "Camurugi", 
@@ -4519,16 +4352,16 @@
                         "12:22"
                     ], 
                     [
-                        "13:15", 
-                        "13:37"
+                        "13:20", 
+                        "13:42"
                     ], 
                     [
-                        "13:45", 
-                        "14:07"
+                        "13:50", 
+                        "14:12"
                     ], 
                     [
-                        "14:30", 
-                        "14:52"
+                        "14:35", 
+                        "14:57"
                     ], 
                     [
                         "15:15", 
@@ -4539,28 +4372,180 @@
                         "16:22"
                     ], 
                     [
-                        "17:15", 
-                        "17:37"
+                        "17:25", 
+                        "17:47"
                     ], 
                     [
-                        "18:30", 
-                        "18:52"
+                        "18:50", 
+                        "19:12"
                     ], 
                     [
-                        "19:40", 
-                        "20:02"
+                        "20:05", 
+                        "20:27"
                     ], 
                     [
-                        "22:00", 
-                        "22:22"
+                        "22:05", 
+                        "22:27"
+                    ]
+                ], 
+                "to": "Ipiranga"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Camurugi", 
+                "service": [
+                    "Sa"
+                ], 
+                "stations": [
+                    "Camurugi", 
+                    "Ipiranga"
+                ], 
+                "times": [
+                    [
+                        "06:00", 
+                        "06:22"
+                    ], 
+                    [
+                        "07:15", 
+                        "07:37"
+                    ], 
+                    [
+                        "08:30", 
+                        "08:52"
+                    ], 
+                    [
+                        "09:45", 
+                        "10:07"
+                    ], 
+                    [
+                        "12:00", 
+                        "12:22"
+                    ], 
+                    [
+                        "13:20", 
+                        "13:42"
+                    ], 
+                    [
+                        "13:50", 
+                        "14:12"
+                    ], 
+                    [
+                        "14:35", 
+                        "14:57"
+                    ], 
+                    [
+                        "15:15", 
+                        "15:37"
+                    ], 
+                    [
+                        "16:00", 
+                        "16:22"
+                    ], 
+                    [
+                        "17:25", 
+                        "17:47"
+                    ], 
+                    [
+                        "18:50", 
+                        "19:12"
+                    ], 
+                    [
+                        "20:05", 
+                        "20:27"
+                    ], 
+                    [
+                        "22:05", 
+                        "22:27"
+                    ]
+                ], 
+                "to": "Ipiranga"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Camurugi", 
+                "service": [
+                    "Su"
+                ], 
+                "stations": [
+                    "Camurugi", 
+                    "Ipiranga"
+                ], 
+                "times": [
+                    [
+                        "06:00", 
+                        "06:22"
+                    ], 
+                    [
+                        "07:15", 
+                        "07:37"
+                    ], 
+                    [
+                        "08:30", 
+                        "08:52"
+                    ], 
+                    [
+                        "09:45", 
+                        "10:07"
+                    ], 
+                    [
+                        "12:05", 
+                        "12:27"
+                    ], 
+                    [
+                        "13:20", 
+                        "13:42"
+                    ], 
+                    [
+                        "14:35", 
+                        "14:57"
+                    ], 
+                    [
+                        "16:00", 
+                        "16:22"
+                    ], 
+                    [
+                        "17:25", 
+                        "17:47"
+                    ], 
+                    [
+                        "18:50", 
+                        "19:12"
+                    ], 
+                    [
+                        "20:15", 
+                        "20:37"
+                    ], 
+                    [
+                        "22:15", 
+                        "22:37"
                     ]
                 ], 
                 "to": "Ipiranga"
             }
         ], 
+        "024 AE": [
+            {
+                "exceptions": [], 
+                "from": "Ipiranga", 
+                "service": [
+                    "Su"
+                ], 
+                "stations": [
+                    "Ipiranga", 
+                    "Camurugi"
+                ], 
+                "times": [
+                    [
+                        "08:55", 
+                        "09:55"
+                    ]
+                ], 
+                "to": "Camurugi"
+            }
+        ], 
         "025": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Bela Vista", 
                 "service": [
                     "Mo-Fr"
@@ -4654,7 +4639,7 @@
                 "to": "Ipiranga"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Bela Vista", 
                 "service": [
                     "Sa"
@@ -4736,7 +4721,7 @@
                 "to": "Ipiranga"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Bela Vista", 
                 "service": [
                     "Su"
@@ -4806,7 +4791,7 @@
                 "to": "Ipiranga"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Mo-Fr"
@@ -4960,7 +4945,7 @@
                 "to": "Bela Vista"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Sa"
@@ -5090,7 +5075,7 @@
                 "to": "Bela Vista"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Su"
@@ -5186,7 +5171,7 @@
         ], 
         "026": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Mo-Fr"
@@ -5208,7 +5193,7 @@
                 "to": "Taquara"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Sa"
@@ -5230,7 +5215,7 @@
                 "to": "Taquara"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Su"
@@ -5252,7 +5237,7 @@
                 "to": "Taquara"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Taquara", 
                 "service": [
                     "Mo-Fr"
@@ -5278,7 +5263,7 @@
                 "to": "Trevo da BR-101"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Taquara", 
                 "service": [
                     "Sa"
@@ -5304,7 +5289,7 @@
                 "to": "Trevo da BR-101"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Taquara", 
                 "service": [
                     "Su"
@@ -5332,14 +5317,14 @@
         ], 
         "027": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Mo-Fr"
                 ], 
                 "stations": [
                     "Trevo da BR-101", 
-                    "Kubitschek/Olaria"
+                    "Kubitschek / Olaria"
                 ], 
                 "times": [
                     [
@@ -5383,17 +5368,17 @@
                         "16:01"
                     ]
                 ], 
-                "to": "Kubitschek/Olaria"
+                "to": "Kubitschek / Olaria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Sa"
                 ], 
                 "stations": [
                     "Trevo da BR-101", 
-                    "Kubitschek/Olaria"
+                    "Kubitschek / Olaria"
                 ], 
                 "times": [
                     [
@@ -5437,17 +5422,17 @@
                         "16:01"
                     ]
                 ], 
-                "to": "Kubitschek/Olaria"
+                "to": "Kubitschek / Olaria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Su"
                 ], 
                 "stations": [
                     "Trevo da BR-101", 
-                    "Kubitschek/Olaria"
+                    "Kubitschek / Olaria"
                 ], 
                 "times": [
                     [
@@ -5503,16 +5488,16 @@
                         "22:06"
                     ]
                 ], 
-                "to": "Kubitschek/Olaria"
+                "to": "Kubitschek / Olaria"
             }, 
             {
-                "excemptions": [], 
-                "from": "Kubitschek/Olaria", 
+                "exceptions": [], 
+                "from": "Kubitschek / Olaria", 
                 "service": [
                     "Mo-Fr"
                 ], 
                 "stations": [
-                    "Kubitschek/Olaria", 
+                    "Kubitschek / Olaria", 
                     "Trevo da BR-101"
                 ], 
                 "times": [
@@ -5572,13 +5557,13 @@
                 "to": "Trevo da BR-101"
             }, 
             {
-                "excemptions": [], 
-                "from": "Kubitschek/Olaria", 
+                "exceptions": [], 
+                "from": "Kubitschek / Olaria", 
                 "service": [
                     "Sa"
                 ], 
                 "stations": [
-                    "Kubitschek/Olaria", 
+                    "Kubitschek / Olaria", 
                     "Trevo da BR-101"
                 ], 
                 "times": [
@@ -5638,13 +5623,13 @@
                 "to": "Trevo da BR-101"
             }, 
             {
-                "excemptions": [], 
-                "from": "Kubitschek/Olaria", 
+                "exceptions": [], 
+                "from": "Kubitschek / Olaria", 
                 "service": [
                     "Su"
                 ], 
                 "stations": [
-                    "Kubitschek/Olaria", 
+                    "Kubitschek / Olaria", 
                     "Trevo da BR-101"
                 ], 
                 "times": [
@@ -5726,7 +5711,7 @@
         ], 
         "028": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Mo-Fr"
@@ -5744,7 +5729,7 @@
                 "to": "Mea\u00edpe"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Sa"
@@ -5762,7 +5747,7 @@
                 "to": "Mea\u00edpe"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Mo-Fr"
@@ -5784,7 +5769,7 @@
                 "to": "Trevo da BR-101"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Sa"
@@ -5808,7 +5793,7 @@
         ], 
         "029": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Condados", 
                 "service": [
                     "Mo-Fr"
@@ -5870,7 +5855,7 @@
                 "to": "Trevo da BR-101"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Condados", 
                 "service": [
                     "Sa"
@@ -5932,7 +5917,7 @@
                 "to": "Trevo da BR-101"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Condados", 
                 "service": [
                     "Su"
@@ -6006,7 +5991,7 @@
                 "to": "Trevo da BR-101"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Mo-Fr"
@@ -6092,7 +6077,7 @@
                 "to": "Condados"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Sa"
@@ -6178,7 +6163,7 @@
                 "to": "Condados"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Su"
@@ -6278,7 +6263,7 @@
         ], 
         "029 B": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Mo-Fr"
@@ -6300,7 +6285,7 @@
                 "to": "Condados"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Sa"
@@ -6324,7 +6309,7 @@
         ], 
         "029 E": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Condados", 
                 "service": [
                     "Mo-Fr"
@@ -6342,7 +6327,7 @@
                 "to": "Trevo da BR-101"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Condados", 
                 "service": [
                     "Sa"
@@ -6360,7 +6345,7 @@
                 "to": "Trevo da BR-101"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Condados", 
                 "service": [
                     "Su"
@@ -6386,7 +6371,7 @@
                 "to": "Trevo da BR-101"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Mo-Fr"
@@ -6412,7 +6397,7 @@
                 "to": "Condados"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Sa"
@@ -6438,7 +6423,7 @@
                 "to": "Condados"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Su"
@@ -6482,7 +6467,7 @@
         ], 
         "029 O": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Condados", 
                 "service": [
                     "Mo-Fr"
@@ -6500,7 +6485,7 @@
                 "to": "Trevo da BR-101"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Condados", 
                 "service": [
                     "Sa"
@@ -6520,7 +6505,7 @@
         ], 
         "030": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -6614,7 +6599,7 @@
                 "to": "Kubitschek"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Sa"
@@ -6708,7 +6693,7 @@
                 "to": "Kubitschek"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Su"
@@ -6774,7 +6759,7 @@
                 "to": "Kubitschek"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Mo-Fr"
@@ -6952,7 +6937,7 @@
                 "to": "Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Sa"
@@ -7114,7 +7099,7 @@
                 "to": "Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Su"
@@ -7214,7 +7199,7 @@
         ], 
         "030 IF": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Mo-Fr"
@@ -7242,7 +7227,7 @@
         ], 
         "031": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo de Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -7436,7 +7421,7 @@
                 "to": "Olaria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo de Setiba", 
                 "service": [
                     "Sa"
@@ -7642,7 +7627,7 @@
                 "to": "Olaria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo de Setiba", 
                 "service": [
                     "Su"
@@ -7796,7 +7781,7 @@
                 "to": "Olaria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Olaria", 
                 "service": [
                     "Mo-Fr"
@@ -8094,7 +8079,7 @@
                 "to": "Trevo de Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Olaria", 
                 "service": [
                     "Sa"
@@ -8416,7 +8401,7 @@
                 "to": "Trevo de Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Olaria", 
                 "service": [
                     "Su"
@@ -8672,7 +8657,7 @@
         ], 
         "031 IF": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo de Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -8692,7 +8677,7 @@
         ], 
         "032": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Portal Club", 
                 "service": [
                     "Mo-Fr"
@@ -8714,7 +8699,7 @@
                 "to": "Porto Grande"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Portal Club", 
                 "service": [
                     "Sa"
@@ -8736,7 +8721,7 @@
                 "to": "Porto Grande"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Portal Club", 
                 "service": [
                     "Su"
@@ -8754,7 +8739,7 @@
                 "to": "Porto Grande"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Porto Grande", 
                 "service": [
                     "Mo-Fr"
@@ -8772,7 +8757,7 @@
                 "to": "Portal Club"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Porto Grande", 
                 "service": [
                     "Sa"
@@ -8790,7 +8775,7 @@
                 "to": "Portal Club"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Porto Grande", 
                 "service": [
                     "Su"
@@ -8810,7 +8795,7 @@
         ], 
         "033": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -8828,7 +8813,7 @@
                 "to": "Kubitschek"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Sa"
@@ -8846,7 +8831,7 @@
                 "to": "Kubitschek"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Mo-Fr"
@@ -8868,7 +8853,7 @@
                 "to": "Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Sa"
@@ -8892,7 +8877,7 @@
         ], 
         "034": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Mo-Fr"
@@ -8910,7 +8895,7 @@
                 "to": "Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Sa"
@@ -8930,7 +8915,7 @@
         ], 
         "035": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -8960,7 +8945,7 @@
                 "to": "Mea\u00edpe"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Sa"
@@ -8990,7 +8975,7 @@
                 "to": "Mea\u00edpe"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Mo-Fr"
@@ -9028,7 +9013,7 @@
                 "to": "Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Sa"
@@ -9068,7 +9053,7 @@
         ], 
         "036": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Mo-Fr"
@@ -9088,7 +9073,7 @@
         ], 
         "037": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo de Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -9114,7 +9099,7 @@
                 "to": "Olaria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo de Setiba", 
                 "service": [
                     "Sa"
@@ -9136,7 +9121,7 @@
                 "to": "Olaria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Olaria", 
                 "service": [
                     "Mo-Fr"
@@ -9158,7 +9143,7 @@
                 "to": "Trevo de Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Olaria", 
                 "service": [
                     "Sa"
@@ -9178,7 +9163,7 @@
         ], 
         "038": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo de Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -9204,7 +9189,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -9240,7 +9225,7 @@
         ], 
         "039": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -9274,7 +9259,7 @@
                 "to": "Trevo da BR-101"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Sa"
@@ -9308,7 +9293,7 @@
                 "to": "Trevo da BR-101"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Mo-Fr"
@@ -9350,7 +9335,7 @@
                 "to": "Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo da BR-101", 
                 "service": [
                     "Sa"
@@ -9394,7 +9379,7 @@
         ], 
         "040": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo de Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -9428,7 +9413,7 @@
                 "to": "Kubitschek"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo de Setiba", 
                 "service": [
                     "Sa"
@@ -9450,7 +9435,7 @@
                 "to": "Kubitschek"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Mo-Fr"
@@ -9476,7 +9461,7 @@
                 "to": "Trevo de Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Sa"
@@ -9496,7 +9481,7 @@
         ], 
         "040 IF": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo de Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -9514,7 +9499,7 @@
                 "to": "Kubitschek"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Kubitschek", 
                 "service": [
                     "Mo-Fr"
@@ -9534,7 +9519,7 @@
         ], 
         "041": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Trevo de Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -9554,7 +9539,7 @@
         ], 
         "042": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pontal de Santa M\u00f4nica", 
                 "service": [
                     "Mo-Fr"
@@ -9584,7 +9569,7 @@
                 "to": "Independ\u00eancia"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pontal de Santa M\u00f4nica", 
                 "service": [
                     "Sa"
@@ -9614,7 +9599,7 @@
                 "to": "Independ\u00eancia"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pontal de Santa M\u00f4nica", 
                 "service": [
                     "Su"
@@ -9656,7 +9641,7 @@
                 "to": "Independ\u00eancia"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Independ\u00eancia", 
                 "service": [
                     "Mo-Fr"
@@ -9686,7 +9671,7 @@
                 "to": "Pontal de Santa M\u00f4nica"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Independ\u00eancia", 
                 "service": [
                     "Sa"
@@ -9716,7 +9701,7 @@
                 "to": "Pontal de Santa M\u00f4nica"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Independ\u00eancia", 
                 "service": [
                     "Su"
@@ -9780,7 +9765,7 @@
         ], 
         "043": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pontal de Santa M\u00f4nica", 
                 "service": [
                     "Mo-Fr"
@@ -9810,7 +9795,7 @@
                 "to": "Independ\u00eancia"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pontal de Santa M\u00f4nica", 
                 "service": [
                     "Sa"
@@ -9840,7 +9825,7 @@
                 "to": "Independ\u00eancia"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pontal de Santa M\u00f4nica", 
                 "service": [
                     "Su"
@@ -9858,7 +9843,7 @@
                 "to": "Independ\u00eancia"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Independ\u00eancia", 
                 "service": [
                     "Mo-Fr"
@@ -9888,7 +9873,7 @@
                 "to": "Pontal de Santa M\u00f4nica"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Independ\u00eancia", 
                 "service": [
                     "Sa"
@@ -9920,7 +9905,7 @@
         ], 
         "044": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Patur\u00e1", 
                 "service": [
                     "Mo-Fr"
@@ -9954,7 +9939,7 @@
                 "to": "Ipiranga"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Patur\u00e1", 
                 "service": [
                     "Sa"
@@ -9988,7 +9973,7 @@
                 "to": "Ipiranga"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Mo-Fr"
@@ -10010,7 +9995,7 @@
                 "to": "Patur\u00e1"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Sa"
@@ -10034,7 +10019,7 @@
         ], 
         "045": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Mo-Fr"
@@ -10072,7 +10057,7 @@
                 "to": "Patur\u00e1"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Ipiranga", 
                 "service": [
                     "Sa"
@@ -10112,7 +10097,7 @@
         ], 
         "046": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Mo-Fr"
@@ -10162,7 +10147,7 @@
                 "to": "Camurugi"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Sa"
@@ -10212,7 +10197,7 @@
                 "to": "Camurugi"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Camurugi", 
                 "service": [
                     "Mo-Fr"
@@ -10286,7 +10271,7 @@
                 "to": "Jardim Boa Vista"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Camurugi", 
                 "service": [
                     "Sa"
@@ -10362,7 +10347,7 @@
         ], 
         "047": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Mo-Fr"
@@ -10408,7 +10393,7 @@
                 "to": "S\u00e3o Gabriel"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Sa"
@@ -10454,7 +10439,7 @@
                 "to": "S\u00e3o Gabriel"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Jardim Boa Vista", 
                 "service": [
                     "Su"
@@ -10500,7 +10485,7 @@
                 "to": "S\u00e3o Gabriel"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "S\u00e3o Gabriel", 
                 "service": [
                     "Mo-Fr"
@@ -10566,7 +10551,7 @@
                 "to": "Jardim Boa Vista"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "S\u00e3o Gabriel", 
                 "service": [
                     "Sa"
@@ -10632,7 +10617,7 @@
                 "to": "Jardim Boa Vista"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "S\u00e3o Gabriel", 
                 "service": [
                     "Su"
@@ -10696,7 +10681,7 @@
         ], 
         "048": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -10734,7 +10719,7 @@
                 "to": "Amarelos"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Sa"
@@ -10772,7 +10757,7 @@
                 "to": "Amarelos"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Su"
@@ -10806,7 +10791,7 @@
                 "to": "Amarelos"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Amarelos", 
                 "service": [
                     "Mo-Fr"
@@ -10856,7 +10841,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Amarelos", 
                 "service": [
                     "Sa"
@@ -10906,7 +10891,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Amarelos", 
                 "service": [
                     "Su"
@@ -10958,7 +10943,7 @@
         ], 
         "048 I": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -10976,7 +10961,7 @@
                 "to": "Amarelos"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Sa"
@@ -10994,7 +10979,7 @@
                 "to": "Amarelos"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Su"
@@ -11016,7 +11001,7 @@
                 "to": "Amarelos"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Amarelos", 
                 "service": [
                     "Su"
@@ -11048,7 +11033,7 @@
         ], 
         "049": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -11066,7 +11051,7 @@
                 "to": "Baia Nova"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Sa"
@@ -11084,7 +11069,7 @@
                 "to": "Baia Nova"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Su"
@@ -11102,7 +11087,7 @@
                 "to": "Baia Nova"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Baia Nova", 
                 "service": [
                     "Mo-Fr"
@@ -11124,7 +11109,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Baia Nova", 
                 "service": [
                     "Sa"
@@ -11148,7 +11133,7 @@
         ], 
         "050": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -11170,7 +11155,7 @@
                 "to": "Boa Esperan\u00e7a"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Boa Esperan\u00e7a", 
                 "service": [
                     "Mo-Fr"
@@ -11194,7 +11179,7 @@
         ], 
         "052": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -11216,7 +11201,7 @@
                 "to": "Buenos Aires"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Sa"
@@ -11238,7 +11223,7 @@
                 "to": "Buenos Aires"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Su"
@@ -11260,7 +11245,7 @@
                 "to": "Buenos Aires"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Buenos Aires", 
                 "service": [
                     "Mo-Fr"
@@ -11282,7 +11267,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Buenos Aires", 
                 "service": [
                     "Sa"
@@ -11304,7 +11289,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Buenos Aires", 
                 "service": [
                     "Su"
@@ -11328,7 +11313,7 @@
         ], 
         "053": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -11346,7 +11331,7 @@
                 "to": "Baia Nova"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Sa"
@@ -11364,7 +11349,7 @@
                 "to": "Baia Nova"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Su"
@@ -11382,7 +11367,7 @@
                 "to": "Baia Nova"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Baia Nova", 
                 "service": [
                     "Mo-Fr"
@@ -11404,7 +11389,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Baia Nova", 
                 "service": [
                     "Sa"
@@ -11428,7 +11413,7 @@
         ], 
         "054": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -11446,7 +11431,7 @@
                 "to": "Baia Nova"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Sa"
@@ -11464,7 +11449,7 @@
                 "to": "Baia Nova"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Su"
@@ -11482,7 +11467,7 @@
                 "to": "Baia Nova"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Baia Nova", 
                 "service": [
                     "Mo-Fr"
@@ -11504,7 +11489,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Baia Nova", 
                 "service": [
                     "Sa"
@@ -11528,7 +11513,7 @@
         ], 
         "055": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Mo-Fr"
@@ -11550,7 +11535,7 @@
                 "to": "Rio Grande"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Pra\u00e7a da Vit\u00f3ria", 
                 "service": [
                     "Sa"
@@ -11572,7 +11557,7 @@
                 "to": "Rio Grande"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Rio Grande", 
                 "service": [
                     "Mo-Fr"
@@ -11598,7 +11583,7 @@
                 "to": "Pra\u00e7a da Vit\u00f3ria"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Rio Grande", 
                 "service": [
                     "Sa"
@@ -11626,7 +11611,7 @@
         ], 
         "057": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Centro", 
                 "service": [
                     "Mo-Fr"
@@ -11652,7 +11637,7 @@
                 "to": "Iguap\u00e9"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Centro", 
                 "service": [
                     "Sa"
@@ -11678,7 +11663,7 @@
                 "to": "Iguap\u00e9"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Centro", 
                 "service": [
                     "Su"
@@ -11704,7 +11689,7 @@
                 "to": "Iguap\u00e9"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Iguap\u00e9", 
                 "service": [
                     "Mo-Fr"
@@ -11738,7 +11723,7 @@
                 "to": "Centro"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Iguap\u00e9", 
                 "service": [
                     "Sa"
@@ -11772,7 +11757,7 @@
                 "to": "Centro"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Iguap\u00e9", 
                 "service": [
                     "Su"
@@ -11800,7 +11785,7 @@
         ], 
         "057 B": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Iguap\u00e9", 
                 "service": [
                     "Mo-Fr"
@@ -11818,7 +11803,7 @@
                 "to": "Centro"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Iguap\u00e9", 
                 "service": [
                     "Sa"
@@ -11838,7 +11823,7 @@
         ], 
         "057 I": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Centro", 
                 "service": [
                     "Su"
@@ -11864,7 +11849,7 @@
                 "to": "Iguap\u00e9"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Iguap\u00e9", 
                 "service": [
                     "Mo-Fr"
@@ -11882,7 +11867,7 @@
                 "to": "Centro"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Iguap\u00e9", 
                 "service": [
                     "Sa"
@@ -11900,7 +11885,7 @@
                 "to": "Centro"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Iguap\u00e9", 
                 "service": [
                     "Su"
@@ -11928,7 +11913,7 @@
         ], 
         "058": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -11994,7 +11979,7 @@
                 "to": "Mea\u00edpe"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Sa"
@@ -12060,7 +12045,7 @@
                 "to": "Mea\u00edpe"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Su"
@@ -12138,7 +12123,7 @@
                 "to": "Mea\u00edpe"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Mo-Fr"
@@ -12228,7 +12213,7 @@
                 "to": "Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Sa"
@@ -12318,7 +12303,7 @@
                 "to": "Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Su"
@@ -12442,7 +12427,7 @@
         ], 
         "058 E": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -12468,7 +12453,7 @@
                 "to": "Mea\u00edpe"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Sa"
@@ -12494,7 +12479,7 @@
                 "to": "Mea\u00edpe"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Su"
@@ -12516,7 +12501,7 @@
                 "to": "Mea\u00edpe"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Mo-Fr"
@@ -12538,7 +12523,7 @@
                 "to": "Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Sa"
@@ -12560,7 +12545,7 @@
                 "to": "Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Su"
@@ -12580,7 +12565,7 @@
         ], 
         "058 E/O": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -12598,7 +12583,7 @@
                 "to": "Mea\u00edpe"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Sa"
@@ -12616,7 +12601,7 @@
                 "to": "Mea\u00edpe"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Mo-Fr"
@@ -12634,7 +12619,7 @@
                 "to": "Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Sa"
@@ -12654,7 +12639,7 @@
         ], 
         "058 O": [
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Mo-Fr"
@@ -12676,7 +12661,7 @@
                 "to": "Mea\u00edpe"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Setiba", 
                 "service": [
                     "Sa"
@@ -12698,7 +12683,7 @@
                 "to": "Mea\u00edpe"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Mo-Fr"
@@ -12716,7 +12701,7 @@
                 "to": "Setiba"
             }, 
             {
-                "excemptions": [], 
+                "exceptions": [], 
                 "from": "Mea\u00edpe", 
                 "service": [
                     "Sa"
@@ -12736,5 +12721,5 @@
         ]
     }, 
     "source": "http://www.expressolorenzutti.com.br/horarios/", 
-    "updated": "2017-04-13"
+    "updated": "2017-04-20"
 }
