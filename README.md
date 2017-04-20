@@ -15,6 +15,8 @@ Install dependencies by running
 
 `pip install -r requirements.txt`
 
+- [osrm](https://github.com/ustroetz/python-osrm) need to be installed manually. If not installed, or if install not importing, fallback to `YOURS` over `requests`
+
 # Durations
 
 There is a separate script, `get_durations.py` that tests the route relations against `OSRM` to generate a list of durations. This script is only needed to run when significant changes have been done in the itenerary, or new routes have been added. Mark that it will not erase the duration of routes that have been discontinued.
@@ -23,7 +25,7 @@ Routing is done by selecting the route relation in question with an `overpass` q
 
 If there are no route relation for a specific route, it returns `-1` duration, this is a signal to the scraper to test against the default value (60). Mark that routes that doesn't have a relation will not be handled by `osm2gtfs` either.
 
-`get_durations.py` depends, in addition to the above mentioned, on `overpass` and [osrm](https://github.com/ustroetz/python-osrm) python modules. Currently, `osrm` needs to be installed manually.
+`get_durations.py` depends, in addition to the above mentioned, on `overpass` and [osrm](https://github.com/ustroetz/python-osrm) python modules.
 
 As a fallback if `osrm` is not installed, or installation doesn't work, routing can be handled by a `YOURS` web interface, using `requests` calls. This is ment as a fallback, since `YOURS` must route between two nodes, so a long route must be called in a series of calls, instead of `osrm` that can take the entire waypoint list in one call.
 
