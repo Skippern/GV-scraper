@@ -1,13 +1,15 @@
-# PDF-scraper-Lorenzutti
-PDF Scraper to extract time tables for Expresso Lorenzutti, for use with `osm2gtfs`
+# GV Scraper
+GV Scraper gathers bus information from Grande Vitória, by different companies and sources, in different formats, for use with `osm2gtfs`
 
-The scraper script downloads the timetables on PDF files, supplied on the web site of [Expresso Lorenzutti](http://www.expressolorenzutti.com.br) and extracts the timetable from it before storing them as a JSON file.
+The scraper script downloads the timetables on PDF files, supplied on the web site of [Expresso Lorenzutti](http://www.expressolorenzutti.com.br) and [Sanremo](http://www.viacaosanremo.com.br/), and extracts the timetable from it before storing them as a JSON file.
 
-The script requires `pdfminer`, `requests`, `logging`, `json`, and `datetime` python moduls and runs under Python2.7
+For `Transcol` and `Seletivo`, it uses the same JSON interface, used by the [Ceturb](https://ceturb.es.gov.br) site.
 
 The JSON format is developed in collaboration with the developers of [osm2gtfs](https://github.com/grote/osm2gtfs) for full functionallity.
 
 # Requirements
+
+The script requires `pdfminer`, `requests`, `overpass`, `logging`, `json`, `workalendar` and `datetime` python moduls and runs under Python2.7
 
 Install dependencies by running
 
