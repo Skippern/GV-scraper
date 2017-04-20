@@ -3,3 +3,5 @@ requests
 logging
 json
 datetime
+overpass
+workalendar
