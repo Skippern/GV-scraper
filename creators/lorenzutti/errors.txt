@@ -1,0 +1,17 @@
+2017/04/21 00:35:10: GTFS_get_times WARNING - Variations detected in 010: M
+2017/04/21 00:35:49: GTFS_get_times WARNING - Variations detected in 015: K
+2017/04/21 00:35:50: GTFS_get_times ERROR - 016 added to blacklist (file does not exist or contain no data)
+2017/04/21 00:35:51: GTFS_get_times ERROR - 017 added to blacklist (file does not exist or contain no data)
+2017/04/21 00:36:34: GTFS_get_times WARNING - Variations detected in 022: IF
+2017/04/21 00:36:47: GTFS_get_times WARNING - Variations detected in 024: AE
+2017/04/21 00:37:31: GTFS_get_times WARNING - Variations detected in 029: O, E, B
+2017/04/21 00:37:47: GTFS_get_times WARNING - Variations detected in 030: IF
+2017/04/21 00:37:51: GTFS_get_times WARNING - Variations detected in 031: IF
+2017/04/21 00:39:19: GTFS_get_times WARNING - Variations detected in 040: IF
+2017/04/21 00:40:46: GTFS_get_times WARNING - Variations detected in 048: I
+2017/04/21 00:41:02: GTFS_get_times ERROR - 051 added to blacklist (file does not exist or contain no data)
+2017/04/21 00:41:43: GTFS_get_times ERROR - 056 added to blacklist (file does not exist or contain no data)
+2017/04/21 00:41:47: GTFS_get_times WARNING - Variations detected in 057: B, I
+2017/04/21 00:41:51: GTFS_get_times WARNING - Variations detected in 058: E/O, E, O
+2017/04/21 00:41:51: GTFS_get_times WARNING - 022 IF removed from blacklist
+2017/04/21 00:41:51: GTFS_get_times INFO - Complete blacklist: 010 M, 013, 015 K, 016, 017, 024 AE, 029 B, 029 E, 029 O, 030 IF, 031 IF, 036, 040 IF, 048 I, 051, 056, 057 B, 057 I, 058 E, 058 E/O, 058 O

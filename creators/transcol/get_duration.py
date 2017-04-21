@@ -49,7 +49,6 @@ def getLines():
         try:
             myJSON = json.dumps(json.loads(r.content))
         except:
-            print "r is not JSON"
             r = False
     for i in json.loads(myJSON):
         routes.append( [ str(int(i[u"Linha"])), lower_capitalized(unicode(i[u"Descricao"])) ] )
@@ -58,7 +57,7 @@ def getLines():
 
 def getRefs(ref):
     ref = ref.strip()
-    #    print "Testing getRefs on", ref
+    debug_to_screen( "Testing getRefs on {0}".format(ref) )
     stationList[ref] = [None, None]
     downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/BuscaHorarios/" + ref
     myJSON = None
@@ -74,7 +73,6 @@ def getRefs(ref):
         try:
             myJSON = json.dumps(json.loads(r.content))
         except:
-            print "r is not JSON"
             r = False
     for i in json.loads(myJSON):
         if i["Terminal_Seq"] == 1:
@@ -82,7 +80,7 @@ def getRefs(ref):
         elif i["Terminal_Seq"] == 2:
             stationList[ref][1] = lower_capitalized(i["Desc_Terminal"])
         else:
-            print i["Terminal_Seq"], i["Desc_Terminal"]
+            debug_to_screen( "{0} - {1}".format(i["Terminal_Seq"], i["Desc_Terminal"]))
         try:
             if len(i["Tipo_Orientacao"]) > 0 and i["Tipo_Orientacao"] != u" ":
                 tmp = ref + i["Tipo_Orientacao"]
@@ -127,14 +125,6 @@ durationsList[u"updated"] = str(datetime.date.today())
 durationsList[u"operator"] = u"Transcol"
 durationsList[u"network"] = u"Transcol"
 durationsList[u"source"] = baseurl
-
-def debug_to_screen(text, newLine=True):
-    if debugMe:
-        if newLine:
-            print text
-        else:
-            print text,
-
 
 def get_duration(ref, origin, destination):
     if origin == None:
@@ -194,18 +184,18 @@ def get_duration(ref, origin, destination):
     # Make points list
     if len(result["elements"]) < 1:
         logger.error("No relation found: \"%s\" from %s to %s", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
-        print "    Investigate route \"{0}\" from {1} to {2}. Relation not found".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
+        debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Relation not found".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
         duration = -5
         return duration
     for elm in result["elements"]:
         if elm["type"] == u"relation":
             if elm["members"][0]["role"] != u"stop":
                 logger.error("Route \"%s\" from %s to %s doesn't start with a stop", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
-                print "    Investigate route \"{0}\" from {1} to {2}. Route doesn't start with a stop".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
+                debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Route doesn't start with a stop".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
                 return -3
             if elm["members"][-1]["role"] != u"stop":
                 logger.error("Route \"%s\" from %s to %s doesn't end with a stop", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
-                print "    Investigate route \"{0}\" from {1} to {2}. Route doesn't end with a stop".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
+                debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Route doesn't end with a stop".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
                 return -4
             for m in elm["members"]:
                 if m["role"] == u"stop" and m["type"] == u"node":
@@ -216,15 +206,15 @@ def get_duration(ref, origin, destination):
                 points.append( ( elm["lat"], elm["lon"] ) )
     if len(points) == 0:
         logger.error("Relation have no defined stops: \"%s\" from %s to %s", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
-        print "    Investigate route \"{0}\" from {1} to {2}. Relation have no stops mapped".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
+        debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Relation have no stops mapped".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
         duration = -1
         return duration
     elif len(points) == 1:
         logger.error("Relation have only one defined stop: \"%s\" from %s to %s", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
-        print "    Investigate route \"{0}\" from {1} to {2}. Relation have only one defined stop".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
+        debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Relation have only one defined stop".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
         duration = -2
         return duration
-#    print "Routing with {0} nodes!".format(len(points))
+    debug_to_screen( "Routing with {0} nodes!".format(len(points)) )
     # Get Route
     if routingE == "OSRM":
         result = osrm.match(points, steps=False, overview="full")
@@ -279,13 +269,11 @@ def get_duration(ref, origin, destination):
     # Return
     return duration
 
-#print routes
 for i in routes:
     if len(i) > 3:
         ref = i[:3]
     else:
         ref = i
-    #    print ref
     origin = stationList[ref][0]
     destination = stationList[ref][1]
     print "    Route:", i

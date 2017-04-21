@@ -73,10 +73,10 @@ def download_pdf(i):
             logger.debug("Successfully downloaded %s.pdf", i)
             return r.content
         else:
-            logger.debug("No file downloaded for %s, skipping", i)
+            logger.info("No file downloaded for %s, skipping", i)
             return None
     else:
-        logger.debug("No file downloaded for %s, skipping", i)
+        logger.info("No file downloaded for %s, skipping", i)
         return None
 
 
@@ -133,10 +133,12 @@ def get_duration(ref, origin, destination):
     for elm in result["elements"]:
         if elm["type"] == u"relation":
             if elm["members"][0]["role"] != u"stop":
-                print "Route doesn't start with a stop"
+                debug_to_screen( "Route doesn't start with a stop")
+                logger.error("Route doesn't start with a stop: \"%s\" from %s to %s", ref, origin, destination)
                 return -3
             if elm["members"][-1]["role"] != u"stop":
-                print "Route doesn't end with a stop"
+                debug_to_screen( "Route doesn't end with a stop")
+                logger.error("Route doesn't end with a stop: \"%s\" from %s to %s", ref, origin, destination)
                 return -4
             for m in elm["members"]:
                 if m["role"] == u"stop" and m["type"] == u"node":
@@ -146,12 +148,12 @@ def get_duration(ref, origin, destination):
             if elm["type"] == u"node" and elm["id"] == testNode:
                 points.append( ( elm["lat"], elm["lon"] ) )
     if len(points) == 0:
-        logger.debug("No relation found, or relation have no defined stops: \"%s\" from %s to %s", ref, origin, destination)
-        print "    Investigate route \"{0}\" from {1} to {2}. Relation not found, or have no stops mapped".format(ref, unidecode(origin), unidecode(destination))
+        logger.error("No relation found, or relation have no defined stops: \"%s\" from %s to %s", ref, origin, destination)
+        debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Relation not found, or have no stops mapped".format(ref, unidecode(origin), unidecode(destination)))
         duration = -1
         return duration
     elif len(points) == 1:
-        loger.debug("Relation have only one defined stop: \"%s\" from %s to %s", ref, origin, destination)
+        loger.error("Relation have only one defined stop: \"%s\" from %s to %s", ref, origin, destination)
         duration = -2
         return duration
     # Get Route
@@ -203,7 +205,7 @@ def get_duration(ref, origin, destination):
     # Return
 #    if abs(duration) < 1:
 #        duration = int( ( float(durationsList[ref][0]) + float(durationsList[ref][1]) ) / 2.0 )
-#        print "    !!! Values overrided"
+#        debug_to_screen( "    !!! Values overrided")
     return duration
 
 for i in routes:

@@ -25,6 +25,7 @@ def lower_capitalized(input):
     # Specific place names
     output = output.replace(u"Br ", u"BR-").replace(u"Br-", u"BR-").replace(u"Br1", u"BR-1")
     output = output.replace(u"BR-- 1", u"BR-1")
+    output = output.replace(u"Av.", u"Avenida")
     output = output.replace(u"Sesc", u"SESC").replace(u"sesc", u"SESC")
     output = output.replace(u"Trevo Setiba", u"Trevo de Setiba")
     output = output.replace(u"Trevo BR-101", u"Trevo da BR-101")

@@ -3,6 +3,7 @@
 #
 # Common functions
 
+debugMe = False
 
 def uniq(values):
     output = []
@@ -46,6 +47,7 @@ def lower_capitalized(input):
     output = output.replace(u"P. Itapoã", u"Praia de Itapoã")
     output = output.replace(u"T . ", u"T. ")
     output = output.replace(u"T.", u"Terminal")
+    output = output.replace(u"T Laranjeiras", u"Terminal Laranjeiras")
     output = output.replace(u"Itaciba", u"Utacibá")
     output = output.replace(u"Jacaraipe", u"Jacaraípe")
     output = output.replace(u"Pç", u"Praça")

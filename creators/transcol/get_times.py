@@ -69,13 +69,6 @@ def calculate_end_time(start_time, duration):
         end_time = "{0}+{1}".format(end_time, str(day))
     return end_time
 
-def debug_to_screen(text, newLine=True):
-    if debugMe:
-        if newLine:
-            print text
-        else:
-            print text,
-
 def getLines():
     downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/ConsultaLinha/"
     routes = []
@@ -88,15 +81,11 @@ def getLines():
             r = False
         except requests.exceptions.ConnectionError as e:
             r = False
-#    print r.content
         try:
             myJSON = json.dumps(json.loads(r.content))
         except:
-            #            print "r is not JSON"
             r = False
     for i in json.loads(myJSON):
-        #        print i
-        #        print i["Linha"], i["Descricao"]
         routes.append( [ str(int(i[u"Linha"])), lower_capitalized(unicode(i[u"Descricao"])) ] )
     return routes
 
@@ -125,7 +114,6 @@ def getTimes(ref):
         try:
             myJSON = json.dumps(json.loads(r.content))
         except:
-            #            print "r is not JSON"
             r = False
     for i in json.loads(myJSON):
         nuRef = None
@@ -156,18 +144,14 @@ def getTimes(ref):
         elif i["TP_Horario"] == 4:
             day = "Ex"
         else:
-            print i["Descricao_Hora"]
+            debug_to_screen( unicode(i["Descricao_Hora"]) )
         direction = None
         if i["Terminal_Seq"] == 1:
             direction = "Ida"
         elif i["Terminal_Seq"] == 2:
             direction = "Volta"
-#        else:
-#            print i["Descricao_Hora"], i["Tipo_Orientacao"], i["Hora_Saida"], i["TP_Horario"], i["Terminal_Seq"], i["Dt_Inicio"], lower_capitalized(i["Desc_Terminal"]), str(int(i["Linha"]))
-#        print nuRef, i["Hora_Saida"], "-",
         myReturn[nuRef][day][direction].append(i["Hora_Saida"])
         myReturn["Stations"][direction] = lower_capitalized(i["Desc_Terminal"])
-#    print myReturn
     return myReturn
 
 def getObservations(ref):
@@ -185,15 +169,14 @@ def getObservations(ref):
         try:
             myJSON = json.dumps(json.loads(r.content))
         except:
-            #            print "r is not JSON"
             r = False
     for i in json.loads(myJSON):
-        #        print i["Tipo_Orientacao"], "-", i["Descricao_Orientacao"]
+        debug_to_screen( u"{0} - {1}".format(unicode(i["Tipo_Orientacao"]), unicode(i["Descricao_Orientacao"])) )
         myObs.append( [ i["Tipo_Orientacao"], i["Descricao_Orientacao"] ] )
     return myObs
 
 def create_json(ref, fromV, toV, d, times, duration=60):
-    #    print ref, "-", fromV, "->", toV, "(", d, ")", len(times), "-", duration
+    debug_to_screen(u"{0} - {1} -> {2} ({3}) {4} - {5}".format(ref, fromV, toV, d, len(times), duration))
     times.sort()
     retValue = {}
     retValue[u"from"] = fromV

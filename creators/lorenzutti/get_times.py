@@ -63,11 +63,11 @@ def download_pdf(i):
             return r.content
         else:
             myRoutes[u"blacklist"].append(i)
-            logger.debug("%s added to blacklist (file does not exist or contain no data)", i)
+            logger.error("%s added to blacklist (file does not exist or contain no data)", i)
             return None
     else:
         myRoutes[u"blacklist"].append(i)
-        logger.debug("%s added to blacklist (file does not exist or contain no data)", i)
+        logger.error("%s added to blacklist (file does not exist or contain no data)", i)
         return None
 
 def calculate_end_time(start_time, duration):
@@ -271,7 +271,7 @@ for i in routes:
                     if ref not in whitelistSet:
                         myVariationList[ref]["ida"]["Mo-Fr"].append(newT)
                     else:
-                        print "Forced variation (wi)"
+                        debug_to_screen("Forced variation (wi)")
                 myVariations.append(variation)
                 tmp = u"{0} {1}".format(ref, variation)
                 if variation not in variationSet:
@@ -301,7 +301,7 @@ for i in routes:
                     if ref not in whitelistSet:
                         myVariationList[ref]["volta"]["Mo-Fr"].append(newT)
                     else:
-                        print "Forced variation (wv)"
+                        debug_to_screen("Forced variation (wv)")
                 myVariations.append(variation)
                 tmp = u"{0} {1}".format(ref, variation)
                 if variation not in variationSet:
@@ -435,10 +435,10 @@ for i in routes:
         durationVolta = 60
         if len(myVariations) > 0:
             myVariations = uniq(myVariations)
-            logger.debug("Variations detected in %s: %s", ref, ", ".join(myVariations))
-            print "Known variations: ",
+            logger.warning("Variations detected in %s: %s", ref, ", ".join(myVariations))
+            debug_to_screen("Known variations: ",False)
             for i in myVariations:
-                print "{0}, ".format(i),
+                debug_to_screen( "{0}, ".format(i),False)
                 tmp = u"{0} {1}".format(ref, i)
                 if blacklistVariants:
                     myRoutes["blacklist"].append(tmp)
@@ -457,7 +457,7 @@ for i in routes:
                 myRoutes["routes"][tmp] = []
                 create_json(tmp, origin, destination, myVariationList[tmp]["ida"]["Mo-Fr"], myVariationList[tmp]["ida"]["Sa"], myVariationList[tmp]["ida"]["Su"], durationIda)
                 create_json(tmp, destination, origin, myVariationList[tmp]["volta"]["Mo-Fr"], myVariationList[tmp]["volta"]["Sa"], myVariationList[tmp]["volta"]["Su"], durationVolta)
-            print ""
+            debug_to_screen( "")
         durationIda = 60
         durationVolta = 60
         try:
@@ -480,9 +480,9 @@ newBlacklist.sort()
 for wl in whitelisted:
     try:
         newBlacklist.remove(wl)
-        logger.debug("%s removed from blacklist", wl)
+        logger.warning("%s removed from blacklist", wl)
     except:
-        logger.debug("Something went wrong: %s is not blacklisted", wl)
+        logger.error("Something went wrong: %s is not blacklisted", wl)
         pass
 
 myRoutes["blacklist"] = newBlacklist
