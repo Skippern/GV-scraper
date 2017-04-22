@@ -172,7 +172,10 @@ def get_duration(ref, origin, destination):
                 r = False
                 while r == False:
                     fullRoutingString = "{0}&flat={1}&flon={2}&tlat={3}&tlon={4}".format(routingBase,fromP[0],fromP[1],toP[0],toP[1])
-                    r = requests.get(fullRoutingString, timeout=30)
+                    try:
+                        r = requests.get(fullRoutingString, timeout=30)
+                    except requests.exceptions.ReadTimeout as e:
+                        r = False
                 getDuration = r.content
                 try:
                     duration += int(getDuration[(getDuration.find("<traveltime>")+12):getDuration.find("</traveltime>")])

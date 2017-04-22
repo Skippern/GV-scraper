@@ -1,17 +1,69 @@
-2017/04/21 00:35:10: GTFS_get_times WARNING - Variations detected in 010: M
-2017/04/21 00:35:49: GTFS_get_times WARNING - Variations detected in 015: K
-2017/04/21 00:35:50: GTFS_get_times ERROR - 016 added to blacklist (file does not exist or contain no data)
-2017/04/21 00:35:51: GTFS_get_times ERROR - 017 added to blacklist (file does not exist or contain no data)
-2017/04/21 00:36:34: GTFS_get_times WARNING - Variations detected in 022: IF
-2017/04/21 00:36:47: GTFS_get_times WARNING - Variations detected in 024: AE
-2017/04/21 00:37:31: GTFS_get_times WARNING - Variations detected in 029: O, E, B
-2017/04/21 00:37:47: GTFS_get_times WARNING - Variations detected in 030: IF
-2017/04/21 00:37:51: GTFS_get_times WARNING - Variations detected in 031: IF
-2017/04/21 00:39:19: GTFS_get_times WARNING - Variations detected in 040: IF
-2017/04/21 00:40:46: GTFS_get_times WARNING - Variations detected in 048: I
-2017/04/21 00:41:02: GTFS_get_times ERROR - 051 added to blacklist (file does not exist or contain no data)
-2017/04/21 00:41:43: GTFS_get_times ERROR - 056 added to blacklist (file does not exist or contain no data)
-2017/04/21 00:41:47: GTFS_get_times WARNING - Variations detected in 057: B, I
-2017/04/21 00:41:51: GTFS_get_times WARNING - Variations detected in 058: E/O, E, O
-2017/04/21 00:41:51: GTFS_get_times WARNING - 022 IF removed from blacklist
-2017/04/21 00:41:51: GTFS_get_times INFO - Complete blacklist: 010 M, 013, 015 K, 016, 017, 024 AE, 029 B, 029 E, 029 O, 030 IF, 031 IF, 036, 040 IF, 048 I, 051, 056, 057 B, 057 I, 058 E, 058 E/O, 058 O
+2017/04/22 01:06:58: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "010 M" from Jabaraí to Ipiranga
+2017/04/22 01:06:59: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "010 M" from Ipiranga to Jabaraí
+2017/04/22 01:10:08: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "013" from Jabaraí to Santa Margarida
+2017/04/22 01:10:10: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "013" from Santa Margarida to Jabaraí
+2017/04/22 01:10:21: GTFS_get_durations ERROR - Route doesn't end with a stop: "014" from Kubitschek to Varzea Nova
+2017/04/22 01:10:23: GTFS_get_durations ERROR - Route doesn't start with a stop: "014" from Varzea Nova to Kubitschek
+2017/04/22 01:11:59: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "015 K" from Kubitschek to Nossa Senhora da Conceição
+2017/04/22 01:12:01: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "015 K" from Nossa Senhora da Conceição to Kubitschek
+2017/04/22 01:12:04: GTFS_get_durations INFO - No file downloaded for 016, skipping
+2017/04/22 01:12:05: GTFS_get_durations INFO - No file downloaded for 017, skipping
+2017/04/22 01:21:24: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "022 IF" from Praça da Vitória to Praia do Sol
+2017/04/22 01:23:39: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "024 AE" from Ipiranga to Camurugi
+2017/04/22 01:23:41: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "024 AE" from Camurugi to Ipiranga
+2017/04/22 01:34:56: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "029 B" from Condados to Trevo da BR-101
+2017/04/22 01:34:57: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "029 B" from Trevo da BR-101 to Condados
+2017/04/22 01:35:00: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "029 E" from Condados to Trevo da BR-101
+2017/04/22 01:35:02: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "029 E" from Trevo da BR-101 to Condados
+2017/04/22 01:37:49: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "030 IF" from Setiba to Kubitschek
+2017/04/22 01:41:09: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "031 IF" from Trevo de Setiba to Olaria
+2017/04/22 01:41:10: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "031 IF" from Olaria to Trevo de Setiba
+2017/04/22 01:53:38: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "036" from Setiba to Meaípe
+2017/04/22 01:53:44: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "036" from Meaípe to Setiba
+2017/04/22 02:01:21: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "040 IF" from Trevo de Setiba to Kubitschek
+2017/04/22 02:01:23: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "040 IF" from Kubitschek to Trevo de Setiba
+2017/04/22 02:18:13: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "048 I" from Praça da Vitória to Amarelos
+2017/04/22 02:18:15: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "048 I" from Amarelos to Praça da Vitória
+2017/04/22 02:18:34: GTFS_get_durations ERROR - Route doesn't end with a stop: "049" from Praça da Vitória to Baia Nova
+2017/04/22 02:18:36: GTFS_get_durations ERROR - Route doesn't start with a stop: "049" from Baia Nova to Praça da Vitória
+2017/04/22 02:18:51: GTFS_get_durations ERROR - Route doesn't end with a stop: "050" from Praça da Vitória to Boa Esperança
+2017/04/22 02:18:54: GTFS_get_durations ERROR - Route doesn't start with a stop: "050" from Boa Esperança to Praça da Vitória
+2017/04/22 02:18:54: GTFS_get_durations INFO - No file downloaded for 051, skipping
+2017/04/22 02:19:03: GTFS_get_durations ERROR - Route doesn't end with a stop: "052" from Praça da Vitória to Buenos Aires
+2017/04/22 02:19:06: GTFS_get_durations ERROR - Route doesn't start with a stop: "052" from Buenos Aires to Praça da Vitória
+2017/04/22 02:19:22: GTFS_get_durations ERROR - Route doesn't end with a stop: "053" from Praça da Vitória to Baia Nova
+2017/04/22 02:19:26: GTFS_get_durations ERROR - Route doesn't start with a stop: "053" from Baia Nova to Praça da Vitória
+2017/04/22 02:19:39: GTFS_get_durations ERROR - Route doesn't end with a stop: "054" from Praça da Vitória to Baia Nova
+2017/04/22 02:19:40: GTFS_get_durations ERROR - Route doesn't start with a stop: "054" from Baia Nova to Praça da Vitória
+2017/04/22 02:19:56: GTFS_get_durations ERROR - Route doesn't end with a stop: "055" from Praça da Vitória to Rio Grande
+2017/04/22 02:19:59: GTFS_get_durations ERROR - Route doesn't start with a stop: "055" from Rio Grande to Praça da Vitória
+2017/04/22 02:19:59: GTFS_get_durations INFO - No file downloaded for 056, skipping
+2017/04/22 02:20:22: GTFS_get_durations ERROR - Route doesn't end with a stop: "057" from Centro to Iguapé
+2017/04/22 02:20:23: GTFS_get_durations ERROR - Route doesn't start with a stop: "057" from Iguapé to Centro
+2017/04/22 02:20:24: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "057 B" from Centro to Iguapé
+2017/04/22 02:20:26: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "057 B" from Iguapé to Centro
+2017/04/22 02:20:27: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "057 I" from Centro to Iguapé
+2017/04/22 02:20:31: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "057 I" from Iguapé to Centro
+2017/04/22 02:21:34: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "058 E" from Setiba to Meaípe
+2017/04/22 02:21:36: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "058 E" from Meaípe to Setiba
+2017/04/22 02:21:39: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "058 E/O" from Setiba to Meaípe
+2017/04/22 02:21:42: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "058 E/O" from Meaípe to Setiba
+2017/04/22 02:21:43: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "058 O" from Setiba to Meaípe
+2017/04/22 02:21:45: GTFS_get_durations ERROR - No relation found, or relation have no defined stops: "058 O" from Meaípe to Setiba
+2017/04/22 02:23:21: GTFS_get_times WARNING - Variations detected in 010: M
+2017/04/22 02:24:28: GTFS_get_times WARNING - Variations detected in 015: K
+2017/04/22 02:24:28: GTFS_get_times ERROR - 016 added to blacklist (file does not exist or contain no data)
+2017/04/22 02:24:29: GTFS_get_times ERROR - 017 added to blacklist (file does not exist or contain no data)
+2017/04/22 02:25:31: GTFS_get_times WARNING - Variations detected in 022: IF
+2017/04/22 02:25:43: GTFS_get_times WARNING - Variations detected in 024: AE
+2017/04/22 02:26:15: GTFS_get_times WARNING - Variations detected in 029: O, E, B
+2017/04/22 02:26:25: GTFS_get_times WARNING - Variations detected in 030: IF
+2017/04/22 02:26:35: GTFS_get_times WARNING - Variations detected in 031: IF
+2017/04/22 02:28:04: GTFS_get_times WARNING - Variations detected in 040: IF
+2017/04/22 02:29:26: GTFS_get_times WARNING - Variations detected in 048: I
+2017/04/22 02:29:52: GTFS_get_times ERROR - 051 added to blacklist (file does not exist or contain no data)
+2017/04/22 02:30:23: GTFS_get_times ERROR - 056 added to blacklist (file does not exist or contain no data)
+2017/04/22 02:30:36: GTFS_get_times WARNING - Variations detected in 057: B, I
+2017/04/22 02:30:41: GTFS_get_times WARNING - Variations detected in 058: E/O, E, O
+2017/04/22 02:30:41: GTFS_get_times WARNING - 022 IF removed from blacklist
+2017/04/22 02:30:41: GTFS_get_times INFO - Complete blacklist: 010 M, 013, 015 K, 016, 017, 024 AE, 029 B, 029 E, 029 O, 030 IF, 031 IF, 036, 040 IF, 048 I, 051, 056, 057 B, 057 I, 058 E, 058 E/O, 058 O

@@ -1,0 +1,2 @@
+2017/04/22 02:30:42: GTFS_get_durations INFO - Executing default list from http://ceturb.es.gov.br/
+2017/04/22 02:31:07: GTFS_get_durations INFO - Full route list to execute: 1603, 1608, 1609, 1610, 1610L, 1720, 1721, 1801, 1801H, 1801S, 1801X, 1802, 1802L, 1802S, 1804, 1804B, 1804D, 1804E, 1804L, 1804N, 1804P, 1804S, 1804T, 1804X, 1805, 1805S, 1806, 1806P, 1808, 1900, 1901, 1902, 1903

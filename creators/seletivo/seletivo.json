@@ -1,0 +1,33 @@
+{
+    "query": {
+        "bbox": {
+            "n": "-19.928",
+            "s": "-20.755",
+            "e": "-40.041",
+            "w": "-40.650"
+        },
+        "tags": {
+            "route": "bus"
+        }
+    },
+    "stops": {
+        "name_without": "Ponto sem nome",
+        "name_auto": "yes"
+    },
+    "agency": {
+        "agency_id": "BR-Seletivo",
+        "agency_name": "Ceturb GV, Seletivo",
+        "agency_url": "https://ceturb.es.gov.br",
+        "agency_timezone": "America/Sao_Paulo",
+        "agency_lang": "pt",
+        "agency_phone": "+55 (27) 3232-4500",
+        "agency_fare_url": ""
+    },
+    "feed_info": {
+        "publisher_name": "Aun Johnsen",
+        "publisher_url": "https://github.com/Skippern",
+        "version":  "0.1"
+    },
+    "output_file": "data/br-ceturb-seletivo.zip",
+    "selector": "seletivo"
+}

@@ -197,6 +197,9 @@ def create_json(ref, fromV, toV, d, times, duration=60):
     else:
         retValue[u"service"] = [ d ]
         retValue[u"exceptions"] = [ get_weekday_holidays() ]
+        if atypical == True:
+            for i in get_atypical_days():
+                retValue[u"exceptions"].append(i)
     retValue[u"stations"] = [ fromV, toV ]
     retValue[u"times"] = []
     for t in times:
@@ -216,7 +219,7 @@ for i in getLines():
     myRefs.append(ref)
     name = i[1]
     print ref, name
-    logger.info("Gathering times for route %s: %s", ref, name)
+    logger.debug("Gathering times for route %s: %s", ref, name)
     myTimes = getTimes(ref)
     myObs = getObservations(ref)
     for j in myObs:
@@ -233,8 +236,15 @@ for i in getLines():
             durations = [ -10, -10 ]
         myDays = [ u"Mo-Fr", u"Sa", u"Su", u"Ex" ]
         for d in myDays:
-            create_json(ref, myTimes["Stations"]["Ida"], myTimes["Stations"]["Volta"], d, myTimes[ref][d]["Ida"], durations[0])
-            create_json(ref, myTimes["Stations"]["Volta"], myTimes["Stations"]["Ida"], d, myTimes[ref][d]["Volta"], durations[1])
+            if d == u"Mo-Fr" and len(myTimes[ref]["Ex"]["Ida"]) > 0:
+                create_json(ref, myTimes["Stations"]["Ida"], myTimes["Stations"]["Volta"], d, myTimes[ref][d]["Ida"], durations[0], True)
+            else:
+                create_json(ref, myTimes["Stations"]["Ida"], myTimes["Stations"]["Volta"], d, myTimes[ref][d]["Ida"], durations[0])
+            if d == u"Mo-Fr" and len(myTimes[ref]["Ex"]["Volta"]) > 0:
+                create_json(ref, myTimes["Stations"]["Volta"], myTimes["Stations"]["Ida"], d, myTimes[ref][d]["Volta"], durations[1], True)
+            else:
+                create_json(ref, myTimes["Stations"]["Volta"], myTimes["Stations"]["Ida"], d, myTimes[ref][d]["Volta"], durations[1])
+
     if len(myObs) > 0:
         try:
             obs = myRoutes["routes"][ref]["observations"]

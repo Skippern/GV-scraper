@@ -84,8 +84,8 @@
         16
     ], 
     "020": [
-        -3, 
-        -4
+        31, 
+        41
     ], 
     "021": [
         26, 
@@ -120,8 +120,8 @@
         43
     ], 
     "027": [
-        -1, 
-        -1
+        16, 
+        24
     ], 
     "028": [
         42, 
@@ -294,5 +294,5 @@
     "network": "PMG", 
     "operator": "Expresso Lorenzutti", 
     "source": "http://www.expressolorenzutti.com.br/horarios/", 
-    "updated": "2017-04-20"
+    "updated": "2017-04-22"
 }
