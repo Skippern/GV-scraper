@@ -2,30 +2,17 @@
 # -*- coding: utf-8 -*-
 #
 # Common functions
+import os, sys
+lib_path = os.path.abspath( os.path.join( '..', '..', 'lib' ) )
+sys.path.append(lib_path)
+from commons import *
+from routing import *
 
 debugMe = False
 
-def uniq(values):
-    output = []
-    seen = set()
-    for value in values:
-        if value not in seen:
-            output.append(value)
-            seen.add(value)
-    return output
-
 def lower_capitalized(input):
-    newString = input.lower().replace(u"/", u" / ").replace(u".", u". ").replace(u" .", u".").replace(u"-", u" - ")
-    toOutput = []
-    for s in newString.split(u" "):
-        tmp = s.capitalize()
-        toOutput.append(tmp)
-    newString = u" ".join(toOutput)
-    output = newString.replace(u" Da ", u" da ").replace(u" Das ", u" das ").replace(u" De ", u" de ").replace(u" Do ", u" do ").replace(u" Dos ", u" dos ").replace(u" E ", u" e ").replace(u" X ", u" x ").replace(u" Via ", u" via ").replace(u"  ", u" ").replace(u"ª", u"ª ").replace(u"  ", u" ").replace(u"  ", u" ")
+    output = lower_capitalized_master(input)
     # Specific place names
-    output = output.replace(u"Br ", u"BR-").replace(u"Br-", u"BR-").replace(u"Br1", u"BR-1")
-    output = output.replace(u"BR-- 1", u"BR-1")
-    output = output.replace(u"Av.", u"Avenida")
     output = output.replace(u"Sesc", u"SESC").replace(u"sesc", u"SESC")
     output = output.replace(u"Trevo Setiba", u"Trevo de Setiba")
     output = output.replace(u"Trevo BR-101", u"Trevo da BR-101")
@@ -46,11 +33,3 @@ def lower_capitalized(input):
     output = output.replace(u"Caic", u"CAIC")
     output = output.replace(u"N. S. ", u"Nossa Senhora da ")
     return output.strip()
-
-def debug_to_screen(text, newLine=True):
-    if debugMe:
-        if newLine:
-            print text
-        else:
-            print text,
-

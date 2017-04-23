@@ -1,2 +1,18 @@
-2017/04/22 02:30:42: GTFS_get_durations INFO - Executing default list from http://ceturb.es.gov.br/
-2017/04/22 02:31:07: GTFS_get_durations INFO - Full route list to execute: 1603, 1608, 1609, 1610, 1610L, 1720, 1721, 1801, 1801H, 1801S, 1801X, 1802, 1802L, 1802S, 1804, 1804B, 1804D, 1804E, 1804L, 1804N, 1804P, 1804S, 1804T, 1804X, 1805, 1805S, 1806, 1806P, 1808, 1900, 1901, 1902, 1903
+2017/04/23 18:36:25: GTFS_get_durations INFO - Executing default list from http://ceturb.es.gov.br/
+2017/04/23 18:37:55: GTFS_get_durations INFO - Full route list to execute: 1603, 1608, 1609, 1610, 1610L, 1720, 1721, 1801, 1801H, 1801S, 1801X, 1802, 1802L, 1802S, 1804, 1804B, 1804D, 1804E, 1804L, 1804N, 1804P, 1804S, 1804T, 1804X, 1805, 1805S, 1806, 1806P, 1808, 1900, 1901, 1902, 1903
+2017/04/23 18:38:32: GTFS_router ERROR - Route "1603" from Itaparica to Rodoviaria doesn't begin with a stop
+2017/04/23 18:38:35: GTFS_router ERROR - Route "1603" from Rodoviaria to Itaparica doesn't end with a stop
+2017/04/23 18:39:13: GTFS_router INFO - Route "1608" from Araças to Rodoviária calculated with duration 32 minutes
+2017/04/23 18:39:37: GTFS_router INFO - Route "1608" from Rodoviária to Araças calculated with duration 31 minutes
+2017/04/23 18:40:33: GTFS_router INFO - Route "1609" from Araças to Aeroporto calculated with duration 32 minutes
+2017/04/23 18:40:45: GTFS_router INFO - Route "1609" from Aeroporto to Araças calculated with duration 31 minutes
+2017/04/23 18:41:21: GTFS_router ERROR - Route "1610" from Aracas to Jardim Camburi doesn't end with a stop
+2017/04/23 18:41:35: GTFS_router ERROR - Route "1610" from Jardim Camburi to Aracas doesn't begin with a stop
+2017/04/23 18:42:07: GTFS_router ERROR - Route "1720" from Cariacica to Shopping Vitoria doesn't begin with a stop
+2017/04/23 18:42:17: GTFS_router ERROR - Route "1720" from Shopping Vitoria to Cariacica doesn't end with a stop
+2017/04/23 18:42:59: GTFS_router INFO - Route "1721" from Shopping Moxuara to U.V.V. calculated with duration 21 minutes
+2017/04/23 18:43:06: GTFS_router INFO - Route "1721" from U.V.V. to Shopping Moxuara calculated with duration 29 minutes
+2017/04/23 18:46:04: GTFS_router ERROR - Route "1801" from Jacaraipe to Rodoviaria doesn't begin with a stop
+2017/04/23 18:46:17: GTFS_router ERROR - Route "1801" from Rodoviaria to Jacaraipe doesn't end with a stop
+2017/04/23 18:49:40: GTFS_router ERROR - Route "1802" from Serra to Rodoviaria doesn't begin with a stop
+2017/04/23 18:49:45: GTFS_router ERROR - Route "1802" from Rodoviaria to Serra doesn't end with a stop

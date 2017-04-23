@@ -2,41 +2,24 @@
 # -*- coding: utf-8 -*-
 #
 # Common functions
+import os, sys
+lib_path = os.path.abspath( os.path.join( '..', '..', 'lib' ) )
+sys.path.append(lib_path)
+from commons import *
+from routing import *
 
 debugMe = False
 
-def uniq(values):
-    output = []
-    seen = set()
-    for value in values:
-        if value not in seen:
-            output.append(value)
-            seen.add(value)
-    return output
-
 def lower_capitalized(input):
-    newString = input.lower().replace(u"/", u" / ").replace(u".", u". ").replace(u"-", u" - ")
-    toOutput = []
-    for s in newString.split(u" "):
-        tmp = s.capitalize()
-        toOutput.append(tmp)
-    newString = u" ".join(toOutput)
-    output = newString.replace(u" Da ", u" da ").replace(u" Das ", u" das ").replace(u" De ", u" de ").replace(u" Do ", u" do ").replace(u" Dos ", u" dos ").replace(u" E ", u" e ").replace(u" X ", u" x ").replace(u" Via ", u" via ").replace(u"  ", u" ").replace(u"ª", u"ª ").replace(u"  ", u" ").replace(u"  ", u" ")
+    output = lower_capitalized_master(input)
     # Specific place names
-    output = output.replace(u"Br101", u"BR-101")
-    output = output.replace(u"Br 101", u"BR-101")
-    output = output.replace(u"Br 262", u"BR-262")
-    output = output.replace(u"Es 010", u"ES-010")
     output = output.replace(u"(bike Gv)", u"(Bike GV)")
     output = output.replace(u"circular", u"Circular")
-    output = output.replace(u"Parq.", u"Parque")
     output = output.replace(u"Exp.", u"Expedito")
     output = output.replace(u"Expd.", u"Expedito")
     output = output.replace(u"Beira M", u"Beira Mar").replace(u"Beira Marar", u"Beira Mar")
     output = output.replace(u"B. Mar", u"Beira Mar")
     output = output.replace(u"S. Dourada", u"Serra Dourada")
-    output = output.replace(u"Iii", u"III")
-    output = output.replace(u"Ii", u"II")
     output = output.replace(u"Jacaraipe", u"Jacaraípe")
     output = output.replace(u"Rodoviaria", u"Rodoviária")
     output = output.replace(u"P. Costa", u"Praia da Costa")
@@ -45,19 +28,14 @@ def lower_capitalized(input):
     output = output.replace(u"M. de Noronha", u"Marcilio de Noronha")
     output = output.replace(u"C. Itaperica", u"Condominio Itaparica")
     output = output.replace(u"P. Itapoã", u"Praia de Itapoã")
-    output = output.replace(u"T . ", u"T. ")
-    output = output.replace(u"T.", u"Terminal")
     output = output.replace(u"T Laranjeiras", u"Terminal Laranjeiras")
+    output = output.replace(u"Praça Eucalipto", u"Praça do Eucalipto")
     output = output.replace(u"Itaciba", u"Utacibá")
     output = output.replace(u"Jacaraipe", u"Jacaraípe")
-    output = output.replace(u"Pç", u"Praça")
-    output = output.replace(u"Av.", u"Avenida")
-    output = output.replace(u"Av ", u"Avenida ")
     output = output.replace(u"Torquatro", u"Torquato")
     output = output.replace(u"S. Torquato", u"São Torquato")
     output = output.replace(u"Darlysantos", u"Darly Santos")
     output = output.replace(u"Col. Laranjeiras", u"Colina de Laranjeiras")
-    output = output.replace(u"Mal.", u"Marechal")
     output = output.replace(u"B. República", u"Bairro República")
     output = output.replace(u"B. Ipanema", u"Bairro Ipanema")
     output = output.replace(u"B. Primavera", u"Bairro Primavera")
@@ -75,7 +53,6 @@ def lower_capitalized(input):
     output = output.replace(u"A. Ramos", u"Alzira Ramos")
     output = output.replace(u"Afb", "A. F. Borges")
     output = output.replace(u"A. F. Borges", "Antonio Ferreira Borges")
-    output = output.replace(u"3º", u"3ª")
     output = output.replace(u"Norte/sul", u"Norte Sul")
     output = output.replace(u"Norte / Sul", u"Norte Sul")
     output = output.replace(u"Norte-sul", u"Norte Sul")
@@ -96,13 +73,24 @@ def lower_capitalized(input):
     output = output.replace(u"B - C - A", u"B-C-A")
     output = output.replace(u"(expresso)", u"- Expresso")
     output = output.replace(u"D`água", u"d`Água")
-    output = output.replace(u"Hosp.", u"Hospital")
     return output.strip()
 
-def debug_to_screen(text, newLine=True):
-    if debugMe:
-        if newLine:
-            print text
-        else:
-            print text,
-
+def getLines():
+    downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/ConsultaLinha/"
+    routes = []
+    myJSON = None
+    r = False
+    while r == False:
+        try:
+            r = requests.get(downloadURL, timeout=30)
+        except requests.exceptions.ReadTimeout as e:
+            r = False
+        except requests.exceptions.ConnectionError as e:
+            r = False
+        try:
+            myJSON = json.dumps(json.loads(r.content))
+        except:
+            r = False
+    for i in json.loads(myJSON):
+        routes.append( [ str(int(i[u"Linha"])), lower_capitalized(unicode(i[u"Descricao"])) ] )
+    return routes

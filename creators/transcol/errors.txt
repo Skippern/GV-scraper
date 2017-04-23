@@ -1,850 +1,550 @@
-2017/04/22 02:40:27: GTFS_get_durations INFO - Executing default list from http://ceturb.es.gov.br/
-2017/04/22 02:50:36: GTFS_get_durations INFO - Full route list to execute: 400, 400C, 500, 500K, 500S, 501, 503, 503S, 504, 504S, 504T, 505, 505L, 505M, 505P, 505T, 505U, 506, 506P, 507, 507U, 508, 508L, 508S, 509, 510, 510P, 511, 511C, 511Y, 512, 514, 514M, 515, 515C, 515D, 515P, 515S, 516, 517, 518, 518C, 518Y, 519, 519S, 520, 521, 522, 522S, 523, 523P, 524, 525, 525N, 525P, 526, 526D, 526I, 526Z, 527, 527X, 528, 528E, 528S, 529, 530, 530E, 530S, 531, 532, 532S, 533, 534, 534P, 534S, 535, 535D, 535F, 535M, 535X, 536, 538, 540, 542, 543, 544, 550, 551, 555, 557, 558, 559, 559U, 560, 561, 561S, 562, 562Z, 563, 567, 568, 568T, 570, 570S, 571, 572, 572P, 572U, 572X, 572Y, 573, 573T, 574, 574S, 574T, 575, 579, 580, 581, 581B, 581F, 582, 583, 585, 586, 587, 587F, 588, 590, 591, 591B, 591D, 591L, 591T, 592, 592F, 592P, 593, 594, 595, 595C, 595P, 595T, 596, 597, 598, 599, 600, 601, 601B, 601F, 603, 603H, 603S, 604, 605, 605U, 606, 606C, 606D, 607, 607P, 608, 608P, 609, 609B, 609P, 610, 611, 611S, 611X, 612, 612U, 613, 613S, 613X, 614, 614S, 615, 616, 616B, 616F, 616H, 616P, 616S, 617, 617C, 617F, 617P, 617S, 618, 618P, 618S, 618X, 619, 619B, 619F, 621, 624, 624E, 625, 626, 627, 630, 631, 631B, 633, 634, 634T, 635, 636, 650, 651, 652, 652P, 653, 654, 654C, 654F, 654P, 654S, 655, 655P, 656, 656H, 657, 658, 659, 659X, 660, 660D, 661, 662, 663, 664, 665, 667, 667P, 668, 669, 671, 672, 700, 700Z, 701, 701M, 701S, 701X, 702, 702L, 702X, 703, 704, 705, 705B, 705F, 706, 707, 708, 708E, 710, 710B, 711, 711P, 712, 712B, 714, 714A, 714B, 714D, 714P, 714X, 715, 715B, 716, 716Z, 718, 718Z, 719, 719F, 719P, 719Z, 720, 721, 723, 724, 725, 725P, 726, 727, 727L, 727M, 728, 728S, 729, 729Z, 730, 730B, 731, 731P, 732, 732C, 732P, 733, 733F, 733P, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 746, 746F, 748, 750, 751, 753, 756, 757, 757B, 759, 760, 761, 761F, 764, 766, 768, 768L, 769, 770, 770F, 770P, 771, 773, 773F, 773P, 774, 775, 776, 777, 778, 779, 779Z, 781, 783, 784, 784Z, 785, 785Z, 787, 789, 792, 793, 794, 795, 796, 797, 798, 800, 800A, 800B, 800E, 800H, 800S, 800X, 800Y, 801, 802, 803, 804, 804B, 804L, 804P, 804X, 805, 805A, 805B, 805P, 806, 806A, 806B, 806C, 806D, 806E, 806F, 806H, 806I, 806K, 806M, 806S, 806X, 807, 808, 809, 809B, 809P, 810, 810C, 811, 811S, 812, 812S, 813, 814, 814C, 814D, 814X, 815, 815F, 816, 816B, 816H, 816M, 816P, 817, 818, 819, 819P, 820, 820P, 821, 821T, 822, 823, 823P, 824, 824B, 825, 825P, 825S, 826, 826A, 826B, 826P, 827, 828, 829, 829P, 830, 830C, 831, 831H, 831X, 832, 833, 834, 834C, 834F, 834H, 834P, 834Q, 834X, 835, 836, 836F, 836P, 837, 838, 838P, 839, 841, 843, 843J, 844, 844A, 844B, 844S, 844X, 845, 846, 846B, 847, 847B, 847P, 847S, 848, 848C, 848S, 848T, 849, 851, 851M, 853, 854, 855, 855P, 856, 857, 858, 859, 860, 862, 862B, 863, 864, 865, 865S, 866, 866C, 867, 869, 873, 874, 875, 875E, 876, 876A, 876B, 876H, 876S, 876X, 877, 878, 879, 879F, 879P, 880, 881, 882, 883, 884, 885, 886, 886P, 887, 890, 890C, 890F, 890L, 890S, 891, 891H, 891T, 892, 892B, 892S, 894, 894A, 894B, 894P, 894S, 895, 896, 896B, 896E, 896S, 898, 898A, 898B, 899, 901, 902, 902B, 902C, 903, 904, 904B, 904E, 904S, 905, 905P, 905X, 906, 906C, 907, 908, 908L, 909, 910, 911, 912, 913, 913M, 914, 914A, 914B, 914P, 915, 915X, 916, 916P, 917, 917P, 918, 918S, 919, 920, 921, 921P, 922, 923, 927, 982, 982P, 983, 984, 985, 985N, 986
-2017/04/22 02:51:41: GTFS_get_durations ERROR - No relation found: "500K" from Terminal Vila Velha to Terminal Itaciba
-2017/04/22 02:51:43: GTFS_get_durations ERROR - No relation found: "500K" from Terminal Itaciba to Terminal Vila Velha
-2017/04/22 02:51:46: GTFS_get_durations ERROR - No relation found: "500S" from Terminal Vila Velha to Terminal Itaciba
-2017/04/22 02:51:48: GTFS_get_durations ERROR - No relation found: "500S" from Terminal Itaciba to Terminal Vila Velha
-2017/04/22 02:53:35: GTFS_get_durations ERROR - No relation found: "503S" from Terminal Laranjeiras to Terminal Vila Velha
-2017/04/22 02:53:37: GTFS_get_durations ERROR - No relation found: "503S" from Terminal Vila Velha to Terminal Laranjeiras
-2017/04/22 02:54:17: GTFS_get_durations ERROR - No relation found: "504S" from Terminal Jacaraipe to Terminal Itaciba
-2017/04/22 02:54:19: GTFS_get_durations ERROR - No relation found: "504S" from Terminal Itaciba to Terminal Jacaraipe
-2017/04/22 02:54:24: GTFS_get_durations ERROR - No relation found: "504T" from Terminal Jacaraipe to Terminal Itaciba
-2017/04/22 02:54:27: GTFS_get_durations ERROR - No relation found: "504T" from Terminal Itaciba to Terminal Jacaraipe
-2017/04/22 02:54:29: GTFS_get_durations ERROR - No relation found: "505" from Terminal Laranjeiras to Terminal Itaciba
-2017/04/22 02:54:31: GTFS_get_durations ERROR - No relation found: "505" from Terminal Itaciba to Terminal Laranjeiras
-2017/04/22 02:54:35: GTFS_get_durations ERROR - No relation found: "505L" from Terminal Laranjeiras to Terminal Itaciba
-2017/04/22 02:54:38: GTFS_get_durations ERROR - No relation found: "505L" from Terminal Itaciba to Terminal Laranjeiras
-2017/04/22 02:54:39: GTFS_get_durations ERROR - No relation found: "505M" from Terminal Laranjeiras to Terminal Itaciba
-2017/04/22 02:54:41: GTFS_get_durations ERROR - No relation found: "505M" from Terminal Itaciba to Terminal Laranjeiras
-2017/04/22 02:54:44: GTFS_get_durations ERROR - No relation found: "505P" from Terminal Laranjeiras to Terminal Itaciba
-2017/04/22 02:54:46: GTFS_get_durations ERROR - No relation found: "505P" from Terminal Itaciba to Terminal Laranjeiras
-2017/04/22 02:54:48: GTFS_get_durations ERROR - No relation found: "505T" from Terminal Laranjeiras to Terminal Itaciba
-2017/04/22 02:54:51: GTFS_get_durations ERROR - No relation found: "505T" from Terminal Itaciba to Terminal Laranjeiras
-2017/04/22 02:54:52: GTFS_get_durations ERROR - No relation found: "505U" from Terminal Laranjeiras to Terminal Itaciba
-2017/04/22 02:54:55: GTFS_get_durations ERROR - No relation found: "505U" from Terminal Itaciba to Terminal Laranjeiras
-2017/04/22 02:54:58: GTFS_get_durations ERROR - No relation found: "506" from Terminal Laranjeiras to Terminal Itaciba
-2017/04/22 02:55:00: GTFS_get_durations ERROR - No relation found: "506" from Terminal Itaciba to Terminal Laranjeiras
-2017/04/22 02:55:01: GTFS_get_durations ERROR - No relation found: "506P" from Terminal Laranjeiras to Terminal Itaciba
-2017/04/22 02:55:03: GTFS_get_durations ERROR - No relation found: "506P" from Terminal Itaciba to Terminal Laranjeiras
-2017/04/22 02:55:05: GTFS_get_durations ERROR - Route "507" from Terminal Laranjeiras to Terminal Ibes doesn't start with a stop
-2017/04/22 02:55:07: GTFS_get_durations ERROR - Route "507" from Terminal Ibes to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 02:55:10: GTFS_get_durations ERROR - No relation found: "507U" from Terminal Laranjeiras to Terminal Ibes
-2017/04/22 02:55:13: GTFS_get_durations ERROR - No relation found: "507U" from Terminal Ibes to Terminal Laranjeiras
-2017/04/22 02:55:57: GTFS_get_durations ERROR - No relation found: "508L" from Terminal Laranjeiras to Terminal Itaparica
-2017/04/22 02:55:59: GTFS_get_durations ERROR - No relation found: "508L" from Terminal Itaparica to Terminal Laranjeiras
-2017/04/22 02:56:03: GTFS_get_durations ERROR - No relation found: "508S" from Terminal Laranjeiras to Terminal Itaparica
-2017/04/22 02:56:08: GTFS_get_durations ERROR - No relation found: "508S" from Terminal Itaparica to Terminal Laranjeiras
-2017/04/22 02:56:10: GTFS_get_durations ERROR - No relation found: "509" from Terminal Carapina to Terminal Campo Grande
-2017/04/22 02:56:11: GTFS_get_durations ERROR - No relation found: "509" from Terminal Campo Grande to Terminal Carapina
-2017/04/22 02:56:14: GTFS_get_durations ERROR - No relation found: "510" from Terminal Carapina to Terminal Vila Velha
-2017/04/22 02:56:15: GTFS_get_durations ERROR - No relation found: "510" from Terminal Vila Velha to Terminal Carapina
-2017/04/22 02:56:17: GTFS_get_durations ERROR - No relation found: "510P" from Terminal Carapina to Terminal Vila Velha
-2017/04/22 02:56:19: GTFS_get_durations ERROR - No relation found: "510P" from Terminal Vila Velha to Terminal Carapina
-2017/04/22 02:58:11: GTFS_get_durations ERROR - No relation found: "511C" from Terminal Carapina to Terminal Campo Grande
-2017/04/22 02:58:15: GTFS_get_durations ERROR - No relation found: "511C" from Terminal Campo Grande to Terminal Carapina
-2017/04/22 02:58:18: GTFS_get_durations ERROR - No relation found: "511Y" from Terminal Carapina to Terminal Campo Grande
-2017/04/22 02:58:28: GTFS_get_durations ERROR - No relation found: "511Y" from Terminal Campo Grande to Terminal Carapina
-2017/04/22 02:58:35: GTFS_get_durations ERROR - No relation found: "512" from Terminal Carapina to Terminal Itaciba
-2017/04/22 02:58:37: GTFS_get_durations ERROR - No relation found: "512" from Terminal Itaciba to Terminal Carapina
-2017/04/22 02:59:03: GTFS_get_durations ERROR - No relation found: "514" from Terminal Vila Velha to Terminal Ibes
-2017/04/22 02:59:04: GTFS_get_durations ERROR - No relation found: "514M" from Terminal Ibes to Terminal Vila Velha
-2017/04/22 02:59:08: GTFS_get_durations ERROR - No relation found: "514M" from Terminal Vila Velha to Terminal Ibes
-2017/04/22 02:59:16: GTFS_get_durations ERROR - No relation found: "515" from Terminal Laranjeiras to Terminal Campo Grande
-2017/04/22 02:59:17: GTFS_get_durations ERROR - No relation found: "515" from Terminal Campo Grande to Terminal Laranjeiras
-2017/04/22 02:59:20: GTFS_get_durations ERROR - No relation found: "515C" from Terminal Laranjeiras to Terminal Campo Grande
-2017/04/22 02:59:24: GTFS_get_durations ERROR - No relation found: "515C" from Terminal Campo Grande to Terminal Laranjeiras
-2017/04/22 02:59:25: GTFS_get_durations ERROR - No relation found: "515D" from Terminal Laranjeiras to Terminal Campo Grande
-2017/04/22 02:59:28: GTFS_get_durations ERROR - No relation found: "515D" from Terminal Campo Grande to Terminal Laranjeiras
-2017/04/22 02:59:31: GTFS_get_durations ERROR - No relation found: "515P" from Terminal Laranjeiras to Terminal Campo Grande
-2017/04/22 02:59:34: GTFS_get_durations ERROR - No relation found: "515P" from Terminal Campo Grande to Terminal Laranjeiras
-2017/04/22 02:59:35: GTFS_get_durations ERROR - No relation found: "515S" from Terminal Laranjeiras to Terminal Campo Grande
-2017/04/22 02:59:49: GTFS_get_durations ERROR - No relation found: "515S" from Terminal Campo Grande to Terminal Laranjeiras
-2017/04/22 02:59:56: GTFS_get_durations ERROR - No relation found: "516" from Terminal Jacaraipe to Terminal Ibes
-2017/04/22 02:59:58: GTFS_get_durations ERROR - No relation found: "516" from Terminal Ibes to Terminal Jacaraipe
-2017/04/22 03:00:00: GTFS_get_durations ERROR - No relation found: "517" from Terminal Laranjeiras to Terminal Campo Grande
-2017/04/22 03:00:06: GTFS_get_durations ERROR - No relation found: "517" from Terminal Campo Grande to Terminal Laranjeiras
-2017/04/22 03:01:05: GTFS_get_durations ERROR - No relation found: "518C" from Terminal Carapina to Terminal Ibes
-2017/04/22 03:01:07: GTFS_get_durations ERROR - No relation found: "518C" from Terminal Ibes to Terminal Carapina
-2017/04/22 03:01:08: GTFS_get_durations ERROR - No relation found: "518Y" from Terminal Carapina to Terminal Ibes
-2017/04/22 03:01:10: GTFS_get_durations ERROR - No relation found: "518Y" from Terminal Ibes to Terminal Carapina
-2017/04/22 03:01:12: GTFS_get_durations ERROR - No relation found: "519" from Terminal Carapina to Terminal Ibes
-2017/04/22 03:01:13: GTFS_get_durations ERROR - No relation found: "519" from Terminal Ibes to Terminal Carapina
-2017/04/22 03:01:14: GTFS_get_durations ERROR - No relation found: "519S" from Terminal Carapina to Terminal Ibes
-2017/04/22 03:01:16: GTFS_get_durations ERROR - No relation found: "519S" from Terminal Ibes to Terminal Carapina
-2017/04/22 03:01:17: GTFS_get_durations ERROR - No relation found: "520" from Terminal Carapina to Terminal Vila Velha
-2017/04/22 03:01:21: GTFS_get_durations ERROR - No relation found: "520" from Terminal Vila Velha to Terminal Carapina
-2017/04/22 03:01:22: GTFS_get_durations ERROR - No relation found: "521" from Hotel Canto Sol to None
-2017/04/22 03:01:25: GTFS_get_durations ERROR - No relation found: "522" from Terminal Jardim America to None
-2017/04/22 03:01:29: GTFS_get_durations ERROR - No relation found: "522S" from Terminal Jardim America to None
-2017/04/22 03:01:33: GTFS_get_durations ERROR - No relation found: "523" from Terminal Jacaraipe to Terminal Jardim America
-2017/04/22 03:01:34: GTFS_get_durations ERROR - No relation found: "523" from Terminal Jardim America to Terminal Jacaraipe
-2017/04/22 03:01:37: GTFS_get_durations ERROR - No relation found: "523P" from Terminal Jacaraipe to Terminal Jardim America
-2017/04/22 03:01:39: GTFS_get_durations ERROR - No relation found: "523P" from Terminal Jardim America to Terminal Jacaraipe
-2017/04/22 03:01:41: GTFS_get_durations ERROR - No relation found: "524" from Terminal Campo Grande to None
-2017/04/22 03:01:42: GTFS_get_durations ERROR - No relation found: "525" from Terminal Vila Velha to Terminal Itaciba
-2017/04/22 03:01:47: GTFS_get_durations ERROR - No relation found: "525" from Terminal Itaciba to Terminal Vila Velha
-2017/04/22 03:01:48: GTFS_get_durations ERROR - No relation found: "525N" from Terminal Vila Velha to Terminal Itaciba
-2017/04/22 03:01:49: GTFS_get_durations ERROR - No relation found: "525N" from Terminal Itaciba to Terminal Vila Velha
-2017/04/22 03:01:52: GTFS_get_durations ERROR - No relation found: "525P" from Terminal Vila Velha to Terminal Itaciba
-2017/04/22 03:01:53: GTFS_get_durations ERROR - No relation found: "525P" from Terminal Itaciba to Terminal Vila Velha
-2017/04/22 03:01:55: GTFS_get_durations ERROR - Route "526" from Terminal Campo Grande to Terminal Vila Velha doesn't end with a stop
-2017/04/22 03:01:58: GTFS_get_durations ERROR - No relation found: "526" from Terminal Vila Velha to Terminal Campo Grande
-2017/04/22 03:02:01: GTFS_get_durations ERROR - No relation found: "526D" from Terminal Campo Grande to Terminal Vila Velha
-2017/04/22 03:02:03: GTFS_get_durations ERROR - No relation found: "526D" from Terminal Vila Velha to Terminal Campo Grande
-2017/04/22 03:02:06: GTFS_get_durations ERROR - No relation found: "526I" from Terminal Campo Grande to Terminal Vila Velha
-2017/04/22 03:02:08: GTFS_get_durations ERROR - No relation found: "526I" from Terminal Vila Velha to Terminal Campo Grande
-2017/04/22 03:02:10: GTFS_get_durations ERROR - No relation found: "526Z" from Terminal Campo Grande to Terminal Vila Velha
-2017/04/22 03:02:12: GTFS_get_durations ERROR - No relation found: "526Z" from Terminal Vila Velha to Terminal Campo Grande
-2017/04/22 03:02:17: GTFS_get_durations ERROR - No relation found: "527" from Terminal Carapina to Terminal Jardim America
-2017/04/22 03:02:20: GTFS_get_durations ERROR - No relation found: "527" from Terminal Jardim America to Terminal Carapina
-2017/04/22 03:02:22: GTFS_get_durations ERROR - No relation found: "527X" from Terminal Carapina to Terminal Jardim America
-2017/04/22 03:02:24: GTFS_get_durations ERROR - No relation found: "527X" from Terminal Jardim America to Terminal Carapina
-2017/04/22 03:03:10: GTFS_get_durations ERROR - No relation found: "528E" from Terminal Laranjeiras to Shopping Vitoria
-2017/04/22 03:03:11: GTFS_get_durations ERROR - No relation found: "528E" from Shopping Vitoria to Terminal Laranjeiras
-2017/04/22 03:03:13: GTFS_get_durations ERROR - No relation found: "528S" from Terminal Laranjeiras to Shopping Vitoria
-2017/04/22 03:03:15: GTFS_get_durations ERROR - No relation found: "528S" from Shopping Vitoria to Terminal Laranjeiras
-2017/04/22 03:03:17: GTFS_get_durations ERROR - No relation found: "529" from Terminal Jardim America to None
-2017/04/22 03:03:21: GTFS_get_durations ERROR - No relation found: "530" from Terminal Campo Grande to None
-2017/04/22 03:03:23: GTFS_get_durations ERROR - No relation found: "530E" from Terminal Campo Grande to None
-2017/04/22 03:03:24: GTFS_get_durations ERROR - No relation found: "530S" from Terminal Campo Grande to None
-2017/04/22 03:03:26: GTFS_get_durations ERROR - No relation found: "531" from Terminal Campo Grande to Terminal Vila Velha
-2017/04/22 03:03:27: GTFS_get_durations ERROR - No relation found: "531" from Terminal Vila Velha to Terminal Campo Grande
-2017/04/22 03:03:30: GTFS_get_durations ERROR - Route "532" from Terminal Itaparica to None doesn't end with a stop
-2017/04/22 03:03:31: GTFS_get_durations ERROR - No relation found: "532S" from Terminal Itaparica to None
-2017/04/22 03:03:33: GTFS_get_durations ERROR - No relation found: "533" from Terminal Campo Grande to Terminal Vila Velha
-2017/04/22 03:03:34: GTFS_get_durations ERROR - No relation found: "533" from Terminal Vila Velha to Terminal Campo Grande
-2017/04/22 03:03:47: GTFS_get_durations ERROR - No relation found: "534P" from Serra to Terminal Campo Grande
-2017/04/22 03:03:49: GTFS_get_durations ERROR - No relation found: "534P" from Terminal Campo Grande to Serra
-2017/04/22 03:03:56: GTFS_get_durations ERROR - No relation found: "534S" from Serra to Terminal Campo Grande
-2017/04/22 03:03:59: GTFS_get_durations ERROR - No relation found: "534S" from Terminal Campo Grande to Serra
-2017/04/22 03:04:00: GTFS_get_durations ERROR - No relation found: "535" from Terminal Carapina to Terminal Campo Grande
-2017/04/22 03:04:03: GTFS_get_durations ERROR - No relation found: "535" from Terminal Campo Grande to Terminal Carapina
-2017/04/22 03:04:05: GTFS_get_durations ERROR - No relation found: "535D" from Terminal Carapina to Terminal Campo Grande
-2017/04/22 03:04:06: GTFS_get_durations ERROR - No relation found: "535D" from Terminal Campo Grande to Terminal Carapina
-2017/04/22 03:04:09: GTFS_get_durations ERROR - No relation found: "535F" from Terminal Carapina to Terminal Campo Grande
-2017/04/22 03:04:11: GTFS_get_durations ERROR - No relation found: "535F" from Terminal Campo Grande to Terminal Carapina
-2017/04/22 03:04:16: GTFS_get_durations ERROR - No relation found: "535M" from Terminal Carapina to Terminal Campo Grande
-2017/04/22 03:04:18: GTFS_get_durations ERROR - No relation found: "535M" from Terminal Campo Grande to Terminal Carapina
-2017/04/22 03:04:20: GTFS_get_durations ERROR - No relation found: "535X" from Terminal Carapina to Terminal Campo Grande
-2017/04/22 03:04:22: GTFS_get_durations ERROR - No relation found: "535X" from Terminal Campo Grande to Terminal Carapina
-2017/04/22 03:04:28: GTFS_get_durations ERROR - No relation found: "536" from Terminal Campo Grande to Terminal Vila Velha
-2017/04/22 03:04:29: GTFS_get_durations ERROR - No relation found: "536" from Terminal Vila Velha to Terminal Campo Grande
-2017/04/22 03:04:33: GTFS_get_durations ERROR - No relation found: "538" from Terminal Carapina to Terminal Jardim America
-2017/04/22 03:04:35: GTFS_get_durations ERROR - No relation found: "538" from Terminal Jardim America to Terminal Carapina
-2017/04/22 03:05:13: GTFS_get_durations ERROR - No relation found: "543" from Terminal Jacaraipe to Terminal Itaciba
-2017/04/22 03:05:15: GTFS_get_durations ERROR - No relation found: "543" from Terminal Itaciba to Terminal Jacaraipe
-2017/04/22 03:05:21: GTFS_get_durations ERROR - No relation found: "544" from Hotel Canto Sol to None
-2017/04/22 03:05:25: GTFS_get_durations ERROR - No relation found: "550" from Shopping Vitoria to Terminal Vila Velha
-2017/04/22 03:05:27: GTFS_get_durations ERROR - No relation found: "550" from Terminal Vila Velha to Shopping Vitoria
-2017/04/22 03:05:30: GTFS_get_durations ERROR - No relation found: "551" from Terminal Jacaraipe to Terminal Itaparica
-2017/04/22 03:05:31: GTFS_get_durations ERROR - No relation found: "551" from Terminal Itaparica to Terminal Jacaraipe
-2017/04/22 03:05:33: GTFS_get_durations ERROR - No relation found: "555" from Terminal Itaparica to Pracaa de Goiabeiras
-2017/04/22 03:05:35: GTFS_get_durations ERROR - No relation found: "555" from Pracaa de Goiabeiras to Terminal Itaparica
-2017/04/22 03:05:38: GTFS_get_durations ERROR - Route "557" from Terminal Itaparica to None doesn't start with a stop
-2017/04/22 03:05:55: GTFS_get_durations ERROR - No relation found: "559" from Terminal Laranjeiras to Terminal Sao Torquato
-2017/04/22 03:05:56: GTFS_get_durations ERROR - No relation found: "559" from Terminal Sao Torquato to Terminal Laranjeiras
-2017/04/22 03:05:58: GTFS_get_durations ERROR - No relation found: "559U" from Terminal Laranjeiras to Terminal Sao Torquato
-2017/04/22 03:06:00: GTFS_get_durations ERROR - No relation found: "559U" from Terminal Sao Torquato to Terminal Laranjeiras
-2017/04/22 03:06:01: GTFS_get_durations ERROR - No relation found: "560" from Terminal Laranjeiras to Terminal Itaparica
-2017/04/22 03:06:03: GTFS_get_durations ERROR - No relation found: "560" from Terminal Itaparica to Terminal Laranjeiras
-2017/04/22 03:06:04: GTFS_get_durations ERROR - No relation found: "561" from Terminal Jacaraipe to Terminal Campo Grande
-2017/04/22 03:06:06: GTFS_get_durations ERROR - No relation found: "561" from Terminal Campo Grande to Terminal Jacaraipe
-2017/04/22 03:06:12: GTFS_get_durations ERROR - No relation found: "561S" from Terminal Jacaraipe to Terminal Campo Grande
-2017/04/22 03:06:15: GTFS_get_durations ERROR - No relation found: "561S" from Terminal Campo Grande to Terminal Jacaraipe
-2017/04/22 03:06:22: GTFS_get_durations ERROR - No relation found: "562" from Terminal Laranjeiras to Terminal Campo Grande
-2017/04/22 03:06:24: GTFS_get_durations ERROR - No relation found: "562" from Terminal Campo Grande to Terminal Laranjeiras
-2017/04/22 03:06:29: GTFS_get_durations ERROR - No relation found: "562Z" from Terminal Laranjeiras to Terminal Campo Grande
-2017/04/22 03:06:30: GTFS_get_durations ERROR - No relation found: "562Z" from Terminal Campo Grande to Terminal Laranjeiras
-2017/04/22 03:06:32: GTFS_get_durations ERROR - No relation found: "563" from Terminal Carapina to Terminal Vila Velha
-2017/04/22 03:06:34: GTFS_get_durations ERROR - No relation found: "563" from Terminal Vila Velha to Terminal Carapina
-2017/04/22 03:06:36: GTFS_get_durations ERROR - No relation found: "567" from Terminal Carapina to Terminal Vila Velha
-2017/04/22 03:06:39: GTFS_get_durations ERROR - No relation found: "567" from Terminal Vila Velha to Terminal Carapina
-2017/04/22 03:06:42: GTFS_get_durations ERROR - No relation found: "568" from Terminal Carapina to Terminal Vila Velha
-2017/04/22 03:06:43: GTFS_get_durations ERROR - No relation found: "568" from Terminal Vila Velha to Terminal Carapina
-2017/04/22 03:06:44: GTFS_get_durations ERROR - No relation found: "568T" from Terminal Carapina to Terminal Vila Velha
-2017/04/22 03:06:46: GTFS_get_durations ERROR - No relation found: "568T" from Terminal Vila Velha to Terminal Carapina
-2017/04/22 03:06:49: GTFS_get_durations ERROR - No relation found: "570" from Terminal Jardim America to None
-2017/04/22 03:06:52: GTFS_get_durations ERROR - No relation found: "570S" from Terminal Jardim America to None
-2017/04/22 03:06:58: GTFS_get_durations ERROR - No relation found: "571" from Terminal Jardim America to None
-2017/04/22 03:07:03: GTFS_get_durations ERROR - No relation found: "572" from Terminal Laranjeiras to Terminal Sao Torquato
-2017/04/22 03:07:05: GTFS_get_durations ERROR - No relation found: "572" from Terminal Sao Torquato to Terminal Laranjeiras
-2017/04/22 03:07:07: GTFS_get_durations ERROR - No relation found: "572P" from Terminal Laranjeiras to Terminal Sao Torquato
-2017/04/22 03:07:10: GTFS_get_durations ERROR - No relation found: "572P" from Terminal Sao Torquato to Terminal Laranjeiras
-2017/04/22 03:07:29: GTFS_get_durations ERROR - No relation found: "572U" from Terminal Laranjeiras to Terminal Sao Torquato
-2017/04/22 03:07:33: GTFS_get_durations ERROR - No relation found: "572U" from Terminal Sao Torquato to Terminal Laranjeiras
-2017/04/22 03:07:36: GTFS_get_durations ERROR - No relation found: "572X" from Terminal Laranjeiras to Terminal Sao Torquato
-2017/04/22 03:07:38: GTFS_get_durations ERROR - No relation found: "572X" from Terminal Sao Torquato to Terminal Laranjeiras
-2017/04/22 03:07:45: GTFS_get_durations ERROR - No relation found: "572Y" from Terminal Laranjeiras to Terminal Sao Torquato
-2017/04/22 03:07:46: GTFS_get_durations ERROR - No relation found: "572Y" from Terminal Sao Torquato to Terminal Laranjeiras
-2017/04/22 03:07:48: GTFS_get_durations ERROR - No relation found: "573" from Terminal Carapina to Terminal Sao Torquato
-2017/04/22 03:07:55: GTFS_get_durations ERROR - No relation found: "573" from Terminal Sao Torquato to Terminal Carapina
-2017/04/22 03:07:59: GTFS_get_durations ERROR - No relation found: "573T" from Terminal Carapina to Terminal Sao Torquato
-2017/04/22 03:08:00: GTFS_get_durations ERROR - No relation found: "573T" from Terminal Sao Torquato to Terminal Carapina
-2017/04/22 03:08:11: GTFS_get_durations ERROR - No relation found: "574S" from Terminal Sao Torquato to None
-2017/04/22 03:08:14: GTFS_get_durations ERROR - No relation found: "574T" from Terminal Sao Torquato to None
-2017/04/22 03:08:16: GTFS_get_durations ERROR - No relation found: "575" from Terminal Sao Torquato to None
-2017/04/22 03:08:19: GTFS_get_durations ERROR - No relation found: "579" from Vila Merlo to Terminal Carapina
-2017/04/22 03:08:22: GTFS_get_durations ERROR - No relation found: "579" from Terminal Carapina to Vila Merlo
-2017/04/22 03:08:24: GTFS_get_durations ERROR - No relation found: "580" from Padre Gabriel to Terminal Ibes
-2017/04/22 03:08:27: GTFS_get_durations ERROR - No relation found: "580" from Terminal Ibes to Padre Gabriel
-2017/04/22 03:08:32: GTFS_get_durations ERROR - No relation found: "581B" from Terminal Itaparica to None
-2017/04/22 03:08:34: GTFS_get_durations ERROR - No relation found: "581F" from Terminal Itaparica to None
-2017/04/22 03:08:36: GTFS_get_durations ERROR - Route "582" from Padre Gabriel to Terminal Itaparica doesn't end with a stop
-2017/04/22 03:08:38: GTFS_get_durations ERROR - No relation found: "582" from Terminal Itaparica to Padre Gabriel
-2017/04/22 03:08:39: GTFS_get_durations ERROR - No relation found: "583" from Nova Rosa da Penha to Terminal Carapina
-2017/04/22 03:08:41: GTFS_get_durations ERROR - No relation found: "583" from Terminal Carapina to Nova Rosa da Penha
-2017/04/22 03:08:43: GTFS_get_durations ERROR - No relation found: "585" from Jardim Botanico to Terminal Itaparica
-2017/04/22 03:08:55: GTFS_get_durations ERROR - No relation found: "585" from Terminal Itaparica to Jardim Botanico
-2017/04/22 03:08:57: GTFS_get_durations ERROR - No relation found: "586" from Vista Linda to Terminal Ibes
-2017/04/22 03:08:58: GTFS_get_durations ERROR - No relation found: "586" from Terminal Ibes to Vista Linda
-2017/04/22 03:08:59: GTFS_get_durations ERROR - No relation found: "587" from Porto de Santana to Terminal Carapina
-2017/04/22 03:09:03: GTFS_get_durations ERROR - No relation found: "587" from Terminal Carapina to Porto de Santana
-2017/04/22 03:09:06: GTFS_get_durations ERROR - No relation found: "587F" from Porto de Santana to Terminal Carapina
-2017/04/22 03:09:08: GTFS_get_durations ERROR - No relation found: "587F" from Terminal Carapina to Porto de Santana
-2017/04/22 03:09:21: GTFS_get_durations ERROR - No relation found: "590" from Bandeirantes to Terminal Ibes
-2017/04/22 03:09:25: GTFS_get_durations ERROR - No relation found: "590" from Terminal Ibes to Bandeirantes
-2017/04/22 03:10:46: GTFS_get_durations ERROR - No relation found: "591B" from Serra to Terminal Campo Grande
-2017/04/22 03:10:48: GTFS_get_durations ERROR - No relation found: "591B" from Terminal Campo Grande to Serra
-2017/04/22 03:10:49: GTFS_get_durations ERROR - No relation found: "591D" from Serra to Terminal Campo Grande
-2017/04/22 03:10:51: GTFS_get_durations ERROR - No relation found: "591D" from Terminal Campo Grande to Serra
-2017/04/22 03:10:52: GTFS_get_durations ERROR - No relation found: "591L" from Serra to Terminal Campo Grande
-2017/04/22 03:10:55: GTFS_get_durations ERROR - No relation found: "591L" from Terminal Campo Grande to Serra
-2017/04/22 03:10:56: GTFS_get_durations ERROR - No relation found: "591T" from Serra to Terminal Campo Grande
-2017/04/22 03:10:58: GTFS_get_durations ERROR - No relation found: "591T" from Terminal Campo Grande to Serra
-2017/04/22 03:11:00: GTFS_get_durations ERROR - No relation found: "592" from Terminal Ibes to None
-2017/04/22 03:11:03: GTFS_get_durations ERROR - No relation found: "592F" from Terminal Ibes to None
-2017/04/22 03:11:04: GTFS_get_durations ERROR - No relation found: "592P" from Terminal Ibes to None
-2017/04/22 03:11:06: GTFS_get_durations ERROR - No relation found: "593" from Vista Linda to Terminal Itaparica
-2017/04/22 03:11:08: GTFS_get_durations ERROR - No relation found: "593" from Terminal Itaparica to Vista Linda
-2017/04/22 03:11:10: GTFS_get_durations ERROR - No relation found: "594" from Vila Merlo to Terminal Carapina
-2017/04/22 03:11:12: GTFS_get_durations ERROR - No relation found: "594" from Terminal Carapina to Vila Merlo
-2017/04/22 03:11:13: GTFS_get_durations ERROR - No relation found: "595" from Alice Coutinho to Terminal Carapina
-2017/04/22 03:11:17: GTFS_get_durations ERROR - No relation found: "595" from Terminal Carapina to Alice Coutinho
-2017/04/22 03:11:19: GTFS_get_durations ERROR - No relation found: "595C" from Alice Coutinho to Terminal Carapina
-2017/04/22 03:11:24: GTFS_get_durations ERROR - No relation found: "595C" from Terminal Carapina to Alice Coutinho
-2017/04/22 03:11:26: GTFS_get_durations ERROR - No relation found: "595P" from Alice Coutinho to Terminal Carapina
-2017/04/22 03:11:28: GTFS_get_durations ERROR - No relation found: "595P" from Terminal Carapina to Alice Coutinho
-2017/04/22 03:11:36: GTFS_get_durations ERROR - No relation found: "595T" from Alice Coutinho to Terminal Carapina
-2017/04/22 03:11:37: GTFS_get_durations ERROR - No relation found: "595T" from Terminal Carapina to Alice Coutinho
-2017/04/22 03:11:39: GTFS_get_durations ERROR - Route "596" from Cariacica to Terminal Carapina doesn't start with a stop
-2017/04/22 03:11:43: GTFS_get_durations ERROR - Route "596" from Terminal Carapina to Cariacica doesn't end with a stop
-2017/04/22 03:11:46: GTFS_get_durations ERROR - No relation found: "597" from Andre Carloni to Terminal Sao Torquato
-2017/04/22 03:12:40: GTFS_get_durations ERROR - No relation found: "598" from Vila Progresso to Terminal Carapina
-2017/04/22 03:12:43: GTFS_get_durations ERROR - No relation found: "598" from Terminal Carapina to Vila Progresso
-2017/04/22 03:12:44: GTFS_get_durations ERROR - Route "599" from Santo Antonio to Terminal Carapina doesn't start with a stop
-2017/04/22 03:12:46: GTFS_get_durations ERROR - Route "599" from Terminal Carapina to Santo Antonio doesn't end with a stop
-2017/04/22 03:13:20: GTFS_get_durations ERROR - No relation found: "601B" from Terminal Ibes to None
-2017/04/22 03:13:21: GTFS_get_durations ERROR - No relation found: "601F" from Terminal Ibes to None
-2017/04/22 03:13:47: GTFS_get_durations ERROR - No relation found: "603H" from Terminal Itaparica to Terminal Ibes
-2017/04/22 03:13:48: GTFS_get_durations ERROR - No relation found: "603H" from Terminal Ibes to Terminal Itaparica
-2017/04/22 03:13:53: GTFS_get_durations ERROR - No relation found: "603S" from Terminal Itaparica to Terminal Ibes
-2017/04/22 03:13:56: GTFS_get_durations ERROR - No relation found: "603S" from Terminal Ibes to Terminal Itaparica
-2017/04/22 03:15:13: GTFS_get_durations ERROR - No relation found: "605U" from Terminal Vila Velha to Terminal Ibes
-2017/04/22 03:15:15: GTFS_get_durations ERROR - No relation found: "605U" from Terminal Ibes to Terminal Vila Velha
-2017/04/22 03:15:31: GTFS_get_durations ERROR - No relation found: "606C" from Terminal Vila Velha to Terminal Ibes
-2017/04/22 03:15:35: GTFS_get_durations ERROR - No relation found: "606C" from Terminal Ibes to Terminal Vila Velha
-2017/04/22 03:15:38: GTFS_get_durations ERROR - No relation found: "606D" from Terminal Vila Velha to Terminal Ibes
-2017/04/22 03:15:39: GTFS_get_durations ERROR - No relation found: "606D" from Terminal Ibes to Terminal Vila Velha
-2017/04/22 03:15:47: GTFS_get_durations ERROR - No relation found: "607P" from Terminal Ibes to None
-2017/04/22 03:15:51: GTFS_get_durations ERROR - No relation found: "608P" from Terminal Ibes to None
-2017/04/22 03:15:56: GTFS_get_durations ERROR - No relation found: "609B" from Terminal Itaparica to None
-2017/04/22 03:15:57: GTFS_get_durations ERROR - No relation found: "609P" from Terminal Itaparica to None
-2017/04/22 03:16:11: GTFS_get_durations ERROR - No relation found: "611S" from Terminal Itaparica to None
-2017/04/22 03:16:13: GTFS_get_durations ERROR - No relation found: "611X" from Terminal Itaparica to None
-2017/04/22 03:16:16: GTFS_get_durations ERROR - Route "612" from Terra Vermelha to Terminal Itaparica doesn't start with a stop
-2017/04/22 03:16:18: GTFS_get_durations ERROR - Route "612" from Terminal Itaparica to Terra Vermelha doesn't end with a stop
-2017/04/22 03:16:19: GTFS_get_durations ERROR - No relation found: "612U" from Terra Vermelha to Terminal Itaparica
-2017/04/22 03:16:22: GTFS_get_durations ERROR - No relation found: "612U" from Terminal Itaparica to Terra Vermelha
-2017/04/22 03:16:33: GTFS_get_durations ERROR - No relation found: "613S" from Ponta da Fruta to Terminal Itaparica
-2017/04/22 03:16:35: GTFS_get_durations ERROR - No relation found: "613S" from Terminal Itaparica to Ponta da Fruta
-2017/04/22 03:16:41: GTFS_get_durations ERROR - No relation found: "613X" from Ponta da Fruta to Terminal Itaparica
-2017/04/22 03:16:43: GTFS_get_durations ERROR - No relation found: "613X" from Terminal Itaparica to Ponta da Fruta
-2017/04/22 03:17:02: GTFS_get_durations ERROR - No relation found: "614" from Terminal Jardim America to Terminal Itaparica
-2017/04/22 03:17:04: GTFS_get_durations ERROR - No relation found: "614S" from Terminal Itaparica to Terminal Jardim America
-2017/04/22 03:19:41: GTFS_get_durations ERROR - No relation found: "614S" from Terminal Jardim America to Terminal Itaparica
-2017/04/22 03:19:59: GTFS_get_durations ERROR - No relation found: "616" from Terminal Itaparica to None
-2017/04/22 03:20:01: GTFS_get_durations ERROR - No relation found: "616B" from Terminal Itaparica to None
-2017/04/22 03:20:08: GTFS_get_durations ERROR - No relation found: "616F" from Terminal Itaparica to None
-2017/04/22 03:20:10: GTFS_get_durations ERROR - No relation found: "616H" from Terminal Itaparica to None
-2017/04/22 03:20:13: GTFS_get_durations ERROR - No relation found: "616P" from Terminal Itaparica to None
-2017/04/22 03:20:17: GTFS_get_durations ERROR - No relation found: "616S" from Terminal Itaparica to None
-2017/04/22 03:20:19: GTFS_get_durations ERROR - Route "617" from Terminal Itaparica to None doesn't end with a stop
-2017/04/22 03:20:21: GTFS_get_durations ERROR - No relation found: "617C" from Terminal Itaparica to None
-2017/04/22 03:20:22: GTFS_get_durations ERROR - No relation found: "617F" from Terminal Itaparica to None
-2017/04/22 03:20:26: GTFS_get_durations ERROR - No relation found: "617P" from Terminal Itaparica to None
-2017/04/22 03:20:29: GTFS_get_durations ERROR - No relation found: "617S" from Terminal Itaparica to None
-2017/04/22 03:20:35: GTFS_get_durations ERROR - No relation found: "618P" from Terminal Itaparica to None
-2017/04/22 03:20:36: GTFS_get_durations ERROR - No relation found: "618S" from Terminal Itaparica to None
-2017/04/22 03:20:38: GTFS_get_durations ERROR - No relation found: "618X" from Terminal Itaparica to None
-2017/04/22 03:20:43: GTFS_get_durations ERROR - No relation found: "619B" from Terminal Itaparica to None
-2017/04/22 03:20:45: GTFS_get_durations ERROR - No relation found: "619F" from Terminal Itaparica to None
-2017/04/22 03:20:54: GTFS_get_durations ERROR - No relation found: "624E" from Terminal Itaparica to Terminal Sao Torquato
-2017/04/22 03:20:56: GTFS_get_durations ERROR - No relation found: "624E" from Terminal Sao Torquato to Terminal Itaparica
-2017/04/22 03:21:17: GTFS_get_durations ERROR - Route "630" from Rio Marinho to Terminal Sao Torquato doesn't start with a stop
-2017/04/22 03:21:23: GTFS_get_durations ERROR - No relation found: "630" from Terminal Sao Torquato to Rio Marinho
-2017/04/22 03:21:31: GTFS_get_durations ERROR - No relation found: "631B" from Terminal Sao Torquato to None
-2017/04/22 03:21:45: GTFS_get_durations ERROR - No relation found: "634" from Terminal Vila Velha to None
-2017/04/22 03:21:47: GTFS_get_durations ERROR - No relation found: "634T" from Terminal Vila Velha to None
-2017/04/22 03:22:25: GTFS_get_durations ERROR - No relation found: "652P" from Terminal Itaparica to None
-2017/04/22 03:22:28: GTFS_get_durations ERROR - Route "653" from Normilia to Terminal Itaparica doesn't start with a stop
-2017/04/22 03:22:30: GTFS_get_durations ERROR - Route "653" from Terminal Itaparica to Normilia doesn't end with a stop
-2017/04/22 03:22:33: GTFS_get_durations ERROR - Route "654" from Terminal Itaparica to None doesn't end with a stop
-2017/04/22 03:22:34: GTFS_get_durations ERROR - No relation found: "654C" from Terminal Itaparica to None
-2017/04/22 03:22:37: GTFS_get_durations ERROR - No relation found: "654F" from Terminal Itaparica to None
-2017/04/22 03:22:39: GTFS_get_durations ERROR - No relation found: "654P" from Terminal Itaparica to None
-2017/04/22 03:22:43: GTFS_get_durations ERROR - No relation found: "654S" from Terminal Itaparica to None
-2017/04/22 03:22:49: GTFS_get_durations ERROR - No relation found: "655P" from Terminal Itaparica to None
-2017/04/22 03:23:00: GTFS_get_durations ERROR - No relation found: "656H" from Terminal Itaparica to Terminal Vila Velha
-2017/04/22 03:23:06: GTFS_get_durations ERROR - No relation found: "656H" from Terminal Vila Velha to Terminal Itaparica
-2017/04/22 03:23:10: GTFS_get_durations ERROR - Route "657" from Xuri to Terminal Itaparica doesn't start with a stop
-2017/04/22 03:23:14: GTFS_get_durations ERROR - Route "657" from Terminal Itaparica to Xuri doesn't end with a stop
-2017/04/22 03:23:26: GTFS_get_durations ERROR - No relation found: "659" from Retiro do Congo to Terminal Itaparica
-2017/04/22 03:23:30: GTFS_get_durations ERROR - No relation found: "659" from Terminal Itaparica to Retiro do Congo
-2017/04/22 03:23:32: GTFS_get_durations ERROR - No relation found: "659X" from Retiro do Congo to Terminal Itaparica
-2017/04/22 03:23:35: GTFS_get_durations ERROR - No relation found: "659X" from Terminal Itaparica to Retiro do Congo
-2017/04/22 03:23:42: GTFS_get_durations ERROR - No relation found: "660D" from Terminal Itaparica to Terminal Sao Torquato
-2017/04/22 03:23:46: GTFS_get_durations ERROR - No relation found: "660D" from Terminal Sao Torquato to Terminal Itaparica
-2017/04/22 03:24:01: GTFS_get_durations ERROR - No relation found: "664" from Terminal Sao Torquato to None
-2017/04/22 03:24:08: GTFS_get_durations ERROR - No relation found: "665" from Terminal Vila Velha to Terminal Sao Torquato
-2017/04/22 03:24:10: GTFS_get_durations ERROR - No relation found: "665" from Terminal Sao Torquato to Terminal Vila Velha
-2017/04/22 03:24:14: GTFS_get_durations ERROR - No relation found: "667" from Terminal Vila Velha to Terminal Sao Torquato
-2017/04/22 03:24:19: GTFS_get_durations ERROR - No relation found: "667" from Terminal Sao Torquato to Terminal Vila Velha
-2017/04/22 03:24:21: GTFS_get_durations ERROR - No relation found: "667P" from Terminal Vila Velha to Terminal Sao Torquato
-2017/04/22 03:24:27: GTFS_get_durations ERROR - No relation found: "667P" from Terminal Sao Torquato to Terminal Vila Velha
-2017/04/22 03:24:30: GTFS_get_durations ERROR - No relation found: "668" from Ponta da Fruta to Terminal Vila Velha
-2017/04/22 03:24:32: GTFS_get_durations ERROR - No relation found: "668" from Terminal Vila Velha to Ponta da Fruta
-2017/04/22 03:25:16: GTFS_get_durations ERROR - No relation found: "700" from Terminal Itaciba to Terminal Campo Grande
-2017/04/22 03:25:18: GTFS_get_durations ERROR - No relation found: "700Z" from Terminal Campo Grande to Terminal Itaciba
-2017/04/22 03:25:21: GTFS_get_durations ERROR - No relation found: "700Z" from Terminal Itaciba to Terminal Campo Grande
-2017/04/22 03:25:24: GTFS_get_durations ERROR - No relation found: "701" from Antonio Ferreira Borges to Terminal Itaciba
-2017/04/22 03:25:34: GTFS_get_durations ERROR - No relation found: "701" from Terminal Itaciba to Antonio Ferreira Borges
-2017/04/22 03:25:37: GTFS_get_durations ERROR - No relation found: "701M" from Antonio Ferreira Borges to Terminal Itaciba
-2017/04/22 03:25:39: GTFS_get_durations ERROR - No relation found: "701M" from Terminal Itaciba to Antonio Ferreira Borges
-2017/04/22 03:25:40: GTFS_get_durations ERROR - No relation found: "701S" from Antonio Ferreira Borges to Terminal Itaciba
-2017/04/22 03:25:42: GTFS_get_durations ERROR - No relation found: "701S" from Terminal Itaciba to Antonio Ferreira Borges
-2017/04/22 03:25:44: GTFS_get_durations ERROR - No relation found: "701X" from Antonio Ferreira Borges to Terminal Itaciba
-2017/04/22 03:25:46: GTFS_get_durations ERROR - No relation found: "701X" from Terminal Itaciba to Antonio Ferreira Borges
-2017/04/22 03:25:47: GTFS_get_durations ERROR - No relation found: "702" from Vila Merlo to Terminal Itaciba
-2017/04/22 03:25:48: GTFS_get_durations ERROR - No relation found: "702" from Terminal Itaciba to Vila Merlo
-2017/04/22 03:25:50: GTFS_get_durations ERROR - No relation found: "702L" from Vila Merlo to Terminal Itaciba
-2017/04/22 03:25:51: GTFS_get_durations ERROR - No relation found: "702L" from Terminal Itaciba to Vila Merlo
-2017/04/22 03:25:52: GTFS_get_durations ERROR - No relation found: "702X" from Vila Merlo to Terminal Itaciba
-2017/04/22 03:25:55: GTFS_get_durations ERROR - No relation found: "702X" from Terminal Itaciba to Vila Merlo
-2017/04/22 03:25:58: GTFS_get_durations ERROR - No relation found: "703" from Porto Belo to Terminal Itaciba
-2017/04/22 03:25:59: GTFS_get_durations ERROR - No relation found: "703" from Terminal Itaciba to Porto Belo
-2017/04/22 03:26:01: GTFS_get_durations ERROR - No relation found: "704" from Flexal II to Terminal Itaciba
-2017/04/22 03:26:03: GTFS_get_durations ERROR - No relation found: "704" from Terminal Itaciba to Flexal II
-2017/04/22 03:26:05: GTFS_get_durations ERROR - No relation found: "705" from Nova Brasilia to Terminal Itaciba
-2017/04/22 03:26:07: GTFS_get_durations ERROR - No relation found: "705" from Terminal Itaciba to Nova Brasilia
-2017/04/22 03:26:11: GTFS_get_durations ERROR - No relation found: "705B" from Nova Brasilia to Terminal Itaciba
-2017/04/22 03:26:13: GTFS_get_durations ERROR - No relation found: "705B" from Terminal Itaciba to Nova Brasilia
-2017/04/22 03:26:17: GTFS_get_durations ERROR - No relation found: "705F" from Nova Brasilia to Terminal Itaciba
-2017/04/22 03:26:18: GTFS_get_durations ERROR - No relation found: "705F" from Terminal Itaciba to Nova Brasilia
-2017/04/22 03:26:25: GTFS_get_durations ERROR - No relation found: "706" from Rio Branco to Terminal Itaciba
-2017/04/22 03:26:30: GTFS_get_durations ERROR - No relation found: "706" from Terminal Itaciba to Rio Branco
-2017/04/22 03:26:33: GTFS_get_durations ERROR - No relation found: "707" from Nova Canaa to Terminal Itaciba
-2017/04/22 03:26:37: GTFS_get_durations ERROR - No relation found: "707" from Terminal Itaciba to Nova Canaa
-2017/04/22 03:26:39: GTFS_get_durations ERROR - No relation found: "708" from Porto Novo to Terminal Itaciba
-2017/04/22 03:26:43: GTFS_get_durations ERROR - No relation found: "708" from Terminal Itaciba to Porto Novo
-2017/04/22 03:26:45: GTFS_get_durations ERROR - No relation found: "708E" from Porto Novo to Terminal Itaciba
-2017/04/22 03:26:48: GTFS_get_durations ERROR - No relation found: "708E" from Terminal Itaciba to Porto Novo
-2017/04/22 03:26:53: GTFS_get_durations ERROR - No relation found: "710" from Santa Rosa to Terminal Itaciba
-2017/04/22 03:26:55: GTFS_get_durations ERROR - No relation found: "710" from Terminal Itaciba to Santa Rosa
-2017/04/22 03:26:57: GTFS_get_durations ERROR - No relation found: "710B" from Santa Rosa to Terminal Itaciba
-2017/04/22 03:26:59: GTFS_get_durations ERROR - No relation found: "710B" from Terminal Itaciba to Santa Rosa
-2017/04/22 03:27:01: GTFS_get_durations ERROR - No relation found: "711" from Nova Valverde to Terminal Itaciba
-2017/04/22 03:27:04: GTFS_get_durations ERROR - No relation found: "711" from Terminal Itaciba to Nova Valverde
-2017/04/22 03:27:07: GTFS_get_durations ERROR - No relation found: "711P" from Nova Valverde to Terminal Itaciba
-2017/04/22 03:27:10: GTFS_get_durations ERROR - No relation found: "711P" from Terminal Itaciba to Nova Valverde
-2017/04/22 03:27:12: GTFS_get_durations ERROR - No relation found: "712" from Terminal Itaciba to None
-2017/04/22 03:27:14: GTFS_get_durations ERROR - No relation found: "712B" from Terminal Itaciba to None
-2017/04/22 03:27:17: GTFS_get_durations ERROR - No relation found: "714" from Terminal Campo Grande to None
-2017/04/22 03:27:19: GTFS_get_durations ERROR - No relation found: "714A" from Terminal Campo Grande to None
-2017/04/22 03:27:21: GTFS_get_durations ERROR - No relation found: "714B" from Terminal Campo Grande to None
-2017/04/22 03:27:25: GTFS_get_durations ERROR - No relation found: "714D" from Terminal Campo Grande to None
-2017/04/22 03:27:27: GTFS_get_durations ERROR - No relation found: "714P" from Terminal Campo Grande to None
-2017/04/22 03:27:32: GTFS_get_durations ERROR - No relation found: "714X" from Terminal Campo Grande to None
-2017/04/22 03:27:35: GTFS_get_durations ERROR - No relation found: "715" from Jardim Campo Grande to Terminal Campo Grande
-2017/04/22 03:27:39: GTFS_get_durations ERROR - No relation found: "715" from Terminal Campo Grande to Jardim Campo Grande
-2017/04/22 03:27:41: GTFS_get_durations ERROR - No relation found: "715B" from Jardim Campo Grande to Terminal Campo Grande
-2017/04/22 03:27:43: GTFS_get_durations ERROR - No relation found: "715B" from Terminal Campo Grande to Jardim Campo Grande
-2017/04/22 03:27:46: GTFS_get_durations ERROR - No relation found: "716" from Padre Gabriel to Terminal Campo Grande
-2017/04/22 03:27:48: GTFS_get_durations ERROR - No relation found: "716" from Terminal Campo Grande to Padre Gabriel
-2017/04/22 03:27:49: GTFS_get_durations ERROR - No relation found: "716Z" from Padre Gabriel to Terminal Campo Grande
-2017/04/22 03:27:50: GTFS_get_durations ERROR - No relation found: "716Z" from Terminal Campo Grande to Padre Gabriel
-2017/04/22 03:27:53: GTFS_get_durations ERROR - No relation found: "718" from Cacaroca to Terminal Campo Grande
-2017/04/22 03:27:56: GTFS_get_durations ERROR - No relation found: "718" from Terminal Campo Grande to Cacaroca
-2017/04/22 03:27:58: GTFS_get_durations ERROR - No relation found: "718Z" from Cacaroca to Terminal Campo Grande
-2017/04/22 03:28:00: GTFS_get_durations ERROR - No relation found: "718Z" from Terminal Campo Grande to Cacaroca
-2017/04/22 03:28:03: GTFS_get_durations ERROR - No relation found: "719" from Terminal Campo Grande to None
-2017/04/22 03:28:05: GTFS_get_durations ERROR - No relation found: "719F" from Terminal Campo Grande to None
-2017/04/22 03:28:07: GTFS_get_durations ERROR - No relation found: "719P" from Terminal Campo Grande to None
-2017/04/22 03:28:09: GTFS_get_durations ERROR - No relation found: "719Z" from Terminal Campo Grande to None
-2017/04/22 03:28:12: GTFS_get_durations ERROR - No relation found: "720" from Santa Barbara to Terminal Campo Grande
-2017/04/22 03:28:14: GTFS_get_durations ERROR - No relation found: "720" from Terminal Campo Grande to Santa Barbara
-2017/04/22 03:28:16: GTFS_get_durations ERROR - No relation found: "721" from Terminal Campo Grande to None
-2017/04/22 03:28:19: GTFS_get_durations ERROR - No relation found: "723" from Santa Cecilia to Terminal Campo Grande
-2017/04/22 03:28:21: GTFS_get_durations ERROR - No relation found: "723" from Terminal Campo Grande to Santa Cecilia
-2017/04/22 03:28:23: GTFS_get_durations ERROR - No relation found: "724" from Novo Brasil to Terminal Campo Grande
-2017/04/22 03:28:25: GTFS_get_durations ERROR - No relation found: "724" from Terminal Campo Grande to Novo Brasil
-2017/04/22 03:28:27: GTFS_get_durations ERROR - No relation found: "725" from Terminal Campo Grande to None
-2017/04/22 03:28:29: GTFS_get_durations ERROR - No relation found: "725P" from Terminal Campo Grande to None
-2017/04/22 03:28:31: GTFS_get_durations ERROR - No relation found: "726" from Nova Campo Grande to Terminal Campo Grande
-2017/04/22 03:28:33: GTFS_get_durations ERROR - No relation found: "726" from Terminal Campo Grande to Nova Campo Grande
-2017/04/22 03:28:37: GTFS_get_durations ERROR - No relation found: "727" from Bubu to Terminal Campo Grande
-2017/04/22 03:28:38: GTFS_get_durations ERROR - No relation found: "727" from Terminal Campo Grande to Bubu
-2017/04/22 03:28:45: GTFS_get_durations ERROR - No relation found: "727L" from Bubu to Terminal Campo Grande
-2017/04/22 03:28:50: GTFS_get_durations ERROR - No relation found: "727L" from Terminal Campo Grande to Bubu
-2017/04/22 03:28:52: GTFS_get_durations ERROR - No relation found: "727M" from Bubu to Terminal Campo Grande
-2017/04/22 03:28:57: GTFS_get_durations ERROR - No relation found: "727M" from Terminal Campo Grande to Bubu
-2017/04/22 03:29:00: GTFS_get_durations ERROR - No relation found: "728" from Nova Rosa da Penha to Terminal Campo Grande
-2017/04/22 03:29:03: GTFS_get_durations ERROR - No relation found: "728" from Terminal Campo Grande to Nova Rosa da Penha
-2017/04/22 03:29:05: GTFS_get_durations ERROR - No relation found: "728S" from Nova Rosa da Penha to Terminal Campo Grande
-2017/04/22 03:29:07: GTFS_get_durations ERROR - No relation found: "728S" from Terminal Campo Grande to Nova Rosa da Penha
-2017/04/22 03:29:08: GTFS_get_durations ERROR - No relation found: "729" from Terminal Campo Grande to None
-2017/04/22 03:29:11: GTFS_get_durations ERROR - No relation found: "729Z" from Terminal Campo Grande to None
-2017/04/22 03:29:13: GTFS_get_durations ERROR - No relation found: "730" from Bairro Expedito to Terminal Jardim America
-2017/04/22 03:29:15: GTFS_get_durations ERROR - No relation found: "730" from Terminal Jardim America to Bairro Expedito
-2017/04/22 03:29:25: GTFS_get_durations ERROR - No relation found: "730B" from Bairro Expedito to Terminal Jardim America
-2017/04/22 03:29:26: GTFS_get_durations ERROR - No relation found: "730B" from Terminal Jardim America to Bairro Expedito
-2017/04/22 03:29:32: GTFS_get_durations ERROR - No relation found: "731" from Terminal Campo Grande to Terminal Jardim America
-2017/04/22 03:29:34: GTFS_get_durations ERROR - No relation found: "731" from Terminal Jardim America to Terminal Campo Grande
-2017/04/22 03:29:36: GTFS_get_durations ERROR - No relation found: "731P" from Terminal Campo Grande to Terminal Jardim America
-2017/04/22 03:29:39: GTFS_get_durations ERROR - No relation found: "731P" from Terminal Jardim America to Terminal Campo Grande
-2017/04/22 03:29:42: GTFS_get_durations ERROR - No relation found: "732" from Cacaroca to Terminal Jardim America
-2017/04/22 03:29:46: GTFS_get_durations ERROR - No relation found: "732" from Terminal Jardim America to Cacaroca
-2017/04/22 03:29:50: GTFS_get_durations ERROR - No relation found: "732C" from Cacaroca to Terminal Jardim America
-2017/04/22 03:29:52: GTFS_get_durations ERROR - No relation found: "732C" from Terminal Jardim America to Cacaroca
-2017/04/22 03:29:59: GTFS_get_durations ERROR - No relation found: "732P" from Cacaroca to Terminal Jardim America
-2017/04/22 03:30:00: GTFS_get_durations ERROR - No relation found: "732P" from Terminal Jardim America to Cacaroca
-2017/04/22 03:30:03: GTFS_get_durations ERROR - No relation found: "733" from Terminal Jardim America to None
-2017/04/22 03:30:06: GTFS_get_durations ERROR - No relation found: "733F" from Terminal Jardim America to None
-2017/04/22 03:30:07: GTFS_get_durations ERROR - No relation found: "733P" from Terminal Jardim America to None
-2017/04/22 03:30:11: GTFS_get_durations ERROR - No relation found: "734" from Castelo Branco to Terminal Jardim America
-2017/04/22 03:30:13: GTFS_get_durations ERROR - No relation found: "734" from Terminal Jardim America to Castelo Branco
-2017/04/22 03:30:16: GTFS_get_durations ERROR - No relation found: "735" from Cariacica to Terminal Sao Torquato
-2017/04/22 03:30:19: GTFS_get_durations ERROR - No relation found: "735" from Terminal Sao Torquato to Cariacica
-2017/04/22 03:30:22: GTFS_get_durations ERROR - No relation found: "736" from Sao Conrado to Terminal Jardim America
-2017/04/22 03:30:24: GTFS_get_durations ERROR - No relation found: "736" from Terminal Jardim America to Sao Conrado
-2017/04/22 03:30:26: GTFS_get_durations ERROR - No relation found: "737" from Nova Canaa to Hospital Sao Lucas
-2017/04/22 03:30:33: GTFS_get_durations ERROR - No relation found: "737" from Hospital Sao Lucas to Nova Canaa
-2017/04/22 03:30:35: GTFS_get_durations ERROR - No relation found: "738" from Rosa da Penha to Terminal Jardim America
-2017/04/22 03:30:36: GTFS_get_durations ERROR - No relation found: "738" from Terminal Jardim America to Rosa da Penha
-2017/04/22 03:30:37: GTFS_get_durations ERROR - No relation found: "739" from Terminal Jardim America to None
-2017/04/22 03:30:39: GTFS_get_durations ERROR - No relation found: "740" from Vista Mar to Terminal Jardim America
-2017/04/22 03:30:40: GTFS_get_durations ERROR - No relation found: "740" from Terminal Jardim America to Vista Mar
-2017/04/22 03:30:42: GTFS_get_durations ERROR - No relation found: "741" from Bandeirantes to Terminal Jardim America
-2017/04/22 03:30:46: GTFS_get_durations ERROR - No relation found: "741" from Terminal Jardim America to Bandeirantes
-2017/04/22 03:30:47: GTFS_get_durations ERROR - No relation found: "742" from Terminal Campo Grande to Terminal Sao Torquato
-2017/04/22 03:30:49: GTFS_get_durations ERROR - No relation found: "742" from Terminal Sao Torquato to Terminal Campo Grande
-2017/04/22 03:30:50: GTFS_get_durations ERROR - No relation found: "743" from Flexal II to Terminal Sao Torquato
-2017/04/22 03:30:52: GTFS_get_durations ERROR - No relation found: "743" from Terminal Sao Torquato to Flexal II
-2017/04/22 03:30:53: GTFS_get_durations ERROR - No relation found: "744" from Nova Canaa to Terminal Sao Torquato
-2017/04/22 03:30:55: GTFS_get_durations ERROR - No relation found: "744" from Terminal Sao Torquato to Nova Canaa
-2017/04/22 03:30:57: GTFS_get_durations ERROR - No relation found: "746" from Bairro Aparecida to Terminal Sao Torquato
-2017/04/22 03:30:59: GTFS_get_durations ERROR - No relation found: "746" from Terminal Sao Torquato to Bairro Aparecida
-2017/04/22 03:31:00: GTFS_get_durations ERROR - No relation found: "746F" from Bairro Aparecida to Terminal Sao Torquato
-2017/04/22 03:31:02: GTFS_get_durations ERROR - No relation found: "746F" from Terminal Sao Torquato to Bairro Aparecida
-2017/04/22 03:31:03: GTFS_get_durations ERROR - No relation found: "748" from Sao Geraldo to Terminal Jardim America
-2017/04/22 03:31:06: GTFS_get_durations ERROR - No relation found: "748" from Terminal Jardim America to Sao Geraldo
-2017/04/22 03:31:09: GTFS_get_durations ERROR - No relation found: "750" from Vila Prudencio to Terminal Itaciba
-2017/04/22 03:31:11: GTFS_get_durations ERROR - No relation found: "750" from Terminal Itaciba to Vila Prudencio
-2017/04/22 03:31:16: GTFS_get_durations ERROR - No relation found: "751" from Ibiapaba to Terminal Itaciba
-2017/04/22 03:31:17: GTFS_get_durations ERROR - No relation found: "751" from Terminal Itaciba to Ibiapaba
-2017/04/22 03:31:19: GTFS_get_durations ERROR - No relation found: "753" from Roda d`Agua to Terminal Itaciba
-2017/04/22 03:31:21: GTFS_get_durations ERROR - No relation found: "753" from Terminal Itaciba to Roda d`Agua
-2017/04/22 03:31:22: GTFS_get_durations ERROR - No relation found: "756" from Padre Gabriel to Terminal Jardim America
-2017/04/22 03:31:27: GTFS_get_durations ERROR - No relation found: "756" from Terminal Jardim America to Padre Gabriel
-2017/04/22 03:31:29: GTFS_get_durations ERROR - No relation found: "757" from Terminal Campo Grande to None
-2017/04/22 03:31:32: GTFS_get_durations ERROR - No relation found: "757B" from Terminal Campo Grande to None
-2017/04/22 03:31:39: GTFS_get_durations ERROR - No relation found: "759" from Flexal II to Hospital Sao Lucas
-2017/04/22 03:31:41: GTFS_get_durations ERROR - No relation found: "759" from Hospital Sao Lucas to Flexal II
-2017/04/22 03:31:42: GTFS_get_durations ERROR - No relation found: "760" from Nova Esperanca to Terminal Itaciba
-2017/04/22 03:31:44: GTFS_get_durations ERROR - No relation found: "760" from Terminal Itaciba to Nova Esperanca
-2017/04/22 03:31:47: GTFS_get_durations ERROR - No relation found: "761" from Presidente Medici to Terminal Sao Torquato
-2017/04/22 03:31:51: GTFS_get_durations ERROR - No relation found: "761" from Terminal Sao Torquato to Presidente Medici
-2017/04/22 03:31:53: GTFS_get_durations ERROR - No relation found: "761F" from Presidente Medici to Terminal Sao Torquato
-2017/04/22 03:31:56: GTFS_get_durations ERROR - No relation found: "761F" from Terminal Sao Torquato to Presidente Medici
-2017/04/22 03:31:58: GTFS_get_durations ERROR - No relation found: "764" from Terminal Campo Grande to None
-2017/04/22 03:32:06: GTFS_get_durations ERROR - No relation found: "766" from Vila Cajueiro to Terminal Campo Grande
-2017/04/22 03:32:11: GTFS_get_durations ERROR - No relation found: "766" from Terminal Campo Grande to Vila Cajueiro
-2017/04/22 03:32:13: GTFS_get_durations ERROR - No relation found: "768" from Prolar to Terminal Itaciba
-2017/04/22 03:32:28: GTFS_get_durations ERROR - No relation found: "768" from Terminal Itaciba to Prolar
-2017/04/22 03:32:31: GTFS_get_durations ERROR - No relation found: "768L" from Prolar to Terminal Itaciba
-2017/04/22 03:32:33: GTFS_get_durations ERROR - No relation found: "768L" from Terminal Itaciba to Prolar
-2017/04/22 03:32:35: GTFS_get_durations ERROR - No relation found: "769" from Aparecida to Terminal Itaciba
-2017/04/22 03:32:38: GTFS_get_durations ERROR - No relation found: "769" from Terminal Itaciba to Aparecida
-2017/04/22 03:32:41: GTFS_get_durations ERROR - No relation found: "770" from Bela Vista to Terminal Sao Torquato
-2017/04/22 03:32:43: GTFS_get_durations ERROR - No relation found: "770" from Terminal Sao Torquato to Bela Vista
-2017/04/22 03:32:46: GTFS_get_durations ERROR - No relation found: "770F" from Bela Vista to Terminal Sao Torquato
-2017/04/22 03:32:48: GTFS_get_durations ERROR - No relation found: "770F" from Terminal Sao Torquato to Bela Vista
-2017/04/22 03:32:51: GTFS_get_durations ERROR - No relation found: "770P" from Bela Vista to Terminal Sao Torquato
-2017/04/22 03:32:53: GTFS_get_durations ERROR - No relation found: "770P" from Terminal Sao Torquato to Bela Vista
-2017/04/22 03:32:54: GTFS_get_durations ERROR - No relation found: "771" from Porto de Cariacica to Terminal Itaciba
-2017/04/22 03:32:58: GTFS_get_durations ERROR - No relation found: "771" from Terminal Itaciba to Porto de Cariacica
-2017/04/22 03:33:02: GTFS_get_durations ERROR - No relation found: "773" from Terminal Sao Torquato to None
-2017/04/22 03:33:10: GTFS_get_durations ERROR - No relation found: "773F" from Terminal Sao Torquato to None
-2017/04/22 03:33:12: GTFS_get_durations ERROR - No relation found: "773P" from Terminal Sao Torquato to None
-2017/04/22 03:33:14: GTFS_get_durations ERROR - No relation found: "774" from Nova Rosa da Penha to Terminal Sao Torquato
-2017/04/22 03:33:19: GTFS_get_durations ERROR - No relation found: "774" from Terminal Sao Torquato to Nova Rosa da Penha
-2017/04/22 03:33:21: GTFS_get_durations ERROR - No relation found: "775" from Jardim Botanico to Terminal Sao Torquato
-2017/04/22 03:33:23: GTFS_get_durations ERROR - No relation found: "775" from Terminal Sao Torquato to Jardim Botanico
-2017/04/22 03:33:27: GTFS_get_durations ERROR - No relation found: "776" from Flexal II to Terminal Sao Torquato
-2017/04/22 03:33:31: GTFS_get_durations ERROR - No relation found: "776" from Terminal Sao Torquato to Flexal II
-2017/04/22 03:33:34: GTFS_get_durations ERROR - No relation found: "777" from Novo Brasil to Terminal Sao Torquato
-2017/04/22 03:33:38: GTFS_get_durations ERROR - No relation found: "777" from Terminal Sao Torquato to Novo Brasil
-2017/04/22 03:33:41: GTFS_get_durations ERROR - No relation found: "778" from Terminal Campo Grande to None
-2017/04/22 03:33:42: GTFS_get_durations ERROR - No relation found: "779" from Terminal Campo Grande to None
-2017/04/22 03:33:44: GTFS_get_durations ERROR - No relation found: "779Z" from Terminal Campo Grande to None
-2017/04/22 03:33:45: GTFS_get_durations ERROR - No relation found: "781" from Terminal Campo Grande to Terminal Itaciba
-2017/04/22 03:33:48: GTFS_get_durations ERROR - No relation found: "781" from Terminal Itaciba to Terminal Campo Grande
-2017/04/22 03:33:49: GTFS_get_durations ERROR - No relation found: "783" from Nova Rosa da Penha to Terminal Itaciba
-2017/04/22 03:33:51: GTFS_get_durations ERROR - No relation found: "783" from Terminal Itaciba to Nova Rosa da Penha
-2017/04/22 03:33:54: GTFS_get_durations ERROR - No relation found: "784" from Vila Merlo to Terminal Jardim America
-2017/04/22 03:33:56: GTFS_get_durations ERROR - No relation found: "784" from Terminal Jardim America to Vila Merlo
-2017/04/22 03:33:58: GTFS_get_durations ERROR - No relation found: "784Z" from Vila Merlo to Terminal Jardim America
-2017/04/22 03:34:00: GTFS_get_durations ERROR - No relation found: "784Z" from Terminal Jardim America to Vila Merlo
-2017/04/22 03:34:03: GTFS_get_durations ERROR - No relation found: "785" from Duas Bocas to Terminal Campo Grande
-2017/04/22 03:34:06: GTFS_get_durations ERROR - No relation found: "785" from Terminal Campo Grande to Duas Bocas
-2017/04/22 03:34:07: GTFS_get_durations ERROR - No relation found: "785Z" from Duas Bocas to Terminal Campo Grande
-2017/04/22 03:34:09: GTFS_get_durations ERROR - No relation found: "785Z" from Terminal Campo Grande to Duas Bocas
-2017/04/22 03:34:14: GTFS_get_durations ERROR - No relation found: "787" from Santo Antonio to Terminal Jardim America
-2017/04/22 03:34:15: GTFS_get_durations ERROR - No relation found: "787" from Terminal Jardim America to Santo Antonio
-2017/04/22 03:34:17: GTFS_get_durations ERROR - No relation found: "789" from Sabao to Terminal Campo Grande
-2017/04/22 03:34:20: GTFS_get_durations ERROR - No relation found: "789" from Terminal Campo Grande to Sabao
-2017/04/22 03:34:22: GTFS_get_durations ERROR - No relation found: "792" from Novo Brasil to Campo Grande
-2017/04/22 03:34:27: GTFS_get_durations ERROR - No relation found: "792" from Campo Grande to Novo Brasil
-2017/04/22 03:34:31: GTFS_get_durations ERROR - No relation found: "793" from Vila Progresso to Terminal Campo Grande
-2017/04/22 03:34:33: GTFS_get_durations ERROR - No relation found: "793" from Terminal Campo Grande to Vila Progresso
-2017/04/22 03:34:35: GTFS_get_durations ERROR - No relation found: "794" from Santa Luzia to Terminal Itaciba
-2017/04/22 03:34:38: GTFS_get_durations ERROR - No relation found: "794" from Terminal Itaciba to Santa Luzia
-2017/04/22 03:34:45: GTFS_get_durations ERROR - No relation found: "795" from Alice Coutinho to Terminal Itaciba
-2017/04/22 03:34:47: GTFS_get_durations ERROR - No relation found: "795" from Terminal Itaciba to Alice Coutinho
-2017/04/22 03:34:53: GTFS_get_durations ERROR - No relation found: "796" from Orfanato Cristo Rei to Terminal Campo Grande
-2017/04/22 03:34:55: GTFS_get_durations ERROR - No relation found: "796" from Terminal Campo Grande to Orfanato Cristo Rei
-2017/04/22 03:34:56: GTFS_get_durations ERROR - No relation found: "797" from Vila Merlo to Terminal Itaciba
-2017/04/22 03:34:59: GTFS_get_durations ERROR - No relation found: "797" from Terminal Itaciba to Vila Merlo
-2017/04/22 03:35:01: GTFS_get_durations ERROR - No relation found: "798" from Novo Brasil to Terminal Campo Grande
-2017/04/22 03:35:04: GTFS_get_durations ERROR - No relation found: "798" from Terminal Campo Grande to Novo Brasil
-2017/04/22 03:35:05: GTFS_get_durations ERROR - No relation found: "800" from Terminal Laranjeiras to None
-2017/04/22 03:35:53: GTFS_get_durations ERROR - No relation found: "800E" from Terminal Laranjeiras to None
-2017/04/22 03:35:54: GTFS_get_durations ERROR - No relation found: "800H" from Terminal Laranjeiras to None
-2017/04/22 03:35:56: GTFS_get_durations ERROR - No relation found: "800S" from Terminal Laranjeiras to None
-2017/04/22 03:35:57: GTFS_get_durations ERROR - No relation found: "800X" from Terminal Laranjeiras to None
-2017/04/22 03:35:59: GTFS_get_durations ERROR - No relation found: "800Y" from Terminal Laranjeiras to None
-2017/04/22 03:36:11: GTFS_get_durations ERROR - No relation found: "801" from Terminal Carapina to Terminal Laranjeiras
-2017/04/22 03:36:13: GTFS_get_durations ERROR - Route "802" from Divinopolis to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:36:15: GTFS_get_durations ERROR - Route "802" from Terminal Laranjeiras to Divinopolis doesn't end with a stop
-2017/04/22 03:36:19: GTFS_get_durations ERROR - Route "803" from Pitanga to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:36:34: GTFS_get_durations ERROR - Route "803" from Terminal Laranjeiras to Pitanga doesn't start with a stop
-2017/04/22 03:36:37: GTFS_get_durations ERROR - Route "804" from Centro Industrial to Terminal Laranjeiras doesn't end with a stop
-2017/04/22 03:36:40: GTFS_get_durations ERROR - Route "804" from Terminal Laranjeiras to Centro Industrial doesn't start with a stop
-2017/04/22 03:36:47: GTFS_get_durations ERROR - No relation found: "804B" from Centro Industrial to Terminal Laranjeiras
-2017/04/22 03:36:50: GTFS_get_durations ERROR - No relation found: "804B" from Terminal Laranjeiras to Centro Industrial
-2017/04/22 03:36:51: GTFS_get_durations ERROR - No relation found: "804L" from Centro Industrial to Terminal Laranjeiras
-2017/04/22 03:36:53: GTFS_get_durations ERROR - No relation found: "804L" from Terminal Laranjeiras to Centro Industrial
-2017/04/22 03:36:57: GTFS_get_durations ERROR - No relation found: "804P" from Centro Industrial to Terminal Laranjeiras
-2017/04/22 03:37:02: GTFS_get_durations ERROR - No relation found: "804P" from Terminal Laranjeiras to Centro Industrial
-2017/04/22 03:37:03: GTFS_get_durations ERROR - No relation found: "804X" from Centro Industrial to Terminal Laranjeiras
-2017/04/22 03:37:05: GTFS_get_durations ERROR - No relation found: "804X" from Terminal Laranjeiras to Centro Industrial
-2017/04/22 03:37:08: GTFS_get_durations ERROR - No relation found: "805" from Terminal Laranjeiras to None
-2017/04/22 03:37:19: GTFS_get_durations ERROR - No relation found: "805P" from Terminal Laranjeiras to None
-2017/04/22 03:37:21: GTFS_get_durations ERROR - No relation found: "806" from Terminal Jacaraipe to None
-2017/04/22 03:38:32: GTFS_get_durations ERROR - No relation found: "806C" from Terminal Jacaraipe to None
-2017/04/22 03:38:33: GTFS_get_durations ERROR - No relation found: "806D" from Terminal Jacaraipe to None
-2017/04/22 03:38:41: GTFS_get_durations ERROR - No relation found: "806E" from Terminal Jacaraipe to None
-2017/04/22 03:38:43: GTFS_get_durations ERROR - No relation found: "806F" from Terminal Jacaraipe to None
-2017/04/22 03:38:46: GTFS_get_durations ERROR - No relation found: "806H" from Terminal Jacaraipe to None
-2017/04/22 03:38:49: GTFS_get_durations ERROR - No relation found: "806I" from Terminal Jacaraipe to None
-2017/04/22 03:38:51: GTFS_get_durations ERROR - No relation found: "806K" from Terminal Jacaraipe to None
-2017/04/22 03:39:00: GTFS_get_durations ERROR - No relation found: "806M" from Terminal Jacaraipe to None
-2017/04/22 03:39:09: GTFS_get_durations ERROR - No relation found: "806S" from Terminal Jacaraipe to None
-2017/04/22 03:39:15: GTFS_get_durations ERROR - No relation found: "806X" from Terminal Jacaraipe to None
-2017/04/22 03:39:17: GTFS_get_durations ERROR - Route "807" from Barcelona to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:39:19: GTFS_get_durations ERROR - Route "807" from Terminal Laranjeiras to Barcelona doesn't end with a stop
-2017/04/22 03:39:58: GTFS_get_durations ERROR - Route "809" from Eldorado to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:40:00: GTFS_get_durations ERROR - Route "809" from Terminal Laranjeiras to Eldorado doesn't end with a stop
-2017/04/22 03:40:03: GTFS_get_durations ERROR - No relation found: "809B" from Eldorado to Terminal Laranjeiras
-2017/04/22 03:40:05: GTFS_get_durations ERROR - No relation found: "809B" from Terminal Laranjeiras to Eldorado
-2017/04/22 03:40:07: GTFS_get_durations ERROR - No relation found: "809P" from Eldorado to Terminal Laranjeiras
-2017/04/22 03:40:09: GTFS_get_durations ERROR - No relation found: "809P" from Terminal Laranjeiras to Eldorado
-2017/04/22 03:40:12: GTFS_get_durations ERROR - Route "810" from Sao Francisco to Terminal Jacaraipe doesn't start with a stop
-2017/04/22 03:40:14: GTFS_get_durations ERROR - Route "810" from Terminal Jacaraipe to Sao Francisco doesn't end with a stop
-2017/04/22 03:40:17: GTFS_get_durations ERROR - No relation found: "810C" from Sao Francisco to Terminal Jacaraipe
-2017/04/22 03:40:18: GTFS_get_durations ERROR - No relation found: "810C" from Terminal Jacaraipe to Sao Francisco
-2017/04/22 03:40:57: GTFS_get_durations ERROR - No relation found: "811S" from Serra Dourada III to Terminal Laranjeiras
-2017/04/22 03:40:58: GTFS_get_durations ERROR - No relation found: "811S" from Terminal Laranjeiras to Serra Dourada III
-2017/04/22 03:41:30: GTFS_get_durations ERROR - No relation found: "812S" from Serra Dourada II to Terminal Laranjeiras
-2017/04/22 03:41:32: GTFS_get_durations ERROR - No relation found: "812S" from Terminal Laranjeiras to Serra Dourada II
-2017/04/22 03:42:22: GTFS_get_durations ERROR - Route "814" from Cascata to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:42:23: GTFS_get_durations ERROR - Route "814" from Terminal Laranjeiras to Cascata doesn't end with a stop
-2017/04/22 03:42:26: GTFS_get_durations ERROR - No relation found: "814C" from Cascata to Terminal Laranjeiras
-2017/04/22 03:42:28: GTFS_get_durations ERROR - No relation found: "814C" from Terminal Laranjeiras to Cascata
-2017/04/22 03:42:29: GTFS_get_durations ERROR - No relation found: "814D" from Cascata to Terminal Laranjeiras
-2017/04/22 03:42:31: GTFS_get_durations ERROR - No relation found: "814D" from Terminal Laranjeiras to Cascata
-2017/04/22 03:42:34: GTFS_get_durations ERROR - No relation found: "814X" from Cascata to Terminal Laranjeiras
-2017/04/22 03:42:35: GTFS_get_durations ERROR - No relation found: "814X" from Terminal Laranjeiras to Cascata
-2017/04/22 03:42:43: GTFS_get_durations ERROR - Route "815" from Terminal Laranjeiras to IFES doesn't start with a stop
-2017/04/22 03:42:47: GTFS_get_durations ERROR - No relation found: "815F" from IFES to Terminal Laranjeiras
-2017/04/22 03:42:49: GTFS_get_durations ERROR - No relation found: "815F" from Terminal Laranjeiras to IFES
-2017/04/22 03:43:10: GTFS_get_durations ERROR - No relation found: "816B" from Terminal Laranjeiras to None
-2017/04/22 03:43:13: GTFS_get_durations ERROR - No relation found: "816H" from Terminal Laranjeiras to None
-2017/04/22 03:43:14: GTFS_get_durations ERROR - No relation found: "816M" from Terminal Laranjeiras to None
-2017/04/22 03:43:16: GTFS_get_durations ERROR - No relation found: "816P" from Terminal Laranjeiras to None
-2017/04/22 03:43:18: GTFS_get_durations ERROR - Route "817" from Praia de Carapebus to Terminal Carapina doesn't start with a stop
-2017/04/22 03:43:31: GTFS_get_durations ERROR - Route "817" from Terminal Carapina to Praia de Carapebus doesn't end with a stop
-2017/04/22 03:43:33: GTFS_get_durations ERROR - Route "818" from Enseada de Jacaraipe to Terminal Jacaraipe doesn't start with a stop
-2017/04/22 03:43:36: GTFS_get_durations ERROR - Route "818" from Terminal Jacaraipe to Enseada de Jacaraipe doesn't end with a stop
-2017/04/22 03:43:44: GTFS_get_durations ERROR - No relation found: "819P" from Terminal Carapina to None
-2017/04/22 03:43:54: GTFS_get_durations ERROR - No relation found: "820P" from Terminal Jacaraipe to Terminal Carapina
-2017/04/22 03:43:56: GTFS_get_durations ERROR - No relation found: "820P" from Terminal Carapina to Terminal Jacaraipe
-2017/04/22 03:44:10: GTFS_get_durations ERROR - No relation found: "821T" from Jose de Anchieta to Terminal Carapina
-2017/04/22 03:44:12: GTFS_get_durations ERROR - No relation found: "821T" from Terminal Carapina to Jose de Anchieta
-2017/04/22 03:44:20: GTFS_get_durations ERROR - No relation found: "823P" from Terminal Jacaraipe to None
-2017/04/22 03:44:32: GTFS_get_durations ERROR - No relation found: "824B" from Terminal Laranjeiras to None
-2017/04/22 03:44:46: GTFS_get_durations ERROR - No relation found: "825P" from Terminal Laranjeiras to None
-2017/04/22 03:44:49: GTFS_get_durations ERROR - No relation found: "825S" from Terminal Laranjeiras to None
-2017/04/22 03:44:52: GTFS_get_durations ERROR - No relation found: "826" from Terminal Carapina to None
-2017/04/22 03:45:13: GTFS_get_durations ERROR - No relation found: "826P" from Terminal Carapina to None
-2017/04/22 03:45:17: GTFS_get_durations ERROR - Route "827" from Vista da Serra to Terminal Carapina doesn't start with a stop
-2017/04/22 03:45:18: GTFS_get_durations ERROR - Route "827" from Terminal Carapina to Vista da Serra doesn't end with a stop
-2017/04/22 03:45:20: GTFS_get_durations ERROR - No relation found: "828" from Sao Marcos to Terminal Laranjeiras
-2017/04/22 03:45:25: GTFS_get_durations ERROR - No relation found: "828" from Terminal Laranjeiras to Sao Marcos
-2017/04/22 03:45:41: GTFS_get_durations ERROR - No relation found: "829P" from Planalto Serrano to Terminal Carapina
-2017/04/22 03:45:42: GTFS_get_durations ERROR - No relation found: "829P" from Terminal Carapina to Planalto Serrano
-2017/04/22 03:45:44: GTFS_get_durations ERROR - No relation found: "830" from IFES to Terminal Laranjeiras
-2017/04/22 03:45:46: GTFS_get_durations ERROR - No relation found: "830" from Terminal Laranjeiras to IFES
-2017/04/22 03:45:49: GTFS_get_durations ERROR - No relation found: "830C" from IFES to Terminal Laranjeiras
-2017/04/22 03:45:51: GTFS_get_durations ERROR - No relation found: "830C" from Terminal Laranjeiras to IFES
-2017/04/22 03:45:53: GTFS_get_durations ERROR - Route "831" from Bicanga to Terminal Carapina doesn't start with a stop
-2017/04/22 03:45:56: GTFS_get_durations ERROR - Route "831" from Terminal Carapina to Bicanga doesn't end with a stop
-2017/04/22 03:45:57: GTFS_get_durations ERROR - No relation found: "831H" from Bicanga to Terminal Carapina
-2017/04/22 03:45:59: GTFS_get_durations ERROR - No relation found: "831H" from Terminal Carapina to Bicanga
-2017/04/22 03:46:01: GTFS_get_durations ERROR - No relation found: "831X" from Bicanga to Terminal Carapina
-2017/04/22 03:46:03: GTFS_get_durations ERROR - No relation found: "831X" from Terminal Carapina to Bicanga
-2017/04/22 03:46:05: GTFS_get_durations ERROR - No relation found: "832" from Vila Nova de Colares to Terminal Laranjeiras
-2017/04/22 03:46:06: GTFS_get_durations ERROR - No relation found: "832" from Terminal Laranjeiras to Vila Nova de Colares
-2017/04/22 03:46:08: GTFS_get_durations ERROR - Route "833" from Barro Branco to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:46:10: GTFS_get_durations ERROR - Route "833" from Terminal Laranjeiras to Barro Branco doesn't end with a stop
-2017/04/22 03:46:24: GTFS_get_durations ERROR - No relation found: "834C" from Jardim Bela Vista to Terminal Laranjeiras
-2017/04/22 03:46:26: GTFS_get_durations ERROR - No relation found: "834C" from Terminal Laranjeiras to Jardim Bela Vista
-2017/04/22 03:46:29: GTFS_get_durations ERROR - No relation found: "834F" from Jardim Bela Vista to Terminal Laranjeiras
-2017/04/22 03:46:33: GTFS_get_durations ERROR - No relation found: "834F" from Terminal Laranjeiras to Jardim Bela Vista
-2017/04/22 03:46:35: GTFS_get_durations ERROR - No relation found: "834H" from Jardim Bela Vista to Terminal Laranjeiras
-2017/04/22 03:46:38: GTFS_get_durations ERROR - No relation found: "834H" from Terminal Laranjeiras to Jardim Bela Vista
-2017/04/22 03:46:41: GTFS_get_durations ERROR - No relation found: "834P" from Jardim Bela Vista to Terminal Laranjeiras
-2017/04/22 03:46:44: GTFS_get_durations ERROR - No relation found: "834P" from Terminal Laranjeiras to Jardim Bela Vista
-2017/04/22 03:46:46: GTFS_get_durations ERROR - No relation found: "834Q" from Jardim Bela Vista to Terminal Laranjeiras
-2017/04/22 03:46:50: GTFS_get_durations ERROR - No relation found: "834Q" from Terminal Laranjeiras to Jardim Bela Vista
-2017/04/22 03:46:51: GTFS_get_durations ERROR - No relation found: "834X" from Jardim Bela Vista to Terminal Laranjeiras
-2017/04/22 03:46:53: GTFS_get_durations ERROR - No relation found: "834X" from Terminal Laranjeiras to Jardim Bela Vista
-2017/04/22 03:46:54: GTFS_get_durations ERROR - No relation found: "835" from Serra to Terminal Carapina
-2017/04/22 03:46:56: GTFS_get_durations ERROR - No relation found: "835" from Terminal Carapina to Serra
-2017/04/22 03:47:00: GTFS_get_durations ERROR - No relation found: "836" from Terminal Carapina to None
-2017/04/22 03:47:04: GTFS_get_durations ERROR - No relation found: "836F" from Terminal Carapina to None
-2017/04/22 03:47:06: GTFS_get_durations ERROR - No relation found: "836P" from Terminal Carapina to None
-2017/04/22 03:47:08: GTFS_get_durations ERROR - No relation found: "837" from Praia Grande to Terminal Carapina
-2017/04/22 03:47:10: GTFS_get_durations ERROR - No relation found: "837" from Terminal Carapina to Praia Grande
-2017/04/22 03:47:11: GTFS_get_durations ERROR - No relation found: "838" from Terminal Carapina to None
-2017/04/22 03:47:14: GTFS_get_durations ERROR - No relation found: "838P" from Terminal Carapina to None
-2017/04/22 03:47:17: GTFS_get_durations ERROR - Route "839" from Eurico Salles to Terminal Jardim America doesn't start with a stop
-2017/04/22 03:47:20: GTFS_get_durations ERROR - No relation found: "839" from Terminal Jardim America to Eurico Salles
-2017/04/22 03:47:21: GTFS_get_durations ERROR - No relation found: "841" from Jardim Carapina to Terminal Carapina
-2017/04/22 03:47:23: GTFS_get_durations ERROR - No relation found: "841" from Terminal Carapina to Jardim Carapina
-2017/04/22 03:47:50: GTFS_get_durations ERROR - No relation found: "843J" from Terminal Laranjeiras to Terminal Carapina
-2017/04/22 03:47:53: GTFS_get_durations ERROR - No relation found: "843J" from Terminal Carapina to Terminal Laranjeiras
-2017/04/22 03:47:56: GTFS_get_durations ERROR - No relation found: "844" from Terminal Carapina to None
-2017/04/22 03:48:59: GTFS_get_durations ERROR - No relation found: "844S" from Terminal Carapina to None
-2017/04/22 03:49:00: GTFS_get_durations ERROR - No relation found: "844X" from Terminal Carapina to None
-2017/04/22 03:49:02: GTFS_get_durations ERROR - Route "845" from Costa Bela to Terminal Jacaraipe doesn't start with a stop
-2017/04/22 03:49:05: GTFS_get_durations ERROR - Route "845" from Terminal Jacaraipe to Costa Bela doesn't end with a stop
-2017/04/22 03:49:14: GTFS_get_durations ERROR - No relation found: "846B" from Terminal Laranjeiras to None
-2017/04/22 03:49:16: GTFS_get_durations ERROR - Route "847" from Cidade Continental to Terminal Carapina doesn't start with a stop
-2017/04/22 03:49:17: GTFS_get_durations ERROR - Route "847" from Terminal Carapina to Cidade Continental doesn't end with a stop
-2017/04/22 03:49:20: GTFS_get_durations ERROR - No relation found: "847B" from Cidade Continental to Terminal Carapina
-2017/04/22 03:49:22: GTFS_get_durations ERROR - No relation found: "847B" from Terminal Carapina to Cidade Continental
-2017/04/22 03:49:24: GTFS_get_durations ERROR - No relation found: "847P" from Cidade Continental to Terminal Carapina
-2017/04/22 03:49:26: GTFS_get_durations ERROR - No relation found: "847P" from Terminal Carapina to Cidade Continental
-2017/04/22 03:49:28: GTFS_get_durations ERROR - No relation found: "847S" from Cidade Continental to Terminal Carapina
-2017/04/22 03:49:30: GTFS_get_durations ERROR - No relation found: "847S" from Terminal Carapina to Cidade Continental
-2017/04/22 03:49:32: GTFS_get_durations ERROR - Route "848" from Balneario de Carapebus to Terminal Carapina doesn't start with a stop
-2017/04/22 03:49:36: GTFS_get_durations ERROR - Route "848" from Terminal Carapina to Balneario de Carapebus doesn't end with a stop
-2017/04/22 03:49:37: GTFS_get_durations ERROR - No relation found: "848C" from Balneario de Carapebus to Terminal Carapina
-2017/04/22 03:49:39: GTFS_get_durations ERROR - No relation found: "848C" from Terminal Carapina to Balneario de Carapebus
-2017/04/22 03:49:41: GTFS_get_durations ERROR - No relation found: "848S" from Balneario de Carapebus to Terminal Carapina
-2017/04/22 03:49:42: GTFS_get_durations ERROR - No relation found: "848S" from Terminal Carapina to Balneario de Carapebus
-2017/04/22 03:49:43: GTFS_get_durations ERROR - No relation found: "848T" from Balneario de Carapebus to Terminal Carapina
-2017/04/22 03:49:46: GTFS_get_durations ERROR - No relation found: "848T" from Terminal Carapina to Balneario de Carapebus
-2017/04/22 03:49:52: GTFS_get_durations ERROR - No relation found: "851" from Divinopolis to Jardim Camburi
-2017/04/22 03:50:00: GTFS_get_durations ERROR - No relation found: "851" from Jardim Camburi to Divinopolis
-2017/04/22 03:50:02: GTFS_get_durations ERROR - No relation found: "851M" from Divinopolis to Jardim Camburi
-2017/04/22 03:50:03: GTFS_get_durations ERROR - No relation found: "851M" from Jardim Camburi to Divinopolis
-2017/04/22 03:50:06: GTFS_get_durations ERROR - Route "853" from Residencial Centro da Serra to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:50:08: GTFS_get_durations ERROR - Route "853" from Terminal Laranjeiras to Residencial Centro da Serra doesn't end with a stop
-2017/04/22 03:50:10: GTFS_get_durations ERROR - Route "854" from Praia Grande to Terminal Jacaraipe doesn't start with a stop
-2017/04/22 03:50:18: GTFS_get_durations ERROR - Route "854" from Terminal Jacaraipe to Praia Grande doesn't end with a stop
-2017/04/22 03:50:20: GTFS_get_durations ERROR - Route "855" from Planalto Serrano to Terminal Carapina doesn't start with a stop
-2017/04/22 03:50:22: GTFS_get_durations ERROR - No relation found: "855" from Terminal Carapina to Planalto Serrano
-2017/04/22 03:50:23: GTFS_get_durations ERROR - No relation found: "855P" from Planalto Serrano to Terminal Carapina
-2017/04/22 03:50:26: GTFS_get_durations ERROR - No relation found: "855P" from Terminal Carapina to Planalto Serrano
-2017/04/22 03:50:41: GTFS_get_durations ERROR - Route "857" from Laranjeiras Velha to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:50:43: GTFS_get_durations ERROR - Route "857" from Terminal Laranjeiras to Laranjeiras Velha doesn't end with a stop
-2017/04/22 03:50:45: GTFS_get_durations ERROR - Route "858" from Novo Porto Canoa to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:50:48: GTFS_get_durations ERROR - Route "858" from Terminal Laranjeiras to Novo Porto Canoa doesn't end with a stop
-2017/04/22 03:50:50: GTFS_get_durations ERROR - Route "859" from Colina da Serra to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:50:52: GTFS_get_durations ERROR - Route "859" from Terminal Laranjeiras to Colina da Serra doesn't end with a stop
-2017/04/22 03:51:06: GTFS_get_durations ERROR - Route "862" from Magistrado to Terminal Jacaraipe doesn't start with a stop
-2017/04/22 03:51:09: GTFS_get_durations ERROR - Route "862" from Terminal Jacaraipe to Magistrado doesn't end with a stop
-2017/04/22 03:51:11: GTFS_get_durations ERROR - No relation found: "862B" from Magistrado to Terminal Jacaraipe
-2017/04/22 03:51:13: GTFS_get_durations ERROR - No relation found: "862B" from Terminal Jacaraipe to Magistrado
-2017/04/22 03:51:15: GTFS_get_durations ERROR - Route "863" from Residencial Jacaraipe to Terminal Jacaraipe doesn't start with a stop
-2017/04/22 03:51:17: GTFS_get_durations ERROR - Route "863" from Terminal Jacaraipe to Residencial Jacaraipe doesn't end with a stop
-2017/04/22 03:51:44: GTFS_get_durations ERROR - Route "865" from Santo Antonio to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:51:47: GTFS_get_durations ERROR - Route "865" from Terminal Laranjeiras to Santo Antonio doesn't end with a stop
-2017/04/22 03:51:50: GTFS_get_durations ERROR - No relation found: "865S" from Santo Antonio to Terminal Laranjeiras
-2017/04/22 03:51:52: GTFS_get_durations ERROR - No relation found: "865S" from Terminal Laranjeiras to Santo Antonio
-2017/04/22 03:51:58: GTFS_get_durations ERROR - Route "866" from Planalto Serrano to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:52:00: GTFS_get_durations ERROR - Route "866" from Terminal Laranjeiras to Planalto Serrano doesn't end with a stop
-2017/04/22 03:52:02: GTFS_get_durations ERROR - No relation found: "866C" from Planalto Serrano to Terminal Laranjeiras
-2017/04/22 03:52:04: GTFS_get_durations ERROR - No relation found: "866C" from Terminal Laranjeiras to Planalto Serrano
-2017/04/22 03:52:05: GTFS_get_durations ERROR - No relation found: "867" from Novo Horizonte to None
-2017/04/22 03:52:21: GTFS_get_durations ERROR - No relation found: "873" from P. Residencial Nova Almeida to Terminal Jacaraipe
-2017/04/22 03:52:22: GTFS_get_durations ERROR - No relation found: "873" from Terminal Jacaraipe to P. Residencial Nova Almeida
-2017/04/22 03:52:39: GTFS_get_durations ERROR - No relation found: "875E" from Terminal Jacaraipe to Terminal Laranjeiras
-2017/04/22 03:52:42: GTFS_get_durations ERROR - No relation found: "875E" from Terminal Laranjeiras to Terminal Jacaraipe
-2017/04/22 03:52:44: GTFS_get_durations ERROR - No relation found: "876" from Terminal Jacaraipe to None
-2017/04/22 03:52:54: GTFS_get_durations ERROR - No relation found: "876H" from Terminal Jacaraipe to None
-2017/04/22 03:52:56: GTFS_get_durations ERROR - No relation found: "876S" from Terminal Jacaraipe to None
-2017/04/22 03:52:57: GTFS_get_durations ERROR - No relation found: "876X" from Terminal Jacaraipe to None
-2017/04/22 03:52:59: GTFS_get_durations ERROR - Route "877" from Taquara I to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:53:00: GTFS_get_durations ERROR - Route "877" from Terminal Laranjeiras to Taquara I doesn't end with a stop
-2017/04/22 03:53:14: GTFS_get_durations ERROR - No relation found: "879F" from Terminal Carapina to None
-2017/04/22 03:53:16: GTFS_get_durations ERROR - No relation found: "879P" from Terminal Carapina to None
-2017/04/22 03:53:18: GTFS_get_durations ERROR - Route "880" from Planalto Serrano to Terminal Jacaraipe doesn't start with a stop
-2017/04/22 03:53:23: GTFS_get_durations ERROR - Route "880" from Terminal Jacaraipe to Planalto Serrano doesn't end with a stop
-2017/04/22 03:53:35: GTFS_get_durations ERROR - Route "883" from Praia de Carapebus to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:53:37: GTFS_get_durations ERROR - Route "883" from Terminal Laranjeiras to Praia de Carapebus doesn't end with a stop
-2017/04/22 03:53:48: GTFS_get_durations ERROR - Route "884" from Bicanga to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:53:50: GTFS_get_durations ERROR - Route "884" from Terminal Laranjeiras to Bicanga doesn't end with a stop
-2017/04/22 03:53:53: GTFS_get_durations ERROR - No relation found: "885" from Vila Nova de Colares to Terminal Jacaraipe
-2017/04/22 03:53:55: GTFS_get_durations ERROR - No relation found: "885" from Terminal Jacaraipe to Vila Nova de Colares
-2017/04/22 03:54:10: GTFS_get_durations ERROR - No relation found: "886P" from Terminal Jacaraipe to None
-2017/04/22 03:54:13: GTFS_get_durations ERROR - Route "887" from Barro Branco to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:54:14: GTFS_get_durations ERROR - Route "887" from Terminal Laranjeiras to Barro Branco doesn't end with a stop
-2017/04/22 03:54:29: GTFS_get_durations ERROR - No relation found: "890C" from Muribeca to Terminal Laranjeiras
-2017/04/22 03:54:31: GTFS_get_durations ERROR - No relation found: "890C" from Terminal Laranjeiras to Muribeca
-2017/04/22 03:54:33: GTFS_get_durations ERROR - No relation found: "890F" from Muribeca to Terminal Laranjeiras
-2017/04/22 03:54:35: GTFS_get_durations ERROR - No relation found: "890F" from Terminal Laranjeiras to Muribeca
-2017/04/22 03:54:37: GTFS_get_durations ERROR - No relation found: "890L" from Muribeca to Terminal Laranjeiras
-2017/04/22 03:54:38: GTFS_get_durations ERROR - No relation found: "890L" from Terminal Laranjeiras to Muribeca
-2017/04/22 03:54:41: GTFS_get_durations ERROR - No relation found: "890S" from Muribeca to Terminal Laranjeiras
-2017/04/22 03:54:43: GTFS_get_durations ERROR - No relation found: "890S" from Terminal Laranjeiras to Muribeca
-2017/04/22 03:54:53: GTFS_get_durations ERROR - No relation found: "891" from Putiri to Terminal Laranjeiras
-2017/04/22 03:54:54: GTFS_get_durations ERROR - No relation found: "891" from Terminal Laranjeiras to Putiri
-2017/04/22 03:54:58: GTFS_get_durations ERROR - No relation found: "891H" from Putiri to Terminal Laranjeiras
-2017/04/22 03:54:59: GTFS_get_durations ERROR - No relation found: "891H" from Terminal Laranjeiras to Putiri
-2017/04/22 03:55:00: GTFS_get_durations ERROR - No relation found: "891T" from Putiri to Terminal Laranjeiras
-2017/04/22 03:55:02: GTFS_get_durations ERROR - No relation found: "891T" from Terminal Laranjeiras to Putiri
-2017/04/22 03:55:21: GTFS_get_durations ERROR - No relation found: "892B" from Terminal Laranjeiras to None
-2017/04/22 03:55:24: GTFS_get_durations ERROR - No relation found: "892S" from Terminal Laranjeiras to None
-2017/04/22 03:55:41: GTFS_get_durations ERROR - No relation found: "894A" from Terminal Laranjeiras to None
-2017/04/22 03:55:43: GTFS_get_durations ERROR - No relation found: "894B" from Terminal Laranjeiras to None
-2017/04/22 03:55:46: GTFS_get_durations ERROR - No relation found: "894P" from Terminal Laranjeiras to None
-2017/04/22 03:55:50: GTFS_get_durations ERROR - No relation found: "894S" from Terminal Laranjeiras to None
-2017/04/22 03:55:51: GTFS_get_durations ERROR - No relation found: "895" from Planalto Serrano to Serra
-2017/04/22 03:55:53: GTFS_get_durations ERROR - No relation found: "895" from Serra to Planalto Serrano
-2017/04/22 03:55:55: GTFS_get_durations ERROR - Route "896" from Santiago to Terminal Laranjeiras doesn't start with a stop
-2017/04/22 03:55:57: GTFS_get_durations ERROR - Route "896" from Terminal Laranjeiras to Santiago doesn't start with a stop
-2017/04/22 03:55:58: GTFS_get_durations ERROR - No relation found: "896B" from Santiago to Terminal Laranjeiras
-2017/04/22 03:56:01: GTFS_get_durations ERROR - No relation found: "896B" from Terminal Laranjeiras to Santiago
-2017/04/22 03:56:02: GTFS_get_durations ERROR - No relation found: "896E" from Santiago to Terminal Laranjeiras
-2017/04/22 03:56:04: GTFS_get_durations ERROR - No relation found: "896E" from Terminal Laranjeiras to Santiago
-2017/04/22 03:56:07: GTFS_get_durations ERROR - No relation found: "896S" from Santiago to Terminal Laranjeiras
-2017/04/22 03:56:10: GTFS_get_durations ERROR - No relation found: "896S" from Terminal Laranjeiras to Santiago
-2017/04/22 03:56:13: GTFS_get_durations ERROR - No relation found: "898" from Terminal Laranjeiras to None
-2017/04/22 03:56:21: GTFS_get_durations ERROR - No relation found: "899" from Castelandia to Terminal Carapina
-2017/04/22 03:56:23: GTFS_get_durations ERROR - No relation found: "899" from Terminal Carapina to Castelandia
-2017/04/22 03:56:26: GTFS_get_durations ERROR - Route "901" from Viana to Terminal Campo Grande doesn't start with a stop
-2017/04/22 03:56:31: GTFS_get_durations ERROR - Route "901" from Terminal Campo Grande to Viana doesn't end with a stop
-2017/04/22 03:56:50: GTFS_get_durations ERROR - No relation found: "902B" from Aracatiba to Terminal Campo Grande
-2017/04/22 03:56:51: GTFS_get_durations ERROR - No relation found: "902B" from Terminal Campo Grande to Aracatiba
-2017/04/22 03:56:52: GTFS_get_durations ERROR - No relation found: "902C" from Aracatiba to Terminal Campo Grande
-2017/04/22 03:56:53: GTFS_get_durations ERROR - No relation found: "902C" from Terminal Campo Grande to Aracatiba
-2017/04/22 03:56:56: GTFS_get_durations ERROR - No relation found: "903" from Piaptangui to Terminal Campo Grande
-2017/04/22 03:56:58: GTFS_get_durations ERROR - No relation found: "903" from Terminal Campo Grande to Piaptangui
-2017/04/22 03:57:06: GTFS_get_durations ERROR - No relation found: "904" from Casa de Custodia to Terminal Campo Grande
-2017/04/22 03:57:07: GTFS_get_durations ERROR - No relation found: "904" from Terminal Campo Grande to Casa de Custodia
-2017/04/22 03:57:09: GTFS_get_durations ERROR - No relation found: "904B" from Casa de Custodia to Terminal Campo Grande
-2017/04/22 03:57:10: GTFS_get_durations ERROR - No relation found: "904B" from Terminal Campo Grande to Casa de Custodia
-2017/04/22 03:57:12: GTFS_get_durations ERROR - No relation found: "904E" from Casa de Custodia to Terminal Campo Grande
-2017/04/22 03:57:13: GTFS_get_durations ERROR - No relation found: "904E" from Terminal Campo Grande to Casa de Custodia
-2017/04/22 03:57:16: GTFS_get_durations ERROR - No relation found: "904S" from Casa de Custodia to Terminal Campo Grande
-2017/04/22 03:57:19: GTFS_get_durations ERROR - No relation found: "904S" from Terminal Campo Grande to Casa de Custodia
-2017/04/22 03:57:21: GTFS_get_durations ERROR - No relation found: "905" from Bom Pastor to Terminal Campo Grande
-2017/04/22 03:57:23: GTFS_get_durations ERROR - No relation found: "905" from Terminal Campo Grande to Bom Pastor
-2017/04/22 03:57:24: GTFS_get_durations ERROR - No relation found: "905P" from Bom Pastor to Terminal Campo Grande
-2017/04/22 03:57:26: GTFS_get_durations ERROR - No relation found: "905P" from Terminal Campo Grande to Bom Pastor
-2017/04/22 03:57:27: GTFS_get_durations ERROR - No relation found: "905X" from Bom Pastor to Terminal Campo Grande
-2017/04/22 03:57:30: GTFS_get_durations ERROR - No relation found: "905X" from Terminal Campo Grande to Bom Pastor
-2017/04/22 03:57:32: GTFS_get_durations ERROR - No relation found: "906" from Terminal Campo Grande to None
-2017/04/22 03:57:34: GTFS_get_durations ERROR - No relation found: "906C" from Terminal Campo Grande to None
-2017/04/22 03:57:36: GTFS_get_durations ERROR - No relation found: "907" from Nova Bethania to Terminal Campo Grande
-2017/04/22 03:57:39: GTFS_get_durations ERROR - No relation found: "907" from Terminal Campo Grande to Nova Bethania
-2017/04/22 03:57:41: GTFS_get_durations ERROR - No relation found: "908" from Areinha to Terminal Campo Grande
-2017/04/22 03:57:42: GTFS_get_durations ERROR - No relation found: "908" from Terminal Campo Grande to Areinha
-2017/04/22 03:57:45: GTFS_get_durations ERROR - No relation found: "908L" from Areinha to Terminal Campo Grande
-2017/04/22 03:57:47: GTFS_get_durations ERROR - No relation found: "908L" from Terminal Campo Grande to Areinha
-2017/04/22 03:57:49: GTFS_get_durations ERROR - No relation found: "909" from Morada de Bethania to Terminal Campo Grande
-2017/04/22 03:57:52: GTFS_get_durations ERROR - No relation found: "909" from Terminal Campo Grande to Morada de Bethania
-2017/04/22 03:57:54: GTFS_get_durations ERROR - No relation found: "910" from Universal to Terminal Campo Grande
-2017/04/22 03:57:55: GTFS_get_durations ERROR - No relation found: "910" from Terminal Campo Grande to Universal
-2017/04/22 03:57:57: GTFS_get_durations ERROR - No relation found: "911" from Bairro Canaa to Terminal Campo Grande
-2017/04/22 03:57:58: GTFS_get_durations ERROR - No relation found: "911" from Terminal Campo Grande to Bairro Canaa
-2017/04/22 03:57:59: GTFS_get_durations ERROR - No relation found: "912" from Marcilio de Noronha to Terminal Campo Grande
-2017/04/22 03:58:01: GTFS_get_durations ERROR - No relation found: "912" from Terminal Campo Grande to Marcilio de Noronha
-2017/04/22 03:58:03: GTFS_get_durations ERROR - No relation found: "913" from Bairro Industrial to Terminal Campo Grande
-2017/04/22 03:58:05: GTFS_get_durations ERROR - No relation found: "913" from Terminal Campo Grande to Bairro Industrial
-2017/04/22 03:58:07: GTFS_get_durations ERROR - No relation found: "913M" from Bairro Industrial to Terminal Campo Grande
-2017/04/22 03:58:08: GTFS_get_durations ERROR - No relation found: "913M" from Terminal Campo Grande to Bairro Industrial
-2017/04/22 03:58:12: GTFS_get_durations ERROR - No relation found: "914" from Terminal Campo Grande to None
-2017/04/22 03:58:14: GTFS_get_durations ERROR - No relation found: "914A" from Terminal Campo Grande to None
-2017/04/22 03:58:16: GTFS_get_durations ERROR - No relation found: "914B" from Terminal Campo Grande to None
-2017/04/22 03:58:17: GTFS_get_durations ERROR - No relation found: "914P" from Terminal Campo Grande to None
-2017/04/22 03:58:20: GTFS_get_durations ERROR - No relation found: "915" from Jucu to Terminal Campo Grande
-2017/04/22 03:58:26: GTFS_get_durations ERROR - No relation found: "915" from Terminal Campo Grande to Jucu
-2017/04/22 03:58:30: GTFS_get_durations ERROR - No relation found: "915X" from Jucu to Terminal Campo Grande
-2017/04/22 03:58:31: GTFS_get_durations ERROR - No relation found: "915X" from Terminal Campo Grande to Jucu
-2017/04/22 03:58:33: GTFS_get_durations ERROR - No relation found: "916" from Terminal Campo Grande to None
-2017/04/22 03:58:36: GTFS_get_durations ERROR - No relation found: "916P" from Terminal Campo Grande to None
-2017/04/22 03:58:41: GTFS_get_durations ERROR - No relation found: "917" from Terminal Campo Grande to None
-2017/04/22 03:58:44: GTFS_get_durations ERROR - No relation found: "917P" from Terminal Campo Grande to None
-2017/04/22 03:58:59: GTFS_get_durations ERROR - No relation found: "918S" from CDP Vila Velha to Terminal Campo Grande
-2017/04/22 03:59:02: GTFS_get_durations ERROR - No relation found: "918S" from Terminal Campo Grande to CDP Vila Velha
-2017/04/22 03:59:10: GTFS_get_durations ERROR - No relation found: "919" from Nova Bethania to Terminal Campo Grande
-2017/04/22 03:59:13: GTFS_get_durations ERROR - No relation found: "919" from Terminal Campo Grande to Nova Bethania
-2017/04/22 03:59:19: GTFS_get_durations ERROR - No relation found: "920" from Santa Rita to Terminal Campo Grande
-2017/04/22 03:59:22: GTFS_get_durations ERROR - No relation found: "920" from Terminal Campo Grande to Santa Rita
-2017/04/22 03:59:24: GTFS_get_durations ERROR - No relation found: "921" from Universal to Terminal Campo Grande
-2017/04/22 03:59:29: GTFS_get_durations ERROR - No relation found: "921" from Terminal Campo Grande to Universal
-2017/04/22 03:59:33: GTFS_get_durations ERROR - No relation found: "921P" from Universal to Terminal Campo Grande
-2017/04/22 03:59:35: GTFS_get_durations ERROR - No relation found: "921P" from Terminal Campo Grande to Universal
-2017/04/22 03:59:36: GTFS_get_durations ERROR - No relation found: "922" from Bairro Industrial to Terminal Campo Grande
-2017/04/22 03:59:40: GTFS_get_durations ERROR - No relation found: "922" from Terminal Campo Grande to Bairro Industrial
-2017/04/22 03:59:42: GTFS_get_durations ERROR - No relation found: "923" from Nova Bethania to Terminal Campo Grande
-2017/04/22 03:59:45: GTFS_get_durations ERROR - No relation found: "923" from Terminal Campo Grande to Nova Bethania
-2017/04/22 03:59:48: GTFS_get_durations ERROR - No relation found: "927" from Viana to Terminal Sao Torquato
-2017/04/22 03:59:50: GTFS_get_durations ERROR - No relation found: "927" from Terminal Sao Torquato to Viana
-2017/04/22 03:59:53: GTFS_get_durations ERROR - No relation found: "982" from Bairro Industrial to Viana
-2017/04/22 03:59:55: GTFS_get_durations ERROR - No relation found: "982" from Viana to Bairro Industrial
-2017/04/22 03:59:57: GTFS_get_durations ERROR - No relation found: "982P" from Bairro Industrial to Viana
-2017/04/22 04:00:00: GTFS_get_durations ERROR - No relation found: "982P" from Viana to Bairro Industrial
-2017/04/22 04:00:06: GTFS_get_durations ERROR - No relation found: "983" from Bairro Ipanema to Viana
-2017/04/22 04:00:10: GTFS_get_durations ERROR - No relation found: "983" from Viana to Bairro Ipanema
-2017/04/22 04:00:14: GTFS_get_durations ERROR - No relation found: "984" from Soteco to Viana
-2017/04/22 04:00:15: GTFS_get_durations ERROR - No relation found: "984" from Viana to Soteco
-2017/04/22 04:00:24: GTFS_get_durations ERROR - No relation found: "985" from Nova Bethania to Viana
-2017/04/22 04:00:29: GTFS_get_durations ERROR - No relation found: "985" from Viana to Nova Bethania
-2017/04/22 04:00:34: GTFS_get_durations ERROR - No relation found: "985N" from Nova Bethania to Viana
-2017/04/22 04:00:37: GTFS_get_durations ERROR - No relation found: "985N" from Viana to Nova Bethania
-2017/04/22 04:00:38: GTFS_get_durations ERROR - No relation found: "986" from Bairro Ipanema to Areinha
-2017/04/22 04:00:40: GTFS_get_durations ERROR - No relation found: "986" from Areinha to Bairro Ipanema
+2017/04/23 18:55:02: GTFS_get_durations INFO - Executing default list from http://ceturb.es.gov.br/
+2017/04/23 19:16:28: GTFS_get_durations INFO - Full route list to execute: 400, 400C, 500, 500K, 500S, 501, 503, 503S, 504, 504S, 504T, 505, 505L, 505M, 505P, 505T, 505U, 506, 506P, 507, 507U, 508, 508L, 508S, 509, 510, 510P, 511, 511C, 511Y, 512, 514, 514M, 515, 515C, 515D, 515P, 515S, 516, 517, 518, 518C, 518Y, 519, 519S, 520, 521, 522, 522S, 523, 523P, 524, 525, 525N, 525P, 526, 526D, 526I, 526Z, 527, 527X, 528, 528E, 528S, 529, 530, 530E, 530S, 531, 532, 532S, 533, 534, 534P, 534S, 535, 535D, 535F, 535M, 535X, 536, 538, 540, 542, 543, 544, 550, 551, 555, 557, 558, 559, 559U, 560, 561, 561S, 562, 562Z, 563, 567, 568, 568T, 570, 570S, 571, 572, 572P, 572U, 572X, 572Y, 573, 573T, 574, 574S, 574T, 575, 579, 580, 581, 581B, 581F, 582, 583, 585, 586, 587, 587F, 588, 590, 591, 591B, 591D, 591L, 591T, 592, 592F, 592P, 593, 594, 595, 595C, 595P, 595T, 596, 597, 598, 599, 600, 601, 601B, 601F, 603, 603H, 603S, 604, 605, 605U, 606, 606C, 606D, 607, 607P, 608, 608P, 609, 609B, 609P, 610, 611, 611S, 611X, 612, 612U, 613, 613S, 613X, 614, 614S, 615, 616, 616B, 616F, 616H, 616P, 616S, 617, 617C, 617F, 617P, 617S, 618, 618P, 618S, 618X, 619, 619B, 619F, 621, 624, 624E, 625, 626, 627, 630, 631, 631B, 633, 634, 634T, 635, 636, 650, 651, 652, 652P, 653, 654, 654C, 654F, 654P, 654S, 655, 655P, 656, 656H, 657, 658, 659, 659X, 660, 660D, 661, 662, 663, 664, 665, 667, 667P, 668, 669, 671, 672, 700, 700Z, 701, 701M, 701S, 701X, 702, 702L, 702X, 703, 704, 705, 705B, 705F, 706, 707, 708, 708E, 710, 710B, 711, 711P, 712, 712B, 714, 714A, 714B, 714D, 714P, 714X, 715, 715B, 716, 716Z, 718, 718Z, 719, 719F, 719P, 719Z, 720, 721, 723, 724, 725, 725P, 726, 727, 727L, 727M, 728, 728S, 729, 729Z, 730, 730B, 731, 731P, 732, 732C, 732P, 733, 733F, 733P, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 746, 746F, 748, 750, 751, 753, 756, 757, 757B, 759, 760, 761, 761F, 764, 766, 768, 768L, 769, 770, 770F, 770P, 771, 773, 773F, 773P, 774, 775, 776, 777, 778, 779, 779Z, 781, 783, 784, 784Z, 785, 785Z, 787, 789, 792, 793, 794, 795, 796, 797, 798, 800, 800A, 800B, 800E, 800H, 800S, 800X, 800Y, 801, 802, 803, 804, 804B, 804L, 804P, 804X, 805, 805A, 805B, 805P, 806, 806A, 806B, 806C, 806D, 806E, 806F, 806H, 806I, 806K, 806M, 806S, 806X, 807, 808, 809, 809B, 809P, 810, 810C, 811, 811S, 812, 812S, 813, 814, 814C, 814D, 814X, 815, 815F, 816, 816B, 816H, 816M, 816P, 817, 818, 819, 819P, 820, 820P, 821, 821T, 822, 823, 823P, 824, 824B, 825, 825P, 825S, 826, 826A, 826B, 826P, 827, 828, 829, 829P, 830, 830C, 831, 831H, 831X, 832, 833, 834, 834C, 834F, 834H, 834P, 834Q, 834X, 835, 836, 836F, 836P, 837, 838, 838P, 839, 841, 843, 843J, 844, 844A, 844B, 844S, 844X, 845, 846, 846B, 847, 847B, 847P, 847S, 848, 848C, 848S, 848T, 849, 851, 851M, 853, 854, 855, 855P, 856, 857, 858, 859, 860, 862, 862B, 863, 864, 865, 865S, 866, 866C, 867, 869, 873, 874, 875, 875E, 876, 876A, 876B, 876H, 876S, 876X, 877, 878, 879, 879F, 879P, 880, 881, 882, 883, 884, 885, 886, 886P, 887, 890, 890C, 890F, 890L, 890S, 891, 891H, 891T, 892, 892B, 892S, 894, 894A, 894B, 894P, 894S, 895, 896, 896B, 896E, 896S, 898, 898A, 898B, 899, 901, 902, 902B, 902C, 903, 904, 904B, 904E, 904S, 905, 905P, 905X, 906, 906C, 907, 908, 908L, 909, 910, 911, 912, 913, 913M, 914, 914A, 914B, 914P, 915, 915X, 916, 916P, 917, 917P, 918, 918S, 919, 920, 921, 921P, 922, 923, 927, 982, 982P, 983, 984, 985, 985N, 986
+2017/04/23 19:16:40: GTFS_router INFO - Route "400" from Vila Velha to Praia de Santa Helena calculated with duration 5 minutes
+2017/04/23 19:16:44: GTFS_router INFO - Route "400" from Praia de Santa Helena to Vila Velha calculated with duration 6 minutes
+2017/04/23 19:16:51: GTFS_router INFO - Route "400C" from Vila Velha to Praia de Santa Helena calculated with duration 11 minutes
+2017/04/23 19:16:58: GTFS_router INFO - Route "400C" from Praia de Santa Helena to Vila Velha calculated with duration 6 minutes
+2017/04/23 19:17:37: GTFS_router INFO - Route "500" from Terminal Vila Velha to Terminal Itacibá calculated with duration 32 minutes
+2017/04/23 19:18:19: GTFS_router INFO - Route "500" from Terminal Itacibá to Terminal Vila Velha calculated with duration 28 minutes
+2017/04/23 19:18:23: GTFS_router ERROR - No relation found: "500K" from Terminal Vila Velha to Terminal Itaciba
+2017/04/23 19:18:30: GTFS_router ERROR - No relation found: "500K" from Terminal Itaciba to Terminal Vila Velha
+2017/04/23 19:18:32: GTFS_router ERROR - No relation found: "500S" from Terminal Vila Velha to Terminal Itaciba
+2017/04/23 19:18:37: GTFS_router ERROR - No relation found: "500S" from Terminal Itaciba to Terminal Vila Velha
+2017/04/23 19:18:57: GTFS_router INFO - Route "501" from Terminal Jacaraípe to Terminal Itaparica calculated with duration 43 minutes
+2017/04/23 19:20:10: GTFS_router INFO - Route "501" from Terminal Itaparica to Terminal Jacaraípe calculated with duration 93 minutes
+2017/04/23 19:20:26: GTFS_router INFO - Route "503" from Terminal Laranjeiras to Terminal Vila Velha calculated with duration 29 minutes
+2017/04/23 19:20:47: GTFS_router INFO - Route "503" from Terminal Vila Velha to Terminal Laranjeiras calculated with duration 31 minutes
+2017/04/23 19:20:52: GTFS_router ERROR - No relation found: "503S" from Terminal Laranjeiras to Terminal Vila Velha
+2017/04/23 19:20:57: GTFS_router ERROR - No relation found: "503S" from Terminal Vila Velha to Terminal Laranjeiras
+2017/04/23 19:21:14: GTFS_router INFO - Route "504" from Terminal Jacaraípe to Terminal Itacibá calculated with duration 47 minutes
+2017/04/23 19:21:40: GTFS_router INFO - Route "504" from Terminal Itacibá to Terminal Jacaraípe calculated with duration 53 minutes
+2017/04/23 19:21:46: GTFS_router ERROR - No relation found: "504S" from Terminal Jacaraipe to Terminal Itaciba
+2017/04/23 19:21:49: GTFS_router ERROR - No relation found: "504S" from Terminal Itaciba to Terminal Jacaraipe
+2017/04/23 19:21:51: GTFS_router ERROR - No relation found: "504T" from Terminal Jacaraipe to Terminal Itaciba
+2017/04/23 19:21:57: GTFS_router ERROR - No relation found: "504T" from Terminal Itaciba to Terminal Jacaraipe
+2017/04/23 19:22:03: GTFS_router ERROR - No relation found: "505" from Terminal Laranjeiras to Terminal Itaciba
+2017/04/23 19:22:08: GTFS_router ERROR - No relation found: "505" from Terminal Itaciba to Terminal Laranjeiras
+2017/04/23 19:22:12: GTFS_router ERROR - No relation found: "505L" from Terminal Laranjeiras to Terminal Itaciba
+2017/04/23 19:22:19: GTFS_router ERROR - No relation found: "505L" from Terminal Itaciba to Terminal Laranjeiras
+2017/04/23 19:22:24: GTFS_router ERROR - No relation found: "505M" from Terminal Laranjeiras to Terminal Itaciba
+2017/04/23 19:22:32: GTFS_router ERROR - No relation found: "505M" from Terminal Itaciba to Terminal Laranjeiras
+2017/04/23 19:22:36: GTFS_router ERROR - No relation found: "505P" from Terminal Laranjeiras to Terminal Itaciba
+2017/04/23 19:22:39: GTFS_router ERROR - No relation found: "505P" from Terminal Itaciba to Terminal Laranjeiras
+2017/04/23 19:22:42: GTFS_router ERROR - No relation found: "505T" from Terminal Laranjeiras to Terminal Itaciba
+2017/04/23 19:22:49: GTFS_router ERROR - No relation found: "505T" from Terminal Itaciba to Terminal Laranjeiras
+2017/04/23 19:22:52: GTFS_router ERROR - No relation found: "505U" from Terminal Laranjeiras to Terminal Itaciba
+2017/04/23 19:22:55: GTFS_router ERROR - No relation found: "505U" from Terminal Itaciba to Terminal Laranjeiras
+2017/04/23 19:23:00: GTFS_router ERROR - No relation found: "506" from Terminal Laranjeiras to Terminal Itaciba
+2017/04/23 19:23:06: GTFS_router ERROR - No relation found: "506" from Terminal Itaciba to Terminal Laranjeiras
+2017/04/23 19:23:11: GTFS_router ERROR - No relation found: "506P" from Terminal Laranjeiras to Terminal Itaciba
+2017/04/23 19:23:14: GTFS_router ERROR - No relation found: "506P" from Terminal Itaciba to Terminal Laranjeiras
+2017/04/23 19:23:21: GTFS_router ERROR - Route "507" from Terminal Laranjeiras to Terminal Ibes doesn't begin with a stop
+2017/04/23 19:23:25: GTFS_router ERROR - Route "507" from Terminal Ibes to Terminal Laranjeiras doesn't begin with a stop
+2017/04/23 19:23:32: GTFS_router ERROR - No relation found: "507U" from Terminal Laranjeiras to Terminal Ibes
+2017/04/23 19:23:39: GTFS_router ERROR - No relation found: "507U" from Terminal Ibes to Terminal Laranjeiras
+2017/04/23 19:24:00: GTFS_router INFO - Route "508" from Terminal Laranjeiras to Terminal Itaparica calculated with duration 61 minutes
+2017/04/23 19:25:02: GTFS_get_times INFO - 500K added to Blacklist
+2017/04/23 19:25:02: GTFS_get_times INFO - 500S added to Blacklist
+2017/04/23 19:25:21: GTFS_get_times INFO - 503S added to Blacklist
+2017/04/23 19:25:31: GTFS_get_times INFO - 504S added to Blacklist
+2017/04/23 19:25:31: GTFS_get_times INFO - 504T added to Blacklist
+2017/04/23 19:25:31: GTFS_get_times INFO - 504T added to Blacklist
+2017/04/23 19:25:41: GTFS_get_times INFO - 505 added to Blacklist
+2017/04/23 19:25:41: GTFS_get_times INFO - 505L added to Blacklist
+2017/04/23 19:25:41: GTFS_get_times INFO - 505M added to Blacklist
+2017/04/23 19:25:41: GTFS_get_times INFO - 505P added to Blacklist
+2017/04/23 19:25:41: GTFS_get_times INFO - 505T added to Blacklist
+2017/04/23 19:25:41: GTFS_get_times INFO - 505U added to Blacklist
+2017/04/23 19:25:48: GTFS_get_times INFO - 506 added to Blacklist
+2017/04/23 19:25:48: GTFS_get_times INFO - 506P added to Blacklist
+2017/04/23 19:25:55: GTFS_get_times INFO - 507 added to Blacklist
+2017/04/23 19:25:55: GTFS_get_times INFO - 507U added to Blacklist
+2017/04/23 19:26:00: GTFS_get_times INFO - 508L added to Blacklist
+2017/04/23 19:26:00: GTFS_get_times INFO - 508S added to Blacklist
+2017/04/23 19:26:11: GTFS_get_times INFO - 509 added to Blacklist
+2017/04/23 19:26:22: GTFS_get_times INFO - 510 added to Blacklist
+2017/04/23 19:26:22: GTFS_get_times INFO - 510P added to Blacklist
+2017/04/23 19:26:24: GTFS_get_times INFO - 511C added to Blacklist
+2017/04/23 19:26:24: GTFS_get_times INFO - 511Y added to Blacklist
+2017/04/23 19:26:25: GTFS_get_times INFO - 512 added to Blacklist
+2017/04/23 19:26:28: GTFS_get_times INFO - 514M added to Blacklist
+2017/04/23 19:26:36: GTFS_get_times INFO - 515 added to Blacklist
+2017/04/23 19:26:36: GTFS_get_times INFO - 515C added to Blacklist
+2017/04/23 19:26:36: GTFS_get_times INFO - 515D added to Blacklist
+2017/04/23 19:26:36: GTFS_get_times INFO - 515P added to Blacklist
+2017/04/23 19:26:36: GTFS_get_times INFO - 515S added to Blacklist
+2017/04/23 19:26:42: GTFS_get_times INFO - 516 added to Blacklist
+2017/04/23 19:26:48: GTFS_get_times INFO - 517 added to Blacklist
+2017/04/23 19:27:00: GTFS_get_times INFO - 518C added to Blacklist
+2017/04/23 19:27:00: GTFS_get_times INFO - 518C added to Blacklist
+2017/04/23 19:27:00: GTFS_get_times INFO - 518Y added to Blacklist
+2017/04/23 19:27:03: GTFS_get_times INFO - 519 added to Blacklist
+2017/04/23 19:27:03: GTFS_get_times INFO - 519S added to Blacklist
+2017/04/23 19:27:10: GTFS_get_times INFO - 520 added to Blacklist
+2017/04/23 19:27:14: GTFS_get_times INFO - 521 added to Blacklist
+2017/04/23 19:27:23: GTFS_get_times INFO - 522 added to Blacklist
+2017/04/23 19:27:23: GTFS_get_times INFO - 522S added to Blacklist
+2017/04/23 19:27:31: GTFS_get_times INFO - 523 added to Blacklist
+2017/04/23 19:27:31: GTFS_get_times INFO - 523P added to Blacklist
+2017/04/23 19:27:33: GTFS_get_times INFO - 524 added to Blacklist
+2017/04/23 19:27:37: GTFS_get_times INFO - 525 added to Blacklist
+2017/04/23 19:27:37: GTFS_get_times INFO - 525N added to Blacklist
+2017/04/23 19:27:37: GTFS_get_times INFO - 525P added to Blacklist
+2017/04/23 19:27:48: GTFS_get_times INFO - 526 added to Blacklist
+2017/04/23 19:27:48: GTFS_get_times INFO - 526D added to Blacklist
+2017/04/23 19:27:48: GTFS_get_times INFO - 526I added to Blacklist
+2017/04/23 19:27:48: GTFS_get_times INFO - 526Z added to Blacklist
+2017/04/23 19:27:56: GTFS_get_times INFO - 527 added to Blacklist
+2017/04/23 19:27:56: GTFS_get_times INFO - 527X added to Blacklist
+2017/04/23 19:28:06: GTFS_get_times INFO - 528E added to Blacklist
+2017/04/23 19:28:06: GTFS_get_times INFO - 528S added to Blacklist
+2017/04/23 19:28:06: GTFS_get_times INFO - 528S added to Blacklist
+2017/04/23 19:28:06: GTFS_get_times INFO - 528S added to Blacklist
+2017/04/23 19:28:08: GTFS_get_times INFO - 529 added to Blacklist
+2017/04/23 19:28:11: GTFS_get_times INFO - 530 added to Blacklist
+2017/04/23 19:28:11: GTFS_get_times INFO - 530E added to Blacklist
+2017/04/23 19:28:11: GTFS_get_times INFO - 530S added to Blacklist
+2017/04/23 19:28:18: GTFS_get_times INFO - 531 added to Blacklist
+2017/04/23 19:28:22: GTFS_get_times INFO - 532 added to Blacklist
+2017/04/23 19:28:22: GTFS_get_times INFO - 532S added to Blacklist
+2017/04/23 19:28:33: GTFS_get_times INFO - 533 added to Blacklist
+2017/04/23 19:28:39: GTFS_get_times INFO - 534P added to Blacklist
+2017/04/23 19:28:39: GTFS_get_times INFO - 534S added to Blacklist
+2017/04/23 19:28:45: GTFS_get_times INFO - 535 added to Blacklist
+2017/04/23 19:28:45: GTFS_get_times INFO - 535D added to Blacklist
+2017/04/23 19:28:45: GTFS_get_times INFO - 535F added to Blacklist
+2017/04/23 19:28:45: GTFS_get_times INFO - 535M added to Blacklist
+2017/04/23 19:28:45: GTFS_get_times INFO - 535X added to Blacklist
+2017/04/23 19:28:52: GTFS_get_times INFO - 536 added to Blacklist
+2017/04/23 19:28:56: GTFS_get_times INFO - 538 added to Blacklist
+2017/04/23 19:29:09: GTFS_get_times INFO - 543 added to Blacklist
+2017/04/23 19:29:10: GTFS_get_times INFO - 544 added to Blacklist
+2017/04/23 19:29:12: GTFS_get_times INFO - 550 added to Blacklist
+2017/04/23 19:29:15: GTFS_get_times INFO - 551 added to Blacklist
+2017/04/23 19:29:20: GTFS_get_times INFO - 555 added to Blacklist
+2017/04/23 19:29:23: GTFS_get_times INFO - 557 added to Blacklist
+2017/04/23 19:29:29: GTFS_get_times INFO - 559 added to Blacklist
+2017/04/23 19:29:29: GTFS_get_times INFO - 559U added to Blacklist
+2017/04/23 19:29:30: GTFS_get_times INFO - 560 added to Blacklist
+2017/04/23 19:29:35: GTFS_get_times INFO - 561 added to Blacklist
+2017/04/23 19:29:35: GTFS_get_times INFO - 561S added to Blacklist
+2017/04/23 19:29:38: GTFS_get_times INFO - 562 added to Blacklist
+2017/04/23 19:29:38: GTFS_get_times INFO - 562Z added to Blacklist
+2017/04/23 19:29:40: GTFS_get_times INFO - 563 added to Blacklist
+2017/04/23 19:29:54: GTFS_get_times INFO - 567 added to Blacklist
+2017/04/23 19:29:57: GTFS_get_times INFO - 568 added to Blacklist
+2017/04/23 19:29:57: GTFS_get_times INFO - 568T added to Blacklist
+2017/04/23 19:29:58: GTFS_get_times INFO - 570 added to Blacklist
+2017/04/23 19:29:58: GTFS_get_times INFO - 570S added to Blacklist
+2017/04/23 19:30:00: GTFS_get_times INFO - 571 added to Blacklist
+2017/04/23 19:30:03: GTFS_get_times INFO - 572 added to Blacklist
+2017/04/23 19:30:03: GTFS_get_times INFO - 572P added to Blacklist
+2017/04/23 19:30:03: GTFS_get_times INFO - 572U added to Blacklist
+2017/04/23 19:30:03: GTFS_get_times INFO - 572X added to Blacklist
+2017/04/23 19:30:03: GTFS_get_times INFO - 572Y added to Blacklist
+2017/04/23 19:30:06: GTFS_get_times INFO - 573 added to Blacklist
+2017/04/23 19:30:06: GTFS_get_times INFO - 573T added to Blacklist
+2017/04/23 19:30:11: GTFS_get_times INFO - 574S added to Blacklist
+2017/04/23 19:30:11: GTFS_get_times INFO - 574T added to Blacklist
+2017/04/23 19:30:14: GTFS_get_times INFO - 575 added to Blacklist
+2017/04/23 19:30:15: GTFS_get_times INFO - 579 added to Blacklist
+2017/04/23 19:30:16: GTFS_get_times INFO - 580 added to Blacklist
+2017/04/23 19:30:17: GTFS_get_times INFO - 581B added to Blacklist
+2017/04/23 19:30:17: GTFS_get_times INFO - 581F added to Blacklist
+2017/04/23 19:30:18: GTFS_get_times INFO - 582 added to Blacklist
+2017/04/23 19:30:20: GTFS_get_times INFO - 583 added to Blacklist
+2017/04/23 19:30:22: GTFS_get_times INFO - 585 added to Blacklist
+2017/04/23 19:30:26: GTFS_get_times INFO - 586 added to Blacklist
+2017/04/23 19:30:31: GTFS_get_times INFO - 587 added to Blacklist
+2017/04/23 19:30:31: GTFS_get_times INFO - 587F added to Blacklist
+2017/04/23 19:30:36: GTFS_get_times INFO - 590 added to Blacklist
+2017/04/23 19:31:11: GTFS_get_times INFO - 591B added to Blacklist
+2017/04/23 19:31:11: GTFS_get_times INFO - 591D added to Blacklist
+2017/04/23 19:31:11: GTFS_get_times INFO - 591L added to Blacklist
+2017/04/23 19:31:11: GTFS_get_times INFO - 591T added to Blacklist
+2017/04/23 19:31:12: GTFS_get_times INFO - 592 added to Blacklist
+2017/04/23 19:31:12: GTFS_get_times INFO - 592F added to Blacklist
+2017/04/23 19:31:12: GTFS_get_times INFO - 592P added to Blacklist
+2017/04/23 19:31:13: GTFS_get_times INFO - 593 added to Blacklist
+2017/04/23 19:31:17: GTFS_get_times INFO - 594 added to Blacklist
+2017/04/23 19:31:21: GTFS_get_times INFO - 595 added to Blacklist
+2017/04/23 19:31:21: GTFS_get_times INFO - 595C added to Blacklist
+2017/04/23 19:31:21: GTFS_get_times INFO - 595P added to Blacklist
+2017/04/23 19:31:21: GTFS_get_times INFO - 595T added to Blacklist
+2017/04/23 19:31:22: GTFS_get_times INFO - 596 added to Blacklist
+2017/04/23 19:31:24: GTFS_get_times INFO - 598 added to Blacklist
+2017/04/23 19:31:26: GTFS_get_times INFO - 599 added to Blacklist
+2017/04/23 19:31:29: GTFS_get_times INFO - 601B added to Blacklist
+2017/04/23 19:31:29: GTFS_get_times INFO - 601F added to Blacklist
+2017/04/23 19:31:32: GTFS_get_times INFO - 603H added to Blacklist
+2017/04/23 19:31:32: GTFS_get_times INFO - 603S added to Blacklist
+2017/04/23 19:31:38: GTFS_get_times INFO - 605U added to Blacklist
+2017/04/23 19:31:41: GTFS_get_times INFO - 606C added to Blacklist
+2017/04/23 19:31:41: GTFS_get_times INFO - 606D added to Blacklist
+2017/04/23 19:31:45: GTFS_get_times INFO - 607P added to Blacklist
+2017/04/23 19:31:47: GTFS_get_times INFO - 608P added to Blacklist
+2017/04/23 19:31:48: GTFS_get_times INFO - 609B added to Blacklist
+2017/04/23 19:31:48: GTFS_get_times INFO - 609P added to Blacklist
+2017/04/23 19:31:54: GTFS_get_times INFO - 611S added to Blacklist
+2017/04/23 19:31:54: GTFS_get_times INFO - 611X added to Blacklist
+2017/04/23 19:31:55: GTFS_get_times INFO - 612 added to Blacklist
+2017/04/23 19:31:55: GTFS_get_times INFO - 612U added to Blacklist
+2017/04/23 19:31:57: GTFS_get_times INFO - 613S added to Blacklist
+2017/04/23 19:31:57: GTFS_get_times INFO - 613X added to Blacklist
+2017/04/23 19:31:58: GTFS_get_times INFO - 614S added to Blacklist
+2017/04/23 19:32:02: GTFS_get_times INFO - 616 added to Blacklist
+2017/04/23 19:32:02: GTFS_get_times INFO - 616B added to Blacklist
+2017/04/23 19:32:02: GTFS_get_times INFO - 616F added to Blacklist
+2017/04/23 19:32:02: GTFS_get_times INFO - 616H added to Blacklist
+2017/04/23 19:32:02: GTFS_get_times INFO - 616P added to Blacklist
+2017/04/23 19:32:02: GTFS_get_times INFO - 616S added to Blacklist
+2017/04/23 19:32:03: GTFS_get_times INFO - 617 added to Blacklist
+2017/04/23 19:32:03: GTFS_get_times INFO - 617C added to Blacklist
+2017/04/23 19:32:03: GTFS_get_times INFO - 617F added to Blacklist
+2017/04/23 19:32:03: GTFS_get_times INFO - 617P added to Blacklist
+2017/04/23 19:32:03: GTFS_get_times INFO - 617S added to Blacklist
+2017/04/23 19:32:04: GTFS_get_times INFO - 618P added to Blacklist
+2017/04/23 19:32:04: GTFS_get_times INFO - 618S added to Blacklist
+2017/04/23 19:32:04: GTFS_get_times INFO - 618X added to Blacklist
+2017/04/23 19:32:06: GTFS_get_times INFO - 619B added to Blacklist
+2017/04/23 19:32:06: GTFS_get_times INFO - 619F added to Blacklist
+2017/04/23 19:32:09: GTFS_get_times INFO - 624E added to Blacklist
+2017/04/23 19:32:18: GTFS_get_times INFO - 630 added to Blacklist
+2017/04/23 19:32:19: GTFS_get_times INFO - 631B added to Blacklist
+2017/04/23 19:32:25: GTFS_get_times INFO - 634 added to Blacklist
+2017/04/23 19:32:25: GTFS_get_times INFO - 634T added to Blacklist
+2017/04/23 19:32:33: GTFS_get_times INFO - 652P added to Blacklist
+2017/04/23 19:32:35: GTFS_get_times INFO - 653 added to Blacklist
+2017/04/23 19:32:36: GTFS_get_times INFO - 654 added to Blacklist
+2017/04/23 19:32:36: GTFS_get_times INFO - 654C added to Blacklist
+2017/04/23 19:32:36: GTFS_get_times INFO - 654F added to Blacklist
+2017/04/23 19:32:36: GTFS_get_times INFO - 654P added to Blacklist
+2017/04/23 19:32:36: GTFS_get_times INFO - 654P added to Blacklist
+2017/04/23 19:32:36: GTFS_get_times INFO - 654S added to Blacklist
+2017/04/23 19:32:37: GTFS_get_times INFO - 655P added to Blacklist
+2017/04/23 19:32:40: GTFS_get_times INFO - 656H added to Blacklist
+2017/04/23 19:32:41: GTFS_get_times INFO - 657 added to Blacklist
+2017/04/23 19:32:46: GTFS_get_times INFO - 659 added to Blacklist
+2017/04/23 19:32:46: GTFS_get_times INFO - 659X added to Blacklist
+2017/04/23 19:32:49: GTFS_get_times INFO - 660D added to Blacklist
+2017/04/23 19:32:56: GTFS_get_times INFO - 664 added to Blacklist
+2017/04/23 19:32:58: GTFS_get_times INFO - 665 added to Blacklist
+2017/04/23 19:32:59: GTFS_get_times INFO - 667 added to Blacklist
+2017/04/23 19:32:59: GTFS_get_times INFO - 667P added to Blacklist
+2017/04/23 19:33:00: GTFS_get_times INFO - 668 added to Blacklist
+2017/04/23 19:33:07: GTFS_get_times INFO - 700Z added to Blacklist
+2017/04/23 19:33:10: GTFS_get_times INFO - 701 added to Blacklist
+2017/04/23 19:33:10: GTFS_get_times INFO - 701M added to Blacklist
+2017/04/23 19:33:10: GTFS_get_times INFO - 701S added to Blacklist
+2017/04/23 19:33:10: GTFS_get_times INFO - 701X added to Blacklist
+2017/04/23 19:33:11: GTFS_get_times INFO - 702 added to Blacklist
+2017/04/23 19:33:11: GTFS_get_times INFO - 702L added to Blacklist
+2017/04/23 19:33:11: GTFS_get_times INFO - 702X added to Blacklist
+2017/04/23 19:33:14: GTFS_get_times INFO - 703 added to Blacklist
+2017/04/23 19:33:17: GTFS_get_times INFO - 704 added to Blacklist
+2017/04/23 19:33:21: GTFS_get_times INFO - 705 added to Blacklist
+2017/04/23 19:33:21: GTFS_get_times INFO - 705B added to Blacklist
+2017/04/23 19:33:21: GTFS_get_times INFO - 705F added to Blacklist
+2017/04/23 19:33:25: GTFS_get_times INFO - 706 added to Blacklist
+2017/04/23 19:33:29: GTFS_get_times INFO - 707 added to Blacklist
+2017/04/23 19:33:32: GTFS_get_times INFO - 708 added to Blacklist
+2017/04/23 19:33:32: GTFS_get_times INFO - 708E added to Blacklist
+2017/04/23 19:33:35: GTFS_get_times INFO - 710 added to Blacklist
+2017/04/23 19:33:35: GTFS_get_times INFO - 710B added to Blacklist
+2017/04/23 19:33:36: GTFS_get_times INFO - 711 added to Blacklist
+2017/04/23 19:33:36: GTFS_get_times INFO - 711P added to Blacklist
+2017/04/23 19:33:37: GTFS_get_times INFO - 712 added to Blacklist
+2017/04/23 19:33:37: GTFS_get_times INFO - 712B added to Blacklist
+2017/04/23 19:33:39: GTFS_get_times INFO - 714 added to Blacklist
+2017/04/23 19:33:39: GTFS_get_times INFO - 714A added to Blacklist
+2017/04/23 19:33:39: GTFS_get_times INFO - 714B added to Blacklist
+2017/04/23 19:33:39: GTFS_get_times INFO - 714D added to Blacklist
+2017/04/23 19:33:39: GTFS_get_times INFO - 714P added to Blacklist
+2017/04/23 19:33:39: GTFS_get_times INFO - 714X added to Blacklist
+2017/04/23 19:33:42: GTFS_get_times INFO - 715 added to Blacklist
+2017/04/23 19:33:42: GTFS_get_times INFO - 715B added to Blacklist
+2017/04/23 19:33:44: GTFS_get_times INFO - 716 added to Blacklist
+2017/04/23 19:33:44: GTFS_get_times INFO - 716Z added to Blacklist
+2017/04/23 19:33:45: GTFS_get_times INFO - 718 added to Blacklist
+2017/04/23 19:33:45: GTFS_get_times INFO - 718Z added to Blacklist
+2017/04/23 19:33:47: GTFS_get_times INFO - 719 added to Blacklist
+2017/04/23 19:33:47: GTFS_get_times INFO - 719F added to Blacklist
+2017/04/23 19:33:47: GTFS_get_times INFO - 719P added to Blacklist
+2017/04/23 19:33:47: GTFS_get_times INFO - 719Z added to Blacklist
+2017/04/23 19:33:49: GTFS_get_times INFO - 720 added to Blacklist
+2017/04/23 19:33:51: GTFS_get_times INFO - 721 added to Blacklist
+2017/04/23 19:33:53: GTFS_get_times INFO - 723 added to Blacklist
+2017/04/23 19:33:56: GTFS_get_times INFO - 724 added to Blacklist
+2017/04/23 19:33:57: GTFS_get_times INFO - 725 added to Blacklist
+2017/04/23 19:33:57: GTFS_get_times INFO - 725P added to Blacklist
+2017/04/23 19:33:59: GTFS_get_times INFO - 726 added to Blacklist
+2017/04/23 19:34:02: GTFS_get_times INFO - 727 added to Blacklist
+2017/04/23 19:34:02: GTFS_get_times INFO - 727L added to Blacklist
+2017/04/23 19:34:02: GTFS_get_times INFO - 727M added to Blacklist
+2017/04/23 19:34:04: GTFS_get_times INFO - 728 added to Blacklist
+2017/04/23 19:34:04: GTFS_get_times INFO - 728S added to Blacklist
+2017/04/23 19:34:05: GTFS_get_times INFO - 729 added to Blacklist
+2017/04/23 19:34:05: GTFS_get_times INFO - 729Z added to Blacklist
+2017/04/23 19:34:08: GTFS_get_times INFO - 730 added to Blacklist
+2017/04/23 19:34:08: GTFS_get_times INFO - 730B added to Blacklist
+2017/04/23 19:34:10: GTFS_get_times INFO - 731 added to Blacklist
+2017/04/23 19:34:10: GTFS_get_times INFO - 731P added to Blacklist
+2017/04/23 19:34:11: GTFS_get_times INFO - 732 added to Blacklist
+2017/04/23 19:34:11: GTFS_get_times INFO - 732C added to Blacklist
+2017/04/23 19:34:11: GTFS_get_times INFO - 732P added to Blacklist
+2017/04/23 19:34:13: GTFS_get_times INFO - 733 added to Blacklist
+2017/04/23 19:34:13: GTFS_get_times INFO - 733F added to Blacklist
+2017/04/23 19:34:13: GTFS_get_times INFO - 733P added to Blacklist
+2017/04/23 19:34:16: GTFS_get_times INFO - 734 added to Blacklist
+2017/04/23 19:34:19: GTFS_get_times INFO - 735 added to Blacklist
+2017/04/23 19:34:22: GTFS_get_times INFO - 736 added to Blacklist
+2017/04/23 19:34:25: GTFS_get_times INFO - 737 added to Blacklist
+2017/04/23 19:34:30: GTFS_get_times INFO - 738 added to Blacklist
+2017/04/23 19:34:34: GTFS_get_times INFO - 739 added to Blacklist
+2017/04/23 19:34:36: GTFS_get_times INFO - 740 added to Blacklist
+2017/04/23 19:34:40: GTFS_get_times INFO - 741 added to Blacklist
+2017/04/23 19:34:41: GTFS_get_times INFO - 742 added to Blacklist
+2017/04/23 19:34:43: GTFS_get_times INFO - 743 added to Blacklist
+2017/04/23 19:34:47: GTFS_get_times INFO - 744 added to Blacklist
+2017/04/23 19:34:48: GTFS_get_times INFO - 746 added to Blacklist
+2017/04/23 19:34:48: GTFS_get_times INFO - 746F added to Blacklist
+2017/04/23 19:34:50: GTFS_get_times INFO - 748 added to Blacklist
+2017/04/23 19:34:51: GTFS_get_times INFO - 750 added to Blacklist
+2017/04/23 19:34:53: GTFS_get_times INFO - 751 added to Blacklist
+2017/04/23 19:34:55: GTFS_get_times INFO - 753 added to Blacklist
+2017/04/23 19:35:03: GTFS_get_times INFO - 756 added to Blacklist
+2017/04/23 19:35:05: GTFS_get_times INFO - 757 added to Blacklist
+2017/04/23 19:35:05: GTFS_get_times INFO - 757B added to Blacklist
+2017/04/23 19:35:07: GTFS_get_times INFO - 759 added to Blacklist
+2017/04/23 19:35:08: GTFS_get_times INFO - 760 added to Blacklist
+2017/04/23 19:35:12: GTFS_get_times INFO - 761 added to Blacklist
+2017/04/23 19:35:12: GTFS_get_times INFO - 761F added to Blacklist
+2017/04/23 19:35:14: GTFS_get_times INFO - 764 added to Blacklist
+2017/04/23 19:35:17: GTFS_get_times INFO - 766 added to Blacklist
+2017/04/23 19:35:18: GTFS_get_times INFO - 768 added to Blacklist
+2017/04/23 19:35:18: GTFS_get_times INFO - 768L added to Blacklist
+2017/04/23 19:35:21: GTFS_get_times INFO - 769 added to Blacklist
+2017/04/23 19:35:26: GTFS_get_times INFO - 770 added to Blacklist
+2017/04/23 19:35:26: GTFS_get_times INFO - 770F added to Blacklist
+2017/04/23 19:35:26: GTFS_get_times INFO - 770P added to Blacklist
+2017/04/23 19:35:28: GTFS_get_times INFO - 771 added to Blacklist
+2017/04/23 19:35:29: GTFS_get_times INFO - 773 added to Blacklist
+2017/04/23 19:35:29: GTFS_get_times INFO - 773F added to Blacklist
+2017/04/23 19:35:29: GTFS_get_times INFO - 773P added to Blacklist
+2017/04/23 19:35:31: GTFS_get_times INFO - 774 added to Blacklist
+2017/04/23 19:35:33: GTFS_get_times INFO - 775 added to Blacklist
+2017/04/23 19:35:34: GTFS_get_times INFO - 776 added to Blacklist
+2017/04/23 19:35:36: GTFS_get_times INFO - 777 added to Blacklist
+2017/04/23 19:35:37: GTFS_get_times INFO - 778 added to Blacklist
+2017/04/23 19:35:39: GTFS_get_times INFO - 779 added to Blacklist
+2017/04/23 19:35:39: GTFS_get_times INFO - 779Z added to Blacklist
+2017/04/23 19:35:45: GTFS_get_times INFO - 781 added to Blacklist
+2017/04/23 19:35:46: GTFS_get_times INFO - 783 added to Blacklist
+2017/04/23 19:35:48: GTFS_get_times INFO - 784 added to Blacklist
+2017/04/23 19:35:48: GTFS_get_times INFO - 784Z added to Blacklist
+2017/04/23 19:35:50: GTFS_get_times INFO - 785 added to Blacklist
+2017/04/23 19:35:50: GTFS_get_times INFO - 785Z added to Blacklist
+2017/04/23 19:35:53: GTFS_get_times INFO - 787 added to Blacklist
+2017/04/23 19:35:55: GTFS_get_times INFO - 789 added to Blacklist
+2017/04/23 19:35:59: GTFS_get_times INFO - 792 added to Blacklist
+2017/04/23 19:36:04: GTFS_get_times INFO - 793 added to Blacklist
+2017/04/23 19:36:14: GTFS_get_times INFO - 794 added to Blacklist
+2017/04/23 19:36:16: GTFS_get_times INFO - 795 added to Blacklist
+2017/04/23 19:36:18: GTFS_get_times INFO - 796 added to Blacklist
+2017/04/23 19:36:19: GTFS_get_times INFO - 797 added to Blacklist
+2017/04/23 19:36:21: GTFS_get_times INFO - 798 added to Blacklist
+2017/04/23 19:36:28: GTFS_get_times INFO - 800 added to Blacklist
+2017/04/23 19:36:28: GTFS_get_times INFO - 800E added to Blacklist
+2017/04/23 19:36:28: GTFS_get_times INFO - 800H added to Blacklist
+2017/04/23 19:36:28: GTFS_get_times INFO - 800S added to Blacklist
+2017/04/23 19:36:28: GTFS_get_times INFO - 800X added to Blacklist
+2017/04/23 19:36:28: GTFS_get_times INFO - 800Y added to Blacklist
+2017/04/23 19:36:38: GTFS_get_times INFO - 802 added to Blacklist
+2017/04/23 19:36:43: GTFS_get_times INFO - 803 added to Blacklist
+2017/04/23 19:36:48: GTFS_get_times INFO - 804 added to Blacklist
+2017/04/23 19:36:48: GTFS_get_times INFO - 804B added to Blacklist
+2017/04/23 19:36:48: GTFS_get_times INFO - 804L added to Blacklist
+2017/04/23 19:36:48: GTFS_get_times INFO - 804P added to Blacklist
+2017/04/23 19:36:48: GTFS_get_times INFO - 804X added to Blacklist
+2017/04/23 19:36:52: GTFS_get_times INFO - 805 added to Blacklist
+2017/04/23 19:36:52: GTFS_get_times INFO - 805P added to Blacklist
+2017/04/23 19:36:53: GTFS_get_times INFO - 806 added to Blacklist
+2017/04/23 19:36:53: GTFS_get_times INFO - 806C added to Blacklist
+2017/04/23 19:36:53: GTFS_get_times INFO - 806D added to Blacklist
+2017/04/23 19:36:53: GTFS_get_times INFO - 806E added to Blacklist
+2017/04/23 19:36:53: GTFS_get_times INFO - 806F added to Blacklist
+2017/04/23 19:36:53: GTFS_get_times INFO - 806H added to Blacklist
+2017/04/23 19:36:53: GTFS_get_times INFO - 806I added to Blacklist
+2017/04/23 19:36:53: GTFS_get_times INFO - 806K added to Blacklist
+2017/04/23 19:36:53: GTFS_get_times INFO - 806M added to Blacklist
+2017/04/23 19:36:53: GTFS_get_times INFO - 806S added to Blacklist
+2017/04/23 19:36:53: GTFS_get_times INFO - 806X added to Blacklist
+2017/04/23 19:36:55: GTFS_get_times INFO - 807 added to Blacklist
+2017/04/23 19:36:59: GTFS_get_times INFO - 809 added to Blacklist
+2017/04/23 19:36:59: GTFS_get_times INFO - 809B added to Blacklist
+2017/04/23 19:36:59: GTFS_get_times INFO - 809P added to Blacklist
+2017/04/23 19:37:03: GTFS_get_times INFO - 810 added to Blacklist
+2017/04/23 19:37:03: GTFS_get_times INFO - 810C added to Blacklist
+2017/04/23 19:37:08: GTFS_get_times INFO - 811S added to Blacklist
+2017/04/23 19:37:10: GTFS_get_times INFO - 812S added to Blacklist
+2017/04/23 19:37:21: GTFS_get_times INFO - 814 added to Blacklist
+2017/04/23 19:37:21: GTFS_get_times INFO - 814C added to Blacklist
+2017/04/23 19:37:21: GTFS_get_times INFO - 814D added to Blacklist
+2017/04/23 19:37:21: GTFS_get_times INFO - 814X added to Blacklist
+2017/04/23 19:37:22: GTFS_get_times INFO - 815F added to Blacklist
+2017/04/23 19:37:23: GTFS_get_times INFO - 816B added to Blacklist
+2017/04/23 19:37:23: GTFS_get_times INFO - 816H added to Blacklist
+2017/04/23 19:37:23: GTFS_get_times INFO - 816M added to Blacklist
+2017/04/23 19:37:23: GTFS_get_times INFO - 816P added to Blacklist
+2017/04/23 19:37:27: GTFS_get_times INFO - 817 added to Blacklist
+2017/04/23 19:37:32: GTFS_get_times INFO - 818 added to Blacklist
+2017/04/23 19:37:34: GTFS_get_times INFO - 819P added to Blacklist
+2017/04/23 19:37:39: GTFS_get_times INFO - 820P added to Blacklist
+2017/04/23 19:37:41: GTFS_get_times INFO - 821T added to Blacklist
+2017/04/23 19:37:44: GTFS_get_times INFO - 823P added to Blacklist
+2017/04/23 19:37:47: GTFS_get_times INFO - 824B added to Blacklist
+2017/04/23 19:37:49: GTFS_get_times INFO - 825P added to Blacklist
+2017/04/23 19:37:49: GTFS_get_times INFO - 825S added to Blacklist
+2017/04/23 19:37:51: GTFS_get_times INFO - 826 added to Blacklist
+2017/04/23 19:37:51: GTFS_get_times INFO - 826P added to Blacklist
+2017/04/23 19:37:56: GTFS_get_times INFO - 827 added to Blacklist
+2017/04/23 19:37:58: GTFS_get_times INFO - 828 added to Blacklist
+2017/04/23 19:37:59: GTFS_get_times INFO - 829P added to Blacklist
+2017/04/23 19:38:00: GTFS_get_times INFO - 830 added to Blacklist
+2017/04/23 19:38:00: GTFS_get_times INFO - 830C added to Blacklist
+2017/04/23 19:38:01: GTFS_get_times INFO - 831 added to Blacklist
+2017/04/23 19:38:01: GTFS_get_times INFO - 831H added to Blacklist
+2017/04/23 19:38:01: GTFS_get_times INFO - 831X added to Blacklist
+2017/04/23 19:38:04: GTFS_get_times INFO - 832 added to Blacklist
+2017/04/23 19:38:07: GTFS_get_times INFO - 833 added to Blacklist
+2017/04/23 19:38:10: GTFS_get_times INFO - 834C added to Blacklist
+2017/04/23 19:38:10: GTFS_get_times INFO - 834F added to Blacklist
+2017/04/23 19:38:10: GTFS_get_times INFO - 834H added to Blacklist
+2017/04/23 19:38:10: GTFS_get_times INFO - 834P added to Blacklist
+2017/04/23 19:38:10: GTFS_get_times INFO - 834Q added to Blacklist
+2017/04/23 19:38:10: GTFS_get_times INFO - 834X added to Blacklist
+2017/04/23 19:38:10: GTFS_get_times INFO - 834X added to Blacklist
+2017/04/23 19:38:14: GTFS_get_times INFO - 835 added to Blacklist
+2017/04/23 19:38:15: GTFS_get_times INFO - 836 added to Blacklist
+2017/04/23 19:38:15: GTFS_get_times INFO - 836F added to Blacklist
+2017/04/23 19:38:15: GTFS_get_times INFO - 836P added to Blacklist
+2017/04/23 19:38:16: GTFS_get_times INFO - 837 added to Blacklist
+2017/04/23 19:38:16: GTFS_get_times INFO - 838 added to Blacklist
+2017/04/23 19:38:16: GTFS_get_times INFO - 838P added to Blacklist
+2017/04/23 19:38:17: GTFS_get_times INFO - 839 added to Blacklist
+2017/04/23 19:38:19: GTFS_get_times INFO - 841 added to Blacklist
+2017/04/23 19:38:21: GTFS_get_times INFO - 843J added to Blacklist
+2017/04/23 19:38:23: GTFS_get_times INFO - 844 added to Blacklist
+2017/04/23 19:38:23: GTFS_get_times INFO - 844S added to Blacklist
+2017/04/23 19:38:23: GTFS_get_times INFO - 844X added to Blacklist
+2017/04/23 19:38:29: GTFS_get_times INFO - 845 added to Blacklist
+2017/04/23 19:38:31: GTFS_get_times INFO - 846B added to Blacklist
+2017/04/23 19:38:34: GTFS_get_times INFO - 847 added to Blacklist
+2017/04/23 19:38:34: GTFS_get_times INFO - 847B added to Blacklist
+2017/04/23 19:38:34: GTFS_get_times INFO - 847P added to Blacklist
+2017/04/23 19:38:34: GTFS_get_times INFO - 847S added to Blacklist
+2017/04/23 19:38:37: GTFS_get_times INFO - 848 added to Blacklist
+2017/04/23 19:38:37: GTFS_get_times INFO - 848C added to Blacklist
+2017/04/23 19:38:37: GTFS_get_times INFO - 848S added to Blacklist
+2017/04/23 19:38:37: GTFS_get_times INFO - 848T added to Blacklist
+2017/04/23 19:38:39: GTFS_get_times INFO - 851 added to Blacklist
+2017/04/23 19:38:39: GTFS_get_times INFO - 851M added to Blacklist
+2017/04/23 19:38:43: GTFS_get_times INFO - 853 added to Blacklist
+2017/04/23 19:38:46: GTFS_get_times INFO - 854 added to Blacklist
+2017/04/23 19:38:47: GTFS_get_times INFO - 855 added to Blacklist
+2017/04/23 19:38:47: GTFS_get_times INFO - 855P added to Blacklist
+2017/04/23 19:38:48: GTFS_get_times INFO - 857 added to Blacklist
+2017/04/23 19:38:49: GTFS_get_times INFO - 858 added to Blacklist
+2017/04/23 19:38:51: GTFS_get_times INFO - 859 added to Blacklist
+2017/04/23 19:38:59: GTFS_get_times INFO - 862 added to Blacklist
+2017/04/23 19:38:59: GTFS_get_times INFO - 862B added to Blacklist
+2017/04/23 19:39:02: GTFS_get_times INFO - 863 added to Blacklist
+2017/04/23 19:39:07: GTFS_get_times INFO - 865 added to Blacklist
+2017/04/23 19:39:07: GTFS_get_times INFO - 865S added to Blacklist
+2017/04/23 19:39:08: GTFS_get_times INFO - 866 added to Blacklist
+2017/04/23 19:39:08: GTFS_get_times INFO - 866C added to Blacklist
+2017/04/23 19:39:09: GTFS_get_times INFO - 867 added to Blacklist
+2017/04/23 19:39:13: GTFS_get_times INFO - 873 added to Blacklist
+2017/04/23 19:39:17: GTFS_get_times INFO - 875E added to Blacklist
+2017/04/23 19:39:19: GTFS_get_times INFO - 876 added to Blacklist
+2017/04/23 19:39:19: GTFS_get_times INFO - 876H added to Blacklist
+2017/04/23 19:39:19: GTFS_get_times INFO - 876S added to Blacklist
+2017/04/23 19:39:19: GTFS_get_times INFO - 876X added to Blacklist
+2017/04/23 19:39:21: GTFS_get_times INFO - 877 added to Blacklist
+2017/04/23 19:39:25: GTFS_get_times INFO - 879F added to Blacklist
+2017/04/23 19:39:25: GTFS_get_times INFO - 879P added to Blacklist
+2017/04/23 19:39:29: GTFS_get_times INFO - 880 added to Blacklist
+2017/04/23 19:39:37: GTFS_get_times INFO - 883 added to Blacklist
+2017/04/23 19:39:39: GTFS_get_times INFO - 884 added to Blacklist
+2017/04/23 19:39:42: GTFS_get_times INFO - 885 added to Blacklist
+2017/04/23 19:39:43: GTFS_get_times INFO - 886P added to Blacklist
+2017/04/23 19:39:46: GTFS_get_times INFO - 887 added to Blacklist
+2017/04/23 19:39:50: GTFS_get_times INFO - 890C added to Blacklist
+2017/04/23 19:39:50: GTFS_get_times INFO - 890C added to Blacklist
+2017/04/23 19:39:50: GTFS_get_times INFO - 890F added to Blacklist
+2017/04/23 19:39:50: GTFS_get_times INFO - 890L added to Blacklist
+2017/04/23 19:39:50: GTFS_get_times INFO - 890L added to Blacklist
+2017/04/23 19:39:50: GTFS_get_times INFO - 890S added to Blacklist
+2017/04/23 19:39:51: GTFS_get_times INFO - 891 added to Blacklist
+2017/04/23 19:39:51: GTFS_get_times INFO - 891H added to Blacklist
+2017/04/23 19:39:51: GTFS_get_times INFO - 891T added to Blacklist
+2017/04/23 19:39:52: GTFS_get_times INFO - 892B added to Blacklist
+2017/04/23 19:39:52: GTFS_get_times INFO - 892S added to Blacklist
+2017/04/23 19:39:53: GTFS_get_times INFO - 894A added to Blacklist
+2017/04/23 19:39:53: GTFS_get_times INFO - 894B added to Blacklist
+2017/04/23 19:39:53: GTFS_get_times INFO - 894P added to Blacklist
+2017/04/23 19:39:53: GTFS_get_times INFO - 894S added to Blacklist
+2017/04/23 19:39:55: GTFS_get_times INFO - 895 added to Blacklist
+2017/04/23 19:39:57: GTFS_get_times INFO - 896 added to Blacklist
+2017/04/23 19:39:57: GTFS_get_times INFO - 896B added to Blacklist
+2017/04/23 19:39:57: GTFS_get_times INFO - 896E added to Blacklist
+2017/04/23 19:39:57: GTFS_get_times INFO - 896S added to Blacklist
+2017/04/23 19:40:00: GTFS_get_times INFO - 898 added to Blacklist
+2017/04/23 19:40:01: GTFS_get_times INFO - 899 added to Blacklist
+2017/04/23 19:40:03: GTFS_get_times INFO - 901 added to Blacklist
+2017/04/23 19:40:04: GTFS_get_times INFO - 902B added to Blacklist
+2017/04/23 19:40:04: GTFS_get_times INFO - 902C added to Blacklist
+2017/04/23 19:40:07: GTFS_get_times INFO - 903 added to Blacklist
+2017/04/23 19:40:11: GTFS_get_times INFO - 904B added to Blacklist
+2017/04/23 19:40:11: GTFS_get_times INFO - 904E added to Blacklist
+2017/04/23 19:40:11: GTFS_get_times INFO - 904S added to Blacklist
+2017/04/23 19:40:13: GTFS_get_times INFO - 905 added to Blacklist
+2017/04/23 19:40:13: GTFS_get_times INFO - 905P added to Blacklist
+2017/04/23 19:40:13: GTFS_get_times INFO - 905X added to Blacklist
+2017/04/23 19:40:15: GTFS_get_times INFO - 906 added to Blacklist
+2017/04/23 19:40:15: GTFS_get_times INFO - 906C added to Blacklist
+2017/04/23 19:40:18: GTFS_get_times INFO - 907 added to Blacklist
+2017/04/23 19:40:23: GTFS_get_times INFO - 908 added to Blacklist
+2017/04/23 19:40:23: GTFS_get_times INFO - 908L added to Blacklist
+2017/04/23 19:40:29: GTFS_get_times INFO - 909 added to Blacklist
+2017/04/23 19:40:31: GTFS_get_times INFO - 910 added to Blacklist
+2017/04/23 19:40:33: GTFS_get_times INFO - 911 added to Blacklist
+2017/04/23 19:40:36: GTFS_get_times INFO - 912 added to Blacklist
+2017/04/23 19:40:42: GTFS_get_times INFO - 913 added to Blacklist
+2017/04/23 19:40:42: GTFS_get_times INFO - 913M added to Blacklist
+2017/04/23 19:40:42: GTFS_get_times INFO - 913M added to Blacklist
+2017/04/23 19:40:46: GTFS_get_times INFO - 914 added to Blacklist
+2017/04/23 19:40:46: GTFS_get_times INFO - 914A added to Blacklist
+2017/04/23 19:40:46: GTFS_get_times INFO - 914B added to Blacklist
+2017/04/23 19:40:46: GTFS_get_times INFO - 914P added to Blacklist
+2017/04/23 19:40:47: GTFS_get_times INFO - 915 added to Blacklist
+2017/04/23 19:40:47: GTFS_get_times INFO - 915X added to Blacklist
+2017/04/23 19:40:49: GTFS_get_times INFO - 916 added to Blacklist
+2017/04/23 19:40:49: GTFS_get_times INFO - 916P added to Blacklist
+2017/04/23 19:40:55: GTFS_get_times INFO - 917 added to Blacklist
+2017/04/23 19:40:55: GTFS_get_times INFO - 917P added to Blacklist
+2017/04/23 19:40:56: GTFS_get_times INFO - 918S added to Blacklist
+2017/04/23 19:40:58: GTFS_get_times INFO - 919 added to Blacklist
+2017/04/23 19:40:59: GTFS_get_times INFO - 920 added to Blacklist
+2017/04/23 19:41:01: GTFS_get_times INFO - 921 added to Blacklist
+2017/04/23 19:41:01: GTFS_get_times INFO - 921P added to Blacklist
+2017/04/23 19:41:04: GTFS_get_times INFO - 922 added to Blacklist
+2017/04/23 19:41:07: GTFS_get_times INFO - 923 added to Blacklist
+2017/04/23 19:41:08: GTFS_get_times INFO - 927 added to Blacklist
+2017/04/23 19:41:11: GTFS_get_times INFO - 982 added to Blacklist
+2017/04/23 19:41:11: GTFS_get_times INFO - 982P added to Blacklist
+2017/04/23 19:41:15: GTFS_get_times INFO - 983 added to Blacklist
+2017/04/23 19:41:17: GTFS_get_times INFO - 984 added to Blacklist
+2017/04/23 19:41:20: GTFS_get_times INFO - 985 added to Blacklist
+2017/04/23 19:41:20: GTFS_get_times INFO - 985N added to Blacklist
+2017/04/23 19:41:22: GTFS_get_times INFO - 986 added to Blacklist

@@ -17,7 +17,7 @@ from unidecode import unidecode
 
 
 logger = logging.getLogger("GTFS_get_times")
-logging.basicConfig(filename="./GTFS_get_times.log", level=logging.INFO, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
+logging.basicConfig(filename="./GTFS_get_times.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
 
 # PDFs are stored here
 baseurl = "https://ceturb.es.gov.br/"
@@ -176,10 +176,12 @@ def create_json(ref, fromV, toV, d, times, duration=60, atypical=False):
     retValue[u"to"] = toV
     if d == "Su":
         retValue[u"service"] = [ d ]
+        tmp = [ d ]
         for i in get_saturday_holidays():
-            retValue[u"service"].append(i)
+            tmp.append(i)
         for i in get_weekday_holidays():
-            retValue[u"service"].append(i)
+            tmp.append(i)
+        retValue[u"service"] = [ tmp ]
         retValue[u"exceptions"] = []
     elif d == "Sa":
         retValue[u"service"] = [ d ]
@@ -189,10 +191,13 @@ def create_json(ref, fromV, toV, d, times, duration=60, atypical=False):
         retValue[u"exceptions"] = []
     else:
         retValue[u"service"] = [ d ]
-        retValue[u"exceptions"] = [ get_weekday_holidays() ]
         if atypical == True:
+            tmp = get_weekday_holidays()
             for i in get_atypical_days():
-                retValue[u"exceptions"].append(i)
+                tmp.append(i)
+            retValue[u"exceptions"] = [ tmp ]
+        else:
+            retValue[u"exceptions"] = [ get_weekday_holidays() ]
     retValue[u"stations"] = [ fromV, toV ]
     retValue[u"times"] = []
     for t in times:

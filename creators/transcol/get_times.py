@@ -24,7 +24,7 @@ import overpass
 
 
 logger = logging.getLogger("GTFS_get_times")
-logging.basicConfig(filename="./GTFS_get_times.log", level=logging.INFO, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
+logging.basicConfig(filename="./GTFS_get_times.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
 
 # PDFs are stored here
 baseurl = "https://ceturb.es.gov.br/"
@@ -48,6 +48,7 @@ myRoutes[u"updated"] = str(datetime.date.today())
 myRoutes[u"operator"] = u"Transcol"
 myRoutes[u"network"] = u"Transcol"
 myRoutes[u"source"] = baseurl
+myRoutes[u"blacklist"] = []
 myRoutes["routes"] = {}
 
 def calculate_end_time(start_time, duration):
@@ -68,26 +69,6 @@ def calculate_end_time(start_time, duration):
     if day > 0:
         end_time = "{0}+{1}".format(end_time, str(day))
     return end_time
-
-def getLines():
-    downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/ConsultaLinha/"
-    routes = []
-    myJSON = None
-    r = False
-    while r == False:
-        try:
-            r = requests.get(downloadURL, timeout=30)
-        except requests.exceptions.ReadTimeout as e:
-            r = False
-        except requests.exceptions.ConnectionError as e:
-            r = False
-        try:
-            myJSON = json.dumps(json.loads(r.content))
-        except:
-            r = False
-    for i in json.loads(myJSON):
-        routes.append( [ str(int(i[u"Linha"])), lower_capitalized(unicode(i[u"Descricao"])) ] )
-    return routes
 
 def getTimes(ref):
     downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/BuscaHorarios/" + ref
@@ -175,7 +156,7 @@ def getObservations(ref):
         myObs.append( [ i["Tipo_Orientacao"], i["Descricao_Orientacao"] ] )
     return myObs
 
-def create_json(ref, fromV, toV, d, times, duration=60):
+def create_json(ref, fromV, toV, d, times, duration=60, atypical=False):
     debug_to_screen(u"{0} - {1} -> {2} ({3}) {4} - {5}".format(ref, fromV, toV, d, len(times), duration))
     times.sort()
     retValue = {}
@@ -183,10 +164,12 @@ def create_json(ref, fromV, toV, d, times, duration=60):
     retValue[u"to"] = toV
     if d == "Su":
         retValue[u"service"] = [ d ]
+        tmp = [ d ]
         for i in get_saturday_holidays():
-            retValue[u"service"].append(i)
+            tmp.append(i)
         for i in get_weekday_holidays():
-            retValue[u"service"].append(i)
+            tmp.append(i)
+        retValue[u"service"] = [ tmp ]
         retValue[u"exceptions"] = []
     elif d == "Sa":
         retValue[u"service"] = [ d ]
@@ -196,10 +179,13 @@ def create_json(ref, fromV, toV, d, times, duration=60):
         retValue[u"exceptions"] = []
     else:
         retValue[u"service"] = [ d ]
-        retValue[u"exceptions"] = [ get_weekday_holidays() ]
         if atypical == True:
+            tmp = get_weekday_holidays()
             for i in get_atypical_days():
-                retValue[u"exceptions"].append(i)
+                tmp.append(i)
+            retValue[u"exceptions"] = [ tmp ]
+        else:
+            retValue[u"exceptions"] = [ get_weekday_holidays() ]
     retValue[u"stations"] = [ fromV, toV ]
     retValue[u"times"] = []
     for t in times:
@@ -234,6 +220,10 @@ for i in getLines():
             durations = durationsList[ref]
         except:
             durations = [ -10, -10 ]
+        if durations[0] < 0 and durations[1] < 0:
+            myRoutes["blacklist"].append(ref)
+            logger.info("%s added to Blacklist", ref)
+            continue
         myDays = [ u"Mo-Fr", u"Sa", u"Su", u"Ex" ]
         for d in myDays:
             if d == u"Mo-Fr" and len(myTimes[ref]["Ex"]["Ida"]) > 0:
