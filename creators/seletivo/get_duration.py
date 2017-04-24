@@ -23,7 +23,7 @@ import overpass
 
 
 logger = logging.getLogger("GTFS_get_durations")
-logging.basicConfig(filename="./GTFS_get_times.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
+logging.basicConfig(filename="/var/log/GTFS/seletivo.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
 
 # PDFs are stored here
 baseurl = "http://ceturb.es.gov.br/"
@@ -33,26 +33,6 @@ debugMe = False
 # List of route numbers
 routes = [  ]
 stationList = {}
-def getLines():
-    downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/ConsultaLinha?Tipo_Linha=Seletivo"
-    routes = []
-    myJSON = None
-    r = False
-    while r == False:
-        try:
-            r = requests.get(downloadURL, timeout=30)
-        except requests.exceptions.ReadTimeout as e:
-            r = False
-        except requests.exceptions.ConnectionError as e:
-            r = False
-        try:
-            myJSON = json.dumps(json.loads(r.content))
-        except:
-            r = False
-    for i in json.loads(myJSON):
-        routes.append( [ str(int(i[u"Linha"])), lower_capitalized(unicode(i[u"Descricao"])) ] )
-    logger.debug("%s lines gathered from site", len(routes))
-    return routes
 
 def getRefs(ref):
     ref = ref.strip()
@@ -124,7 +104,7 @@ durationsList[u"operator"] = u"Seletivo"
 durationsList[u"network"] = u"Seletivo"
 durationsList[u"source"] = baseurl
 
-for i in routes:
+for i in getLines():
     name = ""
     ref = ""
     origin = ""

@@ -26,8 +26,10 @@ def lower_capitalized_master(input):
     output = output.replace(u"Br101", u"BR-101")
     output = output.replace(u"Br 101", u"BR-101")
     output = output.replace(u"Br - 101", u"BR-101")
+    output = output.replace(u"Br262", u"BR-262")
     output = output.replace(u"Br 262", u"BR-262")
     output = output.replace(u"Br - 262", u"BR-262")
+    output = output.replace(u"Es010", u"ES-060")
     output = output.replace(u"Es 010", u"ES-010")
     output = output.replace(u"Es - 010", u"ES-010")
     output = output.replace(u"Iii", u"III")
@@ -47,6 +49,7 @@ def lower_capitalized_master(input):
     output = output.replace(u"Ufes", u"UFES")
     output = output.replace(u"Ifes", u"IFES")
     output = output.replace(u"U. V. V.", u"UVV")
+    output = output.replace(u"Shoping", u"Shopping")
     return output.strip()
 
 def debug_to_screen(text, newLine=True):
@@ -55,4 +58,35 @@ def debug_to_screen(text, newLine=True):
             print text
         else:
             print text,
+
+def stringify_date(date):
+    return str(date)
+    retValue = []
+    for myDate in date_array:
+        #        print myDate
+        try:
+            retValue.append(str(myDate[0]))
+        except:
+            pass
+    return retValue
+
+def calculate_end_time(start_time, duration):
+    if duration < 1:
+        duration = 60
+    end_time = start_time
+    day = 0
+    hr = int(start_time[:2])
+    min = int(start_time[3:])
+    min += duration
+    while min > 59:
+        hr += 1
+        min -= 60
+    while hr > 23:
+        hr -= 24 # Should we put a day+1 variable as well?
+        day += 1
+    end_time = "{0}:{1}".format(str(hr).zfill(2), str(min).zfill(2))
+    if day > 0:
+        end_time = "{0}+{1}".format(end_time, str(day))
+    return end_time
+
 

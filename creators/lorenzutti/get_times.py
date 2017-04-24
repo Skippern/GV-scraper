@@ -22,7 +22,9 @@ from pdfminer.layout import LAParams, LTTextBox, LTTextLine, LTFigure, LTImage, 
 from pdfminer.converter import PDFPageAggregator
 
 logger = logging.getLogger("GTFS_get_times")
-logging.basicConfig(filename="./GTFS_get_times.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
+logging.basicConfig(filename="/var/log/GTFS/lorenzutti.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
+
+cal = Guarapari()
 
 # PDFs are stored here
 baseurl = "http://www.expressolorenzutti.com.br/horarios/"
@@ -69,66 +71,6 @@ def download_pdf(i):
         myRoutes[u"blacklist"].append(i)
         logger.error("%s added to blacklist (file does not exist or contain no data)", i)
         return None
-
-def calculate_end_time(start_time, duration):
-    if duration < 1:
-        duration = 60
-    end_time = start_time
-    day = 0
-    hr = int(start_time[:2])
-    min = int(start_time[3:])
-    min += duration
-    while min > 59:
-        hr += 1
-        min -= 60
-    while hr > 23:
-        hr -= 24 # Should we put a day+1 variable as well?
-        day += 1
-    end_time = "{0}:{1}".format(str(hr).zfill(2), str(min).zfill(2))
-    if day > 0:
-        end_time = "{0}+{1}".format(end_time, str(day))
-    return end_time
-
-def create_json(ref, fromV, toV, weekdays, saturdays, sundays, duration=60):
-    weekdays.sort()
-    saturdays.sort()
-    sundays.sort()
-    if len(weekdays) > 0:
-        retValue = {}
-        retValue[u"from"] = fromV
-        retValue[u"to"] = toV
-        retValue[u"service"] = [ u"Mo-Fr" ]
-        retValue[u"exceptions"] = []
-        retValue[u"stations"] = [ fromV, toV ]
-        retValue[u"times"] = []
-        for t in weekdays:
-            tmp = calculate_end_time(t, duration)
-            retValue[u"times"].append( [ t, tmp ] )
-        myRoutes["routes"][ref].append(retValue)
-    if len(saturdays) > 0:
-        retValue = {}
-        retValue[u"from"] = fromV
-        retValue[u"to"] = toV
-        retValue[u"service"] = [ u"Sa" ]
-        retValue[u"exceptions"] = []
-        retValue[u"stations"] = [ fromV, toV ]
-        retValue[u"times"] = []
-        for t in saturdays:
-            tmp = calculate_end_time(t, duration)
-            retValue[u"times"].append( [ t, tmp ] )
-        myRoutes["routes"][ref].append(retValue)
-    if len(sundays) > 0:
-        retValue = {}
-        retValue[u"from"] = fromV
-        retValue[u"to"] = toV
-        retValue[u"service"] = [ u"Su" ]
-        retValue[u"exceptions"] = []
-        retValue[u"stations"] = [ fromV, toV ]
-        retValue[u"times"] = []
-        for t in sundays:
-            tmp = calculate_end_time(t, duration)
-            retValue[u"times"].append( [ t, tmp ] )
-        myRoutes["routes"][ref].append(retValue)
 
 myRoutes[u"updated"] = str(datetime.date.today())
 myRoutes[u"operator"] = u"Expresso Lorenzutti"
@@ -440,8 +382,12 @@ for i in routes:
             for i in myVariations:
                 debug_to_screen( "{0}, ".format(i),False)
                 tmp = u"{0} {1}".format(ref, i)
-                if blacklistVariants:
-                    myRoutes["blacklist"].append(tmp)
+                try:
+                    if blacklistVariants and durationsList[tmp][0] < 0 and durationsList[tmp][1] < 0:
+                        myRoutes["blacklist"].append(tmp)
+                        logger.info("Route \"%s\" added to blacklist", tmp)
+                except:
+                    pass
                 durationIda = 60
                 durationVolta = 60
                 try:
@@ -455,8 +401,10 @@ for i in routes:
                 except:
                     durationVolta = 60
                 myRoutes["routes"][tmp] = []
-                create_json(tmp, origin, destination, myVariationList[tmp]["ida"]["Mo-Fr"], myVariationList[tmp]["ida"]["Sa"], myVariationList[tmp]["ida"]["Su"], durationIda)
-                create_json(tmp, destination, origin, myVariationList[tmp]["volta"]["Mo-Fr"], myVariationList[tmp]["volta"]["Sa"], myVariationList[tmp]["volta"]["Su"], durationVolta)
+                myDays = [ u"Mo-Fr", u"Sa", u"Su" ]
+                for d in myDays:
+                    myRoutes = create_json(myRoutes, cal, tmp, origin, destination, myVariationList[tmp]["ida"][d], durationIda)
+                    myRoutes = create_json(myRoutes, cal, tmp, destination, origin,  myVariationList[tmp]["volta"][d], durationVolta)
             debug_to_screen( "")
         durationIda = 60
         durationVolta = 60
@@ -471,8 +419,10 @@ for i in routes:
         except:
             durationVolta = 60
         myRoutes["routes"][ref] = []
-        create_json(ref, origin, destination, myVariationList[ref]["ida"]["Mo-Fr"], myVariationList[ref]["ida"]["Sa"], myVariationList[ref]["ida"]["Su"], durationIda)
-        create_json(ref, destination, origin, myVariationList[ref]["volta"]["Mo-Fr"], myVariationList[ref]["volta"]["Sa"], myVariationList[ref]["volta"]["Su"], durationVolta)
+        myDays = [ u"Mo-Fr", u"Sa", u"Su" ]
+        for d in myDays:
+            myRoutes = create_json(myRoutes, cal, ref, origin, destination, myVariationList[ref]["ida"][d], durationIda)
+            myRoutes = create_json(myRoutes, cal, ref, destination, origin,  myVariationList[ref]["volta"][d], durationVolta)
 
 newBlacklist = uniq(myRoutes["blacklist"])
 newBlacklist.sort()

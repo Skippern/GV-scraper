@@ -17,7 +17,7 @@ import overpass
 
 
 logger = logging.getLogger("GTFS_get_durations")
-logging.basicConfig(filename="./GTFS_get_times.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
+logging.basicConfig(filename="/var/log/GTFS/transcol.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
 
 # PDFs are stored here
 baseurl = "http://ceturb.es.gov.br/"

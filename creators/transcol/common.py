@@ -7,6 +7,8 @@ lib_path = os.path.abspath( os.path.join( '..', '..', 'lib' ) )
 sys.path.append(lib_path)
 from commons import *
 from routing import *
+from feriados import *
+from make_json import *
 
 debugMe = False
 

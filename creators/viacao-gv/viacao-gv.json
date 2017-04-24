@@ -1,0 +1,33 @@
+{
+    "query": {
+        "bbox": {
+            "n": "-20.239",
+            "s": "-20.330",
+            "e": "-40.211",
+            "w": "-40.363"
+        },
+        "tags": {
+            "route": "bus"
+        }
+    },
+    "stops": {
+        "name_without": "Ponto sem nome",
+        "name_auto": "yes"
+    },
+    "agency": {
+        "agency_id": "BR-Vitoria",
+        "agency_name": "Viação Grande Vitória",
+        "agency_url": "http://sistemas.vitoria.es.gov.br/redeiti/default.cfm",
+        "agency_timezone": "America/Sao_Paulo",
+        "agency_lang": "pt",
+        "agency_phone": "+55 (27) 3382-6000",
+        "agency_fare_url": ""
+    },
+    "feed_info": {
+        "publisher_name": "Aun Johnsen",
+        "publisher_url": "https://github.com/Skippern",
+        "version":  "0.1"
+    },
+    "output_file": "data/br-vitoria.zip",
+    "selector": "viacao-gv"
+}
