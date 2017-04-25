@@ -29,7 +29,10 @@ def create_json(myRoutes, cal, ref, fromV, toV, d, times, duration=60, atypical=
         debug_to_screen(u"{0} - {1} -> {2} ({3}) {4} - {5}".format(ref, fromV, toV, d, len(times), duration))
     except:
         debug_to_screen("In make_json, times TypeError, have no len()")
-    times.sort()
+    try:
+        times.sort()
+    except:
+        debug_to_screen("In make_json, times not sortable?")
     retValue = {}
     retValue[u"from"] = fromV
     retValue[u"to"] = toV

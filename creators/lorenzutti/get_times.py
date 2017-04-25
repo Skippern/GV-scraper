@@ -403,9 +403,9 @@ for i in routes:
                 myRoutes["routes"][tmp] = []
                 myDays = [ u"Mo-Fr", u"Sa", u"Su" ]
                 for d in myDays:
-                    myRoutes = create_json(myRoutes, cal, tmp, origin, destination, myVariationList[tmp]["ida"][d], durationIda)
-                    myRoutes = create_json(myRoutes, cal, tmp, destination, origin,  myVariationList[tmp]["volta"][d], durationVolta)
-            debug_to_screen( "")
+                    myRoutes = create_json(myRoutes, cal, tmp, origin, destination, d, myVariationList[tmp]["ida"][d], durationIda)
+                    myRoutes = create_json(myRoutes, cal, tmp, destination, origin, d, myVariationList[tmp]["volta"][d], durationVolta)
+            debug_to_screen("")
         durationIda = 60
         durationVolta = 60
         try:
@@ -421,8 +421,8 @@ for i in routes:
         myRoutes["routes"][ref] = []
         myDays = [ u"Mo-Fr", u"Sa", u"Su" ]
         for d in myDays:
-            myRoutes = create_json(myRoutes, cal, ref, origin, destination, myVariationList[ref]["ida"][d], durationIda)
-            myRoutes = create_json(myRoutes, cal, ref, destination, origin,  myVariationList[ref]["volta"][d], durationVolta)
+            myRoutes = create_json(myRoutes, cal, ref, origin, destination, d, myVariationList[ref]["ida"][d], durationIda)
+            myRoutes = create_json(myRoutes, cal, ref, destination, origin, d, myVariationList[ref]["volta"][d], durationVolta)
 
 newBlacklist = uniq(myRoutes["blacklist"])
 newBlacklist.sort()
