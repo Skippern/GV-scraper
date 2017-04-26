@@ -22,17 +22,15 @@ from pdfminer.layout import LAParams, LTTextBox, LTTextLine, LTFigure, LTImage, 
 from pdfminer.converter import PDFPageAggregator
 
 logger = logging.getLogger("GTFS_get_times")
-logging.basicConfig(filename="/var/log/GTFS/lorenzutti.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
+logging.basicConfig(filename="/var/log/GTFS/sanremo.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
 
 cal = Guarapari()
 
 # PDFs are stored here
-baseurl = "http://www.expressolorenzutti.com.br/horarios/"
+baseurl = "http://www.viacaosanremo.com.br/horarios/"
 
-blacklisted = [ "013", # via Tartaruga
-               "036", # Unclear itenerario
-               ]
-whitelisted = [ u"022 IF" ]
+blacklisted = [ ]
+whitelisted = [ ]
 
 
 ignoreVariants = True
@@ -68,8 +66,8 @@ def download_pdf(i):
         return None
 
 myRoutes[u"updated"] = str(datetime.date.today())
-myRoutes[u"operator"] = u"Expresso Lorenzutti"
-myRoutes[u"network"] = u"PMG"
+myRoutes[u"operator"] = u"Viação Sanremo"
+myRoutes[u"network"] = u"PMVV"
 myRoutes[u"source"] = baseurl
 myRoutes[u"blacklist"] = []
 myRoutes[u"routes"] = {}
@@ -112,7 +110,7 @@ for i in getLines():
             if not issubclass(type(object), LTRect):
                 # Here we have all data objects on the page, we now need to get their values and match them with the right variables
                 tmp = object.get_text().strip()
-                if tmp == u"EXPRESSO LORENZUTTI" or tmp == u"ITINERARIO" or tmp == u"AOS DOMINGOS" or tmp == u"AOS SABADOS" or tmp == u"DIAS UTEIS":
+                if tmp == u"VIAÇÃO SANREMO LTDA" or tmp == u"ITINERARIO" or tmp == u"AOS DOMINGOS" or tmp == u"AOS SABADOS" or tmp == u"DIAS UTEIS" or tmp == u"OBS.:":
                     continue
                 if tmp == u"PARTIDAS:":
                     fieldNr += 1
@@ -120,20 +118,27 @@ for i in getLines():
                 tmpList = tmp.split(u" ")
                 if tmpList[0] == u"Início" or tmpList[0] == u"Inicio":
                     continue
+                #print fieldNr, tmp
+                if tmpList[0] == u"PARTIDAS:":
+                    tmpList.pop(0)
+                    tmp = u" ".join(tmpList)
+                    fieldNr += 1
                 if fieldNr == 0:
                     tmp = object.get_text()
                     tmpList = tmp.split(u" ")
                     tmpList.pop(0)
                     ref = tmpList[0]
+                    refList.append(ref)
+                    refSet.add(ref)
                     tmpList.pop(0)
                     tmpList.pop(0)
                     name = lower_capitalized(u" ".join(tmpList).strip())
                     fieldNr += 1
                 elif fieldNr == 2:
-                    origin = lower_capitalized(object.get_text().strip())
+                    origin = lower_capitalized(unicode(tmp))
                     fieldNr += 1
                 elif fieldNr == 4:
-                    destination = lower_capitalized(object.get_text().strip())
+                    destination = lower_capitalized(unicode(tmp))
                     fieldNr += 1
                 else:
                     tmp = object.get_text()

@@ -3,6 +3,7 @@
 #
 # Common functions
 import os, sys
+import requests
 lib_path = os.path.abspath( os.path.join( '..', '..', 'lib' ) )
 sys.path.append(lib_path)
 from commons import *
@@ -35,3 +36,18 @@ def lower_capitalized(input):
     output = output.replace(u"Caic", u"CAIC")
     output = output.replace(u"N. S. ", u"Nossa Senhora da ")
     return output.strip()
+
+def getLines():
+    r = False
+    while r == False:
+        try:
+            r = requests.get("http://www.expressolorenzutti.com.br/horarios/", timeout=30)
+        except:
+            r = False
+    myList = []
+    for item in r.content.split(u"\""):
+        if item.find(u".pdf") > 0:
+            for word in item.split(u"/"):
+                if word.find(u".pdf") and len(word) == 7:
+                    myList.append(word.split(u".")[0])
+    return myList

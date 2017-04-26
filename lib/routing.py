@@ -130,6 +130,8 @@ def get_duration(ref, origin, destination, bbox):
                         r = False
                     except requests.exceptions.ReadTimeout:
                         r = False
+                    except requests.exceptions.ConnectionError:
+                        r = False
                     try:
                         getDuration = r.content
                         duration += int(getDuration[(getDuration.find("<traveltime>")+12):getDuration.find("</traveltime>")])

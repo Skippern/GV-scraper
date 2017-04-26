@@ -19,23 +19,34 @@ from pdfminer.pdfpage import PDFPage
 from pdfminer.pdfinterp import PDFResourceManager
 from pdfminer.pdfinterp import PDFPageInterpreter
 from pdfminer.pdfdevice import PDFDevice
-from pdfminer.layout import LAParams, LTTextBox, LTTextLine, LTFigure, LTImage, LTRect
+from pdfminer.layout import LAParams, LTTextBox, LTTextLine, LTFigure, LTImage, LTRect, LTLine
 from pdfminer.converter import PDFPageAggregator
+routingE = "YOURS"
+try:
+    import osrm
+    routingE = "OSRM"
+except:
+    pass
 import overpass
 
 
 logger = logging.getLogger("GTFS_get_durations")
-logging.basicConfig(filename="/var/log/GTFS/lorenzutti.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
+logging.basicConfig(filename="/var/log/GTFS/sanremo.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
 
 # PDFs are stored here
-baseurl = "http://www.expressolorenzutti.com.br/horarios/"
+baseurl = "http://www.viacaosanremo.com.br/horarios/"
+
+debugMe = False
+
+# List of route numbers
+#routes = [ "001", "002", "003", "004", "005", "006", "007", "008", "009", "010", "011", "012", "013", "014", "015", "016", "017", "018", "019", "020", "021", "022", "023", "024", "025", "026", "027", "028", "029", "030", "031", "032", "033", "034", "035", "036", "037", "038", "039", "040", "041", "042", "043", "044", "045", "046", "047", "048", "049", "050", "051", "052", "053", "054", "055", "056", "057", "058", "059", "060", "061", "062" ]
 
 if len(sys.argv) > 1:
     sys.argv.pop(0)
     routes = sys.argv
 
 config = {}
-with open('lorenzutti.json', 'r') as infile:
+with open('sanremo.json', 'r') as infile:
     config = json.load(infile)
 
 durationsList = {}
@@ -45,8 +56,8 @@ try:
 except:
     pass
 durationsList[u"updated"] = str(datetime.date.today())
-durationsList[u"operator"] = u"Expresso Lorenzutti"
-durationsList[u"network"] = u"PMG"
+durationsList[u"operator"] = u"Viação Sanremo"
+durationsList[u"network"] = u"PMVV"
 durationsList[u"source"] = baseurl
 
 def download_pdf(i):
@@ -54,7 +65,7 @@ def download_pdf(i):
     r = False
     while r == False:
         try:
-            r = requests.get(downloadURL, timeout=30)
+            r = requests.get(downloadURL)
         except requests.exceptions.ReadTimeout as e:
             r = False
         except requests.exceptions.ConnectionError as e:
@@ -64,12 +75,11 @@ def download_pdf(i):
             logger.debug("Successfully downloaded %s.pdf", i)
             return r.content
         else:
-            logger.info("No file downloaded for %s, skipping", i)
+            logger.debug("No file downloaded for %s, skipping", i)
             return None
     else:
-        logger.info("No file downloaded for %s, skipping", i)
+        logger.debug("No file downloaded for %s, skipping", i)
         return None
-
 
 for i in getLines():
     pdf = download_pdf(i)
@@ -94,10 +104,10 @@ for i in getLines():
         refList = []
         refSet = set()
         for object in layout:
-            if not issubclass(type(object), LTRect):
+            if not issubclass(type(object), LTRect) and not issubclass(type(object), LTLine):
                 # Here we have all data objects on the page, we now need to get their values and match them with the right variables
                 tmp = object.get_text().strip()
-                if tmp == u"EXPRESSO LORENZUTTI" or tmp == u"ITINERARIO" or tmp == u"AOS DOMINGOS" or tmp == u"AOS SABADOS" or tmp == u"DIAS UTEIS":
+                if tmp == u"VIAÇÃO SANREMO LTDA" or tmp == u"ITINERARIO" or tmp == u"AOS DOMINGOS" or tmp == u"AOS SABADOS" or tmp == u"DIAS UTEIS" or tmp == u"OBS.:":
                     continue
                 if tmp == u"PARTIDAS:":
                     fieldNr += 1
@@ -105,6 +115,11 @@ for i in getLines():
                 tmpList = tmp.split(u" ")
                 if tmpList[0] == u"Início" or tmpList[0] == u"Inicio":
                     continue
+                #print fieldNr, tmp
+                if tmpList[0] == u"PARTIDAS:":
+                    tmpList.pop(0)
+                    tmp = u" ".join(tmpList)
+                    fieldNr += 1
                 if fieldNr == 0:
                     tmp = object.get_text()
                     tmpList = tmp.split(u" ")
@@ -117,10 +132,10 @@ for i in getLines():
                     name = lower_capitalized(u" ".join(tmpList).strip())
                     fieldNr += 1
                 elif fieldNr == 2:
-                    origin = lower_capitalized(object.get_text().strip())
+                    origin = lower_capitalized(unicode(tmp))
                     fieldNr += 1
                 elif fieldNr == 4:
-                    destination = lower_capitalized(object.get_text().strip())
+                    destination = lower_capitalized(unicode(tmp))
                     fieldNr += 1
                 else:
                     variationGrepper.append(object.get_text().strip())
@@ -144,7 +159,10 @@ for i in getLines():
                     if tmp not in refSet:
                         refList.append(tmp)
                         refSet.add(tmp)
-        name = name.split(u"\n")[0]
+        try:
+            name = name.split(u"\n")[0]
+        except:
+            pass
         print ref, name
         print "    From", origin
         print "    To", destination
