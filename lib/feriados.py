@@ -8,7 +8,7 @@
 from datetime import date
 from datetime import timedelta
 from workalendar.america import Brazil
-from workalendar.core import MON, TUE, WED,THU, FRI, SAT, SUN
+from workalendar.core import MON, TUE, WED,THU, FRI, SAT, SUN, Calendar, WesternCalendar
 
 class EspiritoSanto(Brazil):
     "Espírito Santo"

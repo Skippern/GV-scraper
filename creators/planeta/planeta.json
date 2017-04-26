@@ -1,0 +1,33 @@
+{
+    "query": {
+        "bbox": {
+            "n": "-20.505",
+            "s": "-20.766",
+            "e": "-40.375",
+            "w": "-40.648"
+        },
+        "tags": {
+            "route": "bus"
+        }
+    },
+    "stops": {
+        "name_without": "Ponto sem nome",
+        "name_auto": "yes"
+    },
+    "agency": {
+        "agency_id": "BR-Planeta",
+        "agency_name": "Planeta",
+        "agency_url": "http://www.expressolorenzutti.com.br/",
+        "agency_timezone": "America/Sao_Paulo",
+        "agency_lang": "pt",
+        "agency_phone": "+55 (27) 3361-4577",
+        "agency_fare_url": ""
+    },
+    "feed_info": {
+        "publisher_name": "Aun Johnsen",
+        "publisher_url": "https://github.com/Skippern",
+        "version":  "0.1"
+    },
+    "output_file": "data/br-planeta.zip",
+    "selector": "planeta"
+}

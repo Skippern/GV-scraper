@@ -228,15 +228,15 @@
         -5
     ], 
     "100A": [
-        13, 
-        13
+        25, 
+        25
     ], 
     "100B": [
-        6, 
-        6
+        26, 
+        26
     ], 
     "network": "PMV", 
     "operator": "Via\u00e7\u00e3o Grande Vit\u00f3ria", 
     "source": "http://sistemas.vitoria.es.gov.br/redeiti/", 
-    "updated": "2017-04-25"
+    "updated": "2017-04-26"
 }

@@ -35,7 +35,11 @@ if len(sys.argv) > 1:
 else:
     r = False
     while r == False:
-        r = requests.get(baseurl)
+        try:
+            r = requests.get(baseurl, timeout=30)
+        except:
+            r = False
+            sys.sleep(30)
     htmlList = r.content
     htmlList = htmlList[htmlList.find("<select name=\"cdLinha\">")+25:htmlList.find("</select>")]
     htmlListed = htmlList.split("\n")

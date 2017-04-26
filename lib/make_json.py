@@ -54,7 +54,7 @@ def create_json(myRoutes, cal, ref, fromV, toV, d, times, duration=60, atypical=
     elif d == "Ex":
         for i in cal.get_atypical_workdays():
             service.append(stringify_date(i[0]))
-    else:
+    elif d == "Mo-Fr":
         service.append(d)
         if atypical == True:
             for i in cal.get_weekday_holidays():
@@ -64,6 +64,8 @@ def create_json(myRoutes, cal, ref, fromV, toV, d, times, duration=60, atypical=
         else:
             for i in cal.get_weekday_holidays():
                 exceptions.append(stringify_date(i[0]))
+    else:
+        service.append(d)
     retValue[u"service"] = service
     retValue[u"exceptions"] = exceptions
     retValue[u"stations"] = [ fromV, toV ]

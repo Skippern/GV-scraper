@@ -89,8 +89,6 @@
         "562Z", 
         "563", 
         "567", 
-        "568", 
-        "568T", 
         "570", 
         "570S", 
         "571", 
@@ -18410,14 +18408,6 @@
                 [
                     "Z", 
                     "REALIZAR TRAJETO DIRETO PELA BR262, SEM ENTRAR NA AV. EXPEDITO GARCIA"
-                ]
-            ]
-        }, 
-        "568T": {
-            "observations": [
-                [
-                    "T", 
-                    "REALIZAR VIAGEM AT\u00c9 T. LARANJEIRAS."
                 ]
             ]
         }, 
@@ -110001,5 +109991,5 @@
         }
     }, 
     "source": "https://ceturb.es.gov.br/", 
-    "updated": "2017-04-25"
+    "updated": "2017-04-26"
 }
