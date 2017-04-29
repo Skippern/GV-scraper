@@ -40,6 +40,11 @@ def getLines():
             myJSON = json.dumps(json.loads(r.content))
         except:
             r = False
+    station = [ None, None ]
     for i in json.loads(myJSON):
+#        if i["Terminal_Seq"] == 1:
+#            station[0] = i["Dest_Terminal"]
+#        if i["Terminal_Seq"] == 2:
+#            station[1] = i["Dest_Terminal"]
         routes.append( [ str(int(i[u"Linha"])), lower_capitalized(unicode(i[u"Descricao"])) ] )
     return routes

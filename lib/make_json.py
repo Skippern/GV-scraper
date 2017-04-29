@@ -16,7 +16,7 @@ from unidecode import unidecode
 
 logger = logging.getLogger("GTFS_make_json")
 
-def create_json(myRoutes, cal, ref, fromV, toV, d, times, duration=60, atypical=False):
+def create_json(myRoutes, cal, ref, fromV, toV, d, times, duration, atypical=False):
     try:
         test = myRoutes["routes"]
     except:

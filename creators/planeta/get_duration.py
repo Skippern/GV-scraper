@@ -53,7 +53,7 @@ for i in getLines():
     print "    From:", origin
     print "    To:  ", destination
     if len(tmp) > 0:
-        print "    Via: ", (tmp)
+        debug_to_screen( u"    Via: {0}".format( (tmp) ) )
     durationsList[ref] = [ get_duration(ref, origin, destination, config["query"]["bbox"]), get_duration(ref, destination, origin, config["query"]["bbox"]) ]
     print "Durations calculated ",ref, ":", durationsList[ref]
     if ref == "1" or ref == "2":

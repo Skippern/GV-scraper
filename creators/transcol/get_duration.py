@@ -108,51 +108,14 @@ for i in routes:
     destination = stationList[ref][1]
     if destination == None:
         searchString = u"relation[\"type\"=\"route\"][\"route\"=\"bus\"][\"ref\"=\"{0}\"][\"from\"~\"{1}\"]({2},{3},{4},{5});out tags".format(unicode(ref), unicode(origin), config["query"]["bbox"]["s"], config["query"]["bbox"]["w"], config["query"]["bbox"]["n"], config["query"]["bbox"]["e"]).encode('ascii', 'replace').replace(u"?", u".")
-        logger.debug(searchString)
-        api = overpass.API()
-        result = False
-        while result == False:
-            try:
-                result = api.Get(searchString, responseformat="json")
-            except overpass.errors.OverpassSyntaxError as e:
-                logger.debug("Some problems in overpass process, sleeping for 120s")
-                time.sleep(120)
-                continue
-            except overpass.errors.UnknownOverpassError as e:
-                logger.debug("Some problems in overpass process, sleeping for 120s")
-                time.sleep(120)
-                continue
-            except overpass.errors.TimeoutError as e:
-                logger.debug("Some problems in overpass process, sleeping for 120s")
-                time.sleep(120)
-                continue
-            except overpass.errors.ServerRuntimeError as e:
-                logger.debug("Some problems in overpass process, sleeping for 120s")
-                time.sleep(120)
-                continue
-            except overpass.errors.MultipleRequestsError as e:
-                logger.debug("Some problems in overpass process, sleeping for 120s")
-                time.sleep(120)
-                continue
-            except overpass.errors.ServerLoadError as e:
-                logger.debug("Some problems in overpass process, sleeping for 120s")
-                time.sleep(120)
-                continue
-            except requests.exceptions.ConnectionError as e:
-                logger.debug("Some problems in overpass process, sleeping for 120s")
-                time.sleep(120)
-                continue
+        result = overpasser(searchString)
         try:
-            json.loads(json.dumps(result))
-        except TypeError as e:
-            result = False
-            logger.debug("Retrieved data was not JSON readable, sleeping for 120s and trying again")
-            time.sleep(120)
-        except ValueError as e:
-            result = False
-            logger.debug("Retrieved data was not JSON readable, sleeping for 120s and trying again")
-            time.sleep(120)
-        destination = result["elements"][0]["tags"]["to"]
+            destination = result["elements"][0]["tags"]["to"]
+        except:
+            try:
+                destination = result["elements"]["tags"]["to"]
+            except:
+                destination = origin
     print "    Route:", i
     print "    From:", origin
     print "    To:", destination

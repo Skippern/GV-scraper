@@ -18,7 +18,7 @@ from pdfminer.pdfpage import PDFPage
 from pdfminer.pdfinterp import PDFResourceManager
 from pdfminer.pdfinterp import PDFPageInterpreter
 from pdfminer.pdfdevice import PDFDevice
-from pdfminer.layout import LAParams, LTTextBox, LTTextLine, LTFigure, LTImage, LTRect
+from pdfminer.layout import LAParams, LTTextBox, LTTextLine, LTFigure, LTImage, LTRect, LTLine
 from pdfminer.converter import PDFPageAggregator
 
 logger = logging.getLogger("GTFS_get_times")
@@ -107,7 +107,7 @@ for i in getLines():
         su_ida = []
         su_volta = []
         for object in layout:
-            if not issubclass(type(object), LTRect):
+            if not issubclass(type(object), LTRect) and not issubclass(type(object), LTLine):
                 # Here we have all data objects on the page, we now need to get their values and match them with the right variables
                 tmp = object.get_text().strip()
                 if tmp == u"VIAÇÃO SANREMO LTDA" or tmp == u"ITINERARIO" or tmp == u"AOS DOMINGOS" or tmp == u"AOS SABADOS" or tmp == u"DIAS UTEIS" or tmp == u"OBS.:":
@@ -128,8 +128,8 @@ for i in getLines():
                     tmpList = tmp.split(u" ")
                     tmpList.pop(0)
                     ref = tmpList[0]
-                    refList.append(ref)
-                    refSet.add(ref)
+#                    refList.append(ref)
+#                    refSet.add(ref)
                     tmpList.pop(0)
                     tmpList.pop(0)
                     name = lower_capitalized(u" ".join(tmpList).strip())

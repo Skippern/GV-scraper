@@ -26,34 +26,7 @@ baseurl = "http://sistemas.vitoria.es.gov.br/redeiti/"
 debugMe = False
 
 # List of route numbers
-routes = [  ]
 linheList = []
-
-if len(sys.argv) > 1:
-    sys.argv.pop(0)
-    routes = sys.argv
-else:
-    r = False
-    while r == False:
-        try:
-            r = requests.get(baseurl, timeout=30)
-        except:
-            r = False
-            sys.sleep(30)
-    htmlList = r.content
-    htmlList = htmlList[htmlList.find("<select name=\"cdLinha\">")+25:htmlList.find("</select>")]
-    htmlListed = htmlList.split("\n")
-    htmlListed.pop(0)
-    htmlListed.pop(0)
-    for xx in htmlListed:
-        myX = xx[:xx.find("</")].strip()
-        ref = unicode( myX[:4].decode("UTF-8").strip() )
-        name = lower_capitalized( myX[6:].decode("UTF-8").strip() )
-        if ref != u"":
-            linheList.append( (ref, name) )
-    for i in linheList:
-        print i[0], i[1]
-        routes.append( (i[0], i[1]) )
 
 config = {}
 with open('viacao-gv.json', 'r') as infile:
@@ -71,7 +44,7 @@ myRoutes[u"operator"] = u"Viação Grande Vitória"
 myRoutes[u"network"] = u"PMV"
 myRoutes[u"source"] = baseurl
 
-for i in routes:
+for i in getLines():
     name = i[1]
     tmp = name.split(u"/")
     if len(tmp) > 2 and name.find("via") < 0:
@@ -111,12 +84,21 @@ for i in routes:
         times = [td.text.strip() for td in table.find_all('td')]
         tableJSON[header] = []
         for t in times:
-            if t != u'' and t != u'Não circula':
+            if t != u'' and t != u'Não circula' and t != u' ':
                 tableJSON[header].append(t)
         tableJSON[header].sort()
-    myRoutes = create_json(myRoutes, cal, i[0], origin, destination, u"Mo-Fr", tableJSON[u"Segunda a Sexta"])
-    myRoutes = create_json(myRoutes, cal, i[0], origin, destination, u"Sa", tableJSON[u"Sábado"])
-    myRoutes = create_json(myRoutes, cal, i[0], origin, destination, u"Su", tableJSON[u"Domingo"])
+    try:
+        myRoutes = create_json(myRoutes, cal, i[0], origin, destination, u"Mo-Fr", tableJSON[u"Segunda a Sexta"], durationsList[i[0]][0])
+    except:
+        pass
+    try:
+        myRoutes = create_json(myRoutes, cal, i[0], origin, destination, u"Sa", tableJSON[u"Sábado"], durationsList[i[0]][0])
+    except:
+        pass
+    try:
+        myRoutes = create_json(myRoutes, cal, i[0], origin, destination, u"Su", tableJSON[u"Domingo"], durationsList[i[0]][0])
+    except:
+        pass
 
 with open('times.json', 'wb') as outfile:
     json.dump(myRoutes, outfile, sort_keys=True, indent=4)

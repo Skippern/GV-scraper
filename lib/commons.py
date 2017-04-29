@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Common functions
+from overpasser import *
 
 debugMe = False
 
@@ -39,6 +40,8 @@ def lower_capitalized_master(input):
     output = output.replace(u"Ii", u"II")
     output = output.replace(u"T.", u"Terminal")
     output = output.replace(u"Pç", u"Praça")
+    output = output.replace(u"Praçaa", u"Praça")
+    output = output.replace(u"Praça.", u"Praça")
     output = output.replace(u"Av.", u"Avenida")
     output = output.replace(u"Av ", u"Avenida ")
     output = output.replace(u"Rod.", u"Rodovia")

@@ -31,30 +31,7 @@ baseurl = "http://sistemas.vitoria.es.gov.br/redeiti/"
 debugMe = False
 
 # List of route numbers
-routes = [  ]
 linheList = []
-
-if len(sys.argv) > 1:
-    sys.argv.pop(0)
-    routes = sys.argv
-else:
-    r = False
-    while r == False:
-        r = requests.get(baseurl)
-    htmlList = r.content
-    htmlList = htmlList[htmlList.find("<select name=\"cdLinha\">")+25:htmlList.find("</select>")]
-    htmlListed = htmlList.split("\n")
-    htmlListed.pop(0)
-    htmlListed.pop(0)
-    for xx in htmlListed:
-        myX = xx[:xx.find("</")].strip()
-        ref = unicode( myX[:4].decode("UTF-8").strip() )
-        name = lower_capitalized( myX[6:].decode("UTF-8").strip() )
-        if ref != u"":
-            linheList.append( (ref, name) )
-    for i in linheList:
-        print i[0], i[1]
-        routes.append( (i[0], i[1] ) )
 
 config = {}
 with open('viacao-gv.json', 'r') as infile:
@@ -71,7 +48,7 @@ durationsList[u"operator"] = u"Viação Grande Vitória"
 durationsList[u"network"] = u"PMV"
 durationsList[u"source"] = baseurl
 
-for i in routes:
+for i in getLines():
     name = i[1]
     ref = i[0]
     tmp = name.split(u"/")

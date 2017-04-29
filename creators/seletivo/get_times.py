@@ -59,7 +59,6 @@ def getTimes(ref):
     for rr in myReturn[ref]:
         myReturn[ref][rr]["Ida"] = []
         myReturn[ref][rr]["Volta"] = []
-#        myReturn[ref][rr]["Circular"] = []
     r = False
     while r == False:
         try:
@@ -88,7 +87,6 @@ def getTimes(ref):
                 for rr in myReturn[nuRef]:
                     myReturn[nuRef][rr]["Ida"] = []
                     myReturn[nuRef][rr]["Volta"] = []
-#                    myReturn[nuRef][rr]["Circular"] = []
         else:
             nuRef = ref
         day = None

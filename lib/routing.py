@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Script to download time tables as PDF and calculate route durations based on relations for the routes in OpenStreetMap
-from common import *
+from commons import *
 
 import os
 import sys
@@ -21,59 +21,84 @@ import overpass
 
 
 logger = logging.getLogger("GTFS_router")
-#logging.basicConfig(filename="./GTFS_get_times.log", level=logging.INFO, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
 
-# List of route numbers
+def route_osrm_py(points):
+    duration = 0
+    result = osrm.match(points, steps=False, overview="full")
+    tmp = result["total_time"]
+    duration = int(float(tmp)/60.0)
+    return duration
+
+def route_orsm_web(points):
+    duration = 0.0
+    routingProfile = "car"
+    routingBase = "http://router.project-osrm.org/route/v1/"+routingProfile+"/"
+    waypoints = ""
+    routingOptions = ""
+    routeJSON = None
+    for p in points:
+        if len(waypoints) == 0:
+            waypoints = "{0},{1}".format(str(p[1]),str(p[0]))
+        else:
+            waypoints = "{0};{1},{2}".format(waypoints,str(p[1]),str(p[0]))
+        r = False
+    while r == False:
+        fullRoutingString = routingBase+waypoints+routingOptions
+        logger.debug(fullRoutingString)
+        try:
+            r = requests.get(fullRoutingString, timeout=60)
+        except:
+            r = False
+        try:
+            routeJSON = json.loads(r.content)
+        except:
+            r = False
+    for dr in routeJSON["routes"]:
+        duration += dr["duration"]
+    debug_to_screen( "Duration: {0} seconds / {1} minutes".format(int(duration), int(duration / 60)) )
+    duration = (duration / 60)
+    return int(duration)
+
+def route_yours_web(points):
+    duration = 0
+    routingBase = "http://www.yournavigation.org/api/1.0/gosmore.php?format=json&v=psv&fast=1"
+    fromP = None
+    for p in points:
+        toP = p
+        if fromP == None:
+            fromP = toP
+        else:
+            r = False
+            while r == False:
+                fullRoutingString = "{0}&flat={1}&flon={2}&tlat={3}&tlon={4}".format(routingBase,fromP[0],fromP[1],toP[0],toP[1])
+                logger.debug(fullRoutingString)
+                try:
+                    r = requests.get(fullRoutingString, timeout=30)
+                except ValueError:
+                    r = False
+                except requests.exceptions.ReadTimeout:
+                    r = False
+                except requests.exceptions.ConnectionError:
+                    r = False
+                try:
+                    if len(r.content) < 50:
+                        print r.content
+                    getDuration = r.content
+                    duration += int(getDuration[(getDuration.find("<traveltime>")+12):getDuration.find("</traveltime>")])
+                except ValueError:
+                    r = False
+                except AttributeError:
+                    r = False
+        fromP = toP
+    duration = int( float(duration) / 60.0 ) + int( float(len(points) * 10) / 60.0 )
+    return duration
 
 def get_duration(ref, origin, destination, bbox):
     duration = 0
     points = []
     # Overpass get relation
     searchString = u"relation[\"type\"=\"route\"][\"route\"=\"bus\"][\"ref\"=\"{0}\"][\"from\"~\"{1}\"][\"to\"~\"{2}\"]({3},{4},{5},{6});out body;>;".format(unicode(ref), unicode(origin), unicode(destination), bbox["s"], bbox["w"], bbox["n"], bbox["e"]).encode('ascii', 'replace').replace(u"?", u".")
-    logger.debug(searchString)
-    api = overpass.API()
-    result = False
-    while result == False:
-        try:
-            result = api.Get(searchString, responseformat="json")
-        except overpass.errors.OverpassSyntaxError as e:
-            logger.debug("Some problems in overpass process, sleeping for 120s: %s", e)
-            time.sleep(120)
-            continue
-        except overpass.errors.UnknownOverpassError as e:
-            logger.debug("Some problems in overpass process, sleeping for 120s: %s", e)
-            time.sleep(120)
-            continue
-        except overpass.errors.TimeoutError as e:
-            logger.debug("Some problems in overpass process, sleeping for 120s: %s", e)
-            time.sleep(120)
-            continue
-        except overpass.errors.ServerRuntimeError as e:
-            logger.debug("Some problems in overpass process, sleeping for 120s: %s", e)
-            time.sleep(120)
-            continue
-        except overpass.errors.MultipleRequestsError as e:
-            logger.debug("Some problems in overpass process, sleeping for 120s: %s", e)
-            time.sleep(120)
-            continue
-        except overpass.errors.ServerLoadError as e:
-            logger.debug("Some problems in overpass process, sleeping for 120s: %s", e)
-            time.sleep(120)
-            continue
-        except requests.exceptions.ConnectionError as e:
-            logger.debug("Some problems in overpass process, sleeping for 120s: %s", e)
-            time.sleep(120)
-            continue
-        try:
-            json.loads(json.dumps(result))
-        except TypeError as e:
-            result = False
-            logger.debug("Retrieved data was not JSON readable, sleeping for 120s and trying again: %s", e)
-            time.sleep(120)
-        except ValueError as e:
-            result = False
-            logger.debug("Retrieved data was not JSON readable, sleeping for 120s and trying again: %s", e)
-            time.sleep(120)
+    result = overpasser(searchString)
     nodeList = []
     # Make points list
     if len(result["elements"]) < 1:
@@ -110,38 +135,21 @@ def get_duration(ref, origin, destination, bbox):
         return duration
     # Get Route
     try:
-        result = osrm.match(points, steps=False, overview="full")
-        tmp = result["total_time"]
-        duration = int(float(tmp)/60.0) + 1
+        duration = route_osrm_py(points)
     except:
-        routingBase = "http://www.yournavigation.org/api/1.0/gosmore.php?format=json&v=psv&fast=1&"
-        fromP = None
-        for p in points:
-            toP = p
-            if fromP == None:
-                fromP = toP
-            else:
-                r = False
-                while r == False:
-                    fullRoutingString = "{0}&flat={1}&flon={2}&tlat={3}&tlon={4}".format(routingBase,fromP[0],fromP[1],toP[0],toP[1])
-                    try:
-                        r = requests.get(fullRoutingString, timeout=30)
-                    except ValueError:
-                        r = False
-                    except requests.exceptions.ReadTimeout:
-                        r = False
-                    except requests.exceptions.ConnectionError:
-                        r = False
-                    try:
-                        getDuration = r.content
-                        duration += int(getDuration[(getDuration.find("<traveltime>")+12):getDuration.find("</traveltime>")])
-                    except ValueError:
-                        r = False
-                    except AttributeError:
-                        r = False
-            fromP = toP
-        duration = int( float(duration) / 60.0 ) + int( float(len(points) * 10) / 60.0 ) + 1
+        logger.warning("Routing with OSRM Python wrapper failed")
+    if duration < 1:
+        try:
+            duration = route_orsm_web(points)
+        except:
+            logger.warning("Routing with OSRM Web API failed")
+    if duration < 1:
+        try:
+            duration = route_yours_web(points)
+        except:
+            logger.warning("Routing with YOUR Web API failed")
     # Return
-    logger.info("Route \"%s\" from %s to %s calculated with duration %s minutes", ref, origin, destination, duration)
-    return duration
+    logger.info("Route \"%s\" from %s to %s calculated with duration %s minutes", ref, origin, destination, (duration + 1) )
+#    duration = duration + 1
+    return (duration + 1)
 
