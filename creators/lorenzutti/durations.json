@@ -37,7 +37,7 @@
     ], 
     "010": [
         27, 
-        28
+        27
     ], 
     "010 M": [
         -5, 
@@ -213,7 +213,7 @@
     ], 
     "045": [
         30, 
-        31
+        30
     ], 
     "046": [
         15, 
@@ -294,5 +294,5 @@
     "network": "PMG", 
     "operator": "Expresso Lorenzutti", 
     "source": "http://www.expressolorenzutti.com.br/horarios/", 
-    "updated": "2017-04-28"
+    "updated": "2017-04-30"
 }

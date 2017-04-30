@@ -69,6 +69,12 @@ for i in getLines():
     #        destination = tmp.pop(len(tmp)-1)
         else:
             destination = tmp.pop(0)
+    try:
+        tmp = destination.split(u" ")
+        tmp.remove("Circular")
+        destination = u" ".join(tmp)
+    except:
+        pass
     origin = origin.strip()
     destination = destination.strip()
     
@@ -76,7 +82,7 @@ for i in getLines():
     print "    From:", origin
     print "    To:  ", destination
     if len(tmp) > 0:
-        print "    Via: ", ", ".join(tmp).strip()
+        debug_to_screen( "    Via: ".format( ", ".join(tmp).strip() ) )
     durationsList[ref] = [ get_duration(ref, origin, destination, config["query"]["bbox"]), get_duration(ref, destination, origin, config["query"]["bbox"]) ]
     print "Durations calculated ",ref, ":", durationsList[ref]
 

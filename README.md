@@ -5,6 +5,8 @@ The scraper script downloads the timetables on PDF files, supplied on the web si
 
 For `Transcol` and `Seletivo`, it uses the same JSON interface, used by the [Ceturb](https://ceturb.es.gov.br) site.
 
+For [Planeta](http://www.viacaoplaneta-es.com.br/destinos-e-horarios-viacao-planeta/), timetables are posted as tables in HTML, each variation is a separate route, using the page index as `ref` tag on the routes.
+
 The JSON format is developed in collaboration with the developers of [osm2gtfs](https://github.com/grote/osm2gtfs) for full functionallity.
 
 # Requirements
@@ -23,7 +25,7 @@ There is a separate script, `get_durations.py` that tests the route relations ag
 
 Routing is done by selecting the route relation in question with an `overpass` query, and creates a list of waypoints that are passed to the selected routing engine.
 
-If there are no route relation for a specific route, it returns `-1` duration, this is a signal to the scraper to test against the default value (60). Mark that routes that doesn't have a relation will not be handled by `osm2gtfs` either.
+If there are no route relation for a specific route, it returns `-1` duration, this is a signal to the scraper to test against the default value (60). Mark that routes that doesn't have a relation will not be handled by `osm2gtfs` either. Other negative values have different meanings, but for short means that no relation found or impossible to calculate route due to missing waypoints.
 
 `get_durations.py` depends, in addition to the above mentioned, on `overpass` and [osrm](https://github.com/ustroetz/python-osrm) python modules.
 
@@ -39,12 +41,12 @@ For routes such as _Transcol_, I have added `feriados.py`, requiring [workalenda
 
 - Lorenzutti (Guarapari - PDF)
 - Sanremo (Vila Velha - PDF)
-- Transcol (Grande Vitória/Ceturb - JSON)
 - Seletivo (Grande Vitória/Ceturb - JSON)
-- Viação Grande Vitória (Vitória - ?)
+- Transcol (Grande Vitória/Ceturb - JSON)
+- Viação Grande Vitória (Vitória - HTML)
 
 ## Intercity services
 
-- Alvorada (Manual scraping for now)
-- Planeta (Manual scraping for now)
+- Alvorada (No scraping for now)
+- Planeta (HTML)
 

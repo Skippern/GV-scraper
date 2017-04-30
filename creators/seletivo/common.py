@@ -22,6 +22,7 @@ def lower_capitalized(input):
     output = output.replace(u"P. Costa", u"Praia da Costa")
     output = output.replace(u"S. Dourada", u"Serra Dourada")
     output = output.replace(u"M. Noronha", u"Marcilio de Noronha")
+    output = output.replace(u"Marcilio de Noronha", u"Marcílio de Noronha")
     return output.strip()
 
 def getLines():

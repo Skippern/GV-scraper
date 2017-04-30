@@ -28,6 +28,7 @@ def lower_capitalized(input):
     output = output.replace(u"J. Camburi", u"Jardim Camburi")
     output = output.replace(u"M. Noronha", u"Marcilio de Noronha")
     output = output.replace(u"M. de Noronha", u"Marcilio de Noronha")
+    output = output.replace(u"Marcilio de Noronha", u"Marcílio de Noronha")
     output = output.replace(u"C. Itaperica", u"Condominio Itaparica")
     output = output.replace(u"P. Itapoã", u"Praia de Itapoã")
     output = output.replace(u"T Laranjeiras", u"Terminal Laranjeiras")

@@ -63,6 +63,12 @@ for i in getLines():
             destination = tmp.pop(len(tmp)-2)
         else:
             destination = tmp.pop(0)
+    try:
+        tmp = destination.split(u" ")
+        tmp.remove("Circular")
+        destination = u" ".join(tmp)
+    except:
+        pass
     origin = origin.strip()
     destination = destination.strip()
     r = False

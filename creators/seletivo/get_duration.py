@@ -73,10 +73,14 @@ durationsList[u"network"] = u"Seletivo"
 durationsList[u"source"] = baseurl
 
 def getStations(ref):
+    #    return stationList[ref]
+    stations = [ None, None ]
+    if ref == "1902":
+        stations[0] = lower_capitalized(u"Marcilio de Noronha")
     downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/BuscaHorarios/" + ref
     myJSON = None
-    r == False
-    while r == False
+    r = False
+    while r == False:
         try:
             r = requests.get(downloadURL, timeout=30)
         except:
@@ -85,12 +89,13 @@ def getStations(ref):
             myJSON = json.dumps(json.loads(r.content))
         except:
             r = False
-    stations = [ None, None ]
     for i in json.loads(myJSON):
         if i["Terminal_Seq"] == 1:
-            stations[0] = i["Desc_Terminal"]
-        elif i["Terminal_Seq"] == 1:
-            stations[1] = i["Desc_Terminal"]
+            stations[0] = lower_capitalized(i["Desc_Terminal"])
+        elif i["Terminal_Seq"] == 2:
+            stations[1] = lower_capitalized(i["Desc_Terminal"])
+        else:
+            debug_to_screen( "{0} - {1}".format(i["Terminal_Seq"], i["Desc_Terminal"]))
     return stations
 
 for i in getLines():
@@ -100,7 +105,7 @@ for i in getLines():
     print ref, name
     print "    From", origin
     print "    To", destination
-    for myRef in getRefs(ref)
+    for myRef in getRefs(ref):
         durationsList[myRef] = [ get_duration(myRef, origin, destination, config["query"]["bbox"]), get_duration(myRef, destination, origin, config["query"]["bbox"]) ]
         print "Durations calculated {0}: {1} / {2}".format( myRef, durationsList[myRef][0], durationsList[myRef][1] )
 
