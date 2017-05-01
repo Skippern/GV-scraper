@@ -128,8 +128,8 @@
         34
     ], 
     "1902": [
-        -5, 
-        -5
+        45, 
+        38
     ], 
     "1903": [
         -3, 
@@ -138,5 +138,5 @@
     "network": "Seletivo", 
     "operator": "Seletivo", 
     "source": "http://ceturb.es.gov.br/", 
-    "updated": "2017-04-30"
+    "updated": "2017-05-01"
 }

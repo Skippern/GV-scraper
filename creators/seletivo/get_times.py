@@ -101,9 +101,9 @@ def getTimes(ref):
         else:
             debug_to_screen( unicode(i["Descricao_Hora"]) )
         direction = None
-        if i["Terminal_Seq"] == 1:
+        if i["Terminal_Seq"] == 2:
             direction = "Ida"
-        elif i["Terminal_Seq"] == 2:
+        elif i["Terminal_Seq"] == 1:
             direction = "Volta"
         myReturn[nuRef][day][direction].append(i["Hora_Saida"])
         myReturn["Stations"][direction] = lower_capitalized(i["Desc_Terminal"])
