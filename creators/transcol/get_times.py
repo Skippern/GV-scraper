@@ -149,9 +149,9 @@ for i in getLines():
         tmp = ref + j[0]
         myRefs.append(tmp)
     try:
-        test = myTimes["Stations"]["Volta"]
+        test = myTimes["Stations"]["Ida"]
     except:
-        myTimes["Stations"]["Volta"] = myTimes["Stations"]["Ida"]
+        myTimes["Stations"]["Ida"] = myTimes["Stations"]["Volta"]
     for ref in myRefs:
         try:
             durations = durationsList[ref]

@@ -71,7 +71,7 @@ for i in getLines():
             destination = tmp.pop(0)
     try:
         tmp = destination.split(u" ")
-        tmp.remove("Circular")
+        tmp.remove("(Circular)")
         destination = u" ".join(tmp)
     except:
         pass

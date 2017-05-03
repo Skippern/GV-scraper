@@ -9,6 +9,10 @@ from commons import *
 from routing import *
 from feriados import *
 from make_json import *
+import logging
+import time
+
+logger = logging.getLogger("GTFS_common_viacao-gv")
 
 debugMe = False
 
@@ -33,7 +37,12 @@ def getLines():
     linheList = []
     r = False
     while r == False:
-        r = requests.get(baseurl)
+        try:
+            r = requests.get(baseurl)
+        except requests.exceptions.ConnectionError as e:
+            r = False
+            logger.error("requests.exceptions.ConnectionError, sleeping for 120s")
+            time.sleep(120)
     htmlList = r.content
     htmlList = htmlList[htmlList.find("<select name=\"cdLinha\">")+25:htmlList.find("</select>")]
     htmlListed = htmlList.split("\n")
