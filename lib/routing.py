@@ -29,7 +29,7 @@ def route_osrm_py(points):
     duration = int(float(tmp)/60.0)
     return duration
 
-def route_orsm_web(points):
+def route_osrm_web(points):
     duration = 0.0
     routingProfile = "car"
     routingBase = "http://router.project-osrm.org/route/v1/"+routingProfile+"/"
@@ -41,7 +41,7 @@ def route_orsm_web(points):
             waypoints = "{0},{1}".format(str(p[1]),str(p[0]))
         else:
             waypoints = "{0};{1},{2}".format(waypoints,str(p[1]),str(p[0]))
-        r = False
+    r = False
     while r == False:
         fullRoutingString = routingBase+waypoints+routingOptions
         logger.debug(fullRoutingString)
@@ -49,9 +49,17 @@ def route_orsm_web(points):
             r = requests.get(fullRoutingString, timeout=60)
         except:
             r = False
+            raise
+        if r.status_code == 503:
+            logger.critical("503 Service Unavailable in route_osrm_web - returning False")
+            return False
+        elif r.status_code == 504:
+            logger.critical("504 Gateway Timeout in route_osrm_web - returning False")
+            return False
         try:
             routeJSON = json.loads(r.content)
         except:
+            logger.error("Routing object returned is not JSON")
             r = False
     for dr in routeJSON["routes"]:
         duration += dr["duration"]
@@ -140,7 +148,7 @@ def get_duration(ref, origin, destination, bbox):
         logger.warning("Routing with OSRM Python wrapper failed")
     if duration < 1:
         try:
-            duration = route_orsm_web(points)
+            duration = route_osrm_web(points)
         except:
             logger.warning("Routing with OSRM Web API failed")
     if duration < 1:

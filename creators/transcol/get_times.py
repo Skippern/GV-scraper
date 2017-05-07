@@ -181,6 +181,11 @@ for i in getLines():
         for o in myObs:
             myRoutes["routes"][ref]["observations"].append(o)
 
+newBlacklist = uniq(myRoutes["blacklist"])
+newBlacklist.sort()
+myRoutes["blacklist"] = newBlacklist
+logger.info("Complete blacklist: %s", ", ".join(newBlacklist))
+
 with open('times.json', 'w') as outfile:
     json.dump(myRoutes, outfile, sort_keys=True, indent=4)
 

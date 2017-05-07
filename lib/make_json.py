@@ -27,6 +27,7 @@ def create_json(myRoutes, cal, ref, fromV, toV, d, times, duration, atypical=Fal
         myRoutes[u"routes"][ref] = []
     try:
         debug_to_screen(u"{0} - {1} -> {2} ({3}) {4} - {5}".format(ref, fromV, toV, d, len(times), duration))
+        logger.debug("myRoutes{}, cal, %s, %s, %s, %s, times[%s], %s, atypical=%s", ref, fromV, toV, d, len(times), duration, atypical)
     except:
         debug_to_screen("In make_json, times TypeError, have no len()")
     try:

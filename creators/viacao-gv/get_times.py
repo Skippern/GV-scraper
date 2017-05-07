@@ -43,6 +43,7 @@ myRoutes[u"updated"] = str(datetime.date.today())
 myRoutes[u"operator"] = u"Viação Grande Vitória"
 myRoutes[u"network"] = u"PMV"
 myRoutes[u"source"] = baseurl
+myRoutes[u"blacklist"] = []
 
 for i in getLines():
     name = i[1]
@@ -105,6 +106,11 @@ for i in getLines():
         myRoutes = create_json(myRoutes, cal, i[0], origin, destination, u"Su", tableJSON[u"Domingo"], durationsList[i[0]][0])
     except:
         pass
+
+newBlacklist = uniq(myRoutes["blacklist"])
+newBlacklist.sort()
+myRoutes["blacklist"] = newBlacklist
+logger.info("Complete blacklist: %s", ", ".join(newBlacklist))
 
 with open('times.json', 'wb') as outfile:
     json.dump(myRoutes, outfile, sort_keys=True, indent=4)

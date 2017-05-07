@@ -373,8 +373,8 @@ for i in getLines():
             else:
                 debug_to_screen(len(t))
                 myVariationList[ref]["volta"]["Su"].append(t)
-        durationIda = 60
-        durationVolta = 60
+        durationIda = 0
+        durationVolta = 0
         if len(myVariations) > 0:
             myVariations = uniq(myVariations)
             logger.warning("Variations detected in %s: %s", ref, ", ".join(myVariations))
@@ -388,36 +388,36 @@ for i in getLines():
                         logger.info("Route \"%s\" added to blacklist", tmp)
                 except:
                     pass
-                durationIda = 60
-                durationVolta = 60
+#                durationIda = 60
+#                durationVolta = 60
                 try:
                     if durationsList[tmp][0] > 0:
                         durationIda = durationsList[ref][0]
                 except:
-                    durationIda = 60
+                    durationIda = -9
                 try:
                     if durationsList[tmp][1] > 0:
                         durationVolta = durationsList[ref][1]
                 except:
-                    durationVolta = 60
+                    durationVolta = -9
                 myRoutes["routes"][tmp] = []
                 myDays = [ u"Mo-Fr", u"Sa", u"Su" ]
                 for d in myDays:
                     myRoutes = create_json(myRoutes, cal, tmp, origin, destination, d, myVariationList[tmp]["ida"][d], durationIda)
                     myRoutes = create_json(myRoutes, cal, tmp, destination, origin, d, myVariationList[tmp]["volta"][d], durationVolta)
             debug_to_screen("")
-        durationIda = 60
-        durationVolta = 60
+        durationIda = 0
+        durationVolta = 0
         try:
             if durationsList[ref][0] > 0:
                 durationIda = durationsList[ref][0]
         except:
-            durationIda = 60
+            durationIda = -9
         try:
             if durationsList[ref][1] > 0:
                 durationVolta = durationsList[ref][1]
         except:
-            durationVolta = 60
+            durationVolta = -9
         myRoutes["routes"][ref] = []
         myDays = [ u"Mo-Fr", u"Sa", u"Su" ]
         for d in myDays:
@@ -435,6 +435,8 @@ for wl in whitelisted:
         logger.error("Something went wrong: %s is not blacklisted", wl)
         pass
 
+myRoutes["blacklist"] = newBlacklist
+logger.info("Complete blacklist: %s", ", ".join(newBlacklist))
 myRoutes["blacklist"] = newBlacklist
 logger.info("Complete blacklist: %s", ", ".join(newBlacklist))
 

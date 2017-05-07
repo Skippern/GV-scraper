@@ -41,6 +41,7 @@ myRoutes[u"updated"] = str(datetime.date.today())
 myRoutes[u"operator"] = u"Planeta"
 myRoutes[u"network"] = u"Planeta"
 myRoutes[u"source"] = baseurl
+myRoutes[u"blacklist"] = []
 
 for i in getLines():
     name = i[1]
@@ -53,6 +54,12 @@ for i in getLines():
     destination = destination.strip()
     print "    From:", origin
     print "    To:  ", destination
+    logger.info("Route \"%s\" from %s to %s", ref, origin, destination)
+    if durationsList[ref][0] < 0:
+        debug_to_screen("Route \"{0}\" have negative duration and should be blacklisted".format(ref))
+        logger.debug("Route \"%s\" have negative duration and should be blacklisted", ref)
+        myRoutes[u"blacklist"].append(ref)
+        continue
     timeURL = baseurl + ref + "/" + i[2]
     logger.debug(timeURL)
     r = False
@@ -105,26 +112,38 @@ for i in getLines():
                     d = "Fr,Su"
                     debug_to_screen("d set to: {0}".format(d))
                 else:
-                    debug_to_screen("d NOT sat: {0}".format(d))
+                    debug_to_screen("d NOT set: {0}".format(d))
+                    logger.debug("d NOT set: %s", d)
                 debug_to_screen( "d = \"{0}\"".format(d) )
+                logger.debug("Route %s: d = \"%s\"", ref, d)
                 if d != "":
-                    debug_to_screen( "create_json(myRoutes, calNull, \"{0}\", \"{1}\", \"{2}\", \"{3}\", [ {4} ], {5})".format(ref, origin, destination, d, hour, durationsList[ref][0]) )
+                    debug_to_screen( u"create_json(myRoutes, calNull, \"{0}\", \"{1}\", \"{2}\", \"{3}\", [ {4} ], {5})".format(ref, origin, destination, d, hour, durationsList[ref][0]) )
                     myRoutes = create_json(myRoutes, calNull, ref, origin, destination, d, hour, durationsList[ref][0])
                 else:
                     if days == u"Domingos e Feriados":
                         debug_to_screen( "create_json(myRoutes, cal, \"{0}\", \"{1}\", \"{2}\", \"{3}\", [ {4} ], {5})".format(ref, origin, destination, "Su", hour, durationsList[ref][0]) )
+                        logger.debug("Route %s: Have holidays and are added to \"Su\"", ref)
                         myRoutes = create_json(myRoutes, cal, ref, origin, destination, "Su", hour, durationsList[ref][0])
                     elif days == u"Domingos via Rio Novo" or days == "Somente Aos Dom (via Rio Novo)":
                         myRef = "{0}-1".format(ref)
+                        logger.debug("Route %s: Passes Rio Novo on Sundays as variant \"%s\"", ref, myRef)
                         debug_to_screen( "create_json(myRoutes, calNull, \"{0}\", \"{1}\", \"{2}\", \"{3}\", [ {4} ], {5})".format(myRef, origin, destination, "Su", hour, durationsList[myRef][0]) )
                         myRoutes = create_json(myRoutes, calNull, myRef, origin, destination, "Su", hour, durationsList[myRef][0])
                     else:
                         logger.error("\"%s\" not caught in days for route \"%s\"", days, ref)
             else:
                 continue
-        except:
+        except KeyError:
             pass
-#    print times
+        except:
+            logger.error("Something went seriously wrong in parsing HTML :: BeautifulSoup cast error?")
+            raise
+            pass
+
+newBlacklist = uniq(myRoutes["blacklist"])
+newBlacklist.sort()
+myRoutes["blacklist"] = newBlacklist
+logger.info("Complete blacklist: %s", ", ".join(newBlacklist))
 
 with open('times.json', 'wb') as outfile:
     json.dump(myRoutes, outfile, sort_keys=True, indent=4)
