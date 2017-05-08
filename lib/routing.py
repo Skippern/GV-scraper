@@ -19,6 +19,7 @@ except:
     pass
 import overpass
 
+routing_with_YOUR = False
 
 logger = logging.getLogger("GTFS_router")
 
@@ -68,6 +69,8 @@ def route_osrm_web(points):
     return int(duration)
 
 def route_yours_web(points):
+    if not routing_with_YOUR:
+        return False
     duration = 0
     routingBase = "http://www.yournavigation.org/api/1.0/gosmore.php?format=json&v=psv&fast=1"
     fromP = None

@@ -94,6 +94,10 @@ for i in getLines():
             if t != u'' and t != u'Não circula' and t != u' ':
                 tableJSON[header].append(t)
         tableJSON[header].sort()
+    if durationsList[i[0]][0] < 0 and durationsList[i[0]][1] < 0:
+        logger.debug("Negative duration on route \"%s\", adding to blacklist", i[0])
+        myRoutes["blacklist"].append(i[0])
+        continue
     try:
         myRoutes = create_json(myRoutes, cal, i[0], origin, destination, u"Mo-Fr", tableJSON[u"Segunda a Sexta"], durationsList[i[0]][0])
     except:
