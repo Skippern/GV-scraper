@@ -32,6 +32,10 @@ def getRefs(ref):
     ref = ref.strip()
     debug_to_screen( "Testing getRefs on {0}".format(ref) )
     stationList[ref] = [None, None]
+    if ref == u"544":
+        stationList[ref] = [u"Hotel Canto Sol", u"Terminal Laranjeiras"]
+    elif ref == u"550":
+        stationList[ref] = [u"Shopping Vitória", u"Terminal Vila Velha"]
     downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/BuscaHorarios/" + ref
     myJSON = None
     retValue = [ unicode(ref) ]
@@ -70,7 +74,7 @@ if len(sys.argv) > 1:
     for i in sys.argv:
         t = i.strip()
         for j in getRefs(t):
-            routes.append(j)
+            routes.append(j, j)
     routes.sort()
     logger.info("Full route list to execute: %s", ", ".join(routes))
 else:
@@ -78,9 +82,9 @@ else:
     for i in getLines():
         print "Getting variations for", i[0], "-", i[1]
         for j in getRefs(i[0]):
-            routes.append(j)
+            routes.append( [ j, i[1] ] )
     routes.sort()
-    logger.info("Full route list to execute: %s", ", ".join(routes))
+#    logger.info("Full route list to execute: %s", ", ".join(routes))
 print "Loaded routes list, ready to start!"
 
 
@@ -100,10 +104,10 @@ durationsList[u"network"] = u"Transcol"
 durationsList[u"source"] = baseurl
 
 for i in routes:
-    if len(i) > 3:
-        ref = i[:3]
+    if len(i[0]) > 3:
+        ref = i[0][:3]
     else:
-        ref = i
+        ref = i[0]
     origin = stationList[ref][0]
     destination = stationList[ref][1]
     if destination == None:
@@ -116,11 +120,13 @@ for i in routes:
                 destination = result["elements"]["tags"]["to"]
             except:
                 destination = origin
-    print "    Route:", i
+    if origin == destination:
+        logger.info("Route \"%s\" treated as circular with both origin and destination: %s", )
+    print "    Route:", i[0], "-", i[1]
     print "    From:", origin
     print "    To:", destination
-    durationsList[i] = [ get_duration(i, origin, destination, config["query"]["bbox"]), get_duration(i, destination, origin, config["query"]["bbox"]) ]
-    print "Durations calculated ",i, ":", durationsList[i]
+    durationsList[i[0]] = [ get_duration(i[0], origin, destination, config["query"]["bbox"]), get_duration(i[0], destination, origin, config["query"]["bbox"]) ]
+    print "Durations calculated ",i[0], ":", durationsList[i[0]]
 
 with open('durations.json', 'w') as outfile:
     json.dump(durationsList, outfile, sort_keys=True, indent=4)

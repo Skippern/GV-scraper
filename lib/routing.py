@@ -20,6 +20,7 @@ except:
 import overpass
 
 routing_with_YOUR = False
+prevent_damages = True
 
 logger = logging.getLogger("GTFS_router")
 
@@ -51,7 +52,10 @@ def route_osrm_web(points):
         except:
             r = False
             raise
-        if r.status_code == 503:
+        if r.status_code == 502:
+            logger.critical("502 Bad Gateway in route_osrm_web - returning False")
+            return False
+        elif r.status_code == 503:
             logger.critical("503 Service Unavailable in route_osrm_web - returning False")
             return False
         elif r.status_code == 504:
@@ -160,7 +164,12 @@ def get_duration(ref, origin, destination, bbox):
         except:
             logger.warning("Routing with YOUR Web API failed")
     # Return
-    logger.info("Route \"%s\" from %s to %s calculated with duration %s minutes", ref, origin, destination, (duration + 1) )
+    logger.info("Route \"%s\" from %s to %s calculated with duration %s minutes", ref, origin, destination, duration )
 #    duration = duration + 1
-    return (duration + 1)
+    if duration == 0.0 and prevent_damages:
+        print "WARNING: No working routing API encountered, to avoid damages to duration file, exiting script with this warning!"
+        logger.critical("No working routing API encountered, to avoid damages to duration file, exiting script with warning!")
+        sys.exit(1)
+#        return None
+    return duration
 

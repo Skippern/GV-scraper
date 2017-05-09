@@ -52,6 +52,12 @@ def getTimes(ref):
     myJSON = None
     myReturn = {}
     myReturn["Stations"] = {}
+    if ref == u"544":
+        myReturn["Stations"]["Ida"] = u"Hotel Canto Sol"
+        myReturn["Stations"]["Volta"] = u"Terminal Laranjeiras"
+    elif ref == u"550":
+        myReturn["Stations"]["Ida"] = u"Shopping Vitória"
+        myReturn["Stations"]["Volta"] = u"Terminal Vila Velha"
     myReturn[ref] = {}
     myReturn[ref]["Mo-Fr"] = {}
     myReturn[ref]["Sa"] = {}
@@ -151,7 +157,10 @@ for i in getLines():
     try:
         test = myTimes["Stations"]["Ida"]
     except:
-        myTimes["Stations"]["Ida"] = myTimes["Stations"]["Volta"]
+        try:
+            myTimes["Stations"]["Ida"] = myTimes["Stations"]["Volta"]
+        except:
+            myTimes["Stations"]["Ida"], myTimes["Stations"]["Volta"] = "Unknown", "Unknown"
     for ref in myRefs:
         try:
             durations = durationsList[ref]
