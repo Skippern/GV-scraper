@@ -1,327 +1,56 @@
 {
+    "blacklist": [
+        "1", 
+        "10", 
+        "11", 
+        "12", 
+        "13", 
+        "14", 
+        "15", 
+        "16", 
+        "17", 
+        "18", 
+        "19", 
+        "2", 
+        "20", 
+        "21", 
+        "24", 
+        "25", 
+        "26", 
+        "27", 
+        "28", 
+        "29", 
+        "3", 
+        "32", 
+        "33", 
+        "34", 
+        "35", 
+        "36", 
+        "37", 
+        "38", 
+        "39", 
+        "4", 
+        "40", 
+        "41", 
+        "42", 
+        "43", 
+        "44", 
+        "45", 
+        "46", 
+        "47", 
+        "48", 
+        "5", 
+        "51", 
+        "52", 
+        "53", 
+        "54", 
+        "6", 
+        "8", 
+        "9"
+    ], 
     "network": "Planeta", 
     "operator": "Planeta", 
     "routes": {
-        "10": [
-            {
-                "exceptions": [], 
-                "from": "Guarapari", 
-                "service": [
-                    "Mo-Sa"
-                ], 
-                "stations": [
-                    "Guarapari", 
-                    "Jaqueira"
-                ], 
-                "times": [
-                    [
-                        "05:30", 
-                        "06:30"
-                    ], 
-                    [
-                        "06:40", 
-                        "07:40"
-                    ], 
-                    [
-                        "07:40", 
-                        "08:40"
-                    ], 
-                    [
-                        "09:30", 
-                        "10:30"
-                    ], 
-                    [
-                        "12:30", 
-                        "13:30"
-                    ], 
-                    [
-                        "16:30", 
-                        "17:30"
-                    ], 
-                    [
-                        "19:15", 
-                        "20:15"
-                    ]
-                ], 
-                "to": "Jaqueira"
-            }
-        ], 
-        "11": [
-            {
-                "exceptions": [], 
-                "from": "Jaqueira", 
-                "service": [
-                    "Mo-Sa"
-                ], 
-                "stations": [
-                    "Jaqueira", 
-                    "Guarapari"
-                ], 
-                "times": [
-                    [
-                        "06:10", 
-                        "07:10"
-                    ], 
-                    [
-                        "07:10", 
-                        "08:10"
-                    ], 
-                    [
-                        "08:15", 
-                        "09:15"
-                    ], 
-                    [
-                        "10:20", 
-                        "11:20"
-                    ], 
-                    [
-                        "13:00", 
-                        "14:00"
-                    ], 
-                    [
-                        "17:30", 
-                        "18:30"
-                    ], 
-                    [
-                        "19:40", 
-                        "20:40"
-                    ]
-                ], 
-                "to": "Guarapari"
-            }
-        ], 
-        "26": [
-            {
-                "exceptions": [], 
-                "from": "Cachoeiro de Itapemirim", 
-                "service": [
-                    "Mo-Sa"
-                ], 
-                "stations": [
-                    "Cachoeiro de Itapemirim", 
-                    "Guarapari"
-                ], 
-                "times": [
-                    [
-                        "09:40", 
-                        "10:40"
-                    ]
-                ], 
-                "to": "Guarapari"
-            }
-        ], 
-        "27": [
-            {
-                "exceptions": [], 
-                "from": "Guarapari", 
-                "service": [
-                    "Mo-Su"
-                ], 
-                "stations": [
-                    "Guarapari", 
-                    "Cachoeiro de Itapemirim"
-                ], 
-                "times": [
-                    [
-                        "14:30", 
-                        "15:30"
-                    ]
-                ], 
-                "to": "Cachoeiro de Itapemirim"
-            }
-        ], 
-        "28": [
-            {
-                "exceptions": [], 
-                "from": "Vila Velha", 
-                "service": [
-                    "Mo-Su"
-                ], 
-                "stations": [
-                    "Vila Velha", 
-                    "Bom Jesus do Norte"
-                ], 
-                "times": [
-                    [
-                        "06:00", 
-                        "07:00"
-                    ], 
-                    [
-                        "16:00", 
-                        "17:00"
-                    ]
-                ], 
-                "to": "Bom Jesus do Norte"
-            }
-        ], 
-        "29": [
-            {
-                "exceptions": [], 
-                "from": "Bom Jesus do Norte", 
-                "service": [
-                    "Mo-Su"
-                ], 
-                "stations": [
-                    "Bom Jesus do Norte", 
-                    "Vila Velha"
-                ], 
-                "times": [
-                    [
-                        "06:30", 
-                        "07:30"
-                    ], 
-                    [
-                        "15:50", 
-                        "16:50"
-                    ]
-                ], 
-                "to": "Vila Velha"
-            }
-        ], 
-        "33": [
-            {
-                "exceptions": [], 
-                "from": "Dom Bosco", 
-                "service": [
-                    "Mo-Sa"
-                ], 
-                "stations": [
-                    "Dom Bosco", 
-                    "Bahia Nova"
-                ], 
-                "times": [
-                    [
-                        "12:00", 
-                        "13:00"
-                    ], 
-                    [
-                        "18:00", 
-                        "19:00"
-                    ]
-                ], 
-                "to": "Bahia Nova"
-            }
-        ], 
-        "34": [
-            {
-                "exceptions": [], 
-                "from": "Bahia Nova", 
-                "service": [
-                    "Mo-Sa"
-                ], 
-                "stations": [
-                    "Bahia Nova", 
-                    "Dom Bosco"
-                ], 
-                "times": [
-                    [
-                        "06:00", 
-                        "07:00"
-                    ], 
-                    [
-                        "15:00", 
-                        "16:00"
-                    ]
-                ], 
-                "to": "Dom Bosco"
-            }
-        ], 
-        "43": [
-            {
-                "exceptions": [], 
-                "from": "Guarapari", 
-                "service": [
-                    "Mo-Sa"
-                ], 
-                "stations": [
-                    "Guarapari", 
-                    "Anchieta"
-                ], 
-                "times": [
-                    [
-                        "05:30", 
-                        "06:30"
-                    ], 
-                    [
-                        "10:00", 
-                        "11:00"
-                    ], 
-                    [
-                        "17:00", 
-                        "18:00"
-                    ]
-                ], 
-                "to": "Anchieta"
-            }
-        ], 
-        "44": [
-            {
-                "exceptions": [], 
-                "from": "Anchieta", 
-                "service": [
-                    "Mo-Sa"
-                ], 
-                "stations": [
-                    "Anchieta", 
-                    "Guarapari"
-                ], 
-                "times": [
-                    [
-                        "06:40", 
-                        "07:40"
-                    ], 
-                    [
-                        "11:30", 
-                        "12:30"
-                    ], 
-                    [
-                        "18:30", 
-                        "19:30"
-                    ]
-                ], 
-                "to": "Guarapari"
-            }
-        ], 
-        "47": [
-            {
-                "exceptions": [], 
-                "from": "Castelo", 
-                "service": [
-                    "Mo,Fr"
-                ], 
-                "stations": [
-                    "Castelo", 
-                    "Venda Nova do Imigrante"
-                ], 
-                "times": [
-                    [
-                        "05:30", 
-                        "06:30"
-                    ]
-                ], 
-                "to": "Venda Nova do Imigrante"
-            }
-        ], 
-        "48": [
-            {
-                "exceptions": [], 
-                "from": "Venda Nova do Imigrante", 
-                "service": [
-                    "Mo,Fr"
-                ], 
-                "stations": [
-                    "Venda Nova do Imigrante", 
-                    "Castelo"
-                ], 
-                "times": [
-                    [
-                        "07:10", 
-                        "08:10"
-                    ]
-                ], 
-                "to": "Castelo"
-            }
-        ], 
         "49": [
             {
                 "exceptions": [], 
@@ -464,46 +193,6 @@
                     ]
                 ], 
                 "to": "Ipiranga"
-            }
-        ], 
-        "5": [
-            {
-                "exceptions": [], 
-                "from": "Cachoeiro de Itapemirim", 
-                "service": [
-                    "Mo-Su"
-                ], 
-                "stations": [
-                    "Cachoeiro de Itapemirim", 
-                    "Guarapari"
-                ], 
-                "times": [
-                    [
-                        "05:45", 
-                        "06:45"
-                    ], 
-                    [
-                        "08:10", 
-                        "09:10"
-                    ], 
-                    [
-                        "10:35", 
-                        "11:35"
-                    ], 
-                    [
-                        "13:30", 
-                        "14:30"
-                    ], 
-                    [
-                        "14:50", 
-                        "15:50"
-                    ], 
-                    [
-                        "17:30", 
-                        "18:30"
-                    ]
-                ], 
-                "to": "Guarapari"
             }
         ], 
         "50": [
@@ -650,49 +339,27 @@
                 "to": "Dom Bosco"
             }
         ], 
-        "51": [], 
-        "52": [], 
-        "6": [
+        "7": [
             {
                 "exceptions": [], 
-                "from": "Guarapari", 
+                "from": "Vit\u00f3ria", 
                 "service": [
-                    "Mo-Sa"
+                    "Mo-Su"
                 ], 
                 "stations": [
-                    "Guarapari", 
-                    "Cachoeiro de Itapemirim"
+                    "Vit\u00f3ria", 
+                    "Guarapari"
                 ], 
                 "times": [
                     [
-                        "05:20", 
-                        "06:20"
-                    ], 
-                    [
-                        "06:00", 
-                        "07:00"
-                    ], 
-                    [
-                        "09:40", 
-                        "10:40"
-                    ], 
-                    [
-                        "11:00", 
-                        "12:00"
-                    ], 
-                    [
-                        "15:40", 
-                        "16:40"
-                    ], 
-                    [
-                        "17:15", 
-                        "18:15"
+                        "21:40", 
+                        "22:34"
                     ]
                 ], 
-                "to": "Cachoeiro de Itapemirim"
+                "to": "Guarapari"
             }
         ]
     }, 
     "source": "http://www.viacaoplaneta-es.com.br/destinos-e-horarios-viacao-planeta/", 
-    "updated": "2017-05-03"
+    "updated": "2017-05-09"
 }
