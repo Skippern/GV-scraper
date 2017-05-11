@@ -12,7 +12,7 @@ import requests
 import json
 import datetime
 import time
-from unidecode import unidecode
+#from unidecode import unidecode
 from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfdocument import PDFDocument
 from pdfminer.pdfpage import PDFPage

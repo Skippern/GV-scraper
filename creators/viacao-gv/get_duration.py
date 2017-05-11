@@ -12,13 +12,7 @@ import requests
 import json
 import datetime
 import time
-from unidecode import unidecode
-routingE = "YOURS"
-try:
-    import osrm
-    routingE = "OSRM"
-except:
-    pass
+#from unidecode import unidecode
 import overpass
 
 

@@ -12,7 +12,7 @@ import requests
 import json
 import datetime
 import time
-from unidecode import unidecode
+#from unidecode import unidecode
 from bs4 import BeautifulSoup
 
 logger = logging.getLogger("GTFS_get_times")

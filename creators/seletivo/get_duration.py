@@ -10,7 +10,7 @@ import io
 import logging
 import requests
 import json
-from unidecode import unidecode
+#from unidecode import unidecode
 
 
 logger = logging.getLogger("GTFS_get_durations")

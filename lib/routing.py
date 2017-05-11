@@ -12,7 +12,15 @@ import requests
 import json
 import datetime
 import time
-from unidecode import unidecode
+try:
+    from unidecode import unidecode
+except:
+    try:
+        from Unidecode import unidecode
+    except:
+        def unidecode(str):
+            return str.encode('UTF-8')
+#        pass
 try:
     import osrm
 except:

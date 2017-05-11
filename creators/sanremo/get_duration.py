@@ -12,7 +12,7 @@ import requests
 import json
 import datetime
 import time
-from unidecode import unidecode
+#from unidecode import unidecode
 from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfdocument import PDFDocument
 from pdfminer.pdfpage import PDFPage
@@ -21,13 +21,6 @@ from pdfminer.pdfinterp import PDFPageInterpreter
 from pdfminer.pdfdevice import PDFDevice
 from pdfminer.layout import LAParams, LTTextBox, LTTextLine, LTFigure, LTImage, LTRect, LTLine
 from pdfminer.converter import PDFPageAggregator
-routingE = "YOURS"
-try:
-    import osrm
-    routingE = "OSRM"
-except:
-    pass
-import overpass
 
 
 logger = logging.getLogger("GTFS_get_durations")

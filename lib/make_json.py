@@ -12,7 +12,13 @@ import requests
 import json
 import datetime
 import time
-from unidecode import unidecode
+try:
+    from unidecode import unidecode
+except:
+    try:
+        from Unidecode import unidecode
+    except:
+        pass
 
 logger = logging.getLogger("GTFS_make_json")
 
