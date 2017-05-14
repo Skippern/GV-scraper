@@ -45,13 +45,13 @@ myRoutes[u"operator"] = u"Transcol"
 myRoutes[u"network"] = u"Transcol"
 myRoutes[u"source"] = baseurl
 myRoutes[u"blacklist"] = []
-myRoutes["routes"] = {}
+myRoutes[u"routes"] = {}
 
 def getTimes(ref):
     downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/BuscaHorarios/" + ref
     myJSON = None
     myReturn = {}
-    myReturn["Stations"] = {}
+    myReturn[u"Stations"] = {}
     if ref == u"544":
         myReturn["Stations"]["Ida"] = u"Hotel Canto Sol"
         myReturn["Stations"]["Volta"] = u"Terminal Laranjeiras"
@@ -167,7 +167,7 @@ for i in getLines():
         except:
             durations = [ -10, -10 ]
         if durations[0] < 0 and durations[1] < 0:
-            myRoutes["blacklist"].append(ref)
+            myRoutes[u"blacklist"].append(ref)
             logger.info("%s added to Blacklist", ref)
             continue
         myDays = [ u"Mo-Fr", u"Sa", u"Su", u"Ex" ]
@@ -190,9 +190,9 @@ for i in getLines():
         for o in myObs:
             myRoutes["routes"][ref]["observations"].append(o)
 
-newBlacklist = uniq(myRoutes["blacklist"])
+newBlacklist = uniq(myRoutes[u"blacklist"])
 newBlacklist.sort()
-myRoutes["blacklist"] = newBlacklist
+myRoutes[u"blacklist"] = newBlacklist
 logger.info("Complete blacklist: %s", ", ".join(newBlacklist))
 
 with open('times.json', 'w') as outfile:

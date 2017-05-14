@@ -79,6 +79,46 @@ def route_osrm_web(points):
     debug_to_screen( "Duration: {0} seconds / {1} minutes".format(int(duration), int(duration / 60)) )
     duration = (duration / 60)
     return int(duration)
+def route_osrm_local(points):
+    duration = 0.0
+    routingProfile = "car"
+    routingBase = "http://127.0.0.1:5000/route/v1/"+routingProfile+"/"
+    waypoints = ""
+    routingOptions = ""
+    routeJSON = None
+    for p in points:
+        if len(waypoints) == 0:
+            waypoints = "{0},{1}".format(str(p[1]),str(p[0]))
+        else:
+            waypoints = "{0};{1},{2}".format(waypoints,str(p[1]),str(p[0]))
+    r = False
+    while r == False:
+        fullRoutingString = routingBase+waypoints+routingOptions
+        logger.debug(fullRoutingString)
+        try:
+            r = requests.get(fullRoutingString, timeout=60)
+        except:
+            r = False
+            raise
+        if r.status_code == 502:
+            logger.critical("502 Bad Gateway in route_osrm_web - returning False")
+            return False
+        elif r.status_code == 503:
+            logger.critical("503 Service Unavailable in route_osrm_web - returning False")
+            return False
+        elif r.status_code == 504:
+            logger.critical("504 Gateway Timeout in route_osrm_web - returning False")
+            return False
+        try:
+            routeJSON = json.loads(r.content)
+        except:
+            logger.error("Routing object returned is not JSON")
+            r = False
+    for dr in routeJSON["routes"]:
+        duration += dr["duration"]
+    debug_to_screen( "Duration: {0} seconds / {1} minutes".format(int(duration), int(duration / 60)) )
+    duration = (duration / 60)
+    return int(duration)
 
 def route_yours_web(points):
     if not routing_with_YOUR:
@@ -166,6 +206,11 @@ def get_duration(ref, origin, destination, bbox):
             duration = route_osrm_web(points)
         except:
             logger.warning("Routing with OSRM Web API failed")
+    if duration < 1:
+        try:
+            duration = route_osrm_local(points)
+        except:
+            logger.warning("Routing with OSRM local API failed")
     if duration < 1:
         try:
             duration = route_yours_web(points)
