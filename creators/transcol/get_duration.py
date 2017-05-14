@@ -32,7 +32,9 @@ def getRefs(ref):
     ref = ref.strip()
     debug_to_screen( "Testing getRefs on {0}".format(ref) )
     stationList[ref] = [None, None]
-    if ref == u"544":
+    if ref == u"521":
+        stationList[ref] = [u"Hotel Canto Sol", u"Terminal Carapina"]
+    elif ref == u"544":
         stationList[ref] = [u"Hotel Canto Sol", u"Terminal Laranjeiras"]
     elif ref == u"550":
         stationList[ref] = [u"Shopping Vitória", u"Terminal Vila Velha"]

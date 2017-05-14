@@ -52,7 +52,10 @@ def getTimes(ref):
     myJSON = None
     myReturn = {}
     myReturn[u"Stations"] = {}
-    if ref == u"544":
+    if ref == u"521":
+        myReturn["Stations"]["Ida"] = u"Hotel Canto Sol"
+        myReturn["Stations"]["Volta"] = u"Terminal Carapina"
+    elif ref == u"544":
         myReturn["Stations"]["Ida"] = u"Hotel Canto Sol"
         myReturn["Stations"]["Volta"] = u"Terminal Laranjeiras"
     elif ref == u"550":
