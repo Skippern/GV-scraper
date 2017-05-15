@@ -36,8 +36,8 @@ def route_osrm_py(points):
     duration = 0
     result = osrm.match(points, steps=False, overview="full")
     tmp = result["total_time"]
-    duration = int(float(tmp)/60.0)
-    return duration
+    duration = round(float(tmp)/60.0)
+    return int(duration)
 
 def route_osrm_web(points):
     duration = 0.0
@@ -77,7 +77,7 @@ def route_osrm_web(points):
     for dr in routeJSON["routes"]:
         duration += dr["duration"]
     debug_to_screen( "Duration: {0} seconds / {1} minutes".format(int(duration), int(duration / 60)) )
-    duration = (duration / 60)
+    duration = round(duration / 60)
     return int(duration)
 def route_osrm_local(points):
     duration = 0.0
@@ -117,7 +117,7 @@ def route_osrm_local(points):
     for dr in routeJSON["routes"]:
         duration += dr["duration"]
     debug_to_screen( "Duration: {0} seconds / {1} minutes".format(int(duration), int(duration / 60)) )
-    duration = (duration / 60)
+    duration = round(duration / 60)
     return int(duration)
 
 def route_yours_web(points):
@@ -153,8 +153,8 @@ def route_yours_web(points):
                 except AttributeError:
                     r = False
         fromP = toP
-    duration = int( float(duration) / 60.0 ) + int( float(len(points) * 10) / 60.0 )
-    return duration
+    duration = round( float(duration) / 60.0 ) + round( float(len(points) * 10) / 60.0 )
+    return int(duration)
 
 def get_duration(ref, origin, destination, bbox):
     duration = 0
@@ -195,6 +195,11 @@ def get_duration(ref, origin, destination, bbox):
         logger.error("Relation have only one defined stop: \"%s\" from %s to %s", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
         debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Relation have only one defined stop".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
         duration = -2
+        return duration
+    elif len(points) == 2 and points[0] == points[1]:
+        logger.error("Relation \"%s\" start and end with same node without additional nodes", unidecode(unicode(ref)))
+        debug_to_screen("    Investigate route \"{0}\", starting and ending with same node without additional nodes".format(unidecode(unicode(ref))))
+        duration = -6
         return duration
     # Get Route
     try:

@@ -164,7 +164,7 @@
         -5
     ], 
     "49": [
-        70, 
+        69, 
         -5
     ], 
     "5": [
@@ -172,7 +172,7 @@
         -5
     ], 
     "50": [
-        74, 
+        73, 
         -5
     ], 
     "51": [
@@ -196,7 +196,7 @@
         -5
     ], 
     "7": [
-        54, 
+        53, 
         -5
     ], 
     "8": [
@@ -210,5 +210,5 @@
     "network": "Planeta", 
     "operator": "Via\u00e7\u00e3o Planeta", 
     "source": "http://www.viacaoplaneta-es.com.br/destinos-e-horarios-viacao-planeta/", 
-    "updated": "2017-05-08"
+    "updated": "2017-05-14"
 }
