@@ -199,11 +199,11 @@ for i in getLines():
         while len(wd_ida) > 0:
             t = wd_ida[0]
             wd_ida.pop(0)
-            debug_to_screen("(wi) {0}".format(t), False)
+            debug_to_screen(u"(wi) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                debug_to_screen("(wi) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
+                debug_to_screen(u"(wi) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
                         myVariationList[ref]["ida"]["Mo-Fr"].append(newT)
@@ -229,11 +229,11 @@ for i in getLines():
         while len(wd_volta) > 0:
             t = wd_volta[0]
             wd_volta.pop(0)
-            debug_to_screen("(wv) {0}".format(t), False)
+            debug_to_screen(u"(wv) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                debug_to_screen("(wv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
+                debug_to_screen(u"(wv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
                         myVariationList[ref]["volta"]["Mo-Fr"].append(newT)
@@ -259,11 +259,11 @@ for i in getLines():
         while len(sa_ida) > 0:
             t = sa_ida[0]
             sa_ida.pop(0)
-            debug_to_screen("(si) {0}".format(t), False)
+            debug_to_screen(u"(si) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                debug_to_screen("(si) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
+                debug_to_screen(u"(si) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
                         myVariationList[ref]["ida"]["Sa"].append(newT)
@@ -287,11 +287,11 @@ for i in getLines():
         while len(sa_volta) > 0:
             t = sa_volta[0]
             sa_volta.pop(0)
-            debug_to_screen("(sv) {0}".format(t), False)
+            debug_to_screen(u"(sv) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                debug_to_screen("(sv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
+                debug_to_screen(u"(sv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
                         myVariationList[ref]["volta"]["Sa"].append(newT)
@@ -319,7 +319,7 @@ for i in getLines():
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                debug_to_screen("(di) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
+                debug_to_screen(u"(di) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
                         myVariationList[ref]["ida"]["Su"].append(newT)
@@ -347,7 +347,7 @@ for i in getLines():
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                debug_to_screen("(dv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
+                debug_to_screen(u"(dv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
                         myVariationList[ref]["volta"]["Su"].append(newT)
@@ -375,7 +375,7 @@ for i in getLines():
             logger.warning("Variations detected in %s: %s", ref, ", ".join(myVariations))
             debug_to_screen("Known variations: ",False)
             for i in myVariations:
-                debug_to_screen( "{0}, ".format(i),False)
+                debug_to_screen( u"{0}, ".format(i),False)
                 tmp = u"{0} {1}".format(ref, i)
                 try:
                     if blacklistVariants and durationsList[tmp][0] < 0 and durationsList[tmp][1] < 0:

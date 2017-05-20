@@ -61,6 +61,9 @@ def getTimes(ref):
     elif ref == u"550":
         myReturn["Stations"]["Ida"] = u"Shopping Vitória"
         myReturn["Stations"]["Volta"] = u"Terminal Vila Velha"
+    elif ref == u"867":
+        myReturn["Stations"]["Ida"] = u"Novo Horizonte"
+        myReturn["Stations"]["Volta"] = u"Terminal Carapina"
     myReturn[ref] = {}
     myReturn[ref]["Mo-Fr"] = {}
     myReturn[ref]["Sa"] = {}

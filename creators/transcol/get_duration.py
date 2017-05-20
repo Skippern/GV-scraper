@@ -38,6 +38,8 @@ def getRefs(ref):
         stationList[ref] = [u"Hotel Canto Sol", u"Terminal Laranjeiras"]
     elif ref == u"550":
         stationList[ref] = [u"Shopping Vitória", u"Terminal Vila Velha"]
+    elif ref == u"867":
+        stationList[ref] = [u"Novo Horizonte", u"Terminal Carapina"]
     downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/BuscaHorarios/" + ref
     myJSON = None
     retValue = [ unicode(ref) ]
@@ -76,7 +78,7 @@ if len(sys.argv) > 1:
     for i in sys.argv:
         t = i.strip()
         for j in getRefs(t):
-            routes.append(j, j)
+            routes.append( [ j, j ] )
     routes.sort()
     logger.info("Full route list to execute: %s", ", ".join(routes))
 else:
@@ -123,7 +125,7 @@ for i in routes:
             except:
                 destination = origin
     if origin == destination:
-        logger.info("Route \"%s\" treated as circular with both origin and destination: %s", )
+        logger.info("Route \"%s\" treated as circular with both origin and destination: %s", ref, origin )
     print "    Route:", i[0], "-", i[1]
     print "    From:", origin
     print "    To:", destination

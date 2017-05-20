@@ -160,7 +160,10 @@ def get_duration(ref, origin, destination, bbox):
     duration = 0
     points = []
     # Overpass get relation
-    searchString = u"relation[\"type\"=\"route\"][\"route\"=\"bus\"][\"ref\"=\"{0}\"][\"from\"~\"{1}\"][\"to\"~\"{2}\"]({3},{4},{5},{6});out body;>;".format(unicode(ref), unicode(origin), unicode(destination), bbox["s"], bbox["w"], bbox["n"], bbox["e"]).encode('ascii', 'replace').replace(u"?", u".")
+    if unicode(ref).encode('ascii', 'replace').find(u"?") > 0:
+        searchString = u"relation[\"type\"=\"route\"][\"route\"=\"bus\"][\"ref\"~\"{0}\"][\"from\"~\"{1}\"][\"to\"~\"{2}\"]({3},{4},{5},{6});out body;>;".format(unicode(ref), unicode(origin), unicode(destination), bbox["s"], bbox["w"], bbox["n"], bbox["e"]).encode('ascii', 'replace').replace(u"?", u".")
+    else:
+        searchString = u"relation[\"type\"=\"route\"][\"route\"=\"bus\"][\"ref\"=\"{0}\"][\"from\"~\"{1}\"][\"to\"~\"{2}\"]({3},{4},{5},{6});out body;>;".format(unicode(ref), unicode(origin), unicode(destination), bbox["s"], bbox["w"], bbox["n"], bbox["e"]).encode('ascii', 'replace').replace(u"?", u".")
     result = overpasser(searchString)
     nodeList = []
     # Make points list
@@ -171,16 +174,20 @@ def get_duration(ref, origin, destination, bbox):
         return duration
     for elm in result["elements"]:
         if elm["type"] == u"relation":
-            if elm["members"][0]["role"] != u"stop":
+            if elm["members"][0]["role"] != u"stop" and elm["members"][0]["role"] != u"stop_entry_only":
                 logger.error("Route \"%s\" from %s to %s doesn't begin with a stop", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
                 debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Route doesn't begin with a stop".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
                 return -3
-            if elm["members"][-1]["role"] != u"stop":
-                logger.error("Route \"%s\" from %s to %s doesn't end with a stop", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
-                debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Route doesn't end with a stop".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
+            if elm["members"][-1]["role"] != u"stop" and elm["members"][-2]["role"] != u"stop" and elm["members"][-1]["role"] != u"stop_exit_only" and elm["members"][-2]["role"] != u"stop_exit_only":
+                logger.error("Route \"%s\" from %s to %s doesn't end with a stop", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)) )
+                debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Route doesn't end with a stop".format( unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
                 return -4
             for m in elm["members"]:
                 if m["role"] == u"stop" and m["type"] == u"node":
+                    nodeList.append(m["ref"])
+                elif m["role"] == u"stop_entry_only" and m["type"] == u"node":
+                    nodeList.append(m["ref"])
+                elif m["role"] == u"stop_exit_only" and m["type"] == u"node":
                     nodeList.append(m["ref"])
     for testNode in nodeList:
         for elm in result["elements"]:
