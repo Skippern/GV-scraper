@@ -10,6 +10,34 @@ from datetime import timedelta
 from workalendar.america import Brazil
 from workalendar.core import MON, TUE, WED,THU, FRI, SAT, SUN, Calendar, WesternCalendar
 
+class CalendarNull(Calendar):
+    def get_saturday_holidays(self, year=None):
+        retValue = []
+        for i in self.holidays(year):
+            if i[0].weekday() == SAT:
+                retValue.append(i)
+        return retValue
+    def get_weekday_holidays(self, year=None):
+        retValue = []
+        for i in self.holidays(year):
+            if i[0].weekday() != SAT and i[0].weekday() != SUN:
+                retValue.append(i)
+        return retValue
+    def get_sunday_holidays(self, year=None):
+        retValue = []
+        for i in self.holidays(year):
+            if i[0].weekday() == SUN:
+                retValue.append(i)
+        return retValue
+    def get_atypical_workdays(self, year=None):
+        retValue = []
+        for i in self.holidays(year):
+            if self.is_working_day(i[0] + timedelta(days=1)) and not self.is_working_day(i[0] + timedelta(days=2)):
+                retValue.append( ( i[0] + timedelta(days=1), "Atypical working day") )
+            elif self.is_working_day(i[0] - timedelta(days=1)) and not self.is_working_day(i[0] - timedelta(days=2)):
+                retValue.append( ( i[0] - timedelta(days=1), "Atypical working day") )
+        return retValue
+
 class EspiritoSanto(Brazil):
     "Espírito Santo"
     FIXED_HOLIDAYS = Brazil.FIXED_HOLIDAYS + (

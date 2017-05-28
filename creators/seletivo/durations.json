@@ -28,7 +28,7 @@
         -4
     ], 
     "1721": [
-        27, 
+        26, 
         28
     ], 
     "1801": [
@@ -138,5 +138,5 @@
     "network": "Seletivo", 
     "operator": "Seletivo", 
     "source": "http://ceturb.es.gov.br/", 
-    "updated": "2017-05-20"
+    "updated": "2017-05-28"
 }

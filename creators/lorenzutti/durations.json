@@ -28,7 +28,7 @@
         41
     ], 
     "008": [
-        41, 
+        40, 
         49
     ], 
     "009": [
@@ -318,5 +318,5 @@
     "network": "PMG", 
     "operator": "Expresso Lorenzutti", 
     "source": "http://www.expressolorenzutti.com.br/horarios/", 
-    "updated": "2017-05-20"
+    "updated": "2017-05-28"
 }

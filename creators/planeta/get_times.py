@@ -19,7 +19,7 @@ logger = logging.getLogger("GTFS_get_times")
 logging.basicConfig(filename="/var/log/GTFS/planeta-es.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
 
 cal = EspiritoSanto()
-calNull = Calendar()
+calNull = CalendarNull()
 
 # PDFs are stored here
 baseurl = "http://www.viacaoplaneta-es.com.br/destinos-e-horarios-viacao-planeta/"
