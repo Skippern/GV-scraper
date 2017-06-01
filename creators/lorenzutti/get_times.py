@@ -29,10 +29,8 @@ cal = Guarapari()
 # PDFs are stored here
 baseurl = "http://www.expressolorenzutti.com.br/horarios/"
 
-blacklisted = [ "013", # via Tartaruga
-               "036", # Unclear itenerario
-               ]
-whitelisted = [ u"022 IF" ]
+blacklisted = [ ]
+whitelisted = [ ]
 
 
 ignoreVariants = True

@@ -23,6 +23,8 @@ def lower_capitalized(input):
     output = output.replace(u"Pontal Santa Mônica", u"Pontal de Santa Mônica")
     output = output.replace(u"Vitoria", u"Vitória")
     output = output.replace(u"Praça Vitória", u"Praça da Vitória")
+    output = output.replace(u"Centro (pç Vitória)", u"Praça da Vitória")
+    output = output.replace(u"Pç Vitória", u"Praça da Vitória")
     output = output.replace(u"Ewerson de A. Sodré", u"Ewerson de Abreu Sodré")
     output = output.replace(u"Meaipe", u"Meaípe")
     output = output.replace(u"J. Boa Vista", u"Jardim Boa Vista")

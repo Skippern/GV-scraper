@@ -75,6 +75,8 @@ for i in getLines():
     pdf = download_pdf(i)
     if pdf == None:
         continue
+    with open("pdf/{0}.pdf".format(i), 'w') as outfile:
+        outfile.write(pdf)
     # Start pdfminer
     parser = PDFParser(io.BytesIO(pdf))
     document = PDFDocument(parser)

@@ -76,6 +76,8 @@ for i in getLines():
     if pdf == None:
         continue
     # Start pdfminer
+    with open("pdf/{0}.pdf".format(i), 'w') as outfile:
+        outfile.write(pdf)
     parser = PDFParser(io.BytesIO(pdf))
     document = PDFDocument(parser)
     rsrcmgr = PDFResourceManager()
@@ -131,8 +133,11 @@ for i in getLines():
                     if tmp not in refSet:
                         refList.append(tmp)
                         refSet.add(tmp)
-                if vars[0] != u"0" and vars[0] != u"1" and vars[0] != u"2":
-                    continue
+                try:
+                    if vars[0] != u"0" and vars[0] != u"1" and vars[0] != u"2":
+                        continue
+                except:
+                    pass
                 if len(vars) > 10:
                     continue
                 if ref not in refSet:

@@ -4,4 +4,4 @@ logging
 json
 datetime
 overpass
-workalendar
+workalendar>=1.2.0
