@@ -328,8 +328,8 @@
         0
     ], 
     "057": [
-        -5, 
-        -5
+        -4, 
+        -3
     ], 
     "057 A": [
         -5, 
@@ -370,5 +370,5 @@
     "network": "PMG", 
     "operator": "Expresso Lorenzutti", 
     "source": "http://www.expressolorenzutti.com.br/horarios/", 
-    "updated": "2017-05-31"
+    "updated": "2017-06-04"
 }
