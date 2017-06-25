@@ -39,6 +39,10 @@
         -5, 
         -5
     ], 
+    "014 OBS": [
+        -5, 
+        -5
+    ], 
     "015": [
         -5, 
         -5
@@ -162,5 +166,5 @@
     "network": "PMVV", 
     "operator": "Via\u00e7\u00e3o Sanremo", 
     "source": "http://www.viacaosanremo.com.br/horarios/", 
-    "updated": "2017-06-18"
+    "updated": "2017-06-24"
 }
