@@ -61,7 +61,7 @@
     ], 
     "1804": [
         47, 
-        45
+        46
     ], 
     "1804B": [
         -5, 
@@ -138,5 +138,5 @@
     "network": "Seletivo", 
     "operator": "Seletivo", 
     "source": "http://ceturb.es.gov.br/", 
-    "updated": "2017-06-24"
+    "updated": "2017-07-02"
 }
