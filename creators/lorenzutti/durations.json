@@ -32,7 +32,7 @@
         -5
     ], 
     "007": [
-        40, 
+        39, 
         40
     ], 
     "007 N": [
@@ -81,7 +81,7 @@
     ], 
     "015": [
         21, 
-        22
+        21
     ], 
     "015 K": [
         -5, 
@@ -316,8 +316,8 @@
         30
     ], 
     "048": [
-        42, 
-        39
+        41, 
+        38
     ], 
     "048 B": [
         -5, 
@@ -422,5 +422,5 @@
     "network": "PMG", 
     "operator": "Expresso Lorenzutti", 
     "source": "http://www.expressolorenzutti.com.br/horarios/", 
-    "updated": "2017-07-22"
+    "updated": "2017-07-28"
 }
