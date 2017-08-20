@@ -25,6 +25,7 @@ def lower_capitalized(input):
     output = output.replace(u"Jacaraipe", u"Jacaraípe")
     output = output.replace(u"Rodoviaria", u"Rodoviária")
     output = output.replace(u"P. Costa", u"Praia da Costa")
+    output = output.replace(u"P. da Costa", u"Praia da Costa")
     output = output.replace(u"J. Camburi", u"Jardim Camburi")
     output = output.replace(u"M. Noronha", u"Marcilio de Noronha")
     output = output.replace(u"M. de Noronha", u"Marcilio de Noronha")
@@ -56,8 +57,8 @@ def lower_capitalized(input):
     output = output.replace(u"C. Verde", u"Campo Verde")
     output = output.replace(u"P. Cariacica", u"Porto de Cariacica")
     output = output.replace(u"A. Ramos", u"Alzira Ramos")
-    output = output.replace(u"Afb", "A. F. Borges")
-    output = output.replace(u"A. F. Borges", "Antonio Ferreira Borges")
+    output = output.replace(u"Afb", u"A. F. Borges")
+    output = output.replace(u"A. F. Borges", u"Antônio Ferreira Borges")
     output = output.replace(u"Norte/sul", u"Norte Sul")
     output = output.replace(u"Norte / Sul", u"Norte Sul")
     output = output.replace(u"Norte-sul", u"Norte Sul")
@@ -79,6 +80,7 @@ def lower_capitalized(input):
     output = output.replace(u"B - C - A", u"B-C-A")
     output = output.replace(u"(expresso)", u"- Expresso")
     output = output.replace(u"D`água", u"d`Água")
+    output = output.replace(u"V. Velha", u"Vila Velha")
     return output.strip()
 
 def getLines():

@@ -215,14 +215,14 @@ def get_duration(ref, origin, destination, bbox):
         logger.warning("Routing with OSRM Python wrapper failed")
     if duration < 1:
         try:
-            duration = route_osrm_web(points)
-        except:
-            logger.warning("Routing with OSRM Web API failed")
-    if duration < 1:
-        try:
             duration = route_osrm_local(points)
         except:
             logger.warning("Routing with OSRM local API failed")
+    if duration < 1:
+        try:
+            duration = route_osrm_web(points)
+        except:
+            logger.warning("Routing with OSRM Web API failed")
     if duration < 1:
         try:
             duration = route_yours_web(points)

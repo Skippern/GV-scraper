@@ -126,9 +126,10 @@ for i in routes:
                 destination = origin
     if origin == destination:
         logger.info("Route \"%s\" treated as circular with both origin and destination: %s", ref, origin )
-    print "    Route:", i[0], "-", i[1]
-    print "    From:", origin
-    print "    To:", destination
+    if len(i[0]) == 3:
+        print "    Route:", i[0], "-", i[1]
+        print "    From:", origin
+        print "    To:", destination
     durationsList[i[0]] = [ get_duration(i[0], origin, destination, config["query"]["bbox"]), get_duration(i[0], destination, origin, config["query"]["bbox"]) ]
     print "Durations calculated ",i[0], ":", durationsList[i[0]]
 
