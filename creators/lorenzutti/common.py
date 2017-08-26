@@ -37,6 +37,7 @@ def lower_capitalized(input):
     output = output.replace(u"Ciac", u"CIAC")
     output = output.replace(u"Caic", u"CAIC")
     output = output.replace(u"N. S. ", u"Nossa Senhora da ")
+    output = output.replace(u"Kubitischejk", u"Kubitschek")
     return output.strip()
 
 def getLines():
