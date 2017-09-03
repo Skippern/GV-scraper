@@ -81,7 +81,7 @@
     ], 
     "015": [
         21, 
-        21
+        22
     ], 
     "015 K": [
         -5, 
@@ -148,7 +148,7 @@
         22
     ], 
     "026": [
-        61, 
+        52, 
         40
     ], 
     "027": [
@@ -430,5 +430,5 @@
     "network": "PMG", 
     "operator": "Expresso Lorenzutti", 
     "source": "http://www.expressolorenzutti.com.br/horarios/", 
-    "updated": "2017-08-25"
+    "updated": "2017-09-02"
 }
