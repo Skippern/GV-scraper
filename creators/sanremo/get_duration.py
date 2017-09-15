@@ -27,7 +27,7 @@ logger = logging.getLogger("GTFS_get_durations")
 logging.basicConfig(filename="/var/log/GTFS/sanremo.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
 
 # PDFs are stored here
-baseurl = "http://www.viacaosanremo.com.br/horarios/"
+baseurl = "http://www.viacaosanremo.com.br/assets/horarios/"
 
 debugMe = False
 

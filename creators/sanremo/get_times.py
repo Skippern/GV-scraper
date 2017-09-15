@@ -78,7 +78,7 @@ for wl in whitelisted:
     whitelistSet.add(wl)
 
 for bl in blacklisted:
-    myRoutes["blacklist"].append(bl)
+    myRoutes[u"blacklist"].append(bl)
 
 for i in getLines():
     pdf = download_pdf(i)
@@ -150,25 +150,25 @@ for i in getLines():
                             if x[0] == u"0" or x[0] == u"1" or x[0] == u"2":
                                 if len(t) > 10:
                                     continue
-                                dir = "ida"
+                                dir = u"ida"
                                 if object.bbox[0] > 225.0:
-                                    dir = "volta"
-                                dayOfWeek = "sa"
+                                    dir = u"volta"
+                                dayOfWeek = u"sa"
                                 if object.bbox[1] < 236.0:
-                                    dayOfWeek = "su"
+                                    dayOfWeek = u"su"
                                 elif object.bbox[1] > 415.0:
-                                    dayOfWeek = "wd"
-                                if dir == "ida" and dayOfWeek == "wd":
+                                    dayOfWeek = u"wd"
+                                if dir == u"ida" and dayOfWeek == u"wd":
                                     wd_ida.append(t)
-                                elif dir == "volta" and dayOfWeek == "wd":
+                                elif dir == u"volta" and dayOfWeek == u"wd":
                                     wd_volta.append(t)
-                                elif dir == "ida" and dayOfWeek == "sa":
+                                elif dir == u"ida" and dayOfWeek == u"sa":
                                     sa_ida.append(t)
-                                elif dir == "volta" and dayOfWeek == "sa":
+                                elif dir == u"volta" and dayOfWeek == u"sa":
                                     sa_volta.append(t)
-                                elif dir == "ida" and dayOfWeek == "su":
+                                elif dir == u"ida" and dayOfWeek == u"su":
                                     su_ida.append(t)
-                                elif dir == "volta" and dayOfWeek == "su":
+                                elif dir == u"volta" and dayOfWeek == u"su":
                                     su_volta.append(t)
                             else:
                                 continue
@@ -193,14 +193,14 @@ for i in getLines():
         myVariationList = {}
         variationSet = set()
         myVariationList[ref] = {}
-        myVariationList[ref]["ida"] = {}
-        myVariationList[ref]["volta"] = {}
-        myVariationList[ref]["ida"]["Mo-Fr"] = []
-        myVariationList[ref]["volta"]["Mo-Fr"] = []
-        myVariationList[ref]["ida"]["Sa"] = []
-        myVariationList[ref]["volta"]["Sa"] = []
-        myVariationList[ref]["ida"]["Su"] = []
-        myVariationList[ref]["volta"]["Su"] = []
+        myVariationList[ref][u"ida"] = {}
+        myVariationList[ref][u"volta"] = {}
+        myVariationList[ref][u"ida"][u"Mo-Fr"] = []
+        myVariationList[ref][u"volta"][u"Mo-Fr"] = []
+        myVariationList[ref][u"ida"][u"Sa"] = []
+        myVariationList[ref][u"volta"][u"Sa"] = []
+        myVariationList[ref][u"ida"][u"Su"] = []
+        myVariationList[ref][u"volta"][u"Su"] = []
         while len(wd_ida) > 0:
             t = wd_ida[0]
             wd_ida.pop(0)
@@ -211,7 +211,7 @@ for i in getLines():
                 debug_to_screen("(wi) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
-                        myVariationList[ref]["ida"]["Mo-Fr"].append(newT)
+                        myVariationList[ref][u"ida"][u"Mo-Fr"].append(newT)
                     else:
                         debug_to_screen("Forced variation (wi)")
                 myVariations.append(variation)
@@ -219,18 +219,18 @@ for i in getLines():
                 if variation not in variationSet:
                     variationSet.add(variation)
                     myVariationList[tmp] = {}
-                    myVariationList[tmp]["ida"] = {}
-                    myVariationList[tmp]["volta"] = {}
-                    myVariationList[tmp]["ida"]["Mo-Fr"] = []
-                    myVariationList[tmp]["volta"]["Mo-Fr"] = []
-                    myVariationList[tmp]["ida"]["Sa"] = []
-                    myVariationList[tmp]["volta"]["Sa"] = []
-                    myVariationList[tmp]["ida"]["Su"] = []
-                    myVariationList[tmp]["volta"]["Su"] = []
-                myVariationList[tmp]["ida"]["Mo-Fr"].append(newT)
+                    myVariationList[tmp][u"ida"] = {}
+                    myVariationList[tmp][u"volta"] = {}
+                    myVariationList[tmp][u"ida"][u"Mo-Fr"] = []
+                    myVariationList[tmp][u"volta"][u"Mo-Fr"] = []
+                    myVariationList[tmp][u"ida"][u"Sa"] = []
+                    myVariationList[tmp][u"volta"][u"Sa"] = []
+                    myVariationList[tmp][u"ida"][u"Su"] = []
+                    myVariationList[tmp][u"volta"][u"Su"] = []
+                myVariationList[tmp][u"ida"][u"Mo-Fr"].append(newT)
             else:
                 debug_to_screen(len(t))
-                myVariationList[ref]["ida"]["Mo-Fr"].append(t)
+                myVariationList[ref][u"ida"][u"Mo-Fr"].append(t)
         while len(wd_volta) > 0:
             t = wd_volta[0]
             wd_volta.pop(0)
@@ -241,7 +241,7 @@ for i in getLines():
                 debug_to_screen("(wv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
-                        myVariationList[ref]["volta"]["Mo-Fr"].append(newT)
+                        myVariationList[ref][u"volta"][u"Mo-Fr"].append(newT)
                     else:
                         debug_to_screen("Forced variation (wv)")
                 myVariations.append(variation)
@@ -249,17 +249,17 @@ for i in getLines():
                 if variation not in variationSet:
                     variationSet.add(variation)
                     myVariationList[tmp] = {}
-                    myVariationList[tmp]["ida"] = {}
-                    myVariationList[tmp]["volta"] = {}
-                    myVariationList[tmp]["ida"]["Mo-Fr"] = []
-                    myVariationList[tmp]["volta"]["Mo-Fr"] = []
-                    myVariationList[tmp]["ida"]["Sa"] = []
-                    myVariationList[tmp]["volta"]["Sa"] = []
-                    myVariationList[tmp]["ida"]["Su"] = []
-                    myVariationList[tmp]["volta"]["Su"] = []
-                myVariationList[tmp]["volta"]["Mo-Fr"].append(newT)
+                    myVariationList[tmp][u"ida"] = {}
+                    myVariationList[tmp][u"volta"] = {}
+                    myVariationList[tmp][u"ida"][u"Mo-Fr"] = []
+                    myVariationList[tmp][u"volta"][u"Mo-Fr"] = []
+                    myVariationList[tmp][u"ida"][u"Sa"] = []
+                    myVariationList[tmp][u"volta"][u"Sa"] = []
+                    myVariationList[tmp][u"ida"][u"Su"] = []
+                    myVariationList[tmp][u"volta"][u"Su"] = []
+                myVariationList[tmp][u"volta"][u"Mo-Fr"].append(newT)
             else:
-                myVariationList[ref]["volta"]["Mo-Fr"].append(t)
+                myVariationList[ref][u"volta"][u"Mo-Fr"].append(t)
                 debug_to_screen(len(t))
         while len(sa_ida) > 0:
             t = sa_ida[0]
@@ -271,23 +271,23 @@ for i in getLines():
                 debug_to_screen("(si) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
-                        myVariationList[ref]["ida"]["Sa"].append(newT)
+                        myVariationList[ref][u"ida"][u"Sa"].append(newT)
                 tmp = u"{0} {1}".format(ref, variation)
                 myVariations.append(variation)
                 if variation not in variationSet:
                     variationSet.add(variation)
                     myVariationList[tmp] = {}
-                    myVariationList[tmp]["ida"] = {}
-                    myVariationList[tmp]["volta"] = {}
-                    myVariationList[tmp]["ida"]["Mo-Fr"] = []
-                    myVariationList[tmp]["volta"]["Mo-Fr"] = []
-                    myVariationList[tmp]["ida"]["Sa"] = []
-                    myVariationList[tmp]["volta"]["Sa"] = []
-                    myVariationList[tmp]["ida"]["Su"] = []
-                    myVariationList[tmp]["volta"]["Su"] = []
-                myVariationList[tmp]["ida"]["Sa"].append(newT)
+                    myVariationList[tmp][u"ida"] = {}
+                    myVariationList[tmp][u"volta"] = {}
+                    myVariationList[tmp][u"ida"][u"Mo-Fr"] = []
+                    myVariationList[tmp][u"volta"][u"Mo-Fr"] = []
+                    myVariationList[tmp][u"ida"][u"Sa"] = []
+                    myVariationList[tmp][u"volta"][u"Sa"] = []
+                    myVariationList[tmp][u"ida"][u"Su"] = []
+                    myVariationList[tmp][u"volta"][u"Su"] = []
+                myVariationList[tmp][u"ida"][u"Sa"].append(newT)
             else:
-                myVariationList[ref]["ida"]["Sa"].append(t)
+                myVariationList[ref][u"ida"][u"Sa"].append(t)
                 debug_to_screen(len(t))
         while len(sa_volta) > 0:
             t = sa_volta[0]
@@ -299,23 +299,23 @@ for i in getLines():
                 debug_to_screen("(sv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
-                        myVariationList[ref]["volta"]["Sa"].append(newT)
+                        myVariationList[ref][u"volta"][u"Sa"].append(newT)
                 tmp = u"{0} {1}".format(ref, variation)
                 myVariations.append(variation)
                 if variation not in variationSet:
                     variationSet.add(variation)
                     myVariationList[tmp] = {}
-                    myVariationList[tmp]["ida"] = {}
-                    myVariationList[tmp]["volta"] = {}
-                    myVariationList[tmp]["ida"]["Mo-Fr"] = []
-                    myVariationList[tmp]["volta"]["Mo-Fr"] = []
-                    myVariationList[tmp]["ida"]["Sa"] = []
-                    myVariationList[tmp]["volta"]["Sa"] = []
-                    myVariationList[tmp]["ida"]["Su"] = []
-                    myVariationList[tmp]["volta"]["Su"] = []
-                myVariationList[tmp]["volta"]["Sa"].append(newT)
+                    myVariationList[tmp][u"ida"] = {}
+                    myVariationList[tmp][u"volta"] = {}
+                    myVariationList[tmp][u"ida"][u"Mo-Fr"] = []
+                    myVariationList[tmp][u"volta"][u"Mo-Fr"] = []
+                    myVariationList[tmp][u"ida"][u"Sa"] = []
+                    myVariationList[tmp][u"volta"][u"Sa"] = []
+                    myVariationList[tmp][u"ida"][u"Su"] = []
+                    myVariationList[tmp][u"volta"][u"Su"] = []
+                myVariationList[tmp][u"volta"][u"Sa"].append(newT)
             else:
-                myVariationList[ref]["volta"]["Sa"].append(t)
+                myVariationList[ref][u"volta"][u"Sa"].append(t)
                 debug_to_screen(len(t))
         while len(su_ida) > 0:
             t = su_ida[0]
@@ -327,24 +327,24 @@ for i in getLines():
                 debug_to_screen("(di) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
-                        myVariationList[ref]["ida"]["Su"].append(newT)
+                        myVariationList[ref][u"ida"][u"Su"].append(newT)
                 myVariations.append(variation)
                 tmp = u"{0} {1}".format(ref, variation)
                 if variation not in variationSet:
                     variationSet.add(variation)
                     myVariationList[tmp] = {}
-                    myVariationList[tmp]["ida"] = {}
-                    myVariationList[tmp]["volta"] = {}
-                    myVariationList[tmp]["ida"]["Mo-Fr"] = []
-                    myVariationList[tmp]["volta"]["Mo-Fr"] = []
-                    myVariationList[tmp]["ida"]["Sa"] = []
-                    myVariationList[tmp]["volta"]["Sa"] = []
-                    myVariationList[tmp]["ida"]["Su"] = []
-                    myVariationList[tmp]["volta"]["Su"] = []
-                myVariationList[tmp]["ida"]["Su"].append(newT)
+                    myVariationList[tmp][u"ida"] = {}
+                    myVariationList[tmp][u"volta"] = {}
+                    myVariationList[tmp][u"ida"][u"Mo-Fr"] = []
+                    myVariationList[tmp][u"volta"][u"Mo-Fr"] = []
+                    myVariationList[tmp][u"ida"][u"Sa"] = []
+                    myVariationList[tmp][u"volta"][u"Sa"] = []
+                    myVariationList[tmp][u"ida"][u"Su"] = []
+                    myVariationList[tmp][u"volta"][u"Su"] = []
+                myVariationList[tmp][u"ida"][u"Su"].append(newT)
             else:
                 debug_to_screen(len(t))
-                myVariationList[ref]["ida"]["Su"].append(t)
+                myVariationList[ref][u"ida"][u"Su"].append(t)
         while len(su_volta) > 0:
             t = su_volta[0]
             su_volta.pop(0)
@@ -355,24 +355,24 @@ for i in getLines():
                 debug_to_screen("(dv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
-                        myVariationList[ref]["volta"]["Su"].append(newT)
+                        myVariationList[ref][u"volta"][u"Su"].append(newT)
                 tmp = u"{0} {1}".format(ref, variation)
                 myVariations.append(variation)
                 if variation not in variationSet:
                     variationSet.add(variation)
                     myVariationList[tmp] = {}
-                    myVariationList[tmp]["ida"] = {}
-                    myVariationList[tmp]["volta"] = {}
-                    myVariationList[tmp]["ida"]["Mo-Fr"] = []
-                    myVariationList[tmp]["volta"]["Mo-Fr"] = []
-                    myVariationList[tmp]["ida"]["Sa"] = []
-                    myVariationList[tmp]["volta"]["Sa"] = []
-                    myVariationList[tmp]["ida"]["Su"] = []
-                    myVariationList[tmp]["volta"]["Su"] = []
-                myVariationList[tmp]["volta"]["Su"].append(newT)
+                    myVariationList[tmp][u"ida"] = {}
+                    myVariationList[tmp][u"volta"] = {}
+                    myVariationList[tmp][u"ida"][u"Mo-Fr"] = []
+                    myVariationList[tmp][u"volta"][u"Mo-Fr"] = []
+                    myVariationList[tmp][u"ida"][u"Sa"] = []
+                    myVariationList[tmp][u"volta"][u"Sa"] = []
+                    myVariationList[tmp][u"ida"][u"Su"] = []
+                    myVariationList[tmp][u"volta"][u"Su"] = []
+                myVariationList[tmp][u"volta"][u"Su"].append(newT)
             else:
                 debug_to_screen(len(t))
-                myVariationList[ref]["volta"]["Su"].append(t)
+                myVariationList[ref][u"volta"][u"Su"].append(t)
         if len(myVariations) > 0:
             myVariations = uniq(myVariations)
             logger.warning("Variations detected in %s: %s", ref, ", ".join(myVariations))
@@ -384,7 +384,7 @@ for i in getLines():
                 tmp = u"{0} {1}".format(ref, i)
                 try:
                     if blacklistVariants and durationsList[tmp][0] > 0 and durationsList[tmp][1] > 0:
-                        myRoutes["blacklist"].append(tmp)
+                        myRoutes[u"blacklist"].append(tmp)
                         logger.info("Route \"%s\" added to blacklist", tmp)
                 except:
                     pass
@@ -405,8 +405,8 @@ for i in getLines():
                 myRoutes["routes"][tmp] = []
                 myDays = [ u"Mo-Fr", u"Sa", u"Su" ]
                 for d in myDays:
-                    myRoutes = create_json(myRoutes, cal, tmp, origin, destination, d, myVariationList[tmp]["ida"][d], durationIda)
-                    myRoutes = create_json(myRoutes, cal, tmp, destination, origin, d, myVariationList[tmp]["volta"][d], durationVolta)
+                    myRoutes = create_json(myRoutes, cal, tmp, origin, destination, d, myVariationList[tmp][u"ida"][d], durationIda)
+                    myRoutes = create_json(myRoutes, cal, tmp, destination, origin, d, myVariationList[tmp][u"volta"][d], durationVolta)
             debug_to_screen("")
         durationIda = -8
         durationVolta = -8
@@ -420,17 +420,17 @@ for i in getLines():
                 durationVolta = durationsList[ref][1]
         except:
             durationVolta = -9
-        myRoutes["routes"][ref] = []
+        myRoutes[u"routes"][ref] = []
         if durationIda < 1 and durationVolta < 1:
             myRoutes[u"blacklist"].append(ref)
             logger.info("%s added to Blacklist", ref)
             continue
         myDays = [ u"Mo-Fr", u"Sa", u"Su" ]
         for d in myDays:
-            myRoutes = create_json(myRoutes, cal, ref, origin, destination, d, myVariationList[ref]["ida"][d], durationIda)
-            myRoutes = create_json(myRoutes, cal, ref, destination, origin, d, myVariationList[ref]["volta"][d], durationVolta)
+            myRoutes = create_json(myRoutes, cal, ref, origin, destination, d, myVariationList[ref][u"ida"][d], durationIda)
+            myRoutes = create_json(myRoutes, cal, ref, destination, origin, d, myVariationList[ref][u"volta"][d], durationVolta)
 
-newBlacklist = uniq(myRoutes["blacklist"])
+newBlacklist = uniq(myRoutes[u"blacklist"])
 newBlacklist.sort()
 
 for wl in whitelisted:
@@ -441,7 +441,7 @@ for wl in whitelisted:
         logger.error("Something went wrong: %s is not blacklisted", wl)
         pass
 
-myRoutes["blacklist"] = newBlacklist
+myRoutes[u"blacklist"] = newBlacklist
 logger.info("Complete blacklist: %s", ", ".join(newBlacklist))
 
 with open('times.json', 'w') as outfile:

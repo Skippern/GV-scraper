@@ -26,9 +26,9 @@ def getLines():
         except:
             r = False
     myList = []
-    for item in r.content.split(u"\""):
-        if item.find(u".pdf") > 0:
-            for word in item.split(u"/"):
-                if word.find(u".pdf") and len(word) == 7:
-                    myList.append(word.split(u".")[0])
+    for item in r.content.split("\""):
+        if item.find(".pdf") > 0:
+            for word in item.split("/"):
+                if word.find(".pdf") and len(word) == 7:
+                    myList.append(word.split(".")[0])
     return myList
