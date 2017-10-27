@@ -28,7 +28,7 @@ logger = logging.getLogger("GTFS_get_durations")
 logging.basicConfig(filename="/var/log/GTFS/lorenzutti.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
 
 # PDFs are stored here
-baseurl = "http://www.expressolorenzutti.com.br/horarios/"
+baseurl = "http://www.expressolorenzutti.com.br/horarios"
 
 if len(sys.argv) > 1:
     sys.argv.pop(0)
@@ -48,28 +48,6 @@ durationsList[u"updated"] = str(datetime.date.today())
 durationsList[u"operator"] = u"Expresso Lorenzutti"
 durationsList[u"network"] = u"PMG"
 durationsList[u"source"] = baseurl
-
-def download_pdf(i):
-    downloadURL = baseurl + i + ".pdf"
-    r = False
-    while r == False:
-        try:
-            r = requests.get(downloadURL, timeout=30)
-        except requests.exceptions.ReadTimeout as e:
-            r = False
-        except requests.exceptions.ConnectionError as e:
-            r = False
-    if r.status_code == 200:
-        if r.headers.get('content-length') > 0:
-            logger.debug("Successfully downloaded %s.pdf", i)
-            return r.content
-        else:
-            logger.info("No file downloaded for %s, skipping", i)
-            return None
-    else:
-        logger.info("No file downloaded for %s, skipping", i)
-        return None
-
 
 for i in getLines():
     pdf = download_pdf(i)

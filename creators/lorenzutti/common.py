@@ -48,9 +48,45 @@ def getLines():
         except:
             r = False
     myList = []
-    for item in r.content.split(u"\""):
-        if item.find(u".pdf") > 0:
-            for word in item.split(u"/"):
-                if word.find(u".pdf") and len(word) == 7:
-                    myList.append(word.split(u".")[0])
+    if not isinstance(r.content, unicode):
+        myContent = r.content
+        codec = 'utf-8'
+        try:
+            encoding = charset.detect(myContent)
+            codec = encoding['encoding']
+            try:
+                myContent = myContent.encode(codec).decode('utf-8')
+            except:
+                pass
+        except:
+            pass
+    for item in myContent.split("\""):
+        if item.find(".pdf") > 0:
+            for word in item.split("/"):
+                if word.find(".pdf") and len(word) == 7:
+                    myList.append(word.split(".")[0])
     return myList
+
+def download_pdf(i):
+    baseurl = "http://www.expressolorenzutti.com.br/"
+    asseturl = baseurl + "assets/horarios/"
+    downloadURL = asseturl + i + ".pdf"
+    r = False
+    while r == False:
+        try:
+            r = requests.get(downloadURL, timeout=30)
+        except requests.exceptions.ReadTimeout as e:
+            r = False
+        except requests.exceptions.ConnectionError as e:
+            r = False
+    if r.status_code == 200:
+        if r.headers.get('content-length') > 0:
+            logger.debug("Successfully downloaded %s.pdf", i)
+            return r.content
+        else:
+            logger.info("No file downloaded for %s, skipping", i)
+            return None
+    else:
+        logger.info("No file downloaded for %s, skipping", i)
+        return None
+

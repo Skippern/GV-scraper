@@ -27,7 +27,7 @@ logging.basicConfig(filename="/var/log/GTFS/lorenzutti.log", level=logging.DEBUG
 cal = Guarapari()
 
 # PDFs are stored here
-baseurl = "http://www.expressolorenzutti.com.br/horarios/"
+baseurl = "http://www.expressolorenzutti.com.br/horarios"
 
 blacklisted = [ ]
 whitelisted = [ ]
@@ -41,29 +41,6 @@ myRoutes = {}
 durationsList = {}
 with open('durations.json', 'r') as infile:
     durationsList = json.load(infile)
-
-def download_pdf(i):
-    downloadURL = baseurl + i + ".pdf"
-    r = False
-    while r == False:
-        try:
-            r = requests.get(downloadURL, timeout=30)
-        except requests.exceptions.ReadTimeout as e:
-            r = False
-        except requests.exceptions.ConnectionError as e:
-            r = False
-    if r.status_code == 200:
-        if r.headers.get('content-length') > 0:
-            logger.debug("Successfully downloaded %s.pdf", i)
-            return r.content
-        else:
-            myRoutes[u"blacklist"].append(i)
-            logger.error("%s added to blacklist (file does not exist or contain no data)", i)
-            return None
-    else:
-        myRoutes[u"blacklist"].append(i)
-        logger.error("%s added to blacklist (file does not exist or contain no data)", i)
-        return None
 
 myRoutes[u"updated"] = str(datetime.date.today())
 myRoutes[u"operator"] = u"Expresso Lorenzutti"

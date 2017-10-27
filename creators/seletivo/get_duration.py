@@ -25,6 +25,8 @@ def getRefs(ref):
     ref = ref.strip()
     debug_to_screen( "Testing getRefs on {0}".format(ref) )
     stationList[ref] = [None, None]
+    if (ref == "1604"):
+        stationList[ref] = [ "Itaparica", "Rodoviária" ]
     downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/BuscaHorarios/" + ref
     myJSON = None
     retValue = [ unicode(ref) ]
