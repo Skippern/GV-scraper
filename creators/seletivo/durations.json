@@ -4,8 +4,12 @@
         -4
     ], 
     "1603": [
-        -3, 
-        -4
+        32, 
+        32
+    ], 
+    "1604": [
+        -5, 
+        -5
     ], 
     "1608": [
         36, 
@@ -138,5 +142,5 @@
     "network": "Seletivo", 
     "operator": "Seletivo", 
     "source": "http://ceturb.es.gov.br/", 
-    "updated": "2017-10-06"
+    "updated": "2017-10-27"
 }
