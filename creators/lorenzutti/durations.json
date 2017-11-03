@@ -101,7 +101,7 @@
     ], 
     "019": [
         14, 
-        21
+        20
     ], 
     "019 K": [
         -5, 
@@ -145,10 +145,10 @@
     ], 
     "025": [
         16, 
-        23
+        22
     ], 
     "026": [
-        -4, 
+        61, 
         40
     ], 
     "027": [
@@ -429,6 +429,6 @@
     ], 
     "network": "PMG", 
     "operator": "Expresso Lorenzutti", 
-    "source": "http://www.expressolorenzutti.com.br/", 
-    "updated": "2017-10-27"
+    "source": "http://www.expressolorenzutti.com.br/horarios", 
+    "updated": "2017-11-03"
 }
