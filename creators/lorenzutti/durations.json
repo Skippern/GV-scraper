@@ -324,8 +324,8 @@
         30
     ], 
     "048": [
-        43, 
-        40
+        42, 
+        39
     ], 
     "048 B": [
         -5, 
@@ -430,5 +430,5 @@
     "network": "PMG", 
     "operator": "Expresso Lorenzutti", 
     "source": "http://www.expressolorenzutti.com.br/horarios", 
-    "updated": "2017-11-03"
+    "updated": "2017-11-18"
 }

@@ -41,10 +41,11 @@ def lower_capitalized(input):
     return output.strip()
 
 def getLines():
+    print "Getting Lines from Expresso Lorenzutti site"
     r = False
     while r == False:
         try:
-            r = requests.get("http://www.expressolorenzutti.com.br/horarios/", timeout=30)
+            r = requests.get("http://www.expressolorenzutti.com.br/horarios", timeout=30)
         except:
             r = False
     myList = []
@@ -60,11 +61,37 @@ def getLines():
                 pass
         except:
             pass
+    else:
+        myContent = r.content
+    print "Content of horarios received"
     for item in myContent.split("\""):
         if item.find(".pdf") > 0:
             for word in item.split("/"):
                 if word.find(".pdf") and len(word) == 7:
                     myList.append(word.split(".")[0])
+    print "%d lines identified" % len(myList)
+    if len(myList) == 0:
+        i = 0
+        while i < 100:
+            j = "000"
+            if i < 10:
+                j = "00%d" % i
+            elif i < 100:
+                j = "0%d" % i
+            else:
+                j = "%d" % i
+            requestURL = "http://expressolorenzutti.com.br/assets/horarios/%s.pdf" % j
+            #            print requestURL,
+            r = False
+            while r == False:
+                try:
+                    r = requests.get(requestURL,timeout=30)
+                except:
+                    r = False
+            if r.status_code == 200:
+                myList.append(j)
+            i = i+1
+    print "Routes found: ", myList
     return myList
 
 def download_pdf(i):
