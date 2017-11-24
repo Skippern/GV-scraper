@@ -23,6 +23,10 @@ stationList = {}
 
 def getRefs(ref):
     ref = ref.strip()
+    try:
+        test = stationList[ref][0]
+    except KeyError:
+        stationList[ref] = [None, None]
     debug_to_screen( "Testing getRefs on {0}".format(ref) )
     downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/BuscaHorarios/" + ref
     myJSON = None
@@ -41,9 +45,15 @@ def getRefs(ref):
             r = False
     for i in json.loads(myJSON):
         if i["Terminal_Seq"] == 1:
-            stationList[ref][0] = lower_capitalized(i["Desc_Terminal"])
+            try:
+                stationList[ref][0] = lower_capitalized(i["Desc_Terminal"])
+            except:
+                stationList[ref][0] = "Unknown"
         elif i["Terminal_Seq"] == 2:
-            stationList[ref][1] = lower_capitalized(i["Desc_Terminal"])
+            try:
+                stationList[ref][1] = lower_capitalized(i["Desc_Terminal"])
+            except:
+                stationList[ref][1] = "Unknown"
         else:
             debug_to_screen( "{0} - {1}".format(i["Terminal_Seq"], i["Desc_Terminal"]))
         try:
