@@ -199,6 +199,10 @@
         -5, 
         -5
     ], 
+    "029 O": [
+        -5, 
+        -5
+    ], 
     "030": [
         31, 
         35
@@ -427,8 +431,12 @@
         -5, 
         -5
     ], 
+    "058 P": [
+        -5, 
+        -5
+    ], 
     "network": "PMG", 
     "operator": "Expresso Lorenzutti", 
     "source": "http://www.expressolorenzutti.com.br/horarios", 
-    "updated": "2017-11-24"
+    "updated": "2017-12-01"
 }
