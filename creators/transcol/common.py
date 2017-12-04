@@ -19,6 +19,7 @@ def lower_capitalized(input):
     output = output.replace(u"circular", u"Circular")
     output = output.replace(u"Exp.", u"Expedito")
     output = output.replace(u"Expd.", u"Expedito")
+    output = output.replace(u"E. Garcia", u"Expedito Garcia")
     output = output.replace(u"Beira M", u"Beira Mar").replace(u"Beira Marar", u"Beira Mar")
     output = output.replace(u"B. Mar", u"Beira Mar")
     output = output.replace(u"S. Dourada", u"Serra Dourada")
