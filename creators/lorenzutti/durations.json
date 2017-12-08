@@ -216,7 +216,7 @@
         28
     ], 
     "031 IF": [
-        -5, 
+        27, 
         -5
     ], 
     "032": [
@@ -280,8 +280,8 @@
         20
     ], 
     "042": [
-        -5, 
-        -5
+        32, 
+        33
     ], 
     "042 C": [
         -5, 
@@ -438,5 +438,5 @@
     "network": "PMG", 
     "operator": "Expresso Lorenzutti", 
     "source": "http://www.expressolorenzutti.com.br/horarios", 
-    "updated": "2017-12-01"
+    "updated": "2017-12-08"
 }
