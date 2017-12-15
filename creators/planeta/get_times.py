@@ -113,7 +113,7 @@ for i in getLines():
                     debug_to_screen("d set to: {0}".format(d))
                 else:
                     debug_to_screen("d NOT set: {0}".format(d))
-                    logger.debug("d NOT set: %s", d)
+                    logger.debug("d NOT set: %s", days)
                 debug_to_screen( "d = \"{0}\"".format(d) )
                 logger.debug("Route %s: d = \"%s\"", ref, d)
                 if d != "":
@@ -121,13 +121,13 @@ for i in getLines():
                     myRoutes = create_json(myRoutes, calNull, ref, origin, destination, d, hour, durationsList[ref][0])
                 else:
                     if days == u"Domingos e Feriados":
-                        debug_to_screen( "create_json(myRoutes, cal, \"{0}\", \"{1}\", \"{2}\", \"{3}\", [ {4} ], {5})".format(ref, origin, destination, "Su", hour, durationsList[ref][0]) )
+                        debug_to_screen( u"create_json(myRoutes, cal, \"{0}\", \"{1}\", \"{2}\", \"{3}\", [ {4} ], {5})".format(ref, origin, destination, "Su", hour, durationsList[ref][0]) )
                         logger.debug("Route %s: Have holidays and are added to \"Su\"", ref)
                         myRoutes = create_json(myRoutes, cal, ref, origin, destination, "Su", hour, durationsList[ref][0])
                     elif days == u"Domingos via Rio Novo" or days == "Somente Aos Dom (via Rio Novo)":
                         myRef = "{0}-1".format(ref)
                         logger.debug("Route %s: Passes Rio Novo on Sundays as variant \"%s\"", ref, myRef)
-                        debug_to_screen( "create_json(myRoutes, calNull, \"{0}\", \"{1}\", \"{2}\", \"{3}\", [ {4} ], {5})".format(myRef, origin, destination, "Su", hour, durationsList[myRef][0]) )
+                        debug_to_screen( u"create_json(myRoutes, calNull, \"{0}\", \"{1}\", \"{2}\", \"{3}\", [ {4} ], {5})".format(myRef, origin, destination, "Su", hour, durationsList[myRef][0]) )
                         myRoutes = create_json(myRoutes, calNull, myRef, origin, destination, "Su", hour, durationsList[myRef][0])
                     else:
                         logger.error("\"%s\" not caught in days for route \"%s\"", days, ref)
