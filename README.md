@@ -39,14 +39,18 @@ For routes such as _Transcol_, I have added `feriados.py`, requiring [workalenda
 
 ## Urban services
 
-- Lorenzutti (Guarapari - PDF)
-- Sanremo (Vila Velha - PDF)
-- Seletivo (Grande Vitória/Ceturb - JSON)
-- Transcol (Grande Vitória/Ceturb - JSON)
-- Viação Grande Vitória (Vitória - HTML)
+- [Lorenzutti](http://www.expressolorenzutti.com.br) (Guarapari - PDF)
+- [Sanremo](http://www.viacaosanremo.com.br/) (Vila Velha - PDF)
+- [Seletivo](https://ceturb.es.gov.br) (Grande Vitória/Ceturb - JSON)
+- [Transcol](https://ceturb.es.gov.br) (Grande Vitória/Ceturb - JSON)
+- [Viação Grande Vitória](http://sistemas.vitoria.es.gov.br/redeiti/) (Vitória - HTML)
 
 ## Intercity services
 
-- Alvorada (No scraping for now)
-- Planeta (HTML)
+- [Alvorada](http://viacaoalvorada.com/) (No scraping for now) site not publishing times except for the airport express, and no `ref` numbers.
+- [Planeta](http://www.viacaoplaneta-es.com.br/destinos-e-horarios-viacao-planeta/) (HTML)
+- [Sudeste](http://www.viacaosudeste.com.br/) No implimentation work done yet.
 
+## Other Sources
+
+- [DER-ES: Quadro de Horários](https://der.es.gov.br/quadro-de-horarios) List of all intercity concessions given by DER-ES with contracted time-tables. This shows the contracts with the state, not necessary the reality. Tebles updated infrequently.
