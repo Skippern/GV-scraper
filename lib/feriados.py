@@ -8,7 +8,8 @@
 from datetime import date
 from datetime import timedelta
 from workalendar.america import Brazil, BrazilEspiritoSanto, BrazilVilaVelhaCity, BrazilVitoriaCity, BrazilCariacicaCity, BrazilGuarapariCity, BrazilSerraCity
-from workalendar.core import MON, TUE, WED,THU, FRI, SAT, SUN, Calendar, WesternCalendar
+from workalendar.core import MON, TUE, WED, THU, FRI, SAT, SUN, Calendar, WesternCalendar
+
 
 class CalendarNull(Calendar):
     "NULL"
@@ -38,6 +39,9 @@ class CalendarNull(Calendar):
             elif self.is_working_day(i[0] - timedelta(days=1)) and not self.is_working_day(i[0] - timedelta(days=2)):
                 retValue.append( ( i[0] - timedelta(days=1), u"Atypical working day") )
         return retValue
+
+class Brazil(Brazil, CalendarNull):
+    "Brazil"
 
 class EspiritoSanto(BrazilEspiritoSanto, CalendarNull):
     "Espírito Santo"

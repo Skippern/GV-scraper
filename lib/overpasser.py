@@ -1,15 +1,16 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Script to download time tables as PDF and calculate route durations based on relations for the routes in OpenStreetMap
-from common import *
-
+# Script to download time tables as PDF and calculate route durations based on 
+# relations for the routes in OpenStreetMap
+#
 import logging
+import json
+import time
 import overpass
 import requests
-import json
-import sys
-import time
+
+from common import *
 
 logger = logging.getLogger("GTFS_overpass")
 

@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Script to download time tables as PDF and calculate route durations based on relations for the routes in OpenStreetMap
-from commons import *
-
+# Script to download time tables as PDF and calculate route
+# durations based on relations for the routes in OpenStreetMap
+#
 import os
 import sys
 import io
@@ -12,6 +12,9 @@ import requests
 import json
 import datetime
 import time
+
+from commons import *
+
 try:
     from unidecode import unidecode
 except:
@@ -88,9 +91,9 @@ def route_osrm_local(points):
     routeJSON = None
     for p in points:
         if len(waypoints) == 0:
-            waypoints = u"{0},{1}".format(str(p[1]),str(p[0]))
+            waypoints = u"{0},{1}".format(str(p[1]), str(p[0]))
         else:
-            waypoints = u"{0};{1},{2}".format(waypoints,str(p[1]),str(p[0]))
+            waypoints = u"{0};{1},{2}".format(waypoints,str(p[1]), str(p[0]))
     r = False
     while r == False:
         fullRoutingString = routingBase+waypoints+routingOptions
@@ -116,7 +119,7 @@ def route_osrm_local(points):
             r = False
     for dr in routeJSON[u"routes"]:
         duration += dr[u"duration"]
-    debug_to_screen(u"Duration: {0} seconds / {1} minutes".format(int(duration), int(duration / 60)) )
+    debug_to_screen(u"Duration: {0} seconds / {1} minutes".format(int(duration), int(duration / 60)))
     duration = round(duration / 60)
     return int(duration)
 
@@ -133,7 +136,7 @@ def route_yours_web(points):
         else:
             r = False
             while r == False:
-                fullRoutingString = "{0}&flat={1}&flon={2}&tlat={3}&tlon={4}".format(routingBase,fromP[0],fromP[1],toP[0],toP[1])
+                fullRoutingString = "{0}&flat={1}&flon={2}&tlat={3}&tlon={4}".format(routingBase, fromP[0], fromP[1], toP[0], toP[1])
                 logger.debug(fullRoutingString)
                 try:
                     r = requests.get(fullRoutingString, timeout=30)
@@ -229,7 +232,7 @@ def get_duration(ref, origin, destination, bbox):
         except:
             logger.warning(u"Routing with YOUR Web API failed")
     # Return
-    logger.info(u"Route \"%s\" from %s to %s calculated with duration %s minutes", ref, origin, destination, duration )
+    logger.info(u"Route \"%s\" from %s to %s calculated with duration %s minutes", ref, origin, destination, duration)
 #    duration = duration + 1
     if duration == 0.0 and prevent_damages:
         print u"WARNING: No working routing API encountered, to avoid damages to duration file, exiting script with this warning!"

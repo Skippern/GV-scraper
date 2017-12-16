@@ -1,17 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Script to download time tables as PDF and calculate route durations based on relations for the routes in OpenStreetMap
+# Script to download time tables as PDF and calculate route durations based on
+# relations for the routes in OpenStreetMap
+#
+import logging
+
 from commons import *
 
-import os
-import sys
-import io
-import logging
-import requests
-import json
-import datetime
-import time
 try:
     from unidecode import unidecode
 except:
