@@ -43,7 +43,7 @@ def create_json(myRoutes, cal, ref, fromV, toV, d, times, duration, atypical=Fal
     retValue = {}
     retValue[u"from"] = fromV
     retValue[u"to"] = toV
-    retValue[u"service"] = []
+    retValue[u"services"] = []
     retValue[u"exceptions"] = []
     service = []
     exceptions = []
@@ -73,7 +73,7 @@ def create_json(myRoutes, cal, ref, fromV, toV, d, times, duration, atypical=Fal
                 exceptions.append(stringify_date(i[0]))
     else:
         service.append(d)
-    retValue[u"service"] = service
+    retValue[u"services"] = service
     retValue[u"exceptions"] = exceptions
     retValue[u"stations"] = [ fromV, toV ]
     retValue[u"times"] = []

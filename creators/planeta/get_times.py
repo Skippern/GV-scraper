@@ -41,7 +41,7 @@ myRoutes[u"updated"] = str(datetime.date.today())
 myRoutes[u"operator"] = u"Planeta"
 myRoutes[u"network"] = u"Planeta"
 myRoutes[u"source"] = baseurl
-myRoutes[u"blacklist"] = []
+myRoutes[u"excluded_lines"] = []
 
 for i in getLines():
     name = i[1]
@@ -58,7 +58,7 @@ for i in getLines():
     if durationsList[ref][0] < 0:
         debug_to_screen(u"Route \"{0}\" have negative duration and should be blacklisted".format(ref))
         logger.debug(u"Route \"%s\" have negative duration and should be blacklisted", ref)
-        myRoutes[u"blacklist"].append(ref)
+        myRoutes[u"excluded_lines"].append(ref)
         continue
     timeURL = baseurl + ref + "/" + i[2]
     logger.debug(timeURL)
@@ -140,9 +140,9 @@ for i in getLines():
             raise
             pass
 
-newBlacklist = uniq(myRoutes[u"blacklist"])
+newBlacklist = uniq(myRoutes[u"excluded_lines"])
 newBlacklist.sort()
-myRoutes[u"blacklist"] = newBlacklist
+myRoutes[u"excluded_lines"] = newBlacklist
 logger.info(u"Complete blacklist: %s", ", ".join(newBlacklist))
 
 with open('times.json', 'wb') as outfile:

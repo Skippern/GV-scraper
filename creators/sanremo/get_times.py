@@ -57,11 +57,11 @@ def download_pdf(i):
             logger.debug(u"Successfully downloaded %s.pdf", i)
             return r.content
         else:
-            myRoutes[u"blacklist"].append(i)
+            myRoutes[u"excluded_lines"].append(i)
             logger.error(u"%s added to blacklist (file does not exist or contain no data)", i)
             return None
     else:
-        myRoutes[u"blacklist"].append(i)
+        myRoutes[u"excluded_lines"].append(i)
         logger.error(u"%s added to blacklist (file does not exist or contain no data)", i)
         return None
 
@@ -69,7 +69,7 @@ myRoutes[u"updated"] = str(datetime.date.today())
 myRoutes[u"operator"] = u"Viação Sanremo"
 myRoutes[u"network"] = u"PMVV"
 myRoutes[u"source"] = baseurl
-myRoutes[u"blacklist"] = []
+myRoutes[u"excluded_lines"] = []
 myRoutes[u"routes"] = {}
 
 whitelistSet = set()
@@ -78,7 +78,7 @@ for wl in whitelisted:
     whitelistSet.add(wl)
 
 for bl in blacklisted:
-    myRoutes[u"blacklist"].append(bl)
+    myRoutes[u"excluded_lines"].append(bl)
 
 for i in getLines():
     pdf = download_pdf(i)
@@ -384,7 +384,7 @@ for i in getLines():
                 tmp = u"{0} {1}".format(ref, i)
                 try:
                     if blacklistVariants and durationsList[tmp][0] > 0 and durationsList[tmp][1] > 0:
-                        myRoutes[u"blacklist"].append(tmp)
+                        myRoutes[u"excluded_lines"].append(tmp)
                         logger.info(u"Route \"%s\" added to blacklist", tmp)
                 except:
                     pass
@@ -399,7 +399,7 @@ for i in getLines():
                 except:
                     durationVolta = -9
                 if durationIda < 1 and durationVolta < 1:
-                    myRoutes[u"blacklist"].append(ref)
+                    myRoutes[u"excluded_lines"].append(ref)
                     logger.info("%s added to Blacklist", ref)
                     continue
                 myRoutes["routes"][tmp] = []
@@ -422,7 +422,7 @@ for i in getLines():
             durationVolta = -9
         myRoutes[u"routes"][ref] = []
         if durationIda < 1 and durationVolta < 1:
-            myRoutes[u"blacklist"].append(ref)
+            myRoutes[u"excluded_lines"].append(ref)
             logger.info("%s added to Blacklist", ref)
             continue
         myDays = [ u"Mo-Fr", u"Sa", u"Su" ]
@@ -430,7 +430,7 @@ for i in getLines():
             myRoutes = create_json(myRoutes, cal, ref, origin, destination, d, myVariationList[ref][u"ida"][d], durationIda)
             myRoutes = create_json(myRoutes, cal, ref, destination, origin, d, myVariationList[ref][u"volta"][d], durationVolta)
 
-newBlacklist = uniq(myRoutes[u"blacklist"])
+newBlacklist = uniq(myRoutes[u"excluded_lines"])
 newBlacklist.sort()
 
 for wl in whitelisted:
@@ -441,7 +441,7 @@ for wl in whitelisted:
         logger.error(u"Something went wrong: %s is not blacklisted", wl)
         pass
 
-myRoutes[u"blacklist"] = newBlacklist
+myRoutes[u"excluded_lines"] = newBlacklist
 logger.info(u"Complete blacklist: %s", ", ".join(newBlacklist))
 
 with open('times.json', 'w') as outfile:

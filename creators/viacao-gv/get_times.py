@@ -43,7 +43,7 @@ myRoutes[u"updated"] = str(datetime.date.today())
 myRoutes[u"operator"] = u"Viação Grande Vitória"
 myRoutes[u"network"] = u"PMV"
 myRoutes[u"source"] = baseurl
-myRoutes[u"blacklist"] = []
+myRoutes[u"excluded_lines"] = []
 
 for i in getLines():
     name = i[1]
@@ -96,7 +96,7 @@ for i in getLines():
         tableJSON[header].sort()
     if durationsList[i[0]][0] < 0 and durationsList[i[0]][1] < 0:
         logger.debug(u"Negative duration on route \"%s\", adding to blacklist", i[0])
-        myRoutes[u"blacklist"].append(i[0])
+        myRoutes[u"excluded_lines"].append(i[0])
         continue
     try:
         myRoutes = create_json(myRoutes, cal, i[0], origin, destination, u"Mo-Fr", tableJSON[u"Segunda a Sexta"], durationsList[i[0]][0])
@@ -111,9 +111,9 @@ for i in getLines():
     except:
         pass
 
-newBlacklist = uniq(myRoutes[u"blacklist"])
+newBlacklist = uniq(myRoutes[u"excluded_lines"])
 newBlacklist.sort()
-myRoutes[u"blacklist"] = newBlacklist
+myRoutes[u"excluded_lines"] = newBlacklist
 logger.info(u"Complete blacklist: %s", u", ".join(newBlacklist))
 
 with open('times.json', 'wb') as outfile:

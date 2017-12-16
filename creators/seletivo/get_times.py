@@ -43,7 +43,7 @@ myRoutes[u"updated"] = str(datetime.date.today())
 myRoutes[u"operator"] = u"Seletivo"
 myRoutes[u"network"] = u"Seletivo"
 myRoutes[u"source"] = baseurl
-myRoutes[u"blacklist"] = []
+myRoutes[u"excluded_lines"] = []
 myRoutes[u"routes"] = {}
 
 def getTimes(ref):
@@ -157,7 +157,7 @@ for i in getLines():
         except:
             durations = [ -10, -10 ]
         if durations[0] < 0 and durations[1] < 0:
-            myRoutes[u"blacklist"].append(ref)
+            myRoutes[u"excluded_lines"].append(ref)
             logger.info(u"%s added to Blacklist", ref)
             continue
         myDays = [ u"Mo-Fr", u"Sa", u"Su", u"Ex" ]
@@ -179,9 +179,9 @@ for i in getLines():
         for o in myObs:
             myRoutes[u"routes"][ref][u"observations"].append(o)
 
-newBlacklist = uniq(myRoutes[u"blacklist"])
+newBlacklist = uniq(myRoutes[u"excluded_lines"])
 newBlacklist.sort()
-myRoutes[u"blacklist"] = newBlacklist
+myRoutes[u"excluded_lines"] = newBlacklist
 logger.info(u"Complete blacklist: %s", u", ".join(newBlacklist))
 
 with open('times.json', 'w') as outfile:
