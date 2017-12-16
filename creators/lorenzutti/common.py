@@ -41,7 +41,7 @@ def lower_capitalized(input):
     return output.strip()
 
 def getLines():
-    print "Getting Lines from Expresso Lorenzutti site"
+    print u"Getting Lines from Expresso Lorenzutti site"
     r = False
     while r == False:
         try:
@@ -80,18 +80,19 @@ def getLines():
                 j = "0%d" % i
             else:
                 j = "%d" % i
-            requestURL = "http://expressolorenzutti.com.br/assets/horarios/%s.pdf" % j
-            #            print requestURL,
-            r = False
-            while r == False:
-                try:
-                    r = requests.get(requestURL,timeout=30)
-                except:
-                    r = False
-            if r.status_code == 200:
-                myList.append(j)
+#            requestURL = "http://expressolorenzutti.com.br/assets/horarios/%s.pdf" % j
+#            #            print requestURL,
+#            r = False
+#            while r == False:
+#                try:
+#                    r = requests.get(requestURL,timeout=30)
+#                except:
+#                    r = False
+#            if r.status_code == 200:
+#                myList.append(j)
+            myList.append(j)
             i = i+1
-    print "Routes found: ", myList
+    print u"Routes found: ", myList
     return myList
 
 def download_pdf(i):
@@ -108,12 +109,12 @@ def download_pdf(i):
             r = False
     if r.status_code == 200:
         if r.headers.get('content-length') > 0:
-            logger.debug("Successfully downloaded %s.pdf", i)
+            logger.debug(u"Successfully downloaded %s.pdf", i)
             return r.content
         else:
-            logger.info("No file downloaded for %s, skipping", i)
+            logger.info(u"No file downloaded for %s, skipping", i)
             return None
     else:
-        logger.info("No file downloaded for %s, skipping", i)
+        logger.info(u"No file downloaded for %s, skipping", i)
         return None
 

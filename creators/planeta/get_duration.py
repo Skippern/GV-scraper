@@ -50,16 +50,16 @@ for i in getLines():
     origin = origin.strip()
     destination = destination.strip()
     
-    print "    From:", origin
-    print "    To:  ", destination
+    print u"    From:", origin
+    print u"    To:  ", destination
     if len(tmp) > 0:
         debug_to_screen( u"    Via: {0}".format( (tmp) ) )
     durationsList[ref] = [ get_duration(ref, origin, destination, config["query"]["bbox"]), get_duration(ref, destination, origin, config["query"]["bbox"]) ]
-    print "Durations calculated ",ref, ":", durationsList[ref]
+    print u"Durations calculated ",ref, u":", durationsList[ref]
     if ref == "1" or ref == "2":
         myRef = "{0}-1".format(ref)
         durationsList[myRef] = [ get_duration(myRef, origin, destination, config["query"]["bbox"]), get_duration(myRef, destination, origin, config["query"]["bbox"]) ]
-        print "Durations calculated ",myRef, ":", durationsList[myRef]
+        print u"Durations calculated ",myRef, u":", durationsList[myRef]
 
 with open('durations.json', 'w') as outfile:
     json.dump(durationsList, outfile, sort_keys=True, indent=4)

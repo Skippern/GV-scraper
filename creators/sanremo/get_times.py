@@ -54,15 +54,15 @@ def download_pdf(i):
             r = False
     if r.status_code == 200:
         if r.headers.get('content-length') > 0:
-            logger.debug("Successfully downloaded %s.pdf", i)
+            logger.debug(u"Successfully downloaded %s.pdf", i)
             return r.content
         else:
             myRoutes[u"blacklist"].append(i)
-            logger.error("%s added to blacklist (file does not exist or contain no data)", i)
+            logger.error(u"%s added to blacklist (file does not exist or contain no data)", i)
             return None
     else:
         myRoutes[u"blacklist"].append(i)
-        logger.error("%s added to blacklist (file does not exist or contain no data)", i)
+        logger.error(u"%s added to blacklist (file does not exist or contain no data)", i)
         return None
 
 myRoutes[u"updated"] = str(datetime.date.today())
@@ -96,10 +96,10 @@ for i in getLines():
         interpreter.process_page(page)
         layout = device.get_result()
         fieldNr = 0
-        ref = ""
-        name = ""
-        origin = ""
-        destination = ""
+        ref = u""
+        name = u""
+        origin = u""
+        destination = u""
         wd_ida = []
         wd_volta = []
         sa_ida = []
@@ -174,8 +174,8 @@ for i in getLines():
                                 continue
         name = name.split(u"\n")[0]
         print ref, name
-        print "    From", origin
-        print "    To", destination
+        print u"    From", origin
+        print u"    To", destination
         # Here we need some code to handle variations, for now we'll just strip the information after the time stamp
         wd_ida = uniq(wd_ida)
         wd_volta = uniq(wd_volta)
@@ -204,16 +204,16 @@ for i in getLines():
         while len(wd_ida) > 0:
             t = wd_ida[0]
             wd_ida.pop(0)
-            debug_to_screen("(wi) {0}".format(t), False)
+            debug_to_screen(u"(wi) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                debug_to_screen("(wi) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
+                debug_to_screen(u"(wi) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
                         myVariationList[ref][u"ida"][u"Mo-Fr"].append(newT)
                     else:
-                        debug_to_screen("Forced variation (wi)")
+                        debug_to_screen(u"Forced variation (wi)")
                 myVariations.append(variation)
                 tmp = u"{0} {1}".format(ref, variation)
                 if variation not in variationSet:
@@ -234,16 +234,16 @@ for i in getLines():
         while len(wd_volta) > 0:
             t = wd_volta[0]
             wd_volta.pop(0)
-            debug_to_screen("(wv) {0}".format(t), False)
+            debug_to_screen(u"(wv) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                debug_to_screen("(wv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
+                debug_to_screen(u"(wv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
                         myVariationList[ref][u"volta"][u"Mo-Fr"].append(newT)
                     else:
-                        debug_to_screen("Forced variation (wv)")
+                        debug_to_screen(u"Forced variation (wv)")
                 myVariations.append(variation)
                 tmp = u"{0} {1}".format(ref, variation)
                 if variation not in variationSet:
@@ -264,11 +264,11 @@ for i in getLines():
         while len(sa_ida) > 0:
             t = sa_ida[0]
             sa_ida.pop(0)
-            debug_to_screen("(si) {0}".format(t), False)
+            debug_to_screen(u"(si) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                debug_to_screen("(si) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
+                debug_to_screen(u"(si) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
                         myVariationList[ref][u"ida"][u"Sa"].append(newT)
@@ -292,11 +292,11 @@ for i in getLines():
         while len(sa_volta) > 0:
             t = sa_volta[0]
             sa_volta.pop(0)
-            debug_to_screen("(sv) {0}".format(t), False)
+            debug_to_screen(u"(sv) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                debug_to_screen("(sv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
+                debug_to_screen(u"(sv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
                         myVariationList[ref][u"volta"][u"Sa"].append(newT)
@@ -320,11 +320,11 @@ for i in getLines():
         while len(su_ida) > 0:
             t = su_ida[0]
             su_ida.pop(0)
-            debug_to_screen("(di) {0}".format(t), False)
+            debug_to_screen(u"(di) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                debug_to_screen("(di) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
+                debug_to_screen(u"(di) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
                         myVariationList[ref][u"ida"][u"Su"].append(newT)
@@ -348,11 +348,11 @@ for i in getLines():
         while len(su_volta) > 0:
             t = su_volta[0]
             su_volta.pop(0)
-            debug_to_screen("(dv) {0}".format(t), False)
+            debug_to_screen(u"(dv) {0}".format(t), False)
             if len(t) > 5:
                 newT = t[:5]
                 variation = t[5:].strip()
-                debug_to_screen("(dv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
+                debug_to_screen(u"(dv) Variation in \"{0}\"/\"{1}\"/\"{2}\"".format(t,newT,variation))
                 if ignoreVariants:
                     if ref not in whitelistSet:
                         myVariationList[ref][u"volta"][u"Su"].append(newT)
@@ -375,8 +375,8 @@ for i in getLines():
                 myVariationList[ref][u"volta"][u"Su"].append(t)
         if len(myVariations) > 0:
             myVariations = uniq(myVariations)
-            logger.warning("Variations detected in %s: %s", ref, ", ".join(myVariations))
-            debug_to_screen("Known variations: ",False)
+            logger.warning(u"Variations detected in %s: %s", ref, ", ".join(myVariations))
+            debug_to_screen(u"Known variations: ",False)
             for i in myVariations:
                 durationIda = -8
                 durationVolta = -8
@@ -385,7 +385,7 @@ for i in getLines():
                 try:
                     if blacklistVariants and durationsList[tmp][0] > 0 and durationsList[tmp][1] > 0:
                         myRoutes[u"blacklist"].append(tmp)
-                        logger.info("Route \"%s\" added to blacklist", tmp)
+                        logger.info(u"Route \"%s\" added to blacklist", tmp)
                 except:
                     pass
                 try:
@@ -438,11 +438,11 @@ for wl in whitelisted:
         newBlacklist.remove(wl)
         logger.warning("%s removed from blacklist", wl)
     except:
-        logger.error("Something went wrong: %s is not blacklisted", wl)
+        logger.error(u"Something went wrong: %s is not blacklisted", wl)
         pass
 
 myRoutes[u"blacklist"] = newBlacklist
-logger.info("Complete blacklist: %s", ", ".join(newBlacklist))
+logger.info(u"Complete blacklist: %s", ", ".join(newBlacklist))
 
 with open('times.json', 'w') as outfile:
     json.dump(myRoutes, outfile, sort_keys=True, indent=4)

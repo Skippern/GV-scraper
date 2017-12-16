@@ -66,10 +66,10 @@ for i in getLines():
         interpreter.process_page(page)
         layout = device.get_result()
         fieldNr = 0
-        ref = ""
-        name = ""
-        origin = ""
-        destination = ""
+        ref = u""
+        name = u""
+        origin = u""
+        destination = u""
         variationGrepper = []
         refList = []
         refSet = set()
@@ -129,13 +129,13 @@ for i in getLines():
                         refSet.add(tmp)
         name = name.split(u"\n")[0]
         print ref, name
-        print "    From", origin
-        print "    To", destination
+        print u"    From", origin
+        print u"    To", destination
         refList = uniq(refList)
         refList.sort()
         for myRef in refList:
             durationsList[myRef] = [ get_duration(myRef, origin, destination, config["query"]["bbox"]), get_duration(myRef, destination, origin, config["query"]["bbox"]) ]
-        print "Durations calculated: ", durationsList[ref]
+        print u"Durations calculated: ", durationsList[ref]
 
 with open('durations.json', 'w') as outfile:
     json.dump(durationsList, outfile, sort_keys=True, indent=4)

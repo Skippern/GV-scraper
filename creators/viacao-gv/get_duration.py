@@ -46,7 +46,7 @@ for i in getLines():
     name = i[1]
     ref = i[0]
     tmp = name.split(u"/")
-    if len(tmp) > 2 and name.find("via") < 0:
+    if len(tmp) > 2 and name.find(u"via") < 0:
         tmp[-1] = u"{0} (Circular)".format(tmp[-1]).replace(u"(Circular) (Circular)", u"(Circular)")
     if len(tmp) == 1:
         tmp = tmp[0].split(u"via")
@@ -55,7 +55,7 @@ for i in getLines():
     else:
         origin = tmp.pop(0)
         if tmp[0].find(u"via") > 0:
-            tmp = tmp[0].split("via")
+            tmp = tmp[0].split(u"via")
         if tmp[0] == u"" or tmp[0] == u" ":
             destination = origin
         elif tmp[-1].find(u"(Circular)") > 0:
@@ -65,20 +65,21 @@ for i in getLines():
             destination = tmp.pop(0)
     try:
         tmp = destination.split(u" ")
-        tmp.remove("(Circular)")
+        tmp.remove(u"(Circular)")
         destination = u" ".join(tmp)
     except:
         pass
     origin = origin.strip()
     destination = destination.strip()
-    
+
     print ref, name
-    print "    From:", origin
-    print "    To:  ", destination
+    print u"    From:", origin
+    print u"    To:  ", destination
     if len(tmp) > 0:
-        debug_to_screen( "    Via: ".format( ", ".join(tmp).strip() ) )
-    durationsList[ref] = [ get_duration(ref, origin, destination, config["query"]["bbox"]), get_duration(ref, destination, origin, config["query"]["bbox"]) ]
-    print "Durations calculated ",ref, ":", durationsList[ref]
+        debug_to_screen(u"    Via: ".format(u", ".join(tmp).strip()))
+    durationsList[ref] = [get_duration(ref, origin, destination, config[u"query"][u"bbox"]),
+                          get_duration(ref, destination, origin, config[u"query"][u"bbox"])]
+    print u"Durations calculated ", ref, ":", durationsList[ref]
 
 with open('durations.json', 'w') as outfile:
     json.dump(durationsList, outfile, sort_keys=True, indent=4)

@@ -62,13 +62,13 @@ def download_pdf(i):
             r = False
     if r.status_code == 200:
         if r.headers.get('content-length') > 0:
-            logger.debug("Successfully downloaded %s.pdf", i)
+            logger.debug(u"Successfully downloaded %s.pdf", i)
             return r.content
         else:
-            logger.debug("No file downloaded for %s, skipping", i)
+            logger.debug(u"No file downloaded for %s, skipping", i)
             return None
     else:
-        logger.debug("No file downloaded for %s, skipping", i)
+        logger.debug(u"No file downloaded for %s, skipping", i)
         return None
 
 for i in getLines():
@@ -88,10 +88,10 @@ for i in getLines():
         interpreter.process_page(page)
         layout = device.get_result()
         fieldNr = 0
-        ref = ""
-        name = ""
-        origin = ""
-        destination = ""
+        ref = u""
+        name = u""
+        origin = u""
+        destination = u""
         variationGrepper = []
         refList = []
         refSet = set()
@@ -156,13 +156,13 @@ for i in getLines():
         except:
             pass
         print ref, name
-        print "    From", origin
-        print "    To", destination
+        print u"    From", origin
+        print u"    To", destination
         refList = uniq(refList)
         refList.sort()
         for myRef in refList:
-            durationsList[myRef] = [ get_duration(myRef, origin, destination, config["query"]["bbox"]), get_duration(myRef, destination, origin, config["query"]["bbox"]) ]
-        print "Durations calculated: ", durationsList[ref]
+            durationsList[myRef] = [ get_duration(myRef, origin, destination, config[u"query"][u"bbox"]), get_duration(myRef, destination, origin, config["query"]["bbox"]) ]
+        print u"Durations calculated: ", durationsList[ref]
 
 with open('durations.json', 'w') as outfile:
     json.dump(durationsList, outfile, sort_keys=True, indent=4)

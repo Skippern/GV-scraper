@@ -41,7 +41,7 @@ def getLines():
             r = requests.get(baseurl)
         except requests.exceptions.ConnectionError as e:
             r = False
-            logger.error("requests.exceptions.ConnectionError, sleeping for 120s")
+            logger.error(u"requests.exceptions.ConnectionError, sleeping for 120s")
             time.sleep(120)
     htmlList = r.content
     htmlList = htmlList[htmlList.find("<select name=\"cdLinha\">")+25:htmlList.find("</select>")]

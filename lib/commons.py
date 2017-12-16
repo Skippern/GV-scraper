@@ -90,9 +90,9 @@ def calculate_end_time(start_time, duration):
     while hr > 23:
         hr -= 24 # Should we put a day+1 variable as well?
         day += 1
-    end_time = "{0}:{1}".format(str(hr).zfill(2), str(min).zfill(2))
+    end_time = u"{0}:{1}".format(str(hr).zfill(2), str(min).zfill(2))
     if day > 0:
-        end_time = "{0}+{1}".format(end_time, str(day))
+        end_time = u"{0}+{1}".format(end_time, str(day))
     return end_time
 
 

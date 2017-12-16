@@ -48,7 +48,7 @@ myRoutes[u"blacklist"] = []
 for i in getLines():
     name = i[1]
     tmp = name.split(u"/")
-    if len(tmp) > 2 and name.find("via") < 0:
+    if len(tmp) > 2 and name.find(u"via") < 0:
         tmp[-1] = u"{0} (Circular)".format(tmp[-1]).replace(u"(Circular) (Circular)", u"(Circular)")
     if len(tmp) == 1:
         tmp = tmp[0].split(u"via")
@@ -66,7 +66,7 @@ for i in getLines():
             destination = tmp.pop(0)
     try:
         tmp = destination.split(u" ")
-        tmp.remove("Circular")
+        tmp.remove(u"Circular")
         destination = u" ".join(tmp)
     except:
         pass
@@ -75,16 +75,16 @@ for i in getLines():
     r = False
     timeURL = baseurl + u"listarHorario.cfm?cdLinha=" + i[0]
     logger.debug(timeURL)
-    while r == False:
+    while not r:
         try:
             r = requests.get(timeURL, timeout=30)
         except:
             r = False
-    output = unicode( r.content.decode("UTF-8") )
+    output = unicode(r.content.decode("UTF-8"))
     soup = BeautifulSoup(output, "lxml")
     tables = soup.find_all('table')
     if len(tables) > 3:
-        print "!!!!! We have {0} tables !!!!".format(len(tables))
+        print u"!!!!! We have {0} tables !!!!".format(len(tables))
     tableJSON = {}
     for table in tables:
         header = table.th.text.strip()
@@ -95,8 +95,8 @@ for i in getLines():
                 tableJSON[header].append(t)
         tableJSON[header].sort()
     if durationsList[i[0]][0] < 0 and durationsList[i[0]][1] < 0:
-        logger.debug("Negative duration on route \"%s\", adding to blacklist", i[0])
-        myRoutes["blacklist"].append(i[0])
+        logger.debug(u"Negative duration on route \"%s\", adding to blacklist", i[0])
+        myRoutes[u"blacklist"].append(i[0])
         continue
     try:
         myRoutes = create_json(myRoutes, cal, i[0], origin, destination, u"Mo-Fr", tableJSON[u"Segunda a Sexta"], durationsList[i[0]][0])
@@ -111,10 +111,10 @@ for i in getLines():
     except:
         pass
 
-newBlacklist = uniq(myRoutes["blacklist"])
+newBlacklist = uniq(myRoutes[u"blacklist"])
 newBlacklist.sort()
-myRoutes["blacklist"] = newBlacklist
-logger.info("Complete blacklist: %s", ", ".join(newBlacklist))
+myRoutes[u"blacklist"] = newBlacklist
+logger.info(u"Complete blacklist: %s", u", ".join(newBlacklist))
 
 with open('times.json', 'wb') as outfile:
     json.dump(myRoutes, outfile, sort_keys=True, indent=4)

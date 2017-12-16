@@ -35,7 +35,7 @@ logger = logging.getLogger("GTFS_router")
 def route_osrm_py(points):
     duration = 0
     result = osrm.match(points, steps=False, overview="full")
-    tmp = result["total_time"]
+    tmp = result[u"total_time"]
     duration = round(float(tmp)/60.0)
     return int(duration)
 
@@ -48,9 +48,9 @@ def route_osrm_web(points):
     routeJSON = None
     for p in points:
         if len(waypoints) == 0:
-            waypoints = "{0},{1}".format(str(p[1]),str(p[0]))
+            waypoints = u"{0},{1}".format(str(p[1]),str(p[0]))
         else:
-            waypoints = "{0};{1},{2}".format(waypoints,str(p[1]),str(p[0]))
+            waypoints = u"{0};{1},{2}".format(waypoints,str(p[1]),str(p[0]))
     r = False
     while r == False:
         fullRoutingString = routingBase+waypoints+routingOptions
@@ -61,22 +61,22 @@ def route_osrm_web(points):
             r = False
             raise
         if r.status_code == 502:
-            logger.critical("502 Bad Gateway in route_osrm_web - returning False")
+            logger.critical(u"502 Bad Gateway in route_osrm_web - returning False")
             return False
         elif r.status_code == 503:
-            logger.critical("503 Service Unavailable in route_osrm_web - returning False")
+            logger.critical(u"503 Service Unavailable in route_osrm_web - returning False")
             return False
         elif r.status_code == 504:
-            logger.critical("504 Gateway Timeout in route_osrm_web - returning False")
+            logger.critical(u"504 Gateway Timeout in route_osrm_web - returning False")
             return False
         try:
             routeJSON = json.loads(r.content)
         except:
-            logger.error("Routing object returned is not JSON")
+            logger.error(u"Routing object returned is not JSON")
             r = False
-    for dr in routeJSON["routes"]:
-        duration += dr["duration"]
-    debug_to_screen( "Duration: {0} seconds / {1} minutes".format(int(duration), int(duration / 60)) )
+    for dr in routeJSON[u"routes"]:
+        duration += dr[u"duration"]
+    debug_to_screen(u"Duration: {0} seconds / {1} minutes".format(int(duration), int(duration / 60)))
     duration = round(duration / 60)
     return int(duration)
 def route_osrm_local(points):
@@ -88,9 +88,9 @@ def route_osrm_local(points):
     routeJSON = None
     for p in points:
         if len(waypoints) == 0:
-            waypoints = "{0},{1}".format(str(p[1]),str(p[0]))
+            waypoints = u"{0},{1}".format(str(p[1]),str(p[0]))
         else:
-            waypoints = "{0};{1},{2}".format(waypoints,str(p[1]),str(p[0]))
+            waypoints = u"{0};{1},{2}".format(waypoints,str(p[1]),str(p[0]))
     r = False
     while r == False:
         fullRoutingString = routingBase+waypoints+routingOptions
@@ -101,22 +101,22 @@ def route_osrm_local(points):
             r = False
             raise
         if r.status_code == 502:
-            logger.critical("502 Bad Gateway in route_osrm_web - returning False")
+            logger.critical(u"502 Bad Gateway in route_osrm_web - returning False")
             return False
         elif r.status_code == 503:
-            logger.critical("503 Service Unavailable in route_osrm_web - returning False")
+            logger.critical(u"503 Service Unavailable in route_osrm_web - returning False")
             return False
         elif r.status_code == 504:
-            logger.critical("504 Gateway Timeout in route_osrm_web - returning False")
+            logger.critical(u"504 Gateway Timeout in route_osrm_web - returning False")
             return False
         try:
             routeJSON = json.loads(r.content)
         except:
-            logger.error("Routing object returned is not JSON")
+            logger.error(u"Routing object returned is not JSON")
             r = False
-    for dr in routeJSON["routes"]:
-        duration += dr["duration"]
-    debug_to_screen( "Duration: {0} seconds / {1} minutes".format(int(duration), int(duration / 60)) )
+    for dr in routeJSON[u"routes"]:
+        duration += dr[u"duration"]
+    debug_to_screen(u"Duration: {0} seconds / {1} minutes".format(int(duration), int(duration / 60)) )
     duration = round(duration / 60)
     return int(duration)
 
@@ -168,72 +168,72 @@ def get_duration(ref, origin, destination, bbox):
     nodeList = []
     # Make points list
     if len(result["elements"]) < 1:
-        logger.error("No relation found: \"%s\" from %s to %s", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
-        debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Relation not found".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
+        logger.error(u"No relation found: \"%s\" from %s to %s", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
+        debug_to_screen(u"    Investigate route \"{0}\" from {1} to {2}. Relation not found".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
         duration = -5
         return duration
-    for elm in result["elements"]:
-        if elm["type"] == u"relation":
-            if elm["members"][0]["role"] != u"stop" and elm["members"][0]["role"] != u"stop_entry_only":
-                logger.error("Route \"%s\" from %s to %s doesn't begin with a stop", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
-                debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Route doesn't begin with a stop".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
+    for elm in result[u"elements"]:
+        if elm[u"type"] == u"relation":
+            if elm[u"members"][0][u"role"] != u"stop" and elm[u"members"][0][u"role"] != u"stop_entry_only":
+                logger.error(u"Route \"%s\" from %s to %s doesn't begin with a stop", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
+                debug_to_screen(u"    Investigate route \"{0}\" from {1} to {2}. Route doesn't begin with a stop".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
                 return -3
-            if elm["members"][-1]["role"] != u"stop" and elm["members"][-2]["role"] != u"stop" and elm["members"][-1]["role"] != u"stop_exit_only" and elm["members"][-2]["role"] != u"stop_exit_only":
-                logger.error("Route \"%s\" from %s to %s doesn't end with a stop", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)) )
-                debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Route doesn't end with a stop".format( unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
+            if elm[u"members"][-1][u"role"] != u"stop" and elm[u"members"][-2][u"role"] != u"stop" and elm[u"members"][-1][u"role"] != u"stop_exit_only" and elm[u"members"][-2][u"role"] != u"stop_exit_only":
+                logger.error(u"Route \"%s\" from %s to %s doesn't end with a stop", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)) )
+                debug_to_screen(u"    Investigate route \"{0}\" from {1} to {2}. Route doesn't end with a stop".format( unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
                 return -4
-            for m in elm["members"]:
-                if m["role"] == u"stop" and m["type"] == u"node":
+            for m in elm[u"members"]:
+                if m[u"role"] == u"stop" and m[u"type"] == u"node":
                     nodeList.append(m["ref"])
-                elif m["role"] == u"stop_entry_only" and m["type"] == u"node":
+                elif m[u"role"] == u"stop_entry_only" and m[u"type"] == u"node":
                     nodeList.append(m["ref"])
-                elif m["role"] == u"stop_exit_only" and m["type"] == u"node":
-                    nodeList.append(m["ref"])
+                elif m[u"role"] == u"stop_exit_only" and m[u"type"] == u"node":
+                    nodeList.append(m[u"ref"])
     for testNode in nodeList:
-        for elm in result["elements"]:
-            if elm["type"] == u"node" and elm["id"] == testNode:
-                points.append( ( elm["lat"], elm["lon"] ) )
+        for elm in result[u"elements"]:
+            if elm[u"type"] == u"node" and elm[u"id"] == testNode:
+                points.append( ( elm[u"lat"], elm[u"lon"] ) )
     if len(points) == 0:
-        logger.error("Relation have no defined stops: \"%s\" from %s to %s", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
-        debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Relation have no stops mapped".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
+        logger.error(u"Relation have no defined stops: \"%s\" from %s to %s", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
+        debug_to_screen(u"    Investigate route \"{0}\" from {1} to {2}. Relation have no stops mapped".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
         duration = -1
         return duration
     elif len(points) == 1:
-        logger.error("Relation have only one defined stop: \"%s\" from %s to %s", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
-        debug_to_screen( "    Investigate route \"{0}\" from {1} to {2}. Relation have only one defined stop".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
+        logger.error(u"Relation have only one defined stop: \"%s\" from %s to %s", unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination)))
+        debug_to_screen(u"    Investigate route \"{0}\" from {1} to {2}. Relation have only one defined stop".format(unidecode(unicode(ref)), unidecode(unicode(origin)), unidecode(unicode(destination))) )
         duration = -2
         return duration
     elif len(points) == 2 and points[0] == points[1]:
-        logger.error("Relation \"%s\" start and end with same node without additional nodes", unidecode(unicode(ref)))
-        debug_to_screen("    Investigate route \"{0}\", starting and ending with same node without additional nodes".format(unidecode(unicode(ref))))
+        logger.error(u"Relation \"%s\" start and end with same node without additional nodes", unidecode(unicode(ref)))
+        debug_to_screen(u"    Investigate route \"{0}\", starting and ending with same node without additional nodes".format(unidecode(unicode(ref))))
         duration = -6
         return duration
     # Get Route
     try:
         duration = route_osrm_py(points)
     except:
-        logger.warning("Routing with OSRM Python wrapper failed")
+        logger.warning(u"Routing with OSRM Python wrapper failed")
     if duration < 1:
         try:
             duration = route_osrm_local(points)
         except:
-            logger.warning("Routing with OSRM local API failed")
+            logger.warning(u"Routing with OSRM local API failed")
     if duration < 1:
         try:
             duration = route_osrm_web(points)
         except:
-            logger.warning("Routing with OSRM Web API failed")
+            logger.warning(u"Routing with OSRM Web API failed")
     if duration < 1:
         try:
             duration = route_yours_web(points)
         except:
-            logger.warning("Routing with YOUR Web API failed")
+            logger.warning(u"Routing with YOUR Web API failed")
     # Return
-    logger.info("Route \"%s\" from %s to %s calculated with duration %s minutes", ref, origin, destination, duration )
+    logger.info(u"Route \"%s\" from %s to %s calculated with duration %s minutes", ref, origin, destination, duration )
 #    duration = duration + 1
     if duration == 0.0 and prevent_damages:
-        print "WARNING: No working routing API encountered, to avoid damages to duration file, exiting script with this warning!"
-        logger.critical("No working routing API encountered, to avoid damages to duration file, exiting script with warning!")
+        print u"WARNING: No working routing API encountered, to avoid damages to duration file, exiting script with this warning!"
+        logger.critical(u"No working routing API encountered, to avoid damages to duration file, exiting script with warning!")
         sys.exit(1)
 #        return None
     return duration

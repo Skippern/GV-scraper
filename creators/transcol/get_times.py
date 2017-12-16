@@ -53,25 +53,25 @@ def getTimes(ref):
     myReturn = {}
     myReturn[u"Stations"] = {}
     if ref == u"521":
-        myReturn["Stations"]["Ida"] = u"Hotel Canto Sol"
-        myReturn["Stations"]["Volta"] = u"Terminal Carapina"
+        myReturn[u"Stations"][u"Ida"] = u"Hotel Canto Sol"
+        myReturn[u"Stations"][u"Volta"] = u"Terminal Carapina"
     elif ref == u"544":
-        myReturn["Stations"]["Ida"] = u"Hotel Canto Sol"
-        myReturn["Stations"]["Volta"] = u"Terminal Laranjeiras"
+        myReturn[u"Stations"][u"Ida"] = u"Hotel Canto Sol"
+        myReturn[u"Stations"][u"Volta"] = u"Terminal Laranjeiras"
     elif ref == u"550":
-        myReturn["Stations"]["Ida"] = u"Shopping Vitória"
-        myReturn["Stations"]["Volta"] = u"Terminal Vila Velha"
+        myReturn[u"Stations"][u"Ida"] = u"Shopping Vitória"
+        myReturn[u"Stations"][u"Volta"] = u"Terminal Vila Velha"
     elif ref == u"867":
-        myReturn["Stations"]["Ida"] = u"Novo Horizonte"
-        myReturn["Stations"]["Volta"] = u"Terminal Carapina"
+        myReturn[u"Stations"][u"Ida"] = u"Novo Horizonte"
+        myReturn[u"Stations"][u"Volta"] = u"Terminal Carapina"
     myReturn[ref] = {}
-    myReturn[ref]["Mo-Fr"] = {}
-    myReturn[ref]["Sa"] = {}
-    myReturn[ref]["Su"] = {}
-    myReturn[ref]["Ex"] = {}
+    myReturn[ref][u"Mo-Fr"] = {}
+    myReturn[ref][u"Sa"] = {}
+    myReturn[ref][u"Su"] = {}
+    myReturn[ref][u"Ex"] = {}
     for rr in myReturn[ref]:
-        myReturn[ref][rr]["Ida"] = []
-        myReturn[ref][rr]["Volta"] = []
+        myReturn[ref][rr][u"Ida"] = []
+        myReturn[ref][rr][u"Volta"] = []
 #        myReturn[ref][rr]["Circular"] = []
     r = False
     while r == False:
@@ -87,41 +87,41 @@ def getTimes(ref):
             r = False
     for i in json.loads(myJSON):
         nuRef = None
-        if len(i["Tipo_Orientacao"]):
-            nuRef = ref + i["Tipo_Orientacao"]
+        if len(i[u"Tipo_Orientacao"]):
+            nuRef = ref + i[u"Tipo_Orientacao"]
             nuRef = nuRef.strip()
             try:
                 test = myReturn[nuRef]
             except:
                 myReturn[nuRef] = {}
-                myReturn[nuRef]["Mo-Fr"] = {}
-                myReturn[nuRef]["Sa"] = {}
-                myReturn[nuRef]["Su"] = {}
-                myReturn[nuRef]["Ex"] = {}
+                myReturn[nuRef][u"Mo-Fr"] = {}
+                myReturn[nuRef][u"Sa"] = {}
+                myReturn[nuRef][u"Su"] = {}
+                myReturn[nuRef][u"Ex"] = {}
                 for rr in myReturn[nuRef]:
-                    myReturn[nuRef][rr]["Ida"] = []
-                    myReturn[nuRef][rr]["Volta"] = []
+                    myReturn[nuRef][rr][u"Ida"] = []
+                    myReturn[nuRef][rr][u"Volta"] = []
 #                    myReturn[nuRef][rr]["Circular"] = []
         else:
             nuRef = ref
         day = None
-        if i["TP_Horario"] == 1:
-            day = "Mo-Fr"
-        elif i["TP_Horario"] == 2:
-            day = "Sa"
-        elif i["TP_Horario"] == 3:
-            day = "Su"
-        elif i["TP_Horario"] == 4:
-            day = "Ex"
+        if i[u"TP_Horario"] == 1:
+            day = u"Mo-Fr"
+        elif i[u"TP_Horario"] == 2:
+            day = u"Sa"
+        elif i[u"TP_Horario"] == 3:
+            day = u"Su"
+        elif i[u"TP_Horario"] == 4:
+            day = u"Ex"
         else:
-            debug_to_screen( unicode(i["Descricao_Hora"]) )
+            debug_to_screen( unicode(i[u"Descricao_Hora"]) )
         direction = None
-        if i["Terminal_Seq"] == 2:
-            direction = "Ida"
-        elif i["Terminal_Seq"] == 1:
-            direction = "Volta"
-        myReturn[nuRef][day][direction].append(i["Hora_Saida"])
-        myReturn["Stations"][direction] = lower_capitalized(i["Desc_Terminal"])
+        if i[u"Terminal_Seq"] == 2:
+            direction = u"Ida"
+        elif i[u"Terminal_Seq"] == 1:
+            direction = u"Volta"
+        myReturn[nuRef][day][direction].append(i[u"Hora_Saida"])
+        myReturn["Stations"][direction] = lower_capitalized(i[u"Desc_Terminal"])
     return myReturn
 
 def getObservations(ref):
@@ -141,8 +141,8 @@ def getObservations(ref):
         except:
             r = False
     for i in json.loads(myJSON):
-        debug_to_screen( u"{0} - {1}".format(unicode(i["Tipo_Orientacao"]), unicode(i["Descricao_Orientacao"])) )
-        myObs.append( [ i["Tipo_Orientacao"], i["Descricao_Orientacao"] ] )
+        debug_to_screen( u"{0} - {1}".format(unicode(i[u"Tipo_Orientacao"]), unicode(i[u"Descricao_Orientacao"])) )
+        myObs.append( [ i[u"Tipo_Orientacao"], i[u"Descricao_Orientacao"] ] )
     return myObs
 
 for i in getLines():
@@ -154,19 +154,19 @@ for i in getLines():
     myRefs.append(ref)
     name = i[1]
     print ref, name
-    logger.debug("Gathering times for route %s: %s", ref, name)
+    logger.debug(u"Gathering times for route %s: %s", ref, name)
     myTimes = getTimes(ref)
     myObs = getObservations(ref)
     for j in myObs:
         tmp = ref + j[0]
         myRefs.append(tmp)
     try:
-        test = myTimes["Stations"]["Ida"]
+        test = myTimes[u"Stations"][u"Ida"]
     except:
         try:
-            myTimes["Stations"]["Ida"] = myTimes["Stations"]["Volta"]
+            myTimes[u"Stations"][u"Ida"] = myTimes[u"Stations"][u"Volta"]
         except:
-            myTimes["Stations"]["Ida"], myTimes["Stations"]["Volta"] = "Unknown", "Unknown"
+            myTimes[u"Stations"][u"Ida"], myTimes[u"Stations"][u"Volta"] = u"Unknown", u"Unknown"
     for ref in myRefs:
         try:
             durations = durationsList[ref]
@@ -174,32 +174,32 @@ for i in getLines():
             durations = [ -10, -10 ]
         if durations[0] < 0 and durations[1] < 0:
             myRoutes[u"blacklist"].append(ref)
-            logger.info("%s added to Blacklist", ref)
+            logger.info(u"%s added to Blacklist", ref)
             continue
         myDays = [ u"Mo-Fr", u"Sa", u"Su", u"Ex" ]
         for d in myDays:
-            if d == u"Mo-Fr" and len(myTimes[ref]["Ex"]["Ida"]) > 0:
-                myRoutes = create_json(myRoutes, cal, ref, myTimes["Stations"]["Ida"], myTimes["Stations"]["Volta"], d, myTimes[ref][d]["Ida"], durations[0], True)
+            if d == u"Mo-Fr" and len(myTimes[ref][u"Ex"][u"Ida"]) > 0:
+                myRoutes = create_json(myRoutes, cal, ref, myTimes[u"Stations"][u"Ida"], myTimes[u"Stations"][u"Volta"], d, myTimes[ref][d][u"Ida"], durations[0], True)
             else:
-                myRoutes = create_json(myRoutes, cal, ref, myTimes["Stations"]["Ida"], myTimes["Stations"]["Volta"], d, myTimes[ref][d]["Ida"], durations[0])
-            if d == u"Mo-Fr" and len(myTimes[ref]["Ex"]["Volta"]) > 0:
-                myRoutes = create_json(myRoutes, cal, ref, myTimes["Stations"]["Volta"], myTimes["Stations"]["Ida"], d, myTimes[ref][d]["Volta"], durations[1], True)
+                myRoutes = create_json(myRoutes, cal, ref, myTimes[u"Stations"][u"Ida"], myTimes[u"Stations"][u"Volta"], d, myTimes[ref][d][u"Ida"], durations[0])
+            if d == u"Mo-Fr" and len(myTimes[ref][u"Ex"][u"Volta"]) > 0:
+                myRoutes = create_json(myRoutes, cal, ref, myTimes[u"Stations"][u"Volta"], myTimes[u"Stations"][u"Ida"], d, myTimes[ref][d][u"Volta"], durations[1], True)
             else:
-                myRoutes = create_json(myRoutes, cal, ref, myTimes["Stations"]["Volta"], myTimes["Stations"]["Ida"], d, myTimes[ref][d]["Volta"], durations[1])
+                myRoutes = create_json(myRoutes, cal, ref, myTimes[u"Stations"][u"Volta"], myTimes[u"Stations"][u"Ida"], d, myTimes[ref][d][u"Volta"], durations[1])
 
     if len(myObs) > 0:
         try:
-            obs = myRoutes["routes"][ref]["observations"]
+            obs = myRoutes[u"routes"][ref][u"observations"]
         except:
-            myRoutes["routes"][ref] = {}
-            myRoutes["routes"][ref]["observations"] = []
+            myRoutes[u"routes"][ref] = {}
+            myRoutes[u"routes"][ref][u"observations"] = []
         for o in myObs:
-            myRoutes["routes"][ref]["observations"].append(o)
+            myRoutes[u"routes"][ref][u"observations"].append(o)
 
 newBlacklist = uniq(myRoutes[u"blacklist"])
 newBlacklist.sort()
 myRoutes[u"blacklist"] = newBlacklist
-logger.info("Complete blacklist: %s", ", ".join(newBlacklist))
+logger.info(u"Complete blacklist: %s", ", ".join(newBlacklist))
 
 with open('times.json', 'w') as outfile:
     json.dump(myRoutes, outfile, sort_keys=True, indent=4)

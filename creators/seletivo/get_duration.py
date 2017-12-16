@@ -27,7 +27,7 @@ def getRefs(ref):
         test = stationList[ref][0]
     except KeyError:
         stationList[ref] = [None, None]
-    debug_to_screen( "Testing getRefs on {0}".format(ref) )
+    debug_to_screen(u"Testing getRefs on {0}".format(ref) )
     downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/BuscaHorarios/" + ref
     myJSON = None
     retValue = [ unicode(ref) ]
@@ -44,21 +44,21 @@ def getRefs(ref):
         except:
             r = False
     for i in json.loads(myJSON):
-        if i["Terminal_Seq"] == 1:
+        if i[u"Terminal_Seq"] == 1:
             try:
-                stationList[ref][0] = lower_capitalized(i["Desc_Terminal"])
+                stationList[ref][0] = lower_capitalized(i[u"Desc_Terminal"])
             except:
-                stationList[ref][0] = "Unknown"
-        elif i["Terminal_Seq"] == 2:
+                stationList[ref][0] = u"Unknown"
+        elif i[u"Terminal_Seq"] == 2:
             try:
-                stationList[ref][1] = lower_capitalized(i["Desc_Terminal"])
+                stationList[ref][1] = lower_capitalized(i[u"Desc_Terminal"])
             except:
-                stationList[ref][1] = "Unknown"
+                stationList[ref][1] = u"Unknown"
         else:
-            debug_to_screen( "{0} - {1}".format(i["Terminal_Seq"], i["Desc_Terminal"]))
+            debug_to_screen(u"{0} - {1}".format(i[u"Terminal_Seq"], i[u"Desc_Terminal"]))
         try:
-            if len(i["Tipo_Orientacao"]) > 0 and i["Tipo_Orientacao"] != u" ":
-                tmp = ref + i["Tipo_Orientacao"]
+            if len(i[u"Tipo_Orientacao"]) > 0 and i[u"Tipo_Orientacao"] != u" ":
+                tmp = ref + i[u"Tipo_Orientacao"]
                 tmp = tmp.strip()
                 retValue.append(tmp)
         except:
@@ -84,9 +84,9 @@ durationsList[u"source"] = baseurl
 def getStations(ref):
     #    return stationList[ref]
     stations = [ None, None ]
-    if ref == "1902":
+    if ref == u"1902":
         stations[0] = lower_capitalized(u"Marcilio de Noronha")
-    elif ref == "1604":
+    elif ref == u"1604":
         stations[0] = lower_capitalized(u"Itaparica")
     downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/BuscaHorarios/" + ref
     myJSON = None
@@ -101,12 +101,12 @@ def getStations(ref):
         except:
             r = False
     for i in json.loads(myJSON):
-        if i["Terminal_Seq"] == 1:
-            stations[0] = lower_capitalized(i["Desc_Terminal"])
-        elif i["Terminal_Seq"] == 2:
-            stations[1] = lower_capitalized(i["Desc_Terminal"])
+        if i[u"Terminal_Seq"] == 1:
+            stations[0] = lower_capitalized(i[u"Desc_Terminal"])
+        elif i[u"Terminal_Seq"] == 2:
+            stations[1] = lower_capitalized(i[u"Desc_Terminal"])
         else:
-            debug_to_screen( "{0} - {1}".format(i["Terminal_Seq"], i["Desc_Terminal"]))
+            debug_to_screen( "{0} - {1}".format(i[u"Terminal_Seq"], i[u"Desc_Terminal"]))
     return stations
 
 for i in getLines():
@@ -114,11 +114,11 @@ for i in getLines():
     ref = i[0]
     origin, destination = getStations(ref)
     print ref, name
-    print "    From", origin
-    print "    To", destination
+    print u"    From", origin
+    print u"    To", destination
     for myRef in getRefs(ref):
-        durationsList[myRef] = [ get_duration(myRef, origin, destination, config["query"]["bbox"]), get_duration(myRef, destination, origin, config["query"]["bbox"]) ]
-        print "Durations calculated {0}: {1} / {2}".format( myRef, durationsList[myRef][0], durationsList[myRef][1] )
+        durationsList[myRef] = [ get_duration(myRef, origin, destination, config[u"query"][u"bbox"]), get_duration(myRef, destination, origin, config[u"query"][u"bbox"]) ]
+        print u"Durations calculated {0}: {1} / {2}".format( myRef, durationsList[myRef][0], durationsList[myRef][1] )
 
 with open('durations.json', 'w') as outfile:
     json.dump(durationsList, outfile, sort_keys=True, indent=4)

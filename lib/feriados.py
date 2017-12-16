@@ -34,9 +34,9 @@ class CalendarNull(Calendar):
         retValue = []
         for i in self.holidays(year):
             if self.is_working_day(i[0] + timedelta(days=1)) and not self.is_working_day(i[0] + timedelta(days=2)):
-                retValue.append( ( i[0] + timedelta(days=1), "Atypical working day") )
+                retValue.append( ( i[0] + timedelta(days=1), u"Atypical working day") )
             elif self.is_working_day(i[0] - timedelta(days=1)) and not self.is_working_day(i[0] - timedelta(days=2)):
-                retValue.append( ( i[0] - timedelta(days=1), "Atypical working day") )
+                retValue.append( ( i[0] - timedelta(days=1), u"Atypical working day") )
         return retValue
 
 class EspiritoSanto(BrazilEspiritoSanto, CalendarNull):
