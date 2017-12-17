@@ -54,3 +54,5 @@ For routes such as _Transcol_, I have added `feriados.py`, requiring [workalenda
 ## Other Sources
 
 - [DER-ES: Quadro de Horários](https://der.es.gov.br/quadro-de-horarios) List of all intercity concessions given by DER-ES with contracted time-tables. This shows the contracts with the state, not necessary the reality. Tebles updated infrequently.
+- [ANTT: Consulta Linhas que Fazem Ligação entre Duas Localidades](https://appweb.antt.gov.br/SGP/src.br.gov.antt/apresentacao/consultas/LinhasFazemSecaoDuasLocalidade.aspx) Look up companies and lines connecting two locations. Useful to look up interstate bus connections.
+- [ANTT: Informações de empresas, linhas, veículos e seguro](http://www.antt.gov.br/passageiros/Pesquisar_empresas_motoristas_frota_e_seguro.html) Lists different pages to look up companies serving certain points, linking locations, or other. Useful to look up interstate bus connections.
