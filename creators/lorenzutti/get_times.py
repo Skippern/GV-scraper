@@ -166,7 +166,7 @@ for i in getLines():
         myVariationList[ref][u"ida"] = {}
         myVariationList[ref][u"volta"] = {}
         myVariationList[ref][u"ida"][u"Mo-Fr"] = []
-        myVariationList[ref][u"volta"]u"Mo-Fr"] = []
+        myVariationList[ref][u"volta"][u"Mo-Fr"] = []
         myVariationList[ref][u"ida"][u"Sa"] = []
         myVariationList[ref][u"volta"][u"Sa"] = []
         myVariationList[ref][u"ida"][u"Su"] = []
