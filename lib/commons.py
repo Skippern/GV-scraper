@@ -81,7 +81,10 @@ def calculate_end_time(start_time, duration):
     end_time = start_time
     day = 0
     hr = int(start_time[:2])
-    min = int(start_time[3:])
+    try:
+        min = int(start_time[3:])
+    except:
+        min = int(start_time[4:])
     min += duration
     while min > 59:
         hr += 1
