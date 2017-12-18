@@ -34,6 +34,10 @@ def lower_capitalized(input):
 
 def getLines():
     baseurl = "http://sistemas.vitoria.es.gov.br/redeiti/"
+
+    logger.info("Viação GV web page currently now working, exiting script: {0}".format(baseurl))
+    sys.exit(0)
+
     routes = []
     linheList = []
     r = False
@@ -45,17 +49,18 @@ def getLines():
             logger.error(u"requests.exceptions.ConnectionError, sleeping for 120s")
             time.sleep(120)
     htmlList = r.content
-    htmlList = htmlList[htmlList.find("<select name=\"cdLinha\">")+25:htmlList.find("</select>")]
+#    htmlList = htmlList[htmlList.find("<select name=\"cdLinha\">")+25:htmlList.find("</select>")]
     htmlListed = htmlList.split("\n")
-    htmlListed.pop(0)
-    htmlListed.pop(0)
+#    htmlListed.pop(0)
+#    htmlListed.pop(0)
     for xx in htmlListed:
+        print xx
         myX = xx[:xx.find("</")].strip()
-        ref = unicode( myX[:4].decode("UTF-8").strip() )
-        name = lower_capitalized( myX[6:].decode("UTF-8").strip() )
+        ref = unicode(myX[:4].decode("UTF-8").strip())
+        name = lower_capitalized(myX[6:].decode("UTF-8").strip())
         if ref != u"":
-            linheList.append( (ref, name) )
+            linheList.append((ref, name))
     for i in linheList:
         print i[0], i[1]
-        routes.append( (i[0], i[1] ) )
+#        routes.append((i[0], i[1]))
     return routes
