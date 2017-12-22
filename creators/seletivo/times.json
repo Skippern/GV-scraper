@@ -1,5 +1,5 @@
 {
-    "blacklist": [
+    "excluded_lines": [
         "1801H", 
         "1801S", 
         "1801X", 
@@ -36,7 +36,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -113,7 +113,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Jockey de Itaparica", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -187,7 +187,7 @@
             {
                 "exceptions": [], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -259,7 +259,7 @@
             {
                 "exceptions": [], 
                 "from": "Jockey de Itaparica", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -341,7 +341,7 @@
                     "2017-12-25"
                 ], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -380,7 +380,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -390,83 +390,83 @@
                 "times": [
                     [
                         "09:30", 
-                        "10:06"
+                        "10:07"
                     ], 
                     [
                         "09:55", 
-                        "10:31"
+                        "10:32"
                     ], 
                     [
                         "10:50", 
-                        "11:26"
+                        "11:27"
                     ], 
                     [
                         "11:35", 
-                        "12:11"
+                        "12:12"
                     ], 
                     [
                         "12:05", 
-                        "12:41"
+                        "12:42"
                     ], 
                     [
                         "13:05", 
-                        "13:41"
+                        "13:42"
                     ], 
                     [
                         "14:15", 
-                        "14:51"
+                        "14:52"
                     ], 
                     [
                         "15:15", 
-                        "15:51"
+                        "15:52"
                     ], 
                     [
                         "16:25", 
-                        "17:01"
+                        "17:02"
                     ], 
                     [
                         "16:45", 
-                        "17:21"
+                        "17:22"
                     ], 
                     [
                         "17:05", 
-                        "17:41"
+                        "17:42"
                     ], 
                     [
                         "17:25", 
-                        "18:01"
+                        "18:02"
                     ], 
                     [
                         "17:50", 
-                        "18:26"
+                        "18:27"
                     ], 
                     [
                         "18:10", 
-                        "18:46"
+                        "18:47"
                     ], 
                     [
                         "18:30", 
-                        "19:06"
+                        "19:07"
                     ], 
                     [
                         "18:50", 
-                        "19:26"
+                        "19:27"
                     ], 
                     [
                         "19:20", 
-                        "19:56"
+                        "19:57"
                     ], 
                     [
                         "20:00", 
-                        "20:36"
+                        "20:37"
                     ], 
                     [
                         "21:00", 
-                        "21:36"
+                        "21:37"
                     ], 
                     [
                         "22:00", 
-                        "22:36"
+                        "22:37"
                     ]
                 ], 
                 "to": "Ara\u00e7as"
@@ -485,7 +485,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Ara\u00e7as", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -573,7 +573,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Ara\u00e7as", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -603,7 +603,7 @@
             {
                 "exceptions": [], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -615,83 +615,83 @@
                 "times": [
                     [
                         "09:30", 
-                        "10:06"
+                        "10:07"
                     ], 
                     [
                         "09:55", 
-                        "10:31"
+                        "10:32"
                     ], 
                     [
                         "10:50", 
-                        "11:26"
+                        "11:27"
                     ], 
                     [
                         "11:35", 
-                        "12:11"
+                        "12:12"
                     ], 
                     [
                         "12:05", 
-                        "12:41"
+                        "12:42"
                     ], 
                     [
                         "13:05", 
-                        "13:41"
+                        "13:42"
                     ], 
                     [
                         "14:15", 
-                        "14:51"
+                        "14:52"
                     ], 
                     [
                         "15:15", 
-                        "15:51"
+                        "15:52"
                     ], 
                     [
                         "16:25", 
-                        "17:01"
+                        "17:02"
                     ], 
                     [
                         "16:45", 
-                        "17:21"
+                        "17:22"
                     ], 
                     [
                         "17:05", 
-                        "17:41"
+                        "17:42"
                     ], 
                     [
                         "17:25", 
-                        "18:01"
+                        "18:02"
                     ], 
                     [
                         "17:50", 
-                        "18:26"
+                        "18:27"
                     ], 
                     [
                         "18:10", 
-                        "18:46"
+                        "18:47"
                     ], 
                     [
                         "18:30", 
-                        "19:06"
+                        "19:07"
                     ], 
                     [
                         "18:50", 
-                        "19:26"
+                        "19:27"
                     ], 
                     [
                         "19:20", 
-                        "19:56"
+                        "19:57"
                     ], 
                     [
                         "20:00", 
-                        "20:36"
+                        "20:37"
                     ], 
                     [
                         "21:00", 
-                        "21:36"
+                        "21:37"
                     ], 
                     [
                         "22:00", 
-                        "22:36"
+                        "22:37"
                     ]
                 ], 
                 "to": "Ara\u00e7as"
@@ -699,7 +699,7 @@
             {
                 "exceptions": [], 
                 "from": "Ara\u00e7as", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -791,7 +791,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Aeroporto", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -801,23 +801,23 @@
                 "times": [
                     [
                         "14:00", 
-                        "14:36"
+                        "14:37"
                     ], 
                     [
                         "16:00", 
-                        "16:36"
+                        "16:37"
                     ], 
                     [
                         "18:00", 
-                        "18:36"
+                        "18:37"
                     ], 
                     [
                         "20:00", 
-                        "20:36"
+                        "20:37"
                     ], 
                     [
                         "22:00", 
-                        "22:36"
+                        "22:37"
                     ]
                 ], 
                 "to": "Ara\u00e7as"
@@ -827,7 +827,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Ara\u00e7as", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -874,7 +874,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Jardim Camburi", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -943,7 +943,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Ara\u00e7as", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -1009,7 +1009,7 @@
             {
                 "exceptions": [], 
                 "from": "Jardim Camburi", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -1069,7 +1069,7 @@
             {
                 "exceptions": [], 
                 "from": "Ara\u00e7as", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -1150,7 +1150,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Shopping Vit\u00f3ria", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -1267,7 +1267,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Cariacica", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -1375,7 +1375,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Shopping Vit\u00f3ria", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -1447,7 +1447,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Cariacica", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -1517,7 +1517,7 @@
             {
                 "exceptions": [], 
                 "from": "Shopping Vit\u00f3ria", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -1597,7 +1597,7 @@
             {
                 "exceptions": [], 
                 "from": "Cariacica", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -1690,7 +1690,7 @@
                     "2017-11-03"
                 ], 
                 "from": "UVV", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -1763,7 +1763,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Shopping Moxuara", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -1773,63 +1773,63 @@
                 "times": [
                     [
                         "05:50", 
-                        "06:25"
+                        "06:26"
                     ], 
                     [
                         "06:10", 
-                        "06:45"
+                        "06:46"
                     ], 
                     [
                         "06:40", 
-                        "07:15"
+                        "07:16"
                     ], 
                     [
                         "07:20", 
-                        "07:55"
+                        "07:56"
                     ], 
                     [
                         "07:50", 
-                        "08:25"
+                        "08:26"
                     ], 
                     [
                         "10:00", 
-                        "10:35"
+                        "10:36"
                     ], 
                     [
                         "12:00", 
-                        "12:35"
+                        "12:36"
                     ], 
                     [
                         "14:00", 
-                        "14:35"
+                        "14:36"
                     ], 
                     [
                         "16:00", 
-                        "16:35"
+                        "16:36"
                     ], 
                     [
                         "17:00", 
-                        "17:35"
+                        "17:36"
                     ], 
                     [
                         "17:30", 
-                        "18:05"
+                        "18:06"
                     ], 
                     [
                         "18:00", 
-                        "18:35"
+                        "18:36"
                     ], 
                     [
                         "19:00", 
-                        "19:35"
+                        "19:36"
                     ], 
                     [
                         "19:30", 
-                        "20:05"
+                        "20:06"
                     ], 
                     [
                         "21:30", 
-                        "22:05"
+                        "22:06"
                     ]
                 ], 
                 "to": "UVV"
@@ -1837,7 +1837,7 @@
             {
                 "exceptions": [], 
                 "from": "UVV", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -1893,7 +1893,7 @@
             {
                 "exceptions": [], 
                 "from": "Shopping Moxuara", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -1905,47 +1905,47 @@
                 "times": [
                     [
                         "06:00", 
-                        "06:35"
+                        "06:36"
                     ], 
                     [
                         "06:40", 
-                        "07:15"
+                        "07:16"
                     ], 
                     [
                         "07:50", 
-                        "08:25"
+                        "08:26"
                     ], 
                     [
                         "10:00", 
-                        "10:35"
+                        "10:36"
                     ], 
                     [
                         "12:00", 
-                        "12:35"
+                        "12:36"
                     ], 
                     [
                         "14:00", 
-                        "14:35"
+                        "14:36"
                     ], 
                     [
                         "16:00", 
-                        "16:35"
+                        "16:36"
                     ], 
                     [
                         "17:00", 
-                        "17:35"
+                        "17:36"
                     ], 
                     [
                         "18:00", 
-                        "18:35"
+                        "18:36"
                     ], 
                     [
                         "19:00", 
-                        "19:35"
+                        "19:36"
                     ], 
                     [
                         "21:30", 
-                        "22:05"
+                        "22:06"
                     ]
                 ], 
                 "to": "UVV"
@@ -1966,7 +1966,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -2051,7 +2051,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Jacaraipe", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -2117,7 +2117,7 @@
             {
                 "exceptions": [], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -2193,7 +2193,7 @@
             {
                 "exceptions": [], 
                 "from": "Jacaraipe", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -2294,7 +2294,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -2371,7 +2371,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Serra", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -2439,7 +2439,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -2471,7 +2471,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Serra", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -2501,7 +2501,7 @@
             {
                 "exceptions": [], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -2561,7 +2561,7 @@
             {
                 "exceptions": [], 
                 "from": "Serra", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -2646,7 +2646,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -2739,7 +2739,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Serra Dourada III", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -2819,7 +2819,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -2899,7 +2899,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Serra Dourada III", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -2969,7 +2969,7 @@
             {
                 "exceptions": [], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -3041,7 +3041,7 @@
             {
                 "exceptions": [], 
                 "from": "Serra Dourada III", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -3154,7 +3154,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -3211,7 +3211,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Praia Grande", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -3271,7 +3271,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -3311,7 +3311,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Praia Grande", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -3349,7 +3349,7 @@
             {
                 "exceptions": [], 
                 "from": "Rodovi\u00e1ria", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -3397,7 +3397,7 @@
             {
                 "exceptions": [], 
                 "from": "Praia Grande", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -3486,7 +3486,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Jardim Camburi", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -3639,7 +3639,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Marc\u00edlio de Noronha", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -3783,7 +3783,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Jardim Camburi", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -3867,7 +3867,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Marc\u00edlio de Noronha", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -3949,7 +3949,7 @@
             {
                 "exceptions": [], 
                 "from": "Jardim Camburi", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -4061,7 +4061,7 @@
             {
                 "exceptions": [], 
                 "from": "Marc\u00edlio de Noronha", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -4186,7 +4186,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Praia da Costa", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -4291,7 +4291,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Marc\u00edlio de Noronha", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -4403,7 +4403,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Praia da Costa", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -4467,7 +4467,7 @@
                     "2017-10-28"
                 ], 
                 "from": "Marc\u00edlio de Noronha", 
-                "service": [
+                "services": [
                     "Sa"
                 ], 
                 "stations": [
@@ -4529,7 +4529,7 @@
             {
                 "exceptions": [], 
                 "from": "Praia da Costa", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -4613,7 +4613,7 @@
             {
                 "exceptions": [], 
                 "from": "Marc\u00edlio de Noronha", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -4718,7 +4718,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Praia da Costa", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -4748,7 +4748,7 @@
             {
                 "exceptions": [], 
                 "from": "Praia da Costa", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -4785,7 +4785,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Jardim Camburi", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -4826,7 +4826,7 @@
                     "2017-11-03"
                 ], 
                 "from": "Viana", 
-                "service": [
+                "services": [
                     "Mo-Fr"
                 ], 
                 "stations": [
@@ -4856,7 +4856,7 @@
             {
                 "exceptions": [], 
                 "from": "Jardim Camburi", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -4888,7 +4888,7 @@
             {
                 "exceptions": [], 
                 "from": "Viana", 
-                "service": [
+                "services": [
                     "2017-09-08", 
                     "2017-10-13", 
                     "2017-11-03"
@@ -4920,5 +4920,5 @@
         ]
     }, 
     "source": "https://ceturb.es.gov.br/", 
-    "updated": "2017-12-15"
+    "updated": "2017-12-21"
 }
