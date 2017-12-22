@@ -1,0 +1,43 @@
+{
+    "excluded_lines": [ ], 
+    "network": "Vale", 
+    "operator": "Vale do Rio Doce", 
+    "routes": {
+        "EFVM": [
+            {
+                "exceptions": [ ], 
+                "from": "Pedro Nolasco", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Pedro Nolasco", "Flexal", "Fundão", "Aricanga", "Piraqueaçu", "Colatina", "Itapina", "Mascarenhas", "Baixo Guandu", "Aimorés", "Resplendor", "Krenak", "Conselheiro Pena", "Barra do Cuieté", "São Tomé do Rio Doce", "Tumiritinga", "Governador Valadares", "Pedra Corrida", "Periquito", "Frederico Sellow", "Ipaba", "Intendente Câmera", "Mário Carvalho", "Antônio Dias", "Desembargador Drumond", "João Monlevade", "Rio Piracaciba", "Dois Irmãos", "Belo Horizonte"
+                ], 
+                "times": [
+                    [
+                        "07:00",   "07:15",  "08:01",    "08:17",    "08:28",      "09:29",     "09:51",   "10:03",       "10:18",        "10:28",   "11:07",      "11:23",     "11:42",         "11:56",           "12:06",                  "12:21",     "13:14",                 "13:50",         "14:03",     "14:29",            "14:48", "15:12",            "15:30",          "16:04",        "16:38",                 "17:04",          "17:21",          "18:20",       "20:10"
+                    ]
+                ], 
+                "to": "Belo Horizonte"
+            }, 
+            {
+                "exceptions": [ ], 
+                "from": "Belo Horizonte", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Belo Horizonte", "Dois Irmãos", "Rio Piracaciba", "João Monlevade", "Desembargador Drumond", "Antônio Dias", "Mário Carvalho", "Intendente Câmera", "Ipaba", "Frederico Sellow", "Periquito", "Pedra Corrida", "Governador Valadares", "Tumiritinga", "São Tomé do Rio Doce", "Barra do Cuieté", "Conselheiro Pena", "Krenak", "Resplendor", "Aimorés", "Baixo Guandu", "Mascarenhas", "Itapina", "Conselheiro Pena", "Piraqueaçu", "Aimorés", "Fundão", "Flexal", "Pedro Nolasco"
+                ], 
+                "times": [
+                    [
+                        "07:30",      "09:03",      "09:59",           "10:16",           "10:43",                 "11:11",        "11:47",          "12:07",            "12:27",   "12:45",            "13:11",    "13:25",        "14:16",                 "15:01",       "15:14",                "15:23",              "15:41",          "15:58", "16:18",      "16:58",   "17:08",       "17:21",        "17:34",   "17:57",           "18:58",      "19:10",   "19:27",  "20:11",   "20:30"
+                    ]
+                ], 
+                "to": "Pedro Nolasco"
+            }, 
+        ], 
+    }, 
+    "source": "http://vfco.brazilia.jor.br/Carros/efvm/trem-Belo_Horizonte-Vitoria-horarios.shtml", 
+    "updated": "2017-12-21"
+}
