@@ -1,0 +1,99 @@
+{
+    "operator": "Viação Motum Preto Ltda",
+    "operator:ref": "1-016",
+    "updated": "2017-09-20",
+    "routes": [{
+        "168/0": [
+            {
+                "name": "Baixo Guandú x Laranja da Terra",
+                "from": "Baixo Guandú",
+                "to": "Laranja da Terra",
+                "note": "Paralisado"
+            },
+            {
+                "name": "Laranja da Terra x Baixo Guandú",
+                "from": "Laranja da Terra",
+                "to": "Baixo Guandú",
+                "note": "Paralisado"
+            }
+        ],
+        "169/0": [
+            {
+                "name": "Baixo Guandú x Afonso Cláudio",
+                "from": "Baixo Guandú",
+                "to": "Afonso Cláudio",
+                "services": "Mo-Sa",
+                "times": ["05:30", "13:30"]
+            },
+            {
+                "name": "Afonso Cláudio x Baixo Guandú",
+                "from": "Afonso Cláudio",
+                "to": "Baixo Guandú",
+                "services": "Mo-Sa",
+                "times": ["05:45", "13:50"]
+            }
+        ],
+        "278/0": [
+            {
+                "name": "Joatuba x Afonso Cláudio",
+                "from": "Joatuba",
+                "to": "Afonso Cláudio",
+                "services": "Mo-Sa",
+                "times": ["06:30", "12:00", "18:00"]
+            },
+            {
+                "name": "Afonso Cláudio x Joatuba",
+                "from": "Afonso Cláudio",
+                "to": "Joatuba",
+                "services": "Mo-Sa",
+                "times": ["06:00", "10:45", "16:45"]
+            }
+        ],
+        "287/0": [
+            {
+                "name": "Laranja da Terra x Afonso Cláudio",
+                "from": "Laranja da Terra",
+                "to": "Afonso Cláudio",
+                "note": "Paralisado"
+            },
+            {
+                "name": "Afonso Cláudio x Laranja da Terra",
+                "from": "Afonso Cláudio",
+                "to": "Laranja da Terra",
+                "note": "Paralisado"
+            }
+        ],
+        "305/0": [
+            {
+                "name": "Itaguaçu x Laranja da Terra",
+                "from": "Itaguaçu",
+                "to": "Laranja da Terra",
+                "services": "Mo-Sa",
+                "times": ["13:00"]
+            },
+            {
+                "name": "Laranja da Terra x Itaguaçu",
+                "from": "Laranja da Terra", 
+                "to": "Itaguaçu",
+                "services": "Mo-Sa",
+                "times": ["07:00"]
+            }
+        ],
+        "292/0": [
+            {
+                "name": "Afonso Cláudio x Ibatiba via Brejetuba, Cedro e Venceslau",
+                "from": "Afonso Cláudio",
+                "to": "Ibatiba",
+                "via": [ "Brejetuba", "Cedro", "Venceslau"],
+                "note": "Paralisado"
+            },
+            {
+                "name": "Ibatiba x Afonso Cláudio via Brejetuba, Cedro e Venceslau",
+                "from": "Ibatiba",
+                "to": "Afonso Cláudio",
+                "via": ["Brejetuba", "Cedro", "Venceslau"],
+                "note": "Paralisado"
+            }
+        ]
+    }]
+}

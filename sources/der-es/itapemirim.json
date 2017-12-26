@@ -1,0 +1,45 @@
+{
+    "operator": "Viação Itapemirim S/A",
+    "operator:ref": "1-009",
+    "updated": "2014-12-22",
+    "routes": [{
+        "351/0": [
+            {
+                "name": "Guarapari x Marataízes via Anchieta",
+                "from": "Guarapari",
+                "to": "Marataízes",
+                "via": "Anchieta",
+                "services": "Mo-Su",
+                "times": ["07:25", "09:30", "11:25", "12:30", "14:20", "16:45", "18:10"]
+            },
+            {
+                "name": "Marataízes x Guarapari via Anchieta",
+                "from": "Marataízes",
+                "to": "Guarapari",
+                "via": "Anchieta",
+                "services": "Mo-Su",
+                "times": ["05:00", "06:15", "08:30", "10:50", "13:05", "15:05", "17:15"]
+            },
+            {
+                "name": "Guarapari x Marataízes via Anchieta",
+                "from": "Guarapari",
+                "to": "Marataízes",
+                "via": "Anchieta",
+                "start_date": "12-15",
+                "end_date": "02-25",
+                "services": "Mo-Su",
+                "times": ["05:40"]
+            },
+            {
+                "name": "Marataízes x Guarapari via Anchieta",
+                "from": "Marataízes",
+                "to": "Guarapari",
+                "via": "Anchieta",
+                "start_date": "12-15",
+                "end_date": "02-25",
+                "services": "Mo-Su",
+                "times": ["18:40"]
+            }
+        ]
+    }]
+}

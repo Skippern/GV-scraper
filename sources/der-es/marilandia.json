@@ -1,0 +1,145 @@
+{
+    "operator": "Viação Marilândia Ltda",
+    "operator:ref": "1-018",
+    "updated": "2014-07-05",
+    "routes": [{
+        "080/0": [
+            {
+                "name": "Colatina x Palmas",
+                "from": "Colatina",
+                "to": "Palmas",
+                "services": "Mo-Sa",
+                "times": ["13:00"]
+            },
+            {
+                "name": "Palmas x Colatina",
+                "from": "Palmas",
+                "to": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            }
+        ],
+        "121/0": [
+            {
+                "name": "Colatina x Moacir",
+                "from": "Colatina",
+                "to": "Moacir",
+                "services": "Mo-Sa",
+                "times": ["14:30"]
+            },
+            {
+                "name": "Moacir x Colatina",
+                "from": "Moacir",
+                "to": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            }
+        ],
+        "128/0": [
+            {
+                "name": "Colatina x Santa Catarina",
+                "from": "Colatina",
+                "to": "Santa Catarina",
+                "services": "Mo-Sa",
+                "times": ["10:00", "15:30"]
+            },
+            {
+                "name": "Colatina x Santa Catarina",
+                "from": "Colatina",
+                "to": "Santa Catarina",
+                "services": "Su,Ho",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Santa Catarina x Colatina",
+                "from": "Santa Catarina",
+                "to": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["06:00", "12:00"]
+            },
+            {
+                "name": "Santa Catarina x Colatina",
+                "from": "Santa Catarina",
+                "to": "Colatina",
+                "services": "Su,Ho",
+                "times": ["15:00"]
+            }
+        ],
+        "133/0": [
+            {
+                "name": "Colatina x São Rafael",
+                "from": "Colatina",
+                "to": "São Rafael",
+                "services": "Mo-Sa",
+                "times": ["09:00", "16:30"]
+            },
+            {
+                "name": "São Rafael x Colatina",
+                "from": "São Rafael",
+                "to": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["06:00", "12:00"]
+            }
+        ],
+        "156/0": [
+            {
+                "name": "Colatina x Marilândia",
+                "from": "Colatina",
+                "to": "Marilândia",
+                "services": "Mo-Sa",
+                "times": ["07:00", "12:00"]
+            },
+            {
+                "name": "Colatina x Marilândia",
+                "from": "Colatina",
+                "to": "Marilândia",
+                "services": "Mo-Su",
+                "times": ["10:00", "18:00"]
+            },
+            {
+                "name": "Colatina x Marilândia",
+                "from": "Colatina",
+                "to": "Marilândia",
+                "services": "Su,Ho",
+                "times": ["08:00", "14:00", "17:00"]
+            },
+            {
+                "name": "Marilândia x Colatina",
+                "from": "Marilândia",
+                "to": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["06:00", "08:30", "15:00"]
+            },
+            {
+                "name": "Marilândia x Colatina",
+                "from": "Marilândia",
+                "to": "Colatina",
+                "services": "Mo-Su",
+                "times": ["17:00"]
+            },
+            {
+                "name": "Marilândia x Colatina",
+                "from":"Marilândia",
+                "to":"Colatina",
+                "services": "Su,Ho",
+                "times": ["07:00", "09:00", "12:00", "16:00"]
+            }
+        ],
+        "301/0": [
+            {
+                "name": "Itaguaçu x Colatina",
+                "from": "Itaguaçu",
+                "to": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Colatina x Itaguaçu",
+                "from": "Colatina",
+                "to": "Itaguaçu",
+                "services": "Mo-Sa",
+                "times": ["13:30"]
+            }
+        ]
+    }]
+}

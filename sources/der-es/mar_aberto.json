@@ -1,20 +1,20 @@
 {
-    "operator": "Viacao Mar Aberto Ltda",
+    "operator": "Viação Mar Aberto Ltda",
     "operator:ref": "1-053",
     "updated": "2014-07-05",
     "routes": [{
         "351/0": [
             {
-                "name": "Concei\u00e7\u00e3o da Barra x Pedro Canario",
-                "from": "Concei\u00e7\u00e3o da Barra",
-                "to": "Pedro Canario",
+                "name": "Conceição da Barra x Pedro Canário",
+                "from": "Conceição da Barra",
+                "to": "Pedro Canário",
                 "services": "Mo-Sa",
                 "times": ["05:30"]
             },
             {
-                "name": "Pedro Canario x Concei\u00e7\u00e3o da Barra",
-                "from": "Pedro Canario",
-                "to": "Concei\u00e7\u00e3o da Barra",
+                "name": "Pedro Canário x Conceição da Barra",
+                "from": "Pedro Canário",
+                "to": "Conceição da Barra",
                 "services": "Mo-Sa",
                 "times": ["13:00"]
             }

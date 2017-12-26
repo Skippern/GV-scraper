@@ -1,0 +1,552 @@
+{
+    "operator": "Viação Sudeste Ltda",
+    "operator:ref": "1-010",
+    "updated": "2017-03-27",
+    "routes": [{
+        "023/0": [
+            {
+                "name": "Cach Itapemirim - Circular - Sent Horario",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Centro de Rio Novo do Sul",
+                "services": "Mo-Su",
+                "times": ["05:55", "08:45", "10:20", "11:30", "14:20", "15:30", "19:50"]
+            },
+            {
+                "name": "Cach Itapemirim - Circular - Sent Horario",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Centro de Rio Novo do Sul",
+                "services": "Su,Ho",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Cach Itapemirim - Circular - Sent Andi-Horario",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Centro de Rio Novo do Sul",
+                "services": "Mo-Su",
+                "times": ["05:00", "06:30", "07:25", "09:15", "11:30", "13:30", "14:55", "15:40"]
+            }
+        ],
+        "039/0": [
+            {
+                "name": "Cach Itapemirim x Richimont",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Richimont",
+                "services": "Mo-Sa",
+                "times": ["13:50"]
+            },
+            {
+                "name": "Richimont x Cach Itapemirim",
+                "from": "Richimont",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            }
+        ],
+        "055/1": [
+            {
+                "name": "Cach Itapemirim x Safra",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Safra",
+                "services": "Mo-Sa",
+                "times": ["06:10", "12:20"]
+            },
+            {
+                "name": "Safra x Cach Itapemirim",
+                "from": "Safra", 
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["07:10", "13:10"]
+            }
+        ],
+        "065/0": [
+            {
+                "name": "Cach Itapemirim x Ubú",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Ubú",
+                "via": "Centro de Rio Novo do Sul",
+                "services": "Mo-Su",
+                "times": ["07:00", "13:00"]
+            },
+            {
+                "name": "Cach Itapemirim x Ubú",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Ubú",
+                "via": "Centro de Rio Novo do Sul",
+                "services": "Mo-Su",
+                "times": ["09:30", "12:00", "16:30", "17:00", "18:15"]
+            },
+            {
+                "name": "Ubú x Cach Itapemirim",
+                "from": "Ubú",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Centro de Rio Novo do Sul",
+                "services": "Mo-Su",
+                "times": ["09:30", "17:10"]
+            },
+            {
+                "name": "Ubú x Cach Itapemirim",
+                "from": "Ubú",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Centro de Rio Novo do Sul",
+                "services": "Mo-Sa",
+                "times": ["05:00", "08:10", "12:10", "14:10"]
+            }
+        ],
+        "075/0": [
+            {
+                "name": "Cach Itapemirim x Marataízes via Garrafão",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Marataízes",
+                "via": "Garrafão",
+                "services": "Mo-Sa",
+                "times": ["05:30", "06:00", "07:00", "07:35", "08:00", "09:40", "11:00", "11:45", "12:00", "13:00", "14:15", "16:00", "17:00", "19:45", "21:30"]
+            },
+            {
+                "name": "Cach Itapemirim x Marataízes via Garrafão",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Marataízes",
+                "via": "Garrafão",
+                "services": "Su",
+                "times": ["05:30", "06:00", "07:00", "07:30", "08:35", "10:00", "12:00", "14:00", "15:30", "16:30", "18:00", "19:45", "21:40"]
+            },
+            {
+                "name": "Marataízes x Cach Itapemirim via Garrafão",
+                "from": "Marataízes",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Garrafão",
+                "services": "Mo-Sa",
+                "times": ["05:00", "05:10", "05:45", "07:15", "07:35", "09:00", "10:00", "11:45", "13:15", "14:40", "16:00", "18:00", "19:00", "21:30"]
+            },
+            {
+                "name": "Marataízes x Cach Itapemirim via Garrafão",
+                "from": "Marataízes",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Garrafão",
+                "services": "Su",
+                "times": ["05:30", "06:30", "08:00", "10:00", "12:00", "13:00", "14:00", "15:10", "16:00", "17:00", "18:00", "20:00", "21:30"]
+            }
+        ],
+        "075/2": [
+            {
+                "name": "Cach Itapemirim x Marataízes",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Marataízes",
+                "services": "Mo-Sa",
+                "times": ["08:50", "12:50", "15:40", "18:10"]
+            },
+            {
+                "name": "Marataízes x Cach Itapemirim",
+                "from": "Marataízes",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["06:45", "11:00", "14:10", "17:00"]
+            }
+        ],
+        "089/0": [
+            {
+                "name": "Guarapari x Iriri (ramal Alfredo Chaves)",
+                "from": "Guarapari",
+                "to": "Iriri",
+                "services": "Mo-Sa",
+                "times": ["05:40", "13:00"]
+            },
+            {
+                "name": "Iriri x Guarapari (ramal Alfredo Chaves)",
+                "from": "Iriri",
+                "to": "Guarapari",
+                "services": "Mo-Sa",
+                "times": ["07:10", "10:30", "16:30"]
+            }
+        ],
+        "095/0": [
+            {
+                "name": "Cach Itapemirim x Marataízes via Ouvidor",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Marataízes",
+                "via": "Ouvidor",
+                "services": "Sa",
+                "times": ["14:30"]
+            },
+            {
+                "name": "Marataízes x Cach Itapemirim via Ouvidor",
+                "from": "Marataízes",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Ouvidor",
+                "services": "Sa",
+                "times": ["07:15"]
+            }
+        ],
+        "109/0": [
+            {
+                "name": "Cach Itapemirim x Marataízes via Palmital",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Marataízes",
+                "via": "Palmital",
+                "services": "Mo",
+                "times": ["06:45"]
+            },
+            {
+                "name": "Marataízes x Cach Itapemirim via Palmital",
+                "from": "Marataízes",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Palmital",
+                "services": "Mo",
+                "times": ["12:00"]
+            }
+        ],
+        "126/1": [
+            {
+                "name": "Cach Itapemirim x Rio Novo do Sul",
+                "from": "Cachoeiro de Itapemirim", 
+                "to": "Rio Novo do Sul",
+                "services": "Mo-Sa",
+                "times": ["06:15", "08:00", "11:50"]
+            },
+            {
+                "name": "Cach Itapemirim x Rio Novo do Sul",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Rio Novo do Sul",
+                "services": "Mo-Fr",
+                "times": ["18:00"]
+            },
+            {
+                "name": "Rio Novo do Sul x Cach Itapemirim",
+                "from": "Rio Novo do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Fr",
+                "times": ["19:00"]
+            },
+            {
+                "name": "Rio Novo do Sul x Cach Itapemirim",
+                "from": "Rio Novo do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["07:00", "09:00", "13:00"]
+            }
+        ],
+        "127/0": [
+            {
+                "name": "Itapemirim x Praia de Marobá",
+                "from": "Itapemirim",
+                "to": "Praia de Marobá",
+                "services": "Mo-Sa",
+                "times": ["09:30"]
+            },
+            {
+                "name": "Praia de Marobá x Itapemirim",
+                "from": "Praia de Marobá",
+                "to": "Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["12:00"]
+            },
+            {
+                "name": "Itapemirim x Praia de Marobá",
+                "from": "Itapemirim",
+                "to": "Praia de Marobá",
+                "services": "Su,Ho",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Praia de Marobá x Itapemirim",
+                "from": "Praia de Marobá",
+                "to": "Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["07:00"]
+            }
+        ],
+        "141/0": [
+            {
+                "name": "Cach Itapemirim x Marataízes via B Grande do Sul",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Marataízes",
+                "via": "B Grande do Sul",
+                "services": "Mo-Sa",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Marataízes x Cach Itapemirim via B Grande do Sul",
+                "from": "Marataízes",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "B Grande do Sul",
+                "services": "Mo-Sa",
+                "times": ["08:30"]
+            }
+        ],
+        "141/1": [
+            {
+                "name": "Faz Santa Rita x Marataízes via B Grande do Sul",
+                "from": "Fazenda Santa Rita",
+                "to": "Marataízes",
+                "via": "B Grande do Sul",
+                "services": "Mo-Sa",
+                "times": ["06:00", "11:30", "15:30"]
+            },
+            {
+                "name": "Marataízes x Faz Santa Rita via B Grande do Sul",
+                "from": "Marataízes",
+                "to": "Fazenda Santa Rita",
+                "via": "B Grande do Sul",
+                "services": "Mo-Sa",
+                "times": ["09:45", "14:20", "17:00"]
+            }
+        ],
+        "171/0": [
+            {
+                "name": "Cach Itapemirim x Marataízes via F Maitan",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Marataízes",
+                "via": "F Maitan",
+                "services": "Mo-Fr",
+                "times": ["14:10"]
+            },
+            {
+                "name": "Marataízes x Cach Itapemirim via F Maitan",
+                "from": "Marataízes",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "F Maitan",
+                "services": "Mo-Fr",
+                "times": ["05:00"]
+            }
+        ],
+        "194/0": [
+            {
+                "name": "Cachoeiro x Marataízes via Rio Novo",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Marataízes",
+                "via": "Centro de Rio Novo do Sul",
+                "services": "Mo-Sa",
+                "times": ["11:00"]
+            },
+            {
+                "name": "Marataízes x Cachoeiro via Rio Novo",
+                "from": "Marataízes",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Centro de Rio Novo do Sul",
+                "services": "Mo-Sa",
+                "times": ["05:01", "12:30", "16:40", "18:20"]
+            }
+        ],
+        "202/1": [
+            {
+                "name": "Rio Novo do Sul x Marataízes",
+                "from": "Rio Novo do Sul",
+                "to": "Marataízes",
+                "services": "Mo-Sa",
+                "times": ["07:00", "09:50", "14:00", "16:10"]
+            },
+            {
+                "name": "Marataízes x Rio Novo do Sul",
+                "from": "Marataízes",
+                "to": "Rio Novo do Sul",
+                "services": "Mo-Sa",
+                "times": ["05:50", "08:30", "11:00", "15:00"]
+            }
+        ],
+        "217/0": [
+            {
+                "name": "Cachoeiro x Paineiras via Garrafão",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Paineiras",
+                "via": "Garrafão",
+                "services": "Mo-Fr",
+                "times": ["11:00"]
+            },
+            {
+                "name": "Paineiras x Cachoeiro via Garrafão",
+                "from": "Paineiras",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Garrafão",
+                "services": "Mo-Fr",
+                "times": ["13:00"]
+            }
+        ],
+        "218/0": [
+            {
+                "name": "Cachoeiro x Marataízes via Belém",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Marataízes",
+                "via": "Belém",
+                "services": "Mo-Sa",
+                "times": ["07:30", "17:00"]
+            },
+            {
+                "name": "Cachoeiro x Marataízes via Belém",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Marataízes",
+                "via": "Belém",
+                "services": "Su",
+                "times": ["08:30"]
+            },
+            {
+                "name": "Marataízes x Cachoeiro via Belém",
+                "from": "Marataízes",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Belém",
+                "services": "Su",
+                "times": ["15:00"]
+            }
+        ],
+        "223/0": [
+            {
+                "name": "Cachoeiro x Piuma via Candeus",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Piúma",
+                "via": "Candeus",
+                "services": "Mo-Sa",
+                "times": ["10:00", "15:00", "17:00", "18:40"]
+            },
+            {
+                "name": "Cachoeiro x Piuma via Candeus",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Piúma",
+                "via": "Candeus",
+                "services": "Su,Ho",
+                "times": ["09:30"]
+            },
+            {
+                "name": "Piuma x Cachoeiro via Candeus",
+                "from": "Piúma",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Candeus",
+                "services": "Mo-Sa",
+                "times": ["06:00", "14:45", "17:20", "18:30"]
+            }
+        ],
+        "266/1": [
+            {
+                "name": "Cachoeiro x Iconha",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Iconha",
+                "via": "Centro de Rio Novo do Sul",
+                "services": "Mo-Sa",
+                "times": ["07:30", "15:45"]
+            },
+            {
+                "name": "Iconha x Cachoeiro",
+                "from": "Iconha",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Centro de Rio Novo do Sul",
+                "services": "Mo-Sa",
+                "times": ["08:40", "17:00"]
+            }
+        ],
+        "288/1": [
+            {
+                "name": "Cachoeiro x Belem",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Belém",
+                "services": "Mo-Fr",
+                "times": ["15:55"]
+            },
+            {
+                "name": "Cachoeiro x Belem",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Belém",
+                "services": "Mo,We,Fr",
+                "times": ["11:00"]
+            },
+            {
+                "name": "Cachoeiro x Belem",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Belém",
+                "services": "Sa",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Belem x Cachoeiro",
+                "from": "Belém",
+                "to": "Cachoeiro de Itapemirim",
+                "services":"Mo-Sa",
+                "times": ["06:30"]
+            },
+            {
+                "name": "Belem x Cachoeiro",
+                "from": "Belém",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo,We,Fr",
+                "times": ["13:00"]
+            }
+        ],
+        "308/1": [
+            {
+                "name": "Guarapari x Piuma",
+                "from": "Guarapari",
+                "to": "Piúma",
+                "services": "Mo-Sa",
+                "times": ["05:50", "06:30", "10:00", "11:51", "12:50", "14:45", "16:00", "17:41", "20:00", "20:40", "21:40", "22:50"]
+            },
+            {
+                "name": "Piuma x Guarapari",
+                "from": "Piúma",
+                "to": "Guarapari",
+                "services":"Mo-Sa",
+                "times": ["04:45", "05:30", "06:00", "06:15", "08:20", "11:40", "13:30", "14:30", "17:10", "17:11", "17:40", "21:15", "21:40"]
+            },
+            {
+                "name": "Guarapari x Piuma",
+                "from": "Guarapari",
+                "to": "Piúma",
+                "services": "Su,Ho",
+                "times": ["06:30", "10:00", "14:45", "16:00", "20:00", "21:40", "22:50"]
+            },
+            {
+                "name": "Piuma x Guarapari",
+                "from": "Piúma",
+                "to": "Guarapari",
+                "services": "Su,Ho",
+                "times": ["04:45", "05:30", "06:00", "07:10", "08:20", "11:40", "13:30", "14:30", "17:10", "21:15", "21:40"]
+            },
+            {
+                "name": "Ramal - Rodoviaria Juracy Bassul x Itaputanga",
+                "note": "Partidas de Guarapari",
+                "from": "Guarapari",
+                "to": "Itaputanga",
+                "services": "Mo-Sa",
+                "times": ["07:00", "07:30", "08:25", "09:00", "11:50", "13:40", "15:30", "17:00", "18:40"]
+            },
+            {
+                "name": "Ramal - Rodoviaria Juracy Bassul x Itaputanga",
+                "note": "Partidas de Guarapari",
+                "from": "Guarapari",
+                "to": "Itaputanga",
+                "services": "Su,Ho",
+                "times": ["07:00", "07:30", "08:25", "09:00", "10:30", "11:50", "13:40", "15:30", "17:00", "18:40"]
+            },
+            {
+                "name": "Ramal - Rodoviaria Juracy Bassul x Itaputanga",
+                "note": "Partidas de Piuma",
+                "from": "Piúma",
+                "to": "Itaputanga",
+                "services": "Mo-Su",
+                "times": ["06:50", "08:05", "09:20", "10:00", "11:10", "12:30", "14:00", "15:20", "16:20", "18:05", "19:50"]
+            },
+            {
+                "name": "Guarapari x Piuma via RAMAL Recanto do Sol",
+                "from": "Guarapari",
+                "to": "Piúma",
+                "via": "Recanto do Sol",
+                "services": "Mo-Sa",
+                "times": ["10:50", "17:01"]
+            },
+            {
+                "name": "Guarapari x Piuma via RAMAL Recanto do Sol",
+                "from": "Guarapari",
+                "to": "Piúma",
+                "via": "Recanto do Sol",
+                "services": "Su,Ho",
+                "times": ["10:30", "17:00"]
+            },
+            {
+                "name": "Piuma x Guarapari via RAMAL Recanto do Sol",
+                "from": "Piúma",
+                "to": "Guarapari",
+                "via": "Recanto do Sol",
+                "services": "Mo-Su",
+                "times": ["07:10", "11:10"]
+            }
+        ]
+    }]
+}
