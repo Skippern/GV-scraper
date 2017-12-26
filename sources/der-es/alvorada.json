@@ -1,0 +1,544 @@
+{
+    "operator": "Viacao Alvorada Ltda",
+    "operator:ref": "1-003",
+    "updated": "2017-12-06",
+    "routes": [{
+        "032/0": [
+            {
+                "name": "Dom Bosco x Praia do Sol (Circular)",
+                "from": "Dom Bosco",
+                "to": "Praia do Sol",
+                "services": "Mo,Fr-Sa",
+                "times": ["06:15", "12:00"]
+            },
+            {
+                "name": "Praia do Sol x Dom Bosco (Circular)",
+                "from": "Praia do Sol",
+                "to": "Dom Bosco",
+                "services": "Mo,Fr-Sa",
+                "times": ["08:00", "14:00"]
+            }
+        ],
+        "033/0": [
+            {
+                "name": "Vit\u00f3ria x Alfredo Chaves via Guarapari",
+                "from": "Vit\u00f3ria",
+                "to": "Alfredo Chaves",
+                "via": "Guarapari",
+                "services": "Mo-Su",
+                "times": ["16:00"]
+            },
+            {
+                "name": "Alfredo Chaves x Vit\u00f3ria via Guarapari",
+                "from": "Alfredo Chaves",
+                "to": "Vit\u00f3ria",
+                "via": "Guarapari",
+                "services": "Mo-Su",
+                "times": ["19:10"]
+            }
+        ],
+        "034/0": [
+            {
+                "name": "Dom Bosco x Setiba via Rod do Sol",
+                "from": "Dom Bosco",
+                "to": "Setiba",
+                "via": "Rodovia do Sol",
+                "services": "Tu,Th",
+                "times": ["07:30"]
+            },
+            {
+                "name": "Setiba x Dom Bosco via Rod do Sol",
+                "from": "Setiba",
+                "to": "Dom Bosco",
+                "via": "Rodovia do Sol",
+                "services": "Tu,Th",
+                "times": ["13:00"]
+            }
+        ],
+        "035/0": [
+            {
+                "name": "Alfredo Chaves x Cach Itapemirim",
+                "from": "Alfredo Chaves",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["08:00"]
+            },
+            {
+                "name": "Cach Itapemirim x Alfredo Chaves",
+                "from": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["12:00"]
+            }
+        ],
+        "054/0": [
+            {
+                "name": "Vit\u00f3ria x Carolina via D Martins",
+                "from": "Vit\u00f3ria",
+                "to": "Carolina",
+                "via": "Domingo Martins",
+                "note": "Trafego Mutuo com a Viacao Aguia Branca S/A\nPartidas invertidas Quinzenalmente",
+                "services": "Mo-Su",
+                "times": ["06:30", "14:30"]
+            },
+            {
+                "name": "Carolina x Vit\u00f3ria via D Martins",
+                "from": "Carolina",
+                "to": "Vit\u00f3ria",
+                "via": "Domingo Martins",
+                "note": "Trafego Mutuo com a Viacao Aguia Branca S/A\nPartidas invertidas Quinzenalmente",
+                "services": "Mo-Su",
+                "times": ["06:30", "14:30"]
+            }
+        ],
+        "063/0": [
+            {
+                "name": "Vit\u00f3ria x Guarapari via Rod do Sol",
+                "from": "Vit\u00f3ria",
+                "to": "Guarapari",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo-Su",
+                "times": ["06:00", "06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "14:00", "14:30", "15:00", "15:20", "16:00", "17:00", "17:30", "18:00", "18:30", "19:00", "20:15", "21:00", "22:30" ]
+            },
+            {
+                "name": "Vit\u00f3ria x Guarapari via Rod do Sol",
+                "from": "Vit\u00f3ria",
+                "to": "Guarapari",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo-Sa",
+                "times": ["05:10", "06:10", "12:30", "17:15"]
+            },
+            {
+                "name": "Vit\u00f3ria x Guarapari via Rod do Sol",
+                "from": "Vit\u00f3ria",
+                "to": "Guarapari",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo-Fr",
+                "times": ["05:40", "16:15", "16:30"]
+            },
+            {
+                "name": "Vit\u00f3ria x Guarapari via Rod do Sol",
+                "from": "Vit\u00f3ria",
+                "to": "Guarapari",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo",
+                "times": ["06:15"]
+            },
+            {
+                "name": "Vit\u00f3ria x Guarapari via Rod do Sol",
+                "from": "Vit\u00f3ria",
+                "to": "Guarapari",
+                "via": "Rodovia do Sol",
+                "note": "Baixa temporada (01 marco a 14 de dezembro)",
+                "start_time": "03-01",
+                "end_time": "12-14",
+                "services": "Mo-Su",
+                "times": ["06:20", "07:00", "08:00", "09:00", "10:00", "11:00", "11:30", "12:00", "13:00", "14:00", "15:00", "15:30", "17:00", "18:00", "18:30", "19:00", "21:00"]
+            },
+            {
+                "name": "Vit\u00f3ria x Guarapari via Rod do Sol",
+                "from": "Vit\u00f3ria",
+                "to": "Guarapari",
+                "via": "Rodovia do Sol",
+                "note": "Baixa temporada (01 marco a 14 de dezembro)",
+                "start_time": "03-01",
+                "end_time": "12-14",
+                "services": "Mo-Sa",
+                "times": ["05:10", "12:30", "17:15"]
+            },
+            {
+                "name": "Vit\u00f3ria x Guarapari via Rod do Sol",
+                "from": "Vit\u00f3ria",
+                "to": "Guarapari",
+                "via": "Rodovia do Sol",
+                "note": "Baixa temporada (01 marco a 14 de dezembro)",
+                "start_time": "03-01",
+                "end_time": "12-14",
+                "services": "Mo-Fr",
+                "times": ["05:40", "16:30"]
+            },
+            {
+                "name": "Guarapari x Vit\u00f3ria via Rod do Sol",
+                "from": "Guarapari",
+                "to": "Vit\u00f3ria",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo-Su",
+                "times": ["05:00", "06:00", "06:40", "07:20", "07:40", "08:00", "08:40", "09:30", "10:00", "10:40", "11:20", "12:00", "13:00", "14:00", "15:00", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "20:30", "21:00"]
+            },
+            {
+                "name": "Guarapari x Vit\u00f3ria via Rod do Sol",
+                "from": "Guarapari",
+                "to": "Vit\u00f3ria",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo-Sa",
+                "times": ["05:40", "06:20"]
+            },
+            {
+                "name": "Guarapari x Vit\u00f3ria via Rod do Sol",
+                "from": "Guarapari",
+                "to": "Vit\u00f3ria",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo-Fr",
+                "times": ["12:30", "15:30"]
+            },
+            {
+                "name": "Guarapari x Vit\u00f3ria via Rod do Sol",
+                "from": "Guarapari",
+                "to": "Vit\u00f3ria",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo",
+                "times": ["04:50"]
+            },
+            {
+                "name": "Guarapari x Vit\u00f3ria via Rod do Sol",
+                "from": "Guarapari",
+                "to": "Vit\u00f3ria",
+                "via": "Rodovia do Sol",
+                "note": "Baixa temporada (01 marco a 14 de dezembro)",
+                "start_time": "03-01",
+                "end_time": "12-14",
+                "services": "Mo-Su",
+                "times": ["05:00", "06:00", "07:00", "08:00", "10:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "21:00"]
+            },
+            {
+                "name": "Guarapari x Vit\u00f3ria via Rod do Sol",
+                "from": "Guarapari",
+                "to": "Vit\u00f3ria",
+                "via": "Rodovia do Sol",
+                "note": "Baixa temporada (01 marco a 14 de dezembro)",
+                "start_time": "03-01",
+                "end_time": "12-14",
+                "services": "Mo-Sa",
+                "times": ["06:30", "08:30", "11:20"]
+            },
+            {
+                "name": "Guarapari x Vit\u00f3ria via Rod do Sol",
+                "from": "Guarapari",
+                "to": "Vit\u00f3ria",
+                "via": "Rodovia do Sol",
+                "note": "Baixa temporada (01 marco a 14 de dezembro)",
+                "start_time": "03-01",
+                "end_time": "12-14",
+                "services": "Mo-Fr",
+                "times": ["10:40", "12:30", "15:30", "17:30"]
+            }
+        ],
+        "063/5": [
+            {
+                "name": "Vit\u00f3ria x Guarapari via Rod do Sol",
+                "from": "Vit\u00f3ria",
+                "to": "Guarapari",
+                "via": "Rodovia do Sol",
+                "services": "Sa-Su",
+                "times": ["16:30"]
+            },
+            {
+                "name": "Guarapari x Vit\u00f3ria via Rod do Sol",
+                "from": "Guarapari",
+                "to": "Vit\u00f3ria",
+                "via": "Rodovia do Sol",
+                "services": "Sa-Su",
+                "times": ["12:30"]
+            },
+            {
+                "name": "Vit\u00f3ria (Aeroporto Eurico Sales) x Guarapari (Rodoshopping)",
+                "from": "Aeroporto",
+                "to": "Guarapari",
+                "end_time": "2018-04-30",
+                "services": "Mo-Sa",
+                "times": ["08:15", "10:30", "13:00", "16:30", "19:30"]
+            },
+            {
+                "name": "Guarapari (Rodoshopping) x Vit\u00f3ria (Aeroporto Eurico Sales)",
+                "from": "Guarapari",
+                "to": "Aeroporto",
+                "end_time": "2018-04-30",
+                "services": "Mo-Sa",
+                "times": ["05:30", "08:00", "11:00", "14:00", "17:30"]                
+            }
+        ],
+        "119/0": [
+            {
+                "name": "Vit\u00f3ria x Alfredo Chaves via BR-101",
+                "from": "Vit\u00f3ria",
+                "to": "Alfredo Chaves",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["10:00", "18:15"]
+            },
+            {
+                "name": "Vit\u00f3ria x Alfredo Chaves via BR-101",
+                "from": "Vit\u00f3ria",
+                "to": "Alfredo Chaves",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            },
+            {
+                "name": "Alfredo Chaves x Vit\u00f3ria via BR-101",
+                "from": "Alfredo Chaves",
+                "to": "Vit\u00f3ria",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["05:30", "16:15"]
+            },
+            {
+                "name": "Alfredo Chaves x Vit\u00f3ria via BR-101",
+                "from": "Alfredo Chaves",
+                "to": "Vit\u00f3ria",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["14:00"]
+            }
+        ],
+        "205/0": [
+            {
+                "name": "Domingos Martins x Garraf\u00e3o",
+                "from": "Domingos Martins",
+                "to": "Garraf\u00e3o",
+                "note": "Paralisada"
+            },
+            {
+                "name": "Garraf\u00e3o x Domingos Martins",
+                "from": "Garraf\u00e3o",
+                "to": "Domingos Martins",
+                "note": "Paralisada"
+            }
+        ],
+        "238/0": [
+            {
+                "name": "Vit\u00f3ria x S\u00e3o Marcos via Guarapari",
+                "from": "Vit\u00f3ria",
+                "to": "S\u00e3o Marcos",
+                "via": "Guarapari",
+                "services": "Mo-Su",
+                "times": ["13:30"]
+            },
+            {
+                "name": "S\u00e3o Marcos x Vit\u00f3ria via Guarapari",
+                "from": "S\u00e3o Marcos",
+                "to": "Vit\u00f3ria",
+                "via": "Guarapari",
+                "services": "Mo-Su",
+                "times": ["07:00"]
+            }
+        ],
+        "256/1": [
+            {
+                "name": "Dom Bosco x Ipiranga via Rod do Sol",
+                "from": "Dom Bosco",
+                "to": "Ipiranga",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo-Su",
+                "times": ["07:15", "07:45", "09:00", "10:00", "11:15", "12:15", "13:15", "15:45", "16:45", "18:15", "19:45", "20:15"]
+            },
+            {
+                "name": "Dom Bosco x Ipiranga via Rod do Sol",
+                "from": "Dom Bosco",
+                "to": "Ipiranga",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo-Sa",
+                "times": ["08:15"]
+            },
+            {
+                "name": "Dom Bosco x Ipiranga via Rod do Sol",
+                "from": "Dom Bosco",
+                "to": "Ipiranga",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo-Fr",
+                "times": ["17:30", "17:45"]
+            },
+            {
+                "name": "Ipiranga x Dom Bosco via Rod do Sol",
+                "from": "Ipiranga",
+                "to": "Dom Bosco",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo-Su",
+                "times": ["05:15", "05:45", "07:15", "08:20", "09:30", "10:20", "11:30", "12:45", "13:45", "14:30", "15:30", "16:15", "17:45", "18:15"]
+            },
+            {
+                "name": "Ipiranga x Dom Bosco via Rod do Sol",
+                "from": "Ipiranga",
+                "to": "Dom Bosco",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo-Sa",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Ipiranga x Dom Bosco via Rod do Sol",
+                "from": "Ipiranga",
+                "to": "Dom Bosco",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo-Fr",
+                "times": ["06:00", "07:14", "14:15"]
+            },
+            {
+                "name": "Ipiranga x Dom Bosco via Rod do Sol",
+                "from": "Ipiranga",
+                "to": "Dom Bosco",
+                "via": "Rodovia do Sol",
+                "note": "Periodo de Verao (15 de Dezembro a 28 de fevereiro)",
+                "start_time": "12-15",
+                "end_time": "02-28",
+                "services": "Mo",
+                "times": ["05:14"]
+            },
+            {
+                "name": "Dom Bosco x Ipiranga via Rod do Sol",
+                "from": "Dom Bosco",
+                "to": "Ipiranga",
+                "via": "Rodovia do Sol",
+                "note": "Baixa temporada (01 marco a 14 de dezembro)",
+                "start_time": "03-01",
+                "end_time": "12-14",
+                "services": "Mo-Su",
+                "times": ["07:30", "08:00", "11:15", "12:15", "15:45", "16:45", "18:15", "20:15"]
+            },
+            {
+                "name": "Dom Bosco x Ipiranga via Rod do Sol",
+                "from": "Dom Bosco",
+                "to": "Ipiranga",
+                "via": "Rodovia do Sol",
+                "note": "Baixa temporada (01 marco a 14 de dezembro)",
+                "start_time": "03-01",
+                "end_time": "12-14",
+                "services": "Mo-Sa",
+                "times": ["07:00", "08:00", "13:15"]
+            },
+            {
+                "name": "Dom Bosco x Ipiranga via Rod do Sol",
+                "from": "Dom Bosco",
+                "to": "Ipiranga",
+                "via": "Rodovia do Sol",
+                "note": "Baixa temporada (01 marco a 14 de dezembro)",
+                "start_time": "03-01",
+                "end_time": "12-14",
+                "services": "Mo-Fr",
+                "times": ["10:00", "17:30", "19:45"]
+            },
+            {
+                "name": "Dom Bosco x Ipiranga via Rod do Sol",
+                "from": "Dom Bosco",
+                "to": "Ipiranga",
+                "via": "Rodovia do Sol",
+                "note": "Baixa temporada (01 marco a 14 de dezembro)",
+                "start_time": "03-01",
+                "end_time": "12-14",
+                "services": "Sa-Su",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Ipiranga x Dom Bosco via Rod do Sol",
+                "from": "Ipiranga",
+                "to": "Dom Bosco",
+                "via": "Rodovia do Sol",
+                "note": "Baixa temporada (01 marco a 14 de dezembro)",
+                "start_time": "03-01",
+                "end_time": "12-14",
+                "services": "Mo-Su",
+                "times": ["07:15", "09:30", "10:20", "13:45", "14:30", "16:15", "18:15"]
+            },
+            {
+                "name": "Ipiranga x Dom Bosco via Rod do Sol",
+                "from": "Ipiranga",
+                "to": "Dom Bosco",
+                "via": "Rodovia do Sol",
+                "note": "Baixa temporada (01 marco a 14 de dezembro)",
+                "start_time": "03-01",
+                "end_time": "12-14",
+                "services": "Mo-Sa",
+                "times": ["05:15", "05:45", "11:30"]
+            },
+            {
+                "name": "Ipiranga x Dom Bosco via Rod do Sol",
+                "from": "Ipiranga",
+                "to": "Dom Bosco",
+                "via": "Rodovia do Sol",
+                "note": "Baixa temporada (01 marco a 14 de dezembro)",
+                "start_time": "03-01",
+                "end_time": "12-14",
+                "services": "Mo-Fr",
+                "times": ["06:00", "08:20", "14:15", "15:30", "19:45"]
+            },
+            {
+                "name": "Ipiranga x Dom Bosco via Rod do Sol",
+                "from": "Ipiranga",
+                "to": "Dom Bosco",
+                "via": "Rodovia do Sol",
+                "note": "Baixa temporada (01 marco a 14 de dezembro)",
+                "start_time": "03-01",
+                "end_time": "12-14",
+                "services": "Mo-Fr,Su",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Dom Bosco x Ipiranga via Rod do Sol (RP)",
+                "from": "Dom Bosco",
+                "to": "Recanto da Sereia",
+                "via": "Rodovia do Sol",
+                "note": "Cancelado",
+                "services": "Mo-Fr",
+                "times": ["18:14"]
+            }
+        ],
+        "256/5": [
+            {
+                "name": "Dom Bosco x Ipiranga via Rod do Sol",
+                "from": "Dom Bosco",
+                "to": "Ipiranga",
+                "via": "Rodovia do Sol",
+                "services": "Sa",
+                "times": ["17:15"]
+            },
+            {
+                "name": "Ipiranga x Dom Bosco via Rod do Sol",
+                "from": "Ipiranga",
+                "to": "Dom Bosco",
+                "via": "Rodovia do Sol",
+                "services": "Sa",
+                "times": ["14:15"]
+            }
+        ]
+    }]
+}
