@@ -547,6 +547,26 @@
                 "services": "Mo-Su",
                 "times": ["07:10", "11:10"]
             }
+        ],
+        "308/6": [
+            {
+                "name": "Guarapari x Piuma",
+                "from": "Guarapari",
+                "to": "Piúma",
+                "start_date": "2014-12-15",
+                "end_date": "2015-02-25",
+                "services": "Mo-Su",
+                "times": ["10:10", "16:10", "19:20"]
+            },
+            {
+                "name": "Piuma x Guarapari",
+                "from": "Piúma",
+                "to": "Guarapari",
+                "start_date": "2014-12-15",
+                "end_date": "2015-02-25",
+                "services": "Mo-Su",
+                "times": ["08:30", "13:30", "17:10"]
+            }
         ]
     }]
 }

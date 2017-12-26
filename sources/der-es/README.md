@@ -14,11 +14,12 @@ These files are manually maintained, and are meant to allow creating inter-urban
 
 ## `routes`
 
-- `###/#` Route reference with DER-ES (not necessary operators `ref` key)
+- `###/#` Route reference with DER-ES (not necessary operators `ref` key, can be mapped as `ref:der-es`)
 - `name` A name for the route
+- `ref` Operator's `ref`, the one that should be used in the relation if known
 - `from` Where the route goes from, same as the relation `from` tag
 - `to` Where the route goes to, same as the relation `to` tag
-- `via` Optional, any via points in the route, same as the relation `via` tag
+- `via` Optional, any via points in the route, same as the relation `via` tag, as single string or array of strings
 - `services` ISO date codes for when the route services
 - `times` Array of start times for the `from` location
 - `note` Any notes related to the route
