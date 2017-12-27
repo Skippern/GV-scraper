@@ -1,0 +1,37 @@
+{
+    "operator": "Expresso Aracruz Ltda",
+    "operator:ref": "1-068",
+    "updated": "2014-05-07",
+    "routes": [{
+        "351/0": [
+            {
+                "name": "Nova Almeida x Aracruz",
+                "from": "Nova Almeida",
+                "to": "Aracruz",
+                "services": "Mo-Fr",
+                "times": ["08:00", "12:10", "17:40"]
+            },
+            {
+                "name": "Aracruz x Nova Almeida",
+                "from": "Aracruz",
+                "to": "Nova Almeida",
+                "services": "Mo-Fr",
+                "times": ["06:00", "10:40", "15:10"]
+            },
+            {
+                "name": "Nova Almeida x Aracruz",
+                "from": "Nova Almeida",
+                "to": "Aracruz",
+                "services": "Sa-Su",
+                "times": ["08:00", "12:10", "18:10"]
+            },
+            {
+                "name": "Aracruz x Nova Almeida",
+                "from": "Aracruz",
+                "to": "Nova Almeida",
+                "services": "Sa-Su",
+                "times": ["06:00", "10:40", "16:10"]
+            }
+        ]
+    }]
+}
