@@ -567,6 +567,188 @@
                 "services": "Mo-Su",
                 "times": ["08:30", "13:30", "17:10"]
             }
+        ],
+        "334/4": [
+            {
+                "name": "Trevo de Campo Acima x Praia dos Cações",
+                "from": "Trevo de Campo Acima",
+                "to": "Praia dos Cações",
+                "services": "Mo-Su",
+                "times": ["05:30", "06:30", "07:30", "08:30", "09:30", "10:30", "11:30", "12:30", "13:30", "14:30", "15:30", "16:30", "17:30", "18:30", "19:30"]
+            },
+            {
+                "name": "Praia dos Cações x Trevo de Campo Acima",
+                "from": "Praia dos Cações",
+                "to": "Trevo de Campo Acima",
+                "services": "Mo-Su",
+                "times": ["05:30", "06:30", "07:30", "08:30", "09:30", "10:30", "11:30", "12:30", "13:30", "14:30", "15:30", "16:30", "17:30", "18:30", "19:30"]
+            }
+        ],
+        "335/4": [
+            {
+                "name": "Capinzal x Capinzal (circ) via Vila de Itap sentido horario",
+                "from": "Capinzal",
+                "to": "Capinzal",
+                "via": "Vila de Itapemirim",
+                "note": "Circular sentido horario",
+                "services": "Mo-Su",
+                "times": ["04:50", "06:00", "07:00", "08:30", "10:00", "11:30", "12:45", "14:00", "15:45", "17:20", "18:30", "19:30", "21:00", "22:20"]
+            },
+            {
+                "name": "Capinzal x Capinzal (circ) via Vila de Itap sentido anti horario",
+                "from": "Capinzal",
+                "to": "Capinzal",
+                "via": "Vila de Itapemirim",
+                "note": "Circular sentido anti horario",
+                "services": "Mo-Sa",
+                "times": ["07:20", "17:00", "21:20"]
+            }
+        ],
+        "336/1": [
+            {
+                "name": "Marataízes x Itaipava",
+                "from": "Marataízes",
+                "to": "Itaipava",
+                "services": "Mo-Sa",
+                "times": ["09:45", "13:50", "16:30"]
+            },
+            {
+                "name": "Itaipava x Marataízes",
+                "from": "Itaipava",
+                "to": "Marataízes",
+                "services": "Mo-Sa",
+                "times": ["07:00", "11:20", "15:10"]
+            }
+        ],
+        "337/4": [
+            {
+                "name": "Vila Itapemirim x Xodó I",
+                "from": "Vila de Itapemirim",
+                "to": "Xodó I",
+                "services": "Mo-Su",
+                "times": ["20:15", "21:15", "22:15", "23:15"]
+            },
+            {
+                "name": "Xodó I x Vila Itapemirim",
+                "from": "Xodó I",
+                "to": "Vila de Itapemirim",
+                "services": "Mo-Su",
+                "times": ["20:45", "21:45", "22:24", "23:45"]
+            }
+        ],
+        "338/4": [
+            {
+                "name": "Vila Itapemirim x Marataízes",
+                "from": "Vila de Itapemirim",
+                "to": "Marataízes",
+                "services": "Mo-Sa",
+                "times": ["05:45", "06:45", "07:45", "20:45", "21:45", "22:45", "23:45"]
+            },
+            {
+                "name": "Marataízes x Vila Itapemirim", 
+                "from": "Marataízes",
+                "to": "Vila de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["05:15", "06:15", "07:15", "20:15", "21:15", "22:15", "23:15"]
+            },
+            {
+                "name": "Vila Itapemirim x Marataízes",
+                "from": "Vila de Itapemirim",
+                "to": "Marataízes",
+                "services": "Su,Ho",
+                "times": ["20:45", "21:45", "22:45", "23:45"]
+            },
+            {
+                "name": "Marataízes x Vila Itapemirim",
+                "from": "Marataízes",
+                "to": "Vila de Itapemirim",
+                "services": "Su,Ho",
+                "times": ["20:15", "21:15", "22:15", "23:15"]
+            }
+        ],
+        "339/1": [
+            {
+                "name": "Praia de Marobá x Itaipava",
+                "from": "Praia de Marobá",
+                "to": "Itaipava",
+                "services": "Mo-Su",
+                "times": ["06:40", "11:00", "15:15"]
+            },
+            {
+                "name": "Itaipava x Praia de Marobá",
+                "from": "Itaipava",
+                "to": "Praia de Marobá",
+                "services": "Mo-Su",
+                "times": ["08:30", "13:30", "17:00"]
+            }
+        ],
+        "340/4": [
+            {
+                "name": "Grauna x Grauna (circular) sentido horario",
+                "from": "Grauna",
+                "to": "Grauna",
+                "note": "Circular sentido horario",
+                "services": "Mo-Su",
+                "times": ["05:50", "06:50", "07:50", "08:50", "09:50", "10:50", "11:50", "12:50", "13:50", "14:50", "15:50", "16:50", "17:50", "18:50", "19:50", "21:50"]
+            },
+            {
+                "name": "Grauna x Grauna (circular) sentido anti horario",
+                "from": "Grauna",
+                "to": "Grauna",
+                "note": "Circular sentido anti horario",
+                "services": "Mo-Sa",
+                "times": ["07:10", "08:10", "16:10", "17:10"]
+            }
+        ],
+        "341/1": [
+            {
+                "name": "Marataízes x Safra",
+                "from": "Marataízes",
+                "to": "Safra",
+                "services": "Mo-Sa",
+                "times": ["11:00", "15:40", "17:50"]
+            },
+            {
+                "name": "Safra x Marataízes",
+                "from": "Safra",
+                "to": "Marataízes",
+                "services": "Mo-Sa",
+                "times": ["06:00", "14:00", "16:50"]
+            }
+        ],
+        "350/1": [
+            {
+                "name": "Vila Itapemirim x Boa Vista via Brejo dos Patos",
+                "from": "Vila de Itapemirim",
+                "to": "Boa Vista",
+                "via": "Brejo dos Patos",
+                "services": "Mo-Fr",
+                "times": ["06:00", "10:00", "14:30"]
+            },
+            {
+                "name": "Vila Itapemirim x Boa Vista via Brejo dos Patos",
+                "from": "Vila de Itapemirim",
+                "to": "Boa Vista",
+                "via": "Brejo dos Patos",
+                "services": "Sa",
+                "times": ["06:00", "14:00"]                
+            },
+            {
+                "name": "Boa Vista x Vila Itapemirim via Brejo dos Patos",
+                "from": "Boa Vista",
+                "to": "Vila de Itapemirim",
+                "via": "Brejo dos Patos",
+                "services": "Mo-Fr",
+                "times": ["07:15", "11:00", "15:30"]
+            },
+            {
+                "name": "Boa Vista x Vila Itapemirim via Brejo dos Patos",
+                "from": "Boa Vista",
+                "to": "Vila de Itapemirim",
+                "via": "Brejo dos Patos",
+                "services": "Sa",
+                "times": ["07:15",  "16:00"]
+            }
         ]
     }]
 }
