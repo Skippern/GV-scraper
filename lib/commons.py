@@ -97,4 +97,12 @@ def calculate_end_time(start_time, duration):
         end_time = u"{0}+{1}".format(end_time, str(day))
     return end_time
 
+def remove_duplicate(values):
+    output = []
+    seen = set()
+    for value in values:
+        if value not in seen:
+            output.append(value)
+            seen.add(value)
+    return output
 
