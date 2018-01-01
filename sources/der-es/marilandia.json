@@ -2,7 +2,7 @@
     "operator": "Viação Marilândia Ltda",
     "operator:ref": "1-018",
     "updated": "2014-07-05",
-    "routes": [{
+    "routes": {
         "080/0": [
             {
                 "name": "Colatina x Palmas",
@@ -141,5 +141,5 @@
                 "times": ["13:30"]
             }
         ]
-    }]
+    }
 }

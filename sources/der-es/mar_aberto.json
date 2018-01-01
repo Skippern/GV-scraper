@@ -2,7 +2,7 @@
     "operator": "Viação Mar Aberto Ltda",
     "operator:ref": "1-053",
     "updated": "2014-07-05",
-    "routes": [{
+    "routes": {
         "351/0": [
             {
                 "name": "Conceição da Barra x Pedro Canário",
@@ -19,5 +19,5 @@
                 "times": ["13:00"]
             }
         ]
-    }]
+    }
 }

@@ -2,7 +2,7 @@
     "operator": "Viação Alvorada Ltda",
     "operator:ref": "1-003",
     "updated": "2017-12-06",
-    "routes": [{
+    "routes": {
         "032/0": [
             {
                 "name": "Dom Bosco x Praia do Sol (Circular)",
@@ -77,7 +77,7 @@
                 "from": "Vitória",
                 "to": "Carolina",
                 "via": "Domingo Martins",
-                "note": "Trafego Mutuo com a Viacao Aguia Branca S/A\nPartidas invertidas Quinzenalmente",
+                "note": "Trafego Mutuo com a Viação Águia Branca S/A\nPartidas invertidas Quinzenalmente",
                 "services": "Mo-Su",
                 "times": ["06:30", "14:30"]
             },
@@ -86,7 +86,7 @@
                 "from": "Carolina",
                 "to": "Vitória",
                 "via": "Domingo Martins",
-                "note": "Trafego Mutuo com a Viacao Aguia Branca S/A\nPartidas invertidas Quinzenalmente",
+                "note": "Trafego Mutuo com a Viação Águia Branca S/A\nPartidas invertidas Quinzenalmente",
                 "services": "Mo-Su",
                 "times": ["06:30", "14:30"]
             }
@@ -541,5 +541,5 @@
                 "times": ["14:15"]
             }
         ]
-    }]
+    }
 }

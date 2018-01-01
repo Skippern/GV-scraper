@@ -2,7 +2,7 @@
     "operator": "Viação Itapemirim S/A",
     "operator:ref": "1-009",
     "updated": "2014-12-22",
-    "routes": [{
+    "routes": {
         "351/0": [
             {
                 "name": "Guarapari x Marataízes via Anchieta",
@@ -41,5 +41,5 @@
                 "times": ["18:40"]
             }
         ]
-    }]
+    }
 }

@@ -2,7 +2,7 @@
     "operator": "Viação Guanduense Ltda",
     "operator:ref": "1-352",
     "updated": "2017-12-05",
-    "routes": [{
+    "routes": {
         "365/0": [
             {
                 "name": "Baixo Guandú x Pancas via Alto Motum",
@@ -30,5 +30,5 @@
                 "note": "Paralisado - Proc 80068820"
             }
         ]
-    }]
+    }
 }

@@ -2,7 +2,7 @@
     "operator": "Viação Motum Preto Ltda",
     "operator:ref": "1-016",
     "updated": "2017-09-20",
-    "routes": [{
+    "routes": {
         "168/0": [
             {
                 "name": "Baixo Guandú x Laranja da Terra",
@@ -95,5 +95,5 @@
                 "note": "Paralisado"
             }
         ]
-    }]
+    }
 }

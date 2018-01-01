@@ -2,7 +2,7 @@
     "operator": "Expresso Aracruz Ltda",
     "operator:ref": "1-068",
     "updated": "2014-05-07",
-    "routes": [{
+    "routes": {
         "351/0": [
             {
                 "name": "Nova Almeida x Aracruz",
@@ -33,5 +33,5 @@
                 "times": ["06:00", "10:40", "16:10"]
             }
         ]
-    }]
+    }
 }

@@ -2,7 +2,7 @@
     "operator": "Cordial Transportes e Turismo Ltda",
     "operator:ref": "1-304",
     "updated": "2017-05-22",
-    "routes": [{
+    "routes": {
         "062/0": [
             {
                 "name": "Aracruz x João Neiva via Ibiraçu",
@@ -69,5 +69,5 @@
                 "times": ["05:45"]
             }
         ]
-    }]
+    }
 }
