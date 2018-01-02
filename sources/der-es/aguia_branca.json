@@ -1410,6 +1410,8 @@
                 "to": "Montanha",
                 "via": "2 de Julho",
                 "note": " Paralisação Provisoria ate 31/05/2018",
+                "services": "",
+                "times": [],
                 "start_date": "2018-05-31"
             },
             {
@@ -1418,6 +1420,8 @@
                 "to": "Pedro Canário",
                 "via": "2 de Julho",
                 "note": " Paralisação Provisoria ate 31/05/2018",
+                "services": "",
+                "times": [],
                 "start_date": "2018-05-31"
             }
         ],
@@ -1686,13 +1690,17 @@
                 "name": "Vila Velha (Ramal) x Aracruz",
                 "from": "Vila Velha",
                 "to": "Aracruz",
-                "note": "Cancelado"
+                "note": "Cancelado",
+                "services": "",
+                "times": []
             },
             {
                 "name": "Aracruz x Vila Velha (Ramal)",
                 "from": "Aracruz",
                 "to": "Vila Velha",
-                "note": "Cancelado"
+                "note": "Cancelado",
+                "services": "",
+                "times": []
             }
         ],
         "103/2": [
