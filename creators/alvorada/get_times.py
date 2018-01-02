@@ -43,6 +43,18 @@ for bl in blacklisted:
 
 for ref, origin, destination, via, duration in durationsList['routes']:
     if duration > 0:
+        try:
+            test = source['routes'][ref]
+        except KeyError:
+            source['routes'][ref] = []
+            for r in source['routes']:
+                for rr in source['routes'][r]:
+                    try:
+                        if rr['ref'] == ref:
+                            source['routes'][ref].append(rr)
+                            break
+                    except:
+                        pass
         for s in source['routes'][ref]:
             if s['from'] == origin and s['to'] == destination:
                 myRoutes = create_json(myRoutes, noneCal, ref, origin, destination, s['services'], s['times'], duration)
