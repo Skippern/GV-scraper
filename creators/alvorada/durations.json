@@ -1,0 +1,197 @@
+{
+    "network": "Alvorada", 
+    "operator": "Via\u00e7\u00e3o Alvorada", 
+    "routes": [
+        [
+            "256/1", 
+            "Dom Bosco", 
+            "Ipiranga", 
+            "Rodovia do Sol", 
+            136
+        ], 
+        [
+            "256/1", 
+            "Ipiranga", 
+            "Dom Bosco", 
+            "Rodovia do Sol", 
+            136
+        ], 
+        [
+            "256/1", 
+            "Dom Bosco", 
+            "Recanto da Sereia", 
+            "Rodovia do Sol", 
+            -5
+        ], 
+        [
+            "119/0", 
+            "Vit\u00f3ria", 
+            "Alfredo Chaves", 
+            "BR-101", 
+            122
+        ], 
+        [
+            "119/0", 
+            "Alfredo Chaves", 
+            "Vit\u00f3ria", 
+            "BR-101", 
+            128
+        ], 
+        [
+            "035/0", 
+            "Alfredo Chaves", 
+            "Cachoeiro de Itapemirim", 
+            null, 
+            -5
+        ], 
+        [
+            "035/0", 
+            "Cachoeiro de Itapemirim", 
+            "Alfredo Chaves", 
+            null, 
+            -5
+        ], 
+        [
+            "256/5", 
+            "Dom Bosco", 
+            "Ipiranga", 
+            "Rodovia do Sol", 
+            -5
+        ], 
+        [
+            "256/5", 
+            "Ipiranga", 
+            "Dom Bosco", 
+            "Rodovia do Sol", 
+            -5
+        ], 
+        [
+            "238/0", 
+            "Vit\u00f3ria", 
+            "S\u00e3o Marcos", 
+            "Guarapari", 
+            -5
+        ], 
+        [
+            "238/0", 
+            "S\u00e3o Marcos", 
+            "Vit\u00f3ria", 
+            "Guarapari", 
+            -5
+        ], 
+        [
+            "054/0", 
+            "Vit\u00f3ria", 
+            "Carolina", 
+            "Domingo Martins", 
+            -5
+        ], 
+        [
+            "054/0", 
+            "Carolina", 
+            "Vit\u00f3ria", 
+            "Domingo Martins", 
+            -5
+        ], 
+        [
+            "205/0", 
+            "Domingos Martins", 
+            "Garraf\u00e3o", 
+            null, 
+            -5
+        ], 
+        [
+            "205/0", 
+            "Garraf\u00e3o", 
+            "Domingos Martins", 
+            null, 
+            -5
+        ], 
+        [
+            "063/0", 
+            "Vit\u00f3ria", 
+            "Guarapari", 
+            "Rodovia do Sol", 
+            133
+        ], 
+        [
+            "063/0", 
+            "Guarapari", 
+            "Vit\u00f3ria", 
+            "Rodovia do Sol", 
+            140
+        ], 
+        [
+            "063/5", 
+            "Vit\u00f3ria", 
+            "Guarapari", 
+            "Rodovia do Sol", 
+            -5
+        ], 
+        [
+            "063/5", 
+            "Guarapari", 
+            "Vit\u00f3ria", 
+            "Rodovia do Sol", 
+            -5
+        ], 
+        [
+            "063/5", 
+            "Aeroporto", 
+            "Guarapari", 
+            null, 
+            129
+        ], 
+        [
+            "063/5", 
+            "Guarapari", 
+            "Aeroporto", 
+            null, 
+            135
+        ], 
+        [
+            "033/0", 
+            "Vit\u00f3ria", 
+            "Alfredo Chaves", 
+            "Guarapari", 
+            179
+        ], 
+        [
+            "033/0", 
+            "Alfredo Chaves", 
+            "Vit\u00f3ria", 
+            "Guarapari", 
+            185
+        ], 
+        [
+            "032/0", 
+            "Dom Bosco", 
+            "Praia do Sol", 
+            null, 
+            -5
+        ], 
+        [
+            "032/0", 
+            "Praia do Sol", 
+            "Dom Bosco", 
+            null, 
+            -5
+        ], 
+        [
+            "034/0", 
+            "Dom Bosco", 
+            "Setiba", 
+            "Rodovia do Sol", 
+            111
+        ], 
+        [
+            "034/0", 
+            "Setiba", 
+            "Dom Bosco", 
+            "Rodovia do Sol", 
+            110
+        ]
+    ], 
+    "source": "DER-ES", 
+    "updated": "2018-01-02"
+}

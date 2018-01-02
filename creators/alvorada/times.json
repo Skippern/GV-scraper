@@ -1,0 +1,1346 @@
+{
+    "excluded_lines": [
+        "033/0", 
+        "034/0", 
+        "063/0", 
+        "063/5", 
+        "119/0", 
+        "256/1"
+    ], 
+    "network": "Alvorada", 
+    "operator": "Via\u00e7\u00e3o Alvorada", 
+    "routes": {
+        "033/0": [
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Alfredo Chaves"
+                ], 
+                "times": [
+                    [
+                        "16:00", 
+                        "18:59"
+                    ]
+                ], 
+                "to": "Alfredo Chaves"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Alfredo Chaves", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Alfredo Chaves", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "19:10", 
+                        "22:15"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }
+        ], 
+        "034/0": [
+            {
+                "exceptions": [], 
+                "from": "Dom Bosco", 
+                "services": [
+                    "Tu,Th"
+                ], 
+                "stations": [
+                    "Dom Bosco", 
+                    "Setiba"
+                ], 
+                "times": [
+                    [
+                        "07:30", 
+                        "09:21"
+                    ]
+                ], 
+                "to": "Setiba"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Setiba", 
+                "services": [
+                    "Tu,Th"
+                ], 
+                "stations": [
+                    "Setiba", 
+                    "Dom Bosco"
+                ], 
+                "times": [
+                    [
+                        "13:00", 
+                        "14:50"
+                    ]
+                ], 
+                "to": "Dom Bosco"
+            }
+        ], 
+        "063/0": [
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Guarapari"
+                ], 
+                "times": [
+                    [
+                        "06:00", 
+                        "08:13"
+                    ], 
+                    [
+                        "06:30", 
+                        "08:43"
+                    ], 
+                    [
+                        "07:00", 
+                        "09:13"
+                    ], 
+                    [
+                        "07:30", 
+                        "09:43"
+                    ], 
+                    [
+                        "08:00", 
+                        "10:13"
+                    ], 
+                    [
+                        "08:30", 
+                        "10:43"
+                    ], 
+                    [
+                        "09:00", 
+                        "11:13"
+                    ], 
+                    [
+                        "09:30", 
+                        "11:43"
+                    ], 
+                    [
+                        "10:00", 
+                        "12:13"
+                    ], 
+                    [
+                        "10:30", 
+                        "12:43"
+                    ], 
+                    [
+                        "11:00", 
+                        "13:13"
+                    ], 
+                    [
+                        "11:30", 
+                        "13:43"
+                    ], 
+                    [
+                        "12:00", 
+                        "14:13"
+                    ], 
+                    [
+                        "12:30", 
+                        "14:43"
+                    ], 
+                    [
+                        "13:00", 
+                        "15:13"
+                    ], 
+                    [
+                        "14:00", 
+                        "16:13"
+                    ], 
+                    [
+                        "14:30", 
+                        "16:43"
+                    ], 
+                    [
+                        "15:00", 
+                        "17:13"
+                    ], 
+                    [
+                        "15:20", 
+                        "17:33"
+                    ], 
+                    [
+                        "16:00", 
+                        "18:13"
+                    ], 
+                    [
+                        "17:00", 
+                        "19:13"
+                    ], 
+                    [
+                        "17:30", 
+                        "19:43"
+                    ], 
+                    [
+                        "18:00", 
+                        "20:13"
+                    ], 
+                    [
+                        "18:30", 
+                        "20:43"
+                    ], 
+                    [
+                        "19:00", 
+                        "21:13"
+                    ], 
+                    [
+                        "20:15", 
+                        "22:28"
+                    ], 
+                    [
+                        "21:00", 
+                        "23:13"
+                    ], 
+                    [
+                        "22:30", 
+                        "00:43+1"
+                    ]
+                ], 
+                "to": "Guarapari"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Guarapari"
+                ], 
+                "times": [
+                    [
+                        "05:10", 
+                        "07:23"
+                    ], 
+                    [
+                        "06:10", 
+                        "08:23"
+                    ], 
+                    [
+                        "12:30", 
+                        "14:43"
+                    ], 
+                    [
+                        "17:15", 
+                        "19:28"
+                    ]
+                ], 
+                "to": "Guarapari"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Fr"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Guarapari"
+                ], 
+                "times": [
+                    [
+                        "05:40", 
+                        "07:53"
+                    ], 
+                    [
+                        "16:15", 
+                        "18:28"
+                    ], 
+                    [
+                        "16:30", 
+                        "18:43"
+                    ]
+                ], 
+                "to": "Guarapari"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Guarapari"
+                ], 
+                "times": [
+                    [
+                        "06:15", 
+                        "08:28"
+                    ]
+                ], 
+                "to": "Guarapari"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Guarapari"
+                ], 
+                "times": [
+                    [
+                        "06:20", 
+                        "08:33"
+                    ], 
+                    [
+                        "07:00", 
+                        "09:13"
+                    ], 
+                    [
+                        "08:00", 
+                        "10:13"
+                    ], 
+                    [
+                        "09:00", 
+                        "11:13"
+                    ], 
+                    [
+                        "10:00", 
+                        "12:13"
+                    ], 
+                    [
+                        "11:00", 
+                        "13:13"
+                    ], 
+                    [
+                        "11:30", 
+                        "13:43"
+                    ], 
+                    [
+                        "12:00", 
+                        "14:13"
+                    ], 
+                    [
+                        "13:00", 
+                        "15:13"
+                    ], 
+                    [
+                        "14:00", 
+                        "16:13"
+                    ], 
+                    [
+                        "15:00", 
+                        "17:13"
+                    ], 
+                    [
+                        "15:30", 
+                        "17:43"
+                    ], 
+                    [
+                        "17:00", 
+                        "19:13"
+                    ], 
+                    [
+                        "18:00", 
+                        "20:13"
+                    ], 
+                    [
+                        "18:30", 
+                        "20:43"
+                    ], 
+                    [
+                        "19:00", 
+                        "21:13"
+                    ], 
+                    [
+                        "21:00", 
+                        "23:13"
+                    ]
+                ], 
+                "to": "Guarapari"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Guarapari"
+                ], 
+                "times": [
+                    [
+                        "05:10", 
+                        "07:23"
+                    ], 
+                    [
+                        "12:30", 
+                        "14:43"
+                    ], 
+                    [
+                        "17:15", 
+                        "19:28"
+                    ]
+                ], 
+                "to": "Guarapari"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Fr"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Guarapari"
+                ], 
+                "times": [
+                    [
+                        "05:40", 
+                        "07:53"
+                    ], 
+                    [
+                        "16:30", 
+                        "18:43"
+                    ]
+                ], 
+                "to": "Guarapari"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Guarapari", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Guarapari", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "05:00", 
+                        "07:20"
+                    ], 
+                    [
+                        "06:00", 
+                        "08:20"
+                    ], 
+                    [
+                        "06:40", 
+                        "09:00"
+                    ], 
+                    [
+                        "07:20", 
+                        "09:40"
+                    ], 
+                    [
+                        "07:40", 
+                        "10:00"
+                    ], 
+                    [
+                        "08:00", 
+                        "10:20"
+                    ], 
+                    [
+                        "08:40", 
+                        "11:00"
+                    ], 
+                    [
+                        "09:30", 
+                        "11:50"
+                    ], 
+                    [
+                        "10:00", 
+                        "12:20"
+                    ], 
+                    [
+                        "10:40", 
+                        "13:00"
+                    ], 
+                    [
+                        "11:20", 
+                        "13:40"
+                    ], 
+                    [
+                        "12:00", 
+                        "14:20"
+                    ], 
+                    [
+                        "13:00", 
+                        "15:20"
+                    ], 
+                    [
+                        "14:00", 
+                        "16:20"
+                    ], 
+                    [
+                        "15:00", 
+                        "17:20"
+                    ], 
+                    [
+                        "16:00", 
+                        "18:20"
+                    ], 
+                    [
+                        "16:30", 
+                        "18:50"
+                    ], 
+                    [
+                        "17:00", 
+                        "19:20"
+                    ], 
+                    [
+                        "17:30", 
+                        "19:50"
+                    ], 
+                    [
+                        "18:00", 
+                        "20:20"
+                    ], 
+                    [
+                        "18:30", 
+                        "20:50"
+                    ], 
+                    [
+                        "19:00", 
+                        "21:20"
+                    ], 
+                    [
+                        "20:30", 
+                        "22:50"
+                    ], 
+                    [
+                        "21:00", 
+                        "23:20"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Guarapari", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Guarapari", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "05:40", 
+                        "08:00"
+                    ], 
+                    [
+                        "06:20", 
+                        "08:40"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Guarapari", 
+                "services": [
+                    "Mo-Fr"
+                ], 
+                "stations": [
+                    "Guarapari", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "12:30", 
+                        "14:50"
+                    ], 
+                    [
+                        "15:30", 
+                        "17:50"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Guarapari", 
+                "services": [
+                    "Mo"
+                ], 
+                "stations": [
+                    "Guarapari", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "04:50", 
+                        "07:10"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Guarapari", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Guarapari", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "05:00", 
+                        "07:20"
+                    ], 
+                    [
+                        "06:00", 
+                        "08:20"
+                    ], 
+                    [
+                        "07:00", 
+                        "09:20"
+                    ], 
+                    [
+                        "08:00", 
+                        "10:20"
+                    ], 
+                    [
+                        "10:00", 
+                        "12:20"
+                    ], 
+                    [
+                        "12:00", 
+                        "14:20"
+                    ], 
+                    [
+                        "13:00", 
+                        "15:20"
+                    ], 
+                    [
+                        "14:00", 
+                        "16:20"
+                    ], 
+                    [
+                        "15:00", 
+                        "17:20"
+                    ], 
+                    [
+                        "16:00", 
+                        "18:20"
+                    ], 
+                    [
+                        "17:00", 
+                        "19:20"
+                    ], 
+                    [
+                        "18:00", 
+                        "20:20"
+                    ], 
+                    [
+                        "19:00", 
+                        "21:20"
+                    ], 
+                    [
+                        "21:00", 
+                        "23:20"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Guarapari", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Guarapari", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "06:30", 
+                        "08:50"
+                    ], 
+                    [
+                        "08:30", 
+                        "10:50"
+                    ], 
+                    [
+                        "11:20", 
+                        "13:40"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Guarapari", 
+                "services": [
+                    "Mo-Fr"
+                ], 
+                "stations": [
+                    "Guarapari", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "10:40", 
+                        "13:00"
+                    ], 
+                    [
+                        "12:30", 
+                        "14:50"
+                    ], 
+                    [
+                        "15:30", 
+                        "17:50"
+                    ], 
+                    [
+                        "17:30", 
+                        "19:50"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }
+        ], 
+        "063/5": [
+            {
+                "exceptions": [], 
+                "from": "Aeroporto", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Aeroporto", 
+                    "Guarapari"
+                ], 
+                "times": [
+                    [
+                        "08:15", 
+                        "10:24"
+                    ], 
+                    [
+                        "10:30", 
+                        "12:39"
+                    ], 
+                    [
+                        "13:00", 
+                        "15:09"
+                    ], 
+                    [
+                        "16:30", 
+                        "18:39"
+                    ], 
+                    [
+                        "19:30", 
+                        "21:39"
+                    ]
+                ], 
+                "to": "Guarapari"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Guarapari", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Guarapari", 
+                    "Aeroporto"
+                ], 
+                "times": [
+                    [
+                        "05:30", 
+                        "07:45"
+                    ], 
+                    [
+                        "08:00", 
+                        "10:15"
+                    ], 
+                    [
+                        "11:00", 
+                        "13:15"
+                    ], 
+                    [
+                        "14:00", 
+                        "16:15"
+                    ], 
+                    [
+                        "17:30", 
+                        "19:45"
+                    ]
+                ], 
+                "to": "Aeroporto"
+            }
+        ], 
+        "119/0": [
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Alfredo Chaves"
+                ], 
+                "times": [
+                    [
+                        "10:00", 
+                        "12:02"
+                    ], 
+                    [
+                        "18:15", 
+                        "20:17"
+                    ]
+                ], 
+                "to": "Alfredo Chaves"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Alfredo Chaves"
+                ], 
+                "times": [
+                    [
+                        "06:00", 
+                        "08:02"
+                    ]
+                ], 
+                "to": "Alfredo Chaves"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Alfredo Chaves", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Alfredo Chaves", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "05:30", 
+                        "07:38"
+                    ], 
+                    [
+                        "16:15", 
+                        "18:23"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Alfredo Chaves", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Alfredo Chaves", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "14:00", 
+                        "16:08"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }
+        ], 
+        "256/1": [
+            {
+                "exceptions": [], 
+                "from": "Dom Bosco", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Dom Bosco", 
+                    "Ipiranga"
+                ], 
+                "times": [
+                    [
+                        "07:15", 
+                        "09:31"
+                    ], 
+                    [
+                        "07:45", 
+                        "10:01"
+                    ], 
+                    [
+                        "09:00", 
+                        "11:16"
+                    ], 
+                    [
+                        "10:00", 
+                        "12:16"
+                    ], 
+                    [
+                        "11:15", 
+                        "13:31"
+                    ], 
+                    [
+                        "12:15", 
+                        "14:31"
+                    ], 
+                    [
+                        "13:15", 
+                        "15:31"
+                    ], 
+                    [
+                        "15:45", 
+                        "18:01"
+                    ], 
+                    [
+                        "16:45", 
+                        "19:01"
+                    ], 
+                    [
+                        "18:15", 
+                        "20:31"
+                    ], 
+                    [
+                        "19:45", 
+                        "22:01"
+                    ], 
+                    [
+                        "20:15", 
+                        "22:31"
+                    ]
+                ], 
+                "to": "Ipiranga"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Dom Bosco", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Dom Bosco", 
+                    "Ipiranga"
+                ], 
+                "times": [
+                    [
+                        "08:15", 
+                        "10:31"
+                    ]
+                ], 
+                "to": "Ipiranga"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Dom Bosco", 
+                "services": [
+                    "Mo-Fr"
+                ], 
+                "stations": [
+                    "Dom Bosco", 
+                    "Ipiranga"
+                ], 
+                "times": [
+                    [
+                        "17:30", 
+                        "19:46"
+                    ], 
+                    [
+                        "17:45", 
+                        "20:01"
+                    ]
+                ], 
+                "to": "Ipiranga"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Dom Bosco", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Dom Bosco", 
+                    "Ipiranga"
+                ], 
+                "times": [
+                    [
+                        "07:30", 
+                        "09:46"
+                    ], 
+                    [
+                        "08:00", 
+                        "10:16"
+                    ], 
+                    [
+                        "11:15", 
+                        "13:31"
+                    ], 
+                    [
+                        "12:15", 
+                        "14:31"
+                    ], 
+                    [
+                        "15:45", 
+                        "18:01"
+                    ], 
+                    [
+                        "16:45", 
+                        "19:01"
+                    ], 
+                    [
+                        "18:15", 
+                        "20:31"
+                    ], 
+                    [
+                        "20:15", 
+                        "22:31"
+                    ]
+                ], 
+                "to": "Ipiranga"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Dom Bosco", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Dom Bosco", 
+                    "Ipiranga"
+                ], 
+                "times": [
+                    [
+                        "07:00", 
+                        "09:16"
+                    ], 
+                    [
+                        "08:00", 
+                        "10:16"
+                    ], 
+                    [
+                        "13:15", 
+                        "15:31"
+                    ]
+                ], 
+                "to": "Ipiranga"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Dom Bosco", 
+                "services": [
+                    "Mo-Fr"
+                ], 
+                "stations": [
+                    "Dom Bosco", 
+                    "Ipiranga"
+                ], 
+                "times": [
+                    [
+                        "10:00", 
+                        "12:16"
+                    ], 
+                    [
+                        "17:30", 
+                        "19:46"
+                    ], 
+                    [
+                        "19:45", 
+                        "22:01"
+                    ]
+                ], 
+                "to": "Ipiranga"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Dom Bosco", 
+                "services": [
+                    "Sa-Su"
+                ], 
+                "stations": [
+                    "Dom Bosco", 
+                    "Ipiranga"
+                ], 
+                "times": [
+                    [
+                        "09:00", 
+                        "11:16"
+                    ]
+                ], 
+                "to": "Ipiranga"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Ipiranga", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Ipiranga", 
+                    "Dom Bosco"
+                ], 
+                "times": [
+                    [
+                        "05:15", 
+                        "07:31"
+                    ], 
+                    [
+                        "05:45", 
+                        "08:01"
+                    ], 
+                    [
+                        "07:15", 
+                        "09:31"
+                    ], 
+                    [
+                        "08:20", 
+                        "10:36"
+                    ], 
+                    [
+                        "09:30", 
+                        "11:46"
+                    ], 
+                    [
+                        "10:20", 
+                        "12:36"
+                    ], 
+                    [
+                        "11:30", 
+                        "13:46"
+                    ], 
+                    [
+                        "12:45", 
+                        "15:01"
+                    ], 
+                    [
+                        "13:45", 
+                        "16:01"
+                    ], 
+                    [
+                        "14:30", 
+                        "16:46"
+                    ], 
+                    [
+                        "15:30", 
+                        "17:46"
+                    ], 
+                    [
+                        "16:15", 
+                        "18:31"
+                    ], 
+                    [
+                        "17:45", 
+                        "20:01"
+                    ], 
+                    [
+                        "18:15", 
+                        "20:31"
+                    ]
+                ], 
+                "to": "Dom Bosco"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Ipiranga", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Ipiranga", 
+                    "Dom Bosco"
+                ], 
+                "times": [
+                    [
+                        "05:30", 
+                        "07:46"
+                    ]
+                ], 
+                "to": "Dom Bosco"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Ipiranga", 
+                "services": [
+                    "Mo-Fr"
+                ], 
+                "stations": [
+                    "Ipiranga", 
+                    "Dom Bosco"
+                ], 
+                "times": [
+                    [
+                        "06:00", 
+                        "08:16"
+                    ], 
+                    [
+                        "07:14", 
+                        "09:30"
+                    ], 
+                    [
+                        "14:15", 
+                        "16:31"
+                    ]
+                ], 
+                "to": "Dom Bosco"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Ipiranga", 
+                "services": [
+                    "Mo"
+                ], 
+                "stations": [
+                    "Ipiranga", 
+                    "Dom Bosco"
+                ], 
+                "times": [
+                    [
+                        "05:14", 
+                        "07:30"
+                    ]
+                ], 
+                "to": "Dom Bosco"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Ipiranga", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Ipiranga", 
+                    "Dom Bosco"
+                ], 
+                "times": [
+                    [
+                        "07:15", 
+                        "09:31"
+                    ], 
+                    [
+                        "09:30", 
+                        "11:46"
+                    ], 
+                    [
+                        "10:20", 
+                        "12:36"
+                    ], 
+                    [
+                        "13:45", 
+                        "16:01"
+                    ], 
+                    [
+                        "14:30", 
+                        "16:46"
+                    ], 
+                    [
+                        "16:15", 
+                        "18:31"
+                    ], 
+                    [
+                        "18:15", 
+                        "20:31"
+                    ]
+                ], 
+                "to": "Dom Bosco"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Ipiranga", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Ipiranga", 
+                    "Dom Bosco"
+                ], 
+                "times": [
+                    [
+                        "05:15", 
+                        "07:31"
+                    ], 
+                    [
+                        "05:45", 
+                        "08:01"
+                    ], 
+                    [
+                        "11:30", 
+                        "13:46"
+                    ]
+                ], 
+                "to": "Dom Bosco"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Ipiranga", 
+                "services": [
+                    "Mo-Fr"
+                ], 
+                "stations": [
+                    "Ipiranga", 
+                    "Dom Bosco"
+                ], 
+                "times": [
+                    [
+                        "06:00", 
+                        "08:16"
+                    ], 
+                    [
+                        "08:20", 
+                        "10:36"
+                    ], 
+                    [
+                        "14:15", 
+                        "16:31"
+                    ], 
+                    [
+                        "15:30", 
+                        "17:46"
+                    ], 
+                    [
+                        "19:45", 
+                        "22:01"
+                    ]
+                ], 
+                "to": "Dom Bosco"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Ipiranga", 
+                "services": [
+                    "Mo-Fr,Su"
+                ], 
+                "stations": [
+                    "Ipiranga", 
+                    "Dom Bosco"
+                ], 
+                "times": [
+                    [
+                        "05:30", 
+                        "07:46"
+                    ]
+                ], 
+                "to": "Dom Bosco"
+            }
+        ]
+    }, 
+    "source": "DER-ES", 
+    "updated": "2018-01-02"
+}
