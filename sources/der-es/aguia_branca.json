@@ -1,0 +1,3142 @@
+{
+    "operator": "Viação Águia Branca S/A",
+    "operator:ref": "1-001",
+    "updated": "2017-12-19",
+    "routes": {
+        "006/0": [
+            {
+                "name": "Colatina x São Mateus via KM47",
+                "from": "Colatina",
+                "to": "São Mateus",
+                "via": "KM47",
+                "services": "Mo-Su",
+                "times": ["13:45"]
+            },
+            {
+                "name": "São Mateus x Colatina via KM47",
+                "from": "São Mateus",
+                "to": "Colatina",
+                "services": "Mo-Su",
+                "times": ["06:00"]
+            }
+        ],
+        "007/0": [
+            {
+                "name": "Colatina x Nova Venécia via S.G.Palha",
+                "from": "Colatina",
+                "to": "Nova Venécia",
+                "via": "São Gabriel da Palha",
+                "services": "Mo-Fr",
+                "times": ["18:30"]
+            },
+            {
+                "name": "Nova Venécia x Colatina via S.G.Palha",
+                "from": "Nova Venécia",
+                "to": "Colatina",
+                "via": "São Gabriel da Palha",
+                "services": "Mo-Fr",
+                "times": ["12:10"]
+            }
+        ],
+        "008/0": [
+            {
+                "name": "Vitória x São Mateus via BR-101",
+                "from": "Vitória",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "ref": "085",
+                "services": "Sa",
+                "times": ["07:50"]
+            },
+            {
+                "name": "São Mateus x Vitória via BR-101",
+                "from": "São Mateus",
+                "to": "Vitória",
+                "via": "BR-101",
+                "ref": "085",
+                "services": "Su",
+                "times": ["19:00"]
+            }
+        ],
+        "008/2": [
+            {
+                "name": "Vila Velha (Ramal) x São Mateus",
+                "from": "Vila Velha",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "note": "Vitória x São Mateus via BR-101 ramal Vila Velha",
+                "end_date": "2017-06-30",
+                "services": "Sa",
+                "times": ["08:50"]
+            },
+            {
+                "name": "São Mateus x Vila Velha (Ramal)",
+                "from": "São Mateus",
+                "to": "Vila Velha",
+                "via": "BR-101",
+                "note": "Vitória x São Mateus via BR-101 ramal Vila Velha",
+                "end_date": "2017-06-30",
+                "services": "Su",
+                "times": ["16:30"]
+            },
+            {
+                "name": "Vitória x São Mateus via BR-101",
+                "from": "Vitória",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "ref": "085",
+                "services": "Mo",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Vitória x São Mateus via BR-101",
+                "from": "Vitória",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "ref": "085",
+                "services": "Tu-Sa",
+                "times": ["05:50"]
+            },
+            {
+                "name": "Vitória x São Mateus via BR-101",
+                "from": "Vitória",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "services": "Mo,Fr",
+                "times": ["07:51", "13:00"]
+            },
+            {
+                "name": "Vitória x São Mateus via BR-101",
+                "from": "Vitória",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "services": "Mo-Fr",
+                "times": ["09:30"]
+            },
+            {
+                "name": "São Mateus x Vitória via BR-101",
+                "from": "São Mateus",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["13:30"]
+            },
+            {
+                "name": "São Mateus x Vitória via BR-101",
+                "from": "São Mateus",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo,Fr,Su",
+                "times": ["15:00"]
+            },
+            {
+                "name": "São Mateus x Vitória via BR-101",
+                "from": "São Mateus",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Fr",
+                "times": ["16:30"]
+            }
+        ],
+        "009/0": [
+            {
+                "name": "Vitória x Colatina via João Neiva",
+                "from": "Vitória",
+                "to": "Colatina",
+                "via": "João Neiva",
+                "services": "Mo-Sa",
+                "times": ["06:45", "09:30"]
+            },
+            {
+                "name": "Vitória x Colatina via João Neiva",
+                "from": "Vitória",
+                "to": "Colatina",
+                "via": "João Neiva",
+                "services": "Su",
+                "times": ["07:50"]
+            },
+            {
+                "name": "Vitória x Colatina via João Neiva",
+                "from": "Vitória",
+                "to": "Colatina",
+                "via": "João Neiva",
+                "services": "Su",
+                "times": ["11:00", "13:00", "16:00", "17:30"]
+            },
+            {
+                "name": "Vitória x Colatina via João Neiva",
+                "from": "Vitória",
+                "to": "Colatina",
+                "via": "João Neiva",
+                "services": "Fr",
+                "times": ["15:30"]
+            },
+            {
+                "name": "Vitória x Colatina via João Neiva",
+                "from": "Vitória",
+                "to": "Colatina",
+                "via": "João Neiva",
+                "services": "Mo-Fr",
+                "times": ["20:15"]
+            },
+            {
+                "name": "Vitória x Colatina via João Neiva",
+                "from": "Vitória",
+                "to": "Colatina",
+                "via": "João Neiva",
+                "services": "Fr,Sa",
+                "times": ["14:30"]
+            },
+            {
+                "name": "Colatina x Vitória via João Neiva",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "João Neiva",
+                "services": "Mo-Fr",
+                "times": ["05:10"]
+            },
+            {
+                "name": "Colatina x Vitória via João Neiva",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "João Neiva",
+                "services": "Sa",
+                "times": ["07:00", "14:00"]
+            },
+            {
+                "name": "Colatina x Vitória via João Neiva",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "João Neiva",
+                "services": "Mo-Su",
+                "times": ["16:00"]
+            },
+            {
+                "name": "Colatina x Vitória via João Neiva",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "João Neiva",
+                "services": "Su",
+                "times": ["13:10"]
+            },
+            {
+                "name": "Colatina x Vitória via João Neiva",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "João Neiva",
+                "services": "Fr",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Colatina x Vitória via João Neiva",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "João Neiva",
+                "services": "Mo-Th,Sa-Su",
+                "times": ["19:00"]
+            },
+            {
+                "name": "Colatina x Vitória via João Neiva",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "João Neiva",
+                "services": "Fr,Su",
+                "times": ["19:30"]
+            },
+            {
+                "name": "Colatina x Vitória via João Neiva",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "João Neiva",
+                "services": "Mo,Fr-Su",
+                "times": ["11:00"]
+            }
+        ],
+        "009/2": [
+            {
+                "name": "Vitória x Colatina via João Neiva",
+                "from": "Vitória",
+                "to": "Colatina",
+                "via": "João Neiva",
+                "services": "Mo",
+                "times": ["06:30"]
+            },
+            {
+                "name": "Vitória x Colatina via João Neiva",
+                "from": "Vitória",
+                "to": "Colatina",
+                "via": "João Neiva",
+                "services": "Mo-Sa",
+                "times": ["12:00"]
+            },
+            {
+                "name": "Vitória x Colatina via João Neiva",
+                "from": "Vitória",
+                "to": "Colatina",
+                "via": "João Neiva",
+                "services": "Su",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Vitória x Colatina via João Neiva",
+                "from": "Vitória",
+                "to": "Colatina",
+                "via": "João Neiva",
+                "services": "Mo,Fr-Su",
+                "times": ["19:30"]
+            },
+            {
+                "name": "Colatina x Vitória via João Neiva",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "João Neiva",
+                "services": "Mo,Fr",
+                "times": ["13:30"]
+            },
+            {
+                "name": "Colatina x Vitória via João Neiva",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "João Neiva",
+                "services": "Mo",
+                "times": ["07:00"]
+            },
+            {
+                "name": "Colatina x Vitória via João Neiva",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "João Neiva",
+                "services": "Mo-Fr,Su",
+                "times": ["15:30"]
+            },
+            {
+                "name": "Colatina x Vitória via João Neiva",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "João Neiva",
+                "services": "Su",
+                "times": ["17:00", "18:30"]
+            },
+            {
+                "name": "Colatina x Vitória via João Neiva",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "João Neiva",
+                "services": "Fr",
+                "times": ["19:00"]
+            }
+        ],
+        "013/0": [
+            {
+                "name": "Vitória x Conceição da Barra via BR-101",
+                "from": "Vitória",
+                "to": "Conceição da Barra",
+                "via": "BR-101",
+                "services": "Mo-Fr",
+                "times": ["06:40"]
+            },
+            {
+                "name": "Conceição da Barra x Vitória via BR-101",
+                "from": "Conceição da Barra",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Fr",
+                "times": ["18:00"]
+            },
+            {
+                "name": "São Mateus x Conceição da Barra via BR-101",
+                "from": "São Mateus",
+                "to": "Conceição da Barra",
+                "via": "BR-101",
+                "note": "Reforça Parcial",
+                "services": "Mo-Sa",
+                "times": ["13:30", "17:30"]
+            },
+            {
+                "name": "Conceição da Barra x São Mateus via BR-101",
+                "from": "Conceição da Barra",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "note": "Reforça Parcial",
+                "services": "Mo-Su",
+                "times": ["06:00"]
+            },
+            {
+                "name": "São Mateus x Conceição da Barra via BR-101",
+                "from": "São Mateus",
+                "to": "Conceição da Barra",
+                "via": "BR-101",
+                "note": "Reforça Parcial",
+                "services": "Mo-Su",
+                "times": ["19:15"]
+            },
+            {
+                "name": "Conceição da Barra x São Mateus via BR-101",
+                "from": "Conceição da Barra",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "note": "Reforça Parcial",
+                "services": "Mo-Sa",
+                "times": ["07:45"]
+            },
+            {
+                "name": "Conceição da Barra x São Mateus via BR-101",
+                "from": "Conceição da Barra",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "note": "Reforça Parcial",
+                "services": "Su",
+                "times": ["18:01"]
+            }
+        ],
+        "013/2": [
+            {
+                "name": "Vitória x Conceição da Barra via BR-101",
+                "from": "Vitória",
+                "to": "Conceição da Barra",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["11:40", "16:00"]
+            },
+            {
+                "name": "Conceição da Barra x Vitória via BR-101",
+                "from": "Conceição da Barra",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["06:20", "14:00"]
+            }
+        ],
+        "014/0": [
+            {
+                "name": "Colatina x Linhares via João Neiva",
+                "from": "Colatina",
+                "to": "Linhares",
+                "via": "João Neiva",
+                "services": "Sa",
+                "times": ["08:30"]
+            },
+            {
+                "name": "Linhares x Colatina via João Neiva",
+                "from": "Linhares",
+                "to": "Colatina",
+                "via": "João Neiva",
+                "services": "Sa",
+                "times": ["11:30"]
+            }
+        ],
+        "019/0": [
+            {
+                "name": "Vitória x João Neiva via BR-101",
+                "from": "Vitória",
+                "to": "João Neiva",
+                "via": "BR-101",
+                "services": "Mo-Fr,Su",
+                "times": ["19:00"]
+            },
+            {
+                "name": "Vitória x João Neiva via BR-101",
+                "from": "Vitória",
+                "to": "João Neiva",
+                "via": "BR-101",
+                "services": "Mo-Fr",
+                "times": ["16:45"]
+            },
+            {
+                "name": "Vitória x João Neiva via BR-101",
+                "from": "Vitória",
+                "to": "João Neiva",
+                "via": "BR-101",
+                "services": "Mo,Fr-Sa",
+                "times": ["13:45"]
+            },
+            {
+                "name": "João Neiva x Vitória via BR-101",
+                "from": "João Neiva",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo,Fr-Sa",
+                "times": ["16:50"]
+            },
+            {
+                "name": "João Neiva x Vitória via BR-101",
+                "from": "João Neiva",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo",
+                "times": ["06:00"]
+            },
+            {
+                "name": "João Neiva x Vitória via BR-101",
+                "from": "João Neiva",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Fr",
+                "times": ["05:21", "07:15"]
+            },
+            {
+                "name": "João Neiva x Vitória via BR-101",
+                "from": "João Neiva",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Su",
+                "times": ["14:30", "16:49"]
+            }
+        ],
+        "020/0": [
+            {
+                "name": "Nova Venécia x São Mateus via KM47",
+                "from": "Nova Venécia",
+                "to": "São Mateus",
+                "via": "KM47",
+                "services": "Mo-Su",
+                "times": ["05:30", "14:00", "18:30"]
+            },
+            {
+                "name": "Nova Venécia x São Mateus via KM47",
+                "from": "Nova Venécia",
+                "to": "São Mateus",
+                "via": "KM47",
+                "services": "Mo-Sa",
+                "times": ["08:20", "16:20"]
+            },
+            {
+                "name": "São Mateus x Nova Venécia via KM47",
+                "from": "São Mateus",
+                "to": "Nova Venécia",
+                "via": "KM47",
+                "services": "Mo-Su",
+                "times": ["10:30", "16:00", "19:10"]
+            },
+            {
+                "name": "São Mateus x Nova Venécia via KM47",
+                "from": "São Mateus",
+                "to": "Nova Venécia",
+                "via": "KM47",
+                "services": "Mo-Sa",
+                "times": ["05:30", "13:30"]
+            }
+        ],
+        "025/0": [
+            {
+                "name": "Colatina x B.S.Francisco via S Domingos",
+                "from": "Colatina",
+                "to": "Barra de São Francisco",
+                "via": "São Domingos",
+                "services": "Tu-Th,Sa",
+                "times": ["08:15"]
+            },
+            {
+                "name": "Colatina x B.S.Francisco via S Domingos",
+                "from": "Colatina",
+                "to": "Barra de São Francisco",
+                "via": "São Domingos",
+                "services": "Mo,Fr",
+                "times": ["12:20"]
+            },
+            {
+                "name": "Colatina x B.S.Francisco via S Domingos",
+                "from": "Colatina",
+                "to": "Barra de São Francisco",
+                "via": "São Domingos",
+                "services": "Su",
+                "times": ["14:40"]
+            },
+            {
+                "name": "B.S.Francisco x Colatina via S Domingos",
+                "from": "Barra de São Francisco",
+                "to": "Colatina",
+                "via": "São Domingos",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            },
+            {
+                "name": "B.S.Francisco x Colatina via S Domingos",
+                "from": "Barra de São Francisco",
+                "to": "Colatina",
+                "via": "São Domingos",
+                "services": "Mo",
+                "times": ["15:50"]
+            },
+            {
+                "name": "B.S.Francisco x Colatina via S Domingos",
+                "from": "Barra de São Francisco",
+                "to": "Colatina",
+                "via": "São Domingos",
+                "services": "Tu-Th,Sa",
+                "times": ["16:00"]
+            }
+        ],
+        "026/0": [
+            {
+                "name": "Vitória x B.S.Francisco via Colatina",
+                "from": "Vitória",
+                "to": "Barra de São Francisco",
+                "via": "Colatina",
+                "services": "Mo-Su",
+                "times": ["06:10", "16:50"]
+            },
+            {
+                "name": "B.S.Francisco x Vitória via Colatina",
+                "from": "Barra de São Francisco",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Mo-Su",
+                "times": ["07:00", "17:30"]
+            }
+        ],
+        "026/2": [
+            {
+                "name": "Vitória x B.S.Francisco via Colatina",
+                "from": "Vitória",
+                "to": "Barra de São Francisco",
+                "via": "Colatina",
+                "services": "Fr",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Vitória x B.S.Francisco via Colatina",
+                "from": "Vitória",
+                "to": "Barra de São Francisco",
+                "via": "Colatina",
+                "services": "Mo-Su",
+                "times": ["12:40"]
+            },
+            {
+                "name": "B.S.Francisco x Vitória via Colatina",
+                "from": "Barra de São Francisco",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Mo",
+                "times": ["09:00"]
+            },
+            {
+                "name": "B.S.Francisco x Vitória via Colatina",
+                "from": "Barra de São Francisco",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Mo-Su",
+                "times": ["12:00"]
+            }
+        ],
+        "028/0": [
+            {
+                "name": "Boa Esperança x Nova Venécia",
+                "from": "Boa Esperança",
+                "to": "Nova Venécia",
+                "services": "Fr,Sa",
+                "times": ["07:00"]
+            },
+            {
+                "name": "Boa Esperança x Nova Venécia",
+                "from": "Boa Esperança",
+                "to": "Nova Venécia",
+                "services": "Su",
+                "times": ["16:39"]
+            },
+            {
+                "name": "Nova Venécia x Boa Esperança",
+                "from": "Nova Venécia",
+                "to": "Boa Esperança",
+                "services": "Mo",
+                "times": ["16:30"]
+            }
+        ],
+        "036/1": [
+            {
+                "name": "Vitória x Fundão via BR-101",
+                "from": "Vitória",
+                "to": "Fundão",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["07:30", "09:00"]
+            },
+            {
+                "name": "Fundão x Vitória via BR-101",
+                "from": "Fundão",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Su",
+                "times": ["14:00"]
+            }
+        ],
+        "036/6": [
+            {
+                "name": "Vitória x Fundão via BR-101",
+                "from": "Vitória",
+                "to": "Fundão",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Vitória x Fundão via BR-101",
+                "from": "Vitória",
+                "to": "Fundão",
+                "via": "BR-101",
+                "services": "Su",
+                "times": ["15:40"]
+            },
+            {
+                "name": "Vitória x Fundão via BR-101",
+                "from": "Vitória",
+                "to": "Fundão",
+                "via": "BR-101",
+                "services": "Mo-Fr",
+                "times": ["16:05"]
+            },
+            {
+                "name": "Vitória x Fundão via BR-101",
+                "from": "Vitória",
+                "to": "Fundão",
+                "via": "BR-101",
+                "services": "Mo,Fr",
+                "times": ["13:30"]
+            },
+            {
+                "name": "Fundão x Vitória via BR-101",
+                "from": "Fundão",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["06:20"]
+            },
+            {
+                "name": "Fundão x Vitória via BR-101",
+                "from": "Fundão",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Fr",
+                "times": ["14:20"]
+            },
+            {
+                "name": "Fundão x Vitória via BR-101",
+                "from": "Fundão",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Su",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Fundão x Vitória via BR-101",
+                "from": "Fundão",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo,Fr-Sa",
+                "times": ["16:05"]
+            },
+            {
+                "name": "Fundão x Vitória via BR-101",
+                "from": "Fundão",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["07:00"]
+            }
+        ],
+        "038/0": [
+            {
+                "name": "Colatina x Montanha via Nova Venécia",
+                "from": "Colatina",
+                "to": "Montanha",
+                "via": "Nova Venécia",
+                "services": "Mo-Fr",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Montanha x Colatina via Nova Venécia",
+                "from": "Montanha",
+                "to": "Colatina",
+                "via": "Nova Venécia",
+                "services": "Mo-Fr",
+                "times": ["05:50"]
+            }
+        ],
+        "041/0": [
+            {
+                "name": "Vitória x Montanha via BR-101",
+                "from": "Vitória",
+                "to": "Montanha",
+                "via": "BR-101",
+                "services": "We",
+                "times": ["21:20"]
+            },
+            {
+                "name": "Montanha x Vitória via BR-101",
+                "from": "Montanha",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Th",
+                "times": ["22:55"]
+            }
+        ],
+        "042/0": [
+            {
+                "name": "Vitória x Ponto Belo via Colatina",
+                "from": "Vitória",
+                "to": "Ponto Belo",
+                "via": "Colatina",
+                "services": "Mo-Su",
+                "times": ["23:30"]
+            },
+            {
+                "name": "Ponto Belo x Vitória via Colatina",
+                "from": "Ponto Belo",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Mo-Su",
+                "times": ["08:30"]
+            }
+        ],
+        "042/2": [
+            {
+                "name": "Vitória x Ponto Belo via Colatina",
+                "from": "Vitória",
+                "to": "Ponto Belo",
+                "via": "Colatina",
+                "services": "Mo-Su",
+                "times": ["07:00"]
+            },
+            {
+                "name": "Ponto Belo x Vitória via Colatina",
+                "from": "Ponto Belo",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Mo-Su",
+                "times": ["22:00"]
+            }
+        ],
+        "050/0": [
+            {
+                "name": "Vitória x Guriri via São Mateus",
+                "from": "Vitória",
+                "to": "Guriri",
+                "via": "São Mateus",
+                "ref": "102",
+                "services": "Mo-Th,Sa",
+                "times": ["17:20"]
+            },
+            {
+                "name": "Guriri x Vitória via São Mateus",
+                "from": "Guriri",
+                "to": "Vitória",
+                "via": "São Mateus",
+                "ref": "102",
+                "services": "Tu-Fr,Su",
+                "times": ["05:00"]
+            }
+        ],
+        "050/2": [
+            {
+                "name": "Vitória x Guriri via São Mateus",
+                "from": "Vitória",
+                "to": "Guriri",
+                "via": "São Mateus",
+                "ref": "102",
+                "services": "Fr,Su,Ho",
+                "times": ["17:40"]
+            },
+            {
+                "name": "Guriri x Vitória via São Mateus",
+                "from": "Guriri",
+                "to":"Vitória",
+                "via": "São Mateus",
+                "ref": "102",
+                "services": "Mo,Sa,Ho",
+                "times": ["05:00"]
+            },
+            {
+                "name": "Guriri x Vitória via São Mateus",
+                "from": "Guriri",
+                "to":"Vitória",
+                "via": "São Mateus",
+                "services": "Su,Ho",
+                "times": ["16:30"]
+            }
+        ],
+        "051/0": [
+            {
+                "name": "João Neiva x Linhares via BR-101",
+                "from": "João Neiva",
+                "to": "Linhares",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["17:10"]
+            },
+            {
+                "name": "João Neiva x Linhares via BR-101",
+                "from": "João Neiva",
+                "to": "Linhares",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["08:30"]
+            },
+            {
+                "name": "Linhares x João Neiva via BR-101",
+                "from": "Linhares",
+                "to": "João Neiva",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["14:30"]
+            },
+            {
+                "name": "Linhares x João Neiva via BR-101",
+                "from": "Linhares",
+                "to": "João Neiva",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["05:31"]
+            },
+            {
+                "name": "Jacupemba x Linhares",
+                "note": "Reforça Parcial",
+                "from": "Jacupemba",
+                "to": "Linhares",
+                "end_date": "2018-06-30",
+                "services": "Mo-Su",
+                "times": ["13:30"]
+            },
+            {
+                "name": "Linhares x Jacupemba",
+                "note": "Reforça Parcial",
+                "from": "Linhares",
+                "to": "Jacupemba",
+                "end_date": "2018-06-30",
+                "services": "Mo-Su",
+                "times": ["13:00"]
+            }
+        ],
+        "052/0": [
+            {
+                "name": "Vitória x Pedro Canário via BR-101",
+                "from": "Vitória",
+                "to": "Pedro Canário",
+                "via": "BR-101",
+                "ref": "028",
+                "services": "Tu-Th,Sa",
+                "times": ["19:00"]
+            },
+            {
+                "name": "Vitória x Pedro Canário via BR-101",
+                "from":"Vitória",
+                "to": "Pedro Canário",
+                "via": "BR-101",
+                "ref": "028",
+                "services": "Mo,Fr,Su",
+                "times": ["19:30"]
+            },
+            {
+                "name": "Vitória x Pedro Canário via BR-101",
+                "from": "Vitória",
+                "to": "Pedro Canário",
+                "via": "BR-101",
+                "ref": "028",
+                "services": "Su",
+                "times": ["18:00"]
+            },
+            {
+                "name": "Pedro Canário x Vitória via BR-101",
+                "from": "Pedro Canário",
+                "to": "Vitória",
+                "via": "BR-101",
+                "ref": "028",
+                "services": "Mo-Su",
+                "times": ["08:45"]
+            },
+            {
+                "name": "Pedro Canário x Vitória via BR-101",
+                "from": "Pedro Canário",
+                "to": "Vitória",
+                "via": "BR-101",
+                "ref": "028",
+                "services": "Su",
+                "times": ["01:00"]
+            }
+        ],
+        "052/2": [
+            {
+                "name": "Vitória x Pedro Canário via BR-101",
+                "from": "Vitória",
+                "to": "Pedro Canário",
+                "via": "BR-101",
+                "ref": "028",
+                "start_date": "12-01",
+                "end_date": "01-31",
+                "services": "Fr",
+                "times": ["18:00"]
+            },
+            {
+                "name": "Pedro Canário x Vitória via BR-101",
+                "from": "Pedro Canário",
+                "to": "Vitória",
+                "via": "BR-101",
+                "ref": "028",
+                "start_date": "12-01",
+                "end_date": "01-31",
+                "services": "Sa",
+                "times": ["14:00"]
+            }
+        ],
+        "053/0": [
+            {
+                "name": "São Mateus x Pinheiro via Sayonara",
+                "from": "São Mateus",
+                "to": "Pinheiro",
+                "via": "Sayonara",
+                "services": "Mo-Su",
+                "times": ["08:30", "17:20"]
+            },
+            {
+                "name": "Pinheiro x São Mateus via Sayonara",
+                "to": "São Mateus",
+                "from": "Pinheiro",
+                "via": "Sayonara",
+                "services": "Mo-Su",
+                "times": ["06:30", "11:30"]
+            }
+        ],
+        "054/0": [
+            {
+                "name": "Vitória x Carolina via D Martins",
+                "from": "Vitória",
+                "to": "Carolina",
+                "via": "Domingo Martins",
+                "note": "Trafego Mutuo com a Viação Alvorada Ltda\nPartidas invertidas Quinzenalmente",
+                "services": "Mo-Su",
+                "times": ["06:30", "14:30"]
+            },
+            {
+                "name": "Carolina x Vitória via D Martins",
+                "from": "Carolina",
+                "to": "Vitória",
+                "via": "Domingo Martins",
+                "note": "Trafego Mutuo com a Viação Alvorada Ltda\nPartidas invertidas Quinzenalmente",
+                "services": "Mo-Su",
+                "times": ["06:30", "14:30"]
+            }
+        ],
+        "061/0": [
+            {
+                "name": "Vitória x Muniz Freire via Piaçú",
+                "from": "Vitória",
+                "to": "Muniz Freire",
+                "via": "Piaçú",
+                "services": "Mo,Fr-Sa",
+                "times": ["07:45"]
+            },
+            {
+                "name": "Vitória x Muniz Freire via Piaçú",
+                "from": "Vitória",
+                "to": "Muniz Freire",
+                "via": "Piaçú",
+                "services": "Mo-Sa",
+                "times": ["15:30"]
+            },
+            {
+                "name": "Muniz Freire x Vitória via Piaçú",
+                "from": "Muniz Freire",
+                "to": "Vitória",
+                "via": "Piaçú",
+                "services": "Mo-Sa",
+                "times": ["06:30"]
+            },
+            {
+                "name": "Muniz Freire x Vitória via Piaçú",
+                "from": "Muniz Freire",
+                "to": "Vitória",
+                "via": "Piaçú",
+                "services": "Mo,Fr,Su",
+                "times": ["16:10"]
+            }
+        ],
+        "068/0": [
+            {
+                "name": "Vitória x Linhares via BR-101",
+                "from": "Vitória",
+                "to": "Linhares",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["10:00", "12:20", "16:10"]
+            },
+            {
+                "name": "Vitória x Linhares via BR-101",
+                "from": "Vitória",
+                "to": "Linhares",
+                "via": "BR-101",
+                "services": "Mo,Fr,Su",
+                "times": ["19:40"]
+            },
+            {
+                "name": "Vitória x Linhares via BR-101",
+                "from": "Vitória",
+                "to": "Linhares",
+                "via": "BR-101",
+                "services": "Fr,Su",
+                "times": ["16:50"]
+            },
+            {
+                "name": "Linhares x Vitória via BR-101",
+                "from": "Linhares",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["05:35", "12:30", "15:10"]
+            },
+            {
+                "name": "Linhares x Vitória via BR-101",
+                "from": "Linhares",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["07:10"]
+            },
+            {
+                "name": "Linhares x Vitória via BR-101",
+                "from": "Linhares",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Fr,Su",
+                "times": ["16:05"]
+            }
+        ],
+        "068/2": [
+            {
+                "name": "Vitória x Linhares via BR-101",
+                "from": "Vitória",
+                "to": "Linhares",
+                "via": "BR-101",
+                "services": "Mo",
+                "times": ["05:55"]
+            },
+            {
+                "name": "Vitória x Linhares via BR-101",
+                "from": "Vitória",
+                "to": "Linhares",
+                "via": "BR-101",
+                "services": "Fr,Su",
+                "times": ["18:30"]
+            },
+            {
+                "name": "Linhares x Vitória via BR-101",
+                "from": "Linhares",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Linhares x Vitória via BR-101",
+                "from": "Linhares",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo,Fr,Su",
+                "times": ["13:50"]
+            },
+            {
+                "name": "Linhares x Vitória via BR-101",
+                "from": "Linhares",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Su",
+                "times": ["16:05"]
+            }
+        ],
+        "072/0": [
+            {
+                "name": "Nova Venécia x Pinheiro via B Esperança",
+                "from": "Nova Venécia",
+                "to": "Pinheiro",
+                "via": "Boa Esperança",
+                "services": "Mo-Sa",
+                "times": ["10:20"]
+            },
+            {
+                "name": "Nova Venécia x Pinheiro via B Esperança",
+                "from": "Nova Venécia",
+                "to": "Pinheiro",
+                "via": "Boa Esperança",
+                "services": "Fr",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Nova Venécia x Pinheiro via B Esperança",
+                "from": "Nova Venécia",
+                "to": "Pinheiro",
+                "via": "Boa Esperança",
+                "services": "Sa",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Pinheiro x Novo Venécia via B Esperança",
+                "from": "Pinheiro",
+                "to": "Nova Venécia",
+                "via": "Boa Esperança",
+                "services": "Mo-Sa",
+                "times": ["12:30"]
+            },
+            {
+                "name": "Pinheiro x Novo Venécia via B Esperança",
+                "from": "Pinheiro", 
+                "to": "Nova Venécia",
+                "via": "Boa Esperança",
+                "services": "Sa",
+                "times": ["16:20"]
+            }
+        ],
+        "078/0": [
+            {
+                "name": "Vitória x Ibiraçu via BR-101",
+                "from": "Vitória",
+                "to": "Ibiraçu",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["07:50", "17:40"]
+            },
+            {
+                "name": "Vitória x Ibiraçu via BR-101",
+                "from": "Vitória",
+                "to": "Ibiraçu",
+                "via": "BR-101",
+                "services": "Su",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Vitória x Ibiraçu via BR-101",
+                "from": "Vitória",
+                "to": "Ibiraçu",
+                "via": "BR-101",
+                "services": "Tu-Th",
+                "times": ["13:45"]
+            },
+            {
+                "name": "Ibiraçu x Vitória via BR-101",
+                "from": "Ibiraçu",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["11:00"]
+            },
+            {
+                "name": "Ibiraçu x Vitória via BR-101",
+                "from": "Ibiraçu",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Tu-Th",
+                "times": ["15:50"]
+            },
+            {
+                "name": "Ibiraçu x Vitória via BR-101",
+                "from": "Ibiraçu",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Su",
+                "times": ["11:40"]
+            }
+        ],
+        "083/0": [
+            {
+                "name": "Boa Esperança x São João do Sobrado",
+                "from": "Boa Esperança",
+                "to": "São João do Sobrado",
+                "services": "Fr",
+                "times": ["10:00"]
+            },
+            {
+                "name": "São João do Sobrado x Boa Esperança",
+                "from": "São João do Sobrado",
+                "to": "Boa Esperança",
+                "services": "Fr",
+                "times": ["13:00"]
+            }
+        ],
+        "090/0": [
+            {
+                "name": "Vitória x Conc do Castelo via D Martins",
+                "from": "Vitória",
+                "to": "Conceição do Castelo",
+                "via": "Domingo Martins",
+                "services": "Su",
+                "times": ["09:50"]
+            },
+            {
+                "name": "Vitória x Conc do Castelo via D Martins",
+                "from": "Vitória",
+                "to": "Conceição do Castelo",
+                "via": "Domingo Martins",
+                "services": "Mo-Su",
+                "times": ["17:10"]
+            },
+            {
+                "name": "Conc do Castelo x Vitória via D Martins",
+                "from": "Conceição do Castelo",
+                "to": "Vitória",
+                "via": "Domingo Martins",
+                "services": "Mo-Sa",
+                "times": ["05:15"]
+            },
+            {
+                "name": "Conc do Castelo x Vitória via D Martins",
+                "from": "Conceição do Castelo",
+                "to": "Vitória",
+                "via": "Domingo Martins",
+                "services": "Su",
+                "times": ["11:00", "16:35"]
+            }
+        ],
+        "092/0": [
+            {
+                "name": "Vitória x Afonso Cláudio via Faz Guandu",
+                "from": "Vitória",
+                "to": "Afonso Cláudio",
+                "via": "Fazenda Guandu",
+                "services": "Mo-Su",
+                "times": ["07:10", "13:00"]
+            },
+            {
+                "name": "Vitória x Afonso Cláudio via Faz Guandu",
+                "from": "Vitória",
+                "to": "Afonso Cláudio",
+                "via": "Fazenda Guandu",
+                "services": "We",
+                "times": ["05:00"]
+            },
+            {
+                "name": "Vitória x Afonso Cláudio via Faz Guandu",
+                "from": "Vitória",
+                "to": "Afonso Cláudio",
+                "via": "Fazenda Guandu",
+                "services": "Mo-Tu,Th-Su",
+                "times": ["05:40"]
+            },
+            {
+                "name": "Vitória x Afonso Cláudio via Faz Guandu",
+                "from": "Vitória",
+                "to": "Afonso Cláudio",
+                "via": "Fazenda Guandu",
+                "services": "Mo-Th,Sa",
+                "times": ["10:20"]
+            },
+            {
+                "name": "Vitória x Afonso Cláudio via Faz Guandu",
+                "from": "Vitória",
+                "to": "Afonso Cláudio",
+                "via": "Fazenda Guandu",
+                "services": "Mo-Sa",
+                "times": ["15:15"]
+            },
+            {
+                "name": "Afonso Cláudio x Vitória via Faz Guando",
+                "from": "Afonso Cláudio",
+                "to": "Vitória",
+                "via": "Fazenda Guandu",
+                "services": "Mo-Su",
+                "times": ["08:10", "13:10"]
+            },
+            {
+                "name": "Afonso Cláudio x Vitória via Faz Guando",
+                "from": "Afonso Cláudio",
+                "to": "Vitória",
+                "via": "Fazenda Guandu",
+                "services": "Mo-Sa",
+                "times": ["05:00"]
+            },
+            {
+                "name": "Afonso Cláudio x Vitória via Faz Guando",
+                "from": "Afonso Cláudio",
+                "to": "Vitória",
+                "via": "Fazenda Guandu",
+                "services": "Tu-Fr,Su",
+                "times": ["11:00"]
+            },
+            {
+                "name": "Afonso Cláudio x Vitória via Faz Guando",
+                "from": "Afonso Cláudio",
+                "to": "Vitória",
+                "via": "Fazenda Guandu",
+                "services": "Mo-Th,Sa",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Vitória x Afonso Cláudio via Faz Guandu",
+                "from": "Vitória",
+                "to": "Afonso Cláudio",
+                "via": "Fazenda Guandu",
+                "services": "Mo-Su",
+                "times": ["18:20"]
+            },
+            {
+                "name": "Afonso Cláudio x Vitória via Faz Guando",
+                "from": "Afonso Cláudio",
+                "to": "Vitória",
+                "via": "Fazenda Guandu",
+                "services": "Mo-Sa",
+                "times": ["09:30"]
+            },
+            {
+                "name": "Afonso Cláudio x Vitória via Faz Guando",
+                "from": "Afonso Cláudio",
+                "to": "Vitória",
+                "via": "Fazenda Guandu",
+                "services": "Su",
+                "times": ["12:57", "17:28"]
+            }
+        ],
+        "092/2": [
+            {
+                "name": "Vitória x Afonso Cláudio via Faz Guandu",
+                "from": "Vitória",
+                "to": "Afonso Cláudio",
+                "via": "Fazenda Guandu",
+                "start_date": "12-01",
+                "end_date": "01-31",
+                "services": "Fr",
+                "times": ["18:00"]
+            },
+            {
+                "name": "Afonso Cláudio x Vitória via Faz Guando",
+                "from": "Afonso Cláudio",
+                "to": "Vitória",
+                "via": "Fazenda Guandu",
+                "start_date": "12-01",
+                "end_date": "01-31",
+                "services": "Su",
+                "times": ["17:00"]
+            }
+        ],
+        "094/0": [
+            {
+                "name": "Pedro Canário x Montanha via 2 de Julho",
+                "from": "Pedro Canário",
+                "to": "Montanha",
+                "via": "2 de Julho",
+                "note": " Paralisação Provisoria ate 31/05/2018",
+                "start_date": "2018-05-31"
+            },
+            {
+                "name": "Montanha x Pedro Canário via 2 de Julho",
+                "from": "Montanha",
+                "to": "Pedro Canário",
+                "via": "2 de Julho",
+                "note": " Paralisação Provisoria ate 31/05/2018",
+                "start_date": "2018-05-31"
+            }
+        ],
+        "096/0": [
+            {
+                "name": "Vitória x Mantenópolis via Colatina",
+                "from": "Vitória",
+                "to": "Mantenópolis",
+                "via": "Colatina",
+                "services": "Mo-Su",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Mantenópolis x Vitória via Colatina",
+                "from": "Mantenópolis",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Mo-Su",
+                "times": ["06:10"]
+            }
+        ],
+        "099/0": [
+            {
+                "name": "Vitória x Baixo Guandu via Colatina",
+                "from": "Vitória",
+                "to": "Baixo Guandu",
+                "via": "Colatina",
+                "services": "Mo-Su",
+                "times": ["05:40"]
+            },
+            {
+                "name": "Vitória x Baixo Guandu via Colatina",
+                "from": "Vitória",
+                "to": "Baixo Guandu",
+                "via": "Colatina",
+                "services": "Su",
+                "times": ["09:30"]
+            },
+            {
+                "name": "Baixo Guandu x Vitória via Colatina",
+                "from": "Baixo Guandu",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Mo-Su",
+                "times": ["14:00"]
+            }
+        ],
+        "099/2": [
+            {
+                "name": "Vitória x Baixo Guandu via Colatina",
+                "from": "Vitória",
+                "to": "Baixo Guandu",
+                "via": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Baixo Guandu x Vitória via Colatina",
+                "from": "Baixo Guandu",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["09:00"]
+            }
+        ],
+        "100/0": [
+            {
+                "name": "Colatina x Boa Vista via Baixo Guandu",
+                "from": "Colatina",
+                "to": "Boa Vista",
+                "via": "Baixo Guandu",
+                "services": "Mo-Sa",
+                "times": ["10:30"]
+            },
+            {
+                "name": "Colatina x Boa Vista via Baixo Guandu",
+                "from": "Colatina",
+                "to": "Boa Vista",
+                "via": "Baixo Guandu",
+                "services": "Mo-Fr",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Boa Vista x Colatina via Baixo Guandu",
+                "from": "Boa Vista",
+                "to": "Colatina",
+                "via": "Baixo Guandu",
+                "services": "Mo-Sa",
+                "times": ["05:40"]
+            },
+            {
+                "name": "Boa Vista x Colatina via Baixo Guandu",
+                "from": "Boa Vista",
+                "to": "Colatina",
+                "via": "Baixo Guandu",
+                "services": "Mo-Fr",
+                "times": ["12:10"]
+            }
+        ],
+        "102/0": [
+            {
+                "name": "Vitória x Nova Venécia, via Colatina",
+                "from": "Vitória",
+                "to": "Nova Venécia",
+                "via": "Colatina",
+                "services": "Mo-We,Fr-Su",
+                "times": ["08:00"]
+            },
+            {
+                "name": "Nova Venécia x Vitória via Colatina",
+                "from": "Nova Venécia",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Mo-We,Fr-Su",
+                "times": ["14:30"]
+            }
+        ],
+        "102/2": [
+            {
+                "name": "Nova Venécia x Vitória via Colatina",
+                "from": "Nova Venécia",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["06:30"]
+            },
+            {
+                "name": "Nova Venécia x Vitória via Colatina",
+                "from": "Nova Venécia",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Mo,Fr,Su",
+                "times": ["16:00"]
+            },
+            {
+                "name": "Vitória x Nova Venécia, via Colatina",
+                "from": "Vitória",
+                "to": "Nova Venécia",
+                "via": "Colatina",
+                "services": "Mo,Fr-Sa",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Vitória x Nova Venécia, via Colatina",
+                "from": "Vitória",
+                "to": "Nova Venécia",
+                "via": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["16:00"]
+            }
+        ],
+        "103/0": [
+            {
+                "name": "Vitória x Aracruz via Fundão",
+                "from": "Vitória",
+                "to": "Aracruz",
+                "via": "Fundão",
+                "services": "Mo-Su",
+                "times": ["06:20", "08:00", "10:40", "12:30", "13:50", "15:45", "17:50", "19:30"]
+            },
+            {
+                "name": "Vitória x Aracruz via Fundão",
+                "from": "Vitória",
+                "to": "Aracruz",
+                "via": "Fundão",
+                "services": "Mo-Sa",
+                "times": ["05:00", "06:50", "09:40", "11:30", "15:00"]
+            },
+            {
+                "name": "Vitória x Aracruz via Fundão",
+                "from": "Vitória",
+                "to": "Aracruz",
+                "via": "Fundão",
+                "services": "Sa",
+                "times": ["09:30"]
+            },
+            {
+                "name": "Vitória x Aracruz via Fundão",
+                "from": "Vitória",
+                "to": "Aracruz",
+                "via": "Fundão",
+                "services": "Su",
+                "times": ["18:00", "19:10"]
+            },
+            {
+                "name": "Vitória x Aracruz via Fundão",
+                "from": "Vitória",
+                "to": "Aracruz",
+                "via": "Fundão",
+                "services": "Mo",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Vitória x Aracruz via Fundão",
+                "from": "Vitória",
+                "to": "Aracruz",
+                "via": "Fundão",
+                "services": "Fr,Sa",
+                "times": ["16:50"]
+            },
+            {
+                "name": "Vitória x Aracruz via Fundão",
+                "from": "Vitória",
+                "to": "Aracruz",
+                "via": "Fundão",
+                "services": "Fr",
+                "times": ["12:29", "19:40"]
+            },
+            {
+                "name": "Aracruz x Vitória via Fundão",
+                "from": "Aracruz",
+                "to": "Vitória",
+                "via": "Fundão",
+                "services": "Mo-Su",
+                "times": ["07:30", "09:00", "12:00", "14:30", "15:30", "17:30", "18:20", "19:50"]
+            },
+            {
+                "name": "Aracruz x Vitória via Fundão",
+                "from": "Aracruz",
+                "to": "Vitória",
+                "via": "Fundão",
+                "services": "Mo-Sa",
+                "times": ["05:00", "06:05", "10:00", "11:20", "13:00", "16:50"]
+            },
+            {
+                "name": "Aracruz x Vitória via Fundão",
+                "from": "Aracruz",
+                "to": "Vitória",
+                "via": "Fundão",
+                "services": "Mo",
+                "times": ["04:51", "07:31"]
+            },
+            {
+                "name": "Aracruz x Vitória via Fundão",
+                "from": "Aracruz",
+                "to": "Vitória",
+                "via": "Fundão",
+                "services": "Mo,Fr",
+                "times": ["14:35"]
+            },
+            {
+                "name": "Aracruz x Vitória via Fundão",
+                "from": "Aracruz",
+                "to": "Vitória",
+                "via": "Fundão",
+                "services": "Su",
+                "times": ["16:30"]
+            },
+            {
+                "name": "Aracruz x Vitória via Fundão",
+                "from": "Aracruz",
+                "to": "Vitória",
+                "via": "Fundão",
+                "services": "Fr",
+                "times": ["16:51"]
+            },
+            {
+                "name": "Aracruz x Vitória via Fundão",
+                "from": "Aracruz",
+                "to": "Vitória",
+                "via": "Fundão",
+                "services": "Sa",
+                "times": ["13:05"]
+            },
+            {
+                "name": "Vila Velha (Ramal) x Aracruz",
+                "from": "Vila Velha",
+                "to": "Aracruz",
+                "note": "Cancelado"
+            },
+            {
+                "name": "Aracruz x Vila Velha (Ramal)",
+                "from": "Aracruz",
+                "to": "Vila Velha",
+                "note": "Cancelado"
+            }
+        ],
+        "103/2": [
+            {
+                "name": "Vitória x Aracruz via Fundão",
+                "from": "Vitória",
+                "to": "Aracruz",
+                "via": "Fundão",
+                "services": "Fr",
+                "times": ["17:45"]
+            },
+            {
+                "name": "Aracruz x Vitória via Fundão",
+                "from": "Aracruz",
+                "to": "Vitória",
+                "via": "Fundão",
+                "services": "Mo",
+                "times": ["06:00"]
+            }
+        ],
+        "104/0": [
+            {
+                "name": "Vitória x São Gabriel Palha via Colatina",
+                "from": "Vitória",
+                "to": "São Gabriel da Palha",
+                "via": "Colatina",
+                "services": "Th",
+                "times": ["08:00"]
+            },
+            {
+                "name": "São Gabriel Palha x Vitória via Colatina",
+                "from": "São Gabriel da Palha",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Th",
+                "times": ["14:30"]
+            }
+        ],
+        "114/0": [
+            {
+                "name": "Colatina x Ecoporanga via Paulista",
+                "from": "Colatina",
+                "to": "Ecoporanga",
+                "via": "Paulista",
+                "services": "Mo,Fr,Su",
+                "times": ["08:30"]
+            },
+            {
+                "name": "Colatina x Ecoporanga via Paulista",
+                "from": "Colatina",
+                "to": "Ecoporanga",
+                "via": "Paulista",
+                "services": "Mo-Fr",
+                "times": ["14:30"]
+            },
+            {
+                "name": "Ecoporanga x Colatina via Paulista",
+                "from": "Ecoporanga",
+                "to": "Colatina",
+                "via": "Paulista",
+                "services": "Mo-Fr",
+                "times": ["06:40"]
+            },
+            {
+                "name": "Ecoporanga x Colatina via Paulista",
+                "from": "Ecoporanga",
+                "to": "Colatina",
+                "via": "Paulista",
+                "services": "Mo,Fr,Su",
+                "times": ["15:30"]
+            }
+        ],
+        "134/0": [
+            {
+                "name": "Vitória x Pontões via Domingo Martins",
+                "from": "Vitória",
+                "to": "Pontões",
+                "via": "Domingo Martins",
+                "services": "Mo",
+                "times": ["09:10"]
+            },
+            {
+                "name": "Pontões x Vitória via Domingo Martins",
+                "from": "Pontões",
+                "to": "Vitória",
+                "via": "Domingo Martins",
+                "services": "Mo",
+                "times": ["05:15"]
+            }
+        ],
+        "143/0": [
+            {
+                "name": "Vitória (D Bosco) x Dom Martins via BR-262",
+                "from": "Dom Bosco",
+                "to": "Domingo Martins",
+                "via": "BR-262",
+                "services": "Th",
+                "times": ["12:45"]
+            },
+            {
+                "name": "Dom Martins x Vitória (D Bosco) via BR-262",
+                "from": "Domingo Martins",
+                "to": "Dom Bosco",
+                "via": "BR-262",
+                "services": "Th",
+                "times": ["17:30"]
+            }
+        ],
+        "143/6": [
+            {
+                "name": "Vitória (D Bosco) x Dom Martins via BR-262",
+                "from": "Dom Bosco",
+                "to": "Domingo Martins",
+                "via": "BR-262",
+                "services": "Mo-Sa",
+                "times": ["07:00"]
+            },
+            {
+                "name": "Vitória (D Bosco) x Dom Martins via BR-262",
+                "from": "Dom Bosco",
+                "to": "Domingo Martins",
+                "via": "BR-262",
+                "services": "Mo-Fr",
+                "times": ["18:00"]
+            },
+            {
+                "name": "Vitória (D Bosco) x Dom Martins via BR-262",
+                "from": "Dom Bosco",
+                "to": "Domingo Martins",
+                "via": "BR-262",
+                "services": "Mo-We,Fr-Su",
+                "times": ["12:45"]
+            },
+            {
+                "name": "Dom Martins x Vitória (D Bosco) via BR-262",
+                "from": "Domingo Martins",
+                "to": "Dom Bosco",
+                "via": "BR-262",
+                "services": "Mo-Sa",
+                "times": ["05:20", "11:00"]
+            },
+            {
+                "name": "Dom Martins x Vitória (D Bosco) via BR-262",
+                "from": "Domingo Martins",
+                "to": "Vitória",
+                "via": "BR-262",
+                "services": "Mo-We,Fr-Su",
+                "times": ["17:30"]
+            }
+        ],
+        "144/0": [
+            {
+                "name": "Vitória x Pinheiro via Colatina",
+                "from": "Vitória",
+                "to": "Pinheiro",
+                "via": "Colatina",
+                "services": "Tu-Su",
+                "times": ["17:40"]
+            },
+            {
+                "name": "Pinheiro x Vitória via Colatina",
+                "from": "Pinheiro",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Tu-Su",
+                "times": ["07:10"]
+            }
+        ],
+        "152/0": [
+            {
+                "name": "São Mateus x Pedro Canário via BR-101",
+                "from": "São Mateus",
+                "to": "Pedro Canário",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["11:30", "15:50", "17:30", "19:30"]
+            },
+            {
+                "name": "São Mateus x Pedro Canário via BR-101",
+                "from": "São Mateus",
+                "to": "Pedro Canário",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["08:30", "10:30"]
+            },
+            {
+                "name": "Pedro Canário x São Mateus via BR-101",
+                "from": "Pedro Canário",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["07:00", "08:10", "12:00"]
+            },
+            {
+                "name": "Pedro Canário x São Mateus via BR-101",
+                "from": "Pedro Canário",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["05:30", "10:10", "13:10"]
+            }
+        ],
+        "166/0": [
+            {
+                "name": "São Mateus x Ponto Belo via Sayonara",
+                "from": "São Mateus",
+                "to": "Ponto Belo",
+                "via": "Sayonara",
+                "services": "Mo-We,Fr-Su",
+                "times": ["11:40"]
+            },
+            {
+                "name": "Ponto Belo x São Mateus via Sayonara",
+                "from": "Ponto Belo",
+                "to": "São Mateus",
+                "via": "Sayonara",
+                "services": "Mo-We,Fr-Su",
+                "times": ["15:15"]
+            }
+        ],
+        "170/0": [
+            {
+                "name": "Vitória x Colatina via Fab Aracruz Celul",
+                "from": "Vitória",
+                "to": "Colatina",
+                "via": "Fábrica Aracruz Celulose",
+                "services": "Sa",
+                "times": ["07:00"]
+            },
+            {
+                "name": "Colatina x Vitória via Fab Aracruz Celul",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "Fábrica Aracruz Celulose",
+                "services": "Sa",
+                "times": ["13:00"]
+            }
+        ],
+        "172/0": [
+            {
+                "name": "Colatina x Conc da Barra via João Neiva",
+                "from": "Colatina",
+                "to": "Conceição da Barra",
+                "via": "João Neiva",
+                "services": "Mo-Su",
+                "times": ["05:20"]
+            },
+            {
+                "name": "Conc da Barra x Colatina via João Neiva",
+                "from": "Colatina",
+                "to": "Conceição da Barra",
+                "via": "João Neiva",
+                "services": "Mo-Su",
+                "times": ["11:50"]
+            }
+        ],
+        "173/0": [
+            {
+                "name": "São Mateus x Montanha via Sayonara",
+                "from": "São Mateus",
+                "to": "Montanha",
+                "via": "Sayonara",
+                "services": "Th",
+                "times": ["11:40"]
+            },
+            {
+                "name": "Montanha x São Mateus via Sayonara",
+                "from": "Montanha",
+                "to": "São Mateus",
+                "via": "Sayonara",
+                "services": "Th",
+                "times": ["15:50"]
+            }
+        ],
+        "181/0": [
+            {
+                "name": "Vitória x Santa Cruz via Nova Almeida",
+                "from": "Vitória",
+                "to": "Santa Cruz",
+                "via": "Nova Almeida",
+                "services": "Sa",
+                "times": ["07:00"]
+            },
+            {
+                "name": "Santa Cruz x Vitória via Nova Almeida",
+                "from": "Santa Cruz",
+                "to": "Vitória",
+                "via": "Nova Almeida",
+                "services": "Su",
+                "times": ["17:00"]
+            }
+        ],
+        "181/1": [
+            {
+                "name": "Vitória x Santa Cruz via Nova Almeida",
+                "from": "Vitória",
+                "to": "Santa Cruz",
+                "via": "Nova Almeida",
+                "services": "Th",
+                "times": ["07:00"]
+            },
+            {
+                "name": "Santa Cruz x Vitória via Nova Almeida",
+                "from": "Santa Cruz",
+                "to": "Vitória",
+                "via": "Nova Almeida",
+                "services": "Th",
+                "times": ["17:20"]
+            }
+        ],
+        "181/6": [
+            {
+                "name": "Vitória x Santa Cruz via Nova Almeida",
+                "from": "Vitória",
+                "to": "Santa Cruz",
+                "via": "Nova Almeida",
+                "services": "Mo-We,Fr",
+                "times": ["07:00"]
+            },
+            {
+                "name": "Santa Cruz x Vitória via Nova Almeida",
+                "from": "Santa Cruz",
+                "to": "Vitória",
+                "via": "Nova Almeida",
+                "services": "Mo-We,Fr-Sa",
+                "times": ["17:20"]
+            },
+            {
+                "name": "Carapina (Terminal VAB) x Santa Cruz",
+                "from": "Carapina",
+                "to": "Santa Cruz",
+                "end_date": "2018-06-30",
+                "services": "Mo-Sa",
+                "times": ["15:40"]
+            },
+            {
+                "name": "Santa Cruz x Carapina (Terminal VAB)",
+                "from": "Santa Cruz",
+                "to": "Carapina",
+                "end_date": "2018-06-30",
+                "services": "We-Sa",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Santa Cruz x Carapina (Terminal VAB)",
+                "from": "Santa Cruz",
+                "to": "Carapina",
+                "end_date": "2018-06-30",
+                "services": "Mo,We-Th,Sa",
+                "times": ["09:30"]
+            },
+            {
+                "name": "Carapina (Terminal VAB) x Santa Cruz",
+                "from": "Carapina",
+                "to": "Santa Cruz",
+                "end_date": "2018-06-30",
+                "services": "Tu-Th,Sa",
+                "times": ["11:20"]
+            },
+            {
+                "name": "Carapina (Terminal VAB) x Santa Cruz",
+                "from": "Carapina",
+                "to": "Santa Cruz",
+                "end_date": "2018-06-30",
+                "services": "Su",
+                "times": ["14:45"]
+            }
+        ],
+        "183/0": [
+            {
+                "name": "Linhares x Pedro Canário via BR-101",
+                "from": "Linhares",
+                "to": "Pedro Canário",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["12:00"]
+            },
+            {
+                "name": "Pedro Canário x Linhares via BR-101",
+                "from": "Pedro Canário",
+                "to": "Linhares",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["15:30"]
+            }
+        ],
+        "184/0": [
+            {
+                "name": "Vitória x Mal Floriano via D Martins",
+                "from": "Vitória",
+                "to": "Marechal Floriano",
+                "via": "Domingo Martins",
+                "services": "Mo-Tu,Th-Sa",
+                "times": ["08:00"]
+            },
+            {
+                "name": "Vitória x Mal Floriano via D Martins",
+                "from": "Vitória",
+                "to": "Marechal Floriano",
+                "via": "Domingo Martins",
+                "services": "Mo-Su",
+                "times": ["19:00"]
+            },
+            {
+                "name": "Vitória x Mal Floriano via D Martins",
+                "from": "Vitória",
+                "to": "Marechal Floriano",
+                "via": "Domingo Martins",
+                "services": "Su",
+                "times": ["16:05"]
+            },
+            {
+                "name": "Vitória x Mal Floriano via D Martins",
+                "from": "Vitória",
+                "to": "Marechal Floriano",
+                "via": "Domingo Martins",
+                "services": "Mo,Fr-Sa",
+                "times": ["11:35"]
+            },
+            {
+                "name": "Mal Floriano x VItória via D Martins",
+                "from": "Marechal Floriano",
+                "to": "Vitória",
+                "via": "Domingo Martins",
+                "services": "Mo-Su",
+                "times": ["06:00"]
+            },
+            {
+                "name": "Mal Floriano x VItória via D Martins",
+                "from": "Marechal Floriano",
+                "to": "Vitória",
+                "via": "Domingo Martins",
+                "services": "Mo",
+                "times": ["08:00"]
+            },
+            {
+                "name": "Mal Floriano x VItória via D Martins",
+                "from": "Marechal Floriano",
+                "to": "Vitória",
+                "via": "Domingo Martins",
+                "services": "Mo,Fr-Sa",
+                "times": ["11:40"]
+            },
+            {
+                "name": "Mal Floriano x VItória via D Martins",
+                "from": "Marechal Floriano",
+                "to": "Vitória",
+                "via": "Domingo Martins",
+                "services": "Su",
+                "times": ["18:50"]
+            }
+        ],
+        "186/0": [
+            {
+                "name": "Venda Nova x Afonso Cláudio via Indaiá",
+                "from": "Venda Nova do Imigrante",
+                "to": "Afonso Cláudio",
+                "via": "Indaiá",
+                "note": "A primeira terça-feira do mês",
+                "services": "Tu",
+                "times": ["13:45"]
+            },
+            {
+                "name": "Afonso Cláudio x Venda Nova via Indaiá",
+                "from": "Afonso Cláudio",
+                "to": "Venda Nova do Imigrante",
+                "via": "Indaiá",
+                "note": "A primeira terça-feira do mês",
+                "services": "Tu",
+                "times": ["07:20"]
+            }
+        ],
+        "187/0": [
+            {
+                "name": "Vitória x Pequiá via Brejetuba",
+                "from": "Vitória",
+                "to": "Pequiá",
+                "via": "Brejetuba",
+                "services": "Th",
+                "times": ["05:00"]
+            },
+            {
+                "name": "Pequiá x Vitória via Brejetuba",
+                "from": "Pequiá",
+                "to": "Vitória",
+                "via": "Brejetuba",
+                "services": "Th",
+                "times": ["12:40"]
+            },
+            {
+                "name": "Vitória x Brejetuba VP",
+                "from": "Vitória",
+                "to": "Brejetuba",
+                "services": "Mo-Sa",
+                "times": ["13:40"]
+            },
+            {
+                "name": "Vitória x Brejetuba VP",
+                "from": "Vitória",
+                "to": "Brejetuba",
+                "services": "Su",
+                "times": ["12:00"]
+            },
+            {
+                "name": "Brejetuba x Vitória VP",
+                "from": "Brejetuba",
+                "to": "Vitória",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            },
+            {
+                "name": "Brejetuba x Vitória VP",
+                "from": "Brejetuba",
+                "to": "Vitória",
+                "services": "Su",
+                "times": ["16:00"]
+            }
+        ],
+        "195/0": [
+            {
+                "name": "São Mateus x Linhares via BR-101",
+                "from": "São Mateus",
+                "to": "Linhares",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["07:00", "09:40", "14:00"]
+            },
+            {
+                "name": "São Mateus x Linhares via BR-101",
+                "from": "São Mateus",
+                "to": "Linhares", 
+                "via": "BR-101",
+                "services": "Sa",
+                "times": ["09:55"]
+            },
+            {
+                "name": "São Mateus x Linhares via BR-101",
+                "from": "São Mateus",
+                "to": "Linhares",
+                "via": "BR-101",
+                "services": "Mo,Fr-Sa",
+                "times": ["12:40"]
+            },
+            {
+                "name": "São Mateus x Linhares via BR-101",
+                "from": "São Mateus",
+                "to": "Linhares",
+                "via": "BR-101",
+                "services": "Fr,Su",
+                "times": ["16:20"]
+            },
+            {
+                "name": "São Mateus x Linhares via BR-101",
+                "from": "São Mateus",
+                "to": "Linhares",
+                "via": "BR-101",
+                "services": "Su",
+                "times": ["19:05"]
+            },
+            {
+                "name": "Linhares x São Mateus via BR-101",
+                "from": "Linhares",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["06:00", "09:00", "17:00"]
+            },
+            {
+                "name": "Linhares x São Mateus via BR-101",
+                "from": "Linhares",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "services": "Sa",
+                "times": ["12:15"]
+            },
+            {
+                "name": "Linhares x São Mateus via BR-101",
+                "from": "Linhares",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "services": "Mo,Fr-Sa",
+                "times": ["15:40"]
+            },
+            {
+                "name": "Linhares x São Mateus via BR-101",
+                "from": "Linhares",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "services": "Fr,Su",
+                "times": ["18:30"]
+            },
+            {
+                "name": "Linhares x São Mateus via BR-101",
+                "from": "Linhares",
+                "to": "São Mateus",
+                "via": "BR-101",
+                "services": "Su",
+                "times": ["20:50"]
+            }
+        ],
+        "196/0": [
+            {
+                "name": "B.S.Francisco x São Mateus via N Venécia",
+                "from": "Barra de São Francisco",
+                "to": "São Mateus",
+                "via": "Nova Venécia",
+                "services": "Mo-Su",
+                "times": ["06:10"]
+            },
+            {
+                "name": "São Mateus x B.S.Francisco via N Venécia",
+                "from": "São Mateus",
+                "to": "Barra de São Francisco",
+                "via": "Nova Venécia",
+                "services": "Mo-Su",
+                "times": ["14:00"]
+            }
+        ],
+        "197/0": [
+            {
+                "name": "Linhares x Aracruz via Guaraná",
+                "from": "Linhares",
+                "to": "Aracruz",
+                "via": "Guaraná",
+                "services": "Mo-Sa",
+                "times": ["06:30", "12:00", "17:30"]
+            },
+            {
+                "name": "Linhares x Aracruz via Guaraná",
+                "from": "Linhares",
+                "to": "Aracruz",
+                "via": "Guaraná",
+                "services": "Mo-Su",
+                "times": ["15:40"]
+            },
+            {
+                "name": "Linhares x Aracruz via Guaraná",
+                "from": "Linhares",
+                "to": "Aracruz",
+                "via": "Guaraná",
+                "services": "Su",
+                "times": ["08:00"]
+            },
+            {
+                "name": "Aracruz x Linhares via Guaraná",
+                "from": "Aracruz",
+                "to": "Linhares",
+                "via": "Guaraná",
+                "services": "Mo-Sa",
+                "times": ["06:00", "14:00"]
+            },
+            {
+                "name": "Aracruz x Linhares via Guaraná",
+                "from": "Aracruz",
+                "to": "Linhares",
+                "via": "Guaraná",
+                "services": "Mo-Su",
+                "times": ["09:20", "17:20"]
+            }
+        ],
+        "198/0": [
+            {
+                "name": "Vitória x Iuna via Ibatiba",
+                "from": "Vitória",
+                "to": "Iuna",
+                "via": "Ibatiba",
+                "services": "Mo-Su", 
+                "times": ["08:10", "13:30"]
+            },
+            {
+                "name": "Vitória x Iuna via Ibatiba",
+                "from": "Vitória",
+                "to": "Iuna",
+                "via": "Ibatiba",
+                "services": "Fr",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Iuna x Vitória via Ibatiba",
+                "from": "Iuna",
+                "to": "Vitória",
+                "via": "Ibatiba",
+                "services": "Mo-Su",
+                "times": ["05:20", "16:00"]
+            },
+            {
+                "name": "Iuna x Vitória via Ibatiba",
+                "from": "Iuna",
+                "to": "Vitória",
+                "via": "Ibatiba",
+                "services": "Su",
+                "times": ["15:40"]
+            },
+            {
+                "name": "Vitória x Iuna via Ibatiba",
+                "from": "Vitória",
+                "to": "Iuna",
+                "via": "Ibatiba",
+                "start_date": "12-01",
+                "end_date": "01-31",
+                "services": "Su",
+                "times": ["08:00"]
+            },
+            {
+                "name": "Iuna x Vitória via Ibatiba",
+                "from": "Iuna",
+                "to": "Vitória",
+                "via": "Ibatiba",
+                "start_date": "12-01",
+                "end_date": "01-31",
+                "services": "Su",
+                "times": ["07:00"]
+            }
+        ],
+        "216/0": [
+            {
+                "name": "Vitória x Ecoporanga via Paulista",
+                "from": "Vitória",
+                "to": "Ecoporanga",
+                "via": "Paulista",
+                "services": "Mo-Su",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Ecoporanga x Vitória via Paulista",
+                "from": "Ecoporanga",
+                "to": "Vitória",
+                "via": "Paulista",
+                "services": "Mo-Su",
+                "times": ["23:40"]
+            },
+            {
+                "name": "Vila Velha (Ramal) x Ecoporanga via Paulista",
+                "from": "Vila Velha",
+                "to": "Ecoporanga",
+                "via": "Paulista",
+                "end_date": "2018-06-30",
+                "services": "Mo-Su",
+                "times": ["21:40"]
+            },
+            {
+                "name": "Ecoporanga x Vila Velha (Ramal) via Paulista",
+                "from": "Ecoporanga",
+                "to": "Vila Velha",
+                "via": "Paulista",
+                "end_date": "2018-06-30",
+                "services": "Mo-Su",
+                "times": ["08:30"]
+            },
+            {
+                "name": "Vila Velha (Ramal) x Ecoporanga via Paulista",
+                "from": "Vila Velha",
+                "to": "Ecoporanga",
+                "via": "Paulista",
+                "end_date": "2018-06-30",
+                "note": "Nos meses de Janeiro e Julho",
+                "services": "Sa",
+                "times": ["08:21"]
+            },
+            {
+                "name": "Ecoporanga x Vila Velha (Ramal) via Paulista",
+                "from": "Ecoporanga",
+                "to": "Vila Velha",
+                "via": "Paulista",
+                "end_date": "2018-06-30",
+                "note": "Nos meses de Janeiro e Julho",
+                "services": "Su",
+                "times": ["16:40"]
+            }
+        ],
+        "225/0": [
+            {
+                "name": "Vitória x Jaguaré via BR-101",
+                "from": "Vitória",
+                "to": "Jaguaré",
+                "via": "BR-101",
+                "services": "Tu-Su,Ho",
+                "times": ["08:30"]
+            },
+            {
+                "name": "Vitória x Nestor Gomes (Ramal)",
+                "from": "Vitória",
+                "to": "Nestor Gomes",
+                "services": "Mo",
+                "times": ["08:30"]
+            },
+            {
+                "name": "Jaguaré x Vitória via BR-101",
+                "from": "Jaguaré",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Tu-Su,Ho",
+                "times": ["16:50"]
+            },
+            {
+                "name": "Nestor Gomes (Ramal) x Vitória",
+                "from": "Nestor Gomes",
+                "to": "Vitória",
+                "services": "Mo",
+                "times": ["16:20"]
+            }
+        ],
+        "225/2": [
+            {
+                "name": "Vitória x Jaguaré via BR-101",
+                "from": "Vitória",
+                "to": "Jaguaré",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["14:30"]
+            },
+            {
+                "name": "Jaguaré x Vitória via BR-101",
+                "from": "Vitória",
+                "to": "Jaguaré",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["06:50"]
+            }
+        ],
+        "227/0": [
+            {
+                "name": "Vitória x Boa Esperança via Colatina",
+                "from": "Vitória",
+                "to": "Boa Esperança",
+                "via": "Colatina",
+                "services": "Mo",
+                "times": ["17:40"]
+            },
+            {
+                "name": "Boa Esperança x Vitória via Colatina",
+                "from": "Boa Esperança", 
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Mo",
+                "times": ["07:40"]
+            }
+        ],
+        "244/0": [
+            {
+                "name": "Venda Nova do Imigrante x Afonso Cláudio",
+                "from": "Venda Nova do Imigrante",
+                "to": "Afonso Cláudio",
+                "services": "Sa",
+                "times": ["14:10"]
+            },
+            {
+                "name": "Afonso Cláudio x Venda Nova do Imigrante",
+                "from": "Afonso Cláudio",
+                "to": "Venda Nova do Imigrante",
+                "services": "Sa",
+                "times": ["08:05"]
+            }
+        ],
+        "248/0": [
+            {
+                "name": "Vitória x V Nova do Imigrante via D Martins",
+                "from": "Vitória",
+                "to": "Venda Nova do Imigrante",
+                "via": "Domingo Martins",
+                "services": "Mo-Sa",
+                "times": ["09:20"]
+            },
+            {
+                "name": "V Nova do Imigrante x Vitória via D Martins",
+                "from": "Venda Nova do Imigrante",
+                "to": "Vitória",
+                "via": "Domingo Martins",
+                "services": "Mo-Sa",
+                "times": ["13:50"]
+            }
+        ],
+        "250/0": [
+            {
+                "name": "Vitória x Marilândia via Colatina",
+                "from": "Vitória",
+                "to": "Marilândia",
+                "via": "Colatina",
+                "services": "Mo-Su",
+                "times": ["16:30"]
+            },
+            {
+                "name": "Marilândia x Vitória via Colatina",
+                "from": "Marilândia",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Mo-Su",
+                "times": ["07:30"]
+            }
+        ],
+        "251/0": [
+            {
+                "name": "Baixo Guandu x Fábrica Aracruz Celul",
+                "from": "Baixo Guandu",
+                "to": "Aracruz Celulose",
+                "services": "Mo",
+                "times": ["06:00"]
+            },
+            {
+                "name": "Fábrica Aracruz Celul x Baixo Guandu",
+                "from": "Aracruz Celulose",
+                "to": "Baixo Guandu",
+                "services": "Mo",
+                "times": ["10:20"]
+            }
+        ],
+        "252/0": [
+            {
+                "name": "Colatina x Pedro Canário via Pinheiro",
+                "from": "Colatina",
+                "to": "Pedro Canário",
+                "via": "Pinheiro",
+                "services": "Mo,We-Sa",
+                "times": ["07:30"]
+            },
+            {
+                "name": "Pedro Canário x Colatina via Pinheiro",
+                "from": "Pedro Canário",
+                "to": "Colatina",
+                "via": "Pinheiro",
+                "services": "Mo,We-Fr,Su",
+                "times": ["15:00"]
+            }
+        ],
+        "253/0": [
+            {
+                "name": "Colatina x Santa Luiza do Norte",
+                "from": "Colatina",
+                "to": "Santa Luiza do Norte",
+                "services": "Sa",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Santa Luiza do Norte x Colatina",
+                "from": "Santa Luiza do Norte",
+                "to": "Colatina",
+                "services": "Sa",
+                "times": ["05:00"]
+            }
+        ],
+        "258/0": [
+            {
+                "name": "Vitória x Vila do Riacho via Coqueiral",
+                "from": "Vitória",
+                "to": "Vila do Riacho",
+                "via": "Coqueiral",
+                "services": "Mo-Sa",
+                "times": ["11:10", "17:30"]
+            },
+            {
+                "name": "Vitória x Vila do Riacho via Coqueiral",
+                "from": "Vitória",
+                "to": "Vila do Riacho",
+                "via": "Coqueiral",
+                "services": "Su",
+                "times": ["18:00"]
+            },
+            {
+                "name": "Vitória x Vila do Riacho via Coqueiral",
+                "from": "Vitória",
+                "to": "Vila do Riacho",
+                "via": "Coqueiral",
+                "services": "Fr",
+                "times": ["18:40"]
+            },
+            {
+                "name": "Vila do Riacho x Vitória via Coqueiral",
+                "from": "Vila do Riacho",
+                "to": "Vitória",
+                "via": "Coqueiral",
+                "services": "Mo-Sa",
+                "times": ["06:50", "15:50"]
+            },
+            {
+                "name": "Vila do Riacho x Vitória via Coqueiral",
+                "from": "Vila do Riacho",
+                "to": "Vitória",
+                "via": "Coqueiral",
+                "services": "Su",
+                "times": ["14:30"]
+            }
+        ],
+        "259/0": [
+            {
+                "name": "Vitória x Coqueiral via Santa Cruz",
+                "from": "Vitória",
+                "to": "Coqueiral",
+                "via": "Santa Cruz",
+                "services": "Su",
+                "times": ["07:00", "13:00", "17:30"]
+            },
+            {
+                "name": "Vitória x Coqueiral via Santa Cruz",
+                "from": "Vitória",
+                "to": "Coqueiral",
+                "via": "Santa Cruz",
+                "services": "Mo-Sa",
+                "times": ["05:00", "09:00"]
+            },
+            {
+                "name": "Vitória x Coqueiral via Santa Cruz",
+                "from": "Vitória",
+                "to": "Coqueiral",
+                "via": "Santa Cruz",
+                "services": "Mo-Su",
+                "times": ["18:30"]
+            },
+            {
+                "name": "Coqueiral x Vitória via Santa Cruz",
+                "from": "Coqueiral",
+                "to": "Vitória",
+                "via": "Santa Cruz",
+                "services": "Mo-Sa",
+                "times": ["05:15", "06:20"]
+            },
+            {
+                "name": "Coqueiral x Vitória via Santa Cruz",
+                "from": "Coqueiral",
+                "to": "Vitória",
+                "via": "Santa Cruz",
+                "services": "Su",
+                "times": ["17:00"]
+            },
+            {
+                "name": "Coqueiral x Vitória via Santa Cruz",
+                "from": "Coqueiral",
+                "to": "Vitória",
+                "via": "Santa Cruz",
+                "services": "Mo-Su",
+                "times": ["18:10"]
+            },
+            {
+                "name": "Carapina (Terminal VAB) x Coqueiral",
+                "from": "Carapina",
+                "to": "Coqueiral",
+                "end_date": "2018-06-30",
+                "services": "Mo-Sa",
+                "times": ["14:30", "17:30"]
+            },
+            {
+                "name": "Carapina (Terminal VAB) x Coqueiral",
+                "from": "Carapina",
+                "to": "Coqueiral",
+                "end_date": "2018-06-30",
+                "services": "Su",
+                "times": ["16:20"]
+            },
+            {
+                "name": "Coqueiral x Carapina (Terminal VAB)",
+                "from": "Coqueiral",
+                "to": "Carapina",
+                "end_date": "2018-06-30",
+                "services": "Mo-Sa",
+                "times": ["12:00", "15:00"]
+            },
+            {
+                "name": "Coqueiral x Carapina (Terminal VAB)",
+                "from": "Coqueiral",
+                "to": "Carapina",
+                "end_date": "2018-06-30",
+                "services": "Su",
+                "times": ["07:00", "14:30"]
+            }
+        ],
+        "260/0": [
+            {
+                "name": "Vitória x Linhares via Coqueiral",
+                "from": "Vitória",
+                "to": "Linhares",
+                "via": "Coqueiral",
+                "services": "Su", 
+                "times": ["08:30"]
+            },
+            {
+                "name": "Linhares x Vitória via Coqueiral",
+                "from": "Linhares",
+                "to": "Vitória",
+                "via": "Coqueiral",
+                "services": "Su", 
+                "times": ["13:30"]
+            }
+        ],
+        "261/0": [
+            {
+                "name": "Vitória x Águia Branca via Colatina",
+                "from": "Vitória",
+                "to": "Águia Branca",
+                "via": "Colatina",
+                "services": "Th", 
+                "times": ["06:10"]
+            },
+            {
+                "name": "Águia Branca x Vitória via Colatina",
+                "from": "Águia Branca",
+                "to": "Vitória",
+                "via": "Colatina",
+                "services": "Th",
+                "times": ["18:10"]
+            }
+        ],
+        "263/0": [
+            {
+                "name": "São Gabriel da Palha x Guriri via N Venécia",
+                "from": "São Gabriel da Palha",
+                "to": "Guriri",
+                "via": "Nova Venécia",
+                "services": "Sa", 
+                "times": ["08:00"]
+            },
+            {
+                "name": "Guriri x São Gabriel da Palha via N Venécia",
+                "from": "Guriri",
+                "to": "São Gabriel da Palha",
+                "via": "Nova Venécia",
+                "services": "Su", 
+                "times": ["17:00"]
+            }
+        ],
+        "265/0": [
+            {
+                "name": "Vitória x Ponto Belo via BR-101",
+                "from": "Vitória",
+                "to": "Ponto Belo",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["13:30"]
+            },
+            {
+                "name": "Vitória x Ponto Belo via BR-101",
+                "from": "Vitória",
+                "to": "Ponto Belo",
+                "via": "BR-101",
+                "services": "Mo-Tu,Th-Su",
+                "times": ["21:20"]
+            },
+            {
+                "name": "Ponto Belo x Vitória via BR-101",
+                "from": "Ponto Belo",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Ponto Belo x Vitória via BR-101",
+                "from": "Ponto Belo",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-We,Th-Su",
+                "times": ["22:30"]
+            }
+        ],
+        "265/2": [
+            {
+                "name": "Vitória x Ponto Belo via BR-101",
+                "from": "Vitória",
+                "to": "Ponto Belo",
+                "via": "BR-101",
+                "note": "Nos meses de Junho e Dezembro",
+                "services": "Fr",
+                "times": ["20:30"]
+            },
+            {
+                "name": "Ponto Belo x Vitória via BR-101",
+                "from": "Ponto Belo",
+                "to": "Vitória",
+                "via": "BR-101",
+                "note": "Nos meses de Junho e Dezembro",
+                "services": "Su",
+                "times": ["15:00"]
+            }
+        ],
+        "267/0": [
+            {
+                "name": "Vila Velha x Colatina via João Neiva",
+                "from": "Vila Velha",
+                "to": "Colatina",
+                "via": "João Neiva",
+                "services": "Mo-Sa",
+                "times": ["10:30"]
+            },
+            {
+                "name": "Vila Velha x Colatina via João Neiva",
+                "from": "Vila Velha",
+                "to": "Colatina",
+                "via": "João Neiva",
+                "services": "Su",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Colatina x Vila Velha via João Neiva",
+                "from": "Colatina",
+                "to": "Vila Velha",
+                "via": "João Neiva",
+                "services": "Mo-Su",
+                "times": ["06:00"]
+            }
+        ],
+        "271/0": [
+            {
+                "name": "Vitória x Ponto Alto via Domingos Martins",
+                "from": "Vitória",
+                "to": "Ponto Alto",
+                "via": "Domingo Martins",
+                "services": "Su",
+                "times": ["08:00"]
+            },
+            {
+                "name": "Vitória x Ponto Alto via Domingos Martins",
+                "from": "Vitória",
+                "to": "Ponto Alto",
+                "via": "Domingo Martins",
+                "services": "Mo-Th,Sa-Su",
+                "times": ["17:05"]
+            },
+            {
+                "name": "Vitória x Ponto Alto via Domingos Martins",
+                "from": "Vitória",
+                "to": "Ponto Alto",
+                "via": "Domingo Martins",
+                "services": "Fr",
+                "times": ["16:50"]
+            },
+            {
+                "name": "Ponto Alto x Vitória via Domingos Martins",
+                "from": "Ponto Alto",
+                "to": "Vitória",
+                "via": "Domingo Martins",
+                "services": "Mo-Sa",
+                "times": ["06:20"]
+            },
+            {
+                "name": "Ponto Alto x Vitória via Domingos Martins",
+                "from": "Ponto Alto",
+                "to": "Vitória",
+                "via": "Domingo Martins",
+                "services": "Su", 
+                "times": ["14:00", "18:00"]
+            }
+        ],
+        "272/0": [
+            {
+                "name": "Colatina x Nova Almeida via Fábrica",
+                "from": "Colatina",
+                "to": "Nova Almeida",
+                "via": "Fábrica Aracruz Celulose",
+                "services": "Fr",
+                "times": ["13:00"]
+            },
+            {
+                "name": "Nova Almida x Colatina via Fábrica",
+                "from": "Nova Almeida",
+                "to": "Colatina",
+                "via": "Fábrica Aracruz Celulose",
+                "services": "Fr",
+                "times": ["16:30"]
+            }
+        ],
+        "273/0": [
+            {
+                "name": "Colatina x Pinheiro via São Gabriel Palha",
+                "from": "Colatina",
+                "to": "Pinheiro",
+                "via": "São Gabriel da Palha",
+                "services": "Tu", 
+                "times": ["07:30"]
+            },
+            {
+                "name": "Pinheiro x Colatina via São Gabriel Palha",
+                "from": "Pinheiro",
+                "to": "Colatina",
+                "via": "São Gabriel da Palha",
+                "services": "Tu",
+                "times": ["16:20"]
+            }
+        ],
+        "293/0": [
+            {
+                "name": "Vitória x Ibatiba via V N Imigrante",
+                "from": "Vitória", 
+                "to": "Ibatiba",
+                "via": "Venda Nova do Imigrante",
+                "services": "Mo-Tu,Fr-Su",
+                "times": ["05:00"]
+            },
+            {
+                "name": "Vitória x Ibatiba via V N Imigrante",
+                "from": "Vitória",
+                "to": "Ibatiba",
+                "via": "Venda Nova do Imigrante",
+                "services": "Mo-Sa",
+                "times": ["11:50"]
+            },
+            {
+                "name": "Ibatiba x Vitória via V N Imigrante",
+                "from": "Ibatiba",
+                "to": "Vitória",
+                "via": "Venda Nova do Imigrante",
+                "services": "Mo-We,Fr-Su",
+                "times": ["13:30"]
+            },
+            {
+                "name": "Ibatiba x Vitória via V N Imigrante",
+                "from": "Ibatiba",
+                "to": "Vitória",
+                "via": "Venda Nova do Imigrante",
+                "services": "Mo-Fr",
+                "times": ["15:25"]
+            }
+        ],
+        "294/0": [
+            {
+                "name": "Linhares x Aracruz via Córrego do Índio",
+                "from": "Linhares",
+                "to": "Aracruz",
+                "via": "Córrego do Índio",
+                "note": "As primeiras segunda feiras do mes",
+                "services": "Mo", 
+                "times": ["14:20"]
+            },
+            {
+                "name": "Aracruz x Linhares via Córrego do Índio",
+                "from": "Aracruz",
+                "to": "Linhares",
+                "via": "Córrego do Índio",
+                "note": "As primeiras segunda feiras do mes",
+                "services": "Mo",
+                "times": ["09:00"]
+            }
+        ],
+        "314/0": [
+            {
+                "name": "Vitória x Irupi via Iuna",
+                "from": "Vitória",
+                "to": "Irupi",
+                "via": "Iuna",
+                "services": "Mo-Su",
+                "times": ["16:00"]
+            },
+            {
+                "name": "Irupi x Vitória via Iuna",
+                "from": "Irupi",
+                "to": "Vitória",
+                "via": "Iuna",
+                "services": "Mo-Su",
+                "times": ["07:50"]
+            }
+        ],
+        "315/0": [
+            {
+                "name": "João Neiva x Colatina via Acioli",
+                "from": "João Neiva",
+                "to": "Colatina",
+                "via": "Acioli",
+                "services": "Mo-Sa",
+                "times": ["07:00", "11:20"]
+            },
+            {
+                "name": "João Neiva x Colatina via Acioli",
+                "from": "João Neiva",
+                "to": "Colatina",
+                "via": "Acioli",
+                "services": "Su",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Colatina x João Neiva via Acioli",
+                "from": "Colatina",
+                "to": "João Neiva",
+                "via": "Acioli",
+                "services": "Mo-Sa",
+                "times": ["10:00"]
+            },
+            {
+                "name": "Colatina x João Neiva via Acioli",
+                "from": "Colatina",
+                "to": "João Neiva",
+                "via": "Acioli",
+                "services": "Mo-Th",
+                "times": ["13:00"]
+            },
+            {
+                "name": "Colatina x João Neiva via Acioli",
+                "from": "Colatina",
+                "to": "João Neiva",
+                "via": "Acioli",
+                "services": "Fr-Su",
+                "times": ["15:50"]
+            },
+            {
+                "name": "Colatina x João Neiva via Acioli",
+                "from": "Colatina",
+                "to": "João Neiva",
+                "via": "Acioli",
+                "services": "Su",
+                "times": ["18:00"]
+            },
+            {
+                "name": "Colatina x João Neiva via Acioli",
+                "from": "Colatina",
+                "to": "João Neiva",
+                "via": "Acioli",
+                "services": "Fr",
+                "times": ["18:30"]
+            }
+        ],
+        "322/0": [
+            {
+                "name": "Vitória x Laranja da Terra",
+                "from": "Vitória",
+                "to": "Laranja da Terra",
+                "services": "Fr,Su",
+                "times": ["10:20", "18:19"]
+            },
+            {
+                "name": "Laranja da Terra x Vitória",
+                "from": "Laranja da Terra",
+                "to": "Vitória",
+                "services": "Mo,Sa",
+                "times": ["10:00"]
+            },
+            {
+                "name": "Laranja da Terra x Vitória",
+                "from": "Laranja da Terra",
+                "to": "Vitória",
+                "services": "Fr,Su",
+                "times": ["16:30"]
+            }
+        ],
+        "345/0": [
+            {
+                "name": "Nova Venécia x Vila Pavão",
+                "from": "Nova Venécia",
+                "to": "Vila Pavão",
+                "services": "Fr",
+                "times": ["21:05"]
+            },
+            {
+                "name": "Vila Pavão x Nova Venécia",
+                "from": "Vila Pavão",
+                "to": "Nova Venécia",
+                "services": "Sa",
+                "times": ["05:50"]
+            }
+        ]
+    }
+}
