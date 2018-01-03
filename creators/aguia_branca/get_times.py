@@ -42,8 +42,7 @@ for bl in blacklisted:
     myRoutes[u"excluded_lines"].append(bl)
 
 for ref, origin, destination, via, duration in durationsList['routes']:
-#    if duration > 0:
-    if True:
+    if duration > 0:
         try:
             test = source['routes'][ref]
         except KeyError:
@@ -59,8 +58,8 @@ for ref, origin, destination, via, duration in durationsList['routes']:
         for s in source['routes'][ref]:
             if s['from'] == origin and s['to'] == destination:
                 myRoutes = create_json(myRoutes, noneCal, ref, origin, destination, s['services'], s['times'], duration)
-            else:
-                myRoutes['excluded_lines'].append(ref)
+    else:
+        myRoutes['excluded_lines'].append(ref)
 
         
 
