@@ -15,9 +15,15 @@ The script requires `pdfminer`, `requests`, `overpass`, `logging`, `json`, `work
 
 Install dependencies by running
 
-`pip install -r requirements.txt`
+```bash
+pip install -r requirements.txt
+```
 
 - [osrm](https://github.com/ustroetz/python-osrm) need to be installed manually. If not installed, or if install not importing, fallback to `YOURS` over `requests`
+
+# Usage
+
+In each folder, to obtain the duration of the routes, just run `get_duration.py`. To generate a `times.json` file for `osm2gtfs`, when `durations.json` is up to date, just run `get_times.py`
 
 # Durations
 
@@ -47,9 +53,21 @@ For routes such as _Transcol_, I have added `feriados.py`, requiring [workalenda
 
 ## Intercity services
 
-- [Alvorada](http://viacaoalvorada.com/) (No scraping for now) site not publishing times except for the airport express, and no `ref` numbers.
 - [Planeta](http://www.viacaoplaneta-es.com.br/destinos-e-horarios-viacao-planeta/) (HTML)
-- [Sudeste](http://www.viacaosudeste.com.br/) No implimentation work done yet.
+
+## Intercity services from DER-ES
+
+- [Alvorada](http://viacaoalvorada.com/) Site not publishing times except for the airport express, and no `ref` numbers.
+- [Águia Branca](https://www.aguiabranca.com.br/) Site contain no useful API, but let you buy tickets for destinations, can possibly be used to verify `ref` tags.
+- [Sudeste](http://www.viacaosudeste.com.br/)
+
+## Interstate services from ANTT
+
+This will not be pursued, if a proper API can be found, this can be done per company, but also mapping of such routes can be challenging as some of them spans the entire territory of Brazil. It will be preferred if these companies can supply their own `GTFS` sources.
+
+## Other services
+
+- [EFVM]() Estrada Ferroviaria Vitoria Minas. Static `times.json` file.
 
 ## Other Sources
 
