@@ -1,0 +1,315 @@
+{
+    "operator": "Lírio dos Vales Transportes e Fretamento Ltda",
+    "operator:ref": "1-317",
+    "updated": "2017-12-19",
+    "routes": {
+        "005/0": [
+            {
+                "name": "Vitória x Colatina via S Leopoldina",
+                "from": "Vitória",
+                "to": "Colatina",
+                "via": "Santa Leopoldina",
+                "services": "Mo-Su",
+                "times": ["05:40"]
+            },
+            {
+                "name": "Colatina x Vitória via S Leopoldina",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "Santa Leopoldina",
+                "services": "Mo-Sa",
+                "times": ["12:45"]
+            },
+            {
+                "name": "Colatina x Vitória via S Leopoldina",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "Santa Leopoldina",
+                "services": "Su",
+                "times": ["14:30"]
+            }
+        ],
+        "036/1": [
+            {
+                "name": "Vitória x Fundão",
+                "from": "Vitória",
+                "to": "Fundão",
+                "services": "Mo-Sa",
+                "times": ["06:35", "18:30"]
+            },
+            {
+                "name": "Fundão x Vitória",
+                "from": "Fundão",
+                "to": "Vitória",
+                "services": "Mo-Sa",
+                "times": ["08:20", "16:35"]
+            }
+        ],
+        "036/6": [
+            {
+                "name": "Vitória x Fundão",
+                "from": "Vitória",
+                "to": "Fundão",
+                "services": "Mo-Sa",
+                "times": ["10:40", "16:20"]
+            },
+            {
+                "name": "Vitória x Fundão",
+                "from": "Vitória",
+                "to": "Fundão",
+                "services": "Su",
+                "times": ["07:30", "18:30"]
+            },
+            {
+                "name": "Fundão x Vitória",
+                "from": "Fundão",
+                "to": "Vitória",
+                "services": "Mo-Sa",
+                "times": ["05:00", "13:10"]
+            },
+            {
+                "name": "Fundão x Vitória",
+                "from": "Fundão",
+                "to": "Vitória",
+                "services": "Su",
+                "times": ["05:50", "16:35"]
+            }
+        ],
+        "058/0": [
+            {
+                "name": "Santa Teresa x Colatina",
+                "from": "Santa Teresa",
+                "to": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["06:30", "10:20", "11:40", "14:00", "16:10", "17:00"]
+            },
+            {
+                "name": "Santa Teresa x Colatina",
+                "from": "Santa Teresa",
+                "to": "Colatina",
+                "services": "Su",
+                "times": ["11:00", "14:30", "16:10", "17:00"]
+            },
+            {
+                "name": "Colatina x Santa Teresa",
+                "from": "Colatina",
+                "to": "Santa Teresa",
+                "services": "Mo-Sa",
+                "times": ["06:50", "09:00", "13:20", "14:30", "16:00", "18:15"]
+            },
+            {
+                "name": "Colatina x Santa Teresa",
+                "from": "Colatina",
+                "to": "Santa Teresa",
+                "services": "Su",
+                "times": ["06:50", "10:30", "17:00", "18:15"]
+            }
+        ],
+        "115/0": [
+            {
+                "name": "Vitória x Santa Teresa via Fundão",
+                "from": "Vitória",
+                "to": "Santa Teresa",
+                "via": "Fundão",
+                "services": "Mo-Sa",
+                "times": ["05:50", "07:10", "07:50", "09:30", "14:50"]
+            },
+            {
+                "name": "Vitória x Santa Teresa via Fundão",
+                "from": "Vitória",
+                "to": "Santa Teresa",
+                "via": "Fundão",
+                "services": "Su",
+                "times": ["05:50", "07:50", "13:40", "15:00"]
+            },
+            {
+                "name": "Santa Teresa x Vitória via Fundão",
+                "from": "Santa Teresa",
+                "to": "Vitória",
+                "via": "Fundão",
+                "services": "Mo-Sa",
+                "times": ["05:20", "10:05", "12:00", "13:40", "15:00", "18:30"]
+            },
+            {
+                "name": "Santa Teresa x Vitória via Fundão",
+                "from": "Santa Teresa",
+                "to": "Vitória",
+                "via": "Fundão",
+                "services": "Su",
+                "times": ["09:10", "11:50", "15:00", "17:00", "19:30"]
+            }
+        ],
+        "125/0": [
+            {
+                "name": "Vitória x Itaçu via Fundão",
+                "from": "Vitória",
+                "to": "Itaçu",
+                "via": "Fundão",
+                "services": "Mo-Sa",
+                "times": ["12:10"]
+            },
+            {
+                "name": "Itaçu x Vitória via Fundão",
+                "from": "Itaçu",
+                "to": "Vitória",
+                "via": "Fundão",
+                "services": "Mo-Sa",
+                "times": ["06:10"]
+            }
+        ],
+        "139/0": [
+            {
+                "name": "Vitória x Santa Teresa via S Leopoldina",
+                "from": "Vitória",
+                "to": "Santa Teresa",
+                "via": "Santa Leopoldina",
+                "services": "Mo-Sa",
+                "times": ["10:50", "14:20"]
+            },
+            {
+                "name": "Vitória x Santa Teresa via S Leopoldina",
+                "from": "Vitória",
+                "to": "Santa Teresa",
+                "via":"Santa Leopoldina",
+                "services": "Su",
+                "times": ["14:20"]
+            },
+            {
+                "name": "Santa Teresa x Vitória via S Leopoldina",
+                "from": "Santa Teresa",
+                "to": "Vitória",
+                "via": "Santa Leopoldina",
+                "services": "Mo-Sa",
+                "times": ["07:00"]
+            }
+        ],
+        "203/0": [
+            {
+                "name": "Vitória x São Roque via Fundão",
+                "from": "Vitória",
+                "to": "São Roque",
+                "via": "Fundão",
+                "services": "Mo-Sa",
+                "times": ["17:20"]
+            },
+            {
+                "name": "Vitória x São Roque via Fundão",
+                "from": "Vitória",
+                "to": "São Roque",
+                "via": "Fundão",
+                "services": "Su",
+                "times": ["10:00", "17:20"]
+            },
+            {
+                "name": "São Roque x Vitória via Fundão",
+                "from": "São Roque",
+                "to": "Vitória",
+                "via": "Fundão",
+                "services": "Mo-Sa",
+                "times": ["05:20"]
+            },
+            {
+                "name": "São Roque x Vitória via Fundão",
+                "from": "São Roque",
+                "to": "Vitória",
+                "via": "Fundão",
+                "services": "Su",
+                "times": ["06:00", "14:00"]
+            }
+        ],
+        "307/0": [
+            {
+                "name": "Santa Maria Jetiba x Santa Teresa",
+                "from": "Santa Maria Jetiba",
+                "to": "Santa Teresa",
+                "services": "Mo-Sa",
+                "times": ["05:10", "13:00"]
+            },
+            {
+                "name": "Santa Maria Jetiba x Santa Teresa",
+                "from": "Santa Maria Jetiba",
+                "to": "Santa Teresa",
+                "services": "Tu,Th",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Santa Maria Jetiba x Santa Teresa",
+                "from": "Santa Maria Jetiba",
+                "to": "Santa Teresa",
+                "services": "Su",
+                "times": ["07:20", "15:00"]
+            },
+            {
+                "name": "Santa Teresa x Santa Maria Jetiba",
+                "from": "Santa Teresa",
+                "to": "Santa Maria Jetiba",
+                "services": "Mo-Sa",
+                "times": ["11:00", "18:00"]
+            },
+            {
+                "name": "Santa Teresa x Santa Maria Jetiba",
+                "from": "Santa Teresa",
+                "to": "Santa Maria Jetiba",
+                "services": "Tu,Th",
+                "times": ["08:30"]
+            },
+            {
+                "name": "Santa Teresa x Santa Maria Jetiba",
+                "from": "Santa Teresa",
+                "to": "Santa Maria Jetiba",
+                "services": "Su",
+                "times": ["11:00", "19:00"]
+            }
+        ],
+        "346/0": [
+            {
+                "name": "Santa Teresa x São Roque",
+                "from": "Santa Teresa",
+                "to": "São Roque",
+                "services": "Mo",
+                "times": ["10:50"]
+            },
+            {
+                "name": "São Roque x Santa Teresa",
+                "from": "São Roque",
+                "to": "Santa Teresa",
+                "services": "Mo",
+                "times": ["11:40"]
+            }
+        ],
+        "347/0": [
+            {
+                "name": "Santa Teresa x 15 de Augosto via S Roque",
+                "from": "Santa Teresa",
+                "to": "15 de Augosto",
+                "via": "São Roque",
+                "services": "Mo,We-Sa",
+                "times": ["13:30"]
+            },
+            {
+                "name": "15 de Augosto x Santa Teresa via S Roque",
+                "from": "15 de Augosto",
+                "to": "Santa Teresa",
+                "via": "São Roque",
+                "services": "Mo,We-Sa",
+                "times": ["06:30"]
+            }
+        ],
+        "348/0": [
+            {
+                "name": "Santa Teresa x Santa Julia",
+                "from": "Santa Teresa",
+                "to": "Santa Julia",
+                "services": "Mo-Sa",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Santa Julia x Santa Teresa",
+                "from": "Santa Julia",
+                "to": "Santa Teresa",
+                "services": "Mo-Sa",
+                "times": ["11:40"]
+            }
+        ]
+    }
+}
