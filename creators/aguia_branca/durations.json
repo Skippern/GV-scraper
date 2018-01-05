@@ -164,13 +164,6 @@
             305
         ], 
         [
-            "050/2", 
-            "Guriri", 
-            "Vit\u00f3ria", 
-            "S\u00e3o Mateus", 
-            -5
-        ], 
-        [
             "173/0", 
             "S\u00e3o Mateus", 
             "Montanha", 
@@ -1432,5 +1425,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-02"
+    "updated": "2018-01-05"
 }
