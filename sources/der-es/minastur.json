@@ -1,0 +1,208 @@
+{
+    "operator": "Minastur Transporte e Turismo Ltda",
+    "operator:ref": "1-023",
+    "updated": "2016-06-07",
+    "routes": {
+        "086/0": [
+            {
+                "name": "Irupi x Alegre",
+                "from": "Irupi",
+                "to": "Alegre",
+                "services": "Mo-Su",
+                "times": ["06:00", "16:30"]
+            },
+            {
+                "name": "Alegre x Irupi",
+                "from": "Alegre",
+                "to": "Irupi",
+                "services": "Mo-Su",
+                "times": ["05:50", "14:50"]
+            },
+            {
+                "name": "Irupi x Alegre",
+                "from": "Irupi",
+                "to": "Alegre",
+                "services": "Mo-Sa",
+                "times": ["10:00"]
+            },
+            {
+                "name": "Alegre x Irupi",
+                "from": "Alegre",
+                "to": "Irupi",
+                "services": "Mo-Sa",
+                "times": ["11:00"]
+            }
+        ],
+        "149/0": [
+            {
+                "name": "Guaçuí x Santa Marta",
+                "from": "Guaçuí",
+                "to": "Santa Marta",
+                "services": "Mo-Fr",
+                "times": ["16:00"]
+            },
+            {
+                "name": "Guaçuí x Santa Marta",
+                "from": "Guaçuí",
+                "to": "Santa Marta",
+                "services": "Sa-Su",
+                "times": ["12:00"]
+            },
+            {
+                "name": "Santa Marta x Guaçuí",
+                "from": "Santa Marta",
+                "to": "Guaçuí",
+                "services": "Mo-Su",
+                "times": ["06:40"]
+            },
+            {
+                "name": "Guaçuí x Patremônio da Penha (R.P.)",
+                "from": "Guaçuí",
+                "to": "Patremônio da Penha",
+                "note": "Período: de Janeiro a Outobro e Dezembro",
+                "services": "Mo-Fr",
+                "times": ["11:00"]
+            },
+            {
+                "name": "Patremônio da Penha x Guaçuí (R,P.)",
+                "from": "Patremônio da Penha",
+                "to": "Guaçuí",
+                "note":"Período: de Janeiro a Outobro e Dezembro",
+                "services": "Mo-Fr",
+                "times": ["12:30"]
+            }
+        ],
+        "151/0": [
+            {
+                "name": "Iuna x Ibatiba",
+                "from": "Iuna",
+                "to": "Ibatiba",
+                "services": "Mo-Su",
+                "times": ["07:00", "12:10", "13:30", "15:30", "19:00", "20:15"]
+            },
+            {
+                "name": "Ibatiba x Iuna",
+                "from": "Ibatiba",
+                "to": "Iuna",
+                "services": "Mo-Su",
+                "times": ["07:30", "09:30", "11:20", "14:30", "16:15", "19:00"]
+            }
+        ],
+        "212/0": [
+            {
+                "name": "Ibatiba x Guaçuí",
+                "from": "Ibatiba",
+                "to": "Guaçuí",
+                "services": "Mo-Su",
+                "times": ["06:00", "13:10"]
+            },
+            {
+                "name": "Guaçuí x Ibatiba",
+                "from": "Guaçuí",
+                "to": "Ibatiba",
+                "services": "Mo-Su",
+                "times": ["07:00", "14:40"]
+            }
+        ],
+        "246/0": [
+            {
+                "name": "Iuna x São José do Caparaó",
+                "from": "Iuna",
+                "to": "São José do Caparaó",
+                "services": "Mo-Sa",
+                "times": ["15:30"]
+            },
+            {
+                "name": "São José do Caparaó x Iuna",
+                "from": "São José do Caparaó",
+                "to": "Iuna",
+                "services": "Mo-Sa",
+                "times": ["06:30"]
+            }
+        ],
+        "285/0": [
+            {
+                "name": "Iuna x Posto Fiscal",
+                "from": "Iuna",
+                "to": "Posto Fiscal",
+                "note": "Apenas na Segunda semana do Mes",
+                "services": "Mo",
+                "times": ["08:30"]
+            },
+            {
+                "name": "Posto Fiscal x Iuna",
+                "from": "Posto Fiscal",
+                "to": "Iuna",
+                "note": "Apenas na Segunda semana do Mes",
+                "services": "Mo",
+                "times": ["10:20"]
+            }
+        ],
+        "289/0": [
+            {
+                "name": "Alegre x Santa Marta",
+                "from": "Alegre",
+                "to": "Santa Marta",
+                "note": "Apenas na Segunda semana do Mes",
+                "services": "Tu",
+                "times": ["14:30"]
+            },
+            {
+                "name": "Santa Marta x Alegre",
+                "from": "Santa Marta",
+                "to": "Alegre",
+                "note": "Apenas na Segunda semana do Mes",
+                "services": "Tu",
+                "times": ["06:30"]
+            }
+        ],
+        "296/0": [
+            {
+                "name": "Guaçuí x Iuna",
+                "from": "Guaçuí",
+                "to": "Iuna",
+                "note": "Apenas na Segunda semana do Mes",
+                "services": "Mo",
+                "times": ["06:15"]
+            },
+            {
+                "name": "Iuna x Guaçuí",
+                "from": "Iuna",
+                "to": "Guaçuí",
+                "note": "Apenas na Segunda semana do Mes",
+                "services": "Mo",
+                "times": ["12:00"]
+            }
+        ],
+        "331/0": [
+            {
+                "name": "Iuna x Irupi",
+                "from": "Iuna",
+                "to": "Irupi",
+                "services": "Mo-Sa",
+                "times": ["06:30", "10:00", "11:50", "19:30"]
+            },
+            {
+                "name": "Iuna x Irupi",
+                "from": "Iuna",
+                "to": "Irupi",
+                "services": "Su,Ho",
+                "times": ["10:00", "11:50", "13:30", "19:30"]
+            },
+            {
+                "name": "Irupi x Iuna",
+                "from": "Irupi",
+                "to": "Iuna",
+                "services": "Mo-Sa",
+                "times": ["07:10", "09:00", "10:40", "13:00", "18:10"]
+            },
+            {
+                "name": "Irupi x Iuna",
+                "from": "Irupi",
+                "to": "Iuna",
+                "services": "Su",
+                "times": ["09:00", "10:40", "13:00", "18:10"]
+            }
+        ]
+    }
+}
