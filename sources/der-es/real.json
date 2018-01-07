@@ -1,0 +1,1309 @@
+{
+    "operator": "Viação Real Ita Ltda",
+    "operator:ref": "1-004",
+    "updated": "2017-01-09",
+    "routes": {
+        "017/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Mimoso do Sul",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Mimoso do Sul",
+                "services": "Mo-Fr",
+                "times": ["09:30", "17:30"]
+            },
+            {
+                "name": "Mimoso do Sul x Cachoeiro de Itapemirim",
+                "from": "Mimoso do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["05:30", "06:40", "09:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Mimoso do Sul",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Mimoso do Sul",
+                "services": "Mo-Sa",
+                "times": ["06:00", "12:00", "14:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Mimoso do Sul",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Mimoso do Sul",
+                "services": "Sa",
+                "times": ["08:00", "10:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Mimoso do Sul",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Mimoso do Sul",
+                "services": "Su,Ho",
+                "times": ["06:30", "12:00", "15:30"]
+            },
+            {
+                "name": "Mimoso do Sul x Cachoeiro de Itapemirim",
+                "from": "Mimoso do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Fr,Su",
+                "times": ["17:00"]
+            },
+            {
+                "name": "Mimoso do Sul x Cachoeiro de Itapemirim",
+                "from": "Mimoso do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Fr",
+                "times": ["11:30", "14:30"]
+            },
+            {
+                "name": "Mimoso do Sul x Cachoeiro de Itapemirim",
+                "from": "Mimoso do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Sa",
+                "times": ["12:30", "15:30"]
+            },
+            {
+                "name":"Mimoso do Sul x Cachoeiro de Itapemirim",
+                "from": "Mimoso do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Su,Ho",
+                "times": ["06:15", "10:00", "17:00"]
+            }
+        ],
+        "043/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Guaçuí",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Guaçuí",
+                "services": "Mo-Su",
+                "times": ["09:30", "17:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Guaçuí",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Guaçuí",
+                "services": "Mo-Sa",
+                "times": ["06:00", "12:00", "14:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Guaçuí",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Guaçuí",
+                "services": "Su,Ho",
+                "times": ["18:00"]
+            },
+            {
+                "name": "Guaçuí x Cachoeiro de Itapemirim",
+                "from": "Guaçuí",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Su",
+                "times": ["06:20", "11:00", "14:00", "19:45"]
+            },
+            {
+                "name": "Guaçuí x Cachoeiro de Itapemirim",
+                "from": "Guaçuí",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["09:00", "15:00", "16:20", "18:00"]
+            },
+            {
+                "name": "Guaçuí x Cachoeiro de Itapemirim",
+                "from": "Guaçuí",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Su,Ho",
+                "times": ["06:15", "10:00", "17:00"]
+            }
+        ],
+        "044/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x B.J. Norte via Café",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Bom Jesus do Norte",
+                "via": "Café",
+                "services": "Mo-Sa",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x B.J. Norte via Café",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Bom Jesus do Norte",
+                "via": "Café",
+                "services": "Su,Ho",
+                "times": ["07:00", "14:00"]
+            },
+            {
+                "name": "B.J. Norte x Cachoeiro de Itapemirim via Café",
+                "from": "Bom Jesus do Norte",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Café",
+                "services": "Mo-Sa",
+                "times": ["12:00"]
+            },
+            {
+                "name": "B.J. Norte x Cachoeiro de Itapemirim via Café",
+                "from": "Bom Jesus do Norte",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Café",
+                "services": "Su,Ho",
+                "times": ["06:30", "14:30"]
+            }
+        ],
+        "044/8": [
+            {
+                "name":"Cachoeiro de Itapemirim x B.J. Norte via Café RP Alegre x Pavão",
+                "from": "Alegre",
+                "to": "Pavão",
+                "services": "Mo-Sa",
+                "times": ["17:00"]
+            },
+            {
+                "name":"B.J. Norte x Cachoeiro de Itapemirim via Café PR Pavão x Alegre",
+                "from": "Pavão",
+                "to": "Alegre",
+                "services": "Mo-Sa",
+                "times": ["06:30"]
+            }
+        ],
+        "044/5": [
+            {
+                "name": "São Benedito x Bom Jesus Norte",
+                "from": "São Benedito",
+                "to": "Bom Jesus do Norte",
+                "services": "Mo-Sa",
+                "times": ["06:30"]
+            },
+            {
+                "name": "Bom Jesus Norte x São Benedito",
+                "from": "Bom Jesus do Norte",
+                "to": "São Benedito",
+                "services": "Mo-Sa",
+                "times": ["17:10"]
+            }
+        ],
+        "045/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Muqui",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Muqui",
+                "services": "Mo-Sa",
+                "times": ["07:00", "16:25"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Muqui",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Muqui",
+                "services": "Mo-Fr",
+                "times": ["09:25", "11:50", "17:00", "17:25", "18:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Muqui",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Muqui",
+                "services": "Sa",
+                "times": ["14:30"]
+            },
+            {
+                "name": "Muqui x Cachoeiro de Itapemirim",
+                "from": "Muqui",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["05:00", "06:00", "08:25"]
+            },
+            {
+                "name": "Muqui x Cachoeiro de Itapemirim",
+                "from": "Muqui",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Fr",
+                "times": ["05:45", "05:50", "06:45", "11:00"]
+            }
+        ],
+        "046/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Iuna via Castelo",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Iuna",
+                "via": "Castelo",
+                "note": "Exceto Feriados",
+                "services": "Mo-Sa",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Iuna x Cachoeiro de Itapemirim via Castelo",
+                "from": "Iuna",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Castelo",
+                "note": "Exceto Feriados",
+                "services": "Mo-Sa",
+                "times": ["14:00"]
+            }
+        ],
+        "047/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Castelo",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Castelo",
+                "services": "Mo-Fr",
+                "times": ["06:00", "08:30", "09:30", "17:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Castelo",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Castelo",
+                "services": "Mo-Sa",
+                "times": ["06:30", "07:30", "10:30", "11:30", "12:30", "13:30", "14:30", "15:30", "16:30", "17:30", "18:30", "19:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Castelo",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Castelo",
+                "services": "Sa",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Castelo",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Castelo",
+                "services": "Su,Ho",
+                "times": ["06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:30", "19:30"]
+            },
+            {
+                "name": "Castelo x Cachoeiro de Itapemirim",
+                "from": "Castelo",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Fr",
+                "times": ["05:20", "05:40", "06:30", "08:00", "08:30"]
+            },
+            {
+                "name": "Castelo x Cachoeiro de Itapemirim",
+                "from": "Castelo",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["05:30", "07:00", "09:30", "10:30", "11:30", "12:30", "13:30", "14:30", "15:30", "17:30", "18:15", "21:00"]
+            },
+            {
+                "name": "Castelo x Cachoeiro de Itapemirim",
+                "from": "Castelo",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Sa",
+                "times": ["08:15"]
+            },
+            {
+                "name": "Castelo x Cachoeiro de Itapemirim",
+                "from": "Castelo",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Su,Ho",
+                "times": ["06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:15", "21:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Castelo RP Sapecado x Castelo",
+                "from": "Sapecado",
+                "to": "Castelo",
+                "services": "Mo-Fr",
+                "times": ["07:20", "12:20"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Castelo RP Sapecado x Castelo",
+                "from": "Sapecado",
+                "to": "Castelo",
+                "services": "Mo-Sa",
+                "times": ["08:20"]
+            },
+            {
+                "name": "Castelo x Cachoeiro de Itapemirim RP Castelo Sapecado",
+                "from": "Castelo",
+                "to": "Sapecado",
+                "services": "Mo-Fr",
+                "times": ["11:25", "16:25", "17:25"]
+            },
+            {
+                "name": "Castelo x Cachoeiro de Itapemirim RP Castelo Sapecado",
+                "from": "Castelo",
+                "to": "Sapecado",
+                "services": "Sa",
+                "times": ["07:25"]
+            }
+        ],
+        "047/6": [
+            {
+                "name": "Cachoeiro de Itapemirim x Castelo",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Castelo",
+                "note": "Exceto Feriados",
+                "services": "Mo-Sa",
+                "times": ["08:30", "13:30", "17:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Castelo",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Castelo",
+                "note": "Exceto Feriados",
+                "services": "Mo-Sa",
+                "times": ["10:30", "15:30", "21:00"]
+            }
+        ],
+        "048/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Piaçu via J Mont e M Freire",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Piaçu",
+                "via": ["Jerônimo Monteiro", "Muniz Freire"],
+                "note": "Exceto Feriados",
+                "services": "Mo-Sa",
+                "times": ["16:45"]
+            },
+            {
+                "name": "Piaçu x Cachoeiro de Itapemirim via J Mont e M Freire",
+                "from": "Piaçu",
+                "to": "Cachoeiro de Itapemirim",
+                "via": ["Jerônimo Monteiro", "Muniz Freire"],
+                "note": "Exceto Feriados",
+                "services": "Mo-Sa",
+                "times": ["10:00"]
+            }
+        ],
+        "049/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Muniz Freire via J Mont",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Muniz Freire",
+                "via": "Jerônimo Monteiro",
+                "services": "Mo-Sa",
+                "times": ["05:50"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Muniz Freire via J Mont",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Muniz Freire",
+                "via": "Jerônimo Monteiro",
+                "services": "Su,Ho",
+                "times": ["17:00"]
+            },
+            {
+                "name": "Muniz Freire x Cachoeiro de Itapemirim",
+                "from": "Muniz Freire",
+                "to":"Cachoeiro de Itapemirim",
+                "services": "Su,Ho",
+                "times": ["16:00"]
+            }
+        ],
+        "056/0": [
+            {
+                "name": "Bom Jesus Norte x Alegre via Guaçuí",
+                "from": "Bom Jesus do Norte",
+                "to": "Alegre",
+                "via": "Guaçuí",
+                "services": "Su,Ho",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Alegre x Bom Jesus Norte via Guaçuí",
+                "from": "Alegre",
+                "to": "Bom Jesus do Norte",
+                "via": "Guaçuí",
+                "services": "Su,Ho",
+                "times": ["09:00"]
+            }
+        ],
+        "060/0": [
+            {
+                "name": "Jerônimo Monteiro x Guaçuí",
+                "from": "Jerônimo Monteiro",
+                "to": "Guaçuí",
+                "note": "Exceto Feriados",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            },
+            {
+                "name": "Guaçuí x Jerônimo Monteiro",
+                "from": "Guaçuí",
+                "to": "Jerônimo Monteiro",
+                "note": "Exceto Feriados",
+                "services": "Mo-Sa",
+                "times": ["08:45"]
+            }
+        ],
+        "060/8": [
+            {
+                "name": "Jerônimo Monteiro x Guaçuí RP Jerônimo Monteiro x Celina",
+                "from": "Jerônimo Monteiro",
+                "to": "Celina",
+                "services": "Mo-Fr",
+                "times": ["11:00"]
+            },
+            {
+                "name": "Guaçuí x Jerônimo Monteiro RP Celina x Jerônimo Monteiro",
+                "from": "Celina",
+                "to": "Jerônimo Monteiro",
+                "services": "Mo-Fr",
+                "times": ["12:00"]
+            }
+        ],
+        "067/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Apiacá",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Apiacâ",
+                "services": "Mo-Su",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Apiacá x Cachoeiro de Itapemirim",
+                "from": "Apiacá",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Su",
+                "times": ["06:20"]
+            },
+            {
+                "name": "Apiacá x Cachoeiro de Itapemirim",
+                "from": "Apiacá",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Su,Ho",
+                "times": ["06:20"]
+            }
+        ],
+        "067/8": [
+            {
+                "name": "Cachoeiro de Itapemirim x Apiacá RP Cachoeiro de Itapemirim x Guaçuí",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Guaçuí",
+                "services": "Mo-Sa",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Apiacá x Cachoeiro de Itapemirim RP Guaçuí x Cachoeiro de Itapemirim",
+                "from": "Guaçuí",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["06:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Apiacá RP Alegre x Guaçuí",
+                "from": "Alegre",
+                "to": "Guaçuí",
+                "services": "Su,Ho",
+                "times": ["15:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Apiacá RP São José do Calçado x Apiacá",
+                "from": "São José do Calçado",
+                "to": "Apiacâ",
+                "note": "328/0",
+                "services": "Mo-Sa",
+                "times": ["19:30"]
+            },
+            {
+                "name": "Apiacá x Cachoeiro de Itapemirim RP Apiacá x São José do Calçado",
+                "from": "Apiacá",
+                "to": "São José do Calçado",
+                "note": "328/0",
+                "services": "Mo-Sa",
+                "times": ["05:30"]
+            }
+        ],
+        "074/0": [
+            {
+                "name": "Guaçuí x Bom Jesus do Norte",
+                "from": "Guaçuí",
+                "to": "Bom Jesus do Norte",
+                "services": "Mo-Sa",
+                "times": ["06:30", "09:00", "13:45"]
+            },
+            {
+                "name": "Guaçuí x Bom Jesus do Norte",
+                "from": "Guaçuí",
+                "to": "Bom Jesus do Norte",
+                "services": "Su,Ho",
+                "times": ["16:30"]
+            },
+            {
+                "name": "Bom Jesus Norte x Guaçuí",
+                "from": "Bom Jesus do Norte",
+                "to": "Guaçuí",
+                "services": "Mo-Sa",
+                "times": ["11:00", "15:00", "16:30"]
+            }
+        ],
+        "110/0": [
+            {
+                "name": "Alegre x Muniz Freire",
+                "from": "Alegre",
+                "to": "Muniz Freire",
+                "services": "Mo-Sa",
+                "times": ["06:00", "12:30"]
+            },
+            {
+                "name": "Muniz Freire x Alegre",
+                "from": "Muniz Freire",
+                "to": "Alegre",
+                "services": "Mo-Sa",
+                "times": ["05:45", "12:00", "16:30"]
+            },
+            {
+                "name": "Alegre x Muniz Freire",
+                "from":"Alegre",
+                "to": "Muniz Freire",
+                "services": "Su,Ho",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Muniz Freire x Alegre",
+                "from": "Muniz Freire",
+                "to": "Alegre",
+                "services": "Su,Ho",
+                "times": ["07:00"]
+            }
+        ],
+        "111/0": [
+            {
+                "name": "Jerônimo Monteiro x Cachoeiro de Itapemirim",
+                "from": "Jerônimo Monteiro",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Fr",
+                "times": ["05:15"]
+            },
+            {
+                "name": "Jerônimo Monteiro x Cachoeiro de Itapemirim",
+                "from": "Jerônimo Monteiro",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["06:15"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Jerônimo Monteiro",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Jerônimo Monteiro",
+                "services": "Mo-Sa",
+                "times": ["18:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Jerônimo Monteiro",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Jerônimo Monteiro",
+                "services": "Fr",
+                "times": ["19:00"]
+            }
+        ],
+        "135/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Conc Castelo via V Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Conceição de Castelo",
+                "via": "Vargem Alta",
+                "services": "Mo-Sa",
+                "times": ["05:20"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Conc Castelo via V Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Conceição de Castelo",
+                "via": "Vargem Alta",
+                "services": "Mo-Fr",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Conc Castelo via V Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Conceição de Castelo",
+                "via": "Vargem Alta",
+                "services": "Sa",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Conc Castelo via V Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Conceição de Castelo",
+                "via": "Vargem Alta",
+                "services": "Su,Ho",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Conc Castelo x Cachoeiro de Itapemerim",
+                "from": "Conceição de Castelo",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["05:30", "12:30"]
+            },
+            {
+                "name": "Conc Castelo x Cachoeiro de Itapemerim",
+                "from": "Conceição de Castelo",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Su,Ho",
+                "times": ["14:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Conc Castelo via V Alta RP Boa Esperança x Venda Nova do Imigrante",
+                "from": "Boa Esperança",
+                "to": "Venda Nova do Imigrante",
+                "services": "Mo-Fr",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Conc Castelo via V Alta RP Cachoeiro de Itapemirim x Venda Nova do Imigrante",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Venda Nova do Imigrante",
+                "via": "Vargem Alta",
+                "services": "Mo-Sa",
+                "times": ["09:50"]
+            },
+            {
+                "name": "Conc Castelo x Cachoeiro de Itapemerim RP Venda Nova do Imigrante x Cachoeiro de Itapemirim",
+                "from": "Venda Nova do Imigrante",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["15:00"]
+            }
+        ],
+        "136/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Vitória via Vargem Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Vitória",
+                "via": "Vargem Alta",
+                "services": "Mo-Sa",
+                "times": ["06:30", "16:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Vitória via Vargem Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Vitória",
+                "via": "Vargem Alta",
+                "services": "Su,Ho",
+                "times": ["06:00"]
+            },
+            {
+                "name": "Vitória x Cachoeiro de Itapemirim via Vargem Alta",
+                "from": "Vitória",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Vargem Alta",
+                "services": "Mo-Sa",
+                "times": ["07:00"]
+            },
+            {
+                "name": "Vitória x Cachoeiro de Itapemirim via Vargem Alta",
+                "from": "Vitória",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Vargem Alta",
+                "services": "Fr-Su,Ho",
+                "times": ["15:00"]
+            }
+        ],
+        "164/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Dores do Rio Preto",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Dores do Rio Preto",
+                "note": "Exceto Feriados",
+                "services": "Mo-Sa",
+                "times": ["07:00"]
+            },
+            {
+                "name": "Dores do Rio Preto x Cachoeiro de Itapemirim",
+                "from": "Dores do Rio Preto",
+                "to": "Cachoeiro de Itapemirim",
+                "note": "Exceto Feriados",
+                "services": "Mo-Sa",
+                "times": ["12:30"]
+            }
+        ],
+        "165/0": [
+            {
+                "name": "Guaçuí x Mundo Novo",
+                "from": "Guaçuí",
+                "to": "Mundo Novo",
+                "note": "Exceto Feriados",
+                "services": "Mo-Sa",
+                "times": ["16:00"]
+            },
+            {
+                "name": "Mundo Novo x Guaçuí",
+                "from": "Mundo Novo",
+                "to": "Guaçuí",
+                "note": "Exceto Feriados",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            }
+        ],
+        "165/8": [
+            {
+                "name": "Guaçuí x Mundo Novo RP Guaçuí x Dores do Rio Preto",
+                "from": "Guaçuí",
+                "to": "Dores do Rio Preto",
+                "services": "Mo-Su",
+                "times": ["06:00", "17:30"]
+            },
+            {
+                "name": "Guaçuí x Mundo Novo RP Guaçuí x Dores do Rio Preto",
+                "from": "Guaçuí",
+                "to": "Dores do Rio Preto",
+                "services": "Mo-Sa",
+                "times": ["10:00", "13:00"]
+            },
+            {
+                "name": "Guaçuí x Mundo Novo RP Guaçuí x Dores do Rio Preto",
+                "from": "Guaçuí",
+                "to": "Dores do Rio Preto",
+                "services": "Su,Ho",
+                "times": ["12:00", "15:30"]
+            },
+            {
+                "name": "Mundo Novo x Guaçuí RP Dores do Rio Preto x Guaçuí",
+                "from": "Dores do Rio Preto",
+                "to": "Guaçuí",
+                "services": "Mo-Su",
+                "times": ["11:00", "14:00", "18:30"]
+            },
+            {
+                "name": "Mundo Novo x Guaçuí RP Dores do Rio Preto x Guaçuí",
+                "from": "Dores do Rio Preto",
+                "to": "Guaçuí",
+                "services": "Mo-Sa",
+                "times": ["08:30"]
+            },
+            {
+                "name": "Mundo Novo x Guaçuí RP Dores do Rio Preto x Guaçuí",
+                "from": "Dores do Rio Preto",
+                "to": "Guaçuí",
+                "services": "Su,Ho",
+                "times": ["07:00", "13:00", "16:30"]
+            }
+        ],
+        "185/0": [
+            {
+                "name": "Itaica x Alegre",
+                "from": "Itaica",
+                "to": "Alegre",
+                "services": "Su,Ho",
+                "times": ["17:00"]
+            },
+            {
+                "name": "Alegre x Itaica",
+                "from": "Alegre",
+                "to": "Itaica",
+                "services": "Su,Ho",
+                "times": ["14:30"]
+            }
+        ],
+        "191/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Alegre",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Alegre",
+                "services": "Mo-Sa",
+                "times": ["11:00", "18:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Alegre",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Alegre",
+                "services": "Su,Ho",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Alegre x Cachoeiro de Itapemirim",
+                "from": "Alegre",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["05:00", "06:00", "11:00"]
+            },
+            {
+                "name": "Alegre x Cachoeiro de Itapemirim",
+                "from": "Alegre",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Su,Ho",
+                "times": ["05:45"]
+            }
+        ],
+        "192": [
+            {
+                "name": "Cachoeiro de Itapemirim x Mimoso do Sul via Muqui",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Mimoso do Sul",
+                "via": "Muqui",
+                "services": "Mo-Su",
+                "times": ["06:00", "12:00", "19:15"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Mimoso do Sul via Muqui",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Mimoso do Sul",
+                "via": "Muqui",
+                "services": "Mo-Sa",
+                "times": ["08:00", "09:30", "10:30", "13:30", "15:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Mimoso do Sul via Muqui",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Mimoso do Sul",
+                "via": "Muqui",
+                "services": "Mo-Fr",
+                "times": ["14:30", "16:30", "18:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Mimoso do Sul via Muqui",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Mimoso do Sul",
+                "via": "Muqui",
+                "services": "Sa-Su,Ho",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Mimoso do Sul via Muqui",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Mimoso do Sul",
+                "via": "Muqui",
+                "services": "Su,Ho",
+                "times": ["09:00", "15:00"]
+            },
+            {
+                "name": "Mimoso do Sul x Cachoeiro de Itapemirim via Muqui",
+                "from": "Mimoso do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Muqui",
+                "services": "Mo-Su",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Mimoso do Sul x Cachoeiro de Itapemirim via Muqui",
+                "from": "Mimoso do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Muqui",
+                "services": "Mo-Fr",
+                "times": ["08:00", "13:00", "14:30", "16:30"]
+            },
+            {
+                "name": "Mimoso do Sul x Cachoeiro de Itapemirim via Muqui",
+                "from": "Mimoso do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Muqui",
+                "services": "Mo-Sa",
+                "times": ["06:30", "09:00", "11:00", "11:30", "15:30"]
+            },
+            {
+                "name": "Mimoso do Sul x Cachoeiro de Itapemirim via Muqui",
+                "from": "Mimoso do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Muqui",
+                "services": "Sa-Su,Ho",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Mimoso do Sul x Cachoeiro de Itapemirim via Muqui",
+                "from": "Mimoso do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Muqui",
+                "services": "Sa",
+                "times": ["13:30"]
+            },
+            {
+                "name": "Mimoso do Sul x Cachoeiro de Itapemirim via Muqui",
+                "from": "Mimoso do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Muqui",
+                "services": "Su,Ho",
+                "times": ["08:00", "12:00", "15:00", "17:25"]
+            },
+            {
+                "name": "Mimoso do Sul x Cachoeiro de Itapemirim",
+                "from": "Mimoso do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["06:20"]
+            },
+            {
+                "name": "Mimoso do Sul x Cachoeiro de Itapemirim",
+                "from": "Mimoso do Sul",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Fr",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Mimoso do Sul",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Mimoso do Sul",
+                "services": "Sa",
+                "times": ["11:50"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Mimoso do Sul",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Mimoso do Sul",
+                "services": "Mo-Fr",
+                "times": ["17:25", "17:30"]
+            }
+        ],
+        "281/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Castelinho via Vargem Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Castelinho",
+                "via": "Vargem Alta",
+                "services": "Mo-Sa",
+                "times": ["08:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Castelinho via Vargem Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Castelinho",
+                "via": "Vargem Alta",
+                "services": "Su,Ho",
+                "times": ["12:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Castelinho via Vargem Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Castelinho",
+                "via": "Vargem Alta",
+                "services": "Fr",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Castelinho via Vargem Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Castelinho",
+                "via": "Vargem Alta",
+                "services": "Mo-Th",
+                "times": ["16:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Castelinho via Vargem Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Castelinho",
+                "via": "Vargem Alta",
+                "services": "Mo-Su",
+                "times": ["18:20"]
+            },
+            {
+                "name": "Castelinho x Cachoeiro de Itapemirim via Vargem Alta",
+                "from": "Castelinho",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Vargem Alta",
+                "services": "Mo-Fr",
+                "times": ["05:15", "05:50"]
+            },
+            {
+                "name": "Castelinho x Cachoeiro de Itapemirim via Vargem Alta",
+                "from": "Castelinho",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Vargem Alta",
+                "services": "Sa",
+                "times": ["05:40"]
+            },
+            {
+                "name": "Castelinho x Cachoeiro de Itapemirim via Vargem Alta",
+                "from": "Castelinho",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Vargem Alta",
+                "services": "Su,Ho",
+                "times": ["07:30", "14:00"]
+            },
+            {
+                "name": "Castelinho x Cachoeiro de Itapemirim via Vargem Alta",
+                "from": "Castelinho",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Vargem Alta",
+                "services": "Mo-Sa",
+                "times": ["10:30"]
+            }
+        ],
+        "282/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Vargem Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Vargem Alta",
+                "services": "Mo", 
+                "times": ["06:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Vargem Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Vargem Alta",
+                "services": "Mo-Sa",
+                "times": ["10:30", "17:15"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Vargem Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Vargem Alta",
+                "services": "Mo-Th",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Vargem Alta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Vargem Alta",
+                "services": "Sa",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Vargem Alta x Cachoeiro de Itapemirim",
+                "from": "Vargem Alta",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["05:00", "06:25", "12:00"]
+            },
+            {
+                "name": "Vargem Alta x Cachoeiro de Itapemirim",
+                "from": "Vargem Alta",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Sa",
+                "times": ["07:20"]
+            }
+        ],
+        "295/0": [
+            {
+                "name": "Vargem Alta x Castelo",
+                "from": "Vargem Alta",
+                "to": "Castelo",
+                "services": "Mo",
+                "times": ["05:00"]
+            },
+            {
+                "name": "Castelo x Vargem Alta",
+                "from": "Castelo",
+                "to": "Vargem Alta",
+                "services": "Mo",
+                "times": ["14:00"]
+            }
+        ],
+        "295/8": [
+            {
+                "name": "Vargem Alta x Castelo RP Capivara x Castelo",
+                "from": "Capivara",
+                "to": "Castelo",
+                "services": "Tu-Fr",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Vargem Alta x Castelo RP Capivara x Castelo",
+                "from": "Capivara",
+                "to": "Castelo",
+                "services": "Sa",
+                "times": ["06:30"]
+            },
+            {
+                "name": "Castelo x Vargem Alta RP Castelo x Capivara",
+                "from": "Castelo",
+                "to": "Capivara",
+                "services": "Sa",
+                "times": ["12:30"]
+            },
+            {
+                "name": "Castelo x Vargem Alta RP Castelo x Capivara",
+                "from": "Castelo",
+                "to": "Capivara",
+                "services": "Tu-Fr",
+                "times": ["14:00"]
+            }
+        ],
+        "298/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Iuna via Alegre",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Iuna",
+                "via": "Alegre",
+                "notes": "Exato feriados",
+                "services": "Mo-Sa",
+                "times": ["13:00"]
+            },
+            {
+                "name": "Iuna x Cachoeiro de Itapemirim via Alegre",
+                "from": "Iuna",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Alegre",
+                "notes": "Exato feriados",
+                "services": "Mo-Sa",
+                "times": ["05:30"]
+            }
+        ],
+        "299/0": [
+            {
+                "name": "Presidente Kennedy x Vitória via Vargem Alta",
+                "from": "Presidente Kennedy",
+                "to": "Vitória",
+                "via": "Vargem Alta",
+                "services": "Su", 
+                "times": ["15:00"]
+            },
+            {
+                "name": "Vitória x Presidente Kennedy via Vargem Alta",
+                "from": "Vitória",
+                "to": "Presidente Kennedy",
+                "via": "Vargem Alta",
+                "services": "Su",
+                "times": ["07:00"]
+            }
+        ],
+        "302/0": [
+            {
+                "name": "Bom Jesus do Norte x Cachoeiro de Itapemirim",
+                "from": "Bom Jesus do Norte",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Sa",
+                "times": ["07:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Bom Jesus do Norte via Apiacá",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Bom Jesus do Norte",
+                "via": "Apiacá",
+                "services": "Sa",
+                "times": ["15:30"]
+            }
+        ],
+        "190/0": [
+            {
+                "name": "Bom Jesus do Norte x Apiacá",
+                "from": "Bom Jesus do Norte",
+                "to": "Apiacâ",
+                "services": "Mo-Fr",
+                "times": ["06:00", "11:30"]
+            },
+            {
+                "name": "Bom Jesus do Norte x Apiacá",
+                "from": "Bom Jesus do Norte",
+                "to": "Apiacâ",
+                "services": "Mo-Sa",
+                "times": ["14:10", "16:00"]
+            },
+            {
+                "name": "Bom Jesus do Norte x Apiacá",
+                "from": "Bom Jesus do Norte",
+                "to": "Apiacâ",
+                "services": "Sa-Su,Ho",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Apiacá x Bom Jesus do Norte",
+                "from": "Apiacá",
+                "to": "Bom Jesus do Norte",
+                "services": "Sa-Su,Ho",
+                "times": ["07:30"]
+            },
+            {
+                "name": "Apiacá x Bom Jesus do Norte",
+                "from": "Apiacá",
+                "to": "Bom Jesus do Norte",
+                "services": "Mo-Fr",
+                "times": ["09:40", "14:15"]
+            },
+            {
+                "name": "Apiacá x Bom Jesus do Norte",
+                "from": "Apiacá",
+                "to": "Bom Jesus do Norte",
+                "services": "Sa",
+                "times": ["13:30"]
+            },
+            {
+                "name": "Apiacá x Bom Jesus do Norte",
+                "from": "Apiacá",
+                "to": "Bom Jesus do Norte",
+                "services": "Su,Ho",
+                "times": ["14:15", "18:00"]
+            },
+            {
+                "name": "Apiacá x Bom Jesus do Norte",
+                "from": "Apiacá",
+                "to": "Bom Jesus do Norte",
+                "services": "Mo-Sa", 
+                "times": ["16:40", "18:00"]
+            }
+        ],
+        "175/0": [
+            {
+                "name": "Mimoso do Sul x São José do Calçado",
+                "from": "Mimoso do Sul",
+                "to": "São José do Calçado",
+                "services": "Sa-Su,Ho",
+                "times": ["07:00"]
+            },
+            {
+                "name": "Mimoso do Sul x São José do Calçado",
+                "from": "Mimoso do Sul",
+                "to": "São José do Calçado",
+                "services": "Mo-Fr",
+                "times": ["09:00", "17:00"]
+            },
+            {
+                "name": "São José do Calçado x Mimoso do Sul",
+                "from": "São José do Calçado",
+                "to": "Mimoso do Sul",
+                "services": "Mo-Fr",
+                "times": ["06:00"]
+            },
+            {
+                "name": "São José do Calçado x Mimoso do Sul",
+                "from": "São José do Calçado",
+                "to": "Mimoso do Sul",
+                "services": "Mo-Su",
+                "times": ["14:10"]
+            }
+        ],
+        "176/0": [
+            {
+                "name": "São José do Calçado x Ponte do Itabapoana",
+                "from": "São José do Calçado",
+                "to": "Ponte do Itabapoana",
+                "services": "Sa-Su,Ho",
+                "times": ["06:00"]
+            },
+            {
+                "name": "São José do Calçado x Ponte do Itabapoana",
+                "from": "São José do Calçado",
+                "to": "Ponte do Itabapoana",
+                "services": "Mo-Fr",
+                "times": ["08:30", "12:30"]
+            },
+            {
+                "name": "São José do Calçado x Ponte do Itabapoana",
+                "from": "São José do Calçado",
+                "to": "Ponte do Itabapoana",
+                "services": "Sa",
+                "times": ["12:00"]
+            },
+            {
+                "name": "São José do Calçado x Ponte do Itabapoana",
+                "from": "São José do Calçado",
+                "to": "Ponte do Itabapoana",
+                "services": "Su,Ho",
+                "times": ["13:00"]
+            },
+            {
+                "name": "São José do Calçado x Ponte do Itabapoana",
+                "from": "São José do Calçado",
+                "to": "Ponte do Itabapoana",
+                "services": "Mo-Su",
+                "times": ["16:40"]
+            },
+            {
+                "name": "Ponte do Itabapoana x São José do Calçado",
+                "from": "Ponte do Itabapoana",
+                "to": "São José do Calçado",
+                "services": "Mo-Fr",
+                "times": ["07:00", "12:30", "15:00"]
+            },
+            {
+                "name": "Ponte do Itabapoana x São José do Calçado",
+                "from": "Ponte do Itabapoana",
+                "to": "São José do Calçado",
+                "services": "Sa-Su,Ho",
+                "times": ["09:45"]
+            }
+        ],
+        "327/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Castelo via B Jardim",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Castelo",
+                "via": "Bom Jardim",
+                "services": "Sa",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Castelo x Cachoeiro de Itapemirim via B Jardim",
+                "from": "Castelo",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Bom Jardim",
+                "services": "Sa",
+                "times": ["05:30"]
+            }
+        ]
+    }
+}
