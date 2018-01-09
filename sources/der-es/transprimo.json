@@ -1,0 +1,227 @@
+{
+    "operator": "Transprimo Ltda",
+    "operator:ref": "1-012",
+    "updated": "2017-06-13",
+    "routes": {
+        "206/0": [
+            {
+                "name": "Domingos Martins x Santa Maria",
+                "from": "Domingos Martins",
+                "to": "Santa Maria",
+                "services": "Mo-Fr",
+                "times": ["06:00"]
+            },
+            {
+                "name": "Santa Maria x Domingos Martins",
+                "from": "Santa Maria",
+                "to": "Domingos Martins",
+                "services": "Mo-Sa",
+                "times": ["14:00"]
+            }
+        ],
+        "249/0": [
+            {
+                "name": "Parajú x Pontões",
+                "from": "Parajú",
+                "to": "Pontões",
+                "services": "Su",
+                "times": ["10:00"]
+            },
+            {
+                "name": "Pontões x Parajú",
+                "from": "Pontões",
+                "to": "Parajú",
+                "services": "Su",
+                "times": ["14:30"]
+            }
+        ],
+        "332/0": [
+            {
+                "name": "Domingos Martins x Marechal Floriano",
+                "from": "Domingos Martins",
+                "to": "Marechal Floriano",
+                "services": "Mo-Fr",
+                "times": ["09:00", "10:30"]
+            },
+            {
+                "name": "Marechal Floriano x Domingos Martins",
+                "from": "Marechal Floriano",
+                "to": "Domingos Martins",
+                "services": "Mo-Fr",
+                "times": ["10:15", "11:15"]
+            }
+        ],
+        "355/0": [
+            {
+                "name": "Domingos Martins x Alto Parajú",
+                "from": "Domingos Martins",
+                "to": "Alto Parajú",
+                "services": "Mo-Fr",
+                "times": ["12:30"]
+            },
+            {
+                "name": "Alto Parajú x Domingos Martins",
+                "from": "Alto Parajú",
+                "to": "Domingos Martins",
+                "services": "Mo-Fr",
+                "times": ["05:30"]
+            }
+        ],
+        "356/0": [
+            {
+                "name": "Domingos Martins x Divisa Venda Nova Imigrante",
+                "from": "Domingos Martins",
+                "to": "Divisa Venda Nova Imigrante",
+                "services": "Mo,We,Fr",
+                "times": ["12:40"]
+            },
+            {
+                "name": "Divisa Venda Nova Imigrante x Domingos Martins",
+                "from": "Divisa Venda Nova Imigrante",
+                "to": "Domingos Martins",
+                "services": "Mo,We,Fr",
+                "times": ["06:55"]
+            }
+        ],
+        "357/0": [
+            {
+                "name": "Domingos Martins x Afonso Cláudio",
+                "from": "Domingos Martins",
+                "to": "Afonso Cláudio",
+                "services": "Mo-Fr",
+                "times": ["10:55", "17:05"]
+            },
+            {
+                "name": "Afonso Cláudio x Domingos Martins",
+                "from": "Afonso Cláudio",
+                "to": "Domingos Martins",
+                "services": "Mo-Fr",
+                "times": ["06:00", "13:00"]
+            }
+        ],
+        "360/0": [
+            {
+                "name": "Domingos Martins x Araguaia",
+                "from": "Domingos Martins",
+                "to": "Araguaia",
+                "services": "Mo-Sa",
+                "times": ["11:50"]
+            },
+            {
+                "name": "Araguaia x Domingos Martins",
+                "from": "Araguaia",
+                "to": "Domingos Martins",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            }
+        ],
+        "361/0": [
+            {
+                "name": "Domingos Martins x Perobas",
+                "from": "Domingos Martins",
+                "to": "Perobas",
+                "services": "Mo-Fr",
+                "times": ["10:45", "17:30"]
+            },
+            {
+                "name": "Domingos Martins x Perobas",
+                "from": "Domingos Martins",
+                "to": "Perobas",
+                "services": "Sa-Su",
+                "times": ["15:30"]
+            },
+            {
+                "name": "Perobas x Domingos Martins",
+                "from": "Perobas",
+                "to": "Domingos Martins",
+                "services": "Mo-Fr",
+                "times": ["06:30", "13:00"]
+            },
+            {
+                "name": "Perobas x Domingos Martins",
+                "from": "Perobas",
+                "to": "Domingos Martins",
+                "services": "Sa",
+                "times": ["13:00"]
+            },
+            {
+                "name": "Perobas x Domingos Martins",
+                "from": "Perobas",
+                "to": "Domingos Martins",
+                "services": "Su",
+                "times": ["07:00"]
+            }
+        ],
+        "362/0": [
+            {
+                "name": "Domingos Martins x Alto Rio Ponte",
+                "from": "Domingos Martins",
+                "to": "Alto Rio Ponte",
+                "services": "Mo-Fr",
+                "times": ["14:30"]
+            },
+            {
+                "name": "Domingos Martins x Alto Rio Ponte",
+                "from": "Domingos Martins",
+                "to": "Alto Rio Ponte",
+                "services": "Sa",
+                "times": ["11:45"]
+            },
+            {
+                "name": "Alto Rio Ponte x Domingos Martins",
+                "from": "Alto Rio Ponte",
+                "to": "Domingos Martins",
+                "services": "Mo-Fr",
+                "times": ["06:30"]
+            },
+            {
+                "name": "Alto Rio Ponte x Domingos Martins",
+                "from": "Alto Rio Ponte",
+                "to": "Domingos Martins",
+                "services": "Sa",
+                "times": ["05:30"]
+            }
+        ],
+        "363/0": [
+            {
+                "name": "Domingos Martins x Divisa Alfredo Chaves",
+                "from": "Domingos Martins",
+                "to": "Divisa Alfredo Chaves",
+                "services": "Mo-Fr",
+                "times": ["15:20"]
+            },
+            {
+                "name": "Domingos Martins x Divisa Alfredo Chaves",
+                "from": "Domingos Martins",
+                "to": "Divisa Alfredo Chaves",
+                "services": "Sa",
+                "times": ["12:30"]
+            },
+            {
+                "name": "Divisa Alfredo Chaves x Domingos Martins",
+                "from": "Divisa Alfredo Chaves",
+                "to": "Domingos Martins",
+                "services": "Mo-Sa",
+                "times": ["07:20"]
+            }
+        ],
+        "364/0": [
+            {
+                "name": "Domingos Martins x Araguaia via Curva da Morte",
+                "from": "Domingos Martins",
+                "to": "Araguaia",
+                "via": "Curva da Morte",
+                "services": "Fr",
+                "times": ["15:15"]
+            },
+            {
+                "name": "Araguaia x Domingos Martins via Curva da Morte",
+                "from": "Araguaia",
+                "to": "Domingos Martins",
+                "via": "Curva da Morte",
+                "services": "Fr",
+                "times": ["14:00"]
+            }
+        ]
+    }
+}
