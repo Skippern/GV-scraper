@@ -1,0 +1,85 @@
+{
+    "operator": "Expresso São Marcos Ltda",
+    "operator:ref": "1-134",
+    "updated": "2014-05-07",
+    "routes": {
+        "105/0": [
+            {
+                "name": "São João Sobrado x Montanha",
+                "from": "São João Sobrado",
+                "to": "Montanha",
+                "services": "Mo-Sa",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Montanha x São João Sobrado",
+                "from": "Montanha",
+                "to": "São João Sobrado",
+                "services": "Mo-Sa",
+                "times": ["15:00"]
+            }
+        ],
+        "113/0": [
+            {
+                "name": "São Mateus x Pinheiros",
+                "from": "São Mateus",
+                "to": "Pinheiros",
+                "services": "Mo-Su",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Pinheiros x São Mateus",
+                "from": "Pinheiros",
+                "to": "São Mateus",
+                "services": "Mo-Su",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Pedro Canário x Pinheiros VP",
+                "from": "Pedro Canário",
+                "to": "Pinheiros",
+                "services": "Mo-Su",
+                "times": ["11:00"]
+            },
+            {
+                "name": "Pinheiros x Pedro Canário VP",
+                "from": "Pinheiros",
+                "to": "Pedro Canário",
+                "services": "Mo-Su",
+                "times": ["17:30"]
+            }
+        ],
+        "155/0": [
+            {
+                "name": "Montanha x Itabaiana",
+                "from": "Montanha",
+                "to": "Itabaiana",
+                "services": "Mo-Su",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Itabaiana x Montanha",
+                "from": "Itabaiana",
+                "to": "Montanha",
+                "services": "Mo-Su",
+                "times": ["08:00"]
+            }
+        ],
+        "178/0": [
+            {
+                "name": "São Mateus x São João do Sobrado",
+                "from": "São Mateus",
+                "to": "São João Sobrado",
+                "services": "Mo-Su",
+                "times": ["05:10", "12:00", "16:00"]
+            },
+            {
+                "name": "São João do Sobrado x São Mateus",
+                "from": "São João Sobrado",
+                "to": "São Mateus",
+                "services": "Mo-Su",
+                "times": ["05:30", "10:40", "14:00"]
+            }
+        ]
+    }
+}
