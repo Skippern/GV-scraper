@@ -1,0 +1,924 @@
+{
+    "operator": "Viação Pretti Ltda",
+    "operator:ref": "1-007",
+    "updated": "2017-12-01",
+    "routes": {
+        "029/0": [
+            {
+                "name": "B.S.Francisco x Ecoporanga via Paulistinha",
+                "from": "Barra de São Francisco",
+                "to": "Ecoporanga",
+                "via": "Paulistinha",
+                "services": "Mo-Su",
+                "times": ["09:30", "15:30"]
+            },
+            {
+                "name": "Ecoporanga x B.S.Francisco via Paulistinha",
+                "from": "Ecoporanga",
+                "to": "Barra de São Francisco",
+                "via": "Paulistinha",
+                "services": "Mo-Su",
+                "times": ["13:00"]
+            },
+            {
+                "name": "B.S.Francisco x Ecoporanga via Paulistinha",
+                "from": "Barra de São Francisco",
+                "to": "Ecoporanga",
+                "via": "Paulistinha",
+                "note": "Exceto 1º Domingo do Mês",
+                "services": "Mo-Su",
+                "times": ["15:30"]
+            },
+            {
+                "name": "B.S.Francisco x Ecoporanga via Paulistinha",
+                "from": "Barra de São Francisco",
+                "to": "Ecoporanga",
+                "via": "Paulistinha",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            },
+            {
+                "name": "B.S.Francisco x Ecoporanga via Paulistinha",
+                "from": "Barra de São Francisco",
+                "to": "Ecoporanga",
+                "via": "Paulistinha",
+                "services": "Sa",
+                "times": ["12:30"]
+            },
+            {
+                "name": "B.S.Francisco x Ecoporanga via Paulistinha",
+                "from": "Barra de São Francisco",
+                "to": "Ecoporanga",
+                "via": "Paulistinha",
+                "services": "Mo-Fr",
+                "times": ["13:00"]
+            },
+            {
+                "name": "Ecoporanga x B.S.Francisco via Paulistinha",
+                "from": "Ecoporanga",
+                "to": "Barra de São Francisco",
+                "via": "Paulistinha",
+                "note": "Exceto 1º Domingo do Mês",
+                "services": "Mo-Su",
+                "times": ["07:40"]
+            },
+            {
+                "name": "Ecoporanga x B.S.Francisco via Paulistinha",
+                "from": "Ecoporanga",
+                "to": "Barra de São Francisco",
+                "via": "Paulistinha",
+                "services": "Mo-Sa",
+                "times": ["09:30"]
+            },
+            {
+                "name": "Ecoporanga x B.S.Francisco via Paulistinha",
+                "from": "Ecoporanga",
+                "to": "Barra de São Francisco",
+                "via": "Paulistinha",
+                "services": "Mo-Fr",
+                "times": ["06:00"]
+            },
+            {
+                "name": "Ecoporanga x B.S.Francisco via Paulistinha",
+                "from": "Ecoporanga",
+                "to": "Barra de São Francisco",
+                "via": "Paulistinha",
+                "services": "Sa-Su",
+                "times": ["17:30"]
+            }
+        ],
+        "079/0": [
+            {
+                "name": "Itarana x Baixo Guandú",
+                "from": "Itarana",
+                "to": "Baixo Guandú",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["06:40", "10:20"]
+            }
+        ],
+        "081/0": [
+            {
+                "name": "Colatina x Linhares via Humaita",
+                "from": "Colatina",
+                "to": "Linhares",
+                "via": "Humaita",
+                "services": "Mo-Su",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Colatina x Linhares via Humaita",
+                "from": "Colatina",
+                "to": "Linhares",
+                "via": "Humaita",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["06:00", "09:00", "12:00", "14:00"]
+            },
+            {
+                "name": "Colatina x Linhares via Humaita",
+                "from": "Colatina",
+                "to": "Linhares",
+                "via": "Humaita",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["08:40"]
+            },
+            {
+                "name": "Colatina x Linhares via Humaita",
+                "from": "Colatina",
+                "to": "Linhares",
+                "via": "Humaita",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Fr",
+                "times": ["15:50"]
+            },
+            {
+                "name": "Linhares x Colatina via Humaita",
+                "from": "Linhares",
+                "to": "Colatina",
+                "via": "Humaita",
+                "services": "Mo-Su",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Linhares x Colatina via Humaita",
+                "from": "Linhares",
+                "to": "Colatina",
+                "via": "Humaita",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["06:20", "09:00", "12:00", "14:00"]
+            },
+            {
+                "name": "Linhares x Colatina via Humaita",
+                "from": "Linhares",
+                "to": "Colatina",
+                "via": "Humaita",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Sa",
+                "times": ["13:50"]
+            },
+            {
+                "name": "Linhares x Colatina via Humaita",
+                "from": "Linhares",
+                "to": "Colatina",
+                "via": "Humaita",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Fr",
+                "times": ["17:20"]
+            }
+        ],
+        "084/0": [
+            {
+                "name": "Colatina x Linhares via Tiradentes",
+                "from": "Colatina",
+                "to": "Linhares",
+                "via": "Tiradentes",
+                "services": "Mo-Su",
+                "times": ["07:30", "14:10"]
+            },
+            {
+                "name": "Colatina x Linhares via Tiradentes",
+                "from": "Colatina",
+                "to": "Linhares",
+                "via": "Tiradentes",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["05:00", "11:00"]
+            },
+            {
+                "name": "Linhares x Colatina via Tiradentes",
+                "from": "Linhares",
+                "to": "Colatina",
+                "via": "Tiradentes",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["05:20", "11:00", "14:40"]
+            },
+            {
+                "name": "Linhares x Colatina via Tiradentes",
+                "from": "Linhares",
+                "to": "Colatina",
+                "via": "Tiradentes",
+                "services": "Mo-Su",
+                "times": ["08:00"]
+            },
+            {
+                "name": "Linhares x Colatina via Tiradentes",
+                "from": "Linhares",
+                "to": "Colatina",
+                "via": "Tiradentes",
+                "services": "Su,Ho",
+                "times": ["15:30"]
+            }
+        ],
+        "091/0": [
+            {
+                "name": "Colatina x Baixo Guandú",
+                "from": "Colatina",
+                "to": "Baixo Guandú",
+                "services": "Mo-Su",
+                "times": ["11:20"]
+            },
+            {
+                "name": "Colatina x Baixo Guandú",
+                "from": "Colatina",
+                "to": "Baixo Guandú",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["06:30", "09:40", "13:00", "14:30"]
+            },
+            {
+                "name": "Colatina x Baixo Guandú",
+                "from": "Colatina",
+                "to": "Baixo Guandú",
+                "note": "Feriados Nacionais",
+                "services": "Su,Ho",
+                "times": ["07:10"]
+            },
+            {
+                "name": "Colatina x Baixo Guandú",
+                "from": "Colatina",
+                "to": "Baixo Guandú",
+                "services": "Sa-Su,Ho",
+                "times": ["17:00"]
+            },
+            {
+                "name": "Colatina x Baixo Guandú",
+                "from": "Colatina",
+                "to": "Baixo Guandú",
+                "services": "Mo-Fr",
+                "times": ["17:20"]
+            },
+            {
+                "name": "Baixo Guandú x Colatina",
+                "from": "Baixo Guandú",
+                "to": "Colatina",
+                "services": "Mo-Su",
+                "times": ["08:20"]
+            },
+            {
+                "name": "Baixo Guandú x Colatina",
+                "from": "Baixo Guandú",
+                "to": "Colatina",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["06:40", "11:00", "15:30"]
+            },
+            {
+                "name": "Baixo Guandú x Colatina",
+                "from": "Baixo Guandú",
+                "to": "Colatina",
+                "services": "Mo-Fr",
+                "times": ["18:30"]
+            },
+            {
+                "name": "Baixo Guandú x Colatina",
+                "from": "Baixo Guandú",
+                "to": "Colatina",
+                "services": "Sa-Su,Ho",
+                "times": ["18:10"]
+            },
+            {
+                "name": "Baixo Guandú x Colatina",
+                "from": "Baixo Guandú",
+                "to": "Colatina",
+                "services": "Su", 
+                "times": ["15:00"]
+            }
+        ],
+        "096/0": [
+            {
+                "name": "Vitória x Mantenópolis",
+                "from": "Vitória",
+                "to": "Mantenópolis",
+                "services": "Mo-Su",
+                "times": ["07:15"]
+            },
+            {
+                "name": "Mantenópolis x Vitória",
+                "from": "Mantenópolis",
+                "to": "Vitória",
+                "services": "Mo-Su",
+                "times": ["14:00"]
+            }
+        ],
+        "112/0": [
+            {
+                "name": "Vitória x Itaguaçu via S.M.Jetibá",
+                "from": "Vitória",
+                "to": "Itaguaçu",
+                "via": "Santa Maria de Jetibá",
+                "services": "Mo-Su",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Vitória x Itaguaçu via S.M.Jetibá",
+                "from": "Vitória",
+                "to": "Itaguaçu",
+                "via": "Santa Maria de Jetibá",
+                "note": "Exceto Feriados",
+                "services": "Mo-Sa",
+                "times": ["06:10"]
+            },
+            {
+                "name": "Vitória x Itaguaçu via S.M.Jetibá",
+                "from": "Vitória",
+                "to": "Itaguaçu",
+                "via": "Santa Maria de Jetibá",
+                "services": "Mo-Fr,Su",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Vitória x Itaguaçu via S.M.Jetibá",
+                "from": "Vitória",
+                "to": "Itaguaçu",
+                "via": "Santa Maria de Jetibá",
+                "services": "Sa",
+                "times": ["10:00"]
+            },
+            {
+                "name": "Itaguaçu x Vitória via S.M.Jetibá",
+                "from": "Itaguaçu",
+                "to": "Vitória",
+                "via": "Santa Maria de Jetibá",
+                "services": "Mo-Su",
+                "times": ["13:10"]
+            },
+            {
+                "name": "Itaguaçu x Vitória via S.M.Jetibá",
+                "from": "Itaguaçu",
+                "to": "Vitória",
+                "via": "Santa Maria de Jetibá",
+                "services": "Su",
+                "times": ["13:00"]
+            },
+            {
+                "name": "Itaguaçu x Vitória via S.M.Jetibá",
+                "from": "Itaguaçu",
+                "to": "Vitória",
+                "via": "Santa Maria de Jetibá",
+                "services": "Su,Ho",
+                "times": ["15:30"]
+            },
+            {
+                "name": "Vila Velha (Ramal) x Itaguaçu",
+                "from": "Vila Velha",
+                "to": "Itaguaçu",
+                "via": "Santa Maria de Jetibá",
+                "services": "Mo-Sa",
+                "times": ["14:20"]
+            },
+            {
+                "name": "Itaguaçu x Vila Velha (Ramal)",
+                "from": "Itaguaçu",
+                "to": "Vila Velha",
+                "via": "Santa Maria de Jetibá",
+                "services": "Mo-Sa",
+                "times": ["05:00"]
+            }
+        ],
+        "112/2": [
+            {
+                "name": "Itaguaçu x Vitória via S.M.Jetibá",
+                "from": "Itaguaçu",
+                "to": "Vitória",
+                "via": "Santa Maria de Jetibá",
+                "note": "1º Domingo do Mês",
+                "services": "Su",
+                "times": ["15:30"]
+            }
+        ],
+        "112/3": [
+            {
+                "name": "Vitória x Itaguaçu via S.M.Jetibá",
+                "from": "Vitória",
+                "to": "Itaguaçu",
+                "via": "Santa Maria de Jetibá",
+                "services": "Sa",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Vitória x Itaguaçu via S.M.Jetibá",
+                "from": "Vitória",
+                "to": "Itaguaçu",
+                "via": "Santa Maria de Jetibá",
+                "services": "Fr,Su",
+                "times": ["17:20"]
+            },
+            {
+                "name": "Itaguaçu x Vitória via S.M.Jetibá",
+                "from": "Itaguaçu",
+                "to": "Vitória",
+                "via": "Santa Maria de Jetibá",
+                "services": "Su,Ho",
+                "times": ["17:20"]
+            }
+        ],
+        "129/0": [
+            {
+                "name": "Linhares x Rio Bananal via Chapadão",
+                "from": "Linhares",
+                "to": "Rio Bananal",
+                "via": "Chapadão",
+                "services": "Mo-Su",
+                "times": ["13:10", "18:10"]
+            },
+            {
+                "name": "Linhares x Rio Bananal via Chapadão",
+                "from": "Linhares",
+                "to": "Rio Bananal",
+                "via": "Chapadão",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["07:00", "10:00", "16:30"]
+            },
+            {
+                "name": "Rio Bananal x Linhares via Chapadão",
+                "from": "Rio Bananal",
+                "to": "Linhares",
+                "via": "Chapadão",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["06:00", "06:40", "12:00"]
+            },
+            {
+                "name": "Rio Bananal x Linhares via Chapadão",
+                "from": "Rio Bananal",
+                "to": "Linhares",
+                "via": "Chapadão",
+                "services": "Su,Ho",
+                "times": ["07:00", "14:10"]
+            }
+        ],
+        "130/0": [
+            {
+                "name": "Linhares x Alto Panorama",
+                "form": "Linhares",
+                "to": "Alto Panorama",
+                "note": "1º Domingo do Mês, Exceto Feriados Nacionais",
+                "services": "Su",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Alto Panorama x Linhares",
+                "form": "Alto Panorama",
+                "to": "Linhares",
+                "note": "1º Domingo do Mês, Exceto Feriados Nacionais",
+                "services": "Su",
+                "times": ["06:30"]
+            }
+        ],
+        "142/0": [
+            {
+                "name": "Vitória x Afonso Cláudio",
+                "from": "Vitória",
+                "to": "Afonso Cláudio",
+                "note": "1º Domingo do Mês, Exceto Feriados Nacionais",
+                "services": "Su",
+                "times": ["11:30"]
+            },
+            {
+                "name": "Afonso Cláudio x Vitória",
+                "from": "Afonso Cláudio",
+                "to": "Vitória",
+                "note": "1º Domingo do Mês, Exceto Feriados Nacionais",
+                "services": "Su",
+                "times": ["05:00"]
+            }
+        ],
+        "157/0": [
+            {
+                "name": "Colatina x Ponto Belo via Pancas e Ecoporanga",
+                "from": "Colatina",
+                "to": "Ponto Belo",
+                "via": ["Pancas", "Ecoporanga"],
+                "note": "1º Domingo do Mês",
+                "services": "Su",
+                "times": ["11:30"]
+            },
+            {
+                "name": "Ponto Belo x Colatina via Pancas e Ecoporanga",
+                "from": "Ponto Belo",
+                "to": "Colatina",
+                "via": ["Pancas", "Ecoporanga"],
+                "note": "1º Domingo do Mês",
+                "services": "Su",
+                "times": ["05:30"]
+            }
+        ],
+        "159/0": [
+            {
+                "name": "Colatina x Barra São Francisco via Alto Rio Novo",
+                "from": "Colatina",
+                "to": "Barra de São Francisco",
+                "via": "Alto Rio Novo",
+                "note": "2º Domingo do Mês Exceto Feriados Nacionais",
+                "services": "Su",
+                "times": ["11:30"]
+            }
+        ],
+        "160/0": [
+            {
+                "name": "Colatina x Fazenda Toniato",
+                "from": "Colatina",
+                "to": "Fazenda Toniato",
+                "services": "Mo-Fr",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Colatina x Fazenda Toniato",
+                "from": "Colatina",
+                "to": "Fazenda Toniato",
+                "note": "Exceto 1º Sabado do Mês",
+                "services": "Sa",
+                "times": ["13:00"]
+            },
+            {
+                "name": "Fazenda Toniato x Colatina",
+                "from": "Fazenda Toniato",
+                "to": "Colatina",
+                "note": "Exceto 1º Segunda do Mês",
+                "services": "Mo-Sa",
+                "times": ["05:30"]
+            }
+        ],
+        "162/0": [
+            {
+                "name": "Vitória x Baixo Guandú via S.Leopoldina",
+                "from": "Vitória",
+                "to": "Baixo Guandú",
+                "via": "Santa Leopoldina",
+                "services": "Mo-Su",
+                "times": ["12:40"]
+            },
+            {
+                "name": "Beixo Guandú via Vitória via S.Leopoldina",
+                "from": "Baixo Guandú",
+                "to": "Vitória",
+                "via": "Santa Leopoldina",
+                "services": "Mo-Su",
+                "times": ["05:25"]
+            },
+            {
+                "name": "Beixo Guandú via Vitória via S.Leopoldina",
+                "from": "Baixo Guandú",
+                "to": "Vitória",
+                "via": "Santa Leopoldina",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["09:00", "15:00"]
+            }
+        ],
+        "209/0": [
+            {
+                "name": "Colatina x Mantenópolis",
+                "from": "Colatina",
+                "to": "Mantenópolis",
+                "services": "Mo-Su",
+                "times": ["13:10", "17:00"]
+            },
+            {
+                "name": "Colatina x Mantenópolis",
+                "from": "Colatina",
+                "to": "Mantenópolis",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["06:00", "09:30"]
+            },
+            {
+                "name": "Colatina x Mantenópolis",
+                "from": "Colatina",
+                "to": "Mantenópolis",
+                "services": "Ho",
+                "times": ["07:40"]
+            },
+            {
+                "name": "Mantenópolis x Colatina",
+                "from": "Mantenópolis",
+                "to": "Colatina",
+                "services": "Mo-Su",
+                "times": ["05:40", "16:30"]
+            },
+            {
+                "name": "Mantenópolis x Colatina",
+                "from": "Mantenópolis",
+                "to": "Colatina",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["09:30"]
+            },
+            {
+                "name": "Mantenópolis x Colatina",
+                "from": "Mantenópolis",
+                "to": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["13:10"]
+            }
+        ],
+        "241/0": [
+            {
+                "name": "Colatina x Vila Verde",
+                "from": "Colatina",
+                "to": "Vila Verde",
+                "services": "Mo-Sa",
+                "times": ["11:30", "14:30"]
+            },
+            {
+                "name": "Colatina x Vila Verde",
+                "from": "Colatina",
+                "to": "Vila Verde",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["07:40"]
+            },
+            {
+                "name": "Colatina x Vila Verde",
+                "from": "Colatina",
+                "to": "Vila Verde",
+                "note": "4ª Domingo do Mês",
+                "services": "Su,Ho",
+                "times": ["11:30"]
+            },
+            {
+                "name": "Vila Verde x Colatina",
+                "from": "Vila Verde",
+                "to": "Colatina",
+                "services": "Mo-Sa", 
+                "times": ["05:30", "08:00"]
+            },
+            {
+                "name": "Vila Verde x Colatina",
+                "from": "Vila Verde",
+                "to": "Colatina",
+                "note": "Exceto 1º Domingo do Mês",
+                "services": "Su,Ho",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Vila Verde x Colatina",
+                "from": "Vila Verde",
+                "to": "Colatina",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo",
+                "times": ["05:50"]
+            },
+            {
+                "name": "Colatina x Pancas",
+                "from": "Colatina",
+                "to": "Pancas",
+                "services": "Mo-Sa",
+                "times": ["07:40"]
+            },
+            {
+                "name": "Colatina x Pancas",
+                "from": "Colatina",
+                "to": "Pancas",
+                "note": "3ª Domingo do Mês",
+                "services": "Su",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Colatina x Pancas",
+                "from": "Colatina",
+                "to": "Pancas",
+                "services": "Su,Ho",
+                "times": ["16:00"]
+            },
+            {
+                "name": "Colatina x Pancas",
+                "from": "Colatina",
+                "to": "Pancas",
+                "services": "Mo-Fr",
+                "times": ["18:00"]
+            },
+            {
+                "name": "Pancas x Colatina",
+                "from": "Pancas",
+                "to": "Colatina",
+                "services": "Su,Ho",
+                "times": ["18:00", "18:30"]
+            }
+        ],
+        "268/0": [
+            {
+                "name": "B.S.Francisco x Água Doce do Norte",
+                "from": "Barra de São Francisco",
+                "to": "Água Doce do Norte",
+                "services": "Su,Ho",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Água Doce do Norte x B.S.Francisco",
+                "from": "Água Doce do Norte",
+                "to": "Barra de São Francisco",
+                "services": "Su,Ho",
+                "times": ["10:00"]
+            }
+        ],
+        "268/1": [
+            {
+                "name": "B.S.Francisco x Água Doce do Norte",
+                "from": "Barra de São Francisco",
+                "to": "Água Doce do Norte",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "15:00", "18:10"]
+            },
+            {
+                "name": "B.S.Francisco x Água Doce do Norte",
+                "from": "Barra de São Francisco",
+                "to": "Água Doce do Norte",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Fr",
+                "times": ["06:00", "08:00", "14:00", "16:00"]
+            },
+            {
+                "name": "Água Doce do Norte x B.S.Francisco",
+                "from": "Água Doce do Norte",
+                "to": "Barra de São Francisco",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["06:00", "07:00", "08:00", "10:00", "12:00", "14:00", "17:00"]
+            },
+            {
+                "name": "Água Doce do Norte x B.S.Francisco",
+                "from": "Água Doce do Norte",
+                "to": "Barra de São Francisco",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Fr",
+                "times": ["09:00", "13:00", "15:00", "16:00"]
+            },
+            {
+                "name": "Água Doce do Norte x B.S.Francisco",
+                "from": "Água Doce do Norte",
+                "to": "Barra de São Francisco",
+                "services": "Sa",
+                "times": ["11:00"]
+            }
+        ],
+        "269/0": [
+            {
+                "name": "B.S.Francisco x Santa Luiza do Azul",
+                "from": "Barra de São Francisco",
+                "to": "Santa Luiza do Azul",
+                "services": "Su,Ho",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Santa Luiza do Azul x B.S.Francisco",
+                "from": "Santa Luiza do Azul",
+                "to": "Barra de São Francisco",
+                "services": "Su,Ho",
+                "times": ["15:50"]
+            }
+        ],
+        "300/0": [
+            {
+                "name": "Vitória x Santa Maria de Jetibá",
+                "from": "Vitória",
+                "to": "Santa Maria de Jetibá",
+                "services": "Su,Ho",
+                "times": ["18:30"]
+            },
+            {
+                "name": "Santa Maria de Jetibá x Vitória",
+                "from": "Santa Maria de Jetibá",
+                "to": "Vitória",
+                "services": "Mo",
+                "times": ["06:20"]
+            },
+            {
+                "name": "Vitória x Santa Maria de Jetibá",
+                "from": "Vitória",
+                "to": "Santa Maria de Jetibá",
+                "note": "1º Domingo do Mês",
+                "services": "Su",
+                "times": ["06:10"]
+            }
+        ],
+        "306/0": [
+            {
+                "name": "Santa Maria de Jetibá x Colatina",
+                "from": "Santa Maria de Jetibá",
+                "to": "Colatina",
+                "note": "1º Domingo do Mês",
+                "services": "Su",
+                "times": ["08:30"]
+            }
+        ],
+        "323/0": [
+            {
+                "name": "Colatina x Água Doce do Norte",
+                "from": "Colatina",
+                "to": "Água Doce do Norte",
+                "note": "3ª Domingo do Mês, Exceto Feriados Nacionais",
+                "services": "Su",
+                "times": ["11:30"]
+            }
+        ],
+        "325/0": [
+            {
+                "name": "Vitória x Colatina via S.M.Jetibá",
+                "from": "Vitória",
+                "to": "Colatina",
+                "via": "Santa Maria de Jetibá",
+                "services": "Su,Ho",
+                "times": ["06:10"]
+            },
+            {
+                "name": "Colatina x Vitória via S.M.Jetibá",
+                "from": "Colatina",
+                "to": "Vitória",
+                "via": "Santa Maria de Jetibá",
+                "services": "Su,Ho",
+                "times": ["15:10"]
+            }
+        ],
+        "366/0": [
+            {
+                "name": "Colatina x Governador Lindenberg",
+                "from": "Colatina",
+                "to": "Governador Lindenberg",
+                "services": "Mo-Su",
+                "times": ["17:05"]
+            },
+            {
+                "name": "Colatina x Governador Lindenberg",
+                "from": "Colatina",
+                "to": "Governador Lindenberg",
+                "services": "Mo-Sa",
+                "times": ["12:40"]
+            },
+            {
+                "name": "Colatina x Governador Lindenberg",
+                "from": "Colatina",
+                "to": "Governador Lindenberg",
+                "note": "Exceto 1º Domingo do Mês",
+                "services": "Su",
+                "times": ["11:00"]
+            },
+            {
+                "name": "Governador Lindenberg x Colatina",
+                "from": "Governador Lindenberg",
+                "to": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            },
+            {
+                "name": "Governador Lindenberg x Colatina",
+                "from": "Governador Lindenberg",
+                "to": "Colatina",
+                "services": "Su,Ho",
+                "times": ["07:00"]
+            },
+            {
+                "name": "Governador Lindenberg x Colatina",
+                "from": "Governador Lindenberg",
+                "to": "Colatina",
+                "services": "Su",
+                "times": ["15:00"]
+            }
+        ],
+        "367/0": [
+            {
+                "name": "Colatina x Governador Lindenberg Ramal",
+                "from": "Colatina",
+                "to": "Governador Lindenberg",
+                "services": "Mo-Su",
+                "times": ["08:15", "14:10"]
+            },
+            {
+                "name": "Colatina x Governador Lindenberg Ramal",
+                "from": "Colatina",
+                "to": "Governador Lindenberg",
+                "services": "Mo-Sa",
+                "times": ["05:00", "11:00"]
+            },
+            {
+                "name": "Colatina x Governador Lindenberg Ramal",
+                "from": "Colatina",
+                "to": "Governador Lindenberg",
+                "note": "Exceto 1º Domingo do Mês",
+                "services": "Su",
+                "times": ["11:00"]
+            },
+            {
+                "name": "Governador Lindenberg x Colatina Ramal",
+                "from": "Governador Lindenberg",
+                "to": "Colatina",
+                "note": "Exceto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["05:00", "08:40", "11:00", "14:40"]
+            },
+            {
+                "name": "Governador Lindenberg x Colatina Ramal",
+                "from": "Governador Lindenberg",
+                "to": "Colatina",
+                "services": "Su,Ho",
+                "times": ["08:00", "15:30"]
+            }
+        ]
+    }
+}
