@@ -1,0 +1,218 @@
+{
+    "operator": "Viação São Roque Ltda",
+    "operator:ref": "1-017",
+    "updated": "2014-10-15",
+    "routes": {
+        "071/0": [
+            {
+                "name": "São Bento x Colatina via Córr Saúde",
+                "from": "São Bento",
+                "to": "Colatina",
+                "via": "Córrego Saúde",
+                "services": "Mo-Sa",
+                "times": ["06:50", "08:50", "12:00", "13:00"]
+            },
+            {
+                "name": "Colatina x São Bento via Córr Saúde",
+                "from": "Colatina",
+                "to": "São Bento",
+                "services": "Mo-Sa",
+                "times": ["07:30", "10:30", "11:40", "15:10"]
+            },
+            {
+                "name": "São Bento x Colatina via Córr Saúde",
+                "from": "São Bento",
+                "to": "Colatina",
+                "via": "Córrego Saúde",
+                "services": "Su",
+                "times": ["07:30", "08:50", "13:00"]
+            },
+            {
+                "name": "Colatina x São Bento via Córr Saúde",
+                "from": "Colatina",
+                "to": "São Bento",
+                "via": "Córrego Saúde",
+                "services": "Su",
+                "times": ["07:45", "11:40", "15:30"]
+            }
+        ],
+        "116/0": [
+            {
+                "name": "Barra do Triunfo x Colatina",
+                "from": "Barra do Triunfo",
+                "to": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["06:00", "12:30"]
+            },
+            {
+                "name": "Colatina x Barra do Triunfo",
+                "from": "Colatina",
+                "to": "Barra do Triunfo",
+                "services": "Mo-Fr",
+                "times": ["11:10", "15:30"]
+            },
+            {
+                "name": "Colatina x Barra do Triunfo",
+                "from": "Colatina",
+                "to": "Barra do Triunfo",
+                "services": "Sa",
+                "times": ["10:20", "14:20"]
+            }
+        ],
+        "124/0": [
+            {
+                "name": "Colatina x Santa Julia",
+                "from": "Colatina",
+                "to": "Santa Julia",
+                "services": "Mo-Sa",
+                "times": ["14:30"]
+            },
+            {
+                "name": "Santa Julia x Colatina",
+                "from": "Santa Julia",
+                "to": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["05:30"]
+            }
+        ],
+        "235/0": [
+            {
+                "name": "São Bento x Colatina via São Jacinto",
+                "from": "São Bento",
+                "to": "Colatina",
+                "via": "São Jacinto",
+                "services": "Mo-Sa",
+                "times": ["05:55"]
+            },
+            {
+                "name": "São Bento x Colatina via São Jacinto",
+                "from": "São Bento",
+                "to": "Colatina",
+                "via": "São Jacinto",
+                "services": "Su",
+                "times": ["06:50"]
+            },
+            {
+                "name": "Colatina x São Bento via São Jacinto",
+                "from": "Colatina",
+                "to": "São Bento",
+                "via": "São Jacinto",
+                "services": "Mo-Su",
+                "times": ["17:45"]
+            }
+        ],
+        "235/8": [
+            {
+                "name": "São Jacinto x Colatina",
+                "from": "São Jacinto",
+                "to": "Colatina",
+                "services": "Mo-Su",
+                "times": ["11:00", "16:35"]
+            },
+            {
+                "name": "São Jacinto x Colatina",
+                "from": "São Jacinto",
+                "to": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["06:45", "08:35", "13:55"]
+            },
+            {
+                "name": "São Jacinto x Colatina",
+                "from": "São Jacinto",
+                "to": "Colatina",
+                "services": "Su",
+                "times": ["07:20"]
+            },
+            {
+                "name": "Colatina x São Jacinto",
+                "from": "Colatina",
+                "to": "São Jacinto",
+                "services": "Mo-Sa",
+                "times": ["05:20", "07:45", "10:05", "12:10"]
+            },
+            {
+                "name": "Colatina x São Jacinto",
+                "from": "Colatina",
+                "to": "São Jacinto",
+                "services": "Su",
+                "times": ["08:00", "12:45"]
+            }
+        ],
+        "329/0": [
+            {
+                "name": "Colatina x Monte Claros",
+                "from": "Colatina",
+                "to": "Monte Claros",
+                "services": "Tu-Fr",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Monte Claros x Colatina",
+                "from": "Monte Claros",
+                "to": "Colatina",
+                "services": "Tu-Fr",
+                "times": ["05:40"]
+            }
+        ],
+        "349/0": [
+            {
+                "name": "São Jacinto x Santa Teresa",
+                "from": "São Jacinto",
+                "to": "Santa Teresa",
+                "services": "Mo-Sa",
+                "times": ["08:45", "13:15"]
+            },
+            {
+                "name": "São Jacinto x Santa Teresa",
+                "from": "São Jacinto",
+                "to": "Santa Teresa",
+                "services": "Su",
+                "times": ["09:00", "13:45", "17:00"]
+            },
+            {
+                "name": "São Jacinto x Santa Teresa",
+                "from": "São Jacinto",
+                "to": "Santa Teresa",
+                "services": "Mo-Su",
+                "times": ["16:00"]
+            },
+            {
+                "name": "Santa Teresa x São Jacinto",
+                "from": "Santa Teresa",
+                "to": "São Jacinto",
+                "services": "Mo-Su",
+                "times": ["09:50", "15:30"]
+            },
+            {
+                "name": "Santa Teresa x São Jacinto",
+                "from": "Santa Teresa",
+                "to": "São Jacinto",
+                "services": "Mo-Sa",
+                "times": ["05:50"]
+            },
+            {
+                "name": "Santa Teresa x São Jacinto",
+                "from": "Santa Teresa",
+                "to": "São Jacinto",
+                "services": "Su",
+                "times": ["06:30"]
+            }
+        ],
+        "349/3": [
+            {
+                "name": "São Jacinto x Santa Teresa",
+                "from": "São Jacinto",
+                "to": "Santa Teresa",
+                "services": "Mo-Sa",
+                "times": ["06:20", "11:05"]
+            },
+            {
+                "name": "Santa Teresa x São Jacinto",
+                "from": "Santa Teresa",
+                "to": "São Jacinto",
+                "services": "Mo-Sa",
+                "times": ["07:30", "12:50"]
+            }
+        ]
+    }
+}
