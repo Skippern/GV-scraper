@@ -33,6 +33,15 @@ Routing is done by selecting the route relation in question with an `overpass` q
 
 If there are no route relation for a specific route, it returns `-1` duration, this is a signal to the scraper to test against the default value (60). Mark that routes that doesn't have a relation will not be handled by `osm2gtfs` either. Other negative values have different meanings, but for short means that no relation found or impossible to calculate route due to missing waypoints.
 
+### List of negative durations:
+
+ - `-1`: Route have no valid stop positions.
+ - `-2`: Route have only one valid stop position, and it is neither start, nor end.
+ - `-3`: Route doesn't start with a valid stop position.
+ - `-4`: Route doesn't end with a valid stop position.
+ - `-5`: No valid routes found
+ - `-6`: Circular route (same start and end position) with no aditional stops
+
 `get_durations.py` depends, in addition to the above mentioned, on `overpass` and [osrm](https://github.com/ustroetz/python-osrm) python modules.
 
 As a fallback if `osrm` is not installed, or installation doesn't work, routing can be handled by a `YOURS` web interface, using `requests` calls. This is ment as a fallback, since `YOURS` must route between two nodes, so a long route must be called in a series of calls, instead of `osrm` that can take the entire waypoint list in one call.
