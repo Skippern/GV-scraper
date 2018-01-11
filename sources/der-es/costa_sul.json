@@ -1,0 +1,228 @@
+{
+    "operator": "Costa Sul Transporte e Turismo Ltda",
+    "operator:ref": "1-212",
+    "updated": "2014-05-07",
+    "routes": {
+        "070/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Presidente Kennedy",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Presidente Kennedy",
+                "services": "Mo-Sa",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Presidente Kennedy x Cachoeiro de Itapemirim",
+                "from": "Presidente Kennedy",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["07:30"]
+            }
+        ],
+        "082/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x São Bento",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "São Bento",
+                "services": "Mo-Fr",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x São Bento",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "São Bento",
+                "services": "Sa",
+                "times": ["14:00"]
+            },
+            {
+                "name": "São Bento x Cachoeiro de Itapemirim",
+                "from": "São Bento",
+                "to": "Cachoeiro de Itapemirim",
+                "services": "Mo-Sa",
+                "times": ["06:30"]
+            }
+        ],
+        "177/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Marataízes via Agua Preta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Marataízes",
+                "via": "Agua Preta",
+                "services": "Sa",
+                "times": ["05:00"]
+            },
+            {
+                "name": "Marataízes x Cachoeiro de Itapemirim via Agua Preta",
+                "from": "Marataízes",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Agua Preta",
+                "services": "Sa",
+                "times": ["14:30"]
+            },
+            {
+                "name": "Presidente Kennedy x Marataízes",
+                "from": "Presidente Kennedy",
+                "to": "Marataízes",
+                "services": "Mo-Fr",
+                "times": ["06:15"]
+            },
+            {
+                "name": "Marataízes x Presidente Kennedy",
+                "from": "Marataízes",
+                "to": "Presidente Kennedy",
+                "services": "Mo-Fr",
+                "times": ["14:30"]
+            }
+        ],
+        "182/1": [
+            {
+                "name": "Cachoeiro de Itapemirim x Atilio Vivacqua via Trevo",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Atilio Vivacqua",
+                "via": "Trevo",
+                "services": "Mo-Sa",
+                "times": ["06:00", "06:50", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Atilio Vivacqua via Trevo",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Atilio Vivacqua",
+                "via": "Trevo",
+                "services": "Mo-Su",
+                "times": ["22:30"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Atilio Vivacqua via Trevo",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Atilio Vivacqua",
+                "via": "Trevo",
+                "services": "Su,Ho",
+                "times": ["07:00", "09:00", "11:00", "13:00", "15:00", "17:00", "19:00", "22:30"]
+            },
+            {
+                "name": "Atilio Vivacqua x Cachoeiro de Itapemirim via Trevo",
+                "from": "Atilio Vivacqua",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Trevo",
+                "services": "Mo-Sa",
+                "times": ["05:20", "05:50", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00"]
+            },
+            {
+                "name": "Atilio Vivacqua x Cachoeiro de Itapemirim via Trevo",
+                "from": "Atilio Vivacqua",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Trevo",
+                "services": "Mo-Su",
+                "times": ["21:30"]
+            },
+            {
+                "name": "Atilio Vivacqua x Cachoeiro de Itapemirim via Trevo",
+                "from": "Atilio Vivacqua",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Trevo",
+                "services": "Su,Ho",
+                "times": ["06:00", "08:00", "10:00", "12:00", "14:00", "18:00", "21:30"]
+            }
+        ],
+        "211/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Atilio Vivacqua via Cristo",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Atilio Vivacqua",
+                "via": "Cristo",
+                "services": "Tu",
+                "times": ["10:00"]
+            },
+            {
+                "name": "Atilio Vivacqua x Cachoeiro de Itapemirim via Cristo",
+                "from": "Atilio Vivacqua",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Cristo",
+                "services": "Tu",
+                "times": ["12:00"]
+            }
+        ],
+        "280/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Marataízes via A Vivacqua",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Marataízes",
+                "via": "Atilio Vivacqua",
+                "services": "Su", 
+                "times": ["05:00"]
+            },
+            {
+                "name": "Marataízes x Cachoeiro de Itapemirim via A Vivacqua",
+                "from": "Marataízes",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Atilio Vivacqua",
+                "services": "Su",
+                "times": ["14:30"]
+            },
+            {
+                "name": "Presidente Kennedy x Marataízes",
+                "from": "Presidente Kennedy",
+                "to": "Marataízes",
+                "services": "Mo-Sa",
+                "times": ["12:00"]
+            },
+            {
+                "name": "Marataízes x Presidente Kennedy",
+                "from": "Marataízes",
+                "to": "Presidente Kennedy",
+                "services": "Mo-Sa",
+                "times": ["09:30"]
+            }
+        ],
+        "290/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Presidente Kennedy via Paulinho",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Presidente Kennedy",
+                "via": "Paulimho",
+                "services": "Mo-Fr",
+                "times": ["07:00", "09:30", "10:30", "11:35", "14:00", "17:00", "17:45", "20:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Presidente Kennedy via Paulinho",
+                "from": "Cachoeiro de Itapemirim", 
+                "to": "Presidente Kennedy",
+                "via": "Paulimho",
+                "services": "Sa",
+                "times": ["07:00", "09:30", "10:30", "11:35", "14:00", "17:45"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Presidente Kennedy via Paulinho",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Presidente Kennedy",
+                "via": "Paulimho",
+                "services": "Su,Ho",
+                "times": ["09:30", "11:35", "18:00", "18:30"]
+            },
+            {
+                "name": "Presidente Kennedy x Cachoeiro de Itapemirim via Paulinho",
+                "from": "Presidente Kennedy",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Paulimho",
+                "services": "Mo-Fr",
+                "times": ["05:50", "07:30", "09:30", "11:50", "13:30", "15:00", "16:00", "18:20"]
+            },
+            {
+                "name": "Presidente Kennedy x Cachoeiro de Itapemirim via Paulinho",
+                "from": "Presidente Kennedy",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Paulimho",
+                "services": "Sa",
+                "times": ["05:50", "07:30", "09:30", "11:50", "13:30", "16:00"]
+            },
+            {
+                "name": "Presidente Kennedy x Cachoeiro de Itapemirim via Paulinho",
+                "from": "Presidente Kennedy",
+                "to": "Cachoeiro de Itapemirim", 
+                "via": "Paulimho",
+                "services": "Su,Ho",
+                "times": ["10:00", "13:30", "16:50", "17:00"]
+            }
+        ]
+    }
+}
