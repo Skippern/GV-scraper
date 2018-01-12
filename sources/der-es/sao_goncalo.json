@@ -1,0 +1,382 @@
+{
+    "operator": "Viação São Gonçalo Ltda",
+    "operator:ref": "1-008",
+    "updated": "2017-05-22",
+    "routes": {
+        "069/0": [
+            {
+                "name": "Vila Valério x Linhares via Jurama/Guaxe",
+                "from": "Vila Valério",
+                "to": "Linhares",
+                "via": ["Jurama", "Guaxe"],
+                "services": "Mo-Sa",
+                "times": ["05:30", "10:50", "15:00"]
+            },
+            {
+                "name": "Linhares x Vila Valério via Jurama/Guaxe",
+                "from": "Linhares",
+                "to": "Vila Valério",
+                "via": ["Jurama", "Guaxe"],
+                "services": "Mo-Su",
+                "times": ["14:50"]
+            },
+            {
+                "name": "Vila Valério x Linhares via Jurama/Guaxe",
+                "from": "Vila Valério",
+                "to": "Linhares",
+                "via": ["Jurama", "Guaxe"],
+                "services": "Su,Ho",
+                "times": ["06:00"]
+            },
+            {
+                "name": "Linhares x Vila Valério via Jurama/Guaxe",
+                "from": "Linhares",
+                "to": "Vila Valério",
+                "via": ["Jurama", "Guaxe"],
+                "services": "Mo-Sa",
+                "times": ["05:20", "11:45"]
+            },
+            {
+                "name": "Linhares x Vila Valério via Jurama/Guaxe",
+                "from": "Linhares",
+                "to": "Vila Valério",
+                "via": ["Jurama", "Guaxe"],
+                "services": "Su,Ho",
+                "times": ["07:00"]
+            }
+        ],
+        "098/0": [
+            {
+                "name": "Barra Seca x São Gabriel da Palha",
+                "from": "Barra Seca",
+                "to": "São Gabriel da Palha",
+                "note": "Somente na Primeira Terça da cada mês",
+                "services": "Tu",
+                "times": ["06:20"]
+            },
+            {
+                "name": "São Gabriel da Palha x Barra Seca",
+                "from": "São Gabriel da Palha",
+                "to": "Barra Seca",
+                "note": "Somente na Primeira Terça da cada mês",
+                "services": "Tu",
+                "times": ["14:00"]
+            }
+        ],
+        "122/0": [
+            {
+                "name": "Colatina x Vila Valério via Dourados",
+                "from": "Colatina",
+                "to": "Vila Valério",
+                "via": "Dourados",
+                "services": "Mo-Fr",
+                "times": ["10:30"]
+            },
+            {
+                "name": "Vila Valério x Colatina via Dourados",
+                "from": "Vila Valério",
+                "to": "Colatina",
+                "via": "Dourados",
+                "services": "Mo-Fr",
+                "times": ["05:40"]
+            }
+        ],
+        "138/0": [
+            {
+                "name": "São Mateus x Fátima",
+                "from": "São Mateus",
+                "to": "Fátima",
+                "services": "Mo-Sa",
+                "times": ["09:30", "13:50", "15:00"]
+            },
+            {
+                "name": "Fátima x São Mateus",
+                "from": "Fátima",
+                "to": "São Mateus",
+                "services": "Mo-Sa",
+                "times": ["06:20", "07:40", "11:40"]
+            },
+            {
+                "name": "São Mateus x Fátima",
+                "from": "São Mateus",
+                "to": "Fátima",
+                "services": "Su,Ho",
+                "times": ["15:00", "18:00"]
+            },
+            {
+                "name": "Fátima x São Mateus",
+                "from": "Fátima",
+                "to": "São Mateus",
+                "services": "Su,Ho",
+                "times": ["07:40"]
+            }
+        ],
+        "167/0": [
+            {
+                "name": "Colatina x São Gabriel da Palha",
+                "from": "Colatina",
+                "to": "São Gabriel da Palha",
+                "services": "Mo-Sa",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Colatina x São Gabriel da Palha",
+                "from": "Colatina",
+                "to": "São Gabriel da Palha",
+                "services": "Mo",
+                "times": ["07:00"]
+            },
+            {
+                "name": "São Gabriel da Palha x Colatina",
+                "from": "São Gabriel da Palha",
+                "to": "Colatina",
+                "services": "Mo-Sa",
+                "times": ["05:30"]
+            }
+        ],
+        "180/0": [
+            {
+                "name": "Linhares x Nova Venécia",
+                "from": "Linhares",
+                "to": "Nova Venécia",
+                "note": "Somente na Primeira Segunda de cada mês",
+                "services": "Mo",
+                "times": ["05:20"]
+            },
+            {
+                "name": "Nova Venécia x Linhares",
+                "from": "Nova Venécia",
+                "to": "Linhares",
+                "note": "Somente na Primeira Segunda de cada mês",
+                "services": "Mo",
+                "times": ["13:50"]
+            }
+        ],
+        "236/0": [
+            {
+                "name": "Colatina x Morelo via São Gabriel",
+                "from": "Colatina",
+                "to": "Morelo",
+                "via": "São Gabriel da Palha",
+                "services": "Mo-Sa",
+                "times": ["11:40"]
+            },
+            {
+                "name": "Morelo x Colatina via São Gabriel",
+                "from": "Morelo",
+                "to": "Colatina",
+                "via": "São Gabriel da Palha",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            }
+        ],
+        "237/0": [
+            {
+                "name": "Colatina x Vila Valério via Bley",
+                "from": "Colatina",
+                "to": "Vila Valério",
+                "via": "Bley",
+                "services": "Mo-Su",
+                "times": ["08:00", "15:30"]
+            },
+            {
+                "name": "Colatina x Vila Valério via Bley",
+                "from": "Colatina",
+                "to": "Vila Valério",
+                "via": "Bley",
+                "services": "Mo-Sa",
+                "times": ["09:50", "13:10"]
+            },
+            {
+                "name": "Colatina x Vila Valério via Bley",
+                "from": "Colatina",
+                "to": "Nova Venécia",
+                "via": "Bley",
+                "services": "Su,Ho",
+                "times": ["11:40"]
+            },
+            {
+                "name": "Colatina x Vila Valério via Bley",
+                "from": "Colatina",
+                "to": "Vila Valério",
+                "via": "Bley",
+                "services": "Sa",
+                "times": ["16:15"]
+            },
+            {
+                "name": "Vila Valério x Colatina via Bley",
+                "from": "Vila Valério",
+                "to": "Colatina",
+                "via": "Bley",
+                "services": "Mo-Su",
+                "times": ["10:40"]
+            },
+            {
+                "name": "Vila Valério x Colatina via Bley",
+                "from": "Vila Valério",
+                "to": "Colatina",
+                "via": "Bley",
+                "services": "Mo-Sa",
+                "times": ["05:45", "08:00", "13:10"]
+            },
+            {
+                "name": "Vila Valério x Colatina via Bley",
+                "from": "Vila Valério",
+                "to": "Colatina",
+                "via": "Bley",
+                "services": "Su,Ho",
+                "times": ["05:45", "15:30"]
+            },
+            {
+                "name": "São Gabriel x Vila Valério",
+                "from": "São Gabriel da Palha",
+                "to": "Vila Valério",
+                "start_date": "2015-07-06",
+                "end_date": "2016-01-06",
+                "services": "Mo-Su",
+                "times": ["06:00"]
+            },
+            {
+                "name": "Vila Valério x São Gabriel",
+                "from": "Vila Valério",
+                "to": "São Gabriel da Palha",
+                "start_date": "2015-07-06",
+                "end_date": "2016-01-06",
+                "services": "Mo-Su",
+                "times": ["17:30"]
+            },
+            {
+                "name": "São Gabriel x Vila Valério",
+                "from": "São Gabriel da Palha",
+                "to": "Vila Valério",
+                "start_date": "2015-07-06",
+                "end_date": "2016-01-06",
+                "services": "Mo-Sa",
+                "times": ["13:50"]
+            },
+            {
+                "name": "São Gabriel x Vila Valério",
+                "from": "São Gabriel da Palha",
+                "to": "Vila Valério",
+                "start_date": "2015-07-06",
+                "end_date": "2016-01-06",
+                "services": "Mo",
+                "times": ["09:00"]
+            },
+            {
+                "name": "Vila Valério x São Gabriel",
+                "from": "Vila Valério",
+                "to": "São Gabriel da Palha",
+                "start_date": "2015-07-06",
+                "end_date": "2016-01-06",
+                "services": "Mo-Sa",
+                "times": ["14:50"]
+            },
+            {
+                "name": "Vila Valério x São Gabriel",
+                "from": "Vila Valério",
+                "to": "São Gabriel da Palha",
+                "start_date": "2015-07-06",
+                "end_date": "2016-01-06",
+                "services": "Mo",
+                "times": ["07:50"]
+            }
+        ],
+        "240/0": [
+            {
+                "name": "São Mateus x Jaguré",
+                "from": "São Mateus",
+                "to": "Jaguaré",
+                "services": "Mo-Sa",
+                "times": ["06:50", "11:00", "12:40", "16:30", "18:00"]
+            },
+            {
+                "name": "São Mateus x Jaguré",
+                "from": "São Mateus",
+                "to": "Jaguaré",
+                "services": "Su,Ho",
+                "times": ["09:30"]
+            },
+            {
+                "name": "Jaguaré x São Mateus",
+                "from": "Jaguaré",
+                "to": "São Mateus",
+                "services": "Mo-Su",
+                "times": ["05:50", "09:30", "14:00", "16:30", "17:30"]
+            },
+            {
+                "name": "Jaguaré x São Mateus",
+                "from": "Jaguaré",
+                "to": "São Mateus",
+                "services": "Su,Ho",
+                "times": ["12:00", "16:30"]
+            }
+        ],
+        "297/0": [
+            {
+                "name": "Vila Valério x Linhares via Araribóia",
+                "from": "Vila Valério",
+                "to": "Linhares",
+                "via": "Araribóia",
+                "services": "We,Sa",
+                "times": ["05:20"]
+            },
+            {
+                "name": "Linhares x Vila Valério x Araribóia",
+                "from": "Linhares",
+                "to": "Vila Valério",
+                "via": "Araribóia",
+                "services": "We,Sa",
+                "times": ["14:00"]
+            }
+        ],
+        "330/0": [
+            {
+                "name": "Colatina x São Domingos do Norte",
+                "from": "Colatina",
+                "to": "São Domingos do Norte",
+                "services": "Su",
+                "times": ["17:30"]
+            },
+            {
+                "name": "São Domingos do Norte x Colatina",
+                "from": "São Domingos do Norte",
+                "to": "Colatina",
+                "services": "Su",
+                "times": ["15:00"]
+            }
+        ],
+        "330/1": [
+            {
+                "name": "Colatina x São Domingos do Norte",
+                "from": "Colatina",
+                "to": "São Domingos do Norte",
+                "services": "Su,Ho",
+                "times": ["13:10"]
+            },
+            {
+                "name": "São Domingos do Norte x Colatina",
+                "from": "São Domingos do Norte",
+                "to": "Colatina",
+                "services": "Su,Ho",
+                "times": ["08:15"]
+            }
+        ],
+        "333/0": [
+            {
+                "name": "Colatina x São José",
+                "from": "Colatina",
+                "to": "São José",
+                "services": "Mo-Fr",
+                "times": ["14:00"]
+            },
+            {
+                "name": "São José x Colatina",
+                "from": "São José",
+                "to": "Colatina",
+                "services": "Mo-Fr",
+                "times": ["05:00"]
+            }
+        ]
+    }
+}
