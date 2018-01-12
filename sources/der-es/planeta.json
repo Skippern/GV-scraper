@@ -1,0 +1,878 @@
+{
+    "operator": "Viação Planeta Ltda",
+    "operator:ref": "1-006",
+    "updated": "2017-11-23",
+    "routes": {
+        "351/0": [
+            {
+                "name": "Vitória x Cachoeiro de Itapemirim via BR-101",
+                "from": "Vitória",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["07:30", "09:30", "14:30", "15:30"]
+            },
+            {
+                "name": "Vitória x Cachoeiro de Itapemirim via BR-101",
+                "from": "Vitória",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "BR-101",
+                "services": "Mo",
+                "times": ["07:31"]
+            },
+            {
+                "name": "Vitória x Cachoeiro de Itapemirim via BR-101",
+                "from": "Vitória",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "BR-101",
+                "services": "Fr,Su",
+                "times": ["19:50"]
+            },
+            {
+                "name": "Vitória x Cachoeiro de Itapemirim via Centro de Rio Novo do Sul",
+                "from": "Vitória",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Centro de Rio Novo do Sul",
+                "services": "Mo-Su",
+                "times": ["05:00", "06:00", "08:30", "12:00", "13:00", "15:30", "18:00", "20:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Vitória via BR-101",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["11:00", "14:40"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Vitória via BR-101",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo",
+                "times": ["05:01"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Vitória via BR-101",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Fr", 
+                "times": ["15:45"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Vitória via BR-101",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Su",
+                "times": ["20:15"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Vitória via Centro de Rio Novo do Sul",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Vitória",
+                "via": "Centro de Rio Novo do Sul",
+                "services": "Mo-Su",
+                "times": ["05:00", "08:30", "12:10", "14:00", "16:00", "17:00", "19:00", "20:00"]
+            }
+        ],
+        "001/2": [
+            {
+                "name": "Vitória x Cachoeiro de Itapemirim via BR-101",
+                "from": "Vitória",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["07:00"]
+            },
+            {
+                "name": "Vitória x Cachoeiro de Itapemirim via BR-101",
+                "from": "Vitória",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["10:30", "14:00", "16:45", "19:15"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Vitória via BR-101",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["07:00"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Vitória via BR-101",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["10:00", "13:30", "15:15", "18:30"]
+            }
+        ],
+        "002:0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Guarapari via Anchieta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Guarapari",
+                "via": ["Anchieta", "BR-101"],
+                "services": "Mo-Su",
+                "times": ["06:00", "08:10", "09:00", "12:30", "13:30", "14:50", "16:20", "19:20"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Guarapari via Anchieta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Guarapari",
+                "via": ["Anchieta", "Centro de Rio Novo do Sul"],
+                "services": "Mo-Su",
+                "times": ["05:45", "10:35", "17:30"]
+            },
+            {
+                "name": "Guarapari x Cachoeiro de Itapemirim via Anchieta",
+                "from": "Guarapari",
+                "to": "Cachoeiro de Itapemirim",
+                "via": ["Anchieta", "BR-101"],
+                "services": "Mo-Su",
+                "times": ["06:00", "08:20", "11:30", "12:25", "14:40", "15:40", "18:00"]
+            },
+            {
+                "name": "Guarapari x Cachoeiro de Itapemirim via Anchieta",
+                "from": "Guarapari",
+                "to": "Cachoeiro de Itapemirim",
+                "via": ["Anchieta", "Centro de Rio Novo do Sul"],
+                "services": "Mo-Su",
+                "times": ["05:20", "09:40", "17:15"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Guarapari via Anchieta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Guarapari",
+                "via": ["Anchieta", "BR-101"],
+                "start_date": "12-15",
+                "end_date": "02-25",
+                "services": "Mo-Su",
+                "times": ["08:10", "09:00", "12:30", "14:50", "15:30", "19:20"]
+            },
+            {
+                "name": "Cachoeiro de Itapemirim x Guarapari via Anchieta",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Guarapari",
+                "via": ["Anchieta", "Centro de Rio Novo do Sul"],
+                "start_date": "12-15",
+                "end_date": "02-25",
+                "services": "Mo-Su",
+                "times": ["05:45", "10:35", "17:30"]
+            },
+            {
+                "name": "Guarapari x Cachoeiro de Itapemirim via Anchieta",
+                "from": "Guarapari",
+                "to": "Cachoeiro de Itapemirim",
+                "via": ["Anchieta", "BR-101"],
+                "start_date": "12-15",
+                "end_date": "02-25",
+                "services": "Mo-Su",
+                "times": ["06:00", "11:30", "12:00", "15:10", "15:40", "16:20", "18:30"]
+            },
+            {
+                "name": "Guarapari x Cachoeiro de Itapemirim via Anchieta",
+                "from": "Guarapari", 
+                "to": "Cachoeiro de Itapemirim",
+                "via": ["Anchieta", "Centro de Rio Novo do Sul"],
+                "start_date": "12-15",
+                "end_date": "02-25",
+                "services": "Mo-Su",
+                "times": ["05:20", "09:40", "17:15"]
+            },
+            {
+                "name": "Guarapari x Anchieta",
+                "from": "Guarapari",
+                "to": "Anchieta",
+                "services": "Mo-Fr",
+                "times": ["06:10"]
+            }
+        ],
+        "003/0": [
+            {
+                "name": "Vitória x Guarapari via BR-101",
+                "from": "Vitória",
+                "to": "Guarapari",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["21:40"]
+            }
+        ],
+        "004/0": [
+            {
+                "name": "Vitória x Anchieta via Vila Velha e ES-060",
+                "from": "Vitória",
+                "to": "Anchieta",
+                "via": ["Vila Velha", "ES-060"],
+                "services": "Mo-Sa",
+                "times": ["05:10", "17:30"]
+            },
+            {
+                "name": "Vitória x Anchieta via Vila Velha e ES-060",
+                "from": "Vitória",
+                "to": "Anchieta",
+                "via": ["Vila Velha", "ES-060"],
+                "services": "Su",
+                "times": ["15:40"]
+            },
+            {
+                "name": "Anchieta x Vitória via Vila Velha e ES-060",
+                "from": "Anchieta",
+                "to": "Vitória",
+                "via": ["Vila Velha", "ES-060"],
+                "services": "Mo-Sa",
+                "times": ["06:00", "11:50", "14:20"]
+            },
+            {
+                "name": "Anchieta x Vitória via Vila Velha e ES-060",
+                "from": "Anchieta",
+                "to": "Vitória",
+                "via": ["Vila Velha", "ES-060"],
+                "services": "Su",
+                "times": ["18:00"]
+            }
+        ],
+        "010/0": [
+            {
+                "name": "Guarapari x Jaqueira via BR-101",
+                "from": "Guarapari",
+                "to": "Jaqueira",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["05:30", "06:45", "07:40", "09:30", "12:30", "16:30", "19:20"]
+            },
+            {
+                "name": "Jaqueira x Guarapari via BR-101",
+                "from": "Jaqueira",
+                "to": "Guarapari",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["06:10", "07:10", "08:15", "10:20", "13:10", "17:30", "19:50"]
+            }
+        ],
+        "016/0": [
+            {
+                "name": "Vitória x Castelo via BR-101",
+                "from": "Vitória",
+                "to": "Castelo",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["06:40", "16:15"]
+            },
+            {
+                "name": "Castelo x Vitória via BR-101",
+                "from": "Castelo",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["05:50", "16:15"]
+            }
+        ],
+        "018/0": [
+            {
+                "name": "Vitória x Guaçuí via BR-101",
+                "from": "Vitória",
+                "to": "Guaçuí",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["16:10"]
+            },
+            {
+                "name": "Vitória x Guaçuí via BR-101",
+                "from": "Vitória",
+                "to": "Guaçuí",
+                "via": "BR-101",
+                "services": "Fr",
+                "times": ["18:10"]
+            },
+            {
+                "name": "Guaçuí x Vitória via BR-101",
+                "from": "Guaçuí",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["07:40"]
+            },
+            {
+                "name": "Guaçuí x Vitória via BR-101",
+                "from": "Guaçuí",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Su",
+                "times": ["16:20"]
+            }
+        ],
+        "021/0": [
+            {
+                "name": "Vitória x Marataízes via Anchieta",
+                "from": "Vitória",
+                "to": "Marataízes",
+                "via": "Anchieta",
+                "services": "Mo-Sa",
+                "times": ["05:10", "06:00", "07:15", "09:00", "10:00", "11:30", "14:00", "15:10", "17:00", "18:15", "20:00"]
+            },
+            {
+                "name": "Vitória x Marataízes via Anchieta",
+                "from": "Vitória",
+                "to": "Marataízes",
+                "via": "Anchieta",
+                "services": "Su",
+                "times": ["06:30", "08:00", "09:00", "10:00", "11:30", "14:00", "15:10", "17:00", "18:15", "20:00"]
+            },
+            {
+                "name": "Marataízes x Vitória via Ancieta",
+                "from": "Marataízes",
+                "to": "Vitória",
+                "via": "Anchieta",
+                "services": "Mo-Su",
+                "times": ["04:30", "05:30", "06:45", "09:00", "12:00", "13:30", "14:00", "15:30", "17:00", "19:30"]
+            },
+            {
+                "name": "Marataízes x Vitória via Ancieta",
+                "from": "Marataízes",
+                "to": "Vitória",
+                "via": "Anchieta",
+                "services": "Su",
+                "times": ["05:30", "07:15", "09:00", "12:00", "13:30", "14:00", "15:30", "16:45", "18:00", "19:30"]
+            },
+            {
+                "name": "Vitória x Marataízes via Anchieta",
+                "from": "Vitória",
+                "to": "Marataízes",
+                "via": "Anchieta",
+                "start_date": "12-15",
+                "end_date": "02-25",
+                "services": "Mo-Su",
+                "times": ["05:10", "06:15", "07:00", "08:00", "09:00", "10:00", "10:40", "11:30", "14:00", "14:01", "15:00", "17:00", "18:15", "19:20", "20:00"]
+            },
+            {
+                "name": "Marataízes x Vitória via Ancieta",
+                "from": "Marataízes",
+                "to": "Vitória",
+                "via": "Anchieta",
+                "start_date": "12-15",
+                "end_date": "02-25",
+                "services": "Mo-Su",
+                "times": ["04:30", "05:30", "06:45", "09:00", "10:30", "12:20", "12:45", "13:30", "14:00", "15:30", "15:31", "16:45", "16:46", "18:00", "19:30"]
+            },
+            {
+                "name": "Guarapari x Marataízes",
+                "from": "Guarapari",
+                "to": "Marataízes",
+                "services": "Mo-Sa",
+                "times": ["07:25", "09:30", "11:25", "18:10"]
+            },
+            {
+                "name": "Marataízes x Guarapari",
+                "from": "Marataízes",
+                "to": "Guarapari",
+                "services": "Mo-Sa",
+                "times": ["05:00", "08:30", "10:50", "17:15"]
+            }
+        ],
+        "021/2": [
+            {
+                "name": "Vitória x Marataízes via Anchieta",
+                "from": "Vitória",
+                "to": "Marataízes",
+                "via": "Anchieta",
+                "services": "Mo-Su",
+                "times": ["11:00", "19:25"]
+            },
+            {
+                "name": "Marataízes x Vitória via Ancieta",
+                "from": "Marataízes",
+                "to": "Vitória",
+                "via": "Anchieta",
+                "services": "Mo-Su",
+                "times": ["07:10", "15:00"]
+            }
+        ],
+        "024/0": [
+            {
+                "name": "Vitória x Iconha via BR-101",
+                "from": "Vitória",
+                "to": "Iconha",
+                "via": "BR-101",
+                "services": "Mo-Fr",
+                "times": ["12:00"]
+            },
+            {
+                "name": "Iconha x Vitória via BR-101",
+                "from": "Iconha",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Fr",
+                "times": ["07:00"]
+            }
+        ],
+        "057/0": [
+            {
+                "name": "Castelo x Conceição do Castelo via S Antonio",
+                "from": "Castelo",
+                "to": "Conceição do Castelo",
+                "via": "Santo Antônio",
+                "services": "Tu,Th",
+                "times": ["13:30"]
+            },
+            {
+                "name": "Castelo x Conceição do Castelo via S Antonio",
+                "from": "Castelo",
+                "to": "Conceição do Castelo",
+                "via": "Santo Antônio",
+                "services": "Su",
+                "times": ["06:15"]
+            },
+            {
+                "name": "Conceição do Castelo x Castelo via S Antonio",
+                "from": "Conceição do Castelo",
+                "to": "Castelo",
+                "via": "Santo Antônio",
+                "services": "Tu,Th",
+                "times": ["14:00"]
+            },
+            {
+                "name": "Conceição do Castelo x Castelo via S Antonio",
+                "from": "Conceição do Castelo",
+                "to": "Castelo",
+                "via": "Santo Antônio",
+                "services": "Su",
+                "times": ["14:00"]
+            }
+        ],
+        "064/0": [
+            {
+                "name": "Vitória x Piúma",
+                "from": "Vitória",
+                "to": "Piúma",
+                "services": "Mo-Sa",
+                "times": ["12:20"]
+            },
+            {
+                "name": "Piúma x Vitória",
+                "from": "Piúma",
+                "to": "Vitória",
+                "services": "Mo-Sa",
+                "times": ["11:00"]
+            },
+            {
+                "name": "Vitória x Piúma",
+                "from": "Vitória",
+                "to": "Piúma",
+                "start_date": "12-15",
+                "end_date": "02-25",
+                "services": "Mo-Sa",
+                "times": ["08:00", "12:20"]
+            },
+            {
+                "name": "Piúma x Vitória",
+                "from": "Piúma",
+                "to": "Vitória",
+                "start_date": "12-15",
+                "end_date": "02-25",
+                "services": "Mo-Sa",
+                "times": ["05:40", "11:00"]
+            }
+        ],
+        "073/0": [
+            {
+                "name": "Cachoeiro de Itapemirim x Guarapari via Jaqueira",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Guarapari",
+                "via": "Jaqueira",
+                "services": "Mo-Sa",
+                "times": ["09:40"]
+            },
+            {
+                "name": "Guarapari x Cachoeiro de Itapemirim via Jaqueira",
+                "from": "Guarapari",
+                "to": "Cachoeiro de Itapemirim",
+                "via": "Jaqueira",
+                "services": "Mo-Sa",
+                "times": ["14:30"]
+            }
+        ],
+        "093/0": [
+            {
+                "name": "Vila Velha x B Jesus Norte via BR-101",
+                "from": "Vila Velha",
+                "to": "Bom Jesus do Norte",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["06:00", "16:00"]
+            },
+            {
+                "name": "Vila Velha x B Jesus Norte via BR-101",
+                "from": "Vila Velha",
+                "to": "Bom Jesus do Norte",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["08:00", "20:00"]
+            },
+            {
+                "name": "B Jesus Norte x Vila Velha via BR-101",
+                "from": "Bom Jesus do Norte",
+                "to": "Vila Velha",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["06:30", "15:50"]
+            },
+            {
+                "name": "B Jesus Norte x Vila Velha via BR-101",
+                "from": "Bom Jesus do Norte",
+                "to": "Vila Velha",
+                "via": "BR-101",
+                "services": "Mo,Fr,Su",
+                "times": ["11:00"]
+            },
+            {
+                "name": "B Jesus Norte x Vila Velha via BR-101",
+                "from": "Bom Jesus do Norte",
+                "to": "Vila Velha",
+                "via": "BR-101",
+                "services": "Fr,Su",
+                "times": ["16:30"]
+            }
+        ],
+        "097/0": [
+            {
+                "name": "Vitória x Rio Calçado via BR-101",
+                "from": "Vitória",
+                "to": "Rio Calçado",
+                "via": "BR-101",
+                "services": "Fr",
+                "times": ["12:00"]
+            },
+            {
+                "name": "Rio Calçado Vitória via BR-101",
+                "from": "Rio Calçado",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Fr",
+                "times": ["07:00"]
+            }
+        ],
+        "145/0": [
+            {
+                "name": "Dom Bosco x Bahia Nova via Viana",
+                "from": "Dom Bosco",
+                "to": "Bahia Nova",
+                "via": "Viana",
+                "services": "Mo,Fr-Sa",
+                "times": ["12:00", "18:00"]
+            },
+            {
+                "name": "Dom Bosco x Bahia Nova via Viana",
+                "from": "Dom Bosco",
+                "to": "Bahia Nova",
+                "via": "Viana",
+                "services": "Tu-Th",
+                "times": ["18:00"]
+            },
+            {
+                "name": "Dom Bosco x Bahia Nova via Viana",
+                "from": "Dom Bosco",
+                "to": "Bahia Nova",
+                "via": "Viana",
+                "services": "Su",
+                "times": ["08:00", "18:00"]
+            },
+            {
+                "name": "Bahia Nova x Dom Bosco via Viana",
+                "from": "Bahia Nova",
+                "to": "Dom Bosco",
+                "via": "Viana",
+                "services": "Mo,Fr-Sa",
+                "times": ["06:00", "15:00"]
+            },
+            {
+                "name": "Bahia Nova x Dom Bosco via Viana",
+                "from": "Bahia Nova",
+                "to": "Dom Bosco",
+                "via": "Viana",
+                "services": "Tu-Th",
+                "times": ["06:00"]
+            },
+            {
+                "name": "Bahia Nova x Dom Bosco via Viana",
+                "from": "Bahia Nova",
+                "to": "Dom Bosco",
+                "via": "Viana",
+                "services": "Su",
+                "times": ["06:00", "16:00"]
+            }
+        ],
+        "193/0": [
+            {
+                "name": "Vitória x Marataízes via Iconha",
+                "from": "Vitória",
+                "to": "Marataízes",
+                "via": "Iconha",
+                "services": "Mo-Su",
+                "times": ["16:30"]
+            },
+            {
+                "name": "Marataízes x Vitória via Iconha",
+                "from": "Marataízes",
+                "to": "Vitória",
+                "via": "Iconha",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            },
+            {
+                "name": "Marataízes x Vitória via Iconha",
+                "from": "Marataízes",
+                "to": "Vitória",
+                "via": "Iconha",
+                "services": "Su",
+                "times": ["07:30"]
+            }
+        ],
+        "204/0": [
+            {
+                "name": "Vitória x Mimoso do Sul via BR-101",
+                "from": "Vitória",
+                "to": "Mimoso do Sul",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["07:40", "17:00"]
+            },
+            {
+                "name": "Vitória x Mimoso do Sul via BR-101",
+                "from": "Vitória",
+                "to": "Mimoso do Sul",
+                "via": "BR-101",
+                "services": "Su",
+                "times": ["20:00"]
+            },
+            {
+                "name": "Mimoso do Sul x Vitória via BR-101",
+                "from": "Mimoso do Sul",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Mo-Sa",
+                "times": ["06:00", "15:30"]
+            },
+            {
+                "name": "Mimoso do Sul x Vitória via BR-101",
+                "from": "Mimoso do Sul",
+                "to": "Vitória",
+                "via": "BR-101",
+                "services": "Su",
+                "times": ["17:00"]
+            }
+        ],
+        "213/0": [
+            {
+                "name": "Castelo x Conceição do Castelo via V Nova",
+                "from": "Castelo",
+                "to": "Conceição do Castelo",
+                "via": "Venda Nova do Imigrante",
+                "services": "Mo-Sa",
+                "times": ["06:00", "08:30", "10:00", "12:50", "14:00", "17:00"]
+            },
+            {
+                "name": "Castelo x Conceição do Castelo via V Nova",
+                "from": "Castelo",
+                "to": "Conceição do Castelo",
+                "via": "Venda Nova do Imigrante",
+                "services": "Su",
+                "times": ["06:00", "08:30", "10:30", "14:30", "17:15"]
+            },
+            {
+                "name": "Conceição do Castelo x Castelo via V Nova",
+                "from": "Conceição do Castelo",
+                "to": "Castelo", 
+                "via": "Venda Nova do Imigrante",
+                "services": "Mo-Sa",
+                "times": ["05:50", "08:00", "11:40", "13:30", "16:40"]
+            },
+            {
+                "name": "Conceição do Castelo x Castelo via V Nova", 
+                "from": "Conceição do Castelo",
+                "to": "Castelo",
+                "via": "Venda Nova do Imigrante",
+                "services": "Su",
+                "times": ["06:30", "08:00", "12:45", "14:50", "17:00"]
+            },
+            {
+                "name": "Venda Nova do Imigrante x Conceição do Castelo",
+                "from": "Venda Nova do Imigrante",
+                "to": "Conceição do Castelo",
+                "services": "Mo-Sa",
+                "times": ["06:30", "08:45", "10:25", "12:00", "13:00", "14:45", "16:55", "17:15"]
+            },
+            {
+                "name": "Venda Nova do Imigrante x Conceição do Castelo",
+                "from": "Venda Nova do Imigrante",
+                "to": "Conceição do Castelo",
+                "services": "Su",
+                "times": ["08:25", "10:40", "13:35", "15:30", "17:20"]
+            }
+        ],
+        "215/0": [
+            {
+                "name": "Vitória x Bom Jesus Norte via Apiacá",
+                "from": "Vitória",
+                "to": "Bom Jesus do Norte",
+                "via": "Apiacá",
+                "services": "Mo-Su",
+                "times": ["17:30"]
+            },
+            {
+                "name": "Bom Jesis Norte x Vitória via Apiacá",
+                "from": "Bom Jesus do Norte",
+                "to": "Vitória",
+                "via": "Apiacá",
+                "services": "Mo-Su",
+                "times": ["07:30"]
+            }
+        ],
+        "219/1": [
+            {
+                "name": "Guarapari x Anchieta via B Horizonte",
+                "from": "Guarapari",
+                "to": "Anchieta",
+                "via": "Belo Horizonte",
+                "services": "Mo-Sa",
+                "times": ["10:00"]
+            },
+            {
+                "name": "Guarapari x Anchieta via B Horizonte",
+                "from": "Guarapari",
+                "to": "Anchieta",
+                "via": "Belo Horizonte",
+                "services": "Mo-Su",
+                "times": ["05:30", "17:00"]
+            },
+            {
+                "name": "Anchieta x Guarapari via B Horizonte",
+                "from": "Anchieta",
+                "to": "Guarapari",
+                "via": "Belo Horizonte",
+                "services": "Mo-Sa",
+                "times": ["11:40"]
+            },
+            {
+                "name": "Anchieta x Guarapari via B Horizonte",
+                "from": "Anchieta",
+                "to": "Guarapari",
+                "via": "Belo Horizonte",
+                "services": "Mo-Su",
+                "times": ["06:40", "18:00"]
+            }
+        ],
+        "222/0": [
+            {
+                "name": "Vitória x Cachoeiro via Entrada Belém",
+                "from": "Vitória",
+                "to": "Cachoeiro de Itapemirim",
+                "via": ["Entrada Belém", "Centro de Rio Novo do Sul"],
+                "services": "Mo-Su",
+                "times": ["10:40"]
+            },
+            {
+                "name": "Cachoeiro x Vitória via Entrada Belém",
+                "from": "Cachoeiro de Itapemirim",
+                "to": "Vitória",
+                "via": ["Entrada Belém", "Centro de Rio Novo do Sul"],
+                "services": "Mo-Su",
+                "times": ["06:30"]
+            }
+        ],
+        "247/0": [
+            {
+                "name": "Castelo x Venda Nova Imig via Pindobas",
+                "from": "Castelo",
+                "to": "Venda Nova do Imigrante",
+                "via": "Pindobas",
+                "services": "Mo-Fr",
+                "times": ["05:30"]
+            },
+            {
+                "name": "Venda Nova Imig x Castelo via Pindobas",
+                "from": "Venda Nova do Imigrante",
+                "to": "Castelo",
+                "via": "Pindobas",
+                "services": "Mo-Fr",
+                "times": ["07:10"]
+            }
+        ],
+        "255/1": [
+            {
+                "name": "Dom Bosco x Ipiranga via BR-101",
+                "from": "Dom Bosco",
+                "to": "Ipiranga",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["05:10", "05:30", "06:00", "06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30"]
+            },
+            {
+                "name": "Ipiranga x Dom Bosco via BR-101",
+                "from": "Ipiranga",
+                "to": "Dom Bosco",
+                "via": "BR-101",
+                "services": "Mo-Su",
+                "times": ["05:10", "05:30", "06:00", "06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30"]
+            },
+            {
+                "name": "Dom Bosco x Ipiranga via BR-101",
+                "from": "Dom Bosco",
+                "to": "Ipiranga",
+                "via": "BR-101",
+                "services": "Mo-Fr",
+                "times": ["17:00"]
+            },
+            {
+                "name": "Ipiranga x Dom Bosco via BR-101",
+                "from": "Ipiranga",
+                "to": "Dom Bosco",
+                "via": "BR-101",
+                "services": "Mo-Fr",
+                "times": ["05:50"]
+            }
+        ],
+        "316/0": [
+            {
+                "name": "Mimoso do Sul x Vitória via Marataízes",
+                "from": "Mimoso do Sul",
+                "to": "Vitória",
+                "via": "Marataízes",
+                "services": "Mo-Su",
+                "times": ["06:15", "09:40"]
+            },
+            {
+                "name": "Vitória x Mimoso do Sul via Marataízes",
+                "from": "Vitória",
+                "to": "Mimoso do Sul",
+                "via": "Marataízes",
+                "services": "Mo-Su",
+                "times": ["13:00", "15:40"]
+            },
+            {
+                "name": "Mimoso do Sul x Vitória via Marataízes",
+                "from": "Mimoso do Sul",
+                "to": "Vitória",
+                "via": "Marataízes",
+                "start_date": "12-15",
+                "end_date": "02-25",
+                "services": "Mo-Su",
+                "times": ["06:15", "06:16", "09:40", "12:20"]
+            },
+            {
+                "name": "Vitória x Mimoso do Sul via Marataízes",
+                "from": "Vitória",
+                "to": "Mimoso do Sul",
+                "via": "Marataízes",
+                "start_date": "12-15",
+                "end_date": "02-25",
+                "services": "Mo-Su",
+                "times": ["04:50", "13:00", "13:01", "15:40"]
+            }
+        ]
+    }
+}
