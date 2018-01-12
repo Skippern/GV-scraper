@@ -455,7 +455,7 @@
         "130/0": [
             {
                 "name": "Linhares x Alto Panorama",
-                "form": "Linhares",
+                "from": "Linhares",
                 "to": "Alto Panorama",
                 "note": "1º Domingo do Mês, Exceto Feriados Nacionais",
                 "services": "Su",
@@ -463,7 +463,7 @@
             },
             {
                 "name": "Alto Panorama x Linhares",
-                "form": "Alto Panorama",
+                "from": "Alto Panorama",
                 "to": "Linhares",
                 "note": "1º Domingo do Mês, Exceto Feriados Nacionais",
                 "services": "Su",

@@ -1,0 +1,162 @@
+{
+    "network": "Transprimo", 
+    "operator": "Transprimo Ltda", 
+    "routes": [
+        [
+            "355/0", 
+            "Domingos Martins", 
+            "Alto Paraj\u00fa", 
+            null, 
+            -5
+        ], 
+        [
+            "355/0", 
+            "Alto Paraj\u00fa", 
+            "Domingos Martins", 
+            null, 
+            -5
+        ], 
+        [
+            "249/0", 
+            "Paraj\u00fa", 
+            "Pont\u00f5es", 
+            null, 
+            -5
+        ], 
+        [
+            "249/0", 
+            "Pont\u00f5es", 
+            "Paraj\u00fa", 
+            null, 
+            -5
+        ], 
+        [
+            "361/0", 
+            "Domingos Martins", 
+            "Perobas", 
+            null, 
+            -5
+        ], 
+        [
+            "361/0", 
+            "Perobas", 
+            "Domingos Martins", 
+            null, 
+            -5
+        ], 
+        [
+            "363/0", 
+            "Domingos Martins", 
+            "Divisa Alfredo Chaves", 
+            null, 
+            -5
+        ], 
+        [
+            "363/0", 
+            "Divisa Alfredo Chaves", 
+            "Domingos Martins", 
+            null, 
+            -5
+        ], 
+        [
+            "362/0", 
+            "Domingos Martins", 
+            "Alto Rio Ponte", 
+            null, 
+            -5
+        ], 
+        [
+            "362/0", 
+            "Alto Rio Ponte", 
+            "Domingos Martins", 
+            null, 
+            -5
+        ], 
+        [
+            "332/0", 
+            "Domingos Martins", 
+            "Marechal Floriano", 
+            null, 
+            -5
+        ], 
+        [
+            "332/0", 
+            "Marechal Floriano", 
+            "Domingos Martins", 
+            null, 
+            -5
+        ], 
+        [
+            "357/0", 
+            "Domingos Martins", 
+            "Afonso Cl\u00e1udio", 
+            null, 
+            -5
+        ], 
+        [
+            "357/0", 
+            "Afonso Cl\u00e1udio", 
+            "Domingos Martins", 
+            null, 
+            -5
+        ], 
+        [
+            "364/0", 
+            "Domingos Martins", 
+            "Araguaia", 
+            "Curva da Morte", 
+            -5
+        ], 
+        [
+            "364/0", 
+            "Araguaia", 
+            "Domingos Martins", 
+            "Curva da Morte", 
+            -5
+        ], 
+        [
+            "206/0", 
+            "Domingos Martins", 
+            "Santa Maria", 
+            null, 
+            -5
+        ], 
+        [
+            "206/0", 
+            "Santa Maria", 
+            "Domingos Martins", 
+            null, 
+            -5
+        ], 
+        [
+            "360/0", 
+            "Domingos Martins", 
+            "Araguaia", 
+            null, 
+            -5
+        ], 
+        [
+            "360/0", 
+            "Araguaia", 
+            "Domingos Martins", 
+            null, 
+            -5
+        ], 
+        [
+            "356/0", 
+            "Domingos Martins", 
+            "Divisa Venda Nova Imigrante", 
+            null, 
+            -5
+        ], 
+        [
+            "356/0", 
+            "Divisa Venda Nova Imigrante", 
+            "Domingos Martins", 
+            null, 
+            -5
+        ]
+    ], 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

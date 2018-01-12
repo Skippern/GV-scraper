@@ -1,0 +1,67 @@
+{
+    "excluded_lines": [
+        "005/0", 
+        "036/6", 
+        "058/0", 
+        "115/0", 
+        "125/0", 
+        "139/0", 
+        "203/0", 
+        "307/0", 
+        "346/0", 
+        "347/0", 
+        "348/0"
+    ], 
+    "network": "L\u00edrio dos Vales", 
+    "operator": "L\u00edrio dos Vales Transportes e Fretamento Ltda", 
+    "routes": {
+        "036/1": [
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Fund\u00e3o"
+                ], 
+                "times": [
+                    [
+                        "06:35", 
+                        "07:57"
+                    ], 
+                    [
+                        "18:30", 
+                        "19:52"
+                    ]
+                ], 
+                "to": "Fund\u00e3o"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Fund\u00e3o", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Fund\u00e3o", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "08:20", 
+                        "09:42"
+                    ], 
+                    [
+                        "16:35", 
+                        "17:57"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }
+        ]
+    }, 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

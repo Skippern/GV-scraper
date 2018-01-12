@@ -1,0 +1,134 @@
+{
+    "network": "Costa Sul", 
+    "operator": "Costa Sul Transporte e Turismo Ltda", 
+    "routes": [
+        [
+            "280/0", 
+            "Cachoeiro de Itapemirim", 
+            "Marata\u00edzes", 
+            "Atilio Vivacqua", 
+            -5
+        ], 
+        [
+            "280/0", 
+            "Marata\u00edzes", 
+            "Cachoeiro de Itapemirim", 
+            "Atilio Vivacqua", 
+            -5
+        ], 
+        [
+            "280/0", 
+            "Presidente Kennedy", 
+            "Marata\u00edzes", 
+            null, 
+            -5
+        ], 
+        [
+            "280/0", 
+            "Marata\u00edzes", 
+            "Presidente Kennedy", 
+            null, 
+            -5
+        ], 
+        [
+            "082/0", 
+            "Cachoeiro de Itapemirim", 
+            "S\u00e3o Bento", 
+            null, 
+            -5
+        ], 
+        [
+            "082/0", 
+            "S\u00e3o Bento", 
+            "Cachoeiro de Itapemirim", 
+            null, 
+            -5
+        ], 
+        [
+            "177/0", 
+            "Cachoeiro de Itapemirim", 
+            "Marata\u00edzes", 
+            "Agua Preta", 
+            -5
+        ], 
+        [
+            "177/0", 
+            "Marata\u00edzes", 
+            "Cachoeiro de Itapemirim", 
+            "Agua Preta", 
+            -5
+        ], 
+        [
+            "177/0", 
+            "Presidente Kennedy", 
+            "Marata\u00edzes", 
+            null, 
+            -5
+        ], 
+        [
+            "177/0", 
+            "Marata\u00edzes", 
+            "Presidente Kennedy", 
+            null, 
+            -5
+        ], 
+        [
+            "070/0", 
+            "Cachoeiro de Itapemirim", 
+            "Presidente Kennedy", 
+            null, 
+            -5
+        ], 
+        [
+            "070/0", 
+            "Presidente Kennedy", 
+            "Cachoeiro de Itapemirim", 
+            null, 
+            -5
+        ], 
+        [
+            "182/1", 
+            "Cachoeiro de Itapemirim", 
+            "Atilio Vivacqua", 
+            "Trevo", 
+            -5
+        ], 
+        [
+            "182/1", 
+            "Atilio Vivacqua", 
+            "Cachoeiro de Itapemirim", 
+            "Trevo", 
+            -5
+        ], 
+        [
+            "211/0", 
+            "Cachoeiro de Itapemirim", 
+            "Atilio Vivacqua", 
+            "Cristo", 
+            -5
+        ], 
+        [
+            "211/0", 
+            "Atilio Vivacqua", 
+            "Cachoeiro de Itapemirim", 
+            "Cristo", 
+            -5
+        ], 
+        [
+            "290/0", 
+            "Cachoeiro de Itapemirim", 
+            "Presidente Kennedy", 
+            "Paulimho", 
+            -5
+        ], 
+        [
+            "290/0", 
+            "Presidente Kennedy", 
+            "Cachoeiro de Itapemirim", 
+            "Paulimho", 
+            -5
+        ]
+    ], 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

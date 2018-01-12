@@ -1,0 +1,36 @@
+{
+    "network": "Joana D\u00e1rc", 
+    "operator": "Via\u00e7\u00e3o Joana D\u00e1rc S/A", 
+    "routes": [
+        [
+            "342/4", 
+            "Linhares", 
+            "Sooretama", 
+            null, 
+            -5
+        ], 
+        [
+            "342/4", 
+            "Sooretama", 
+            "Linhares", 
+            null, 
+            -5
+        ], 
+        [
+            "343/1", 
+            "Linhares", 
+            "Joeirama B", 
+            null, 
+            -5
+        ], 
+        [
+            "343/1", 
+            "Joeirama B", 
+            "Linhares", 
+            null, 
+            -5
+        ]
+    ], 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

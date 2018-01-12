@@ -1,0 +1,36 @@
+{
+    "network": "Cordial", 
+    "operator": "Cordial Transportes e Turismo Ltda", 
+    "routes": [
+        [
+            "062/0", 
+            "Aracruz", 
+            "Jo\u00e3o Neiva", 
+            "Ibira\u00e7u", 
+            -5
+        ], 
+        [
+            "062/0", 
+            "Jo\u00e3o Neiva", 
+            "Aracruz", 
+            "Ibira\u00e7u", 
+            -5
+        ], 
+        [
+            "200/0", 
+            "Aracruz", 
+            "Desengano", 
+            null, 
+            -5
+        ], 
+        [
+            "200/0", 
+            "Desengano", 
+            "Aracruz", 
+            null, 
+            -5
+        ]
+    ], 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

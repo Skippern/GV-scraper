@@ -1,0 +1,17 @@
+{
+    "excluded_lines": [
+        "071/0", 
+        "116/0", 
+        "124/0", 
+        "235/0", 
+        "235/8", 
+        "329/0", 
+        "349/0", 
+        "349/3"
+    ], 
+    "network": "Via\u00e7\u00e3o S\u00e3o Roque", 
+    "operator": "Via\u00e7\u00e3o S\u00e3o Roque Ltda", 
+    "routes": {}, 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

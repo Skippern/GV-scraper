@@ -1,0 +1,33 @@
+{
+    "query": {
+        "bbox": {
+            "n": "-19.41215",
+            "s": "-21.30439",
+            "e": "-39.68757",
+            "w": "-41.87921"
+        },
+        "tags": {
+            "route": "bus"
+        }
+    },
+    "stops": {
+        "name_without": "Ponto sem nome",
+        "name_auto": "yes"
+    },
+    "agency": {
+        "agency_id": "BR-Itapemirim",
+        "agency_name": "Viação Itapemirim S/A",
+        "agency_url": "",
+        "agency_timezone": "America/Sao_Paulo",
+        "agency_lang": "pt",
+        "agency_phone": "",
+        "agency_fare_url": ""
+    },
+    "feed_info": {
+        "publisher_name": "Aun Johnsen",
+        "publisher_url": "https://github.com/Skippern",
+        "version":  "0.1"
+    },
+    "output_file": "data/br-itapemirim.zip",
+    "selector": "itapemirim"
+}

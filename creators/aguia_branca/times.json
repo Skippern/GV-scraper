@@ -14,7 +14,6 @@
         "026/0", 
         "026/2", 
         "028/0", 
-        "036/1", 
         "036/6", 
         "038/0", 
         "041/0", 
@@ -150,6 +149,48 @@
                 "to": "Pedro Can\u00e1rio"
             }
         ], 
+        "036/1": [
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Fund\u00e3o"
+                ], 
+                "times": [
+                    [
+                        "07:30", 
+                        "08:52"
+                    ], 
+                    [
+                        "09:00", 
+                        "10:22"
+                    ]
+                ], 
+                "to": "Fund\u00e3o"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Fund\u00e3o", 
+                "services": [
+                    "Su"
+                ], 
+                "stations": [
+                    "Fund\u00e3o", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "14:00", 
+                        "15:22"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }
+        ], 
         "085": [
             {
                 "exceptions": [], 
@@ -264,5 +305,5 @@
         ]
     }, 
     "source": "DER-ES", 
-    "updated": "2018-01-05"
+    "updated": "2018-01-12"
 }

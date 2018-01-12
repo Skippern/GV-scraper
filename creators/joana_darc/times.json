@@ -1,0 +1,11 @@
+{
+    "excluded_lines": [
+        "342/4", 
+        "343/1"
+    ], 
+    "network": "Joana D\u00e1rc", 
+    "operator": "Via\u00e7\u00e3o Joana D\u00e1rc S/A", 
+    "routes": {}, 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

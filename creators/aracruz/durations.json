@@ -1,0 +1,22 @@
+{
+    "network": "Expresso Aracruz", 
+    "operator": "Expresso Aracruz Ltda", 
+    "routes": [
+        [
+            "351/0", 
+            "Nova Almeida", 
+            "Aracruz", 
+            null, 
+            -5
+        ], 
+        [
+            "351/0", 
+            "Aracruz", 
+            "Nova Almeida", 
+            null, 
+            -5
+        ]
+    ], 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

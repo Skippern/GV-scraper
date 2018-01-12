@@ -1,0 +1,11 @@
+{
+    "excluded_lines": [
+        "062/0", 
+        "200/0"
+    ], 
+    "network": "Cordial", 
+    "operator": "Cordial Transportes e Turismo Ltda", 
+    "routes": {}, 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

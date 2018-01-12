@@ -1,0 +1,379 @@
+{
+    "network": "Via\u00e7\u00e3o Pretti", 
+    "operator": "Via\u00e7\u00e3o Pretti Ltda", 
+    "routes": [
+        [
+            "268/0", 
+            "Barra de S\u00e3o Francisco", 
+            "\u00c1gua Doce do Norte", 
+            null, 
+            -5
+        ], 
+        [
+            "268/0", 
+            "\u00c1gua Doce do Norte", 
+            "Barra de S\u00e3o Francisco", 
+            null, 
+            -5
+        ], 
+        [
+            "268/1", 
+            "Barra de S\u00e3o Francisco", 
+            "\u00c1gua Doce do Norte", 
+            null, 
+            -5
+        ], 
+        [
+            "268/1", 
+            "\u00c1gua Doce do Norte", 
+            "Barra de S\u00e3o Francisco", 
+            null, 
+            -5
+        ], 
+        [
+            "241/0", 
+            "Colatina", 
+            "Vila Verde", 
+            null, 
+            -5
+        ], 
+        [
+            "241/0", 
+            "Vila Verde", 
+            "Colatina", 
+            null, 
+            -5
+        ], 
+        [
+            "241/0", 
+            "Colatina", 
+            "Pancas", 
+            null, 
+            -5
+        ], 
+        [
+            "241/0", 
+            "Pancas", 
+            "Colatina", 
+            null, 
+            -5
+        ], 
+        [
+            "084/0", 
+            "Colatina", 
+            "Linhares", 
+            "Tiradentes", 
+            -5
+        ], 
+        [
+            "084/0", 
+            "Linhares", 
+            "Colatina", 
+            "Tiradentes", 
+            -5
+        ], 
+        [
+            "157/0", 
+            "Colatina", 
+            "Ponto Belo", 
+            null, 
+            -5
+        ], 
+        [
+            "157/0", 
+            "Ponto Belo", 
+            "Colatina", 
+            null, 
+            -5
+        ], 
+        [
+            "129/0", 
+            "Linhares", 
+            "Rio Bananal", 
+            "Chapad\u00e3o", 
+            -5
+        ], 
+        [
+            "129/0", 
+            "Rio Bananal", 
+            "Linhares", 
+            "Chapad\u00e3o", 
+            -5
+        ], 
+        [
+            "269/0", 
+            "Barra de S\u00e3o Francisco", 
+            "Santa Luiza do Azul", 
+            null, 
+            -5
+        ], 
+        [
+            "269/0", 
+            "Santa Luiza do Azul", 
+            "Barra de S\u00e3o Francisco", 
+            null, 
+            -5
+        ], 
+        [
+            "142/0", 
+            "Vit\u00f3ria", 
+            "Afonso Cl\u00e1udio", 
+            null, 
+            -5
+        ], 
+        [
+            "142/0", 
+            "Afonso Cl\u00e1udio", 
+            "Vit\u00f3ria", 
+            null, 
+            -5
+        ], 
+        [
+            "209/0", 
+            "Colatina", 
+            "Manten\u00f3polis", 
+            null, 
+            -5
+        ], 
+        [
+            "209/0", 
+            "Manten\u00f3polis", 
+            "Colatina", 
+            null, 
+            -5
+        ], 
+        [
+            "130/0", 
+            "Linhares", 
+            "Alto Panorama", 
+            null, 
+            -5
+        ], 
+        [
+            "130/0", 
+            "Alto Panorama", 
+            "Linhares", 
+            null, 
+            -5
+        ], 
+        [
+            "081/0", 
+            "Colatina", 
+            "Linhares", 
+            "Humaita", 
+            -5
+        ], 
+        [
+            "081/0", 
+            "Linhares", 
+            "Colatina", 
+            "Humaita", 
+            -5
+        ], 
+        [
+            "306/0", 
+            "Santa Maria de Jetib\u00e1", 
+            "Colatina", 
+            null, 
+            -5
+        ], 
+        [
+            "366/0", 
+            "Colatina", 
+            "Governador Lindenberg", 
+            null, 
+            -5
+        ], 
+        [
+            "366/0", 
+            "Governador Lindenberg", 
+            "Colatina", 
+            null, 
+            -5
+        ], 
+        [
+            "300/0", 
+            "Vit\u00f3ria", 
+            "Santa Maria de Jetib\u00e1", 
+            null, 
+            -5
+        ], 
+        [
+            "300/0", 
+            "Santa Maria de Jetib\u00e1", 
+            "Vit\u00f3ria", 
+            null, 
+            -5
+        ], 
+        [
+            "112/0", 
+            "Vit\u00f3ria", 
+            "Itagua\u00e7u", 
+            "Santa Maria de Jetib\u00e1", 
+            -5
+        ], 
+        [
+            "112/0", 
+            "Itagua\u00e7u", 
+            "Vit\u00f3ria", 
+            "Santa Maria de Jetib\u00e1", 
+            -5
+        ], 
+        [
+            "112/0", 
+            "Vila Velha", 
+            "Itagua\u00e7u", 
+            "Santa Maria de Jetib\u00e1", 
+            -5
+        ], 
+        [
+            "112/0", 
+            "Itagua\u00e7u", 
+            "Vila Velha", 
+            "Santa Maria de Jetib\u00e1", 
+            -5
+        ], 
+        [
+            "112/2", 
+            "Itagua\u00e7u", 
+            "Vit\u00f3ria", 
+            "Santa Maria de Jetib\u00e1", 
+            -5
+        ], 
+        [
+            "112/3", 
+            "Vit\u00f3ria", 
+            "Itagua\u00e7u", 
+            "Santa Maria de Jetib\u00e1", 
+            -5
+        ], 
+        [
+            "112/3", 
+            "Itagua\u00e7u", 
+            "Vit\u00f3ria", 
+            "Santa Maria de Jetib\u00e1", 
+            -5
+        ], 
+        [
+            "160/0", 
+            "Colatina", 
+            "Fazenda Toniato", 
+            null, 
+            -5
+        ], 
+        [
+            "160/0", 
+            "Fazenda Toniato", 
+            "Colatina", 
+            null, 
+            -5
+        ], 
+        [
+            "079/0", 
+            "Itarana", 
+            "Baixo Guand\u00fa", 
+            null, 
+            -5
+        ], 
+        [
+            "162/0", 
+            "Vit\u00f3ria", 
+            "Baixo Guand\u00fa", 
+            "Santa Leopoldina", 
+            -5
+        ], 
+        [
+            "162/0", 
+            "Baixo Guand\u00fa", 
+            "Vit\u00f3ria", 
+            "Santa Leopoldina", 
+            -5
+        ], 
+        [
+            "323/0", 
+            "Colatina", 
+            "\u00c1gua Doce do Norte", 
+            null, 
+            -5
+        ], 
+        [
+            "159/0", 
+            "Colatina", 
+            "Barra de S\u00e3o Francisco", 
+            "Alto Rio Novo", 
+            -5
+        ], 
+        [
+            "029/0", 
+            "Barra de S\u00e3o Francisco", 
+            "Ecoporanga", 
+            "Paulistinha", 
+            -5
+        ], 
+        [
+            "029/0", 
+            "Ecoporanga", 
+            "Barra de S\u00e3o Francisco", 
+            "Paulistinha", 
+            -5
+        ], 
+        [
+            "091/0", 
+            "Colatina", 
+            "Baixo Guand\u00fa", 
+            null, 
+            -5
+        ], 
+        [
+            "091/0", 
+            "Baixo Guand\u00fa", 
+            "Colatina", 
+            null, 
+            -5
+        ], 
+        [
+            "325/0", 
+            "Vit\u00f3ria", 
+            "Colatina", 
+            "Santa Maria de Jetib\u00e1", 
+            -5
+        ], 
+        [
+            "325/0", 
+            "Colatina", 
+            "Vit\u00f3ria", 
+            "Santa Maria de Jetib\u00e1", 
+            -5
+        ], 
+        [
+            "096/0", 
+            "Vit\u00f3ria", 
+            "Manten\u00f3polis", 
+            null, 
+            -5
+        ], 
+        [
+            "096/0", 
+            "Manten\u00f3polis", 
+            "Vit\u00f3ria", 
+            null, 
+            -5
+        ], 
+        [
+            "367/0", 
+            "Colatina", 
+            "Governador Lindenberg", 
+            null, 
+            -5
+        ], 
+        [
+            "367/0", 
+            "Governador Lindenberg", 
+            "Colatina", 
+            null, 
+            -5
+        ]
+    ], 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

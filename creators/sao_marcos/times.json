@@ -1,0 +1,13 @@
+{
+    "excluded_lines": [
+        "105/0", 
+        "113/0", 
+        "155/0", 
+        "178/0"
+    ], 
+    "network": "Expresso S\u00e3o Marcos", 
+    "operator": "Expresso S\u00e3o Marcos Ltda", 
+    "routes": {}, 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

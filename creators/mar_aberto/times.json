@@ -1,0 +1,10 @@
+{
+    "excluded_lines": [
+        "351/0"
+    ], 
+    "network": "Via\u00e7\u00e3o Mar Aberto", 
+    "operator": "Via\u00e7\u00e3o Mar Aberto Ltda", 
+    "routes": {}, 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

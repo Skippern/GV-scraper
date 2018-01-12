@@ -1,0 +1,22 @@
+{
+    "excluded_lines": [
+        "069/0", 
+        "098/0", 
+        "122/0", 
+        "138/0", 
+        "167/0", 
+        "180/0", 
+        "236/0", 
+        "237/0", 
+        "240/0", 
+        "297/0", 
+        "330/0", 
+        "330/1", 
+        "333/0"
+    ], 
+    "network": "Via\u00e7\u00e3o S\u00e3o Gon\u00e7alo", 
+    "operator": "Via\u00e7\u00e3o S\u00e3o Gon\u00e7alo Ltda", 
+    "routes": {}, 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

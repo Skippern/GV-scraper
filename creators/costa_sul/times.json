@@ -1,0 +1,16 @@
+{
+    "excluded_lines": [
+        "070/0", 
+        "082/0", 
+        "177/0", 
+        "182/1", 
+        "211/0", 
+        "280/0", 
+        "290/0"
+    ], 
+    "network": "Costa Sul", 
+    "operator": "Costa Sul Transporte e Turismo Ltda", 
+    "routes": {}, 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

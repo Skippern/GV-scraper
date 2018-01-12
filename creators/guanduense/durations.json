@@ -1,0 +1,36 @@
+{
+    "network": "Guanduense", 
+    "operator": "Via\u00e7\u00e3o Guanduense Ltda", 
+    "routes": [
+        [
+            "365/0", 
+            "Baixo Guand\u00fa", 
+            "Pancas", 
+            "Alto Motum", 
+            -5
+        ], 
+        [
+            "365/0", 
+            "Pancas", 
+            "Baixo Guand\u00fa", 
+            null, 
+            -5
+        ], 
+        [
+            "365/0", 
+            "KM 14 do Motum", 
+            "Pancas", 
+            null, 
+            -5
+        ], 
+        [
+            "365/0", 
+            "Pancas", 
+            "KM 14 do Motum", 
+            null, 
+            -5
+        ]
+    ], 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

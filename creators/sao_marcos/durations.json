@@ -1,0 +1,78 @@
+{
+    "network": "Expresso S\u00e3o Marcos", 
+    "operator": "Expresso S\u00e3o Marcos Ltda", 
+    "routes": [
+        [
+            "178/0", 
+            "S\u00e3o Mateus", 
+            "S\u00e3o Jo\u00e3o Sobrado", 
+            null, 
+            -5
+        ], 
+        [
+            "178/0", 
+            "S\u00e3o Jo\u00e3o Sobrado", 
+            "S\u00e3o Mateus", 
+            null, 
+            -5
+        ], 
+        [
+            "155/0", 
+            "Montanha", 
+            "Itabaiana", 
+            null, 
+            -5
+        ], 
+        [
+            "155/0", 
+            "Itabaiana", 
+            "Montanha", 
+            null, 
+            -5
+        ], 
+        [
+            "105/0", 
+            "S\u00e3o Jo\u00e3o Sobrado", 
+            "Montanha", 
+            null, 
+            -5
+        ], 
+        [
+            "105/0", 
+            "Montanha", 
+            "S\u00e3o Jo\u00e3o Sobrado", 
+            null, 
+            -5
+        ], 
+        [
+            "113/0", 
+            "S\u00e3o Mateus", 
+            "Pinheiros", 
+            null, 
+            -5
+        ], 
+        [
+            "113/0", 
+            "Pinheiros", 
+            "S\u00e3o Mateus", 
+            null, 
+            -5
+        ], 
+        [
+            "113/0", 
+            "Pedro Can\u00e1rio", 
+            "Pinheiros", 
+            null, 
+            -5
+        ], 
+        [
+            "113/0", 
+            "Pinheiros", 
+            "Pedro Can\u00e1rio", 
+            null, 
+            -5
+        ]
+    ], 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

@@ -1,0 +1,10 @@
+{
+    "excluded_lines": [
+        "351/0"
+    ], 
+    "network": "Expresso Aracruz", 
+    "operator": "Expresso Aracruz Ltda", 
+    "routes": {}, 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}

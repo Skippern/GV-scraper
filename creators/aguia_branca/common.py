@@ -21,9 +21,10 @@ def lower_capitalized(input):
     return output.strip()
 
 def getLines():
-    print u"Getting Lines from static DER-ES source"
+    print u"Getting Lines from static DER-ES source:",
     with open("../../sources/der-es/aguia_branca.json", 'r') as f:
         lineSource = json.load(f)
+    print lineSource["operator"]
 
     myList = []
 

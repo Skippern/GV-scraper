@@ -1,0 +1,15 @@
+{
+    "excluded_lines": [
+        "168/0", 
+        "169/0", 
+        "278/0", 
+        "287/0", 
+        "292/0", 
+        "305/0"
+    ], 
+    "network": "Via\u00e7\u00e3o Motum Preto", 
+    "operator": "Via\u00e7\u00e3o Motum Preto Ltda", 
+    "routes": {}, 
+    "source": "DER-ES", 
+    "updated": "2018-01-12"
+}
