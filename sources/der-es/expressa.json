@@ -1,0 +1,196 @@
+{
+    "operator": "Expressa Transportes Ltda",
+    "operator:ref": "1-324",
+    "updated": "2017-12-01",
+    "routes": {
+        "207/0": [
+            {
+                "name": "Nova Venécia x B S Francisco via Cedro",
+                "from": "Nova Venécia",
+                "to": "Barra de São Francisco",
+                "via": "Cedro",
+                "note": "Exeto Feriados",
+                "services": "Mo-Sa",
+                "times": ["05:00", "06:10"]
+            },
+            {
+                "name": "Nova Venécia x B S Francisco via Cedro",
+                "from": "Nova Venécia",
+                "to": "Barra de São Francisco",
+                "via": "Cedro",
+                "note": "Exeto Feriados",
+                "services": "Mo-Fr",
+                "times": ["11:00"]
+            },
+            {
+                "name": "B S Francisco x Nova Venécia via Cedro",
+                "from": "Barra de São Francisco",
+                "to": "Nova Venécia",
+                "via": "Cedro",
+                "note": "Exeto Feriados",
+                "services": "Mo-Sa",
+                "times": ["11:30", "15:20"]
+            },
+            {
+                "name": "B S Francisco x Nova Venécia via Cedro",
+                "from": "Barra de São Francisco",
+                "to": "Nova Venécia",
+                "via": "Cedro",
+                "note": "Exeto Feriados",
+                "services": "Mo-Sa",
+                "times": ["14:20"]
+            }
+        ],
+        "208/0": [
+            {
+                "name": "B S Francisco x São Gonçalo",
+                "from": "Barra de São Francisco",
+                "to": "São Gonçalo",
+                "note": "Ultimo Quinta-Feira do Mês",
+                "services": "Th",
+                "times": ["06:50"]
+            },
+            {
+                "name": "São Gonçalo x B S Francisco",
+                "from": "São Gonçalo",
+                "to": "Barra de São Francisco",
+                "note": "Ultimo Quinta-Feira do Mês",
+                "services": "Th",
+                "times": ["11:00"]
+            },
+            {
+                "name": "B S Francisco x Boa Vista",
+                "from": "Barra de São Francisco",
+                "to": "Boa Vista",
+                "services": "Mo-Sa",
+                "times": "09:20",
+                "end_date": "2018-10-31"
+            },
+            {
+                "name": "Boa Vista x B S Francisco",
+                "from": "Boa Vista",
+                "to": "Barra de São Francisco",
+                "end_date": "2018-10-31",
+                "services": "Mo-Sa",
+                "note": "Exeto Feriados",
+                "times": ["10:00"]
+            }
+        ],
+        "210/0": [
+            {
+                "name": "Nova Venécia x B S Francisco via Pavão",
+                "from": "Nova Venécia",
+                "to": "Barra de São Francisco",
+                "via": "Pavão",
+                "note": "Exeto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["06:00", "09:40", "14:00"]
+            },
+            {
+                "name": "B S Francisco x Nova Venécia via Pavão",
+                "from": "Barra de São Francisco",
+                "to": "Nova Venécia",
+                "via": "Pavão",
+                "note": "Exeto Feriados Nacionais",
+                "services": "Mo-Sa", 
+                "times": ["06:30", "10:30", "16:30"]
+            },
+            {
+                "name": "Nova Venécia x B S Francisco via Pavão",
+                "from": "Nova Venécia",
+                "to": "Barra de São Francisco",
+                "via": "Pavão",
+                "services": "Su,Ho",
+                "times": ["07:30", "16:30"]
+            },
+            {
+                "name": "B S Francisco x Nova Venécia via Pavão",
+                "from": "Barra de São Francisco",
+                "to": "Nova Venécia",
+                "via": "Pavão",
+                "services": "Mo-Fr",
+                "times": ["17:00"]
+            },
+            {
+                "name": "B S Francisco x Nova Venécia via Pavão",
+                "from": "Barra de São Francisco",
+                "to": "Nova Venécia",
+                "via": "Pavão",
+                "note": "Exeto Feriados Nacionais",
+                "services": "Sa",
+                "times": ["16:00"]
+            },
+            {
+                "name": "Nova Venécia x B S Francisco via Pavão",
+                "from": "Nova Venécia",
+                "to": "Barra de São Francisco",
+                "via": "Pavão",
+                "services": "Mo-Fr",
+                "times": ["14:30"]
+            },
+            {
+                "name": "Nova Venécia x B S Francisco via Pavão",
+                "from": "Nova Venécia",
+                "to": "Barra de São Francisco",
+                "via": "Pavão",
+                "note": "Exeto Feriados Nacionais",
+                "services": "Sa",
+                "times": ["13:30"]
+            },
+            {
+                "name": "Nova Venécia x B S Francisco via Pavão",
+                "from": "Nova Venécia",
+                "to": "Barra de São Francisco",
+                "via": "Pavão",
+                "services": "Su,Ho",
+                "times": ["07:10", "16:20"]
+            }
+        ],
+        "214/0": [
+            {
+                "name": "Nova Venécia x Ecoporanga via Veloso",
+                "from": "Nova Venécia",
+                "to": "Ecoporanga",
+                "via": "Veloso",
+                "note": "Exeto Feriados",
+                "services": "Mo-Fr",
+                "times": ["15:00"]
+            },
+            {
+                "name": "Nova Venécia x Ecoporanga via Veloso",
+                "from": "Nova Venécia",
+                "to": "Ecoporanga",
+                "via": "Veloso",
+                "services": "Sa",
+                "times": ["13:00"]
+            },
+            {
+                "name": "Ecoporanga x Nova Venécia via Veloso",
+                "from": "Ecoporanga",
+                "to": "Nova Venécia",
+                "via": "Veloso",
+                "note": "Exeto Feriados",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            }
+        ],
+        "344/0": [
+            {
+                "name": "Nova Venécia x Praça Rica",
+                "from": "Nova Venécia",
+                "to": "Praça Rica",
+                "note": "Exeto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["12:50"]
+            },
+            {
+                "name": "Praça Rica x Nova Venécia",
+                "from": "Praça Rica",
+                "to": "Nova Venécia",
+                "note": "Exeto Feriados Nacionais",
+                "services": "Mo-Sa",
+                "times": ["06:00"]
+            }
+        ]
+    }
+}
