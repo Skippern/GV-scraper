@@ -5,8 +5,8 @@
 import os
 import requests
 import json
-import unidecode
-import chardet
+#import unidecode
+#import chardet
 
 sources = []
 
@@ -36,7 +36,7 @@ htmlStatus = 0
 while htmlStatus != 200:
     html = requests.get('https://der.es.gov.br/quadro-de-horarios')
     htmlStatus = html.status_code
-
+## Here we need to get .js generated content
 with open('der-es.html', 'w') as outfile:
     outfile.write(html.content)
 
@@ -54,7 +54,7 @@ for s in status:
 
     if status[s]['updated'] != status[s]['source']:
         print u"OUTDATED: {0} - {1} -> {2}".format(status[s]['id'], status[s]['updated'], status[s]['source'])
-#        print u"OUTDATED: {0} - {1} -> {2}".format(status[s]['operator'], status[s]['updated'], status[s]['source'])
+#        print u"OUTDATED: {0}:{1} - {2} -> {3}".format(status[s]['id'], status[s]['operator'], status[s]['updated'], status[s]['source'])
     else:
         print u"UP TO DATE: {0} - {1} = {2}".format(status[s]['id'], status[s]['updated'], status[s]['source'])
-#        print u"UP TO DATE: {0} - {1} = {2}".format(status[s]['operator'], status[s]['updated'], status[s]['source'])
+#        print u"UP TO DATE: {0}:{1} - {2} -> {3}".format(status[s]['id'], status[s]['operator'], status[s]['updated'], status[s]['source'])
