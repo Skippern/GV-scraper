@@ -56,16 +56,16 @@
                 "times": ["06:40"]
             },
             {
-                "name": "Guaçuí x Patremônio da Penha (R.P.)",
+                "name": "Guaçuí x Patrimônio da Penha (R.P.)",
                 "from": "Guaçuí",
-                "to": "Patremônio da Penha",
+                "to": "Patrimônio da Penha",
                 "note": "Período: de Janeiro a Outobro e Dezembro",
                 "services": "Mo-Fr",
                 "times": ["11:00"]
             },
             {
-                "name": "Patremônio da Penha x Guaçuí (R,P.)",
-                "from": "Patremônio da Penha",
+                "name": "Patrimônio da Penha x Guaçuí (R,P.)",
+                "from": "Patrimônio da Penha",
                 "to": "Guaçuí",
                 "note":"Período: de Janeiro a Outobro e Dezembro",
                 "services": "Mo-Fr",

@@ -53,8 +53,8 @@ for s in status:
         outfile.write(pdf)
 
     if status[s]['updated'] != status[s]['source']:
-        print u"OUTDATED: {0} - {1} -> {2}".format(status[s]['id'], status[s]['updated'], status[s]['source'])
-#        print u"OUTDATED: {0}:{1} - {2} -> {3}".format(status[s]['id'], status[s]['operator'], status[s]['updated'], status[s]['source'])
+#        print u"OUTDATED: {0} - {1} -> {2}".format(status[s]['id'], status[s]['updated'], status[s]['source'])
+        print u"OUTDATED: {0}:{1} - {2} -> {3}".format(status[s]['id'], status[s]['operator'], status[s]['updated'], status[s]['source'])
     else:
-        print u"UP TO DATE: {0} - {1} = {2}".format(status[s]['id'], status[s]['updated'], status[s]['source'])
-#        print u"UP TO DATE: {0}:{1} - {2} -> {3}".format(status[s]['id'], status[s]['operator'], status[s]['updated'], status[s]['source'])
+#        print u"UP TO DATE: {0} - {1} = {2}".format(status[s]['id'], status[s]['updated'], status[s]['source'])
+        print u"UP TO DATE: {0}:{1} - {2} -> {3}".format(status[s]['id'], status[s]['operator'], status[s]['updated'], status[s]['source'])
