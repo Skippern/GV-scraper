@@ -7,7 +7,7 @@
             "Dom Bosco", 
             "Ipiranga", 
             "Rodovia do Sol", 
-            136
+            139
         ], 
         [
             "256/1", 
@@ -182,7 +182,7 @@
             "Dom Bosco", 
             "Setiba", 
             "Rodovia do Sol", 
-            111
+            114
         ], 
         [
             "034/0", 
@@ -193,5 +193,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-12"
+    "updated": "2018-01-19"
 }

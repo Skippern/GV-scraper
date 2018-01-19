@@ -3,8 +3,8 @@
 #
 # This is to check and print a list of outdated data sources
 import os
-import requests
 import json
+import requests
 #import unidecode
 #import chardet
 

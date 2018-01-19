@@ -12,7 +12,46 @@
     ], 
     "network": "Minastur", 
     "operator": "Minastur Transporte e Turismo Ltda", 
-    "routes": {}, 
+    "routes": {
+        "149/0": [
+            {
+                "exceptions": [], 
+                "from": "Gua\u00e7u\u00ed", 
+                "services": [
+                    "Mo-Fr"
+                ], 
+                "stations": [
+                    "Gua\u00e7u\u00ed", 
+                    "Patrim\u00f4nio da Penha"
+                ], 
+                "times": [
+                    [
+                        "11:00", 
+                        "12:37"
+                    ]
+                ], 
+                "to": "Patrim\u00f4nio da Penha"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Patrim\u00f4nio da Penha", 
+                "services": [
+                    "Mo-Fr"
+                ], 
+                "stations": [
+                    "Patrim\u00f4nio da Penha", 
+                    "Gua\u00e7u\u00ed"
+                ], 
+                "times": [
+                    [
+                        "12:30", 
+                        "14:08"
+                    ]
+                ], 
+                "to": "Gua\u00e7u\u00ed"
+            }
+        ]
+    }, 
     "source": "DER-ES", 
-    "updated": "2018-01-12"
+    "updated": "2018-01-19"
 }

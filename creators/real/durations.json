@@ -504,14 +504,14 @@
             "Cachoeiro de Itapemirim", 
             "Vargem Alta", 
             null, 
-            -5
+            70
         ], 
         [
             "282/0", 
             "Vargem Alta", 
             "Cachoeiro de Itapemirim", 
             null, 
-            -5
+            70
         ], 
         [
             "043/0", 
@@ -532,14 +532,14 @@
             "Gua\u00e7u\u00ed", 
             "Mundo Novo", 
             null, 
-            -5
+            88
         ], 
         [
             "165/0", 
             "Mundo Novo", 
             "Gua\u00e7u\u00ed", 
             null, 
-            -5
+            89
         ], 
         [
             "185/0", 
@@ -599,5 +599,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-12"
+    "updated": "2018-01-19"
 }

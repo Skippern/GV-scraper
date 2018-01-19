@@ -22,7 +22,6 @@
         "135/0", 
         "136/0", 
         "164/0", 
-        "165/0", 
         "165/8", 
         "175/0", 
         "176/0", 
@@ -31,7 +30,6 @@
         "191/0", 
         "192", 
         "281/0", 
-        "282/0", 
         "295/0", 
         "295/8", 
         "298/0", 
@@ -41,7 +39,168 @@
     ], 
     "network": "Via\u00e7\u00e3o Real Ita", 
     "operator": "Via\u00e7\u00e3o Real Ita Ltda", 
-    "routes": {}, 
+    "routes": {
+        "165/0": [
+            {
+                "exceptions": [], 
+                "from": "Gua\u00e7u\u00ed", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Gua\u00e7u\u00ed", 
+                    "Mundo Novo"
+                ], 
+                "times": [
+                    [
+                        "16:00", 
+                        "17:28"
+                    ]
+                ], 
+                "to": "Mundo Novo"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Mundo Novo", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Mundo Novo", 
+                    "Gua\u00e7u\u00ed"
+                ], 
+                "times": [
+                    [
+                        "06:00", 
+                        "07:29"
+                    ]
+                ], 
+                "to": "Gua\u00e7u\u00ed"
+            }
+        ], 
+        "282/0": [
+            {
+                "exceptions": [], 
+                "from": "Cachoeiro de Itapemirim", 
+                "services": [
+                    "Mo"
+                ], 
+                "stations": [
+                    "Cachoeiro de Itapemirim", 
+                    "Vargem Alta"
+                ], 
+                "times": [
+                    [
+                        "06:00", 
+                        "07:10"
+                    ]
+                ], 
+                "to": "Vargem Alta"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Cachoeiro de Itapemirim", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Cachoeiro de Itapemirim", 
+                    "Vargem Alta"
+                ], 
+                "times": [
+                    [
+                        "10:30", 
+                        "11:40"
+                    ], 
+                    [
+                        "17:15", 
+                        "18:25"
+                    ]
+                ], 
+                "to": "Vargem Alta"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Cachoeiro de Itapemirim", 
+                "services": [
+                    "Mo-Th"
+                ], 
+                "stations": [
+                    "Cachoeiro de Itapemirim", 
+                    "Vargem Alta"
+                ], 
+                "times": [
+                    [
+                        "14:00", 
+                        "15:10"
+                    ]
+                ], 
+                "to": "Vargem Alta"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Cachoeiro de Itapemirim", 
+                "services": [
+                    "Sa"
+                ], 
+                "stations": [
+                    "Cachoeiro de Itapemirim", 
+                    "Vargem Alta"
+                ], 
+                "times": [
+                    [
+                        "15:00", 
+                        "16:10"
+                    ]
+                ], 
+                "to": "Vargem Alta"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vargem Alta", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Vargem Alta", 
+                    "Cachoeiro de Itapemirim"
+                ], 
+                "times": [
+                    [
+                        "05:00", 
+                        "06:10"
+                    ], 
+                    [
+                        "06:25", 
+                        "07:35"
+                    ], 
+                    [
+                        "12:00", 
+                        "13:10"
+                    ]
+                ], 
+                "to": "Cachoeiro de Itapemirim"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vargem Alta", 
+                "services": [
+                    "Sa"
+                ], 
+                "stations": [
+                    "Vargem Alta", 
+                    "Cachoeiro de Itapemirim"
+                ], 
+                "times": [
+                    [
+                        "07:20", 
+                        "08:30"
+                    ]
+                ], 
+                "to": "Cachoeiro de Itapemirim"
+            }
+        ]
+    }, 
     "source": "DER-ES", 
-    "updated": "2018-01-12"
+    "updated": "2018-01-19"
 }
