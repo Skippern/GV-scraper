@@ -175,7 +175,7 @@ for i in getLines():
         if durations[0] < 0 and durations[1] < 0:
             myRoutes[u"excluded_lines"].append(ref)
             logger.info(u"%s added to Blacklist", ref)
-            continue
+            ref = myRefs[0]
         myDays = [ u"Mo-Fr", u"Sa", u"Su", u"Ex" ]
         for d in myDays:
             if d == u"Mo-Fr" and len(myTimes[ref][u"Ex"][u"Ida"]) > 0:
@@ -195,6 +195,7 @@ for i in getLines():
             myRoutes[u"routes"][ref][u"observations"] = []
         for o in myObs:
             myRoutes[u"routes"][ref][u"observations"].append(o)
+            logger.debug("Observation: %s - %s", o[0], o[1])
 
 newBlacklist = uniq(myRoutes[u"excluded_lines"])
 newBlacklist.sort()
