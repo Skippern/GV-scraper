@@ -154,14 +154,14 @@
             "Rio Novo do Sul", 
             "Marata\u00edzes", 
             null, 
-            -5
+            64
         ], 
         [
             "202/1", 
             "Marata\u00edzes", 
             "Rio Novo do Sul", 
             null, 
-            -5
+            53
         ], 
         [
             "308/6", 
@@ -459,5 +459,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-19"
+    "updated": "2018-01-26"
 }

@@ -7,7 +7,7 @@
             "Dom Bosco", 
             "Ipiranga", 
             "Rodovia do Sol", 
-            139
+            136
         ], 
         [
             "256/1", 
@@ -28,28 +28,28 @@
             "Vit\u00f3ria", 
             "Alfredo Chaves", 
             "BR-101", 
-            122
+            123
         ], 
         [
             "119/0", 
             "Alfredo Chaves", 
             "Vit\u00f3ria", 
             "BR-101", 
-            126
+            128
         ], 
         [
             "035/0", 
             "Alfredo Chaves", 
             "Cachoeiro de Itapemirim", 
             null, 
-            -5
+            107
         ], 
         [
             "035/0", 
             "Cachoeiro de Itapemirim", 
             "Alfredo Chaves", 
             null, 
-            -5
+            107
         ], 
         [
             "256/5", 
@@ -182,7 +182,7 @@
             "Dom Bosco", 
             "Setiba", 
             "Rodovia do Sol", 
-            114
+            111
         ], 
         [
             "034/0", 
@@ -193,5 +193,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-19"
+    "updated": "2018-01-26"
 }

@@ -11,7 +11,6 @@
         "047/6", 
         "048/0", 
         "049/0", 
-        "056/0", 
         "060/0", 
         "060/8", 
         "067/0", 
@@ -40,6 +39,44 @@
     "network": "Via\u00e7\u00e3o Real Ita", 
     "operator": "Via\u00e7\u00e3o Real Ita Ltda", 
     "routes": {
+        "056/0": [
+            {
+                "exceptions": [], 
+                "from": "Bom Jesus do Norte", 
+                "services": [
+                    "Su,Ho"
+                ], 
+                "stations": [
+                    "Bom Jesus do Norte", 
+                    "Alegre"
+                ], 
+                "times": [
+                    [
+                        "15:00", 
+                        "17:42"
+                    ]
+                ], 
+                "to": "Alegre"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Alegre", 
+                "services": [
+                    "Su,Ho"
+                ], 
+                "stations": [
+                    "Alegre", 
+                    "Bom Jesus do Norte"
+                ], 
+                "times": [
+                    [
+                        "09:00", 
+                        "11:42"
+                    ]
+                ], 
+                "to": "Bom Jesus do Norte"
+            }
+        ], 
         "165/0": [
             {
                 "exceptions": [], 
@@ -202,5 +239,5 @@
         ]
     }, 
     "source": "DER-ES", 
-    "updated": "2018-01-19"
+    "updated": "2018-01-26"
 }

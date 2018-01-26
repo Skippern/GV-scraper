@@ -791,14 +791,14 @@
             "Linhares", 
             "Aracruz", 
             "Guaran\u00e1", 
-            -5
+            85
         ], 
         [
             "197/0", 
             "Aracruz", 
             "Linhares", 
             "Guaran\u00e1", 
-            -5
+            86
         ], 
         [
             "006/0", 
@@ -861,14 +861,14 @@
             "Vila Velha", 
             "Colatina", 
             "Jo\u00e3o Neiva", 
-            -5
+            251
         ], 
         [
             "267/0", 
             "Colatina", 
             "Vila Velha", 
             "Jo\u00e3o Neiva", 
-            -5
+            254
         ], 
         [
             "258/0", 
@@ -980,14 +980,14 @@
             "Vit\u00f3ria", 
             "Ibira\u00e7u", 
             "BR-101", 
-            -5
+            104
         ], 
         [
             "078/0", 
             "Ibira\u00e7u", 
             "Vit\u00f3ria", 
             "BR-101", 
-            -5
+            105
         ], 
         [
             "020/0", 
@@ -1050,14 +1050,14 @@
             "Vit\u00f3ria", 
             "Aracruz", 
             "Fund\u00e3o", 
-            -5
+            132
         ], 
         [
             "103/0", 
             "Aracruz", 
             "Vit\u00f3ria", 
             "Fund\u00e3o", 
-            -5
+            131
         ], 
         [
             "103/0", 
@@ -1148,14 +1148,14 @@
             "Vit\u00f3ria", 
             "Linhares", 
             "BR-101", 
-            -5
+            176
         ], 
         [
             "068/0", 
             "Linhares", 
             "Vit\u00f3ria", 
             "BR-101", 
-            -5
+            176
         ], 
         [
             "294/0", 
@@ -1425,5 +1425,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-19"
+    "updated": "2018-01-26"
 }

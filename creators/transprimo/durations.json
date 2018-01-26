@@ -133,14 +133,14 @@
             "Domingos Martins", 
             "Araguaia", 
             null, 
-            -5
+            58
         ], 
         [
             "360/0", 
             "Araguaia", 
             "Domingos Martins", 
             null, 
-            -5
+            58
         ], 
         [
             "356/0", 
@@ -158,5 +158,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-19"
+    "updated": "2018-01-26"
 }

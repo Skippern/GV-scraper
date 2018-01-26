@@ -13,7 +13,6 @@
         "141/1", 
         "171/0", 
         "194/0", 
-        "202/1", 
         "217/0", 
         "218/0", 
         "223/0", 
@@ -373,6 +372,68 @@
                 "to": "Cachoeiro de Itapemirim"
             }
         ], 
+        "202/1": [
+            {
+                "exceptions": [], 
+                "from": "Rio Novo do Sul", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Rio Novo do Sul", 
+                    "Marata\u00edzes"
+                ], 
+                "times": [
+                    [
+                        "07:00", 
+                        "08:04"
+                    ], 
+                    [
+                        "09:50", 
+                        "10:54"
+                    ], 
+                    [
+                        "14:00", 
+                        "15:04"
+                    ], 
+                    [
+                        "16:10", 
+                        "17:14"
+                    ]
+                ], 
+                "to": "Marata\u00edzes"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Marata\u00edzes", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Marata\u00edzes", 
+                    "Rio Novo do Sul"
+                ], 
+                "times": [
+                    [
+                        "05:50", 
+                        "06:43"
+                    ], 
+                    [
+                        "08:30", 
+                        "09:23"
+                    ], 
+                    [
+                        "11:00", 
+                        "11:53"
+                    ], 
+                    [
+                        "15:00", 
+                        "15:53"
+                    ]
+                ], 
+                "to": "Rio Novo do Sul"
+            }
+        ], 
         "341/1": [
             {
                 "exceptions": [], 
@@ -429,5 +490,5 @@
         ]
     }, 
     "source": "DER-ES", 
-    "updated": "2018-01-19"
+    "updated": "2018-01-26"
 }

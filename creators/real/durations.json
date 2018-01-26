@@ -441,14 +441,14 @@
             "Bom Jesus do Norte", 
             "Alegre", 
             "Gua\u00e7u\u00ed", 
-            -5
+            162
         ], 
         [
             "056/0", 
             "Alegre", 
             "Bom Jesus do Norte", 
             "Gua\u00e7u\u00ed", 
-            -5
+            162
         ], 
         [
             "164/0", 
@@ -599,5 +599,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-19"
+    "updated": "2018-01-26"
 }

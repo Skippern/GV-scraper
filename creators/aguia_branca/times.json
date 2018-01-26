@@ -23,10 +23,8 @@
         "053/0", 
         "054/0", 
         "061/0", 
-        "068/0", 
         "068/2", 
         "072/0", 
-        "078/0", 
         "083/0", 
         "090/0", 
         "092/0", 
@@ -60,7 +58,6 @@
         "187/0", 
         "195/0", 
         "196/0", 
-        "197/0", 
         "198/0", 
         "216/0", 
         "225/0", 
@@ -79,7 +76,6 @@
         "263/0", 
         "265/0", 
         "265/2", 
-        "267/0", 
         "271/0", 
         "272/0", 
         "273/0", 
@@ -186,6 +182,246 @@
                     [
                         "14:00", 
                         "15:22"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }
+        ], 
+        "068/0": [
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Linhares"
+                ], 
+                "times": [
+                    [
+                        "10:00", 
+                        "12:56"
+                    ], 
+                    [
+                        "12:20", 
+                        "15:16"
+                    ], 
+                    [
+                        "16:10", 
+                        "19:06"
+                    ]
+                ], 
+                "to": "Linhares"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo,Fr,Su"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Linhares"
+                ], 
+                "times": [
+                    [
+                        "19:40", 
+                        "22:36"
+                    ]
+                ], 
+                "to": "Linhares"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Fr,Su"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Linhares"
+                ], 
+                "times": [
+                    [
+                        "16:50", 
+                        "19:46"
+                    ]
+                ], 
+                "to": "Linhares"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Linhares", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Linhares", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "05:35", 
+                        "08:31"
+                    ], 
+                    [
+                        "12:30", 
+                        "15:26"
+                    ], 
+                    [
+                        "15:10", 
+                        "18:06"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Linhares", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Linhares", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "07:10", 
+                        "10:06"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Linhares", 
+                "services": [
+                    "Fr,Su"
+                ], 
+                "stations": [
+                    "Linhares", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "16:05", 
+                        "19:01"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }
+        ], 
+        "078/0": [
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Ibira\u00e7u"
+                ], 
+                "times": [
+                    [
+                        "07:50", 
+                        "09:34"
+                    ], 
+                    [
+                        "17:40", 
+                        "19:24"
+                    ]
+                ], 
+                "to": "Ibira\u00e7u"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Su"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Ibira\u00e7u"
+                ], 
+                "times": [
+                    [
+                        "09:00", 
+                        "10:44"
+                    ]
+                ], 
+                "to": "Ibira\u00e7u"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Tu-Th"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Ibira\u00e7u"
+                ], 
+                "times": [
+                    [
+                        "13:45", 
+                        "15:29"
+                    ]
+                ], 
+                "to": "Ibira\u00e7u"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Ibira\u00e7u", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Ibira\u00e7u", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "11:00", 
+                        "12:45"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Ibira\u00e7u", 
+                "services": [
+                    "Tu-Th"
+                ], 
+                "stations": [
+                    "Ibira\u00e7u", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "15:50", 
+                        "17:35"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Ibira\u00e7u", 
+                "services": [
+                    "Su"
+                ], 
+                "stations": [
+                    "Ibira\u00e7u", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "11:40", 
+                        "13:25"
                     ]
                 ], 
                 "to": "Vit\u00f3ria"
@@ -302,8 +538,530 @@
                 ], 
                 "to": "Guriri"
             }
+        ], 
+        "103/0": [
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Aracruz"
+                ], 
+                "times": [
+                    [
+                        "06:20", 
+                        "08:32"
+                    ], 
+                    [
+                        "08:00", 
+                        "10:12"
+                    ], 
+                    [
+                        "10:40", 
+                        "12:52"
+                    ], 
+                    [
+                        "12:30", 
+                        "14:42"
+                    ], 
+                    [
+                        "13:50", 
+                        "16:02"
+                    ], 
+                    [
+                        "15:45", 
+                        "17:57"
+                    ], 
+                    [
+                        "17:50", 
+                        "20:02"
+                    ], 
+                    [
+                        "19:30", 
+                        "21:42"
+                    ]
+                ], 
+                "to": "Aracruz"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Aracruz"
+                ], 
+                "times": [
+                    [
+                        "05:00", 
+                        "07:12"
+                    ], 
+                    [
+                        "06:50", 
+                        "09:02"
+                    ], 
+                    [
+                        "09:40", 
+                        "11:52"
+                    ], 
+                    [
+                        "11:30", 
+                        "13:42"
+                    ], 
+                    [
+                        "15:00", 
+                        "17:12"
+                    ]
+                ], 
+                "to": "Aracruz"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Sa"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Aracruz"
+                ], 
+                "times": [
+                    [
+                        "09:30", 
+                        "11:42"
+                    ]
+                ], 
+                "to": "Aracruz"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Su"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Aracruz"
+                ], 
+                "times": [
+                    [
+                        "18:00", 
+                        "20:12"
+                    ], 
+                    [
+                        "19:10", 
+                        "21:22"
+                    ]
+                ], 
+                "to": "Aracruz"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Aracruz"
+                ], 
+                "times": [
+                    [
+                        "05:30", 
+                        "07:42"
+                    ]
+                ], 
+                "to": "Aracruz"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Fr,Sa"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Aracruz"
+                ], 
+                "times": [
+                    [
+                        "16:50", 
+                        "19:02"
+                    ]
+                ], 
+                "to": "Aracruz"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Fr"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Aracruz"
+                ], 
+                "times": [
+                    [
+                        "12:29", 
+                        "14:41"
+                    ], 
+                    [
+                        "19:40", 
+                        "21:52"
+                    ]
+                ], 
+                "to": "Aracruz"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Aracruz", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Aracruz", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "07:30", 
+                        "09:41"
+                    ], 
+                    [
+                        "09:00", 
+                        "11:11"
+                    ], 
+                    [
+                        "12:00", 
+                        "14:11"
+                    ], 
+                    [
+                        "14:30", 
+                        "16:41"
+                    ], 
+                    [
+                        "15:30", 
+                        "17:41"
+                    ], 
+                    [
+                        "17:30", 
+                        "19:41"
+                    ], 
+                    [
+                        "18:20", 
+                        "20:31"
+                    ], 
+                    [
+                        "19:50", 
+                        "22:01"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Aracruz", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Aracruz", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "05:00", 
+                        "07:11"
+                    ], 
+                    [
+                        "06:05", 
+                        "08:16"
+                    ], 
+                    [
+                        "10:00", 
+                        "12:11"
+                    ], 
+                    [
+                        "11:20", 
+                        "13:31"
+                    ], 
+                    [
+                        "13:00", 
+                        "15:11"
+                    ], 
+                    [
+                        "16:50", 
+                        "19:01"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Aracruz", 
+                "services": [
+                    "Mo"
+                ], 
+                "stations": [
+                    "Aracruz", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "04:51", 
+                        "07:02"
+                    ], 
+                    [
+                        "07:31", 
+                        "09:42"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Aracruz", 
+                "services": [
+                    "Mo,Fr"
+                ], 
+                "stations": [
+                    "Aracruz", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "14:35", 
+                        "16:46"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Aracruz", 
+                "services": [
+                    "Su"
+                ], 
+                "stations": [
+                    "Aracruz", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "16:30", 
+                        "18:41"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Aracruz", 
+                "services": [
+                    "Fr"
+                ], 
+                "stations": [
+                    "Aracruz", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "16:51", 
+                        "19:02"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Aracruz", 
+                "services": [
+                    "Sa"
+                ], 
+                "stations": [
+                    "Aracruz", 
+                    "Vit\u00f3ria"
+                ], 
+                "times": [
+                    [
+                        "13:05", 
+                        "15:16"
+                    ]
+                ], 
+                "to": "Vit\u00f3ria"
+            }
+        ], 
+        "197/0": [
+            {
+                "exceptions": [], 
+                "from": "Linhares", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Linhares", 
+                    "Aracruz"
+                ], 
+                "times": [
+                    [
+                        "06:30", 
+                        "07:55"
+                    ], 
+                    [
+                        "12:00", 
+                        "13:25"
+                    ], 
+                    [
+                        "17:30", 
+                        "18:55"
+                    ]
+                ], 
+                "to": "Aracruz"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Linhares", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Linhares", 
+                    "Aracruz"
+                ], 
+                "times": [
+                    [
+                        "15:40", 
+                        "17:05"
+                    ]
+                ], 
+                "to": "Aracruz"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Linhares", 
+                "services": [
+                    "Su"
+                ], 
+                "stations": [
+                    "Linhares", 
+                    "Aracruz"
+                ], 
+                "times": [
+                    [
+                        "08:00", 
+                        "09:25"
+                    ]
+                ], 
+                "to": "Aracruz"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Aracruz", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Aracruz", 
+                    "Linhares"
+                ], 
+                "times": [
+                    [
+                        "06:00", 
+                        "07:26"
+                    ], 
+                    [
+                        "14:00", 
+                        "15:26"
+                    ]
+                ], 
+                "to": "Linhares"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Aracruz", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Aracruz", 
+                    "Linhares"
+                ], 
+                "times": [
+                    [
+                        "09:20", 
+                        "10:46"
+                    ], 
+                    [
+                        "17:20", 
+                        "18:46"
+                    ]
+                ], 
+                "to": "Linhares"
+            }
+        ], 
+        "267/0": [
+            {
+                "exceptions": [], 
+                "from": "Vila Velha", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Vila Velha", 
+                    "Colatina"
+                ], 
+                "times": [
+                    [
+                        "10:30", 
+                        "14:41"
+                    ]
+                ], 
+                "to": "Colatina"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vila Velha", 
+                "services": [
+                    "Su"
+                ], 
+                "stations": [
+                    "Vila Velha", 
+                    "Colatina"
+                ], 
+                "times": [
+                    [
+                        "14:00", 
+                        "18:11"
+                    ]
+                ], 
+                "to": "Colatina"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Colatina", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Colatina", 
+                    "Vila Velha"
+                ], 
+                "times": [
+                    [
+                        "06:00", 
+                        "10:14"
+                    ]
+                ], 
+                "to": "Vila Velha"
+            }
         ]
     }, 
     "source": "DER-ES", 
-    "updated": "2018-01-19"
+    "updated": "2018-01-26"
 }
