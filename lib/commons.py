@@ -97,12 +97,31 @@ def calculate_end_time(start_time, duration):
         end_time = u"{0}+{1}".format(end_time, str(day))
     return end_time
 
-def remove_duplicate(values):
-    output = []
-    seen = set()
-    for value in values:
-        if value not in seen:
-            output.append(value)
-            seen.add(value)
-    return output
+class station(object):
+    def __init__(self, name, position):
+        self.name = unicode(name)
+        self.position = tuple(position)
+
+    def create(self, name, position):
+        """"
+        Creates the station
+        """
+
+class duration(object):
+    def __init__(self, origin, destination, duration):
+        self.origin = station(origin, position)
+        self.destination = station(destination, position)
+        self.duration = int(duration)
+
+    def create(self, origin, destination):
+        """
+        Creates the duration object
+        """
+
+class durationList(object):
+    def __init__(self, ref, origin, destination):
+        self.origin = unicode(origin)
+        self.destination = unicode(destination)
+        self.ref = unicode(ref)
+
 
