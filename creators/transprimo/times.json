@@ -17,24 +17,6 @@
         "360/0": [
             {
                 "exceptions": [], 
-                "from": "Domingos Martins", 
-                "services": [
-                    "Mo-Sa"
-                ], 
-                "stations": [
-                    "Domingos Martins", 
-                    "Araguaia"
-                ], 
-                "times": [
-                    [
-                        "11:50", 
-                        "12:48"
-                    ]
-                ], 
-                "to": "Araguaia"
-            }, 
-            {
-                "exceptions": [], 
                 "from": "Araguaia", 
                 "services": [
                     "Mo-Sa"
@@ -50,9 +32,27 @@
                     ]
                 ], 
                 "to": "Domingos Martins"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Domingos Martins", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Domingos Martins", 
+                    "Araguaia"
+                ], 
+                "times": [
+                    [
+                        "11:50", 
+                        "12:48"
+                    ]
+                ], 
+                "to": "Araguaia"
             }
         ]
     }, 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

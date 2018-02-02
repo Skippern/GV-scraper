@@ -3,16 +3,72 @@
     "operator": "Expressa Transportes Ltda", 
     "routes": [
         [
-            "214/0", 
+            "207/0", 
+            "Barra de S\u00e3o Francisco", 
             "Nova Ven\u00e9cia", 
-            "Ecoporanga", 
-            "Veloso", 
+            "Cedro", 
+            -5
+        ], 
+        [
+            "207/0", 
+            "Nova Ven\u00e9cia", 
+            "Barra de S\u00e3o Francisco", 
+            "Cedro", 
+            -5
+        ], 
+        [
+            "208/0", 
+            "Barra de S\u00e3o Francisco", 
+            "Boa Vista", 
+            null, 
+            -5
+        ], 
+        [
+            "208/0", 
+            "Barra de S\u00e3o Francisco", 
+            "S\u00e3o Gon\u00e7alo", 
+            null, 
+            -5
+        ], 
+        [
+            "208/0", 
+            "Boa Vista", 
+            "Barra de S\u00e3o Francisco", 
+            null, 
+            -5
+        ], 
+        [
+            "208/0", 
+            "S\u00e3o Gon\u00e7alo", 
+            "Barra de S\u00e3o Francisco", 
+            null, 
+            -5
+        ], 
+        [
+            "210/0", 
+            "Barra de S\u00e3o Francisco", 
+            "Nova Ven\u00e9cia", 
+            "Pav\u00e3o", 
+            -5
+        ], 
+        [
+            "210/0", 
+            "Nova Ven\u00e9cia", 
+            "Barra de S\u00e3o Francisco", 
+            "Pav\u00e3o", 
             -5
         ], 
         [
             "214/0", 
             "Ecoporanga", 
             "Nova Ven\u00e9cia", 
+            "Veloso", 
+            -5
+        ], 
+        [
+            "214/0", 
+            "Nova Ven\u00e9cia", 
+            "Ecoporanga", 
             "Veloso", 
             -5
         ], 
@@ -28,65 +84,9 @@
             "Pra\u00e7a Rica", 
             "Nova Ven\u00e9cia", 
             null, 
-            -5
-        ], 
-        [
-            "207/0", 
-            "Nova Ven\u00e9cia", 
-            "Barra de S\u00e3o Francisco", 
-            "Cedro", 
-            -5
-        ], 
-        [
-            "207/0", 
-            "Barra de S\u00e3o Francisco", 
-            "Nova Ven\u00e9cia", 
-            "Cedro", 
-            -5
-        ], 
-        [
-            "208/0", 
-            "Barra de S\u00e3o Francisco", 
-            "S\u00e3o Gon\u00e7alo", 
-            null, 
-            -5
-        ], 
-        [
-            "208/0", 
-            "S\u00e3o Gon\u00e7alo", 
-            "Barra de S\u00e3o Francisco", 
-            null, 
-            -5
-        ], 
-        [
-            "208/0", 
-            "Barra de S\u00e3o Francisco", 
-            "Boa Vista", 
-            null, 
-            -5
-        ], 
-        [
-            "208/0", 
-            "Boa Vista", 
-            "Barra de S\u00e3o Francisco", 
-            null, 
-            -5
-        ], 
-        [
-            "210/0", 
-            "Nova Ven\u00e9cia", 
-            "Barra de S\u00e3o Francisco", 
-            "Pav\u00e3o", 
-            -5
-        ], 
-        [
-            "210/0", 
-            "Barra de S\u00e3o Francisco", 
-            "Nova Ven\u00e9cia", 
-            "Pav\u00e3o", 
             -5
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

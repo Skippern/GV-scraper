@@ -3,20 +3,6 @@
     "operator": "Via\u00e7\u00e3o Motum Preto Ltda", 
     "routes": [
         [
-            "292/0", 
-            "Afonso Cl\u00e1udio", 
-            "Ibatiba", 
-            null, 
-            -5
-        ], 
-        [
-            "292/0", 
-            "Ibatiba", 
-            "Afonso Cl\u00e1udio", 
-            null, 
-            -5
-        ], 
-        [
             "168/0", 
             "Baixo Guand\u00fa", 
             "Laranja da Terra", 
@@ -31,16 +17,9 @@
             -5
         ], 
         [
-            "278/0", 
-            "Joatuba", 
+            "169/0", 
             "Afonso Cl\u00e1udio", 
-            null, 
-            -5
-        ], 
-        [
-            "278/0", 
-            "Afonso Cl\u00e1udio", 
-            "Joatuba", 
+            "Baixo Guand\u00fa", 
             null, 
             -5
         ], 
@@ -52,9 +31,44 @@
             -5
         ], 
         [
-            "169/0", 
+            "278/0", 
             "Afonso Cl\u00e1udio", 
-            "Baixo Guand\u00fa", 
+            "Joatuba", 
+            null, 
+            -5
+        ], 
+        [
+            "278/0", 
+            "Joatuba", 
+            "Afonso Cl\u00e1udio", 
+            null, 
+            -5
+        ], 
+        [
+            "287/0", 
+            "Afonso Cl\u00e1udio", 
+            "Laranja da Terra", 
+            null, 
+            -5
+        ], 
+        [
+            "287/0", 
+            "Laranja da Terra", 
+            "Afonso Cl\u00e1udio", 
+            null, 
+            -5
+        ], 
+        [
+            "292/0", 
+            "Afonso Cl\u00e1udio", 
+            "Ibatiba", 
+            null, 
+            -5
+        ], 
+        [
+            "292/0", 
+            "Ibatiba", 
+            "Afonso Cl\u00e1udio", 
             null, 
             -5
         ], 
@@ -69,24 +83,10 @@
             "305/0", 
             "Laranja da Terra", 
             "Itagua\u00e7u", 
-            null, 
-            -5
-        ], 
-        [
-            "287/0", 
-            "Laranja da Terra", 
-            "Afonso Cl\u00e1udio", 
-            null, 
-            -5
-        ], 
-        [
-            "287/0", 
-            "Afonso Cl\u00e1udio", 
-            "Laranja da Terra", 
             null, 
             -5
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

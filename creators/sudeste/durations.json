@@ -3,20 +3,6 @@
     "operator": "Via\u00e7\u00e3o Sudeste", 
     "routes": [
         [
-            "126/1", 
-            "Cachoeiro de Itapemirim", 
-            "Rio Novo do Sul", 
-            null, 
-            -5
-        ], 
-        [
-            "126/1", 
-            "Rio Novo do Sul", 
-            "Cachoeiro de Itapemirim", 
-            null, 
-            -5
-        ], 
-        [
             "023/0", 
             "Cachoeiro de Itapemirim", 
             "Cachoeiro de Itapemirim", 
@@ -24,44 +10,30 @@
             -5
         ], 
         [
-            "127/0", 
-            "Itapemirim", 
-            "Praia de Marob\u00e1", 
-            null, 
-            -5
-        ], 
-        [
-            "127/0", 
-            "Praia de Marob\u00e1", 
-            "Itapemirim", 
-            null, 
-            -5
-        ], 
-        [
-            "217/0", 
+            "039/0", 
             "Cachoeiro de Itapemirim", 
-            "Paineiras", 
-            "Garraf\u00e3o", 
-            -5
-        ], 
-        [
-            "217/0", 
-            "Paineiras", 
-            "Cachoeiro de Itapemirim", 
-            "Garraf\u00e3o", 
-            -5
-        ], 
-        [
-            "337/4", 
-            "Vila de Itapemirim", 
-            "Xod\u00f3 I", 
+            "Richimont", 
             null, 
             -5
         ], 
         [
-            "337/4", 
-            "Xod\u00f3 I", 
-            "Vila de Itapemirim", 
+            "039/0", 
+            "Richimont", 
+            "Cachoeiro de Itapemirim", 
+            null, 
+            -5
+        ], 
+        [
+            "055/1", 
+            "Cachoeiro de Itapemirim", 
+            "Safra", 
+            null, 
+            -5
+        ], 
+        [
+            "055/1", 
+            "Safra", 
+            "Cachoeiro de Itapemirim", 
             null, 
             -5
         ], 
@@ -80,60 +52,32 @@
             -5
         ], 
         [
-            "171/0", 
+            "075/0", 
             "Cachoeiro de Itapemirim", 
             "Marata\u00edzes", 
-            "F Maitan", 
-            -5
+            "Garraf\u00e3o", 
+            94
         ], 
         [
-            "171/0", 
+            "075/0", 
             "Marata\u00edzes", 
             "Cachoeiro de Itapemirim", 
-            "F Maitan", 
-            -5
+            "Garraf\u00e3o", 
+            85
         ], 
         [
-            "338/4", 
-            "Vila de Itapemirim", 
+            "075/2", 
+            "Cachoeiro de Itapemirim", 
             "Marata\u00edzes", 
             null, 
-            -5
+            94
         ], 
         [
-            "338/4", 
+            "075/2", 
             "Marata\u00edzes", 
-            "Vila de Itapemirim", 
-            null, 
-            -5
-        ], 
-        [
-            "039/0", 
-            "Cachoeiro de Itapemirim", 
-            "Richimont", 
-            null, 
-            -5
-        ], 
-        [
-            "039/0", 
-            "Richimont", 
             "Cachoeiro de Itapemirim", 
             null, 
-            -5
-        ], 
-        [
-            "350/1", 
-            "Vila de Itapemirim", 
-            "Boa Vista", 
-            "Brejo dos Patos", 
-            -5
-        ], 
-        [
-            "350/1", 
-            "Boa Vista", 
-            "Vila de Itapemirim", 
-            "Brejo dos Patos", 
-            -5
+            85
         ], 
         [
             "089/0", 
@@ -150,18 +94,242 @@
             -5
         ], 
         [
-            "202/1", 
-            "Rio Novo do Sul", 
+            "095/0", 
+            "Cachoeiro de Itapemirim", 
             "Marata\u00edzes", 
+            "Ouvidor", 
+            -5
+        ], 
+        [
+            "095/0", 
+            "Marata\u00edzes", 
+            "Cachoeiro de Itapemirim", 
+            "Ouvidor", 
+            -5
+        ], 
+        [
+            "109/0", 
+            "Cachoeiro de Itapemirim", 
+            "Marata\u00edzes", 
+            "Palmital", 
+            -5
+        ], 
+        [
+            "109/0", 
+            "Marata\u00edzes", 
+            "Cachoeiro de Itapemirim", 
+            "Palmital", 
+            -5
+        ], 
+        [
+            "126/1", 
+            "Cachoeiro de Itapemirim", 
+            "Rio Novo do Sul", 
             null, 
-            64
+            -5
+        ], 
+        [
+            "126/1", 
+            "Rio Novo do Sul", 
+            "Cachoeiro de Itapemirim", 
+            null, 
+            -5
+        ], 
+        [
+            "127/0", 
+            "Itapemirim", 
+            "Praia de Marob\u00e1", 
+            null, 
+            -5
+        ], 
+        [
+            "127/0", 
+            "Praia de Marob\u00e1", 
+            "Itapemirim", 
+            null, 
+            -5
+        ], 
+        [
+            "141/0", 
+            "Cachoeiro de Itapemirim", 
+            "Marata\u00edzes", 
+            "B Grande do Sul", 
+            -5
+        ], 
+        [
+            "141/0", 
+            "Marata\u00edzes", 
+            "Cachoeiro de Itapemirim", 
+            "B Grande do Sul", 
+            -5
+        ], 
+        [
+            "141/1", 
+            "Fazenda Santa Rita", 
+            "Marata\u00edzes", 
+            "B Grande do Sul", 
+            -5
+        ], 
+        [
+            "141/1", 
+            "Marata\u00edzes", 
+            "Fazenda Santa Rita", 
+            "B Grande do Sul", 
+            -5
+        ], 
+        [
+            "171/0", 
+            "Cachoeiro de Itapemirim", 
+            "Marata\u00edzes", 
+            "F Maitan", 
+            -5
+        ], 
+        [
+            "171/0", 
+            "Marata\u00edzes", 
+            "Cachoeiro de Itapemirim", 
+            "F Maitan", 
+            -5
+        ], 
+        [
+            "194/0", 
+            "Cachoeiro de Itapemirim", 
+            "Marata\u00edzes", 
+            "Centro de Rio Novo do Sul", 
+            -5
+        ], 
+        [
+            "194/0", 
+            "Marata\u00edzes", 
+            "Cachoeiro de Itapemirim", 
+            "Centro de Rio Novo do Sul", 
+            -5
         ], 
         [
             "202/1", 
             "Marata\u00edzes", 
             "Rio Novo do Sul", 
             null, 
-            53
+            56
+        ], 
+        [
+            "202/1", 
+            "Rio Novo do Sul", 
+            "Marata\u00edzes", 
+            null, 
+            67
+        ], 
+        [
+            "217/0", 
+            "Cachoeiro de Itapemirim", 
+            "Paineiras", 
+            "Garraf\u00e3o", 
+            -5
+        ], 
+        [
+            "217/0", 
+            "Paineiras", 
+            "Cachoeiro de Itapemirim", 
+            "Garraf\u00e3o", 
+            -5
+        ], 
+        [
+            "218/0", 
+            "Cachoeiro de Itapemirim", 
+            "Marata\u00edzes", 
+            "Bel\u00e9m", 
+            -5
+        ], 
+        [
+            "218/0", 
+            "Marata\u00edzes", 
+            "Cachoeiro de Itapemirim", 
+            "Bel\u00e9m", 
+            -5
+        ], 
+        [
+            "223/0", 
+            "Cachoeiro de Itapemirim", 
+            "Pi\u00fama", 
+            "Candeus", 
+            145
+        ], 
+        [
+            "223/0", 
+            "Pi\u00fama", 
+            "Cachoeiro de Itapemirim", 
+            "Candeus", 
+            83
+        ], 
+        [
+            "266/1", 
+            "Cachoeiro de Itapemirim", 
+            "Iconha", 
+            "Centro de Rio Novo do Sul", 
+            -5
+        ], 
+        [
+            "266/1", 
+            "Iconha", 
+            "Cachoeiro de Itapemirim", 
+            "Centro de Rio Novo do Sul", 
+            -5
+        ], 
+        [
+            "288/1", 
+            "Bel\u00e9m", 
+            "Cachoeiro de Itapemirim", 
+            null, 
+            -5
+        ], 
+        [
+            "288/1", 
+            "Cachoeiro de Itapemirim", 
+            "Bel\u00e9m", 
+            null, 
+            -5
+        ], 
+        [
+            "308/1", 
+            "Guarapari", 
+            "Itaputanga", 
+            null, 
+            -5
+        ], 
+        [
+            "308/1", 
+            "Guarapari", 
+            "Pi\u00fama", 
+            null, 
+            -5
+        ], 
+        [
+            "308/1", 
+            "Guarapari", 
+            "Pi\u00fama", 
+            "Recanto do Sol", 
+            -5
+        ], 
+        [
+            "308/1", 
+            "Pi\u00fama", 
+            "Guarapari", 
+            null, 
+            -5
+        ], 
+        [
+            "308/1", 
+            "Pi\u00fama", 
+            "Guarapari", 
+            "Recanto do Sol", 
+            -5
+        ], 
+        [
+            "308/1", 
+            "Pi\u00fama", 
+            "Itaputanga", 
+            null, 
+            -5
         ], 
         [
             "308/6", 
@@ -178,45 +346,31 @@
             -5
         ], 
         [
-            "308/1", 
-            "Guarapari", 
-            "Pi\u00fama", 
+            "334/4", 
+            "Praia dos Ca\u00e7\u00f5es", 
+            "Trevo de Campo Acima", 
             null, 
             -5
         ], 
         [
-            "308/1", 
-            "Pi\u00fama", 
-            "Guarapari", 
+            "334/4", 
+            "Trevo de Campo Acima", 
+            "Praia dos Ca\u00e7\u00f5es", 
             null, 
             -5
         ], 
         [
-            "308/1", 
-            "Guarapari", 
-            "Itaputanga", 
+            "335/4", 
+            "Capinzal", 
+            "Capinzal", 
+            "Vila de Itapemirim", 
+            -5
+        ], 
+        [
+            "336/1", 
+            "Itaipava", 
+            "Marata\u00edzes", 
             null, 
-            -5
-        ], 
-        [
-            "308/1", 
-            "Pi\u00fama", 
-            "Itaputanga", 
-            null, 
-            -5
-        ], 
-        [
-            "308/1", 
-            "Guarapari", 
-            "Pi\u00fama", 
-            "Recanto do Sol", 
-            -5
-        ], 
-        [
-            "308/1", 
-            "Pi\u00fama", 
-            "Guarapari", 
-            "Recanto do Sol", 
             -5
         ], 
         [
@@ -227,9 +381,51 @@
             -5
         ], 
         [
-            "336/1", 
-            "Itaipava", 
+            "337/4", 
+            "Vila de Itapemirim", 
+            "Xod\u00f3 I", 
+            null, 
+            -5
+        ], 
+        [
+            "337/4", 
+            "Xod\u00f3 I", 
+            "Vila de Itapemirim", 
+            null, 
+            -5
+        ], 
+        [
+            "338/4", 
             "Marata\u00edzes", 
+            "Vila de Itapemirim", 
+            null, 
+            -5
+        ], 
+        [
+            "338/4", 
+            "Vila de Itapemirim", 
+            "Marata\u00edzes", 
+            null, 
+            -5
+        ], 
+        [
+            "339/1", 
+            "Itaipava", 
+            "Praia de Marob\u00e1", 
+            null, 
+            -5
+        ], 
+        [
+            "339/1", 
+            "Praia de Marob\u00e1", 
+            "Itaipava", 
+            null, 
+            -5
+        ], 
+        [
+            "340/4", 
+            "Grauna", 
+            "Grauna", 
             null, 
             -5
         ], 
@@ -248,216 +444,20 @@
             74
         ], 
         [
-            "055/1", 
-            "Cachoeiro de Itapemirim", 
-            "Safra", 
-            null, 
-            -5
-        ], 
-        [
-            "055/1", 
-            "Safra", 
-            "Cachoeiro de Itapemirim", 
-            null, 
-            -5
-        ], 
-        [
-            "339/1", 
-            "Praia de Marob\u00e1", 
-            "Itaipava", 
-            null, 
-            -5
-        ], 
-        [
-            "339/1", 
-            "Itaipava", 
-            "Praia de Marob\u00e1", 
-            null, 
-            -5
-        ], 
-        [
-            "335/4", 
-            "Capinzal", 
-            "Capinzal", 
+            "350/1", 
+            "Boa Vista", 
             "Vila de Itapemirim", 
+            "Brejo dos Patos", 
             -5
         ], 
         [
-            "141/0", 
-            "Cachoeiro de Itapemirim", 
-            "Marata\u00edzes", 
-            "B Grande do Sul", 
+            "350/1", 
+            "Vila de Itapemirim", 
+            "Boa Vista", 
+            "Brejo dos Patos", 
             -5
-        ], 
-        [
-            "141/0", 
-            "Marata\u00edzes", 
-            "Cachoeiro de Itapemirim", 
-            "B Grande do Sul", 
-            -5
-        ], 
-        [
-            "141/1", 
-            "Fazenda Santa Rita", 
-            "Marata\u00edzes", 
-            "B Grande do Sul", 
-            -5
-        ], 
-        [
-            "141/1", 
-            "Marata\u00edzes", 
-            "Fazenda Santa Rita", 
-            "B Grande do Sul", 
-            -5
-        ], 
-        [
-            "288/1", 
-            "Cachoeiro de Itapemirim", 
-            "Bel\u00e9m", 
-            null, 
-            -5
-        ], 
-        [
-            "288/1", 
-            "Bel\u00e9m", 
-            "Cachoeiro de Itapemirim", 
-            null, 
-            -5
-        ], 
-        [
-            "334/4", 
-            "Trevo de Campo Acima", 
-            "Praia dos Ca\u00e7\u00f5es", 
-            null, 
-            -5
-        ], 
-        [
-            "334/4", 
-            "Praia dos Ca\u00e7\u00f5es", 
-            "Trevo de Campo Acima", 
-            null, 
-            -5
-        ], 
-        [
-            "223/0", 
-            "Cachoeiro de Itapemirim", 
-            "Pi\u00fama", 
-            "Candeus", 
-            -5
-        ], 
-        [
-            "223/0", 
-            "Pi\u00fama", 
-            "Cachoeiro de Itapemirim", 
-            "Candeus", 
-            -5
-        ], 
-        [
-            "194/0", 
-            "Cachoeiro de Itapemirim", 
-            "Marata\u00edzes", 
-            "Centro de Rio Novo do Sul", 
-            -5
-        ], 
-        [
-            "194/0", 
-            "Marata\u00edzes", 
-            "Cachoeiro de Itapemirim", 
-            "Centro de Rio Novo do Sul", 
-            -5
-        ], 
-        [
-            "109/0", 
-            "Cachoeiro de Itapemirim", 
-            "Marata\u00edzes", 
-            "Palmital", 
-            -5
-        ], 
-        [
-            "109/0", 
-            "Marata\u00edzes", 
-            "Cachoeiro de Itapemirim", 
-            "Palmital", 
-            -5
-        ], 
-        [
-            "218/0", 
-            "Cachoeiro de Itapemirim", 
-            "Marata\u00edzes", 
-            "Bel\u00e9m", 
-            -5
-        ], 
-        [
-            "218/0", 
-            "Marata\u00edzes", 
-            "Cachoeiro de Itapemirim", 
-            "Bel\u00e9m", 
-            -5
-        ], 
-        [
-            "340/4", 
-            "Grauna", 
-            "Grauna", 
-            null, 
-            -5
-        ], 
-        [
-            "095/0", 
-            "Cachoeiro de Itapemirim", 
-            "Marata\u00edzes", 
-            "Ouvidor", 
-            -5
-        ], 
-        [
-            "095/0", 
-            "Marata\u00edzes", 
-            "Cachoeiro de Itapemirim", 
-            "Ouvidor", 
-            -5
-        ], 
-        [
-            "266/1", 
-            "Cachoeiro de Itapemirim", 
-            "Iconha", 
-            "Centro de Rio Novo do Sul", 
-            -5
-        ], 
-        [
-            "266/1", 
-            "Iconha", 
-            "Cachoeiro de Itapemirim", 
-            "Centro de Rio Novo do Sul", 
-            -5
-        ], 
-        [
-            "075/0", 
-            "Cachoeiro de Itapemirim", 
-            "Marata\u00edzes", 
-            "Garraf\u00e3o", 
-            94
-        ], 
-        [
-            "075/0", 
-            "Marata\u00edzes", 
-            "Cachoeiro de Itapemirim", 
-            "Garraf\u00e3o", 
-            85
-        ], 
-        [
-            "075/2", 
-            "Cachoeiro de Itapemirim", 
-            "Marata\u00edzes", 
-            null, 
-            94
-        ], 
-        [
-            "075/2", 
-            "Marata\u00edzes", 
-            "Cachoeiro de Itapemirim", 
-            null, 
-            85
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

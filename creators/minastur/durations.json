@@ -3,88 +3,18 @@
     "operator": "Minastur Transporte e Turismo Ltda", 
     "routes": [
         [
-            "285/0", 
-            "Iuna", 
-            "Posto Fiscal", 
-            null, 
-            -5
-        ], 
-        [
-            "285/0", 
-            "Posto Fiscal", 
-            "Iuna", 
-            null, 
-            -5
-        ], 
-        [
-            "151/0", 
-            "Iuna", 
-            "Ibatiba", 
-            null, 
-            -5
-        ], 
-        [
-            "151/0", 
-            "Ibatiba", 
-            "Iuna", 
-            null, 
-            -5
-        ], 
-        [
-            "246/0", 
-            "Iuna", 
-            "S\u00e3o Jos\u00e9 do Capara\u00f3", 
-            null, 
-            -5
-        ], 
-        [
-            "246/0", 
-            "S\u00e3o Jos\u00e9 do Capara\u00f3", 
-            "Iuna", 
-            null, 
-            -5
-        ], 
-        [
-            "296/0", 
-            "Gua\u00e7u\u00ed", 
-            "Iuna", 
-            null, 
-            -5
-        ], 
-        [
-            "296/0", 
-            "Iuna", 
-            "Gua\u00e7u\u00ed", 
-            null, 
-            -5
-        ], 
-        [
-            "331/0", 
-            "Iuna", 
+            "086/0", 
+            "Alegre", 
             "Irupi", 
             null, 
             -5
         ], 
         [
-            "331/0", 
+            "086/0", 
             "Irupi", 
-            "Iuna", 
+            "Alegre", 
             null, 
             -5
-        ], 
-        [
-            "149/0", 
-            "Gua\u00e7u\u00ed", 
-            "Santa Marta", 
-            null, 
-            -4
-        ], 
-        [
-            "149/0", 
-            "Santa Marta", 
-            "Gua\u00e7u\u00ed", 
-            null, 
-            -3
         ], 
         [
             "149/0", 
@@ -95,12 +25,82 @@
         ], 
         [
             "149/0", 
+            "Gua\u00e7u\u00ed", 
+            "Santa Marta", 
+            null, 
+            -4
+        ], 
+        [
+            "149/0", 
             "Patrim\u00f4nio da Penha", 
             "Gua\u00e7u\u00ed", 
             null, 
             98
         ], 
         [
+            "149/0", 
+            "Santa Marta", 
+            "Gua\u00e7u\u00ed", 
+            null, 
+            -3
+        ], 
+        [
+            "151/0", 
+            "Ibatiba", 
+            "Iuna", 
+            null, 
+            -5
+        ], 
+        [
+            "151/0", 
+            "Iuna", 
+            "Ibatiba", 
+            null, 
+            -5
+        ], 
+        [
+            "212/0", 
+            "Gua\u00e7u\u00ed", 
+            "Ibatiba", 
+            null, 
+            -5
+        ], 
+        [
+            "212/0", 
+            "Ibatiba", 
+            "Gua\u00e7u\u00ed", 
+            null, 
+            -5
+        ], 
+        [
+            "246/0", 
+            "Iuna", 
+            "S\u00e3o Jos\u00e9 do Capara\u00f3", 
+            null, 
+            -5
+        ], 
+        [
+            "246/0", 
+            "S\u00e3o Jos\u00e9 do Capara\u00f3", 
+            "Iuna", 
+            null, 
+            -5
+        ], 
+        [
+            "285/0", 
+            "Iuna", 
+            "Posto Fiscal", 
+            null, 
+            -5
+        ], 
+        [
+            "285/0", 
+            "Posto Fiscal", 
+            "Iuna", 
+            null, 
+            -5
+        ], 
+        [
             "289/0", 
             "Alegre", 
             "Santa Marta", 
@@ -115,34 +115,34 @@
             -5
         ], 
         [
-            "086/0", 
-            "Irupi", 
-            "Alegre", 
+            "296/0", 
+            "Gua\u00e7u\u00ed", 
+            "Iuna", 
             null, 
             -5
         ], 
         [
-            "086/0", 
-            "Alegre", 
-            "Irupi", 
-            null, 
-            -5
-        ], 
-        [
-            "212/0", 
-            "Ibatiba", 
+            "296/0", 
+            "Iuna", 
             "Gua\u00e7u\u00ed", 
             null, 
             -5
         ], 
         [
-            "212/0", 
-            "Gua\u00e7u\u00ed", 
-            "Ibatiba", 
+            "331/0", 
+            "Irupi", 
+            "Iuna", 
+            null, 
+            -5
+        ], 
+        [
+            "331/0", 
+            "Iuna", 
+            "Irupi", 
             null, 
             -5
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

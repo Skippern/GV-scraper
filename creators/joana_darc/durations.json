@@ -18,19 +18,19 @@
         ], 
         [
             "343/1", 
-            "Linhares", 
             "Joeirama B", 
+            "Linhares", 
             null, 
             -5
         ], 
         [
             "343/1", 
-            "Joeirama B", 
             "Linhares", 
+            "Joeirama B", 
             null, 
             -5
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

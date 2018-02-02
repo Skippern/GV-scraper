@@ -2,7 +2,6 @@
     "excluded_lines": [
         "029/0", 
         "079/0", 
-        "081/0", 
         "084/0", 
         "091/0", 
         "096/0", 
@@ -30,7 +29,178 @@
     ], 
     "network": "Via\u00e7\u00e3o Pretti", 
     "operator": "Via\u00e7\u00e3o Pretti Ltda", 
-    "routes": {}, 
+    "routes": {
+        "081/0": [
+            {
+                "exceptions": [], 
+                "from": "Colatina", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Colatina", 
+                    "Linhares"
+                ], 
+                "times": [
+                    [
+                        "17:30", 
+                        "19:51"
+                    ]
+                ], 
+                "to": "Linhares"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Colatina", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Colatina", 
+                    "Linhares"
+                ], 
+                "times": [
+                    [
+                        "06:00", 
+                        "08:21"
+                    ], 
+                    [
+                        "09:00", 
+                        "11:21"
+                    ], 
+                    [
+                        "12:00", 
+                        "14:21"
+                    ], 
+                    [
+                        "14:00", 
+                        "16:21"
+                    ]
+                ], 
+                "to": "Linhares"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Colatina", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Colatina", 
+                    "Linhares"
+                ], 
+                "times": [
+                    [
+                        "08:40", 
+                        "11:01"
+                    ]
+                ], 
+                "to": "Linhares"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Colatina", 
+                "services": [
+                    "Fr"
+                ], 
+                "stations": [
+                    "Colatina", 
+                    "Linhares"
+                ], 
+                "times": [
+                    [
+                        "15:50", 
+                        "18:11"
+                    ]
+                ], 
+                "to": "Linhares"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Linhares", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Linhares", 
+                    "Colatina"
+                ], 
+                "times": [
+                    [
+                        "17:30", 
+                        "19:35"
+                    ]
+                ], 
+                "to": "Colatina"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Linhares", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Linhares", 
+                    "Colatina"
+                ], 
+                "times": [
+                    [
+                        "06:20", 
+                        "08:25"
+                    ], 
+                    [
+                        "09:00", 
+                        "11:05"
+                    ], 
+                    [
+                        "12:00", 
+                        "14:05"
+                    ], 
+                    [
+                        "14:00", 
+                        "16:05"
+                    ]
+                ], 
+                "to": "Colatina"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Linhares", 
+                "services": [
+                    "Sa"
+                ], 
+                "stations": [
+                    "Linhares", 
+                    "Colatina"
+                ], 
+                "times": [
+                    [
+                        "13:50", 
+                        "15:55"
+                    ]
+                ], 
+                "to": "Colatina"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Linhares", 
+                "services": [
+                    "Mo-Fr"
+                ], 
+                "stations": [
+                    "Linhares", 
+                    "Colatina"
+                ], 
+                "times": [
+                    [
+                        "17:20", 
+                        "19:25"
+                    ]
+                ], 
+                "to": "Colatina"
+            }
+        ]
+    }, 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

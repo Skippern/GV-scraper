@@ -102,6 +102,7 @@
                 "from": "Vitória",
                 "to": "São Mateus",
                 "via": "BR-101",
+                "ref": "085",
                 "services": "Mo,Fr",
                 "times": ["07:51", "13:00"]
             },
@@ -110,6 +111,7 @@
                 "from": "Vitória",
                 "to": "São Mateus",
                 "via": "BR-101",
+                "ref": "085",
                 "services": "Mo-Fr",
                 "times": ["09:30"]
             },
@@ -118,6 +120,7 @@
                 "from": "São Mateus",
                 "to": "Vitória",
                 "via": "BR-101",
+                "ref": "085",
                 "services": "Mo-Su",
                 "times": ["13:30"]
             },
@@ -126,6 +129,7 @@
                 "from": "São Mateus",
                 "to": "Vitória",
                 "via": "BR-101",
+                "ref": "085",
                 "services": "Mo,Fr,Su",
                 "times": ["15:00"]
             },
@@ -134,6 +138,7 @@
                 "from": "São Mateus",
                 "to": "Vitória",
                 "via": "BR-101",
+                "ref": "085",
                 "services": "Mo-Fr",
                 "times": ["16:30"]
             }
@@ -1001,7 +1006,7 @@
                 "name": "Vitória x Carolina via D Martins",
                 "from": "Vitória",
                 "to": "Carolina",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "note": "Trafego Mutuo com a Viação Alvorada Ltda\nPartidas invertidas Quinzenalmente",
                 "services": "Mo-Su",
                 "times": ["06:30", "14:30"]
@@ -1010,7 +1015,7 @@
                 "name": "Carolina x Vitória via D Martins",
                 "from": "Carolina",
                 "to": "Vitória",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "note": "Trafego Mutuo com a Viação Alvorada Ltda\nPartidas invertidas Quinzenalmente",
                 "services": "Mo-Su",
                 "times": ["06:30", "14:30"]
@@ -1255,7 +1260,7 @@
                 "name": "Vitória x Conc do Castelo via D Martins",
                 "from": "Vitória",
                 "to": "Conceição do Castelo",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Su",
                 "times": ["09:50"]
             },
@@ -1263,7 +1268,7 @@
                 "name": "Vitória x Conc do Castelo via D Martins",
                 "from": "Vitória",
                 "to": "Conceição do Castelo",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Mo-Su",
                 "times": ["17:10"]
             },
@@ -1271,7 +1276,7 @@
                 "name": "Conc do Castelo x Vitória via D Martins",
                 "from": "Conceição do Castelo",
                 "to": "Vitória",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Mo-Sa",
                 "times": ["05:15"]
             },
@@ -1279,7 +1284,7 @@
                 "name": "Conc do Castelo x Vitória via D Martins",
                 "from": "Conceição do Castelo",
                 "to": "Vitória",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Su",
                 "times": ["11:00", "16:35"]
             }
@@ -1776,18 +1781,18 @@
         ],
         "134/0": [
             {
-                "name": "Vitória x Pontões via Domingo Martins",
+                "name": "Vitória x Pontões via Domingos Martins",
                 "from": "Vitória",
                 "to": "Pontões",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Mo",
                 "times": ["09:10"]
             },
             {
-                "name": "Pontões x Vitória via Domingo Martins",
+                "name": "Pontões x Vitória via Domingos Martins",
                 "from": "Pontões",
                 "to": "Vitória",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Mo",
                 "times": ["05:15"]
             }
@@ -1796,14 +1801,14 @@
             {
                 "name": "Vitória (D Bosco) x Dom Martins via BR-262",
                 "from": "Dom Bosco",
-                "to": "Domingo Martins",
+                "to": "Domingos Martins",
                 "via": "BR-262",
                 "services": "Th",
                 "times": ["12:45"]
             },
             {
                 "name": "Dom Martins x Vitória (D Bosco) via BR-262",
-                "from": "Domingo Martins",
+                "from": "Domingos Martins",
                 "to": "Dom Bosco",
                 "via": "BR-262",
                 "services": "Th",
@@ -1814,7 +1819,7 @@
             {
                 "name": "Vitória (D Bosco) x Dom Martins via BR-262",
                 "from": "Dom Bosco",
-                "to": "Domingo Martins",
+                "to": "Domingos Martins",
                 "via": "BR-262",
                 "services": "Mo-Sa",
                 "times": ["07:00"]
@@ -1822,7 +1827,7 @@
             {
                 "name": "Vitória (D Bosco) x Dom Martins via BR-262",
                 "from": "Dom Bosco",
-                "to": "Domingo Martins",
+                "to": "Domingos Martins",
                 "via": "BR-262",
                 "services": "Mo-Fr",
                 "times": ["18:00"]
@@ -1830,14 +1835,14 @@
             {
                 "name": "Vitória (D Bosco) x Dom Martins via BR-262",
                 "from": "Dom Bosco",
-                "to": "Domingo Martins",
+                "to": "Domingos Martins",
                 "via": "BR-262",
                 "services": "Mo-We,Fr-Su",
                 "times": ["12:45"]
             },
             {
                 "name": "Dom Martins x Vitória (D Bosco) via BR-262",
-                "from": "Domingo Martins",
+                "from": "Domingos Martins",
                 "to": "Dom Bosco",
                 "via": "BR-262",
                 "services": "Mo-Sa",
@@ -1845,7 +1850,7 @@
             },
             {
                 "name": "Dom Martins x Vitória (D Bosco) via BR-262",
-                "from": "Domingo Martins",
+                "from": "Domingos Martins",
                 "to": "Vitória",
                 "via": "BR-262",
                 "services": "Mo-We,Fr-Su",
@@ -2093,7 +2098,7 @@
                 "name": "Vitória x Mal Floriano via D Martins",
                 "from": "Vitória",
                 "to": "Marechal Floriano",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Mo-Tu,Th-Sa",
                 "times": ["08:00"]
             },
@@ -2101,7 +2106,7 @@
                 "name": "Vitória x Mal Floriano via D Martins",
                 "from": "Vitória",
                 "to": "Marechal Floriano",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Mo-Su",
                 "times": ["19:00"]
             },
@@ -2109,7 +2114,7 @@
                 "name": "Vitória x Mal Floriano via D Martins",
                 "from": "Vitória",
                 "to": "Marechal Floriano",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Su",
                 "times": ["16:05"]
             },
@@ -2117,7 +2122,7 @@
                 "name": "Vitória x Mal Floriano via D Martins",
                 "from": "Vitória",
                 "to": "Marechal Floriano",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Mo,Fr-Sa",
                 "times": ["11:35"]
             },
@@ -2125,7 +2130,7 @@
                 "name": "Mal Floriano x VItória via D Martins",
                 "from": "Marechal Floriano",
                 "to": "Vitória",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Mo-Su",
                 "times": ["06:00"]
             },
@@ -2133,7 +2138,7 @@
                 "name": "Mal Floriano x VItória via D Martins",
                 "from": "Marechal Floriano",
                 "to": "Vitória",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Mo",
                 "times": ["08:00"]
             },
@@ -2141,7 +2146,7 @@
                 "name": "Mal Floriano x VItória via D Martins",
                 "from": "Marechal Floriano",
                 "to": "Vitória",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Mo,Fr-Sa",
                 "times": ["11:40"]
             },
@@ -2149,7 +2154,7 @@
                 "name": "Mal Floriano x VItória via D Martins",
                 "from": "Marechal Floriano",
                 "to": "Vitória",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Su",
                 "times": ["18:50"]
             }
@@ -2561,7 +2566,7 @@
                 "name": "Vitória x V Nova do Imigrante via D Martins",
                 "from": "Vitória",
                 "to": "Venda Nova do Imigrante",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Mo-Sa",
                 "times": ["09:20"]
             },
@@ -2569,7 +2574,7 @@
                 "name": "V Nova do Imigrante x Vitória via D Martins",
                 "from": "Venda Nova do Imigrante",
                 "to": "Vitória",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Mo-Sa",
                 "times": ["13:50"]
             }
@@ -2905,7 +2910,7 @@
                 "name": "Vitória x Ponto Alto via Domingos Martins",
                 "from": "Vitória",
                 "to": "Ponto Alto",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Su",
                 "times": ["08:00"]
             },
@@ -2913,7 +2918,7 @@
                 "name": "Vitória x Ponto Alto via Domingos Martins",
                 "from": "Vitória",
                 "to": "Ponto Alto",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Mo-Th,Sa-Su",
                 "times": ["17:05"]
             },
@@ -2921,7 +2926,7 @@
                 "name": "Vitória x Ponto Alto via Domingos Martins",
                 "from": "Vitória",
                 "to": "Ponto Alto",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Fr",
                 "times": ["16:50"]
             },
@@ -2929,7 +2934,7 @@
                 "name": "Ponto Alto x Vitória via Domingos Martins",
                 "from": "Ponto Alto",
                 "to": "Vitória",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Mo-Sa",
                 "times": ["06:20"]
             },
@@ -2937,7 +2942,7 @@
                 "name": "Ponto Alto x Vitória via Domingos Martins",
                 "from": "Ponto Alto",
                 "to": "Vitória",
-                "via": "Domingo Martins",
+                "via": "Domingos Martins",
                 "services": "Su", 
                 "times": ["14:00", "18:00"]
             }

@@ -81,16 +81,6 @@ def getLines():
                 j = "0%d" % i
             else:
                 j = "%d" % i
-#            requestURL = "http://expressolorenzutti.com.br/assets/horarios/%s.pdf" % j
-#            #            print requestURL,
-#            r = False
-#            while r == False:
-#                try:
-#                    r = requests.get(requestURL,timeout=30)
-#                except:
-#                    r = False
-#            if r.status_code == 200:
-#                myList.append(j)
             myList.append(j)
             i = i+1
     print u"Routes found: ", myList

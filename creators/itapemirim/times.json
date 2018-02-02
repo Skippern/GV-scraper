@@ -1,10 +1,131 @@
 {
-    "excluded_lines": [
-        "351/0"
-    ], 
+    "excluded_lines": [], 
     "network": "Itapemirim", 
     "operator": "Via\u00e7\u00e3o Itapemirim S/A", 
-    "routes": {}, 
+    "routes": {
+        "179/0": [
+            {
+                "exceptions": [], 
+                "from": "Guarapari", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Guarapari", 
+                    "Marata\u00edzes"
+                ], 
+                "times": [
+                    [
+                        "07:25", 
+                        "09:45"
+                    ], 
+                    [
+                        "09:30", 
+                        "11:50"
+                    ], 
+                    [
+                        "11:25", 
+                        "13:45"
+                    ], 
+                    [
+                        "12:30", 
+                        "14:50"
+                    ], 
+                    [
+                        "14:20", 
+                        "16:40"
+                    ], 
+                    [
+                        "16:45", 
+                        "19:05"
+                    ], 
+                    [
+                        "18:10", 
+                        "20:30"
+                    ]
+                ], 
+                "to": "Marata\u00edzes"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Guarapari", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Guarapari", 
+                    "Marata\u00edzes"
+                ], 
+                "times": [
+                    [
+                        "05:40", 
+                        "08:00"
+                    ]
+                ], 
+                "to": "Marata\u00edzes"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Marata\u00edzes", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Marata\u00edzes", 
+                    "Guarapari"
+                ], 
+                "times": [
+                    [
+                        "05:00", 
+                        "07:20"
+                    ], 
+                    [
+                        "06:15", 
+                        "08:35"
+                    ], 
+                    [
+                        "08:30", 
+                        "10:50"
+                    ], 
+                    [
+                        "10:50", 
+                        "13:10"
+                    ], 
+                    [
+                        "13:05", 
+                        "15:25"
+                    ], 
+                    [
+                        "15:05", 
+                        "17:25"
+                    ], 
+                    [
+                        "17:15", 
+                        "19:35"
+                    ]
+                ], 
+                "to": "Guarapari"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Marata\u00edzes", 
+                "services": [
+                    "Mo-Su"
+                ], 
+                "stations": [
+                    "Marata\u00edzes", 
+                    "Guarapari"
+                ], 
+                "times": [
+                    [
+                        "18:40", 
+                        "21:00"
+                    ]
+                ], 
+                "to": "Guarapari"
+            }
+        ]
+    }, 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

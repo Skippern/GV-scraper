@@ -3,804 +3,6 @@
     "operator": "Via\u00e7\u00e3o \u00c1guia Branca", 
     "routes": [
         [
-            "143/0", 
-            "Dom Bosco", 
-            "Domingo Martins", 
-            "BR-262", 
-            -5
-        ], 
-        [
-            "143/0", 
-            "Domingo Martins", 
-            "Dom Bosco", 
-            "BR-262", 
-            -5
-        ], 
-        [
-            "053/0", 
-            "S\u00e3o Mateus", 
-            "Pinheiro", 
-            "Sayonara", 
-            -5
-        ], 
-        [
-            "053/0", 
-            "Pinheiro", 
-            "S\u00e3o Mateus", 
-            "Sayonara", 
-            -5
-        ], 
-        [
-            "265/0", 
-            "Vit\u00f3ria", 
-            "Ponto Belo", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "265/0", 
-            "Ponto Belo", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "216/0", 
-            "Vit\u00f3ria", 
-            "Ecoporanga", 
-            "Paulista", 
-            -5
-        ], 
-        [
-            "216/0", 
-            "Ecoporanga", 
-            "Vit\u00f3ria", 
-            "Paulista", 
-            -5
-        ], 
-        [
-            "216/0", 
-            "Vila Velha", 
-            "Ecoporanga", 
-            "Paulista", 
-            -5
-        ], 
-        [
-            "216/0", 
-            "Ecoporanga", 
-            "Vila Velha", 
-            "Paulista", 
-            -5
-        ], 
-        [
-            "099/2", 
-            "Vit\u00f3ria", 
-            "Baixo Guandu", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "099/2", 
-            "Baixo Guandu", 
-            "Vit\u00f3ria", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "099/0", 
-            "Vit\u00f3ria", 
-            "Baixo Guandu", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "099/0", 
-            "Baixo Guandu", 
-            "Vit\u00f3ria", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "054/0", 
-            "Vit\u00f3ria", 
-            "Carolina", 
-            "Domingo Martins", 
-            -5
-        ], 
-        [
-            "054/0", 
-            "Carolina", 
-            "Vit\u00f3ria", 
-            "Domingo Martins", 
-            -5
-        ], 
-        [
-            "166/0", 
-            "S\u00e3o Mateus", 
-            "Ponto Belo", 
-            "Sayonara", 
-            -5
-        ], 
-        [
-            "166/0", 
-            "Ponto Belo", 
-            "S\u00e3o Mateus", 
-            "Sayonara", 
-            -5
-        ], 
-        [
-            "225/2", 
-            "Vit\u00f3ria", 
-            "Jaguar\u00e9", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "028", 
-            "Vit\u00f3ria", 
-            "Pedro Can\u00e1rio", 
-            "BR-101", 
-            338
-        ], 
-        [
-            "028", 
-            "Pedro Can\u00e1rio", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            338
-        ], 
-        [
-            "102", 
-            "Vit\u00f3ria", 
-            "Guriri", 
-            "S\u00e3o Mateus", 
-            306
-        ], 
-        [
-            "102", 
-            "Guriri", 
-            "Vit\u00f3ria", 
-            "S\u00e3o Mateus", 
-            305
-        ], 
-        [
-            "173/0", 
-            "S\u00e3o Mateus", 
-            "Montanha", 
-            "Sayonara", 
-            -5
-        ], 
-        [
-            "173/0", 
-            "Montanha", 
-            "S\u00e3o Mateus", 
-            "Sayonara", 
-            -5
-        ], 
-        [
-            "013/0", 
-            "Vit\u00f3ria", 
-            "Concei\u00e7\u00e3o da Barra", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "013/0", 
-            "Concei\u00e7\u00e3o da Barra", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "013/0", 
-            "S\u00e3o Mateus", 
-            "Concei\u00e7\u00e3o da Barra", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "013/0", 
-            "Concei\u00e7\u00e3o da Barra", 
-            "S\u00e3o Mateus", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "013/2", 
-            "Vit\u00f3ria", 
-            "Concei\u00e7\u00e3o da Barra", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "013/2", 
-            "Concei\u00e7\u00e3o da Barra", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "265/2", 
-            "Vit\u00f3ria", 
-            "Ponto Belo", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "265/2", 
-            "Ponto Belo", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "144/0", 
-            "Vit\u00f3ria", 
-            "Pinheiro", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "144/0", 
-            "Pinheiro", 
-            "Vit\u00f3ria", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "227/0", 
-            "Vit\u00f3ria", 
-            "Boa Esperan\u00e7a", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "227/0", 
-            "Boa Esperan\u00e7a", 
-            "Vit\u00f3ria", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "187/0", 
-            "Vit\u00f3ria", 
-            "Pequi\u00e1", 
-            "Brejetuba", 
-            -5
-        ], 
-        [
-            "187/0", 
-            "Pequi\u00e1", 
-            "Vit\u00f3ria", 
-            "Brejetuba", 
-            -5
-        ], 
-        [
-            "187/0", 
-            "Vit\u00f3ria", 
-            "Brejetuba", 
-            null, 
-            -5
-        ], 
-        [
-            "187/0", 
-            "Brejetuba", 
-            "Vit\u00f3ria", 
-            null, 
-            -5
-        ], 
-        [
-            "314/0", 
-            "Vit\u00f3ria", 
-            "Irupi", 
-            "Iuna", 
-            -5
-        ], 
-        [
-            "314/0", 
-            "Irupi", 
-            "Vit\u00f3ria", 
-            "Iuna", 
-            -5
-        ], 
-        [
-            "252/0", 
-            "Colatina", 
-            "Pedro Can\u00e1rio", 
-            "Pinheiro", 
-            -5
-        ], 
-        [
-            "252/0", 
-            "Pedro Can\u00e1rio", 
-            "Colatina", 
-            "Pinheiro", 
-            -5
-        ], 
-        [
-            "195/0", 
-            "S\u00e3o Mateus", 
-            "Linhares", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "195/0", 
-            "Linhares", 
-            "S\u00e3o Mateus", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "261/0", 
-            "Vit\u00f3ria", 
-            "\u00c1guia Branca", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "261/0", 
-            "\u00c1guia Branca", 
-            "Vit\u00f3ria", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "260/0", 
-            "Vit\u00f3ria", 
-            "Linhares", 
-            "Coqueiral", 
-            -5
-        ], 
-        [
-            "260/0", 
-            "Linhares", 
-            "Vit\u00f3ria", 
-            "Coqueiral", 
-            -5
-        ], 
-        [
-            "092/0", 
-            "Vit\u00f3ria", 
-            "Afonso Cl\u00e1udio", 
-            "Fazenda Guandu", 
-            -5
-        ], 
-        [
-            "092/0", 
-            "Afonso Cl\u00e1udio", 
-            "Vit\u00f3ria", 
-            "Fazenda Guandu", 
-            -5
-        ], 
-        [
-            "026/2", 
-            "Vit\u00f3ria", 
-            "Barra de S\u00e3o Francisco", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "026/2", 
-            "Barra de S\u00e3o Francisco", 
-            "Vit\u00f3ria", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "186/0", 
-            "Venda Nova do Imigrante", 
-            "Afonso Cl\u00e1udio", 
-            "Indai\u00e1", 
-            -5
-        ], 
-        [
-            "186/0", 
-            "Afonso Cl\u00e1udio", 
-            "Venda Nova do Imigrante", 
-            "Indai\u00e1", 
-            -5
-        ], 
-        [
-            "315/0", 
-            "Jo\u00e3o Neiva", 
-            "Colatina", 
-            "Acioli", 
-            -5
-        ], 
-        [
-            "315/0", 
-            "Colatina", 
-            "Jo\u00e3o Neiva", 
-            "Acioli", 
-            -5
-        ], 
-        [
-            "026/0", 
-            "Vit\u00f3ria", 
-            "Barra de S\u00e3o Francisco", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "026/0", 
-            "Barra de S\u00e3o Francisco", 
-            "Vit\u00f3ria", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "271/0", 
-            "Vit\u00f3ria", 
-            "Ponto Alto", 
-            "Domingo Martins", 
-            -5
-        ], 
-        [
-            "271/0", 
-            "Ponto Alto", 
-            "Vit\u00f3ria", 
-            "Domingo Martins", 
-            -5
-        ], 
-        [
-            "263/0", 
-            "S\u00e3o Gabriel da Palha", 
-            "Guriri", 
-            "Nova Ven\u00e9cia", 
-            -5
-        ], 
-        [
-            "263/0", 
-            "Guriri", 
-            "S\u00e3o Gabriel da Palha", 
-            "Nova Ven\u00e9cia", 
-            -5
-        ], 
-        [
-            "085", 
-            "Vit\u00f3ria", 
-            "S\u00e3o Mateus", 
-            "BR-101", 
-            274
-        ], 
-        [
-            "085", 
-            "S\u00e3o Mateus", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            272
-        ], 
-        [
-            "008/2", 
-            "Vila Velha", 
-            "S\u00e3o Mateus", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "008/2", 
-            "S\u00e3o Mateus", 
-            "Vila Velha", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "008/2", 
-            "Vit\u00f3ria", 
-            "S\u00e3o Mateus", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "008/2", 
-            "S\u00e3o Mateus", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "092/2", 
-            "Vit\u00f3ria", 
-            "Afonso Cl\u00e1udio", 
-            "Fazenda Guandu", 
-            -5
-        ], 
-        [
-            "092/2", 
-            "Afonso Cl\u00e1udio", 
-            "Vit\u00f3ria", 
-            "Fazenda Guandu", 
-            -5
-        ], 
-        [
-            "007/0", 
-            "Colatina", 
-            "Nova Ven\u00e9cia", 
-            "S\u00e3o Gabriel da Palha", 
-            -5
-        ], 
-        [
-            "007/0", 
-            "Nova Ven\u00e9cia", 
-            "Colatina", 
-            "S\u00e3o Gabriel da Palha", 
-            -5
-        ], 
-        [
-            "225/0", 
-            "Vit\u00f3ria", 
-            "Jaguar\u00e9", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "225/0", 
-            "Vit\u00f3ria", 
-            "Nestor Gomes", 
-            null, 
-            -5
-        ], 
-        [
-            "225/0", 
-            "Jaguar\u00e9", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "225/0", 
-            "Nestor Gomes", 
-            "Vit\u00f3ria", 
-            null, 
-            -5
-        ], 
-        [
-            "009/0", 
-            "Vit\u00f3ria", 
-            "Colatina", 
-            "Jo\u00e3o Neiva", 
-            -5
-        ], 
-        [
-            "009/0", 
-            "Colatina", 
-            "Vit\u00f3ria", 
-            "Jo\u00e3o Neiva", 
-            -5
-        ], 
-        [
-            "009/2", 
-            "Vit\u00f3ria", 
-            "Colatina", 
-            "Jo\u00e3o Neiva", 
-            -5
-        ], 
-        [
-            "009/2", 
-            "Colatina", 
-            "Vit\u00f3ria", 
-            "Jo\u00e3o Neiva", 
-            -5
-        ], 
-        [
-            "038/0", 
-            "Colatina", 
-            "Montanha", 
-            "Nova Ven\u00e9cia", 
-            -5
-        ], 
-        [
-            "038/0", 
-            "Montanha", 
-            "Colatina", 
-            "Nova Ven\u00e9cia", 
-            -5
-        ], 
-        [
-            "273/0", 
-            "Colatina", 
-            "Pinheiro", 
-            "S\u00e3o Gabriel da Palha", 
-            -5
-        ], 
-        [
-            "273/0", 
-            "Pinheiro", 
-            "Colatina", 
-            "S\u00e3o Gabriel da Palha", 
-            -5
-        ], 
-        [
-            "114/0", 
-            "Colatina", 
-            "Ecoporanga", 
-            "Paulista", 
-            -5
-        ], 
-        [
-            "114/0", 
-            "Ecoporanga", 
-            "Colatina", 
-            "Paulista", 
-            -5
-        ], 
-        [
-            "198/0", 
-            "Vit\u00f3ria", 
-            "Iuna", 
-            "Ibatiba", 
-            -5
-        ], 
-        [
-            "198/0", 
-            "Iuna", 
-            "Vit\u00f3ria", 
-            "Ibatiba", 
-            -5
-        ], 
-        [
-            "181/0", 
-            "Vit\u00f3ria", 
-            "Santa Cruz", 
-            "Nova Almeida", 
-            -5
-        ], 
-        [
-            "181/0", 
-            "Santa Cruz", 
-            "Vit\u00f3ria", 
-            "Nova Almeida", 
-            -5
-        ], 
-        [
-            "181/1", 
-            "Vit\u00f3ria", 
-            "Santa Cruz", 
-            "Nova Almeida", 
-            -5
-        ], 
-        [
-            "181/1", 
-            "Santa Cruz", 
-            "Vit\u00f3ria", 
-            "Nova Almeida", 
-            -5
-        ], 
-        [
-            "014/0", 
-            "Colatina", 
-            "Linhares", 
-            "Jo\u00e3o Neiva", 
-            -5
-        ], 
-        [
-            "014/0", 
-            "Linhares", 
-            "Colatina", 
-            "Jo\u00e3o Neiva", 
-            -5
-        ], 
-        [
-            "143/6", 
-            "Dom Bosco", 
-            "Domingo Martins", 
-            "BR-262", 
-            -5
-        ], 
-        [
-            "143/6", 
-            "Domingo Martins", 
-            "Dom Bosco", 
-            "BR-262", 
-            -5
-        ], 
-        [
-            "143/6", 
-            "Domingo Martins", 
-            "Vit\u00f3ria", 
-            "BR-262", 
-            -5
-        ], 
-        [
-            "196/0", 
-            "Barra de S\u00e3o Francisco", 
-            "S\u00e3o Mateus", 
-            "Nova Ven\u00e9cia", 
-            -5
-        ], 
-        [
-            "196/0", 
-            "S\u00e3o Mateus", 
-            "Barra de S\u00e3o Francisco", 
-            "Nova Ven\u00e9cia", 
-            -5
-        ], 
-        [
-            "181/6", 
-            "Vit\u00f3ria", 
-            "Santa Cruz", 
-            "Nova Almeida", 
-            -5
-        ], 
-        [
-            "181/6", 
-            "Santa Cruz", 
-            "Vit\u00f3ria", 
-            "Nova Almeida", 
-            -5
-        ], 
-        [
-            "181/6", 
-            "Carapina", 
-            "Santa Cruz", 
-            null, 
-            -5
-        ], 
-        [
-            "181/6", 
-            "Santa Cruz", 
-            "Carapina", 
-            null, 
-            -5
-        ], 
-        [
-            "019/0", 
-            "Vit\u00f3ria", 
-            "Jo\u00e3o Neiva", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "019/0", 
-            "Jo\u00e3o Neiva", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "183/0", 
-            "Linhares", 
-            "Pedro Can\u00e1rio", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "183/0", 
-            "Pedro Can\u00e1rio", 
-            "Linhares", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "184/0", 
-            "Vit\u00f3ria", 
-            "Marechal Floriano", 
-            "Domingo Martins", 
-            -5
-        ], 
-        [
-            "184/0", 
-            "Marechal Floriano", 
-            "Vit\u00f3ria", 
-            "Domingo Martins", 
-            -5
-        ], 
-        [
-            "197/0", 
-            "Linhares", 
-            "Aracruz", 
-            "Guaran\u00e1", 
-            85
-        ], 
-        [
-            "197/0", 
-            "Aracruz", 
-            "Linhares", 
-            "Guaran\u00e1", 
-            86
-        ], 
-        [
             "006/0", 
             "Colatina", 
             "S\u00e3o Mateus", 
@@ -815,172 +17,410 @@
             -5
         ], 
         [
-            "051/0", 
-            "Jo\u00e3o Neiva", 
-            "Linhares", 
-            "BR-101", 
+            "007/0", 
+            "Colatina", 
+            "Nova Ven\u00e9cia", 
+            "S\u00e3o Gabriel da Palha", 
             -5
         ], 
         [
-            "051/0", 
-            "Linhares", 
-            "Jo\u00e3o Neiva", 
-            "BR-101", 
+            "007/0", 
+            "Nova Ven\u00e9cia", 
+            "Colatina", 
+            "S\u00e3o Gabriel da Palha", 
             -5
         ], 
         [
-            "051/0", 
-            "Jacupemba", 
-            "Linhares", 
-            null, 
-            -5
-        ], 
-        [
-            "051/0", 
-            "Linhares", 
-            "Jacupemba", 
-            null, 
-            -5
-        ], 
-        [
-            "244/0", 
-            "Venda Nova do Imigrante", 
-            "Afonso Cl\u00e1udio", 
-            null, 
-            -5
-        ], 
-        [
-            "244/0", 
-            "Afonso Cl\u00e1udio", 
-            "Venda Nova do Imigrante", 
-            null, 
-            -5
-        ], 
-        [
-            "267/0", 
+            "008/2", 
+            "S\u00e3o Mateus", 
             "Vila Velha", 
-            "Colatina", 
-            "Jo\u00e3o Neiva", 
-            251
+            "BR-101", 
+            -5
         ], 
         [
-            "267/0", 
-            "Colatina", 
+            "008/2", 
             "Vila Velha", 
-            "Jo\u00e3o Neiva", 
-            254
-        ], 
-        [
-            "258/0", 
-            "Vit\u00f3ria", 
-            "Vila do Riacho", 
-            "Coqueiral", 
-            -5
-        ], 
-        [
-            "258/0", 
-            "Vila do Riacho", 
-            "Vit\u00f3ria", 
-            "Coqueiral", 
-            -5
-        ], 
-        [
-            "259/0", 
-            "Vit\u00f3ria", 
-            "Coqueiral", 
-            "Santa Cruz", 
-            -5
-        ], 
-        [
-            "259/0", 
-            "Coqueiral", 
-            "Vit\u00f3ria", 
-            "Santa Cruz", 
-            -5
-        ], 
-        [
-            "259/0", 
-            "Carapina", 
-            "Coqueiral", 
-            null, 
-            -5
-        ], 
-        [
-            "259/0", 
-            "Coqueiral", 
-            "Carapina", 
-            null, 
-            -5
-        ], 
-        [
-            "041/0", 
-            "Vit\u00f3ria", 
-            "Montanha", 
+            "S\u00e3o Mateus", 
             "BR-101", 
             -5
         ], 
         [
-            "041/0", 
-            "Montanha", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "061/0", 
-            "Vit\u00f3ria", 
-            "Muniz Freire", 
-            "Pia\u00e7\u00fa", 
-            -5
-        ], 
-        [
-            "061/0", 
-            "Muniz Freire", 
-            "Vit\u00f3ria", 
-            "Pia\u00e7\u00fa", 
-            -5
-        ], 
-        [
-            "322/0", 
-            "Vit\u00f3ria", 
-            "Laranja da Terra", 
-            null, 
-            -5
-        ], 
-        [
-            "322/0", 
-            "Laranja da Terra", 
-            "Vit\u00f3ria", 
-            null, 
-            -5
-        ], 
-        [
-            "172/0", 
+            "009/0", 
             "Colatina", 
+            "Vit\u00f3ria", 
+            "Jo\u00e3o Neiva", 
+            226
+        ], 
+        [
+            "009/0", 
+            "Vit\u00f3ria", 
+            "Colatina", 
+            "Jo\u00e3o Neiva", 
+            225
+        ], 
+        [
+            "009/2", 
+            "Colatina", 
+            "Vit\u00f3ria", 
+            "Jo\u00e3o Neiva", 
+            -5
+        ], 
+        [
+            "009/2", 
+            "Vit\u00f3ria", 
+            "Colatina", 
+            "Jo\u00e3o Neiva", 
+            -5
+        ], 
+        [
+            "013/0", 
             "Concei\u00e7\u00e3o da Barra", 
+            "S\u00e3o Mateus", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "013/0", 
+            "Concei\u00e7\u00e3o da Barra", 
+            "Vit\u00f3ria", 
+            "BR-101", 
+            334
+        ], 
+        [
+            "013/0", 
+            "S\u00e3o Mateus", 
+            "Concei\u00e7\u00e3o da Barra", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "013/0", 
+            "Vit\u00f3ria", 
+            "Concei\u00e7\u00e3o da Barra", 
+            "BR-101", 
+            334
+        ], 
+        [
+            "013/2", 
+            "Concei\u00e7\u00e3o da Barra", 
+            "Vit\u00f3ria", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "013/2", 
+            "Vit\u00f3ria", 
+            "Concei\u00e7\u00e3o da Barra", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "014/0", 
+            "Colatina", 
+            "Linhares", 
             "Jo\u00e3o Neiva", 
             -5
         ], 
         [
-            "028/0", 
-            "Boa Esperan\u00e7a", 
-            "Nova Ven\u00e9cia", 
-            null, 
+            "014/0", 
+            "Linhares", 
+            "Colatina", 
+            "Jo\u00e3o Neiva", 
             -5
         ], 
         [
-            "028/0", 
-            "Nova Ven\u00e9cia", 
-            "Boa Esperan\u00e7a", 
-            null, 
-            -5
-        ], 
-        [
-            "078/0", 
+            "019/0", 
+            "Jo\u00e3o Neiva", 
             "Vit\u00f3ria", 
-            "Ibira\u00e7u", 
             "BR-101", 
-            104
+            115
+        ], 
+        [
+            "019/0", 
+            "Vit\u00f3ria", 
+            "Jo\u00e3o Neiva", 
+            "BR-101", 
+            114
+        ], 
+        [
+            "020/0", 
+            "Nova Ven\u00e9cia", 
+            "S\u00e3o Mateus", 
+            "KM47", 
+            -5
+        ], 
+        [
+            "020/0", 
+            "S\u00e3o Mateus", 
+            "Nova Ven\u00e9cia", 
+            "KM47", 
+            -5
+        ], 
+        [
+            "025/0", 
+            "Barra de S\u00e3o Francisco", 
+            "Colatina", 
+            "S\u00e3o Domingos", 
+            -5
+        ], 
+        [
+            "025/0", 
+            "Colatina", 
+            "Barra de S\u00e3o Francisco", 
+            "S\u00e3o Domingos", 
+            -5
+        ], 
+        [
+            "026/0", 
+            "Barra de S\u00e3o Francisco", 
+            "Vit\u00f3ria", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "026/0", 
+            "Vit\u00f3ria", 
+            "Barra de S\u00e3o Francisco", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "026/2", 
+            "Barra de S\u00e3o Francisco", 
+            "Vit\u00f3ria", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "026/2", 
+            "Vit\u00f3ria", 
+            "Barra de S\u00e3o Francisco", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "028", 
+            "Pedro Can\u00e1rio", 
+            "Vit\u00f3ria", 
+            "BR-101", 
+            340
+        ], 
+        [
+            "028", 
+            "Vit\u00f3ria", 
+            "Pedro Can\u00e1rio", 
+            "BR-101", 
+            339
+        ], 
+        [
+            "028/0", 
+            "Boa Esperan\u00e7a", 
+            "Nova Ven\u00e9cia", 
+            null, 
+            -5
+        ], 
+        [
+            "028/0", 
+            "Nova Ven\u00e9cia", 
+            "Boa Esperan\u00e7a", 
+            null, 
+            -5
+        ], 
+        [
+            "036/1", 
+            "Fund\u00e3o", 
+            "Vit\u00f3ria", 
+            "BR-101", 
+            82
+        ], 
+        [
+            "036/1", 
+            "Vit\u00f3ria", 
+            "Fund\u00e3o", 
+            "BR-101", 
+            82
+        ], 
+        [
+            "036/6", 
+            "Fund\u00e3o", 
+            "Vit\u00f3ria", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "036/6", 
+            "Vit\u00f3ria", 
+            "Fund\u00e3o", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "038/0", 
+            "Colatina", 
+            "Montanha", 
+            "Nova Ven\u00e9cia", 
+            -5
+        ], 
+        [
+            "038/0", 
+            "Montanha", 
+            "Colatina", 
+            "Nova Ven\u00e9cia", 
+            -5
+        ], 
+        [
+            "041/0", 
+            "Montanha", 
+            "Vit\u00f3ria", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "041/0", 
+            "Vit\u00f3ria", 
+            "Montanha", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "042/0", 
+            "Ponto Belo", 
+            "Vit\u00f3ria", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "042/0", 
+            "Vit\u00f3ria", 
+            "Ponto Belo", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "042/2", 
+            "Ponto Belo", 
+            "Vit\u00f3ria", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "042/2", 
+            "Vit\u00f3ria", 
+            "Ponto Belo", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "051/0", 
+            "Jacupemba", 
+            "Linhares", 
+            null, 
+            -5
+        ], 
+        [
+            "051/0", 
+            "Jo\u00e3o Neiva", 
+            "Linhares", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "051/0", 
+            "Linhares", 
+            "Jacupemba", 
+            null, 
+            -5
+        ], 
+        [
+            "051/0", 
+            "Linhares", 
+            "Jo\u00e3o Neiva", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "053/0", 
+            "Pinheiro", 
+            "S\u00e3o Mateus", 
+            "Sayonara", 
+            -5
+        ], 
+        [
+            "053/0", 
+            "S\u00e3o Mateus", 
+            "Pinheiro", 
+            "Sayonara", 
+            -5
+        ], 
+        [
+            "054/0", 
+            "Carolina", 
+            "Vit\u00f3ria", 
+            "Domingos Martins", 
+            -5
+        ], 
+        [
+            "054/0", 
+            "Vit\u00f3ria", 
+            "Carolina", 
+            "Domingos Martins", 
+            -5
+        ], 
+        [
+            "061/0", 
+            "Muniz Freire", 
+            "Vit\u00f3ria", 
+            "Pia\u00e7\u00fa", 
+            -5
+        ], 
+        [
+            "061/0", 
+            "Vit\u00f3ria", 
+            "Muniz Freire", 
+            "Pia\u00e7\u00fa", 
+            -5
+        ], 
+        [
+            "068/0", 
+            "Linhares", 
+            "Vit\u00f3ria", 
+            "BR-101", 
+            176
+        ], 
+        [
+            "068/0", 
+            "Vit\u00f3ria", 
+            "Linhares", 
+            "BR-101", 
+            176
+        ], 
+        [
+            "068/2", 
+            "Linhares", 
+            "Vit\u00f3ria", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "068/2", 
+            "Vit\u00f3ria", 
+            "Linhares", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "072/0", 
+            "Nova Ven\u00e9cia", 
+            "Pinheiro", 
+            "Boa Esperan\u00e7a", 
+            -5
+        ], 
+        [
+            "072/0", 
+            "Pinheiro", 
+            "Nova Ven\u00e9cia", 
+            "Boa Esperan\u00e7a", 
+            -5
         ], 
         [
             "078/0", 
@@ -990,67 +430,200 @@
             105
         ], 
         [
-            "020/0", 
-            "Nova Ven\u00e9cia", 
-            "S\u00e3o Mateus", 
-            "KM47", 
-            -5
-        ], 
-        [
-            "020/0", 
-            "S\u00e3o Mateus", 
-            "Nova Ven\u00e9cia", 
-            "KM47", 
-            -5
-        ], 
-        [
-            "042/0", 
+            "078/0", 
             "Vit\u00f3ria", 
-            "Ponto Belo", 
+            "Ibira\u00e7u", 
+            "BR-101", 
+            104
+        ], 
+        [
+            "083/0", 
+            "Boa Esperan\u00e7a", 
+            "S\u00e3o Jo\u00e3o do Sobrado", 
+            null, 
+            -5
+        ], 
+        [
+            "083/0", 
+            "S\u00e3o Jo\u00e3o do Sobrado", 
+            "Boa Esperan\u00e7a", 
+            null, 
+            -5
+        ], 
+        [
+            "085", 
+            "S\u00e3o Mateus", 
+            "Vit\u00f3ria", 
+            "BR-101", 
+            272
+        ], 
+        [
+            "085", 
+            "Vit\u00f3ria", 
+            "S\u00e3o Mateus", 
+            "BR-101", 
+            274
+        ], 
+        [
+            "090/0", 
+            "Concei\u00e7\u00e3o do Castelo", 
+            "Vit\u00f3ria", 
+            "Domingos Martins", 
+            -5
+        ], 
+        [
+            "090/0", 
+            "Vit\u00f3ria", 
+            "Concei\u00e7\u00e3o do Castelo", 
+            "Domingos Martins", 
+            -5
+        ], 
+        [
+            "092/0", 
+            "Afonso Cl\u00e1udio", 
+            "Vit\u00f3ria", 
+            "Fazenda Guandu", 
+            -5
+        ], 
+        [
+            "092/0", 
+            "Vit\u00f3ria", 
+            "Afonso Cl\u00e1udio", 
+            "Fazenda Guandu", 
+            -5
+        ], 
+        [
+            "092/2", 
+            "Afonso Cl\u00e1udio", 
+            "Vit\u00f3ria", 
+            "Fazenda Guandu", 
+            -5
+        ], 
+        [
+            "092/2", 
+            "Vit\u00f3ria", 
+            "Afonso Cl\u00e1udio", 
+            "Fazenda Guandu", 
+            -5
+        ], 
+        [
+            "094/0", 
+            "Montanha", 
+            "Pedro Can\u00e1rio", 
+            "2 de Julho", 
+            -5
+        ], 
+        [
+            "094/0", 
+            "Pedro Can\u00e1rio", 
+            "Montanha", 
+            "2 de Julho", 
+            -5
+        ], 
+        [
+            "096/0", 
+            "Manten\u00f3polis", 
+            "Vit\u00f3ria", 
             "Colatina", 
             -5
         ], 
         [
-            "042/0", 
-            "Ponto Belo", 
+            "096/0", 
+            "Vit\u00f3ria", 
+            "Manten\u00f3polis", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "099/0", 
+            "Baixo Guandu", 
             "Vit\u00f3ria", 
             "Colatina", 
             -5
         ], 
         [
-            "293/0", 
+            "099/0", 
             "Vit\u00f3ria", 
-            "Ibatiba", 
-            "Venda Nova do Imigrante", 
+            "Baixo Guandu", 
+            "Colatina", 
             -5
         ], 
         [
-            "293/0", 
-            "Ibatiba", 
+            "099/2", 
+            "Baixo Guandu", 
             "Vit\u00f3ria", 
-            "Venda Nova do Imigrante", 
+            "Colatina", 
             -5
         ], 
         [
-            "103/2", 
+            "099/2", 
             "Vit\u00f3ria", 
-            "Aracruz", 
-            "Fund\u00e3o", 
+            "Baixo Guandu", 
+            "Colatina", 
             -5
         ], 
         [
-            "103/2", 
-            "Aracruz", 
+            "100/0", 
+            "Boa Vista", 
+            "Colatina", 
+            "Baixo Guandu", 
+            -5
+        ], 
+        [
+            "100/0", 
+            "Colatina", 
+            "Boa Vista", 
+            "Baixo Guandu", 
+            -5
+        ], 
+        [
+            "102", 
+            "Guriri", 
             "Vit\u00f3ria", 
-            "Fund\u00e3o", 
+            "S\u00e3o Mateus", 
+            307
+        ], 
+        [
+            "102", 
+            "Vit\u00f3ria", 
+            "Guriri", 
+            "S\u00e3o Mateus", 
+            308
+        ], 
+        [
+            "102/0", 
+            "Nova Ven\u00e9cia", 
+            "Vit\u00f3ria", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "102/0", 
+            "Vit\u00f3ria", 
+            "Nova Ven\u00e9cia", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "102/2", 
+            "Nova Ven\u00e9cia", 
+            "Vit\u00f3ria", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "102/2", 
+            "Vit\u00f3ria", 
+            "Nova Ven\u00e9cia", 
+            "Colatina", 
             -5
         ], 
         [
             "103/0", 
-            "Vit\u00f3ria", 
             "Aracruz", 
-            "Fund\u00e3o", 
-            132
+            "Vila Velha", 
+            null, 
+            -5
         ], 
         [
             "103/0", 
@@ -1068,128 +641,478 @@
         ], 
         [
             "103/0", 
+            "Vit\u00f3ria", 
             "Aracruz", 
+            "Fund\u00e3o", 
+            132
+        ], 
+        [
+            "103/2", 
+            "Aracruz", 
+            "Vit\u00f3ria", 
+            "Fund\u00e3o", 
+            -5
+        ], 
+        [
+            "103/2", 
+            "Vit\u00f3ria", 
+            "Aracruz", 
+            "Fund\u00e3o", 
+            -5
+        ], 
+        [
+            "104/0", 
+            "S\u00e3o Gabriel da Palha", 
+            "Vit\u00f3ria", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "104/0", 
+            "Vit\u00f3ria", 
+            "S\u00e3o Gabriel da Palha", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "114/0", 
+            "Colatina", 
+            "Ecoporanga", 
+            "Paulista", 
+            -5
+        ], 
+        [
+            "114/0", 
+            "Ecoporanga", 
+            "Colatina", 
+            "Paulista", 
+            -5
+        ], 
+        [
+            "134/0", 
+            "Pont\u00f5es", 
+            "Vit\u00f3ria", 
+            "Domingos Martins", 
+            -5
+        ], 
+        [
+            "134/0", 
+            "Vit\u00f3ria", 
+            "Pont\u00f5es", 
+            "Domingos Martins", 
+            -5
+        ], 
+        [
+            "143/0", 
+            "Dom Bosco", 
+            "Domingos Martins", 
+            "BR-262", 
+            93
+        ], 
+        [
+            "143/0", 
+            "Domingos Martins", 
+            "Dom Bosco", 
+            "BR-262", 
+            90
+        ], 
+        [
+            "143/6", 
+            "Dom Bosco", 
+            "Domingos Martins", 
+            "BR-262", 
+            -5
+        ], 
+        [
+            "143/6", 
+            "Domingos Martins", 
+            "Dom Bosco", 
+            "BR-262", 
+            -5
+        ], 
+        [
+            "143/6", 
+            "Domingos Martins", 
+            "Vit\u00f3ria", 
+            "BR-262", 
+            -5
+        ], 
+        [
+            "144/0", 
+            "Pinheiro", 
+            "Vit\u00f3ria", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "144/0", 
+            "Vit\u00f3ria", 
+            "Pinheiro", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "152/0", 
+            "Pedro Can\u00e1rio", 
+            "S\u00e3o Mateus", 
+            "BR-101", 
+            61
+        ], 
+        [
+            "152/0", 
+            "S\u00e3o Mateus", 
+            "Pedro Can\u00e1rio", 
+            "BR-101", 
+            60
+        ], 
+        [
+            "166/0", 
+            "Ponto Belo", 
+            "S\u00e3o Mateus", 
+            "Sayonara", 
+            -5
+        ], 
+        [
+            "166/0", 
+            "S\u00e3o Mateus", 
+            "Ponto Belo", 
+            "Sayonara", 
+            -5
+        ], 
+        [
+            "170/0", 
+            "Colatina", 
+            "Vit\u00f3ria", 
+            "F\u00e1brica Aracruz Celulose", 
+            -5
+        ], 
+        [
+            "170/0", 
+            "Vit\u00f3ria", 
+            "Colatina", 
+            "F\u00e1brica Aracruz Celulose", 
+            -5
+        ], 
+        [
+            "172/0", 
+            "Colatina", 
+            "Concei\u00e7\u00e3o da Barra", 
+            "Jo\u00e3o Neiva", 
+            -5
+        ], 
+        [
+            "173/0", 
+            "Montanha", 
+            "S\u00e3o Mateus", 
+            "Sayonara", 
+            -5
+        ], 
+        [
+            "173/0", 
+            "S\u00e3o Mateus", 
+            "Montanha", 
+            "Sayonara", 
+            -5
+        ], 
+        [
+            "181/0", 
+            "Santa Cruz", 
+            "Vit\u00f3ria", 
+            "Nova Almeida", 
+            -5
+        ], 
+        [
+            "181/0", 
+            "Vit\u00f3ria", 
+            "Santa Cruz", 
+            "Nova Almeida", 
+            -5
+        ], 
+        [
+            "181/1", 
+            "Santa Cruz", 
+            "Vit\u00f3ria", 
+            "Nova Almeida", 
+            -5
+        ], 
+        [
+            "181/1", 
+            "Vit\u00f3ria", 
+            "Santa Cruz", 
+            "Nova Almeida", 
+            -5
+        ], 
+        [
+            "181/6", 
+            "Carapina", 
+            "Santa Cruz", 
+            null, 
+            -5
+        ], 
+        [
+            "181/6", 
+            "Santa Cruz", 
+            "Carapina", 
+            null, 
+            -5
+        ], 
+        [
+            "181/6", 
+            "Santa Cruz", 
+            "Vit\u00f3ria", 
+            "Nova Almeida", 
+            -5
+        ], 
+        [
+            "181/6", 
+            "Vit\u00f3ria", 
+            "Santa Cruz", 
+            "Nova Almeida", 
+            -5
+        ], 
+        [
+            "183/0", 
+            "Linhares", 
+            "Pedro Can\u00e1rio", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "183/0", 
+            "Pedro Can\u00e1rio", 
+            "Linhares", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "184/0", 
+            "Marechal Floriano", 
+            "Vit\u00f3ria", 
+            "Domingos Martins", 
+            -5
+        ], 
+        [
+            "184/0", 
+            "Vit\u00f3ria", 
+            "Marechal Floriano", 
+            "Domingos Martins", 
+            -5
+        ], 
+        [
+            "186/0", 
+            "Afonso Cl\u00e1udio", 
+            "Venda Nova do Imigrante", 
+            "Indai\u00e1", 
+            -5
+        ], 
+        [
+            "186/0", 
+            "Venda Nova do Imigrante", 
+            "Afonso Cl\u00e1udio", 
+            "Indai\u00e1", 
+            -5
+        ], 
+        [
+            "187/0", 
+            "Brejetuba", 
+            "Vit\u00f3ria", 
+            null, 
+            -5
+        ], 
+        [
+            "187/0", 
+            "Pequi\u00e1", 
+            "Vit\u00f3ria", 
+            "Brejetuba", 
+            -5
+        ], 
+        [
+            "187/0", 
+            "Vit\u00f3ria", 
+            "Brejetuba", 
+            null, 
+            -5
+        ], 
+        [
+            "187/0", 
+            "Vit\u00f3ria", 
+            "Pequi\u00e1", 
+            "Brejetuba", 
+            -5
+        ], 
+        [
+            "195/0", 
+            "Linhares", 
+            "S\u00e3o Mateus", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "195/0", 
+            "S\u00e3o Mateus", 
+            "Linhares", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "196/0", 
+            "Barra de S\u00e3o Francisco", 
+            "S\u00e3o Mateus", 
+            "Nova Ven\u00e9cia", 
+            -5
+        ], 
+        [
+            "196/0", 
+            "S\u00e3o Mateus", 
+            "Barra de S\u00e3o Francisco", 
+            "Nova Ven\u00e9cia", 
+            -5
+        ], 
+        [
+            "197/0", 
+            "Aracruz", 
+            "Linhares", 
+            "Guaran\u00e1", 
+            86
+        ], 
+        [
+            "197/0", 
+            "Linhares", 
+            "Aracruz", 
+            "Guaran\u00e1", 
+            85
+        ], 
+        [
+            "198/0", 
+            "Iuna", 
+            "Vit\u00f3ria", 
+            "Ibatiba", 
+            -5
+        ], 
+        [
+            "198/0", 
+            "Vit\u00f3ria", 
+            "Iuna", 
+            "Ibatiba", 
+            -5
+        ], 
+        [
+            "216/0", 
+            "Ecoporanga", 
             "Vila Velha", 
+            "Paulista", 
+            -5
+        ], 
+        [
+            "216/0", 
+            "Ecoporanga", 
+            "Vit\u00f3ria", 
+            "Paulista", 
+            -5
+        ], 
+        [
+            "216/0", 
+            "Vila Velha", 
+            "Ecoporanga", 
+            "Paulista", 
+            -5
+        ], 
+        [
+            "216/0", 
+            "Vit\u00f3ria", 
+            "Ecoporanga", 
+            "Paulista", 
+            -5
+        ], 
+        [
+            "225/0", 
+            "Jaguar\u00e9", 
+            "Vit\u00f3ria", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "225/0", 
+            "Nestor Gomes", 
+            "Vit\u00f3ria", 
             null, 
             -5
         ], 
         [
-            "100/0", 
-            "Colatina", 
-            "Boa Vista", 
-            "Baixo Guandu", 
+            "225/0", 
+            "Vit\u00f3ria", 
+            "Jaguar\u00e9", 
+            "BR-101", 
             -5
         ], 
         [
-            "100/0", 
-            "Boa Vista", 
-            "Colatina", 
-            "Baixo Guandu", 
+            "225/0", 
+            "Vit\u00f3ria", 
+            "Nestor Gomes", 
+            null, 
             -5
         ], 
         [
-            "083/0", 
+            "225/2", 
+            "Vit\u00f3ria", 
+            "Jaguar\u00e9", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "227/0", 
             "Boa Esperan\u00e7a", 
-            "S\u00e3o Jo\u00e3o do Sobrado", 
-            null, 
+            "Vit\u00f3ria", 
+            "Colatina", 
             -5
         ], 
         [
-            "083/0", 
-            "S\u00e3o Jo\u00e3o do Sobrado", 
+            "227/0", 
+            "Vit\u00f3ria", 
             "Boa Esperan\u00e7a", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "244/0", 
+            "Afonso Cl\u00e1udio", 
+            "Venda Nova do Imigrante", 
             null, 
             -5
         ], 
         [
-            "036/1", 
-            "Vit\u00f3ria", 
-            "Fund\u00e3o", 
-            "BR-101", 
-            82
-        ], 
-        [
-            "036/1", 
-            "Fund\u00e3o", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            82
-        ], 
-        [
-            "068/2", 
-            "Vit\u00f3ria", 
-            "Linhares", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "068/2", 
-            "Linhares", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "036/6", 
-            "Vit\u00f3ria", 
-            "Fund\u00e3o", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "036/6", 
-            "Fund\u00e3o", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "068/0", 
-            "Vit\u00f3ria", 
-            "Linhares", 
-            "BR-101", 
-            176
-        ], 
-        [
-            "068/0", 
-            "Linhares", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            176
-        ], 
-        [
-            "294/0", 
-            "Linhares", 
-            "Aracruz", 
-            "C\u00f3rrego do \u00cdndio", 
-            -5
-        ], 
-        [
-            "294/0", 
-            "Aracruz", 
-            "Linhares", 
-            "C\u00f3rrego do \u00cdndio", 
-            -5
-        ], 
-        [
-            "025/0", 
-            "Colatina", 
-            "Barra de S\u00e3o Francisco", 
-            "S\u00e3o Domingos", 
-            -5
-        ], 
-        [
-            "025/0", 
-            "Barra de S\u00e3o Francisco", 
-            "Colatina", 
-            "S\u00e3o Domingos", 
-            -5
-        ], 
-        [
-            "251/0", 
-            "Baixo Guandu", 
-            "Aracruz Celulose", 
+            "244/0", 
+            "Venda Nova do Imigrante", 
+            "Afonso Cl\u00e1udio", 
             null, 
+            -5
+        ], 
+        [
+            "248/0", 
+            "Venda Nova do Imigrante", 
+            "Vit\u00f3ria", 
+            "Domingos Martins", 
+            -5
+        ], 
+        [
+            "248/0", 
+            "Vit\u00f3ria", 
+            "Venda Nova do Imigrante", 
+            "Domingos Martins", 
+            -5
+        ], 
+        [
+            "250/0", 
+            "Maril\u00e2ndia", 
+            "Vit\u00f3ria", 
+            "Colatina", 
+            -5
+        ], 
+        [
+            "250/0", 
+            "Vit\u00f3ria", 
+            "Maril\u00e2ndia", 
+            "Colatina", 
             -5
         ], 
         [
@@ -1200,59 +1123,24 @@
             -5
         ], 
         [
-            "272/0", 
+            "251/0", 
+            "Baixo Guandu", 
+            "Aracruz Celulose", 
+            null, 
+            -5
+        ], 
+        [
+            "252/0", 
             "Colatina", 
-            "Nova Almeida", 
-            "F\u00e1brica Aracruz Celulose", 
+            "Pedro Can\u00e1rio", 
+            "Pinheiro", 
             -5
         ], 
         [
-            "272/0", 
-            "Nova Almeida", 
+            "252/0", 
+            "Pedro Can\u00e1rio", 
             "Colatina", 
-            "F\u00e1brica Aracruz Celulose", 
-            -5
-        ], 
-        [
-            "134/0", 
-            "Vit\u00f3ria", 
-            "Pont\u00f5es", 
-            "Domingo Martins", 
-            -5
-        ], 
-        [
-            "134/0", 
-            "Pont\u00f5es", 
-            "Vit\u00f3ria", 
-            "Domingo Martins", 
-            -5
-        ], 
-        [
-            "102/2", 
-            "Nova Ven\u00e9cia", 
-            "Vit\u00f3ria", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "102/2", 
-            "Vit\u00f3ria", 
-            "Nova Ven\u00e9cia", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "102/0", 
-            "Vit\u00f3ria", 
-            "Nova Ven\u00e9cia", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "102/0", 
-            "Nova Ven\u00e9cia", 
-            "Vit\u00f3ria", 
-            "Colatina", 
+            "Pinheiro", 
             -5
         ], 
         [
@@ -1270,45 +1158,241 @@
             -5
         ], 
         [
-            "250/0", 
+            "258/0", 
+            "Vila do Riacho", 
             "Vit\u00f3ria", 
-            "Maril\u00e2ndia", 
+            "Coqueiral", 
+            -5
+        ], 
+        [
+            "258/0", 
+            "Vit\u00f3ria", 
+            "Vila do Riacho", 
+            "Coqueiral", 
+            -5
+        ], 
+        [
+            "259/0", 
+            "Carapina", 
+            "Coqueiral", 
+            null, 
+            -5
+        ], 
+        [
+            "259/0", 
+            "Coqueiral", 
+            "Carapina", 
+            null, 
+            -5
+        ], 
+        [
+            "259/0", 
+            "Coqueiral", 
+            "Vit\u00f3ria", 
+            "Santa Cruz", 
+            -5
+        ], 
+        [
+            "259/0", 
+            "Vit\u00f3ria", 
+            "Coqueiral", 
+            "Santa Cruz", 
+            -5
+        ], 
+        [
+            "260/0", 
+            "Linhares", 
+            "Vit\u00f3ria", 
+            "Coqueiral", 
+            -5
+        ], 
+        [
+            "260/0", 
+            "Vit\u00f3ria", 
+            "Linhares", 
+            "Coqueiral", 
+            -5
+        ], 
+        [
+            "261/0", 
+            "Vit\u00f3ria", 
+            "\u00c1guia Branca", 
             "Colatina", 
             -5
         ], 
         [
-            "250/0", 
-            "Maril\u00e2ndia", 
+            "261/0", 
+            "\u00c1guia Branca", 
             "Vit\u00f3ria", 
             "Colatina", 
             -5
         ], 
         [
-            "072/0", 
-            "Nova Ven\u00e9cia", 
-            "Pinheiro", 
-            "Boa Esperan\u00e7a", 
-            -5
-        ], 
-        [
-            "072/0", 
-            "Pinheiro", 
-            "Nova Ven\u00e9cia", 
-            "Boa Esperan\u00e7a", 
-            -5
-        ], 
-        [
-            "104/0", 
-            "Vit\u00f3ria", 
+            "263/0", 
+            "Guriri", 
             "S\u00e3o Gabriel da Palha", 
-            "Colatina", 
+            "Nova Ven\u00e9cia", 
             -5
         ], 
         [
-            "104/0", 
+            "263/0", 
             "S\u00e3o Gabriel da Palha", 
+            "Guriri", 
+            "Nova Ven\u00e9cia", 
+            -5
+        ], 
+        [
+            "265/0", 
+            "Ponto Belo", 
             "Vit\u00f3ria", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "265/0", 
+            "Vit\u00f3ria", 
+            "Ponto Belo", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "265/2", 
+            "Ponto Belo", 
+            "Vit\u00f3ria", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "265/2", 
+            "Vit\u00f3ria", 
+            "Ponto Belo", 
+            "BR-101", 
+            -5
+        ], 
+        [
+            "267/0", 
             "Colatina", 
+            "Vila Velha", 
+            "Jo\u00e3o Neiva", 
+            256
+        ], 
+        [
+            "267/0", 
+            "Vila Velha", 
+            "Colatina", 
+            "Jo\u00e3o Neiva", 
+            253
+        ], 
+        [
+            "271/0", 
+            "Ponto Alto", 
+            "Vit\u00f3ria", 
+            "Domingos Martins", 
+            -5
+        ], 
+        [
+            "271/0", 
+            "Vit\u00f3ria", 
+            "Ponto Alto", 
+            "Domingos Martins", 
+            -5
+        ], 
+        [
+            "272/0", 
+            "Colatina", 
+            "Nova Almeida", 
+            "F\u00e1brica Aracruz Celulose", 
+            -5
+        ], 
+        [
+            "272/0", 
+            "Nova Almeida", 
+            "Colatina", 
+            "F\u00e1brica Aracruz Celulose", 
+            -5
+        ], 
+        [
+            "273/0", 
+            "Colatina", 
+            "Pinheiro", 
+            "S\u00e3o Gabriel da Palha", 
+            -5
+        ], 
+        [
+            "273/0", 
+            "Pinheiro", 
+            "Colatina", 
+            "S\u00e3o Gabriel da Palha", 
+            -5
+        ], 
+        [
+            "293/0", 
+            "Ibatiba", 
+            "Vit\u00f3ria", 
+            "Venda Nova do Imigrante", 
+            -5
+        ], 
+        [
+            "293/0", 
+            "Vit\u00f3ria", 
+            "Ibatiba", 
+            "Venda Nova do Imigrante", 
+            -5
+        ], 
+        [
+            "294/0", 
+            "Aracruz", 
+            "Linhares", 
+            "C\u00f3rrego do \u00cdndio", 
+            -5
+        ], 
+        [
+            "294/0", 
+            "Linhares", 
+            "Aracruz", 
+            "C\u00f3rrego do \u00cdndio", 
+            -5
+        ], 
+        [
+            "314/0", 
+            "Irupi", 
+            "Vit\u00f3ria", 
+            "Iuna", 
+            -5
+        ], 
+        [
+            "314/0", 
+            "Vit\u00f3ria", 
+            "Irupi", 
+            "Iuna", 
+            -5
+        ], 
+        [
+            "315/0", 
+            "Colatina", 
+            "Jo\u00e3o Neiva", 
+            "Acioli", 
+            -5
+        ], 
+        [
+            "315/0", 
+            "Jo\u00e3o Neiva", 
+            "Colatina", 
+            "Acioli", 
+            -5
+        ], 
+        [
+            "322/0", 
+            "Laranja da Terra", 
+            "Vit\u00f3ria", 
+            null, 
+            -5
+        ], 
+        [
+            "322/0", 
+            "Vit\u00f3ria", 
+            "Laranja da Terra", 
+            null, 
             -5
         ], 
         [
@@ -1323,107 +1407,9 @@
             "Vila Pav\u00e3o", 
             "Nova Ven\u00e9cia", 
             null, 
-            -5
-        ], 
-        [
-            "090/0", 
-            "Vit\u00f3ria", 
-            "Concei\u00e7\u00e3o do Castelo", 
-            "Domingo Martins", 
-            -5
-        ], 
-        [
-            "090/0", 
-            "Concei\u00e7\u00e3o do Castelo", 
-            "Vit\u00f3ria", 
-            "Domingo Martins", 
-            -5
-        ], 
-        [
-            "042/2", 
-            "Vit\u00f3ria", 
-            "Ponto Belo", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "042/2", 
-            "Ponto Belo", 
-            "Vit\u00f3ria", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "248/0", 
-            "Vit\u00f3ria", 
-            "Venda Nova do Imigrante", 
-            "Domingo Martins", 
-            -5
-        ], 
-        [
-            "248/0", 
-            "Venda Nova do Imigrante", 
-            "Vit\u00f3ria", 
-            "Domingo Martins", 
-            -5
-        ], 
-        [
-            "096/0", 
-            "Vit\u00f3ria", 
-            "Manten\u00f3polis", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "096/0", 
-            "Manten\u00f3polis", 
-            "Vit\u00f3ria", 
-            "Colatina", 
-            -5
-        ], 
-        [
-            "170/0", 
-            "Vit\u00f3ria", 
-            "Colatina", 
-            "F\u00e1brica Aracruz Celulose", 
-            -5
-        ], 
-        [
-            "170/0", 
-            "Colatina", 
-            "Vit\u00f3ria", 
-            "F\u00e1brica Aracruz Celulose", 
-            -5
-        ], 
-        [
-            "094/0", 
-            "Pedro Can\u00e1rio", 
-            "Montanha", 
-            "2 de Julho", 
-            -5
-        ], 
-        [
-            "094/0", 
-            "Montanha", 
-            "Pedro Can\u00e1rio", 
-            "2 de Julho", 
-            -5
-        ], 
-        [
-            "152/0", 
-            "S\u00e3o Mateus", 
-            "Pedro Can\u00e1rio", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "152/0", 
-            "Pedro Can\u00e1rio", 
-            "S\u00e3o Mateus", 
-            "BR-101", 
             -5
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

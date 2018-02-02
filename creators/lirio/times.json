@@ -17,28 +17,6 @@
         "036/1": [
             {
                 "exceptions": [], 
-                "from": "Vit\u00f3ria", 
-                "services": [
-                    "Mo-Sa"
-                ], 
-                "stations": [
-                    "Vit\u00f3ria", 
-                    "Fund\u00e3o"
-                ], 
-                "times": [
-                    [
-                        "06:35", 
-                        "07:57"
-                    ], 
-                    [
-                        "18:30", 
-                        "19:52"
-                    ]
-                ], 
-                "to": "Fund\u00e3o"
-            }, 
-            {
-                "exceptions": [], 
                 "from": "Fund\u00e3o", 
                 "services": [
                     "Mo-Sa"
@@ -58,9 +36,7 @@
                     ]
                 ], 
                 "to": "Vit\u00f3ria"
-            }
-        ], 
-        "115/0": [
+            }, 
             {
                 "exceptions": [], 
                 "from": "Vit\u00f3ria", 
@@ -69,62 +45,22 @@
                 ], 
                 "stations": [
                     "Vit\u00f3ria", 
-                    "Santa Teresa"
+                    "Fund\u00e3o"
                 ], 
                 "times": [
                     [
-                        "05:50", 
+                        "06:35", 
                         "07:57"
                     ], 
                     [
-                        "07:10", 
-                        "09:17"
-                    ], 
-                    [
-                        "07:50", 
-                        "09:57"
-                    ], 
-                    [
-                        "09:30", 
-                        "11:37"
-                    ], 
-                    [
-                        "14:50", 
-                        "16:57"
+                        "18:30", 
+                        "19:52"
                     ]
                 ], 
-                "to": "Santa Teresa"
-            }, 
-            {
-                "exceptions": [], 
-                "from": "Vit\u00f3ria", 
-                "services": [
-                    "Su"
-                ], 
-                "stations": [
-                    "Vit\u00f3ria", 
-                    "Santa Teresa"
-                ], 
-                "times": [
-                    [
-                        "05:50", 
-                        "07:57"
-                    ], 
-                    [
-                        "07:50", 
-                        "09:57"
-                    ], 
-                    [
-                        "13:40", 
-                        "15:47"
-                    ], 
-                    [
-                        "15:00", 
-                        "17:07"
-                    ]
-                ], 
-                "to": "Santa Teresa"
-            }, 
+                "to": "Fund\u00e3o"
+            }
+        ], 
+        "115/0": [
             {
                 "exceptions": [], 
                 "from": "Santa Teresa", 
@@ -196,9 +132,73 @@
                     ]
                 ], 
                 "to": "Vit\u00f3ria"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Mo-Sa"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Santa Teresa"
+                ], 
+                "times": [
+                    [
+                        "05:50", 
+                        "07:57"
+                    ], 
+                    [
+                        "07:10", 
+                        "09:17"
+                    ], 
+                    [
+                        "07:50", 
+                        "09:57"
+                    ], 
+                    [
+                        "09:30", 
+                        "11:37"
+                    ], 
+                    [
+                        "14:50", 
+                        "16:57"
+                    ]
+                ], 
+                "to": "Santa Teresa"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Vit\u00f3ria", 
+                "services": [
+                    "Su"
+                ], 
+                "stations": [
+                    "Vit\u00f3ria", 
+                    "Santa Teresa"
+                ], 
+                "times": [
+                    [
+                        "05:50", 
+                        "07:57"
+                    ], 
+                    [
+                        "07:50", 
+                        "09:57"
+                    ], 
+                    [
+                        "13:40", 
+                        "15:47"
+                    ], 
+                    [
+                        "15:00", 
+                        "17:07"
+                    ]
+                ], 
+                "to": "Santa Teresa"
             }
         ]
     }, 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

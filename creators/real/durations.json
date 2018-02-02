@@ -3,30 +3,58 @@
     "operator": "Via\u00e7\u00e3o Real Ita Ltda", 
     "routes": [
         [
-            "044/0", 
+            "017/0", 
             "Cachoeiro de Itapemirim", 
-            "Bom Jesus do Norte", 
-            "Caf\u00e9", 
+            "Mimoso do Sul", 
+            null, 
+            -5
+        ], 
+        [
+            "017/0", 
+            "Mimoso do Sul", 
+            "Cachoeiro de Itapemirim", 
+            null, 
+            -5
+        ], 
+        [
+            "043/0", 
+            "Cachoeiro de Itapemirim", 
+            "Gua\u00e7u\u00ed", 
+            null, 
+            -5
+        ], 
+        [
+            "043/0", 
+            "Gua\u00e7u\u00ed", 
+            "Cachoeiro de Itapemirim", 
+            null, 
             -5
         ], 
         [
             "044/0", 
             "Bom Jesus do Norte", 
             "Cachoeiro de Itapemirim", 
+            "Caf\u00e9", 
+            -5
+        ], 
+        [
+            "044/0", 
+            "Cachoeiro de Itapemirim", 
+            "Bom Jesus do Norte", 
             "Caf\u00e9", 
             -5
         ], 
         [
             "044/5", 
-            "S\u00e3o Benedito", 
             "Bom Jesus do Norte", 
+            "S\u00e3o Benedito", 
             null, 
             -5
         ], 
         [
             "044/5", 
-            "Bom Jesus do Norte", 
             "S\u00e3o Benedito", 
+            "Bom Jesus do Norte", 
             null, 
             -5
         ], 
@@ -45,44 +73,16 @@
             -5
         ], 
         [
-            "048/0", 
-            "Cachoeiro de Itapemirim", 
-            "Pia\u00e7u", 
-            null, 
-            -5
-        ], 
-        [
-            "048/0", 
-            "Pia\u00e7u", 
-            "Cachoeiro de Itapemirim", 
-            null, 
-            -5
-        ], 
-        [
-            "192", 
-            "Cachoeiro de Itapemirim", 
-            "Mimoso do Sul", 
-            "Muqui", 
-            -5
-        ], 
-        [
-            "192", 
-            "Mimoso do Sul", 
+            "045/0", 
             "Cachoeiro de Itapemirim", 
             "Muqui", 
-            -5
-        ], 
-        [
-            "192", 
-            "Mimoso do Sul", 
-            "Cachoeiro de Itapemirim", 
             null, 
             -5
         ], 
         [
-            "192", 
+            "045/0", 
+            "Muqui", 
             "Cachoeiro de Itapemirim", 
-            "Mimoso do Sul", 
             null, 
             -5
         ], 
@@ -101,44 +101,51 @@
             -5
         ], 
         [
-            "175/0", 
-            "Mimoso do Sul", 
-            "S\u00e3o Jos\u00e9 do Cal\u00e7ado", 
-            null, 
-            -5
-        ], 
-        [
-            "175/0", 
-            "S\u00e3o Jos\u00e9 do Cal\u00e7ado", 
-            "Mimoso do Sul", 
-            null, 
-            -5
-        ], 
-        [
-            "045/0", 
+            "047/0", 
             "Cachoeiro de Itapemirim", 
-            "Muqui", 
+            "Castelo", 
             null, 
             -5
         ], 
         [
-            "045/0", 
-            "Muqui", 
+            "047/0", 
+            "Castelo", 
             "Cachoeiro de Itapemirim", 
             null, 
             -5
         ], 
         [
-            "165/8", 
-            "Gua\u00e7u\u00ed", 
-            "Dores do Rio Preto", 
+            "047/0", 
+            "Castelo", 
+            "Sapecado", 
             null, 
             -5
         ], 
         [
-            "165/8", 
-            "Dores do Rio Preto", 
-            "Gua\u00e7u\u00ed", 
+            "047/0", 
+            "Sapecado", 
+            "Castelo", 
+            null, 
+            -5
+        ], 
+        [
+            "047/6", 
+            "Cachoeiro de Itapemirim", 
+            "Castelo", 
+            null, 
+            -5
+        ], 
+        [
+            "048/0", 
+            "Cachoeiro de Itapemirim", 
+            "Pia\u00e7u", 
+            null, 
+            -5
+        ], 
+        [
+            "048/0", 
+            "Pia\u00e7u", 
+            "Cachoeiro de Itapemirim", 
             null, 
             -5
         ], 
@@ -157,73 +164,108 @@
             -5
         ], 
         [
-            "295/0", 
-            "Vargem Alta", 
-            "Castelo", 
-            null, 
-            -5
-        ], 
-        [
-            "295/0", 
-            "Castelo", 
-            "Vargem Alta", 
-            null, 
-            -5
-        ], 
-        [
-            "298/0", 
-            "Cachoeiro de Itapemirim", 
-            "Iuna", 
+            "056/0", 
             "Alegre", 
-            -5
+            "Bom Jesus do Norte", 
+            "Gua\u00e7u\u00ed", 
+            162
         ], 
         [
-            "298/0", 
-            "Iuna", 
-            "Cachoeiro de Itapemirim", 
+            "056/0", 
+            "Bom Jesus do Norte", 
             "Alegre", 
-            -5
+            "Gua\u00e7u\u00ed", 
+            162
         ], 
         [
-            "295/8", 
-            "Capivara", 
-            "Castelo", 
+            "060/0", 
+            "Gua\u00e7u\u00ed", 
+            "Jer\u00f4nimo Monteiro", 
             null, 
             -5
         ], 
         [
-            "295/8", 
-            "Castelo", 
-            "Capivara", 
+            "060/0", 
+            "Jer\u00f4nimo Monteiro", 
+            "Gua\u00e7u\u00ed", 
             null, 
             -5
         ], 
         [
-            "302/0", 
-            "Bom Jesus do Norte", 
-            "Cachoeiro de Itapemirim", 
+            "060/8", 
+            "Celina", 
+            "Jer\u00f4nimo Monteiro", 
             null, 
             -5
         ], 
         [
-            "302/0", 
-            "Cachoeiro de Itapemirim", 
-            "Bom Jesus do Norte", 
+            "060/8", 
+            "Jer\u00f4nimo Monteiro", 
+            "Celina", 
+            null, 
+            -5
+        ], 
+        [
+            "067/0", 
             "Apiac\u00e1", 
+            "Cachoeiro de Itapemirim", 
+            null, 
             -5
         ], 
         [
-            "299/0", 
-            "Presidente Kennedy", 
-            "Vit\u00f3ria", 
-            "Vargem Alta", 
+            "067/0", 
+            "Cachoeiro de Itapemirim", 
+            "Apiac\u00e2", 
+            null, 
             -5
         ], 
         [
-            "299/0", 
-            "Vit\u00f3ria", 
-            "Presidente Kennedy", 
-            "Vargem Alta", 
+            "067/8", 
+            "Alegre", 
+            "Gua\u00e7u\u00ed", 
+            null, 
+            -5
+        ], 
+        [
+            "067/8", 
+            "Apiac\u00e1", 
+            "S\u00e3o Jos\u00e9 do Cal\u00e7ado", 
+            null, 
+            -5
+        ], 
+        [
+            "067/8", 
+            "Cachoeiro de Itapemirim", 
+            "Gua\u00e7u\u00ed", 
+            null, 
+            -5
+        ], 
+        [
+            "067/8", 
+            "Gua\u00e7u\u00ed", 
+            "Cachoeiro de Itapemirim", 
+            null, 
+            -5
+        ], 
+        [
+            "067/8", 
+            "S\u00e3o Jos\u00e9 do Cal\u00e7ado", 
+            "Apiac\u00e2", 
+            null, 
+            -5
+        ], 
+        [
+            "074/0", 
+            "Bom Jesus do Norte", 
+            "Gua\u00e7u\u00ed", 
+            null, 
+            -5
+        ], 
+        [
+            "074/0", 
+            "Gua\u00e7u\u00ed", 
+            "Bom Jesus do Norte", 
+            null, 
             -5
         ], 
         [
@@ -241,43 +283,15 @@
             -5
         ], 
         [
-            "281/0", 
+            "111/0", 
             "Cachoeiro de Itapemirim", 
-            "Castelinho", 
-            "Vargem Alta", 
+            "Jer\u00f4nimo Monteiro", 
+            null, 
             -5
         ], 
         [
-            "281/0", 
-            "Castelinho", 
-            "Cachoeiro de Itapemirim", 
-            "Vargem Alta", 
-            -5
-        ], 
-        [
-            "136/0", 
-            "Cachoeiro de Itapemirim", 
-            "Vit\u00f3ria", 
-            "Vargem Alta", 
-            -5
-        ], 
-        [
-            "136/0", 
-            "Vit\u00f3ria", 
-            "Cachoeiro de Itapemirim", 
-            "Vargem Alta", 
-            -5
-        ], 
-        [
-            "135/0", 
-            "Cachoeiro de Itapemirim", 
-            "Concei\u00e7\u00e3o de Castelo", 
-            "Vargem Alta", 
-            -5
-        ], 
-        [
-            "135/0", 
-            "Concei\u00e7\u00e3o de Castelo", 
+            "111/0", 
+            "Jer\u00f4nimo Monteiro", 
             "Cachoeiro de Itapemirim", 
             null, 
             -5
@@ -292,8 +306,22 @@
         [
             "135/0", 
             "Cachoeiro de Itapemirim", 
+            "Concei\u00e7\u00e3o de Castelo", 
+            "Vargem Alta", 
+            -5
+        ], 
+        [
+            "135/0", 
+            "Cachoeiro de Itapemirim", 
             "Venda Nova do Imigrante", 
             "Vargem Alta", 
+            -5
+        ], 
+        [
+            "135/0", 
+            "Concei\u00e7\u00e3o de Castelo", 
+            "Cachoeiro de Itapemirim", 
+            null, 
             -5
         ], 
         [
@@ -304,151 +332,18 @@
             -5
         ], 
         [
-            "060/8", 
-            "Jer\u00f4nimo Monteiro", 
-            "Celina", 
-            null, 
-            -5
-        ], 
-        [
-            "060/8", 
-            "Celina", 
-            "Jer\u00f4nimo Monteiro", 
-            null, 
-            -5
-        ], 
-        [
-            "047/6", 
+            "136/0", 
             "Cachoeiro de Itapemirim", 
-            "Castelo", 
-            null, 
+            "Vit\u00f3ria", 
+            "Vargem Alta", 
             -5
         ], 
         [
-            "111/0", 
-            "Jer\u00f4nimo Monteiro", 
+            "136/0", 
+            "Vit\u00f3ria", 
             "Cachoeiro de Itapemirim", 
-            null, 
+            "Vargem Alta", 
             -5
-        ], 
-        [
-            "111/0", 
-            "Cachoeiro de Itapemirim", 
-            "Jer\u00f4nimo Monteiro", 
-            null, 
-            -5
-        ], 
-        [
-            "017/0", 
-            "Cachoeiro de Itapemirim", 
-            "Mimoso do Sul", 
-            null, 
-            -5
-        ], 
-        [
-            "017/0", 
-            "Mimoso do Sul", 
-            "Cachoeiro de Itapemirim", 
-            null, 
-            -5
-        ], 
-        [
-            "060/0", 
-            "Jer\u00f4nimo Monteiro", 
-            "Gua\u00e7u\u00ed", 
-            null, 
-            -5
-        ], 
-        [
-            "060/0", 
-            "Gua\u00e7u\u00ed", 
-            "Jer\u00f4nimo Monteiro", 
-            null, 
-            -5
-        ], 
-        [
-            "047/0", 
-            "Cachoeiro de Itapemirim", 
-            "Castelo", 
-            null, 
-            -5
-        ], 
-        [
-            "047/0", 
-            "Castelo", 
-            "Cachoeiro de Itapemirim", 
-            null, 
-            -5
-        ], 
-        [
-            "047/0", 
-            "Sapecado", 
-            "Castelo", 
-            null, 
-            -5
-        ], 
-        [
-            "047/0", 
-            "Castelo", 
-            "Sapecado", 
-            null, 
-            -5
-        ], 
-        [
-            "327/0", 
-            "Cachoeiro de Itapemirim", 
-            "Castelo", 
-            "Bom Jardim", 
-            -5
-        ], 
-        [
-            "327/0", 
-            "Castelo", 
-            "Cachoeiro de Itapemirim", 
-            "Bom Jardim", 
-            -5
-        ], 
-        [
-            "067/0", 
-            "Cachoeiro de Itapemirim", 
-            "Apiac\u00e2", 
-            null, 
-            -5
-        ], 
-        [
-            "067/0", 
-            "Apiac\u00e1", 
-            "Cachoeiro de Itapemirim", 
-            null, 
-            -5
-        ], 
-        [
-            "176/0", 
-            "S\u00e3o Jos\u00e9 do Cal\u00e7ado", 
-            "Ponte do Itabapoana", 
-            null, 
-            -5
-        ], 
-        [
-            "176/0", 
-            "Ponte do Itabapoana", 
-            "S\u00e3o Jos\u00e9 do Cal\u00e7ado", 
-            null, 
-            -5
-        ], 
-        [
-            "056/0", 
-            "Bom Jesus do Norte", 
-            "Alegre", 
-            "Gua\u00e7u\u00ed", 
-            162
-        ], 
-        [
-            "056/0", 
-            "Alegre", 
-            "Bom Jesus do Norte", 
-            "Gua\u00e7u\u00ed", 
-            162
         ], 
         [
             "164/0", 
@@ -460,69 +355,6 @@
         [
             "164/0", 
             "Dores do Rio Preto", 
-            "Cachoeiro de Itapemirim", 
-            null, 
-            -5
-        ], 
-        [
-            "067/8", 
-            "Cachoeiro de Itapemirim", 
-            "Gua\u00e7u\u00ed", 
-            null, 
-            -5
-        ], 
-        [
-            "067/8", 
-            "Gua\u00e7u\u00ed", 
-            "Cachoeiro de Itapemirim", 
-            null, 
-            -5
-        ], 
-        [
-            "067/8", 
-            "Alegre", 
-            "Gua\u00e7u\u00ed", 
-            null, 
-            -5
-        ], 
-        [
-            "067/8", 
-            "S\u00e3o Jos\u00e9 do Cal\u00e7ado", 
-            "Apiac\u00e2", 
-            null, 
-            -5
-        ], 
-        [
-            "067/8", 
-            "Apiac\u00e1", 
-            "S\u00e3o Jos\u00e9 do Cal\u00e7ado", 
-            null, 
-            -5
-        ], 
-        [
-            "282/0", 
-            "Cachoeiro de Itapemirim", 
-            "Vargem Alta", 
-            null, 
-            70
-        ], 
-        [
-            "282/0", 
-            "Vargem Alta", 
-            "Cachoeiro de Itapemirim", 
-            null, 
-            70
-        ], 
-        [
-            "043/0", 
-            "Cachoeiro de Itapemirim", 
-            "Gua\u00e7u\u00ed", 
-            null, 
-            -5
-        ], 
-        [
-            "043/0", 
-            "Gua\u00e7u\u00ed", 
             "Cachoeiro de Itapemirim", 
             null, 
             -5
@@ -542,6 +374,55 @@
             89
         ], 
         [
+            "165/8", 
+            "Dores do Rio Preto", 
+            "Gua\u00e7u\u00ed", 
+            null, 
+            -5
+        ], 
+        [
+            "165/8", 
+            "Gua\u00e7u\u00ed", 
+            "Dores do Rio Preto", 
+            null, 
+            -5
+        ], 
+        [
+            "175/0", 
+            "Mimoso do Sul", 
+            "S\u00e3o Jos\u00e9 do Cal\u00e7ado", 
+            null, 
+            -5
+        ], 
+        [
+            "175/0", 
+            "S\u00e3o Jos\u00e9 do Cal\u00e7ado", 
+            "Mimoso do Sul", 
+            null, 
+            -5
+        ], 
+        [
+            "176/0", 
+            "Ponte do Itabapoana", 
+            "S\u00e3o Jos\u00e9 do Cal\u00e7ado", 
+            null, 
+            -5
+        ], 
+        [
+            "176/0", 
+            "S\u00e3o Jos\u00e9 do Cal\u00e7ado", 
+            "Ponte do Itabapoana", 
+            null, 
+            -5
+        ], 
+        [
+            "185/0", 
+            "Alegre", 
+            "Itaica", 
+            null, 
+            -5
+        ], 
+        [
             "185/0", 
             "Itaica", 
             "Alegre", 
@@ -549,37 +430,9 @@
             -5
         ], 
         [
-            "185/0", 
-            "Alegre", 
-            "Itaica", 
-            null, 
-            -5
-        ], 
-        [
-            "074/0", 
-            "Gua\u00e7u\u00ed", 
+            "190/0", 
+            "Apiac\u00e1", 
             "Bom Jesus do Norte", 
-            null, 
-            -5
-        ], 
-        [
-            "074/0", 
-            "Bom Jesus do Norte", 
-            "Gua\u00e7u\u00ed", 
-            null, 
-            -5
-        ], 
-        [
-            "191/0", 
-            "Cachoeiro de Itapemirim", 
-            "Alegre", 
-            null, 
-            -5
-        ], 
-        [
-            "191/0", 
-            "Alegre", 
-            "Cachoeiro de Itapemirim", 
             null, 
             -5
         ], 
@@ -591,13 +444,160 @@
             -5
         ], 
         [
-            "190/0", 
-            "Apiac\u00e1", 
-            "Bom Jesus do Norte", 
+            "191/0", 
+            "Alegre", 
+            "Cachoeiro de Itapemirim", 
             null, 
+            -5
+        ], 
+        [
+            "191/0", 
+            "Cachoeiro de Itapemirim", 
+            "Alegre", 
+            null, 
+            -5
+        ], 
+        [
+            "192", 
+            "Cachoeiro de Itapemirim", 
+            "Mimoso do Sul", 
+            null, 
+            -5
+        ], 
+        [
+            "192", 
+            "Cachoeiro de Itapemirim", 
+            "Mimoso do Sul", 
+            "Muqui", 
+            -5
+        ], 
+        [
+            "192", 
+            "Mimoso do Sul", 
+            "Cachoeiro de Itapemirim", 
+            null, 
+            -5
+        ], 
+        [
+            "192", 
+            "Mimoso do Sul", 
+            "Cachoeiro de Itapemirim", 
+            "Muqui", 
+            -5
+        ], 
+        [
+            "281/0", 
+            "Cachoeiro de Itapemirim", 
+            "Castelinho", 
+            "Vargem Alta", 
+            -5
+        ], 
+        [
+            "281/0", 
+            "Castelinho", 
+            "Cachoeiro de Itapemirim", 
+            "Vargem Alta", 
+            -5
+        ], 
+        [
+            "282/0", 
+            "Cachoeiro de Itapemirim", 
+            "Vargem Alta", 
+            null, 
+            70
+        ], 
+        [
+            "282/0", 
+            "Vargem Alta", 
+            "Cachoeiro de Itapemirim", 
+            null, 
+            70
+        ], 
+        [
+            "295/0", 
+            "Castelo", 
+            "Vargem Alta", 
+            null, 
+            -5
+        ], 
+        [
+            "295/0", 
+            "Vargem Alta", 
+            "Castelo", 
+            null, 
+            -5
+        ], 
+        [
+            "295/8", 
+            "Capivara", 
+            "Castelo", 
+            null, 
+            -5
+        ], 
+        [
+            "295/8", 
+            "Castelo", 
+            "Capivara", 
+            null, 
+            -5
+        ], 
+        [
+            "298/0", 
+            "Cachoeiro de Itapemirim", 
+            "Iuna", 
+            "Alegre", 
+            -5
+        ], 
+        [
+            "298/0", 
+            "Iuna", 
+            "Cachoeiro de Itapemirim", 
+            "Alegre", 
+            -5
+        ], 
+        [
+            "299/0", 
+            "Presidente Kennedy", 
+            "Vit\u00f3ria", 
+            "Vargem Alta", 
+            -5
+        ], 
+        [
+            "299/0", 
+            "Vit\u00f3ria", 
+            "Presidente Kennedy", 
+            "Vargem Alta", 
+            -5
+        ], 
+        [
+            "302/0", 
+            "Bom Jesus do Norte", 
+            "Cachoeiro de Itapemirim", 
+            null, 
+            -5
+        ], 
+        [
+            "302/0", 
+            "Cachoeiro de Itapemirim", 
+            "Bom Jesus do Norte", 
+            "Apiac\u00e1", 
+            -5
+        ], 
+        [
+            "327/0", 
+            "Cachoeiro de Itapemirim", 
+            "Castelo", 
+            "Bom Jardim", 
+            -5
+        ], 
+        [
+            "327/0", 
+            "Castelo", 
+            "Cachoeiro de Itapemirim", 
+            "Bom Jardim", 
             -5
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

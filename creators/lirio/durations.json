@@ -3,45 +3,10 @@
     "operator": "L\u00edrio dos Vales Transportes e Fretamento Ltda", 
     "routes": [
         [
-            "346/0", 
-            "Santa Teresa", 
-            "S\u00e3o Roque", 
-            null, 
-            -5
-        ], 
-        [
-            "346/0", 
-            "S\u00e3o Roque", 
-            "Santa Teresa", 
-            null, 
-            -5
-        ], 
-        [
-            "036/1", 
+            "005/0", 
+            "Colatina", 
             "Vit\u00f3ria", 
-            "Fund\u00e3o", 
-            null, 
-            82
-        ], 
-        [
-            "036/1", 
-            "Fund\u00e3o", 
-            "Vit\u00f3ria", 
-            null, 
-            82
-        ], 
-        [
-            "348/0", 
-            "Santa Teresa", 
-            "Santa Julia", 
-            null, 
-            -5
-        ], 
-        [
-            "348/0", 
-            "Santa Julia", 
-            "Santa Teresa", 
-            null, 
+            "Santa Leopoldina", 
             -5
         ], 
         [
@@ -52,30 +17,30 @@
             -5
         ], 
         [
-            "005/0", 
-            "Colatina", 
+            "036/1", 
+            "Fund\u00e3o", 
             "Vit\u00f3ria", 
-            "Santa Leopoldina", 
+            null, 
+            82
+        ], 
+        [
+            "036/1", 
+            "Vit\u00f3ria", 
+            "Fund\u00e3o", 
+            null, 
+            82
+        ], 
+        [
+            "036/6", 
+            "Fund\u00e3o", 
+            "Vit\u00f3ria", 
+            null, 
             -5
         ], 
         [
-            "347/0", 
-            "Santa Teresa", 
-            "15 de Augosto", 
-            "S\u00e3o Roque", 
-            -5
-        ], 
-        [
-            "347/0", 
-            "15 de Augosto", 
-            "Santa Teresa", 
-            "S\u00e3o Roque", 
-            -5
-        ], 
-        [
-            "058/0", 
-            "Santa Teresa", 
-            "Colatina", 
+            "036/6", 
+            "Vit\u00f3ria", 
+            "Fund\u00e3o", 
             null, 
             -5
         ], 
@@ -87,53 +52,11 @@
             -5
         ], 
         [
-            "203/0", 
-            "Vit\u00f3ria", 
-            "S\u00e3o Roque", 
-            "Fund\u00e3o", 
-            -5
-        ], 
-        [
-            "203/0", 
-            "S\u00e3o Roque", 
-            "Vit\u00f3ria", 
-            "Fund\u00e3o", 
-            -5
-        ], 
-        [
-            "125/0", 
-            "Vit\u00f3ria", 
-            "Ita\u00e7u", 
-            "Fund\u00e3o", 
-            -5
-        ], 
-        [
-            "125/0", 
-            "Ita\u00e7u", 
-            "Vit\u00f3ria", 
-            "Fund\u00e3o", 
-            -5
-        ], 
-        [
-            "307/0", 
-            "Santa Maria Jetiba", 
+            "058/0", 
             "Santa Teresa", 
+            "Colatina", 
             null, 
             -5
-        ], 
-        [
-            "307/0", 
-            "Santa Teresa", 
-            "Santa Maria Jetiba", 
-            null, 
-            -5
-        ], 
-        [
-            "115/0", 
-            "Vit\u00f3ria", 
-            "Santa Teresa", 
-            "Fund\u00e3o", 
-            127
         ], 
         [
             "115/0", 
@@ -143,34 +66,111 @@
             139
         ], 
         [
-            "139/0", 
+            "115/0", 
             "Vit\u00f3ria", 
             "Santa Teresa", 
-            "Santa Leopoldina", 
-            -5
+            "Fund\u00e3o", 
+            127
         ], 
         [
-            "139/0", 
-            "Santa Teresa", 
-            "Vit\u00f3ria", 
-            "Santa Leopoldina", 
-            -5
-        ], 
-        [
-            "036/6", 
+            "125/0", 
+            "Ita\u00e7u", 
             "Vit\u00f3ria", 
             "Fund\u00e3o", 
+            -5
+        ], 
+        [
+            "125/0", 
+            "Vit\u00f3ria", 
+            "Ita\u00e7u", 
+            "Fund\u00e3o", 
+            -5
+        ], 
+        [
+            "139/0", 
+            "Santa Teresa", 
+            "Vit\u00f3ria", 
+            "Santa Leopoldina", 
+            -5
+        ], 
+        [
+            "139/0", 
+            "Vit\u00f3ria", 
+            "Santa Teresa", 
+            "Santa Leopoldina", 
+            -5
+        ], 
+        [
+            "203/0", 
+            "S\u00e3o Roque", 
+            "Vit\u00f3ria", 
+            "Fund\u00e3o", 
+            -5
+        ], 
+        [
+            "203/0", 
+            "Vit\u00f3ria", 
+            "S\u00e3o Roque", 
+            "Fund\u00e3o", 
+            -5
+        ], 
+        [
+            "307/0", 
+            "Santa Maria Jetiba", 
+            "Santa Teresa", 
             null, 
             -5
         ], 
         [
-            "036/6", 
-            "Fund\u00e3o", 
-            "Vit\u00f3ria", 
+            "307/0", 
+            "Santa Teresa", 
+            "Santa Maria Jetiba", 
+            null, 
+            -5
+        ], 
+        [
+            "346/0", 
+            "Santa Teresa", 
+            "S\u00e3o Roque", 
+            null, 
+            -5
+        ], 
+        [
+            "346/0", 
+            "S\u00e3o Roque", 
+            "Santa Teresa", 
+            null, 
+            -5
+        ], 
+        [
+            "347/0", 
+            "15 de Augosto", 
+            "Santa Teresa", 
+            "S\u00e3o Roque", 
+            -5
+        ], 
+        [
+            "347/0", 
+            "Santa Teresa", 
+            "15 de Augosto", 
+            "S\u00e3o Roque", 
+            -5
+        ], 
+        [
+            "348/0", 
+            "Santa Julia", 
+            "Santa Teresa", 
+            null, 
+            -5
+        ], 
+        [
+            "348/0", 
+            "Santa Teresa", 
+            "Santa Julia", 
             null, 
             -5
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

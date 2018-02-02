@@ -32,4 +32,16 @@ def getLines():
             for word in item.split("/"):
                 if word.find(".pdf") and len(word) == 7:
                     myList.append(word.split(".")[0])
+    if len(myList) == 0:
+        i = 0
+        while i < 100:
+            j = "000"
+            if i < 10:
+                j = "00%d" % i
+            elif i < 100:
+                j = "0%d" % i
+            else:
+                j = "%d" % i
+            myList.append(j)
+            i = i+1
     return myList

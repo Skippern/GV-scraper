@@ -3,16 +3,30 @@
     "operator": "Via\u00e7\u00e3o Maril\u00e2ndia Ltda", 
     "routes": [
         [
-            "301/0", 
-            "Itagua\u00e7u", 
+            "080/0", 
+            "Colatina", 
+            "Palmas", 
+            null, 
+            -5
+        ], 
+        [
+            "080/0", 
+            "Palmas", 
             "Colatina", 
             null, 
             -5
         ], 
         [
-            "301/0", 
+            "121/0", 
             "Colatina", 
-            "Itagua\u00e7u", 
+            "Moacir", 
+            null, 
+            -5
+        ], 
+        [
+            "121/0", 
+            "Moacir", 
+            "Colatina", 
             null, 
             -5
         ], 
@@ -26,20 +40,6 @@
         [
             "128/0", 
             "Santa Catarina", 
-            "Colatina", 
-            null, 
-            -5
-        ], 
-        [
-            "080/0", 
-            "Colatina", 
-            "Palmas", 
-            null, 
-            -5
-        ], 
-        [
-            "080/0", 
-            "Palmas", 
             "Colatina", 
             null, 
             -5
@@ -73,20 +73,20 @@
             -5
         ], 
         [
-            "121/0", 
+            "301/0", 
             "Colatina", 
-            "Moacir", 
+            "Itagua\u00e7u", 
             null, 
             -5
         ], 
         [
-            "121/0", 
-            "Moacir", 
+            "301/0", 
+            "Itagua\u00e7u", 
             "Colatina", 
             null, 
             -5
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

@@ -42,24 +42,6 @@
         "056/0": [
             {
                 "exceptions": [], 
-                "from": "Bom Jesus do Norte", 
-                "services": [
-                    "Su,Ho"
-                ], 
-                "stations": [
-                    "Bom Jesus do Norte", 
-                    "Alegre"
-                ], 
-                "times": [
-                    [
-                        "15:00", 
-                        "17:42"
-                    ]
-                ], 
-                "to": "Alegre"
-            }, 
-            {
-                "exceptions": [], 
                 "from": "Alegre", 
                 "services": [
                     "Su,Ho"
@@ -75,6 +57,24 @@
                     ]
                 ], 
                 "to": "Bom Jesus do Norte"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Bom Jesus do Norte", 
+                "services": [
+                    "Su,Ho"
+                ], 
+                "stations": [
+                    "Bom Jesus do Norte", 
+                    "Alegre"
+                ], 
+                "times": [
+                    [
+                        "15:00", 
+                        "17:42"
+                    ]
+                ], 
+                "to": "Alegre"
             }
         ], 
         "165/0": [
@@ -239,5 +239,5 @@
         ]
     }, 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

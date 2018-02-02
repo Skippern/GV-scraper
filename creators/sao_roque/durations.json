@@ -3,17 +3,24 @@
     "operator": "Via\u00e7\u00e3o S\u00e3o Roque Ltda", 
     "routes": [
         [
-            "329/0", 
+            "071/0", 
             "Colatina", 
-            "Monte Claros", 
+            "S\u00e3o Bento", 
             null, 
             -5
         ], 
         [
-            "329/0", 
-            "Monte Claros", 
+            "071/0", 
             "Colatina", 
-            null, 
+            "S\u00e3o Bento", 
+            "C\u00f3rrego Sa\u00fade", 
+            -5
+        ], 
+        [
+            "071/0", 
+            "S\u00e3o Bento", 
+            "Colatina", 
+            "C\u00f3rrego Sa\u00fade", 
             -5
         ], 
         [
@@ -27,34 +34,6 @@
             "116/0", 
             "Colatina", 
             "Barra do Triunfo", 
-            null, 
-            -5
-        ], 
-        [
-            "349/3", 
-            "S\u00e3o Jacinto", 
-            "Santa Teresa", 
-            null, 
-            -5
-        ], 
-        [
-            "349/3", 
-            "Santa Teresa", 
-            "S\u00e3o Jacinto", 
-            null, 
-            -5
-        ], 
-        [
-            "349/0", 
-            "S\u00e3o Jacinto", 
-            "Santa Teresa", 
-            null, 
-            -5
-        ], 
-        [
-            "349/0", 
-            "Santa Teresa", 
-            "S\u00e3o Jacinto", 
             null, 
             -5
         ], 
@@ -74,37 +53,23 @@
         ], 
         [
             "235/0", 
-            "S\u00e3o Bento", 
             "Colatina", 
+            "S\u00e3o Bento", 
             "S\u00e3o Jacinto", 
             -5
         ], 
         [
             "235/0", 
-            "Colatina", 
             "S\u00e3o Bento", 
+            "Colatina", 
             "S\u00e3o Jacinto", 
             -5
         ], 
         [
-            "071/0", 
-            "S\u00e3o Bento", 
+            "235/8", 
             "Colatina", 
-            "C\u00f3rrego Sa\u00fade", 
-            -5
-        ], 
-        [
-            "071/0", 
-            "Colatina", 
-            "S\u00e3o Bento", 
+            "S\u00e3o Jacinto", 
             null, 
-            -5
-        ], 
-        [
-            "071/0", 
-            "Colatina", 
-            "S\u00e3o Bento", 
-            "C\u00f3rrego Sa\u00fade", 
             -5
         ], 
         [
@@ -115,13 +80,48 @@
             -5
         ], 
         [
-            "235/8", 
+            "329/0", 
             "Colatina", 
+            "Monte Claros", 
+            null, 
+            -5
+        ], 
+        [
+            "329/0", 
+            "Monte Claros", 
+            "Colatina", 
+            null, 
+            -5
+        ], 
+        [
+            "349/0", 
+            "Santa Teresa", 
             "S\u00e3o Jacinto", 
+            null, 
+            -5
+        ], 
+        [
+            "349/0", 
+            "S\u00e3o Jacinto", 
+            "Santa Teresa", 
+            null, 
+            -5
+        ], 
+        [
+            "349/3", 
+            "Santa Teresa", 
+            "S\u00e3o Jacinto", 
+            null, 
+            -5
+        ], 
+        [
+            "349/3", 
+            "S\u00e3o Jacinto", 
+            "Santa Teresa", 
             null, 
             -5
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

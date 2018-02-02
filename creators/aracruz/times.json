@@ -6,58 +6,6 @@
         "270/0": [
             {
                 "exceptions": [], 
-                "from": "Nova Almeida", 
-                "services": [
-                    "Mo-Fr"
-                ], 
-                "stations": [
-                    "Nova Almeida", 
-                    "Aracruz"
-                ], 
-                "times": [
-                    [
-                        "08:00", 
-                        "09:38"
-                    ], 
-                    [
-                        "12:10", 
-                        "13:48"
-                    ], 
-                    [
-                        "17:40", 
-                        "19:18"
-                    ]
-                ], 
-                "to": "Aracruz"
-            }, 
-            {
-                "exceptions": [], 
-                "from": "Nova Almeida", 
-                "services": [
-                    "Sa-Su"
-                ], 
-                "stations": [
-                    "Nova Almeida", 
-                    "Aracruz"
-                ], 
-                "times": [
-                    [
-                        "08:00", 
-                        "09:38"
-                    ], 
-                    [
-                        "12:10", 
-                        "13:48"
-                    ], 
-                    [
-                        "18:10", 
-                        "19:48"
-                    ]
-                ], 
-                "to": "Aracruz"
-            }, 
-            {
-                "exceptions": [], 
                 "from": "Aracruz", 
                 "services": [
                     "Mo-Fr"
@@ -107,9 +55,61 @@
                     ]
                 ], 
                 "to": "Nova Almeida"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Nova Almeida", 
+                "services": [
+                    "Mo-Fr"
+                ], 
+                "stations": [
+                    "Nova Almeida", 
+                    "Aracruz"
+                ], 
+                "times": [
+                    [
+                        "08:00", 
+                        "09:38"
+                    ], 
+                    [
+                        "12:10", 
+                        "13:48"
+                    ], 
+                    [
+                        "17:40", 
+                        "19:18"
+                    ]
+                ], 
+                "to": "Aracruz"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Nova Almeida", 
+                "services": [
+                    "Sa-Su"
+                ], 
+                "stations": [
+                    "Nova Almeida", 
+                    "Aracruz"
+                ], 
+                "times": [
+                    [
+                        "08:00", 
+                        "09:38"
+                    ], 
+                    [
+                        "12:10", 
+                        "13:48"
+                    ], 
+                    [
+                        "18:10", 
+                        "19:48"
+                    ]
+                ], 
+                "to": "Aracruz"
             }
         ]
     }, 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

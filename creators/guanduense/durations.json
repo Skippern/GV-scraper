@@ -11,15 +11,15 @@
         ], 
         [
             "365/0", 
+            "KM 14 do Motum", 
             "Pancas", 
-            "Baixo Guand\u00fa", 
             null, 
             -5
         ], 
         [
             "365/0", 
-            "KM 14 do Motum", 
             "Pancas", 
+            "Baixo Guand\u00fa", 
             null, 
             -5
         ], 
@@ -32,5 +32,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }

@@ -48,6 +48,7 @@ def getLines():
                 via = None
             myList.append( (ref, origin, destination, via ) )
     myList = uniq(myList)
+    myList.sort()
     myrefs = []
     for i in myList:
         myrefs.append(i[0])

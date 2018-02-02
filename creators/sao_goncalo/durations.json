@@ -3,93 +3,16 @@
     "operator": "Via\u00e7\u00e3o S\u00e3o Gon\u00e7alo Ltda", 
     "routes": [
         [
-            "138/0", 
-            "S\u00e3o Mateus", 
-            "F\u00e1tima", 
-            null, 
-            -5
-        ], 
-        [
-            "138/0", 
-            "F\u00e1tima", 
-            "S\u00e3o Mateus", 
-            null, 
-            -5
-        ], 
-        [
-            "122/0", 
-            "Colatina", 
-            "Vila Val\u00e9rio", 
-            "Dourados", 
-            -5
-        ], 
-        [
-            "122/0", 
-            "Vila Val\u00e9rio", 
-            "Colatina", 
-            "Dourados", 
-            -5
-        ], 
-        [
-            "297/0", 
-            "Vila Val\u00e9rio", 
-            "Linhares", 
-            "Ararib\u00f3ia", 
-            -5
-        ], 
-        [
-            "297/0", 
+            "069/0", 
             "Linhares", 
             "Vila Val\u00e9rio", 
-            "Ararib\u00f3ia", 
+            null, 
             -5
         ], 
         [
-            "180/0", 
+            "069/0", 
+            "Vila Val\u00e9rio", 
             "Linhares", 
-            "Nova Ven\u00e9cia", 
-            null, 
-            -5
-        ], 
-        [
-            "180/0", 
-            "Nova Ven\u00e9cia", 
-            "Linhares", 
-            null, 
-            -5
-        ], 
-        [
-            "237/0", 
-            "Colatina", 
-            "Vila Val\u00e9rio", 
-            "Bley", 
-            -5
-        ], 
-        [
-            "237/0", 
-            "Colatina", 
-            "Nova Ven\u00e9cia", 
-            "Bley", 
-            -5
-        ], 
-        [
-            "237/0", 
-            "Vila Val\u00e9rio", 
-            "Colatina", 
-            "Bley", 
-            -5
-        ], 
-        [
-            "237/0", 
-            "S\u00e3o Gabriel da Palha", 
-            "Vila Val\u00e9rio", 
-            null, 
-            -5
-        ], 
-        [
-            "237/0", 
-            "Vila Val\u00e9rio", 
-            "S\u00e3o Gabriel da Palha", 
             null, 
             -5
         ], 
@@ -108,30 +31,30 @@
             -5
         ], 
         [
-            "333/0", 
+            "122/0", 
             "Colatina", 
-            "S\u00e3o Jos\u00e9", 
-            null, 
+            "Vila Val\u00e9rio", 
+            "Dourados", 
             -5
         ], 
         [
-            "333/0", 
-            "S\u00e3o Jos\u00e9", 
+            "122/0", 
+            "Vila Val\u00e9rio", 
             "Colatina", 
+            "Dourados", 
+            -5
+        ], 
+        [
+            "138/0", 
+            "F\u00e1tima", 
+            "S\u00e3o Mateus", 
             null, 
             -5
         ], 
         [
-            "240/0", 
+            "138/0", 
             "S\u00e3o Mateus", 
-            "Jaguar\u00e9", 
-            null, 
-            -5
-        ], 
-        [
-            "240/0", 
-            "Jaguar\u00e9", 
-            "S\u00e3o Mateus", 
+            "F\u00e1tima", 
             null, 
             -5
         ], 
@@ -150,6 +73,20 @@
             -5
         ], 
         [
+            "180/0", 
+            "Linhares", 
+            "Nova Ven\u00e9cia", 
+            null, 
+            -5
+        ], 
+        [
+            "180/0", 
+            "Nova Ven\u00e9cia", 
+            "Linhares", 
+            null, 
+            -5
+        ], 
+        [
             "236/0", 
             "Colatina", 
             "Morelo", 
@@ -161,6 +98,69 @@
             "Morelo", 
             "Colatina", 
             "S\u00e3o Gabriel da Palha", 
+            -5
+        ], 
+        [
+            "237/0", 
+            "Colatina", 
+            "Nova Ven\u00e9cia", 
+            "Bley", 
+            -5
+        ], 
+        [
+            "237/0", 
+            "Colatina", 
+            "Vila Val\u00e9rio", 
+            "Bley", 
+            -5
+        ], 
+        [
+            "237/0", 
+            "S\u00e3o Gabriel da Palha", 
+            "Vila Val\u00e9rio", 
+            null, 
+            -5
+        ], 
+        [
+            "237/0", 
+            "Vila Val\u00e9rio", 
+            "Colatina", 
+            "Bley", 
+            -5
+        ], 
+        [
+            "237/0", 
+            "Vila Val\u00e9rio", 
+            "S\u00e3o Gabriel da Palha", 
+            null, 
+            -5
+        ], 
+        [
+            "240/0", 
+            "Jaguar\u00e9", 
+            "S\u00e3o Mateus", 
+            null, 
+            -5
+        ], 
+        [
+            "240/0", 
+            "S\u00e3o Mateus", 
+            "Jaguar\u00e9", 
+            null, 
+            -5
+        ], 
+        [
+            "297/0", 
+            "Linhares", 
+            "Vila Val\u00e9rio", 
+            "Ararib\u00f3ia", 
+            -5
+        ], 
+        [
+            "297/0", 
+            "Vila Val\u00e9rio", 
+            "Linhares", 
+            "Ararib\u00f3ia", 
             -5
         ], 
         [
@@ -192,20 +192,20 @@
             -5
         ], 
         [
-            "069/0", 
-            "Vila Val\u00e9rio", 
-            "Linhares", 
+            "333/0", 
+            "Colatina", 
+            "S\u00e3o Jos\u00e9", 
             null, 
             -5
         ], 
         [
-            "069/0", 
-            "Linhares", 
-            "Vila Val\u00e9rio", 
+            "333/0", 
+            "S\u00e3o Jos\u00e9", 
+            "Colatina", 
             null, 
             -5
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-01-26"
+    "updated": "2018-02-02"
 }
