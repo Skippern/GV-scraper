@@ -504,14 +504,14 @@
             "Cachoeiro de Itapemirim", 
             "Vargem Alta", 
             null, 
-            70
+            71
         ], 
         [
             "282/0", 
             "Vargem Alta", 
             "Cachoeiro de Itapemirim", 
             null, 
-            70
+            71
         ], 
         [
             "295/0", 
@@ -599,5 +599,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-02-02"
+    "updated": "2018-02-10"
 }
