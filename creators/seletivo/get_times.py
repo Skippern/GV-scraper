@@ -45,6 +45,7 @@ myRoutes[u"network"] = u"Seletivo"
 myRoutes[u"source"] = baseurl
 myRoutes[u"excluded_lines"] = []
 myRoutes[u"routes"] = {}
+myRoutes[u"observations"] = {}
 
 def getTimes(ref):
     downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/BuscaHorarios/" + ref
@@ -181,12 +182,11 @@ for i in getLines():
                 create_json(myRoutes, cal, ref, myTimes[u"Stations"][u"Volta"], myTimes[u"Stations"][u"Ida"], d, myTimes[ref][d][u"Volta"], durations[1])
     if len(myObs) > 0:
         try:
-            obs = myRoutes[u"routes"][ref][u"observations"]
+            obs = myRoutes[u"observations"][ref]
         except:
-            myRoutes[u"routes"][ref] = {}
-            myRoutes[u"routes"][ref][u"observations"] = []
+            myRoutes[u"observations"][ref] = []
         for o in myObs:
-            myRoutes[u"routes"][ref][u"observations"].append(o)
+            myRoutes[u"observations"][ref].append(o)
             logger.debug("Observation: %s - %s", o[0], o[1])
 
 newBlacklist = uniq(myRoutes[u"excluded_lines"])
