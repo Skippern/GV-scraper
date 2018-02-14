@@ -83,10 +83,11 @@ def getStations(ref):
     for i in json.loads(myJSON):
         if i[u"Desc_Terminal"] is not None:
             stations.append(lower_capitalized(i[u"Desc_Terminal"]))
+    stations = uniq(stations)
     if len(stations) < 2:
         if ref == u"1604":
             stations.append(lower_capitalized(u"Itaparica"))
-        elif ref == u"1901" or ref == u"1902":
+        if ref == u"1902":
             stations.append(lower_capitalized(u"Marcilio de Noronha"))
     return uniq(stations)
 
@@ -94,17 +95,19 @@ for i in getLines():
     name = i[1]
     ref = i[0]
     stationList = getStations(ref)
+#    print stationList
     print ref, name
     via = None
     for myRef in getRefs(ref):
         for oName in stationList:
             for dName in stationList:
                 if oName == dName:
+#                    print u"Cercular skipped: {0} -> {1}".format(oName, dName)
                     continue
                 print u"    Ref:", myRef, oName, "->", dName, "=",
                 duration = get_duration(myRef, oName, dName, config[u"query"][u"bbox"])
-                durationsList[u"routes"].append([ myRef, oName, dName, via, duration ])
                 print duration
+                durationsList[u"routes"].append([ myRef, oName, dName, via, duration ])
 
 with open('durations.json', 'w') as outfile:
     json.dump(durationsList, outfile, sort_keys=True, indent=4)
