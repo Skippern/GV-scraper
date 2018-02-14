@@ -101,6 +101,12 @@ def getTimes(ref):
         else:
             debug_to_screen( unicode(i[u"Descricao_Hora"]) )
         direction = None
+        if ref == u"1604":
+            myReturn[u"Stations"][u"Ida"] = lower_capitalized(u"Itaparica")
+            myReturn[u"Stations"][u"Volta"] = lower_capitalized(u"Itaparica")
+        elif ref == u"1902":
+            myReturn[u"Stations"][u"Ida"] = lower_capitalized(u"Marcílio de Noronha")
+            myReturn[u"Stations"][u"Volta"] = lower_capitalized(u"Marcílio de Noronha")
         if i[u"Terminal_Seq"] == 2:
             direction = u"Ida"
         elif i[u"Terminal_Seq"] == 1:
@@ -140,6 +146,7 @@ for i in getLines():
     logger.debug(u"Gathering times for route %s: %s", ref, name)
     myTimes = getTimes(ref)
     myObs = getObservations(ref)
+    durations = [-10, -10]
     for j in myObs:
         tmp = ref + j[0]
         myRefs.append(tmp)
@@ -151,11 +158,13 @@ for i in getLines():
         test = myTimes[u"Stations"][u"Ida"]
     except:
         myTimes[u"Stations"][u"Ida"] = myTimes[u"Stations"][u"Volta"]
+#    print [ myTimes[u"Stations"][u"Ida"], myTimes[u"Stations"][u"Volta"] ]
     for ref in myRefs:
-        try:
-            durations = durationsList[ref]
-        except:
-            durations = [ -10, -10 ]
+        for r in durationsList[u"routes"]:
+            if r[0] == ref and r[1] == myTimes[u"Stations"][u"Ida"] and r[2] == myTimes[u"Stations"]["Volta"]:
+                durations[0] = r[4]
+            if r[0] == ref and r[1] == myTimes[u"Stations"][u"Volta"] and r[2] == myTimes[u"Stations"]["Ida"]:
+                durations[1] = r[4]
         if durations[0] < 0 and durations[1] < 0:
             myRoutes[u"excluded_lines"].append(ref)
             logger.info(u"%s added to Blacklist", ref)
