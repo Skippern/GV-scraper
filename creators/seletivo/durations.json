@@ -1,146 +1,386 @@
 {
-    "": [
-        -3, 
-        -4
-    ], 
-    "1603": [
-        51, 
-        55
-    ], 
-    "1604": [
-        48, 
-        47
-    ], 
-    "1608": [
-        59, 
-        58
-    ], 
-    "1609": [
-        60, 
-        55
-    ], 
-    "1610": [
-        75, 
-        67
-    ], 
-    "1610L": [
-        -5, 
-        -5
-    ], 
-    "1720": [
-        53, 
-        51
-    ], 
-    "1721": [
-        48, 
-        56
-    ], 
-    "1801": [
-        100, 
-        112
-    ], 
-    "1801H": [
-        -5, 
-        -5
-    ], 
-    "1801S": [
-        -5, 
-        -5
-    ], 
-    "1801X": [
-        -5, 
-        -5
-    ], 
-    "1802": [
-        85, 
-        75
-    ], 
-    "1802L": [
-        -5, 
-        -5
-    ], 
-    "1802S": [
-        -5, 
-        -5
-    ], 
-    "1804": [
-        80, 
-        80
-    ], 
-    "1804B": [
-        -5, 
-        -5
-    ], 
-    "1804D": [
-        -5, 
-        -5
-    ], 
-    "1804E": [
-        -5, 
-        -5
-    ], 
-    "1804L": [
-        -5, 
-        -5
-    ], 
-    "1804N": [
-        -5, 
-        -5
-    ], 
-    "1804P": [
-        -5, 
-        -5
-    ], 
-    "1804S": [
-        -5, 
-        -5
-    ], 
-    "1804T": [
-        -5, 
-        -5
-    ], 
-    "1804X": [
-        -5, 
-        -5
-    ], 
-    "1805": [
-        114, 
-        113
-    ], 
-    "1805S": [
-        -5, 
-        -5
-    ], 
-    "1806": [
-        111, 
-        99
-    ], 
-    "1806P": [
-        -5, 
-        -5
-    ], 
-    "1808": [
-        -3, 
-        -4
-    ], 
-    "1900": [
-        94, 
-        82
-    ], 
-    "1901": [
-        72, 
-        62
-    ], 
-    "1902": [
-        90, 
-        70
-    ], 
-    "1903": [
-        61, 
-        58
-    ], 
     "network": "Seletivo", 
     "operator": "Seletivo", 
+    "routes": [
+        [
+            "1603", 
+            "Jockey de Itaparica", 
+            "Rodovi\u00e1ria", 
+            null, 
+            51
+        ], 
+        [
+            "1603", 
+            "Rodovi\u00e1ria", 
+            "Jockey de Itaparica", 
+            null, 
+            55
+        ], 
+        [
+            "1604", 
+            "Rodovi\u00e1ria", 
+            "Itaparica", 
+            null, 
+            47
+        ], 
+        [
+            "1604", 
+            "Itaparica", 
+            "Rodovi\u00e1ria", 
+            null, 
+            48
+        ], 
+        [
+            "1608", 
+            "Ara\u00e7as", 
+            "Rodovi\u00e1ria", 
+            null, 
+            59
+        ], 
+        [
+            "1608", 
+            "Rodovi\u00e1ria", 
+            "Ara\u00e7as", 
+            null, 
+            58
+        ], 
+        [
+            "1610", 
+            "Ara\u00e7as", 
+            "Jardim Camburi", 
+            null, 
+            75
+        ], 
+        [
+            "1610", 
+            "Jardim Camburi", 
+            "Ara\u00e7as", 
+            null, 
+            67
+        ], 
+        [
+            "1720", 
+            "Cariacica", 
+            "Shopping Vit\u00f3ria", 
+            null, 
+            53
+        ], 
+        [
+            "1720", 
+            "Shopping Vit\u00f3ria", 
+            "Cariacica", 
+            null, 
+            51
+        ], 
+        [
+            "1721", 
+            "Shopping Moxuara", 
+            "UVV", 
+            null, 
+            48
+        ], 
+        [
+            "1721", 
+            "UVV", 
+            "Shopping Moxuara", 
+            null, 
+            56
+        ], 
+        [
+            "1801", 
+            "Jacaraipe", 
+            "Rodovi\u00e1ria", 
+            null, 
+            100
+        ], 
+        [
+            "1801", 
+            "Rodovi\u00e1ria", 
+            "Jacaraipe", 
+            null, 
+            112
+        ], 
+        [
+            "1801S", 
+            "Jacaraipe", 
+            "Rodovi\u00e1ria", 
+            null, 
+            -5
+        ], 
+        [
+            "1801S", 
+            "Rodovi\u00e1ria", 
+            "Jacaraipe", 
+            null, 
+            -5
+        ], 
+        [
+            "1802", 
+            "Serra", 
+            "Rodovi\u00e1ria", 
+            null, 
+            85
+        ], 
+        [
+            "1802", 
+            "Rodovi\u00e1ria", 
+            "Serra", 
+            null, 
+            75
+        ], 
+        [
+            "1802L", 
+            "Serra", 
+            "Rodovi\u00e1ria", 
+            null, 
+            -5
+        ], 
+        [
+            "1802L", 
+            "Rodovi\u00e1ria", 
+            "Serra", 
+            null, 
+            -5
+        ], 
+        [
+            "1802S", 
+            "Serra", 
+            "Rodovi\u00e1ria", 
+            null, 
+            -5
+        ], 
+        [
+            "1802S", 
+            "Rodovi\u00e1ria", 
+            "Serra", 
+            null, 
+            -5
+        ], 
+        [
+            "1804", 
+            "Serra Dourada III", 
+            "Rodovi\u00e1ria", 
+            null, 
+            80
+        ], 
+        [
+            "1804", 
+            "Rodovi\u00e1ria", 
+            "Serra Dourada III", 
+            null, 
+            80
+        ], 
+        [
+            "1804X", 
+            "Serra Dourada III", 
+            "Rodovi\u00e1ria", 
+            null, 
+            -5
+        ], 
+        [
+            "1804X", 
+            "Rodovi\u00e1ria", 
+            "Serra Dourada III", 
+            null, 
+            -5
+        ], 
+        [
+            "1804B", 
+            "Serra Dourada III", 
+            "Rodovi\u00e1ria", 
+            null, 
+            -5
+        ], 
+        [
+            "1804B", 
+            "Rodovi\u00e1ria", 
+            "Serra Dourada III", 
+            null, 
+            -5
+        ], 
+        [
+            "1804L", 
+            "Serra Dourada III", 
+            "Rodovi\u00e1ria", 
+            null, 
+            -5
+        ], 
+        [
+            "1804L", 
+            "Rodovi\u00e1ria", 
+            "Serra Dourada III", 
+            null, 
+            -5
+        ], 
+        [
+            "1804T", 
+            "Serra Dourada III", 
+            "Rodovi\u00e1ria", 
+            null, 
+            -5
+        ], 
+        [
+            "1804T", 
+            "Rodovi\u00e1ria", 
+            "Serra Dourada III", 
+            null, 
+            -5
+        ], 
+        [
+            "1804D", 
+            "Serra Dourada III", 
+            "Rodovi\u00e1ria", 
+            null, 
+            -5
+        ], 
+        [
+            "1804D", 
+            "Rodovi\u00e1ria", 
+            "Serra Dourada III", 
+            null, 
+            -5
+        ], 
+        [
+            "1804S", 
+            "Serra Dourada III", 
+            "Rodovi\u00e1ria", 
+            null, 
+            -5
+        ], 
+        [
+            "1804S", 
+            "Rodovi\u00e1ria", 
+            "Serra Dourada III", 
+            null, 
+            -5
+        ], 
+        [
+            "1804N", 
+            "Serra Dourada III", 
+            "Rodovi\u00e1ria", 
+            null, 
+            -5
+        ], 
+        [
+            "1804N", 
+            "Rodovi\u00e1ria", 
+            "Serra Dourada III", 
+            null, 
+            -5
+        ], 
+        [
+            "1805", 
+            "Praia Grande", 
+            "Rodovi\u00e1ria", 
+            null, 
+            114
+        ], 
+        [
+            "1805", 
+            "Rodovi\u00e1ria", 
+            "Praia Grande", 
+            null, 
+            113
+        ], 
+        [
+            "1805S", 
+            "Praia Grande", 
+            "Rodovi\u00e1ria", 
+            null, 
+            -5
+        ], 
+        [
+            "1805S", 
+            "Rodovi\u00e1ria", 
+            "Praia Grande", 
+            null, 
+            -5
+        ], 
+        [
+            "1806", 
+            "Nova Almeida", 
+            "Rodovi\u00e1ria", 
+            null, 
+            111
+        ], 
+        [
+            "1806", 
+            "Rodovi\u00e1ria", 
+            "Nova Almeida", 
+            null, 
+            99
+        ], 
+        [
+            "1806P", 
+            "Nova Almeida", 
+            "Rodovi\u00e1ria", 
+            null, 
+            93
+        ], 
+        [
+            "1806P", 
+            "Rodovi\u00e1ria", 
+            "Nova Almeida", 
+            null, 
+            82
+        ], 
+        [
+            "1808", 
+            "Castel\u00e2ndia", 
+            "Rodovi\u00e1ria", 
+            null, 
+            -3
+        ], 
+        [
+            "1808", 
+            "Rodovi\u00e1ria", 
+            "Castel\u00e2ndia", 
+            null, 
+            -4
+        ], 
+        [
+            "1900", 
+            "Marc\u00edlio de Noronha", 
+            "Jardim Camburi", 
+            null, 
+            94
+        ], 
+        [
+            "1900", 
+            "Jardim Camburi", 
+            "Marc\u00edlio de Noronha", 
+            null, 
+            82
+        ], 
+        [
+            "1901", 
+            "Marc\u00edlio de Noronha", 
+            "Praia da Costa", 
+            null, 
+            72
+        ], 
+        [
+            "1901", 
+            "Praia da Costa", 
+            "Marc\u00edlio de Noronha", 
+            null, 
+            62
+        ], 
+        [
+            "1902", 
+            "Praia da Costa", 
+            "Marc\u00edlio de Noronha", 
+            null, 
+            70
+        ], 
+        [
+            "1902", 
+            "Marc\u00edlio de Noronha", 
+            "Praia da Costa", 
+            null, 
+            90
+        ]
+    ], 
     "source": "http://ceturb.es.gov.br/", 
-    "updated": "2018-02-10"
+    "updated": "2018-02-16"
 }

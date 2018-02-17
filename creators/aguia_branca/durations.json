@@ -59,20 +59,6 @@
             225
         ], 
         [
-            "009/2", 
-            "Colatina", 
-            "Vit\u00f3ria", 
-            "Jo\u00e3o Neiva", 
-            -5
-        ], 
-        [
-            "009/2", 
-            "Vit\u00f3ria", 
-            "Colatina", 
-            "Jo\u00e3o Neiva", 
-            -5
-        ], 
-        [
             "013/0", 
             "Concei\u00e7\u00e3o da Barra", 
             "S\u00e3o Mateus", 
@@ -99,20 +85,6 @@
             "Concei\u00e7\u00e3o da Barra", 
             "BR-101", 
             334
-        ], 
-        [
-            "013/2", 
-            "Concei\u00e7\u00e3o da Barra", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "013/2", 
-            "Vit\u00f3ria", 
-            "Concei\u00e7\u00e3o da Barra", 
-            "BR-101", 
-            -5
         ], 
         [
             "014/0", 
@@ -239,20 +211,6 @@
             "Fund\u00e3o", 
             "BR-101", 
             82
-        ], 
-        [
-            "036/6", 
-            "Fund\u00e3o", 
-            "Vit\u00f3ria", 
-            "BR-101", 
-            -5
-        ], 
-        [
-            "036/6", 
-            "Vit\u00f3ria", 
-            "Fund\u00e3o", 
-            "BR-101", 
-            -5
         ], 
         [
             "038/0", 
@@ -1411,5 +1369,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-02-10"
+    "updated": "2018-02-16"
 }
