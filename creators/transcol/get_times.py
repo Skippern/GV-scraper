@@ -46,6 +46,7 @@ myRoutes[u"network"] = u"Transcol"
 myRoutes[u"source"] = baseurl
 myRoutes[u"excluded_lines"] = []
 myRoutes[u"routes"] = {}
+myRoutes[u"observations"] = {}
 
 def getTimes(ref):
     downloadURL = "https://sistemas.es.gov.br/webservices/ceturb/onibus/api/BuscaHorarios/" + ref
@@ -61,9 +62,33 @@ def getTimes(ref):
     elif ref == u"550":
         myReturn[u"Stations"][u"Ida"] = u"Shopping Vitória"
         myReturn[u"Stations"][u"Volta"] = u"Terminal Vila Velha"
+    elif ref == u"842":
+        myReturn[u"Stations"][u"Ida"] = u"Sesi"
+        myReturn[u"Stations"][u"Volta"] = u"Terminal Laranjeuras"
     elif ref == u"867":
         myReturn[u"Stations"][u"Ida"] = u"Novo Horizonte"
         myReturn[u"Stations"][u"Volta"] = u"Terminal Carapina"
+    elif ref == u"898":
+        myReturn[u"Stations"][u"Ida"] = u"Terminal Laranjeiros"
+        myReturn[u"Stations"][u"Volta"] = u"José de Anchieta"
+    elif ref == u"899":
+        myReturn[u"Stations"][u"Ida"] = u"Terminal Carapina"
+        myReturn[u"Stations"][u"Volta"] = u"Castelândia"
+    elif ref == u"906":
+        myReturn[u"Stations"][u"Ida"] = u"Terminal Campo Grande"
+        myReturn[u"Stations"][u"Volta"] = u"Soteco"
+    elif ref == u"914":
+        myReturn[u"Stations"][u"Ida"] = u"Terminal Campo Grande"
+        myReturn[u"Stations"][u"Volta"] = u"Vila Bethânia"
+    elif ref == u"916":
+        myReturn[u"Stations"][u"Ida"] = u"Terminal Campo Grande"
+        myReturn[u"Stations"][u"Volta"] = u"Arlindo Vilaschi"
+    elif ref == u"917":
+        myReturn[u"Stations"][u"Ida"] = u"Terminal Campo Grande"
+        myReturn[u"Stations"][u"Volta"] = u"Areinha"
+    elif ref == u"927":
+        myReturn[u"Stations"][u"Ida"] = u"Terminal São Torquato"
+        myReturn[u"Stations"][u"Volta"] = u"Viana"
     myReturn[ref] = {}
     myReturn[ref][u"Mo-Fr"] = {}
     myReturn[ref][u"Sa"] = {}
@@ -189,12 +214,11 @@ for i in getLines():
 
     if len(myObs) > 0:
         try:
-            obs = myRoutes[u"routes"][ref][u"observations"]
+            obs = myRoutes[u"observations"][ref]
         except:
-            myRoutes[u"routes"][ref] = {}
-            myRoutes[u"routes"][ref][u"observations"] = []
+            myRoutes[u"observations"][ref] = []
         for o in myObs:
-            myRoutes[u"routes"][ref][u"observations"].append(o)
+            myRoutes[u"observations"][ref].append(o)
             logger.debug("Observation: %s - %s", o[0], o[1])
 
 newBlacklist = uniq(myRoutes[u"excluded_lines"])
