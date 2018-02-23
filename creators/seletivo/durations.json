@@ -56,7 +56,7 @@
             "Jardim Camburi", 
             "Ara\u00e7as", 
             null, 
-            67
+            68
         ], 
         [
             "1720", 
@@ -379,8 +379,22 @@
             "Praia da Costa", 
             null, 
             90
+        ], 
+        [
+            "1903", 
+            "Viana", 
+            "Jardim Camburi", 
+            null, 
+            91
+        ], 
+        [
+            "1903", 
+            "Jardim Camburi", 
+            "Viana", 
+            null, 
+            88
         ]
     ], 
     "source": "http://ceturb.es.gov.br/", 
-    "updated": "2018-02-16"
+    "updated": "2018-02-23"
 }
