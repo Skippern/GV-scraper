@@ -56,6 +56,9 @@ def getTimes(ref):
     if ref == u"521":
         myReturn[u"Stations"][u"Ida"] = u"Hotel Canto Sol"
         myReturn[u"Stations"][u"Volta"] = u"Terminal Carapina"
+    elif ref == u"537":
+        myReturn[u"Stations"][u"Ida"] = u"Terminal Carapina"
+        myReturn[u"Stations"][u"Volta"] = u"Shopping Vitória"
     elif ref == u"544":
         myReturn[u"Stations"][u"Ida"] = u"Hotel Canto Sol"
         myReturn[u"Stations"][u"Volta"] = u"Terminal Laranjeiras"

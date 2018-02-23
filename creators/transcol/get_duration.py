@@ -34,6 +34,8 @@ def getRefs(ref, config):
     stationList[ref] = []
     if ref == u"521":
         stationList[ref] = [u"Hotel Canto Sol", u"Terminal Carapina"]
+    elif ref == u"537":
+        stationList[ref] = [u"Terminal Carapina", u"Shopping Vitória"]
     elif ref == u"544":
         stationList[ref] = [u"Hotel Canto Sol", u"Terminal Laranjeiras"]
     elif ref == u"550":
