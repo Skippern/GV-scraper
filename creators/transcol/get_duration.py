@@ -19,7 +19,7 @@ import overpass
 logger = logging.getLogger("GTFS_get_durations")
 logging.basicConfig(filename="/var/log/GTFS/transcol.log", level=logging.DEBUG, format="%(asctime)s %(name)s %(levelname)s - %(message)s", datefmt="%Y/%m/%d %H:%M:%S:")
 
-# PDFs are stored here
+# Routes are stored here
 baseurl = "http://ceturb.es.gov.br/"
 
 debugMe = False
@@ -45,7 +45,7 @@ def getRefs(ref, config):
     elif ref == u"867":
         stationList[ref] = [u"Novo Horizonte", u"Terminal Carapina"]
     elif ref == u"898":
-        stationList[ref] = [u"Terminal Laranjeiros", u"José de Anchieta"]
+        stationList[ref] = [u"Terminal Laranjeiras", u"José de Anchieta"]
     elif ref == u"899":
         stationList[ref] = [u"Terminal Carapina", u"Castelândia"] 
     elif ref == u"906":
@@ -166,10 +166,6 @@ for i in routes:
         logger.info(u"Route \"%s\" treated as circular with both origin and destination: %s", ref, origin )
     if len(i[0]) == 3:
         print u"    Route:", i[0], "-", i[1]
-#        print u"    From:", origin
-#        print u"    To:", destination
-#    durationsList[i[0]] = [ get_duration(i[0], origin, destination, config[u"query"][u"bbox"]), get_duration(i[0], destination, origin, config[u"query"][u"bbox"]) ]
-#    print u"Durations calculated ",i[0], u":", durationsList[i[0]]
     for j in stationList[ref]:
         for k in stationList[ref]:
             duration = get_duration(i[0], j, k, config[u"query"][u"bbox"])

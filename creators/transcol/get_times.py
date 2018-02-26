@@ -72,7 +72,7 @@ def getTimes(ref):
         myReturn[u"Stations"][u"Ida"] = u"Novo Horizonte"
         myReturn[u"Stations"][u"Volta"] = u"Terminal Carapina"
     elif ref == u"898":
-        myReturn[u"Stations"][u"Ida"] = u"Terminal Laranjeiros"
+        myReturn[u"Stations"][u"Ida"] = u"Terminal Laranjeiras"
         myReturn[u"Stations"][u"Volta"] = u"José de Anchieta"
     elif ref == u"899":
         myReturn[u"Stations"][u"Ida"] = u"Terminal Carapina"
@@ -174,8 +174,6 @@ def getObservations(ref):
     return myObs
 
 for i in getLines():
-    #    if i[0] == 511 or i[0] == "511" or i[0] == u"511":
-    #    break
     myRefs = []
     myTimes = {}
     ref = str(i[0])
@@ -185,6 +183,7 @@ for i in getLines():
     logger.debug(u"Gathering times for route %s: %s", ref, name)
     myTimes = getTimes(ref)
     myObs = getObservations(ref)
+    durations = [ None, None]
     for j in myObs:
         tmp = ref + j[0]
         myRefs.append(tmp)
@@ -197,8 +196,13 @@ for i in getLines():
             myTimes[u"Stations"][u"Ida"], myTimes[u"Stations"][u"Volta"] = u"Unknown", u"Unknown"
     for ref in myRefs:
         try:
-            durations = durationsList[ref]
+            for x in durationsList[u"routes"]:
+                if x[0] == ref and x[1] == myTimes[u"Stations"][u"Ida"] and x[2] == myTimes[u"Stations"][u"Volta"]:
+                    durations[0] = x[4]
+                elif x[0] == ref and x[2] == myTimes[u"Stations"][u"Ida"] and x[1] == myTimes[u"Stations"][u"Volta"]:
+                    durations[1] = x[4]
         except:
+            logger.error("Something went wrong in getting durations for %s", ref)
             durations = [ -10, -10 ]
         if durations[0] < 0 and durations[1] < 0:
             myRoutes[u"excluded_lines"].append(ref)
