@@ -1340,11 +1340,11 @@
                 "times": [
                     [
                         "05:10", 
-                        "08:06"
+                        "08:05"
                     ], 
                     [
                         "17:30", 
-                        "20:26"
+                        "20:25"
                     ]
                 ], 
                 "to": "Anchieta"
@@ -1362,7 +1362,7 @@
                 "times": [
                     [
                         "15:40", 
-                        "18:36"
+                        "18:35"
                     ]
                 ], 
                 "to": "Anchieta"
@@ -1416,5 +1416,5 @@
         ]
     }, 
     "source": "http://www.viacaoplaneta-es.com.br/destinos-e-horarios-viacao-planeta/", 
-    "updated": "2018-02-23"
+    "updated": "2018-03-02"
 }
