@@ -11,7 +11,7 @@
         }
     },
     "stops": {
-        "name_without": "Estação sem nome",
+        "name_without": "Sem nome",
         "name_auto": "yes"
     },
     "agency": {
