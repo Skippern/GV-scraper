@@ -17,7 +17,7 @@
     "agency": {
         "agency_id": "BR-Minastur",
         "agency_name": "Minastur Transporte e Turismo Ltda",
-        "agency_url": "",
+        "agency_url": "https://github.com/Skippern",
         "agency_timezone": "America/Sao_Paulo",
         "agency_lang": "pt",
         "agency_phone": "",
@@ -29,5 +29,6 @@
         "version":  "0.1"
     },
     "output_file": "data/br-minastur.zip",
-    "selector": "minastur"
+    "schedule_source": "https://raw.githubusercontent.com/Skippern/GV-scraper/master/creators/minastur/times.json",
+    "selector": "br-minastur"
 }

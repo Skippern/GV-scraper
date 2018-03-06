@@ -29,5 +29,6 @@
         "version":  "0.1"
     },
     "output_file": "data/br-planeta.zip",
-    "selector": "planeta"
+    "schedule_source": "https://raw.githubusercontent.com/Skippern/GV-scraper/master/creators/planeta/times.json",
+    "selector": "br-planeta"
 }

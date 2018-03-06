@@ -29,5 +29,6 @@
         "version":  "0.1"
     },
     "output_file": "data/br-ceturb-seletivo.zip",
-    "selector": "seletivo"
+    "schedule_source": "https://raw.githubusercontent.com/Skippern/GV-scraper/master/creators/seletivo/times.json",
+    "selector": "br-seletivo"
 }

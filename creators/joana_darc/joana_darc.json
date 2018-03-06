@@ -17,7 +17,7 @@
     "agency": {
         "agency_id": "BR-Lirio",
         "agency_name": "Viação Joana Dárc S/A",
-        "agency_url": "",
+        "agency_url": "https://github.com/Skippern",
         "agency_timezone": "America/Sao_Paulo",
         "agency_lang": "pt",
         "agency_phone": "",
@@ -28,6 +28,7 @@
         "publisher_url": "https://github.com/Skippern",
         "version":  "0.1"
     },
-    "output_file": "data/br-lirio.zip",
-    "selector": "lirio"
+    "output_file": "data/br-joana_darc.zip",
+    "schedule_source": "https://raw.githubusercontent.com/Skippern/GV-scraper/master/creators/joana_darc/times.json",
+    "selector": "br-joana_darc"
 }

@@ -29,5 +29,6 @@
         "version":  "0.1"
     },
     "output_file": "data/br-alvorada.zip",
-    "selector": "alvorada"
+    "schedule_source": "https://raw.githubusercontent.com/Skippern/GV-scraper/master/creators/alvorada/times.json",
+    "selector": "br-alvorada"
 }

@@ -17,7 +17,7 @@
     "agency": {
         "agency_id": "BR-SaoMarcos",
         "agency_name": "Expresso São Marcos Ltda",
-        "agency_url": "",
+        "agency_url": "https://github.com/Skippern",
         "agency_timezone": "America/Sao_Paulo",
         "agency_lang": "pt",
         "agency_phone": "",
@@ -29,5 +29,6 @@
         "version":  "0.1"
     },
     "output_file": "data/br-sao_marcos.zip",
-    "selector": "sao_marcos"
+    "schedule_source": "https://raw.githubusercontent.com/Skippern/GV-scraper/master/creators/sao_marcos/times.json",
+    "selector": "br-sao_marcos"
 }

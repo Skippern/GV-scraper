@@ -29,5 +29,6 @@
         "version":  "0.1"
     },
     "output_file": "data/br-vitoria.zip",
-    "selector": "viacao-gv"
+    "schedule_source": "https://raw.githubusercontent.com/Skippern/GV-scraper/master/creators/viacao-gv/times.json",
+    "selector": "br-viacao-gv"
 }

@@ -29,5 +29,6 @@
         "version":  "0.1"
     },
     "output_file": "data/br-ceturb-transcol.zip",
-    "selector": "transcol"
+    "schedule_source": "https://raw.githubusercontent.com/Skippern/GV-scraper/master/creators/transcol/times.json",
+    "selector": "br-transcol"
 }

@@ -29,5 +29,6 @@
         "version":  "0.1"
     },
     "output_file": "data/br-vilavelha.zip",
-    "selector": "sanremo"
+    "schedule_source": "https://raw.githubusercontent.com/Skippern/GV-scraper/master/creators/sanremo/times.json",
+    "selector": "br-sanremo"
 }

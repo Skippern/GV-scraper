@@ -29,5 +29,6 @@
         "version":  "0.1"
     },
     "output_file": "data/br-guarapari.zip",
-    "selector": "lorenzuti"
+    "schedule_source": "https://raw.githubusercontent.com/Skippern/GV-scraper/master/creators/lorenzutti/times.json",
+    "selector": "br-lorenzutti"
 }

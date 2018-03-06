@@ -17,7 +17,7 @@
     "agency": {
         "agency_id": "BR-Motum_Preto",
         "agency_name": "Viação Motum Preto Ltda",
-        "agency_url": "",
+        "agency_url": "https://github.com/Skippern",
         "agency_timezone": "America/Sao_Paulo",
         "agency_lang": "pt",
         "agency_phone": "",
@@ -29,5 +29,6 @@
         "version":  "0.1"
     },
     "output_file": "data/br-motum_preto.zip",
-    "selector": "motum_preto"
+    "schedule_source": "https://raw.githubusercontent.com/Skippern/GV-scraper/master/creators/motum_preto/times.json",
+    "selector": "br-motum_preto"
 }
