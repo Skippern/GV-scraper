@@ -77,14 +77,14 @@
             "Shopping Moxuara", 
             "UVV", 
             null, 
-            48
+            51
         ], 
         [
             "1721", 
             "UVV", 
             "Shopping Moxuara", 
             null, 
-            56
+            60
         ], 
         [
             "1801", 
@@ -396,5 +396,5 @@
         ]
     ], 
     "source": "http://ceturb.es.gov.br/", 
-    "updated": "2018-03-02"
+    "updated": "2018-03-10"
 }

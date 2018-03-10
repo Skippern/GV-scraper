@@ -63,7 +63,7 @@
             "Concei\u00e7\u00e3o da Barra", 
             "S\u00e3o Mateus", 
             "BR-101", 
-            -5
+            61
         ], 
         [
             "013/0", 
@@ -77,14 +77,14 @@
             "S\u00e3o Mateus", 
             "Concei\u00e7\u00e3o da Barra", 
             "BR-101", 
-            -5
+            60
         ], 
         [
             "013/0", 
             "Vit\u00f3ria", 
             "Concei\u00e7\u00e3o da Barra", 
             "BR-101", 
-            334
+            336
         ], 
         [
             "014/0", 
@@ -182,7 +182,7 @@
             "Vit\u00f3ria", 
             "Pedro Can\u00e1rio", 
             "BR-101", 
-            339
+            341
         ], 
         [
             "028/0", 
@@ -350,7 +350,7 @@
             "Vit\u00f3ria", 
             "Linhares", 
             "BR-101", 
-            176
+            178
         ], 
         [
             "068/2", 
@@ -392,7 +392,7 @@
             "Vit\u00f3ria", 
             "Ibira\u00e7u", 
             "BR-101", 
-            104
+            106
         ], 
         [
             "083/0", 
@@ -420,7 +420,7 @@
             "Vit\u00f3ria", 
             "S\u00e3o Mateus", 
             "BR-101", 
-            274
+            276
         ], 
         [
             "090/0", 
@@ -602,7 +602,7 @@
             "Vit\u00f3ria", 
             "Aracruz", 
             "Fund\u00e3o", 
-            132
+            133
         ], 
         [
             "103/2", 
@@ -1369,5 +1369,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-03-02"
+    "updated": "2018-03-10"
 }
