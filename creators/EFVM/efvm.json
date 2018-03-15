@@ -1,23 +1,23 @@
 {
     "query": {
         "bbox": {
-            "n": "-18.825",
-            "s": "-20.333",
-            "e": "-40.351",
-            "w": "-43.934"
+            "n": "-18.8518863",
+            "s": "-20.3322998",
+            "e": "-40.3566029",
+            "w": "-43.9332223"
         },
         "tags": {
             "route": "train"
         }
     },
     "stops": {
-        "name_without": "Sem nome",
+        "name_without": "Estação Sem Nome",
         "name_auto": "yes"
     },
     "agency": {
         "agency_id": "BR-VALE",
         "agency_name": "Vale do Rio Doce",
-        "agency_url": "https://github.com/Skippern",
+        "agency_url": "http://vfco.brazilia.jor.br/Carros/efvm/trem-Belo-Horizonte-Vitoria-horarios.shtml",
         "agency_timezone": "America/Sao_Paulo",
         "agency_lang": "pt",
         "agency_phone": "",
