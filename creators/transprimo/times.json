@@ -5,15 +5,59 @@
         "332/0", 
         "355/0", 
         "356/0", 
-        "357/0", 
         "361/0", 
         "362/0", 
-        "363/0", 
-        "364/0"
+        "363/0"
     ], 
     "network": "Transprimo", 
     "operator": "Transprimo Ltda", 
     "routes": {
+        "357/0": [
+            {
+                "exceptions": [], 
+                "from": "Afonso Cl\u00e1udio", 
+                "services": [
+                    "Mo-Fr"
+                ], 
+                "stations": [
+                    "Afonso Cl\u00e1udio", 
+                    "Domingos Martins"
+                ], 
+                "times": [
+                    [
+                        "06:00", 
+                        "09:28"
+                    ], 
+                    [
+                        "13:00", 
+                        "16:28"
+                    ]
+                ], 
+                "to": "Domingos Martins"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Domingos Martins", 
+                "services": [
+                    "Mo-Fr"
+                ], 
+                "stations": [
+                    "Domingos Martins", 
+                    "Afonso Cl\u00e1udio"
+                ], 
+                "times": [
+                    [
+                        "10:55", 
+                        "14:17"
+                    ], 
+                    [
+                        "17:05", 
+                        "20:27"
+                    ]
+                ], 
+                "to": "Afonso Cl\u00e1udio"
+            }
+        ], 
         "360/0": [
             {
                 "exceptions": [], 
@@ -51,8 +95,46 @@
                 ], 
                 "to": "Araguaia"
             }
+        ], 
+        "364/0": [
+            {
+                "exceptions": [], 
+                "from": "Araguaia", 
+                "services": [
+                    "Fr"
+                ], 
+                "stations": [
+                    "Araguaia", 
+                    "Domingos Martins"
+                ], 
+                "times": [
+                    [
+                        "14:00", 
+                        "14:58"
+                    ]
+                ], 
+                "to": "Domingos Martins"
+            }, 
+            {
+                "exceptions": [], 
+                "from": "Domingos Martins", 
+                "services": [
+                    "Fr"
+                ], 
+                "stations": [
+                    "Domingos Martins", 
+                    "Araguaia"
+                ], 
+                "times": [
+                    [
+                        "15:15", 
+                        "16:13"
+                    ]
+                ], 
+                "to": "Araguaia"
+            }
         ]
     }, 
     "source": "DER-ES", 
-    "updated": "2018-03-10"
+    "updated": "2018-03-16"
 }

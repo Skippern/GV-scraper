@@ -19,8 +19,10 @@ for i in *
 
 cd $back
 
+exit 0
+
 for i in `find creators | grep json | grep -v times.json | grep -v durations.json`
     do echo "Generationg GTFS from $i"
     osm2gtfs --refresh-all --config $i
     done
-    
+

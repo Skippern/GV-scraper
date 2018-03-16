@@ -441,7 +441,7 @@
             "Terminal Ibes", 
             "Terminal Vila Velha", 
             null, 
-            42
+            41
         ], 
         [
             "514", 
@@ -546,7 +546,7 @@
             "Terminal Ibes", 
             "Terminal Jacara\u00edpe", 
             null, 
-            93
+            92
         ], 
         [
             "517", 
@@ -574,7 +574,7 @@
             "Terminal Ibes", 
             "Terminal Carapina", 
             null, 
-            75
+            74
         ], 
         [
             "518C", 
@@ -693,7 +693,7 @@
             "Terminal Vila Velha", 
             "Terminal Itacib\u00e1", 
             null, 
-            41
+            40
         ], 
         [
             "525", 
@@ -735,7 +735,7 @@
             "Terminal Campo Grande", 
             "Terminal Vila Velha", 
             null, 
-            39
+            38
         ], 
         [
             "526", 
@@ -1386,14 +1386,14 @@
             "Padre Gabriel", 
             "Terminal Itaparica", 
             null, 
-            34
+            35
         ], 
         [
             "582", 
             "Terminal Itaparica", 
             "Padre Gabriel", 
             null, 
-            32
+            34
         ], 
         [
             "583", 
@@ -1477,7 +1477,7 @@
             "Terminal Itaparica", 
             "Terminal Campo Grande", 
             null, 
-            36
+            41
         ], 
         [
             "590", 
@@ -1568,7 +1568,7 @@
             "Terminal Ibes", 
             "Terminal Ibes", 
             null, 
-            52
+            51
         ], 
         [
             "593", 
@@ -1778,7 +1778,7 @@
             "Terminal S\u00e3o Torquato", 
             "Terminal Ibes", 
             null, 
-            19
+            18
         ], 
         [
             "605", 
@@ -1792,7 +1792,7 @@
             "Terminal Ibes", 
             "Terminal Vila Velha", 
             null, 
-            31
+            30
         ], 
         [
             "605U", 
@@ -1946,14 +1946,14 @@
             "Terminal Itaparica", 
             "Terminal Jardim Am\u00e9rica", 
             null, 
-            47
+            44
         ], 
         [
             "614", 
             "Terminal Jardim Am\u00e9rica", 
             "Terminal Itaparica", 
             null, 
-            48
+            45
         ], 
         [
             "614S", 
@@ -1981,21 +1981,21 @@
             "Terminal Itaparica", 
             "Terminal Itaparica", 
             null, 
-            88
+            90
         ], 
         [
             "624", 
             "Terminal Itaparica", 
             "Terminal S\u00e3o Torquato", 
             null, 
-            42
+            39
         ], 
         [
             "624", 
             "Terminal S\u00e3o Torquato", 
             "Terminal Itaparica", 
             null, 
-            47
+            44
         ], 
         [
             "624E", 
@@ -2023,7 +2023,7 @@
             "Terminal S\u00e3o Torquato", 
             "Terminal Ibes", 
             null, 
-            19
+            18
         ], 
         [
             "626", 
@@ -2044,28 +2044,28 @@
             "Rio Marinho", 
             "Terminal S\u00e3o Torquato", 
             null, 
-            29
+            26
         ], 
         [
             "630", 
             "Terminal S\u00e3o Torquato", 
             "Rio Marinho", 
             null, 
-            36
+            32
         ], 
         [
             "633", 
             "Terminal Ibes", 
             "Terminal S\u00e3o Torquato", 
             null, 
-            20
+            19
         ], 
         [
             "633", 
             "Terminal S\u00e3o Torquato", 
             "Terminal Ibes", 
             null, 
-            20
+            19
         ], 
         [
             "636", 
@@ -2086,7 +2086,7 @@
             "Terminal Vila Velha", 
             "Terminal Ibes", 
             null, 
-            21
+            20
         ], 
         [
             "650", 
@@ -2142,21 +2142,21 @@
             "Xuri", 
             "Terminal Itaparica", 
             null, 
-            50
+            85
         ], 
         [
             "657", 
             "Terminal Itaparica", 
             "Xuri", 
             null, 
-            54
+            88
         ], 
         [
             "658", 
             "Terminal Ibes", 
             "Terminal S\u00e3o Torquato", 
             null, 
-            20
+            19
         ], 
         [
             "658", 
@@ -2604,7 +2604,7 @@
             "Jardim Campo Grande", 
             "Terminal Campo Grande", 
             null, 
-            20
+            25
         ], 
         [
             "715", 
@@ -2726,6 +2726,13 @@
             -5
         ], 
         [
+            "725", 
+            "Terminal Campo Grande", 
+            "Terminal Campo Grande", 
+            null, 
+            54
+        ], 
+        [
             "726", 
             "Nova Campo Grande", 
             "Terminal Campo Grande", 
@@ -2744,14 +2751,14 @@
             "Bubu", 
             "Terminal Campo Grande", 
             null, 
-            35
+            37
         ], 
         [
             "727", 
             "Terminal Campo Grande", 
             "Bubu", 
             null, 
-            32
+            31
         ], 
         [
             "727L", 
@@ -3465,14 +3472,14 @@
             "Orfanato Cristo Rei", 
             "Terminal Campo Grande", 
             null, 
-            -5
+            -3
         ], 
         [
             "796", 
             "Terminal Campo Grande", 
             "Orfanato Cristo Rei", 
             null, 
-            -5
+            39
         ], 
         [
             "797", 
@@ -4774,14 +4781,14 @@
             "Praia de Carapebus", 
             "Terminal Laranjeiras", 
             null, 
-            43
+            42
         ], 
         [
             "883", 
             "Terminal Laranjeiras", 
             "Praia de Carapebus", 
             null, 
-            42
+            41
         ], 
         [
             "884", 
@@ -5110,14 +5117,14 @@
             "Ara\u00e7atiba", 
             "Terminal Campo Grande", 
             null, 
-            44
+            45
         ], 
         [
             "902", 
             "Terminal Campo Grande", 
             "Ara\u00e7atiba", 
             null, 
-            42
+            43
         ], 
         [
             "902B", 
@@ -5376,14 +5383,14 @@
             "Universal", 
             "Terminal Campo Grande", 
             null, 
-            36
+            33
         ], 
         [
             "910", 
             "Terminal Campo Grande", 
             "Universal", 
             null, 
-            31
+            28
         ], 
         [
             "911", 
@@ -5502,7 +5509,7 @@
             "Jucu", 
             "Terminal Campo Grande", 
             null, 
-            25
+            26
         ], 
         [
             "915", 
@@ -5593,14 +5600,14 @@
             "CDP Vila Velha", 
             "Terminal Campo Grande", 
             null, 
-            44
+            45
         ], 
         [
             "918", 
             "Terminal Campo Grande", 
             "CDP Vila Velha", 
             null, 
-            40
+            41
         ], 
         [
             "918S", 
@@ -5614,7 +5621,7 @@
             "Terminal Campo Grande", 
             "CDP Vila Velha", 
             null, 
-            40
+            41
         ], 
         [
             "919", 
@@ -5649,14 +5656,14 @@
             "Universal", 
             "Terminal Campo Grande", 
             null, 
-            36
+            39
         ], 
         [
             "921", 
             "Terminal Campo Grande", 
             "Universal", 
             null, 
-            36
+            38
         ], 
         [
             "921P", 
@@ -5817,16 +5824,16 @@
             "Bairro Ipanema", 
             "Areinha", 
             null, 
-            69
+            66
         ], 
         [
             "986", 
             "Areinha", 
             "Bairro Ipanema", 
             null, 
-            60
+            58
         ]
     ], 
     "source": "http://ceturb.es.gov.br/", 
-    "updated": "2018-03-06"
+    "updated": "2018-03-15"
 }
