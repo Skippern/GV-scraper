@@ -140,7 +140,7 @@
             "Terminal Itacib\u00e1", 
             "Terminal Jacara\u00edpe", 
             null, 
-            85
+            90
         ], 
         [
             "504S", 
@@ -672,7 +672,7 @@
             "Terminal Jardim Am\u00e9rica", 
             "Terminal Jacara\u00edpe", 
             null, 
-            94
+            98
         ], 
         [
             "523L", 
@@ -1057,7 +1057,7 @@
             "Shopping Vit\u00f3ria", 
             "Terminal Jacara\u00edpe", 
             null, 
-            69
+            73
         ], 
         [
             "543", 
@@ -1169,7 +1169,7 @@
             "Terminal Campo Grande", 
             "Terminal Jacara\u00edpe", 
             null, 
-            106
+            111
         ], 
         [
             "561S", 
@@ -1246,7 +1246,7 @@
             "Terminal Carapina", 
             "Terminal Vila Velha", 
             null, 
-            68
+            67
         ], 
         [
             "567", 
@@ -2170,14 +2170,14 @@
             "Xuri", 
             "Terminal Itaparica", 
             null, 
-            51
+            50
         ], 
         [
             "657", 
             "Terminal Itaparica", 
             "Xuri", 
             null, 
-            55
+            54
         ], 
         [
             "658", 
@@ -3276,7 +3276,7 @@
             "Bela Vista", 
             "Terminal S\u00e3o Torquato", 
             null, 
-            22
+            24
         ], 
         [
             "770F", 
@@ -3668,14 +3668,14 @@
             "Terminal Laranjeiras", 
             "Terminal Laranjeiras", 
             null, 
-            62
+            66
         ], 
         [
             "805B", 
             "Terminal Laranjeiras", 
             "Terminal Laranjeiras", 
             null, 
-            58
+            63
         ], 
         [
             "806A", 
@@ -3864,7 +3864,7 @@
             "IFES", 
             "Terminal Laranjeiras", 
             null, 
-            12
+            17
         ], 
         [
             "815", 
@@ -3892,14 +3892,14 @@
             "Praia de Carapebus", 
             "Terminal Carapina", 
             null, 
-            32
+            29
         ], 
         [
             "817", 
             "Terminal Carapina", 
             "Praia de Carapebus", 
             null, 
-            31
+            29
         ], 
         [
             "818", 
@@ -4536,7 +4536,7 @@
             "Terminal Laranjeiras", 
             "Terminal Jacara\u00edpe", 
             null, 
-            31
+            36
         ], 
         [
             "862", 
@@ -4718,7 +4718,7 @@
             "Terminal Laranjeiras", 
             "Terminal Jacara\u00edpe", 
             null, 
-            23
+            27
         ], 
         [
             "875E", 
@@ -4795,14 +4795,14 @@
             "Praia de Carapebus", 
             "Terminal Laranjeiras", 
             null, 
-            44
+            42
         ], 
         [
             "883", 
             "Terminal Laranjeiras", 
             "Praia de Carapebus", 
             null, 
-            43
+            41
         ], 
         [
             "884", 
@@ -5355,14 +5355,14 @@
             "Areinha", 
             "Terminal Campo Grande", 
             null, 
-            23
+            28
         ], 
         [
             "908", 
             "Terminal Campo Grande", 
             "Areinha", 
             null, 
-            25
+            30
         ], 
         [
             "908L", 
@@ -5579,7 +5579,7 @@
             "Terminal Campo Grande", 
             "Terminal Campo Grande", 
             null, 
-            65
+            70
         ], 
         [
             "917", 
@@ -5768,14 +5768,14 @@
             "Bairro Industrial", 
             "Viana", 
             null, 
-            48
+            51
         ], 
         [
             "982", 
             "Viana", 
             "Bairro Industrial", 
             null, 
-            43
+            46
         ], 
         [
             "983", 
@@ -5838,14 +5838,14 @@
             "Bairro Ipanema", 
             "Areinha", 
             null, 
-            61
+            66
         ], 
         [
             "986", 
             "Areinha", 
             "Bairro Ipanema", 
             null, 
-            53
+            58
         ]
     ], 
     "source": "http://ceturb.es.gov.br/", 
