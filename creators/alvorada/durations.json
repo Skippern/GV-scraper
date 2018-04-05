@@ -21,7 +21,7 @@
             "Alfredo Chaves", 
             "Vit\u00f3ria", 
             "Guarapari", 
-            195
+            212
         ], 
         [
             "033/0", 
@@ -91,14 +91,14 @@
             "Aeroporto", 
             "Guarapari", 
             null, 
-            129
+            -3
         ], 
         [
             "063/5", 
             "Guarapari", 
             "Aeroporto", 
             null, 
-            139
+            -4
         ], 
         [
             "063/5", 
@@ -119,7 +119,7 @@
             "Alfredo Chaves", 
             "Vit\u00f3ria", 
             "BR-101", 
-            127
+            126
         ], 
         [
             "119/0", 
@@ -193,5 +193,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-03-30"
+    "updated": "2018-04-06"
 }
