@@ -10727,10 +10727,6 @@
                 ], 
                 "times": [
                     [
-                        "06:00", 
-                        "06:49"
-                    ], 
-                    [
                         "06:30", 
                         "07:19"
                     ], 
@@ -10796,27 +10792,6 @@
                 "from": "Patur\u00e1", 
                 "services": [
                     "Mo-Fr"
-                ], 
-                "stations": [
-                    "Patur\u00e1", 
-                    "Independ\u00eancia"
-                ], 
-                "times": [
-                    [
-                        "06:00", 
-                        "07:00"
-                    ]
-                ], 
-                "to": "Independ\u00eancia"
-            }, 
-            {
-                "exceptions": [
-                    "2018-04-21", 
-                    "2018-12-08"
-                ], 
-                "from": "Patur\u00e1", 
-                "services": [
-                    "Sa"
                 ], 
                 "stations": [
                     "Patur\u00e1", 
@@ -14907,5 +14882,5 @@
         ]
     }, 
     "source": "http://www.expressolorenzutti.com.br/horarios", 
-    "updated": "2018-04-06"
+    "updated": "2018-04-20"
 }

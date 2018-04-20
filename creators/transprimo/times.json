@@ -5,6 +5,7 @@
         "332/0", 
         "355/0", 
         "356/0", 
+        "357/0", 
         "361/0", 
         "362/0", 
         "363/0"
@@ -13,28 +14,6 @@
     "operator": "Transprimo Ltda", 
     "routes": {
         "357/0": [
-            {
-                "exceptions": [], 
-                "from": "Afonso Cl\u00e1udio", 
-                "services": [
-                    "Mo-Fr"
-                ], 
-                "stations": [
-                    "Afonso Cl\u00e1udio", 
-                    "Domingos Martins"
-                ], 
-                "times": [
-                    [
-                        "06:00", 
-                        "09:24"
-                    ], 
-                    [
-                        "13:00", 
-                        "16:24"
-                    ]
-                ], 
-                "to": "Domingos Martins"
-            }, 
             {
                 "exceptions": [], 
                 "from": "Domingos Martins", 
@@ -136,5 +115,5 @@
         ]
     }, 
     "source": "DER-ES", 
-    "updated": "2018-04-06"
+    "updated": "2018-04-20"
 }
