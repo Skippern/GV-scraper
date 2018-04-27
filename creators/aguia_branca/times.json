@@ -3,6 +3,7 @@
         "006/0", 
         "007/0", 
         "008/2", 
+        "013/0", 
         "014/0", 
         "020/0", 
         "025/0", 
@@ -353,138 +354,6 @@
                     ]
                 ], 
                 "to": "Colatina"
-            }
-        ], 
-        "013/0": [
-            {
-                "exceptions": [], 
-                "from": "Concei\u00e7\u00e3o da Barra", 
-                "services": [
-                    "Mo-Su"
-                ], 
-                "stations": [
-                    "Concei\u00e7\u00e3o da Barra", 
-                    "S\u00e3o Mateus"
-                ], 
-                "times": [
-                    [
-                        "06:00", 
-                        "07:01"
-                    ]
-                ], 
-                "to": "S\u00e3o Mateus"
-            }, 
-            {
-                "exceptions": [], 
-                "from": "Concei\u00e7\u00e3o da Barra", 
-                "services": [
-                    "Mo-Sa"
-                ], 
-                "stations": [
-                    "Concei\u00e7\u00e3o da Barra", 
-                    "S\u00e3o Mateus"
-                ], 
-                "times": [
-                    [
-                        "07:45", 
-                        "08:46"
-                    ]
-                ], 
-                "to": "S\u00e3o Mateus"
-            }, 
-            {
-                "exceptions": [], 
-                "from": "Concei\u00e7\u00e3o da Barra", 
-                "services": [
-                    "Su"
-                ], 
-                "stations": [
-                    "Concei\u00e7\u00e3o da Barra", 
-                    "S\u00e3o Mateus"
-                ], 
-                "times": [
-                    [
-                        "18:01", 
-                        "19:02"
-                    ]
-                ], 
-                "to": "S\u00e3o Mateus"
-            }, 
-            {
-                "exceptions": [], 
-                "from": "Concei\u00e7\u00e3o da Barra", 
-                "services": [
-                    "Mo-Fr"
-                ], 
-                "stations": [
-                    "Concei\u00e7\u00e3o da Barra", 
-                    "Vit\u00f3ria"
-                ], 
-                "times": [
-                    [
-                        "18:00", 
-                        "23:34"
-                    ]
-                ], 
-                "to": "Vit\u00f3ria"
-            }, 
-            {
-                "exceptions": [], 
-                "from": "S\u00e3o Mateus", 
-                "services": [
-                    "Mo-Sa"
-                ], 
-                "stations": [
-                    "S\u00e3o Mateus", 
-                    "Concei\u00e7\u00e3o da Barra"
-                ], 
-                "times": [
-                    [
-                        "13:30", 
-                        "14:30"
-                    ], 
-                    [
-                        "17:30", 
-                        "18:30"
-                    ]
-                ], 
-                "to": "Concei\u00e7\u00e3o da Barra"
-            }, 
-            {
-                "exceptions": [], 
-                "from": "S\u00e3o Mateus", 
-                "services": [
-                    "Mo-Su"
-                ], 
-                "stations": [
-                    "S\u00e3o Mateus", 
-                    "Concei\u00e7\u00e3o da Barra"
-                ], 
-                "times": [
-                    [
-                        "19:15", 
-                        "20:15"
-                    ]
-                ], 
-                "to": "Concei\u00e7\u00e3o da Barra"
-            }, 
-            {
-                "exceptions": [], 
-                "from": "Vit\u00f3ria", 
-                "services": [
-                    "Mo-Fr"
-                ], 
-                "stations": [
-                    "Vit\u00f3ria", 
-                    "Concei\u00e7\u00e3o da Barra"
-                ], 
-                "times": [
-                    [
-                        "06:40", 
-                        "12:16"
-                    ]
-                ], 
-                "to": "Concei\u00e7\u00e3o da Barra"
             }
         ], 
         "019/0": [
@@ -1741,5 +1610,5 @@
         ]
     }, 
     "source": "DER-ES", 
-    "updated": "2018-04-20"
+    "updated": "2018-04-27"
 }

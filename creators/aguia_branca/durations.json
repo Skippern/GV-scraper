@@ -63,28 +63,28 @@
             "Concei\u00e7\u00e3o da Barra", 
             "S\u00e3o Mateus", 
             "BR-101", 
-            61
+            -4
         ], 
         [
             "013/0", 
             "Concei\u00e7\u00e3o da Barra", 
             "Vit\u00f3ria", 
             "BR-101", 
-            334
+            -4
         ], 
         [
             "013/0", 
             "S\u00e3o Mateus", 
             "Concei\u00e7\u00e3o da Barra", 
             "BR-101", 
-            60
+            -4
         ], 
         [
             "013/0", 
             "Vit\u00f3ria", 
             "Concei\u00e7\u00e3o da Barra", 
             "BR-101", 
-            336
+            -4
         ], 
         [
             "014/0", 
@@ -1369,5 +1369,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-04-06"
+    "updated": "2018-04-27"
 }
