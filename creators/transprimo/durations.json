@@ -84,21 +84,21 @@
             "Domingos Martins", 
             "Afonso Cl\u00e1udio", 
             null, 
-            202
+            135
         ], 
         [
             "360/0", 
             "Araguaia", 
             "Domingos Martins", 
             null, 
-            58
+            40
         ], 
         [
             "360/0", 
             "Domingos Martins", 
             "Araguaia", 
             null, 
-            58
+            42
         ], 
         [
             "361/0", 
@@ -147,16 +147,16 @@
             "Araguaia", 
             "Domingos Martins", 
             "Curva da Morte", 
-            58
+            40
         ], 
         [
             "364/0", 
             "Domingos Martins", 
             "Araguaia", 
             "Curva da Morte", 
-            58
+            42
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-05-06"
+    "updated": "2018-09-08"
 }
