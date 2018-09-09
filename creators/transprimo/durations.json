@@ -98,7 +98,7 @@
             "Domingos Martins", 
             "Araguaia", 
             null, 
-            42
+            43
         ], 
         [
             "361/0", 
@@ -154,9 +154,9 @@
             "Domingos Martins", 
             "Araguaia", 
             "Curva da Morte", 
-            42
+            43
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-09-08"
+    "updated": "2018-09-09"
 }
