@@ -32,6 +32,7 @@ except:
 import overpass
 
 routing_with_YOUR = False
+#routing_with_YOUR = True
 prevent_damages = True
 
 logger = logging.getLogger("GTFS_router")
@@ -83,6 +84,7 @@ def route_osrm_web(points):
     debug_to_screen(u"Duration: {0} seconds / {1} minutes".format(int(duration), int(duration / 60)))
     duration = round(duration / 60)
     return int(duration)
+
 def route_osrm_local(points):
     duration = 0.0
     routingProfile = "car"
@@ -105,13 +107,13 @@ def route_osrm_local(points):
             r = False
             raise
         if r.status_code == 502:
-            logger.critical(u"502 Bad Gateway in route_osrm_web - returning False")
+            logger.critical(u"502 Bad Gateway in route_osrm_local - returning False")
             return False
         elif r.status_code == 503:
-            logger.critical(u"503 Service Unavailable in route_osrm_web - returning False")
+            logger.critical(u"503 Service Unavailable in route_osrm_local - returning False")
             return False
         elif r.status_code == 504:
-            logger.critical(u"504 Gateway Timeout in route_osrm_web - returning False")
+            logger.critical(u"504 Gateway Timeout in route_osrm_local - returning False")
             return False
         try:
             routeJSON = json.loads(r.content)
@@ -127,6 +129,7 @@ def route_osrm_local(points):
 def route_yours_web(points):
     if not routing_with_YOUR:
         return False
+    print "YOURS: {0} waypoints".format(len(points))
     duration = 0
     routingBase = "http://www.yournavigation.org/api/1.0/gosmore.php?format=json&v=psv&fast=1"
     fromP = None
@@ -137,6 +140,8 @@ def route_yours_web(points):
         else:
             r = False
             while r == False:
+                sys.stdout.write(".")
+                sys.stdout.flush()
                 fullRoutingString = "{0}&flat={1}&flon={2}&tlat={3}&tlon={4}".format(routingBase, fromP[0], fromP[1], toP[0], toP[1])
                 logger.debug(fullRoutingString)
                 try:
@@ -213,26 +218,36 @@ def get_duration(ref, origin, destination, bbox):
         duration = -6
         return duration
     # Get Route
-    try:
-        duration = route_osrm_py(points)
-    except:
-        logger.warning(u"Routing with OSRM Python wrapper failed")
-    if duration < 1:
+    passes = 0
+    while duration < 1:
+        if passes > 10:
+            print u"WARNING: Exiting after {0} passes".format(passes)
+            break
         try:
-            duration = route_osrm_local(points)
+            duration = route_osrm_py(points)
         except:
-            logger.warning(u"Routing with OSRM local API failed")
-    if duration < 1:
-        try:
-            duration = route_osrm_web(points)
-        except:
-            logger.warning(u"Routing with OSRM Web API failed")
-    if duration < 1:
-        try:
-            duration = route_yours_web(points)
-        except:
-            logger.warning(u"Routing with YOUR Web API failed")
-    # Return
+            logger.warning(u"Routing with OSRM Python wrapper failed")
+        if duration < 1:
+            try:
+                duration = route_osrm_local(points)
+            except:
+                logger.warning(u"Routing with OSRM local API failed")
+        if duration < 1:
+            try:
+                duration = route_osrm_web(points)
+            except:
+                logger.warning(u"Routing with OSRM Web API failed")
+        if duration < 1:
+            try:
+                duration = route_yours_web(points)
+            except:
+                logger.warning(u"Routing with YOUR Web API failed")
+        passes = passes + 1
+        sys.stdout.write("{0} ".format(passes))
+        sys.stdout.flush()
+        if duration < 1:
+            time.sleep(3)
+        # Return
     logger.info(u"Route \"%s\" from %s to %s calculated with duration %s minutes", ref, origin, destination, duration)
 #    duration = duration + 1
     if duration == 0.0 and prevent_damages:
