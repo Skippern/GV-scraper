@@ -243,8 +243,8 @@ def get_duration(ref, origin, destination, bbox):
             except:
                 logger.warning(u"Routing with YOUR Web API failed")
         passes = passes + 1
-        sys.stdout.write("{0} ".format(passes))
-        sys.stdout.flush()
+#        sys.stdout.write("{0} ".format(passes))
+#        sys.stdout.flush()
         if duration < 1:
             time.sleep(3)
         # Return
