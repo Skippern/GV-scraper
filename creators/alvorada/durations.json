@@ -21,42 +21,42 @@
             "Alfredo Chaves", 
             "Vit\u00f3ria", 
             "Guarapari", 
-            214
+            131
         ], 
         [
             "033/0", 
             "Vit\u00f3ria", 
             "Alfredo Chaves", 
             "Guarapari", 
-            186
+            123
         ], 
         [
             "034/0", 
             "Dom Bosco", 
             "Setiba", 
             "Rodovia do Sol", 
-            110
+            71
         ], 
         [
             "034/0", 
             "Setiba", 
             "Dom Bosco", 
             "Rodovia do Sol", 
-            110
+            65
         ], 
         [
             "035/0", 
             "Alfredo Chaves", 
             "Cachoeiro de Itapemirim", 
             null, 
-            107
+            71
         ], 
         [
             "035/0", 
             "Cachoeiro de Itapemirim", 
             "Alfredo Chaves", 
             null, 
-            107
+            72
         ], 
         [
             "054/0", 
@@ -77,21 +77,21 @@
             "Guarapari", 
             "Vit\u00f3ria", 
             "Rodovia do Sol", 
-            140
+            91
         ], 
         [
             "063/0", 
             "Vit\u00f3ria", 
             "Guarapari", 
             "Rodovia do Sol", 
-            133
+            85
         ], 
         [
             "063/5", 
             "Aeroporto", 
             "Guarapari", 
             null, 
-            -3
+            -4
         ], 
         [
             "063/5", 
@@ -119,14 +119,14 @@
             "Alfredo Chaves", 
             "Vit\u00f3ria", 
             "BR-101", 
-            126
+            99
         ], 
         [
             "119/0", 
             "Vit\u00f3ria", 
             "Alfredo Chaves", 
             "BR-101", 
-            122
+            87
         ], 
         [
             "205/0", 
@@ -161,7 +161,7 @@
             "Dom Bosco", 
             "Ipiranga", 
             "Rodovia do Sol", 
-            135
+            96
         ], 
         [
             "256/1", 
@@ -175,7 +175,7 @@
             "Ipiranga", 
             "Dom Bosco", 
             "Rodovia do Sol", 
-            136
+            89
         ], 
         [
             "256/5", 
@@ -193,5 +193,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-05-06"
+    "updated": "2018-09-09"
 }
