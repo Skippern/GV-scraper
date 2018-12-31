@@ -59,16 +59,28 @@ For routes such as _Transcol_, I have added `feriados.py`, requiring [workalenda
 - [Seletivo](https://ceturb.es.gov.br) (Grande Vitória/Ceturb - JSON)
 - [Transcol](https://ceturb.es.gov.br) (Grande Vitória/Ceturb - JSON)
 - [Viação Grande Vitória](http://sistemas.vitoria.es.gov.br/redeiti/) (Vitória - HTML)
+- [Flesha Branca](http://www.flechabranca.com.br/?secao=horarios) (Cachoeiro de Itapemirim - format not identified)
+- [NovoTrans](http://novotrans.com.br) (Cachoeiro de Itapemirim - format not identified)
+- [Cartão Melhor](http://www.cartaomelhor.com.br/index.php) (Cachoeiro de Itapemirim - format not identified)
 
 ## Intercity services
 
 - [Planeta](http://www.viacaoplaneta-es.com.br/destinos-e-horarios-viacao-planeta/) (HTML)
+- [Santa Luzia](http://www.viacaosantaluzia.com.br) (format not identified)
 
 ## Intercity services from DER-ES
 
 - [Alvorada](http://viacaoalvorada.com/) Site not publishing times except for the airport express, and no `ref` numbers.
 - [Águia Branca](https://www.aguiabranca.com.br/) Site contain no useful API, but let you buy tickets for destinations, can possibly be used to verify `ref` tags.
 - [Sudeste](http://www.viacaosudeste.com.br/)
+- [Real Ita](http://www.viacaorealita.com.br)
+- [Viação Joana d'Arc](http://www.vjd.com.br)
+- [Viação Pretti](http://www.viacaopretti.com.br)
+- [Viação São Gabriel](http://www.viacaosaogabriel.com.br)
+- [Mutum Preto](http://www.mutumpreto.com.br)
+- [Viação Marilândia](http://viacaomarilandia.com.br)
+- [Cordial](http://www.cordialturismo.com.br/portal/)
+- [Lírio dos Vales](http://viacaoliriodosvales.com.br)
 
 ## Interstate services from ANTT
 
