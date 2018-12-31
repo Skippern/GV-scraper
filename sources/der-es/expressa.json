@@ -64,13 +64,13 @@
                 "to": "Boa Vista",
                 "services": "Mo-Sa",
                 "times": "09:20",
-                "end_date": "2018-10-31"
+                "end_date": "2019-06-30"
             },
             {
                 "name": "Boa Vista x B S Francisco",
                 "from": "Boa Vista",
                 "to": "Barra de São Francisco",
-                "end_date": "2018-10-31",
+                "end_date": "2019-06-30",
                 "services": "Mo-Sa",
                 "note": "Exeto Feriados",
                 "times": ["10:00"]

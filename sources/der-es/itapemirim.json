@@ -25,8 +25,8 @@
                 "from": "Guarapari",
                 "to": "Marataízes",
                 "via": "Anchieta",
-                "start_date": "12-15",
-                "end_date": "02-25",
+                "start_date": "2014-12-15",
+                "end_date": "2015-02-25",
                 "services": "Mo-Su",
                 "times": ["05:40"]
             },
@@ -35,8 +35,8 @@
                 "from": "Marataízes",
                 "to": "Guarapari",
                 "via": "Anchieta",
-                "start_date": "12-15",
-                "end_date": "02-25",
+                "start_date": "2014-12-15",
+                "end_date": "2015-02-25",
                 "services": "Mo-Su",
                 "times": ["18:40"]
             }

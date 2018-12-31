@@ -1,7 +1,7 @@
 {
     "operator": "Viação Águia Branca S/A",
     "operator:ref": "1-001",
-    "updated": "2017-12-19",
+    "updated": "2018-10-17",
     "routes": {
         "006/0": [
             {
@@ -65,7 +65,7 @@
                 "to": "São Mateus",
                 "via": "BR-101",
                 "note": "Vitória x São Mateus via BR-101 ramal Vila Velha",
-                "end_date": "2017-06-30",
+                "end_date": "2018-12-31",
                 "services": "Sa",
                 "times": ["08:50"]
             },
@@ -75,7 +75,7 @@
                 "to": "Vila Velha",
                 "via": "BR-101",
                 "note": "Vitória x São Mateus via BR-101 ramal Vila Velha",
-                "end_date": "2017-06-30",
+                "end_date": "2018-12-31",
                 "services": "Su",
                 "times": ["16:30"]
             },
@@ -918,7 +918,7 @@
                 "note": "Reforça Parcial",
                 "from": "Jacupemba",
                 "to": "Linhares",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "services": "Mo-Su",
                 "times": ["13:30"]
             },
@@ -927,7 +927,7 @@
                 "note": "Reforça Parcial",
                 "from": "Linhares",
                 "to": "Jacupemba",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "services": "Mo-Su",
                 "times": ["13:00"]
             }
@@ -1729,24 +1729,6 @@
                 "times": []
             }
         ],
-        "103/2": [
-            {
-                "name": "Vitória x Aracruz via Fundão",
-                "from": "Vitória",
-                "to": "Aracruz",
-                "via": "Fundão",
-                "services": "Fr",
-                "times": ["17:45"]
-            },
-            {
-                "name": "Aracruz x Vitória via Fundão",
-                "from": "Aracruz",
-                "to": "Vitória",
-                "via": "Fundão",
-                "services": "Mo",
-                "times": ["06:00"]
-            }
-        ],
         "104/0": [
             {
                 "name": "Vitória x São Gabriel Palha via Colatina",
@@ -2058,7 +2040,7 @@
                 "name": "Carapina (Terminal VAB) x Santa Cruz",
                 "from": "Carapina",
                 "to": "Santa Cruz",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "services": "Mo-Sa",
                 "times": ["15:40"]
             },
@@ -2066,7 +2048,7 @@
                 "name": "Santa Cruz x Carapina (Terminal VAB)",
                 "from": "Santa Cruz",
                 "to": "Carapina",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "services": "We-Sa",
                 "times": ["14:00"]
             },
@@ -2074,7 +2056,7 @@
                 "name": "Santa Cruz x Carapina (Terminal VAB)",
                 "from": "Santa Cruz",
                 "to": "Carapina",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "services": "Mo,We-Th,Sa",
                 "times": ["09:30"]
             },
@@ -2082,7 +2064,7 @@
                 "name": "Carapina (Terminal VAB) x Santa Cruz",
                 "from": "Carapina",
                 "to": "Santa Cruz",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "services": "Tu-Th,Sa",
                 "times": ["11:20"]
             },
@@ -2090,7 +2072,7 @@
                 "name": "Carapina (Terminal VAB) x Santa Cruz",
                 "from": "Carapina",
                 "to": "Santa Cruz",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "services": "Su",
                 "times": ["14:45"]
             }
@@ -2463,7 +2445,7 @@
                 "from": "Vila Velha",
                 "to": "Ecoporanga",
                 "via": "Paulista",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "services": "Mo-Su",
                 "times": ["21:40"]
             },
@@ -2472,7 +2454,7 @@
                 "from": "Ecoporanga",
                 "to": "Vila Velha",
                 "via": "Paulista",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "services": "Mo-Su",
                 "times": ["08:30"]
             },
@@ -2481,7 +2463,7 @@
                 "from": "Vila Velha",
                 "to": "Ecoporanga",
                 "via": "Paulista",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "note": "Nos meses de Janeiro e Julho",
                 "services": "Sa",
                 "times": ["08:21"]
@@ -2491,7 +2473,7 @@
                 "from": "Ecoporanga",
                 "to": "Vila Velha",
                 "via": "Paulista",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "note": "Nos meses de Janeiro e Julho",
                 "services": "Su",
                 "times": ["16:40"]
@@ -2588,7 +2570,55 @@
                 "to": "Venda Nova do Imigrante",
                 "via": "Domingos Martins",
                 "services": "Mo-Sa",
-                "times": ["09:20"]
+                "times": ["07:00", "09:20"]
+            },
+            {
+                "name": "Vitória x V Nova do Imigrante via D Martins",
+                "from": "Vitória",
+                "to": "Venda Nova do Imigrante",
+                "via": "Domingos Martins",
+                "services": "Tu-Th",
+                "times": ["05:00"]
+            },
+            {
+                "name": "Vitória x V Nova do Imigrante via D Martins",
+                "from": "Vitória",
+                "to": "Venda Nova do Imigrante",
+                "via": "Domingos Martins",
+                "services": "Mo,Fr,Sa",
+                "times": ["09:30"]
+            },
+            {
+                "name": "Vitória x V Nova do Imigrante via D Martins",
+                "from": "Vitória",
+                "to": "Venda Nova do Imigrante",
+                "via": "Domingos Martins",
+                "services": "Fr",
+                "times": ["13:20"]
+            },
+            {
+                "name": "V Nova do Imigrante x Vitória via D Martins",
+                "from": "Venda Nova do Imigrante",
+                "to": "Vitória",
+                "via": "Domingos Martins",
+                "services": "Tu-Th",
+                "times": ["08:00"]
+            },
+            {
+                "name": "V Nova do Imigrante x Vitória via D Martins",
+                "from": "Venda Nova do Imigrante",
+                "to": "Vitória",
+                "via": "Domingos Martins",
+                "services": "Mo,Fr,Sa",
+                "times": ["14:00"]
+            },
+            {
+                "name": "V Nova do Imigrante x Vitória via D Martins",
+                "from": "Venda Nova do Imigrante",
+                "to": "Vitória",
+                "via": "Domingos Martins",
+                "services": "Fr",
+                "times": ["16:30"]
             },
             {
                 "name": "V Nova do Imigrante x Vitória via D Martins",
@@ -2596,7 +2626,7 @@
                 "to": "Vitória",
                 "via": "Domingos Martins",
                 "services": "Mo-Sa",
-                "times": ["13:50"]
+                "times": ["05:50", "09:50", "13:50"]
             }
         ],
         "250/0": [
@@ -2762,7 +2792,7 @@
                 "name": "Carapina (Terminal VAB) x Coqueiral",
                 "from": "Carapina",
                 "to": "Coqueiral",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "services": "Mo-Sa",
                 "times": ["14:30", "17:30"]
             },
@@ -2770,7 +2800,7 @@
                 "name": "Carapina (Terminal VAB) x Coqueiral",
                 "from": "Carapina",
                 "to": "Coqueiral",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "services": "Su",
                 "times": ["16:20"]
             },
@@ -2778,7 +2808,7 @@
                 "name": "Coqueiral x Carapina (Terminal VAB)",
                 "from": "Coqueiral",
                 "to": "Carapina",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "services": "Mo-Sa",
                 "times": ["12:00", "15:00"]
             },
@@ -2786,7 +2816,7 @@
                 "name": "Coqueiral x Carapina (Terminal VAB)",
                 "from": "Coqueiral",
                 "to": "Carapina",
-                "end_date": "2018-06-30",
+                "end_date": "2018-12-31",
                 "services": "Su",
                 "times": ["07:00", "14:30"]
             }

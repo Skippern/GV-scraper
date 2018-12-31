@@ -1,7 +1,7 @@
 {
     "operator": "Minastur Transporte e Turismo Ltda",
     "operator:ref": "1-023",
-    "updated": "2016-06-07",
+    "updated": "2016-12-27",
     "routes": {
         "086/0": [
             {
@@ -61,6 +61,8 @@
                 "to": "Patrimônio da Penha",
                 "note": "Período: de Janeiro a Outobro e Dezembro",
                 "services": "Mo-Fr",
+                "start_date": "12-01",
+                "end_date": "10-30",
                 "times": ["11:00"]
             },
             {
@@ -69,6 +71,8 @@
                 "to": "Guaçuí",
                 "note":"Período: de Janeiro a Outobro e Dezembro",
                 "services": "Mo-Fr",
+                "start_date": "12-01",
+                "end_date": "10-30",
                 "times": ["12:30"]
             }
         ],

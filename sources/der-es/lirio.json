@@ -1,7 +1,7 @@
 {
     "operator": "Lírio dos Vales Transportes e Fretamento Ltda",
     "operator:ref": "1-317",
-    "updated": "2017-12-19",
+    "updated": "2018-02-26",
     "routes": {
         "005/0": [
             {
@@ -128,7 +128,7 @@
                 "to": "Vitória",
                 "via": "Fundão",
                 "services": "Mo-Sa",
-                "times": ["05:20", "10:05", "12:00", "13:40", "15:00", "18:30"]
+                "times": ["05:20", "10:05", "12:20", "13:40", "15:00", "18:10"]
             },
             {
                 "name": "Santa Teresa x Vitória via Fundão",
@@ -180,7 +180,15 @@
                 "to": "Vitória",
                 "via": "Santa Leopoldina",
                 "services": "Mo-Sa",
-                "times": ["07:00"]
+                "times": ["07:00", "10:40"]
+            },
+            {
+                "name": "Santa Teresa x Vitória via S Leopoldina",
+                "from": "Santa Teresa",
+                "to": "Vitória",
+                "via": "Santa Leopoldina",
+                "services": "Su",
+                "times": ["10:40"]
             }
         ],
         "203/0": [

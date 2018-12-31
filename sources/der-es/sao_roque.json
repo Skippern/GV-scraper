@@ -1,7 +1,7 @@
 {
     "operator": "Viação São Roque Ltda",
     "operator:ref": "1-017",
-    "updated": "2014-10-15",
+    "updated": "2018-01-03",
     "routes": {
         "071/0": [
             {
@@ -65,6 +65,7 @@
                 "from": "Colatina",
                 "to": "Santa Julia",
                 "services": "Mo-Sa",
+                "note": "Linha paralisada pela Empresa",
                 "times": ["14:30"]
             },
             {
@@ -72,6 +73,7 @@
                 "from": "Santa Julia",
                 "to": "Colatina",
                 "services": "Mo-Sa",
+                "note": "Linha paralisada pela Empresa",
                 "times": ["05:30"]
             }
         ],
@@ -144,6 +146,7 @@
                 "from": "Colatina",
                 "to": "Monte Claros",
                 "services": "Tu-Fr",
+                "note": "Linha paralisada pela Empresa",
                 "times": ["14:00"]
             },
             {
@@ -151,6 +154,7 @@
                 "from": "Monte Claros",
                 "to": "Colatina",
                 "services": "Tu-Fr",
+                "note": "Linha paralisada pela Empresa",
                 "times": ["05:40"]
             }
         ],
