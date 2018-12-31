@@ -56,28 +56,28 @@
             "Cachoeiro de Itapemirim", 
             "Marata\u00edzes", 
             "Garraf\u00e3o", 
-            47
+            55
         ], 
         [
             "075/0", 
             "Marata\u00edzes", 
             "Cachoeiro de Itapemirim", 
             "Garraf\u00e3o", 
-            47
+            54
         ], 
         [
             "075/2", 
             "Cachoeiro de Itapemirim", 
             "Marata\u00edzes", 
             null, 
-            47
+            55
         ], 
         [
             "075/2", 
             "Marata\u00edzes", 
             "Cachoeiro de Itapemirim", 
             null, 
-            47
+            54
         ], 
         [
             "089/0", 
@@ -210,14 +210,14 @@
             "Marata\u00edzes", 
             "Rio Novo do Sul", 
             null, 
-            43
+            46
         ], 
         [
             "202/1", 
             "Rio Novo do Sul", 
             "Marata\u00edzes", 
             null, 
-            48
+            46
         ], 
         [
             "217/0", 
@@ -252,14 +252,14 @@
             "Cachoeiro de Itapemirim", 
             "Pi\u00fama", 
             "Candeus", 
-            88
+            98
         ], 
         [
             "223/0", 
             "Pi\u00fama", 
             "Cachoeiro de Itapemirim", 
             "Candeus", 
-            58
+            62
         ], 
         [
             "266/1", 
@@ -434,14 +434,14 @@
             "Marata\u00edzes", 
             "Safra", 
             null, 
-            36
+            42
         ], 
         [
             "341/1", 
             "Safra", 
             "Marata\u00edzes", 
             null, 
-            35
+            42
         ], 
         [
             "350/1", 
@@ -459,5 +459,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-09-09"
+    "updated": "2018-12-31"
 }

@@ -21,7 +21,7 @@
             "Fund\u00e3o", 
             "Vit\u00f3ria", 
             null, 
-            68
+            71
         ], 
         [
             "036/1", 
@@ -63,14 +63,14 @@
             "Santa Teresa", 
             "Vit\u00f3ria", 
             "Fund\u00e3o", 
-            100
+            108
         ], 
         [
             "115/0", 
             "Vit\u00f3ria", 
             "Santa Teresa", 
             "Fund\u00e3o", 
-            110
+            115
         ], 
         [
             "125/0", 
@@ -172,5 +172,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-09-09"
+    "updated": "2018-12-31"
 }

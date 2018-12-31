@@ -21,7 +21,7 @@
             "Gua\u00e7u\u00ed", 
             "Patrim\u00f4nio da Penha", 
             null, 
-            99
+            76
         ], 
         [
             "149/0", 
@@ -35,7 +35,7 @@
             "Patrim\u00f4nio da Penha", 
             "Gua\u00e7u\u00ed", 
             null, 
-            98
+            74
         ], 
         [
             "149/0", 
@@ -144,5 +144,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-09-09"
+    "updated": "2018-12-31"
 }

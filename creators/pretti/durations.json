@@ -28,14 +28,14 @@
             "Colatina", 
             "Linhares", 
             "Humaita", 
-            93
+            98
         ], 
         [
             "081/0", 
             "Linhares", 
             "Colatina", 
             "Humaita", 
-            78
+            96
         ], 
         [
             "084/0", 
@@ -375,5 +375,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-09-08"
+    "updated": "2018-12-31"
 }
