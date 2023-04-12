@@ -21,7 +21,7 @@
             "Cachoeiro de Itapemirim", 
             "Gua\u00e7u\u00ed", 
             null, 
-            99
+            -4
         ], 
         [
             "043/0", 
@@ -168,14 +168,14 @@
             "Alegre", 
             "Bom Jesus do Norte", 
             "Gua\u00e7u\u00ed", 
-            96
+            -4
         ], 
         [
             "056/0", 
             "Bom Jesus do Norte", 
             "Alegre", 
             "Gua\u00e7u\u00ed", 
-            86
+            -4
         ], 
         [
             "060/0", 
@@ -364,14 +364,14 @@
             "Gua\u00e7u\u00ed", 
             "Mundo Novo", 
             null, 
-            54
+            -4
         ], 
         [
             "165/0", 
             "Mundo Novo", 
             "Gua\u00e7u\u00ed", 
             null, 
-            51
+            -4
         ], 
         [
             "165/8", 
@@ -504,14 +504,14 @@
             "Cachoeiro de Itapemirim", 
             "Vargem Alta", 
             null, 
-            41
+            -4
         ], 
         [
             "282/0", 
             "Vargem Alta", 
             "Cachoeiro de Itapemirim", 
             null, 
-            40
+            -4
         ], 
         [
             "295/0", 
@@ -599,5 +599,5 @@
         ]
     ], 
     "source": "DER-ES", 
-    "updated": "2018-12-31"
+    "updated": "2023-04-12"
 }

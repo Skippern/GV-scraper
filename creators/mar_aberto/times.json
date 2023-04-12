@@ -1,27 +1,11 @@
 {
-    "excluded_lines": [], 
+    "excluded_lines": [
+        "351/0"
+    ], 
     "network": "Via\u00e7\u00e3o Mar Aberto", 
     "operator": "Via\u00e7\u00e3o Mar Aberto Ltda", 
     "routes": {
         "351/0": [
-            {
-                "exceptions": [], 
-                "from": "Concei\u00e7\u00e3o da Barra", 
-                "services": [
-                    "Mo-Sa"
-                ], 
-                "stations": [
-                    "Concei\u00e7\u00e3o da Barra", 
-                    "Pedro Can\u00e1rio"
-                ], 
-                "times": [
-                    [
-                        "05:30", 
-                        "06:16"
-                    ]
-                ], 
-                "to": "Pedro Can\u00e1rio"
-            }, 
             {
                 "exceptions": [], 
                 "from": "Pedro Can\u00e1rio", 
@@ -35,7 +19,7 @@
                 "times": [
                     [
                         "13:00", 
-                        "13:47"
+                        "13:50"
                     ]
                 ], 
                 "to": "Concei\u00e7\u00e3o da Barra"
@@ -43,5 +27,5 @@
         ]
     }, 
     "source": "DER-ES", 
-    "updated": "2023-04-08"
+    "updated": "2023-04-12"
 }
