@@ -3,4 +3,6 @@
 *.pdf
 *.html
 data/*
+.*.json
+._*py
 
